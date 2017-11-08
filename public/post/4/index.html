@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>谷哥点名第 4 期“爱, 情, 愛”回顾 | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">谷哥点名第 4 期“爱, 情, 愛”回顾</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-09-04 10:55 GMT</h2>
+</div>
+
+<main>
+
+
+<p>原文链接: <a href="https://steemit.com/cn/@dapeng/4">steemit</a>, <a href="https://cnsteem.com/cn/@dapeng/4">cnsteem</a>, <a href="https://chainbb.com/cn/@dapeng/4">chainbb</a>, <a href="https://busy.org/cn/@dapeng/4">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/4.md">markdown</a></p>
+
+<p>“谷哥点名”第四期关键词是“爱”和“情”，与七夕征文活动几乎同步进行，非常热闹。按照规则，只要标题里含有“爱”或“情”的，就算参与活动。这两个字实在太火爆了，于是……出现了很多未曾预想的问题，比如：</p>
+
+<ul>
+<li><p>像“Steem 技巧- 如何添加表情符号”（我写的）和“加密货币市场行情和新闻简介”这样的标题也算进来了。都有“情”字。</p></li>
+
+<li><p>为了把繁体中文也收进来，所以包含“愛”字的也算，这就导致&hellip;&hellip;一些韩语和日语作品也收进来了。</p></li>
+</ul>
+
+<p>这肯定不是这次活动的初衷。所以&hellip;&hellip;所以本期回顾报告大家就看着玩玩得了。</p>
+
+<p>报告使用的数据来源是 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言。仅供参考，如果有数字与官方有出入，请以官方为准。</p>
+
+<h3 id="参赛基本信息">参赛基本信息</h3>
+
+<ul>
+<li><p>主题：爱, 情, 愛</p></li>
+
+<li><p>日期：2017-08-23 &ndash; 2017-08-30</p></li>
+
+<li><p>参赛作品列表：见文末。</p></li>
+</ul>
+
+<h3 id="帖中之最">帖中之最</h3>
+
+<p>本期活动参赛作品共 177 篇。获奖作品是按 google 搜索结果排名的，不再赘述。我们也可以用其他方式排名，来看看参赛作品里几个第一名。</p>
+
+<p><strong>字符最多</strong></p>
+
+<ul>
+<li><a href="https://steemit.com/@rivalhw/lhihf-steemit">七夕情人节Steemit中文社区文学群爱情征文大赛 Qixi Chinese Valentine&rsquo;s Day Steemit Chinese Literature Group Romance Writing Contest</a>，含 10035 个字符。</li>
+</ul>
+
+<p><strong>插图最多</strong></p>
+
+<ul>
+<li><a href="https://steemit.com/@twinkledrop/foodie-s-diary-32-yummy-japanese-restaurant-eat-toyko-in-london-32-eat-toyko">Foodie&rsquo;s diary #32&mdash; Yummy Japanese restaurant&mdash;Eat Toyko in London. 吃货日记#32&mdash;伦敦的爱心便当日料店&mdash;Eat Toyko。</a>，含 47 张图片。</li>
+</ul>
+
+<p><strong>修改间隔最长</strong></p>
+
+<ul>
+<li><a href="https://steemit.com/@wseemfree/2hwkzv">心情都掉地上了</a>，发布 141.4 小时即 5.9 天之后，作者做了最后一次修改。</li>
+</ul>
+
+<p><strong>得赞最多</strong></p>
+
+<ul>
+<li><a href="https://steemit.com/@oflyhigh/28gqnr">机器人没有心，你还会爱它吗？</a>，得到 442 个赞。</li>
+</ul>
+
+<p><strong>赚钱最多</strong></p>
+
+<ul>
+<li><a href="https://steemit.com/@rivalhw/steemit-08-27">七夕情人节Steemit中文社区文学群爱情征文大赛 第二日（08-27）入选文章</a>，收入为 193 美元。</li>
+</ul>
+
+<p><strong>帖子正文里出现最多的关键词</strong></p>
+
+<p>下面是所有帖子里出现的字符长度超过 2 个、出现次数超过 5 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。当然，我们去掉了本期指定的关键词&rdquo;爱, 情, 愛&rdquo;。</p>
+
+<p><img src="http://gdurl.com/RN_V" alt="" /></p>
+
+<h3 id="参赛选手">参赛选手</h3>
+
+<p>下图是参赛选手的注册 ID 序号分布图。全网目前共有 338890 个 ID。参赛选手中一半以上都排在第 246064 个注册 ID 之后。排在最前面的是第 1747 个 ID，最后面的是 第 333573 个 ID。猜猜他们都是谁？</p>
+
+<p><img src="http://gdurl.com/Es9m" alt="" /></p>
+
+<p>下图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7 月注册的居多。也有一些早期用户。</p>
+
+<p><img src="http://gdurl.com/BE8E" alt="" /></p>
+
+<h3 id="发帖">发帖</h3>
+
+<p>活动期间，每天累计发帖总数：</p>
+
+<p><img src="http://gdurl.com/JLOm" alt="" /></p>
+
+<p>下图是个特殊的时钟，一圈是24小时，显示了一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的帖子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是发帖高峰时段。</p>
+
+<p>可以发现，在标准时间 0 点到 9 点发帖的人最多。大家猜猜这是为什么？我觉得这说明参赛者里位于欧洲的比较少。</p>
+
+<p><img src="http://gdurl.com/EFXT" alt="" /></p>
+
+<p>本活动是在 &lsquo;cn&rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签???我们看看除此之外，大家还使用了那些标签以及使用频率。</p>
+
+<p><img src="http://gdurl.com/amSQ" alt="" /></p>
+
+<h3 id="收入">收入</h3>
+
+<p>最后我们来谈钱。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 参与活动的 177 篇帖子，总收入为 3607.76 SBD， 单帖收入最高为 192.84 SBD，平均每帖收入为 20.38 SBD。</p>
+
+<p><img src="http://gdurl.com/XmWQ" alt="" /></p>
+
+<p>下图是各篇帖子获得的投票（点赞）数。 累计得赞 10378  个，单帖得到的点赞数最高为 442 个，平均每帖得赞 58.6  个。</p>
+
+<p><img src="http://gdurl.com/iRSM" alt="" /></p>
+
+<p>为本次活动能够投票次数最多的前三位是  @tumutanzi, @htliao, @linuslee0216。下面是投票次数超过 30 次的 ID 词云图。</p>
+
+<p><img src="http://gdurl.com/QpH0" alt="" /></p>
+
+<p>为本次活动点赞收入贡献最多的前三位伯乐是 @abit, @tumutanzi, @linuslee0216。他们一共贡献了全部收入的 65%。排在他们后面的第 4 到第 10 位的贡献比例如下图。</p>
+
+<p><img src="http://gdurl.com/e7NX" alt="" /></p>
+
+<hr />
+
+<p>感谢关注“大鹏观察”。欢迎提出宝贵意见。谢谢。</p>
+
+<h3 id="附录-参赛作品列表">附录：参赛作品列表</h3>
+
+<hr />
+
+<table>
+<thead>
+<tr>
+<th align="left">created</th>
+<th align="left">author</th>
+<th align="left">title</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">2017-08-23 04:01:39</td>
+<td align="left">@captainpearson</td>
+<td align="left"><a href="https://steemit.com/@captainpearson/6yxneo">我爱乒乓球</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-23 08:26:00</td>
+<td align="left">@dapeng</td>
+<td align="left"><a href="https://steemit.com/@dapeng/how-to-insert-emoji-on-steemit">Tips: How to insert Emoji on Steemit -Steem 技巧- 如何添加表情符号</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-23 11:25:51</td>
+<td align="left">@someone</td>
+<td align="left"><a href="https://steemit.com/@someone/--hiking-duilishan-and-trying-aiyu-by-livinguktaiwan">在獨立山上吃愛玉  Hiking Duilishan and trying Aiyu by @livinguktaiwan</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-23 12:08:15</td>
+<td align="left">@sylvia1997</td>
+<td align="left"><a href="https://steemit.com/@sylvia1997/2nxq1m">不求如愿以偿，但求心甘情愿</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-23 13:36:15</td>
+<td align="left">@shenchensucc</td>
+<td align="left"><a href="https://steemit.com/@shenchensucc/6rod4g">情 &ndash; ???夕 谷哥点名 第四期</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-23 13:40:51</td>
+<td align="left">@miakuzuryu</td>
+<td align="left"><a href="https://steemit.com/@miakuzuryu/6a85yh">可爱的鸟</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-23 15:54:42</td>
+<td align="left">@larus</td>
+<td align="left"><a href="https://steemit.com/@larus/dyifk">亲情、友情、爱情——如何认识我们的亲密关系？</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-23 15:57:12</td>
+<td align="left">@jiangchen</td>
+<td align="left"><a href="https://steemit.com/@jiangchen/5uqqqq">发生了那么多事情，哪一件，与我有关呢？</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-23 17:21:12</td>
+<td align="left">@sunnyjolly</td>
+<td align="left"><a href="https://steemit.com/@sunnyjolly/i-am-addicted-to-steemit">I am addicted to steemit 就这样无可救药地爱上了</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-23 18:16:48</td>
+<td align="left">@whitedynasty</td>
+<td align="left"><a href="https://steemit.com/@whitedynasty/white-dynasty-dogs">超可爱的狗  White Dynasty Dogs  超可爱的狗</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-23 20:49:45</td>
+<td align="left">@steemitjp</td>
+<td align="left"><a href="https://steemit.com/@steemitjp/20170824posting-111-tokyo-travel-information">20170824_Posting #111 Tokyo Travel Information_東京トラベル情報発信</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 02:51:36</td>
+<td align="left">@guyverckw</td>
+<td align="left"><a href="https://steemit.com/@guyverckw/love-or">情 ，爱 / Love - &ldquo;谷哥点名&rdquo; 第四回</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 03:15:27</td>
+<td align="left">@yyyy</td>
+<td align="left"><a href="https://steemit.com/@yyyy/3kyawn">因为爱情： （六） 故事</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 03:25:12</td>
+<td align="left">@ace108</td>
+<td align="left"><a href="https://steemit.com/@ace108/chinese-content-only-but-feel-free-to-comment-in-english-if-you-understand-by-ace108">现代问世间情是何物啊？- Chinese content only but feel free to comment in English if you understand (by @ace108)</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 03:44:45</td>
+<td align="left">@eduter</td>
+<td align="left"><a href="https://steemit.com/@eduter/love-emotion-desire">爱，情，欲 / Love, Emotion, Desire</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 04:35:09</td>
+<td align="left">@renzhichu</td>
+<td align="left"><a href="https://steemit.com/@renzhichu/2zflk7">&ldquo;谷哥点名&rdquo; 第四期：情、爱篇&ndash;我那节俭到极致的婆婆</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 05:20:36</td>
+<td align="left">@steemitjp</td>
+<td align="left"><a href="https://steemit.com/@steemitjp/20170824posting-112-start-world-travel-information">20170824_Posting #112 Start!!! World Travel Information_世界のトラベル情報発信プロジェックト開始</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 05:50:51</td>
+<td align="left">@sweetcoin</td>
+<td align="left"><a href="https://steemit.com/@sweetcoin/chinese-valentine-s-day-chocolate-love">情人节,巧克力热爱!(谷哥点名第四期)</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 06:43:27</td>
+<td align="left">@pakyeechan</td>
+<td align="left"><a href="https://steemit.com/@pakyeechan/6jjb8o-or">嚴厲又可愛的婆婆 -  &ldquo;谷哥点名&rdquo; 第四期</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 06:47:51</td>
+<td align="left">@tumuta</td>
+<td align="left"><a href="https://steemit.com/@tumuta/333wh8">因为有爱 -贺庆媛老师作品-</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 07:06:39</td>
+<td align="left">@superhardness</td>
+<td align="left">爱恨情仇，人生的涅槃&ndash;Love Forever](<a href="https://steemit.com/@superhardness/love-forever">https://steemit.com/@superhardness/love-forever</a>)</td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 10:03:57</td>
+<td align="left">@zhijun</td>
+<td align="left"><a href="https://steemit.com/@zhijun/2j2v4r">爱与情</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 10:57:36</td>
+<td align="left">@sweeti</td>
+<td align="left"><a href="https://steemit.com/@sweeti/drawing-challenge-3-lovely-apple-or">Drawing Challenge #3 : Love Apple - 爱心苹果</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 11:08:21</td>
+<td align="left">@mrspointm</td>
+<td align="left"><a href="https://steemit.com/@mrspointm/love-should-be-spoken-out-aloud-original">Love should be spoken out aloud  (Original)/爱就大声说出来&mdash;“谷歌点名”第四期</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 11:13:45</td>
+<td align="left">@sylvia1997</td>
+<td align="left"><a href="https://steemit.com/@sylvia1997/4u7rwk">我想用师生情做标题，又觉得这么普通的标题配不上她</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 12:37:06</td>
+<td align="left">@lymichale</td>
+<td align="left"><a href="https://steemit.com/@lymichale/2dzh3g">爱在心头口难开#我的父亲——“谷歌点名”第四期</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 13:05:45</td>
+<td align="left">@oflyhigh</td>
+<td align="left"><a href="https://steemit.com/@oflyhigh/28gqnr">机器人没有心，你还会爱它吗？</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 13:50:00</td>
+<td align="left">@elkhair</td>
+<td align="left"><a href="https://steemit.com/@elkhair/fmzdc">机器人没有心，你还会爱它吗？</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 15:02:42</td>
+<td align="left">@cornelia</td>
+<td align="left"><a href="https://steemit.com/@cornelia/5brhut">学会放手，爱要有度。</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 15:54:21</td>
+<td align="left">@bestmz</td>
+<td align="left"><a href="https://steemit.com/@bestmz/735tm7">一首《八至》道情爱</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 17:12:06</td>
+<td align="left">@dapeng</td>
+<td align="left"><a href="https://steemit.com/@dapeng/long-distance-relationship-video">Long-distance relationship (Video) 两地情，一生爱（吉他弹唱视频）</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-24 19:12:06</td>
+<td align="left">@goodv123</td>
+<td align="left"><a href="https://steemit.com/@goodv123/6u32uc">我是一個&rdquo;多情公子&rdquo; ，從情。愛兩字回顧和反思自己 //  我是一个&rdquo;多情公子&rdquo; ，从情。爱两字回顾和反思自己 - 第四期“谷哥点名”活动</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 00:23:51</td>
+<td align="left">@carloserp2000</td>
+<td align="left"><a href="https://steemit.com/@carloserp2000/3zyaqy">ベネズエラ、政府に抗議のバイオリンを奏でた青年が血まみれ。病室でも愛器は手放さなかったと話題に！</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 00:41:42</td>
+<td align="left">@carinewhy</td>
+<td align="left"><a href="https://steemit.com/@carinewhy/286fhd">（谷歌点名-情或愛）親情也是要培養的</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 00:59:36</td>
+<td align="left">@justyy</td>
+<td align="left"><a href="https://steemit.com/@justyy/photography-of-our-love-2017">Photography of Our Love 写在2017年七夕: 爱情亲情，那些美好的回忆(就是这么任性的撒狗粮)</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 01:12:36</td>
+<td align="left">@steemitjp</td>
+<td align="left"><a href="https://steemit.com/@steemitjp/20170825posting-114-graffiti-nature-mountains-and-valleys-with-japanese-idol-nogizaka-46-cm-with-whale-cm-46-46-cm">20170825_Posting # 114 【Graffiti Nature – Mountains and Valleys with Japanese idol nogizaka 46】CM with Whale. バイトルのCMで乃木坂46とホーエルが可愛い</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 01:12:48</td>
+<td align="left">@victorier</td>
+<td align="left"><a href="https://steemit.com/@victorier/5qzmjy">中国人如何看待情跟爱呢？</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 01:27:45</td>
+<td align="left">@susanli3769</td>
+<td align="left"><a href="https://steemit.com/@susanli3769/love-story-in-life-4th-contest-by-jubi">情/爱 “谷歌点名”第四回 - Love story in life - 4th contest by @jubi</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 03:19:06</td>
+<td align="left">@rivalhw</td>
+<td align="left"><a href="https://steemit.com/@rivalhw/lhihf-steemit">七夕情人节Steemit中文社区文学群爱情征文大赛 Qixi Chinese Valentine&rsquo;s Day Steemit Chinese Literature Group Romance Writing Contest</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 03:52:48</td>
+<td align="left">@goodv123</td>
+<td align="left"><a href="https://steemit.com/@goodv123/57vfqn">我是一個&rdquo;多情公子&rdquo; ，從情。愛兩字回顧和反思自己 //  我是一个&rdquo;多情公子&rdquo; ，从情。爱两字回顾和反思自己 - 第四期“谷哥点名”活动</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 04:20:00</td>
+<td align="left">@cryptomaker</td>
+<td align="left"><a href="https://steemit.com/@cryptomaker/true-love-win-at-the-end-of-the-day">True love win at the end of the day.真爱在一天结束时赢了.</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 05:18:12</td>
+<td align="left">@rajorajiten</td>
+<td align="left"><a href="https://steemit.com/@rajorajiten/69hdrl">中国情人节</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 06:39:12</td>
+<td align="left">@wseemfree</td>
+<td align="left"><a href="https://steemit.com/@wseemfree/4c1fqf">煽情和真情</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 07:25:21</td>
+<td align="left">@leogor1234</td>
+<td align="left"><a href="https://steemit.com/@leogor1234/28dzco">谷歌點名第四期 - 情可以很多，但愛卻是唯一</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 09:08:39</td>
+<td align="left">@bigyellow</td>
+<td align="left"><a href="https://steemit.com/@bigyellow/2of3qn">爱与宽容</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 12:18:18</td>
+<td align="left">@tensaix2j</td>
+<td align="left"><a href="https://steemit.com/@tensaix2j/05-the-love-note">原创漫画 05： 爱情笔记 The Love Note</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 12:34:00</td>
+<td align="left">@mrpointp</td>
+<td align="left"><a href="https://steemit.com/@mrpointp/valentine-s-day-in-my-eyes-original">Valentine&rsquo;s Day in My Eyes (Original) / 我眼中的情人??&mdash;“谷歌点名”第四期</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 12:57:30</td>
+<td align="left">@steemmelody</td>
+<td align="left"><a href="https://steemit.com/@steemmelody/travel-lover-pictures-part-1-1">Travel Lover - Pictures Part 1 / 旅行爱好者 - 图片第1部分</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 13:08:51</td>
+<td align="left">@steemmelody</td>
+<td align="left"><a href="https://steemit.com/@steemmelody/travel-lover-pictures-part-2-2">Travel Lover - Pictures Part 2 / 旅行爱好者 - 图片第2部分</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 13:11:24</td>
+<td align="left">@linuslee0216</td>
+<td align="left"><a href="https://steemit.com/@linuslee0216/3sjyai">错过了的爱情要还吗？为不成熟的自己而后悔/ 谷哥点名活动第四期</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 13:26:18</td>
+<td align="left">@sunnyjolly</td>
+<td align="left"><a href="https://steemit.com/@sunnyjolly/self-love-will-be-loved">self-love, will be loved 唯有自爱，才会被爱慕</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 13:29:06</td>
+<td align="left">@jubi</td>
+<td align="left"><a href="https://steemit.com/@jubi/69bmmz">一声叹息，丢了爱情，抓紧爱</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 14:17:54</td>
+<td align="left">@icedream</td>
+<td align="left"><a href="https://steemit.com/@icedream/4ocjb4">将亲情活成了爱情</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 14:32:42</td>
+<td align="left">@cornelia</td>
+<td align="left"><a href="https://steemit.com/@cornelia/6evpkn">陪伴，是最长情的告白</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 14:57:39</td>
+<td align="left">@zsilence</td>
+<td align="left"><a href="https://steemit.com/@zsilence/4cqcvx">-谷哥点名-说「爱」</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 15:37:51</td>
+<td align="left">@rivalhw</td>
+<td align="left"><a href="https://steemit.com/@rivalhw/2nmens-steemit">写在七夕情人节Steemit中文社区文学群爱情征文大赛成功发起之后</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 15:43:42</td>
+<td align="left">@veronicazhu</td>
+<td align="left"><a href="https://steemit.com/@veronicazhu/a-love-letter">A Love Letter 情不知所起  一往而深</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 17:29:51</td>
+<td align="left">@mellissaying</td>
+<td align="left"><a href="https://steemit.com/@mellissaying/beauty-with-mellissa-3-how-to-blend-your-eyeshadow-tutorial-i-colourpop-yes-please-palette">Beauty with Mellissa! #3 一起愛美麗 漸變眼影教學 How To Blend Your Eyeshadow Tutorial I Colourpop Yes, Please! Palette !!</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 18:28:39</td>
+<td align="left">@sunnyjolly</td>
+<td align="left"><a href="https://steemit.com/@sunnyjolly/homosexuality">Homosexuality 同性之爱</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 20:24:45</td>
+<td align="left">@susanli3769</td>
+<td align="left"><a href="https://steemit.com/@susanli3769/0825">0825 加密货币市场行情和小消息</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-25 22:05:39</td>
+<td align="left">@djamelbak</td>
+<td align="left"><a href="https://steemit.com/@djamelbak/gbt4p">聖托里尼之所以長期榮登蜜月聖地前幾名最大的原因是她可以迎合所有不同喜好的旅客。想要悠閒趟上沙灘上的，聖托里尼的紅沙灘絕對包你滿意！想要大快朵頤的美食愛好者，</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 01:15:51</td>
+<td align="left">@blacktranquility</td>
+<td align="left"><a href="https://steemit.com/@blacktranquility/-2017825t224348579z">谷歌点名-情：从将军到文人~辛弃疾将军的爱国情</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 02:07:36</td>
+<td align="left">@mdsoudahmed</td>
+<td align="left"><a href="https://steemit.com/@mdsoudahmed/qn-the-sad-love-stories-the-love">(QN) The Sad Love Stories: 欲爱 The Love</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 02:44:39</td>
+<td align="left">@aaronli</td>
+<td align="left"><a href="https://steemit.com/@aaronli/5zsevj-or">他情她爱 - 原創短篇小說 -“谷哥点名” 第四期活动</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 03:02:45</td>
+<td align="left">@yyyy</td>
+<td align="left"><a href="https://steemit.com/@yyyy/6rsckf">因为爱情： （七） 懊悔</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 03:12:39</td>
+<td align="left">@ryanfan11</td>
+<td align="left"><a href="https://steemit.com/@ryanfan11/or-miss-u-y-robot-girlfriend-or">我的機器人女友，你還好嗎?-Miss U，Ｍy Robot Girlfriend - “谷哥点名”第四期 情 或者 爱</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 03:25:48</td>
+<td align="left">@zhijun</td>
+<td align="left"><a href="https://steemit.com/@zhijun/6n92c7">亲爱的那不是爱情</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 03:39:51</td>
+<td align="left">@biuiam</td>
+<td align="left"><a href="https://steemit.com/@biuiam/love">爱:“谷哥点名” 第四期活动/ love</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 04:17:54</td>
+<td align="left">@hannahwu</td>
+<td align="left"><a href="https://steemit.com/@hannahwu/love-me-tender-love-me-sweet">Love me Tender &amp; Sweet 身边的繁华与温情</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 05:13:33</td>
+<td align="left">@herlife</td>
+<td align="left"><a href="https://steemit.com/@herlife/23-forever-friendship">未说出口的爱：23年的友情  Forever Friendship 【谷歌点名第四期“情”】</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 06:02:48</td>
+<td align="left">@pakyeechan</td>
+<td align="left"><a href="https://steemit.com/@pakyeechan/or-steemit">致愛情  -   七夕情人节Steemit中文社区文学群爱情征文大赛</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 06:17:27</td>
+<td align="left">@love-art-design</td>
+<td align="left"><a href="https://steemit.com/@love-art-design/photo-transformation-emma-watson-hermione-s-cute-in-harry-potter-movie-2017826t131721885z">Photo: Transformation Emma Watson, Hermione&rsquo;s Cute in Harry Potter Movie &mdash; 照片：转型艾玛·沃特森，赫敏的可爱哈利波特电影</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 06:20:30</td>
+<td align="left">@michellejoyful</td>
+<td align="left"><a href="https://steemit.com/@michellejoyful/memory-with-my-lover">Memory with my lover ^-^  缘不知所起，身不由己  心不知所动，微波涟漪  情不知所起 一往而深</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-26 06:43:15</td>
+<td align="left">@karasui</td>
+<td align="left"><a href="https://steemit.com/@karasui/4c9g1o">无言的爱</a></td>
+</tr>
+</tbody>
+</table>
+
+<pre><code>                                                                                                                                                                                                                                                                                                                                                                                               |
+</code></pre>
+
+<p>|2017-08-26 07:52:00 |@wilkinshui       |<a href="https://steemit.com/@wilkinshui/6czkpq">第四期“谷哥点名”活动 - 一直在轉變的&rdquo;情&rdquo;，最後會到那裏？</a>                                                                                                                                                                                                                                                                                                                                                     |
+|2017-08-26 08:17:33 |@kona             |<a href="https://steemit.com/@kona/kedi">愛貓之城</a>                                                                                                                                                                                                                                                                                                                                                                                                      |
+|2017-08-26 11:34:18 |@ygern            |<a href="https://steemit.com/@ygern/uce7v">情與愛，還有那鬼遮眼的七月</a>                                                                                                                                                                                                                                                                                                                                                                                        |
+|2017-08-26 13:32:45 |@rivalhw          |<a href="https://steemit.com/@rivalhw/steemit-08-26">七夕情人节Steemit中文社区文学群爱情征文大赛 首日（08-26）入选文章</a>                                                                                                                                                                                                                                                                                                                                       |
+|2017-08-26 13:32:51 |@dixonloveart     |<a href="https://steemit.com/@dixonloveart/teriadixon-travel-germany-10-pizzeria-romantica">TeriaDixon Travel Germany #10  Pizzeria Romantica 一个充满爱和快乐的披萨小店</a>                                                                                                                                                                                                                                                                                     |
+|2017-08-26 16:26:42 |@dancingapple     |<a href="https://steemit.com/@dancingapple/3typ3z">犹是春闺梦里人（第4期“谷哥点名”情或爱）</a>                                                                                                                                                                                                                                                                                                                                                                   |
+|2017-08-26 17:16:33 |@moicc            |<a href="https://steemit.com/@moicc/or-love-is-a-decision-you-make">爱是你做的决定 - Love is a decision you make</a>                                                                                                                                                                                                                                                                                                                                             |
+|2017-08-26 19:09:51 |@plokmi           |<a href="https://steemit.com/@plokmi/5whofb">小狐狸的爱</a>                                                                                                                                                                                                                                                                                                                                                                                                      |
+|2017-08-26 22:35:39 |@tumuta           |<a href="https://steemit.com/@tumuta/4xusx6">夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）</a>                                                                                                                                                                                                                                                                                                                                                          |
+|2017-08-26 23:12:09 |@raykeli89        |<a href="https://steemit.com/@raykeli89/xi-ngnian-n-de-ai">想念你的愛 Xiǎngniàn nǐ de ài</a>                                                                                                                                                                                                                                                                                                                                                                     |
+|2017-08-26 23:13:54 |@travelgirl       |<a href="https://steemit.com/@travelgirl/3yss9s">第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定</a>                                                                                                                                                                                                                                                                                                                 |
+|2017-08-26 23:59:03 |@sarly            |<a href="https://steemit.com/@sarly/cute-cat-2017827t6585955z">Cute cat  /   可愛的貓</a>                                                                                                                                                                                                                                                                                                                                                                        |
+|2017-08-27 00:30:57 |@carinewhy        |<a href="https://steemit.com/@carinewhy/4fwydl-steemit">七夕情人节Steemit中文社区文学群爱情征文大赛 - 在愛情中是沒有壞人的</a>                                                                                                                                                                                                                                                                                                                                   |
+|2017-08-27 00:31:36 |@xiaolizi         |<a href="https://steemit.com/@xiaolizi/4">【谷哥点名#4】人情世故:人在江湖，身不由己！</a>                                                                                                                                                                                                                                                                                                                                                                        |
+|2017-08-27 00:32:12 |@superhardness    |<a href="https://steemit.com/@superhardness/love-story">有点泥土气息的“爱情故事”&ndash;Love story</a>                                                                                                                                                                                                                                                                                                                                                                 |
+|2017-08-27 01:24:33 |@kitcat           |<a href="https://steemit.com/@kitcat/chinese-valentine-s-day-literature-writing-contest">七夕情人節徵文比賽 － 藍夢 (散文)  Chinese Valentine&rsquo;s Day Literature Writing Contest</a>                                                                                                                                                                                                                                                                               |
+|2017-08-27 02:11:39 |@sylvia1997       |<a href="https://steemit.com/@sylvia1997/7nexhw">小丸子时代的爱情故事</a>                                                                                                                                                                                                                                                                                                                                                                                        |
+|2017-08-27 02:24:48 |@herlife          |<a href="https://steemit.com/@herlife/18">梦回18岁，你还在吗？【错过的爱情故事，七夕征文比赛】</a>                                                                                                                                                                                                                                                                                                                                                               |
+|2017-08-27 04:02:06 |@guyverckw        |<a href="https://steemit.com/@guyverckw/steemit">午餐  &ndash; 七夕情人节Steemit中文社区文学群爱情征文大赛</a>                                                                                                                                                                                                                                                                                                                                                        |
+|2017-08-27 04:12:21 |@aaronli          |<a href="https://steemit.com/@aaronli/steemit">瑰麗粉紅 ｜七夕情人节Steemit中文社区文学群爱情征文大赛</a>                                                                                                                                                                                                                                                                                                                                                        |
+|2017-08-27 04:24:18 |@towardsthesun    |<a href="https://steemit.com/@towardsthesun/5jcp5s">爱情需要归宿么？白头偕老怎么样？</a>                                                                                                                                                                                                                                                                                                                                                                         |
+|2017-08-27 05:20:06 |@livinguktaiwan   |<a href="https://steemit.com/@livinguktaiwan/bopomofo">第四期谷哥点名 ~ Bopomofo ㄅㄆㄇㄈ 的爱</a>                                                                                                                                                                                                                                                                                                                                                               |
+|2017-08-27 06:09:42 |@veronicazhu      |<a href="https://steemit.com/@veronicazhu/52bwgt">父母恩爱 - 是对子女最好的馈赠</a>                                                                                                                                                                                                                                                                                                                                                                              |
+|2017-08-27 07:34:51 |@ronepv           |<a href="https://steemit.com/@ronepv/3">-@愛 </a>                                                                                                                                                                                                                                |
+|2017-08-27 08:00:39 |@mrspointm        |<a href="https://steemit.com/@mrspointm/5l7wyk">其实爱对了人，情人节每天都过</a>                                                                                                                                                                                                                                                                                                                                                                                 |
+|2017-08-27 08:16:30 |@hugowong         |<a href="https://steemit.com/@hugowong/steemit">那一天，我追赶着日落并找到你-七夕情人节Steemit中文社区文学群爱情征文大赛</a>                                                                                                                                                                                                                                                                                                                                     |
+|2017-08-27 10:35:36 |@biuiam           |<a href="https://steemit.com/@biuiam/steemit">七夕情人节Steemit中文社区文学群爱情征文大赛 - 科學。愛?</a>                                                                                                                                                                                                                                                                                                                                                        |
+|2017-08-27 11:45:12 |@sunnyjolly       |<a href="https://steemit.com/@sunnyjolly/practice-love">倾尽年华，修炼爱情 Practice Love</a>                                                                                                                                                                                                                                                                                                                                                                     |
+|2017-08-27 12:04:57 |@hannahwu         |<a href="https://steemit.com/@hannahwu/4kzcgx">祖辈爱情（一）：陪伴是最长情的告白</a>                                                                                                                                                                                                                                                                                                                                                                            |
+|2017-08-27 12:14:09 |@kona             |<a href="https://steemit.com/@kona/steemit">七夕情人节Steemit中文社区文学群爱情征文大赛 - -問世間情為何物，直教人生死相許-</a>                                                                                                                                                                                                                                                                                                                                   |
+|2017-08-27 12:26:09 |@rivalhw          |<a href="https://steemit.com/@rivalhw/steemit-08-27">七夕情人节Steemit中文社区文学群爱情征文大赛 第二日（08-27）入选文章</a>                                                                                                                                                                                                                                                                                                                                     |
+|2017-08-27 15:33:54 |@leeya            |<a href="https://steemit.com/@leeya/or-the-world-loves-you-very-much">世界はあなたを大いに愛しています - The World Loves You Very Much</a>                                                                                                                                                                                                                                                                                                                       |
+|2017-08-27 16:37:39 |@nasywaalifta     |<a href="https://steemit.com/@nasywaalifta/it-s-also-my-hobby">这也是我的爱好 It&rsquo;s also my hobby</a>                                                                                                                                                                                                                                                                                                                                                             |
+|2017-08-27 16:40:51 |@shirokug469g     |<a href="https://steemit.com/@shirokug469g/5anwxq">情報は無料だと思いますか？</a>                                                                                                                                                                                                                                                                                                                                                                                |
+|2017-08-27 21:18:42 |@apprentice001    |<a href="https://steemit.com/@apprentice001/drawing-challenge-3-the-strawberry-with-a-loving-heart">Drawing Challenge#3: The Strawberry with a loving heart -可爱的爱心草??? :)-  谢谢!</a>                                                                                                                                                                                                                                                                       |
+|2017-08-27 21:46:24 |@susanli3769      |<a href="https://steemit.com/@susanli3769/6nai6b">我和老公的跨国情- 淡淡的情，浓浓的爱 - 七夕爱情征文作品</a>                                                                                                                                                                                                                                                                                                                                                    |
+|2017-08-27 22:51:30 |@mrpointp         |<a href="https://steemit.com/@mrpointp/steemit">七夕情人节Steemit中文社区文学群爱情征文大赛&mdash;令人煞费苦心的情人节礼物</a>                                                                                                                                                                                                                                                                                                                                       |
+|2017-08-27 23:17:12 |@doggieandfoodie  |<a href="https://steemit.com/@doggieandfoodie/6pg9jr">風災無情，人間有愛</a>                                                                                                                                                                                                                                                                                                                                                                                     |
+|2017-08-27 23:47:42 |@linuslee0216     |<a href="https://steemit.com/@linuslee0216/or-or-steemit">仅属于新一代大学生的浪漫，超越爱情的友情，男女之间模糊的分界线 &ndash;七夕情人节Steemit中???社区文学群爱情征文大赛</a>                                                                                                                                                                                                                                                                                       |
+|2017-08-28 00:16:12 |@wanderwithtwo    |<a href="https://steemit.com/@wanderwithtwo/2iksz6">谷歌点名(七夕节活动): 友情变成爱情的第二次 </a>                                                                                                                                                                                                                                                                                                                                  |
+|2017-08-28 01:21:18 |@tiffanychen      |<a href="https://steemit.com/@tiffanychen/4dvzqg">每个情人节，我只想要你</a>                                                                                                                                                                                                                                                                                                                                                                                     |
+|2017-08-28 01:48:09 |@hannahwu         |<a href="https://steemit.com/@hannahwu/6s2qbr">祖辈爱情（二）：战火纷飞，爱的伏笔</a>                                                                                                                                                                                                                                                                                                                                                                            |
+|2017-08-28 01:49:09 |@mumingduozi      |<a href="https://steemit.com/@mumingduozi/bn7ea">爱的天使 The angel of love</a>                                                                                                                                                                                                                                                                                                                                                                                  |
+|2017-08-28 01:53:33 |@herlife          |<a href="https://steemit.com/@herlife/lantern-riddles">浪漫七夕情人节，欢声笑语猜灯谜Lantern Riddles 【猜中有奖哦】</a>                                                                                                                                                                                                                                                                                                                                          |
+|2017-08-28 02:10:45 |@bullionstackers  |<a href="https://steemit.com/@bullionstackers/2017-8-28">七夕節 - 乞巧節 -情人节快乐 -  2017年8月28日</a>                                                                                                                                                                                                                                                                                                                                                        |
+|2017-08-28 03:12:06 |@twinkledrop      |<a href="https://steemit.com/@twinkledrop/travel-with-rainie-in-miniland-in-legoland-windsor-part-3-love-in-paris-part-3">Travel with Rainie in Miniland in Legoland Windsor Part 3&mdash;Love in Paris. 畅游温莎的乐高主题公园的迷你国Part 3&mdash;爱在巴黎 &amp; 七夕节快乐。</a>                                                                                                                                                                                          |
+|2017-08-28 04:05:54 |@hannahwu         |<a href="https://steemit.com/@hannahwu/5uhqtm">祖辈爱情（三）：最美好的初恋≠最终的归宿</a>                                                                                                                                                                                                                                                                                                                                                                       |
+|2017-08-28 05:13:54 |@victorier        |<a href="https://steemit.com/@victorier/chinese-valentine-s-day-literature-writing-contest">這是一個愛情故事 －七夕情人節徵文比賽 Chinese Valentine&rsquo;s Day Literature Writing Contest</a>                                                                                                                                                                                                                                                                         |
+|2017-08-28 05:29:36 |@yyyy             |<a href="https://steemit.com/@yyyy/6ecjiv">因为爱情： （八） 网</a>                                                                                                                                                                                                                                                                                                                                                                                              |
+|2017-08-28 06:55:15 |@magicmonk        |<a href="https://steemit.com/@magicmonk/4ultij">我上電視追尋爱情的故事</a>                                                                                                                                                                                                                                                                                                                                                                                       |
+|2017-08-28 07:10:51 |@syh7758520       |<a href="https://steemit.com/@syh7758520/2mlsrf">关于爱情&mdash;&ndash;谷歌点名四期</a>                                                                                                                                                                                                                                                                                                                                                                                   |
+|2017-08-28 07:27:30 |@liflorence       |<a href="https://steemit.com/@liflorence/or-or-or">微小说 -如若深情是一桩悲剧，定以死句读。&ndash;七夕中文社区征文赛</a>                                                                                                                                                                                                                                                                                                                                              |
+|2017-08-28 09:26:51 |@livinguktaiwan   |<a href="https://steemit.com/@livinguktaiwan/39peuj">七夕情人节情征文大赛 ~ 現代愛情故事</a>                                                                                                                                                                                                                                                                                                                                                                     |
+|2017-08-28 09:33:54 |@mrspointm        |<a href="https://steemit.com/@mrspointm/original-or-or">错过的爱情 (Original) &ndash; 七夕原创微小说</a>                                                                                                                                                                                                                                                                                                                                                              |
+|2017-08-28 09:41:42 |@xiaolizi         |</p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/4\/';
+    var disqus_title = '谷哥点名第 4 期“爱, 情, 愛”回顾';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/4\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

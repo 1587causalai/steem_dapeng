@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/news/index.xml</link>
+    <description>Recent content in News on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Can the Gossip Tell us Why Ned Undelegated SP? The answer is no</title>
+      <link>https://steemit.netlify.com/post/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no/</link>
+      <pubDate>Fri, 27 Oct 2017 15:44:27 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Data can prove something, as well as data can cheat some people. Gossip is fun, but one has to be seriously careful if one&amp;rsquo;s gossip can ruin others&amp;rsquo; reputation.&lt;/p&gt;
+
+&lt;p&gt;In one of @paulag&amp;rsquo;s latest posts some data were displayed. Frankly speaking, I read some of @paulag&amp;rsquo;s data analysis reports, which were impressive and useful. However, the post &lt;a href=&#34;https://cnsteem.com/steemit/@paulag/can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence#@dapeng/re-paulag-can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence-20171027t093322442z&#34;&gt;Can the Data Tell us Why Ned Undelegated so much Steem Power?&lt;/a&gt; was rather disappointing. The hints or conclusions of this post were unreliable to my comment sense. As the author said that &amp;lsquo;the data is correct&amp;rsquo;, I decided to see if it is true.&lt;/p&gt;
+
+&lt;p&gt;The data displayed in this post were taken from Steemsql held by @arcange.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-data-in-paulag-s-post-was-incorrect&#34;&gt;The Data in @paulag&amp;rsquo;s Post Was Incorrect&lt;/h3&gt;
+
+&lt;p&gt;It is easy to find that the first table in @paulag&amp;rsquo;s post disagrees with the chart. The maximum of @surpassinggoolge&amp;rsquo;s votes (grey area) was 700 votes per day in the chart, while the average was 1327.4  votes per day. &lt;strong&gt;Apparently wrong. The average cannot be greater than the maximum.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmYu6ghDtHpKWnDWZ5BboaiPeFpN3zvPvPvLfCXC6URrNR/1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image taken from @paulag&amp;rsquo;s Post.&lt;/p&gt;
+
+&lt;p&gt;So, what is the truth?&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s firstly see the time when @ned delegated and undelaged the SP.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;delegator&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;delegatee&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;vesting_shares&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;timestamp&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;htliao&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:15:00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;nicolemoker&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:15:18&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;linuslee0216&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:15:45&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;tumutanzi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:16:54&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;sweetsssj&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:20:45&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;surpassinggoogle&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:25:18&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ramengirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:28:24&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;sweetsssj&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 11:54:27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ramengirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 11:57:30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;nicolemoker&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 11:58:57&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;tumutanzi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 12:02:51&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;htliao&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 12:03:09&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;linuslee0216&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 12:03:21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;If we ignore the fist day and the last day, each delegation lasted 76 days.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+SELECT * FROM TxVotes WHERE voter IN (&#39;htliao&#39;,  &#39;linuslee0216&#39;, &#39;nicolemoker&#39;, &#39;surpassinggoogle&#39;, &#39;sweetsssj&#39;, &#39;tumutanzi&#39;,  &#39;ramengirl&#39;) AND timestamp BETWEEN &#39;2017/08/09&#39; and &#39;2017/10/24
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In  @paulag&amp;rsquo;s post, nicolemoker voted 3114 times in total. 3114 / 76. How could the average votes per day be 207.6?&lt;/p&gt;
+
+&lt;p&gt;I examined the data and got a new table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Voter&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;No of Votes&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Average votes per day&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;nicolemoker&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3093&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;40.69737&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ramengirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3971&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;52.25000&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;surpassinggoogle&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19901&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;261.85526&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;linuslee0216&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5555&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;73.09211&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;htliao&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9759&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;128.40789&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;tumutanzi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7680&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;101.05263&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;sweetsssj&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9626&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;126.65789&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The daily averages are around &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;5&lt;/sub&gt; of @paulag&amp;rsquo;s calculations.&lt;/p&gt;
+
+&lt;p&gt;The numbers of votes are slightly different from @paulag&amp;rsquo;s, perhaps because  @paulag&amp;rsquo;s post took a different period of delegation, which was not mentioned in @paulag&amp;rsquo;s post. This slight difference could be simply ignored.&lt;/p&gt;
+
+&lt;p&gt;Based on @paulag&amp;rsquo;s &lt;strong&gt;incorrect calculation&lt;/strong&gt;, all the subsequent numbers and conclusions were wrong, including the &amp;lsquo;$457K&amp;rsquo;, &amp;lsquo;Voting over 1300 times a day, this does not surprise me&amp;rsquo;,&amp;lsquo;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;What still makes sense is the pie chart, some ratios and percentages, and the cluster diagram. &lt;strong&gt;However, I would double check them, as the post was carelessly written in  the first place.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;facts-or-opinions&#34;&gt;Facts or Opinions?&lt;/h3&gt;
+
+&lt;p&gt;It seems that @paulag&amp;rsquo;s post was intended to give  some facts or data, but actually it was giving only some opinions based on wrong data and groundless assumptions.&lt;/p&gt;
+
+&lt;p&gt;In the section &amp;lsquo;Transfer data&amp;rsquo;, @paulag&amp;rsquo;s post gave three conclusions:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1 Reading the top memo on the table below, it very quickly because clear that @htliao was selling votes.&lt;/p&gt;
+
+&lt;p&gt;2 The data clearly shows @sweetsssj was also selling votes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I doubt what &amp;lsquo;selling&amp;rsquo; means here. In my mind, if A sells somehing to B, it means that B pays A money and takes something away from A. But in @paulag&amp;rsquo;s data, you can only see B paid A money. What did B take away from A? If nothing, was A selling? If I transfer some SBD to @paulag, can I immediately say that  @paulag is selling votes to me?&lt;/p&gt;
+
+&lt;p&gt;I am sure that &lt;strong&gt;the logic of @paulag&amp;rsquo; post was broken&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;3 Within the memo for @htliao were also suggestions that @htliao may be leasing out some power.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This conclusion was based on the transfer and delegation history between @htliao and @justyy. Many people have explained that justyy was just collecting some SP so as to support minnows. As a feedback and acknowledgement, justyy paid some so-called &amp;lsquo;interests&amp;rsquo; to the delegators. I delegated some. Besides @htliao and me, there have been some other delegators too, receiving interests from justyy everyday. It was not surprising that @paulag&amp;rsquo;s post did not mention this, because &lt;strong&gt;the author knew nothing about the minnow support program.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;As @paulag&amp;rsquo;s post gave incorrect data, broken logic, and knew nothing about some facts, I think the post makes no sense to its title. Furthermore, it is badly misleading many readers, and ruining the reputations  of the innocents.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lsquo;I also decided to have a dig through the memos,&amp;rsquo; said @paulag&amp;rsquo;s post. I am looking forward to a further report, hopefully with no mistakes. This post of mine is only mentioning the mistakes in @paulag&amp;rsquo;s post itself rather than my opinion to the author in person. I really like @paulag&amp;rsquo;s previous reports, especially the nice charts in them. I wish @paulag could share the excel sheets so as to make the data analysis reproducible, repeatable, and reliable.&lt;/p&gt;
+
+&lt;h3 id=&#34;voting-with-bots&#34;&gt;Voting with bots?&lt;/h3&gt;
+
+&lt;p&gt;The wrong data in @paulag&amp;rsquo;s post, especially the daily average votes, e.g. voting over 1300 times a day, mislead some people. They thought that these lucky guys  voted with bots.  Is voting with bots forbidden or a shame? I do not know. But let&amp;rsquo;s see if they did it.&lt;/p&gt;
+
+&lt;p&gt;The figures below showed some 24-hour clocks, indicating the hours when they voted. The diameters of each sector showed the percentage of the quantity of their total votes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUCXwNUtJz8GATLHEW4gyusoK4sQ2p8Tge6KzfDhhi6ui/unnamed-chunk-69-1.png&#34; alt=&#34;unnamed-chunk-69-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There were nearly no vote in some hours of htliao, linuslee0216, nicolemoker, ramengirl and tumutanzi&amp;rsquo;s clocks (humans have to sleep), while surpassinggoogle&amp;rsquo;s votes covered all 24 hours. If this is the reason why @ned is still delegating SP surpassinggoogle, then why did @ned undelegate from sweetsssj, whose voting hours showed  a similar pattern?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Can the Data Tell us Why Ned Undelegated so much Steem Power? Apparently the answer is &amp;lsquo;no&amp;rsquo;. Data only show the facts (if the data is correct ), rather than the cause or intention. Only @ned himself can tell us the answer.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;before-and-after-ned-s-delegation&#34;&gt;Before and after @ned&amp;rsquo;s Delegation&lt;/h3&gt;
+
+&lt;p&gt;What happend after @ned&amp;rsquo;s delegation? See the comments (posts + replies) under cn category in the figure below. The vertical line indicates the date when @ned delegated SP.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmamLMPh6nqbnyppRMqsCVcgXBPEpq43id8UwnW7DmYUYm/unnamed-chunk-70-1.png&#34; alt=&#34;unnamed-chunk-70-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before ned&amp;rsquo;s delegation, there were averagely 579 comments per day under cn category. After ned&amp;rsquo;s delegation, there were averagely 1600 comments per day under cn category.&lt;/p&gt;
+
+&lt;p&gt;We will see what will happen after ned&amp;rsquo;s undelegation. If ned&amp;rsquo;s delegation was an experiment, I think his undelegation was the beginning of another.&lt;/p&gt;
+
+&lt;p&gt;PS. If you find any mistakes in my post, please let me know and you are highly appreciated.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;本文是对污蔑几位临时大鲸的帖子 &lt;a href=&#34;https://cnsteem.com/steemit/@paulag/can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence#@dapeng/re-paulag-can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence-20171027t093322442z&#34;&gt;Can the Data Tell us Why Ned Undelegated so much Steem Power?&lt;/a&gt; 的反驳。中文翻译过来就是：污蔑帖子用的数据是错的，计算是错的，逻辑是错的，而且不了解一些基本事实，所以纯属胡说八道。谢谢。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

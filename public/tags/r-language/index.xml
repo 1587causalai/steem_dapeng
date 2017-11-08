@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R-language on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/r-language/index.xml</link>
+    <description>Recent content in R-language on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/r-language/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unreliable analysis on Steem data 不靠谱的 steem 数据分析</title>
+      <link>https://steemit.netlify.com/post/unreliable-analysis-on-steem-data-steem/</link>
+      <pubDate>Sun, 10 Sep 2017 16:24:24 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/unreliable-analysis-on-steem-data-steem/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/unreliable-analysis-on-steem-data-steem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;First of all, I would like to thank @furion so much for providing &lt;a href=&#34;https://steemdata.com/&#34;&gt;steemdata&lt;/a&gt;, and @arcange for &lt;a href=&#34;http://steemsql.com/&#34;&gt;steemsql&lt;/a&gt;. Both have been helping me learn a lot about blockchain, and earn my first bucket of gold on Steem via &amp;ldquo;Steem&amp;rsquo;s Watch&amp;rdquo; reports.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;首先，我要深深感谢 @furion 提供了 &lt;a href=&#34;https://steemdata.com/&#34;&gt;steemdata&lt;/a&gt; 这个数据平台，感谢 @arcange 提供了 &lt;a href=&#34;http://steemsql.com/&#34;&gt;steemsql&lt;/a&gt;。二者极大地帮助我理解区块链，并让我通过“大鹏观察”系列报告赚到了我在steem上的第一桶金。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I started my data analysis with steemdata and produces several reports. Many Steemians like them. However, I have found some strange problems recently.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我是从 steemdata 开始进行数据分析的，写了不少数据报告，幸运地得到了很多朋友的喜爱。然而，最近，我发现了一些奇怪问题。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In the &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-hannahwu&#34;&gt;account report of @hannahwu&lt;/a&gt; I wrote two days ago, data from steemdata showed that @hannahwu had 227 followers and 165 followings.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;两天前，我写了一份&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-hannahwu&#34;&gt; @hannahwu 的用户数据报告&lt;/a&gt; 。来自 steemdata 的数据显示， @hannahwu 有 227 个粉丝，而她粉了 165 个账号。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfThhbvG1hN6Y1SiiiWXfJYLbGwwVCJMADExzAjn9dxBj/steemdataproblem2.jpg&#34; alt=&#34;steemdataproblem2.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;However, the profile of @hannahwu on Steemit showed 419 followers and 218  following. Now two days has passed, the data from steemdata are still the same.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;然而，她的 Steemit 主页却显示 419 个粉丝，粉了 218 个账号。现在，我写的数据报告已经发布了两天，我看了一下， steemdata 的这两项数据仍然没变。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXxF7SukEoaTTYLJnMq9idc84KTYaPcA5GPJJxasK9gMu/steemdataproblem2-1.jpg&#34; alt=&#34;steemdataproblem2-1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Another example is the account @ochedgreat, who has posted multiple posts recently. However, this account cannot be found in the Collection  of Accounts in steemdata, although @ochedgreat&amp;rsquo;s posts are listed in the Collection of Posts. Does it mean that Accounts Collection is not compatible with the Posts Collection in steemdata?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;另一个例子是账号 @ochedgreat，最近发布了多篇帖子。然而，在 steemdata  数据库的 Accounts 里却找不到这个账号。奇怪的是，@ochedgreat 的帖子却可以在 steemdata 的 Posts 里找到。这是不是说明，Accounts 和 Posts 两者并未同步？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZZzsYYJrYknBNhAUtLtn5jf2PS4MeP9TdVWKftRYqSRG/steemdataproblem1.jpg&#34; alt=&#34;steemdataproblem1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If you search ochedgreat on steemsql, you could find the account information. This account was created three days ago. Maybe it was too soon for steemdata to sync?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;如果在 steemsql 里查找ochedgreat，是能够找到账号信息的。该账号创建于三天前。是不是因为太新，还没被 steemdata 收录?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNmxbkbS1QSD7wsCSMe2iDrmyYXJNjJCocJmDPFRJtjDY/steemdataproblem1-1.jpg&#34; alt=&#34;steemdataproblem1-1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I cannot find any hint on the official website of steemdata about the delay time of data synchronization. In &lt;a href=&#34;https://steemit.com/cn/@oflyhigh/steemdata&#34;&gt;a post by @oflyhigh&lt;/a&gt;, it was mentioned that data are synchronized from the blockchain to steemdata in real time, which confused me even more.  Thus, I searched for the account created most lately.  The latest account in steemdata was @asn191, created on 2017-09-10 07:54:06 UTC.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在 steemdata 的官网上，我没有找到关于数据更新时间的介绍。只有 &lt;a href=&#34;https://steemit.com/cn/@oflyhigh/steemdata&#34;&gt;@oflyhigh 的一篇帖子里提到&lt;/a&gt;，区块链的数据是实时同步到 steemdata 的。这令我更为困惑。于是，我就搜???了 steemdata 上的所有账号，发现最新的账号是 @asn191，创建于 2017-09-10 07:54:06 UTC。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Why is ochedgreat, created on 2017-09-07, not in Steemdata? It seems not  a problem of time, but a problem of some missing data.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;为什么创建于2017-09-07的 ochedgreat 不在 steemdata 上呢? 看起来不是个时间问题，而是数据丢失的问题了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In steemdata, @hannahwu loses nearly 200 followers, while @ochedgreat loses the identification. Shall I abandon steemdata and use steemsql instead? I would not like to, because many of my R scripts have been written to retrieve data from steemdata.com. But if it not reliable, all my data analysis are to be questioned, which is a disaster.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在 steemdata 里， @hannahwu 丢失了将近 200 个粉丝，而 @ochedgreat 连自己的户口都丢了。我是不是该抛弃 steemdata，换用 steemsql？ 我不想这么做，因为我的很多R语言代码都是从 steemdata 获取数据的，我懒得改。但是，如果数据源本身不可靠，那么，我所有的数据分析都是可疑的，这无疑是个灾难。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>看到他暴露的 Steem 用户数据后我震惊了 a preliminary analysis of a steem ID&#39;s data</title>
+      <link>https://steemit.netlify.com/post/steem-a-preliminary-analysis-of-a-steem-id-s-data/</link>
+      <pubDate>Mon, 31 Jul 2017 10:14:24 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steem-a-preliminary-analysis-of-a-steem-id-s-data/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-a-preliminary-analysis-of-a-steem-id-s-data.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In my previous posts (&lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool&#34;&gt;2&lt;/a&gt;), I talked again and again about steem users&amp;rsquo; data. Sorry that I am not good at talking, and maybe some do not know exactly what I was talking about. In this post, I will show you what information you can get out of any steem ID. Yes, anyone like me can get such information easily, even he/she knows nothing about hacking skills. &lt;strong&gt;Think twice before you do something on Steem.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks to @tumutanzi for his generosity of letting me use his data as an example.&lt;/p&gt;
+
+&lt;p&gt;在前两篇帖子里（&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool&#34;&gt;2&lt;/a&gt;），我反复强调了 steem 用户的个人数据，并且开发了个&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;小工具 steemr&lt;/a&gt;，方便大家查阅其中的部分数据。 @tumutanzi 嫌&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr#@tumutanzi/re-dapeng-steemr-a-web-based-tool-for-steemers-or-steemians-steemr-20170727t162813885z&#34;&gt;口味不够重&lt;/a&gt;。别急，那只是开胃小菜，好吃的都在后头，让我们渐入佳境。这次稍微加点佐料，我们对 @tumutanzi 的发帖数据进行进一步深挖，看看能八出什么秘密。&lt;/p&gt;
+
+&lt;p&gt;注意，我不是黑客，任何用户的这些数据都可以轻易得到，根本不需要任何黑客技术。所以，&lt;strong&gt;请你注意自己在 steem 上的一举一动&lt;/strong&gt;！我对你的个人隐私没有兴趣，但这并不代???别人对你也没有兴趣，而别人的技术和分析手段可能比我高明得多！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://yaeckerdesign.com/wp-content/uploads/Tell-You-The-Secret-To-Maintain-Wedding-Gowns-yrqEpo.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure source: &lt;a href=&#34;http://yaeckerdesign.com&#34;&gt;http://yaeckerdesign.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;his-active-time-活跃时间&#34;&gt;His active time 活跃时间&lt;/h2&gt;
+
+&lt;p&gt;The following figure shows his active time. The green line indicates his register time on Steem.&lt;/p&gt;
+
+&lt;p&gt;下图是他自注册以来的发帖时间图，图里每个点代表一篇帖子，水平往左看对应的是发帖时间，垂直往下看是发帖日期，绿线是他在 steem 的注册时间。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcTM5RxGavjgjAzpt1drRXm23LFQ5hzawshYvDRi9PWzB/unnamed-chunk-2-1.png&#34; alt=&#34;unnamed-chunk-2-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Until July 30 2017, he had posted 78 posts. On the first day, he posted three posts. For some reason, there was a long break for three months in 2017. Afterwards, he became very active, especially in July 2017. Most of his posts were posted between 8:00 and 24:00, which might be his getting-up and going-to-sleep time.&lt;/p&gt;
+
+&lt;p&gt;截至2017年7月30日，@tumutanzi 发帖总数是 78篇。在注册当天下午，他就&amp;rdquo;Duang-Duang-Duang&amp;rdquo;连发三帖（上图绿线上的三个点。收入全是 0，详见下文）。在2017年3月以前，发帖断断续续。不知什么原因，他的发帖在2016年11月份有短暂中断，而在2017年连续中断了3个月，到7月份突然非常活跃。发帖的时间多在早上8点以后（UTC，下同）和0点以前，这可能是他的起床和就寝时间。他的作息时间是比较规律的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmdK1K3w21pHzDCZMLmvrPrbp2ATgoZc3ye7UnjCYpwEtF/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure above shows the frequency of his posts. There were 25% of the posts were posted after 22:00, and 50% after 17:00. He is active at night. That is why he wrote below his ID, &amp;lsquo;Falling in love with Steemit and I have no time for X&amp;hellip;&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;上图显示的是他一天24小时里发帖的频次，横坐标是每天的几点钟。阴影面积越??的时段，发帖数就越多。 从图上看，有25% 的帖子都是 22:00 以后发布的，而50% 的帖子是在下午 17点以后发布的。晚上是坛子发帖的活跃期。难怪他的 ID 下面写着：“爱上Steemit后，X生活都没时间了……”&lt;/p&gt;
+
+&lt;p&gt;His attitude to posts 对帖子的态度&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmPQKtr74UsXiLwqWbWvD34Nu6RrBY9RSK9V6zppH1smtf/unnamed-chunk-4-1.png&#34; alt=&#34;unnamed-chunk-4-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure above shows how many edits for each post. At the beginning, he editted most of the posts fewer than two times each. In July 2017, most posts were editted more than three times. On post was editted even 15 times! He is getting more and more careful with his words.&lt;/p&gt;
+
+&lt;p&gt;上图是每个帖子的编辑次数，图里每个点代表一篇帖子，水平往左看对应的是该帖被编辑的次数。 在刚刚进入steem的时候，他发帖以后修改的次数比较少，大部分在每帖2次以下。而进入2017年7月以后，修改次数明显增多，大部分帖子都修改3次以上，修改最多的次数达到了15次之多。反复修改说明他对自己的帖子精益求精。要知道，他长久以为只有24小时内才能修改，如果他知道7天之内都能修改的话，修改次数可能更多。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;category&lt;/th&gt;
+&lt;th&gt;Freq&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;bitcoin&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;cn&lt;/td&gt;
+&lt;td&gt;62&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;education&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;electric-toothbrush&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;hiking&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;imagej&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;luck&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;make-money&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;revolut&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;smart-tv&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;sports&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;steemit&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;talented&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;tech&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;uk&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The table above shows the categories (the first tags) of his posts. He posted most of them in CN.&lt;/p&gt;
+
+&lt;p&gt;上面的数据是他发帖的首选分区的次数。虽然身在海外，但他把???的青春绝大部分都奉献给了他的家乡：CN区。鼓掌！&lt;/p&gt;
+
+&lt;h2 id=&#34;quality-and-money-帖子的质量和收入&#34;&gt;Quality and money 帖子的质量和收入&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTMZQv2Wo6rradTGXncVMD5fkrmuFHFBQ1mJ7FMji4MQX/unnamed-chunk-6-1.png&#34; alt=&#34;unnamed-chunk-6-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s talk about money. The figure above shows the dollars he got from each post. Averagely he earned 27.03 dollars per post, with the maximum of 191 dollars from one post. However, half of his posts had a value below 6 dollars. A quarter of them even were less than 1 dollar. He used to be a rookie as well as you and me.&lt;/p&gt;
+
+&lt;p&gt;现在我们来谈谈钱。上图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 @tumutanzi 现在动不动就每帖收入近百美元，单帖收入最高为191美元，平均每帖收入为27.03 美元。但是，有一半的帖子收入都在6美元以下；25% 的帖子，收入不到1美元。而75%的帖子带来的收入都不足45美元。他也是从菜鸟过来的呀。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZUzWtuGW6RFxrjBSTg1rdfFztNFJ5NCRpKB8tfCC9cBm/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;His posts have a long-life time. Most of them still attracted comments 63 hours or 2.6 days after posted. Somebody even commented on one of his post after 8021 hours 334 days! Well done!&lt;/p&gt;
+
+&lt;p&gt;他的帖子生命力很顽强，有半数以上的帖子在发布63小时即2.6天后仍然有人在帖子后面留言。有的帖子，在发布8021小时即334天后，仍然有人评论。好样的！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmagwbmTZedfWDQRvp6K7qmac3KDwBstskd7eoFWLaokKo/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure above shows the trend of his money per post. At the beginning, each post gave him no money. After three months, he got 10 dollars per post. It increased sharply in July 2017. So just keep writing good posts and money will come to you.&lt;/p&gt;
+
+&lt;p&gt;上图显示的是每帖收入的时间趋势。早期的帖子收入很多都在0附近徘徊。坚持三个月???，单帖收入到了10美元左右。到了2017年7月陡增。一方面，即使像 @tumutanzi 这样的优秀博主写的好帖子，有个别帖子到现在也难逃低收入的厄运：另一方面，大部分的优质帖子还是得到了丰厚的回报的。所以新手们不要沮丧，坚持写，写好帖，你的收入会像他这样上升。我们往往羡慕别人今天的成就，却忽视他曾经走过的路，忽视他昨天付出的艰辛和努力。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQSYQaGPowkdzwQzvJbUGLMqAyroVTzNGwELfqdHyNjqQ/unnamed-chunk-9-1.png&#34; alt=&#34;unnamed-chunk-9-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure above shows the upvote number of each post. Although he was more active in July 2017 than before, his upvote number seemed not larger. Let&amp;rsquo;s look forward to his future trend!&lt;/p&gt;
+
+&lt;p&gt;上图是坛子帖子获得的投票数。虽然7月份发帖比较活跃，但是单篇的投票数并没有比去年12月多多少。 @tumutanzi，加油！&lt;/p&gt;
+
+&lt;p&gt;If you are interested in your own ID, please upvote this post and leave a comment, and I will post the figures of you!&lt;/p&gt;
+
+&lt;p&gt;最后，如果有哪位想对自己的 ID 数据进行上述分析，请 upvote 本帖并留言，我可以把分析图表贴出来。仅限自己的 ID 哦！如果要查的人太多，我就把这个功能放到我的&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;小工具 steemr&lt;/a&gt;里，只需输入个目标 ID，每个人就可以想查谁就查谁，大家说这样好不好？&lt;/p&gt;
+
+&lt;p&gt;To be continued &amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;未完，待续&amp;hellip;&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Steemians, have you ever thought about your data privacy?</title>
+      <link>https://steemit.netlify.com/post/new-steemians-have-you-have-thought-about-your-data-privacy/</link>
+      <pubDate>Wed, 26 Jul 2017 20:56:21 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/new-steemians-have-you-have-thought-about-your-data-privacy/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/new-steemians-have-you-have-thought-about-your-data-privacy.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If  you are a new Steemian, I was wondering if you are aware of your data privacy. If not, you&amp;rsquo;d better know it in advance. Here I display @tumutanzi&amp;rsquo;s public data (&lt;a href=&#34;https://steemdb.com/&#34;&gt;https://steemdb.com/&lt;/a&gt;,  sampled at  2017-07-26 22:06:46 CEST) in an easy way with R language. This is Part I. This is an English version of the &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit&#34;&gt;original post in Chinese&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;@tumutanzi has 319 followers. The word cloud according to the number of their followers is like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmY4qfoEu9XZzpYjg6aR52bVMpPvcfMXej56AKvmu46j1E/unnamed-chunk-2-1.png&#34; alt=&#34;unnamed-chunk-2-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A larger ID means more followers.&lt;/p&gt;
+
+&lt;p&gt;It can be plotted by the number of posts as well:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSBtokTVueC2qxCnBqxn7vU24HaiJzhCgFqSUQ257fFLG/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;or by the number of Vests:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcrddtPW9tH3HaFjAcEiMc9qFiwRt5ePe4AHGEfMxUBWc/unnamed-chunk-4-1.png&#34; alt=&#34;unnamed-chunk-4-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;@abit is scary, who has 4077000000 Vests. Let&amp;rsquo;s kick him out:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTfss2wX94T9NjpQ74u4pXVd1E1gdT7tsvTZ6VMAt8cGS/unnamed-chunk-5-1.png&#34; alt=&#34;unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s see those whom @tumutanzi is following.&lt;/p&gt;
+
+&lt;p&gt;@tumutanzi follows/followed 305 ID in total, in which 152 IDs interact with @tumutanzi bidirectionally, while 153 IDs do not follow him, including:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;ace108&amp;quot;          &amp;quot;act&amp;quot;             &amp;quot;adm&amp;quot;            
+
+##   [4] &amp;quot;adoal&amp;quot;           &amp;quot;adsactly&amp;quot;        &amp;quot;alice&amp;quot;          
+
+##   [7] &amp;quot;anwenbaumeister&amp;quot; &amp;quot;arcurus&amp;quot;         &amp;quot;arhag&amp;quot;          
+
+##  [10] &amp;quot;azazqwe&amp;quot;         &amp;quot;batel&amp;quot;           &amp;quot;ben&amp;quot;            
+
+##  [13] &amp;quot;birds90&amp;quot;         &amp;quot;bitcube&amp;quot;         &amp;quot;blocktrades&amp;quot;    
+
+##  [16] &amp;quot;blueorgy&amp;quot;        &amp;quot;bob&amp;quot;             &amp;quot;brothermic&amp;quot;     
+
+##  [19] &amp;quot;btsabc&amp;quot;          &amp;quot;bziing&amp;quot;          &amp;quot;candiceji&amp;quot;      
+
+##  [22] &amp;quot;ceciliali&amp;quot;       &amp;quot;chinadaily&amp;quot;      &amp;quot;cnfund&amp;quot;         
+
+##  [25] &amp;quot;coldhair&amp;quot;        &amp;quot;cornelia&amp;quot;        &amp;quot;cqf&amp;quot;            
+
+##  [28] &amp;quot;created&amp;quot;         &amp;quot;cybercodetwins&amp;quot;  &amp;quot;damarth&amp;quot;        
+
+##  [31] &amp;quot;dan&amp;quot;             &amp;quot;dantheman&amp;quot;       &amp;quot;databass&amp;quot;       
+
+##  [34] &amp;quot;davidyuan&amp;quot;       &amp;quot;deadlinefarmer&amp;quot;  &amp;quot;dek&amp;quot;            
+
+##  [37] &amp;quot;dixonloveart&amp;quot;    &amp;quot;dmilash&amp;quot;         &amp;quot;ekitcho&amp;quot;        
+
+##  [40] &amp;quot;elfkitchen&amp;quot;      &amp;quot;engagement&amp;quot;      &amp;quot;everittdmickey&amp;quot; 
+
+##  [43] &amp;quot;feelapi&amp;quot;         &amp;quot;flysaga&amp;quot;         &amp;quot;freedom&amp;quot;        
+
+##  [46] &amp;quot;frostfan&amp;quot;        &amp;quot;fuzzyvest&amp;quot;       &amp;quot;fyrstikken&amp;quot;     
+
+##  [49] &amp;quot;gaoduzhu&amp;quot;        &amp;quot;gavvet&amp;quot;          &amp;quot;gefa&amp;quot;           
+
+##  [52] &amp;quot;glitterfart&amp;quot;     &amp;quot;goku1&amp;quot;           &amp;quot;guyverckw&amp;quot;      
+
+##  [55] &amp;quot;haster&amp;quot;          &amp;quot;hendrikdegrote&amp;quot;  &amp;quot;hingman&amp;quot;        
+
+##  [58] &amp;quot;holabebe&amp;quot;        &amp;quot;huaji&amp;quot;           &amp;quot;icedream&amp;quot;       
+
+##  [61] &amp;quot;incrediblesnow&amp;quot;  &amp;quot;ivanba12&amp;quot;        &amp;quot;j-bex&amp;quot;          
+
+##  [64] &amp;quot;jademont&amp;quot;        &amp;quot;jaewoocho&amp;quot;       &amp;quot;jamesc&amp;quot;         
+
+##  [67] &amp;quot;jamesc1&amp;quot;         &amp;quot;jasonmcz&amp;quot;        &amp;quot;jeicko19&amp;quot;       
+
+##  [70] &amp;quot;jholdsworthy&amp;quot;    &amp;quot;jinbo&amp;quot;           &amp;quot;kawaiiiiiiii030&amp;quot;
+
+##  [73] &amp;quot;kenchung&amp;quot;        &amp;quot;kitcat&amp;quot;          &amp;quot;krischy&amp;quot;        
+
+##  [76] &amp;quot;laodr&amp;quot;           &amp;quot;laoyao&amp;quot;          &amp;quot;lcb&amp;quot;            
+
+##  [79] &amp;quot;lief&amp;quot;            &amp;quot;linuslee0216&amp;quot;    &amp;quot;logic&amp;quot;          
+
+##  [82] &amp;quot;lukestokes&amp;quot;      &amp;quot;matrix&amp;quot;          &amp;quot;miacats&amp;quot;        
+
+##  [85] &amp;quot;michael-a&amp;quot;       &amp;quot;michael-b&amp;quot;       &amp;quot;microluck&amp;quot;      
+
+##  [88] &amp;quot;minfon&amp;quot;          &amp;quot;minority-report&amp;quot; &amp;quot;monkimo&amp;quot;        
+
+##  [91] &amp;quot;morten&amp;quot;          &amp;quot;mottler&amp;quot;         &amp;quot;ned&amp;quot;            
+
+##  [94] &amp;quot;nextgen622&amp;quot;      &amp;quot;nicolemoker&amp;quot;     &amp;quot;nuagnorab&amp;quot;      
+
+##  [97] &amp;quot;orientaledu&amp;quot;     &amp;quot;papa-pepper&amp;quot;     &amp;quot;penguinpablo&amp;quot;   
+
+## [100] &amp;quot;peterpan&amp;quot;        &amp;quot;pfunk&amp;quot;           &amp;quot;pharesim&amp;quot;       
+
+## [103] &amp;quot;pilgrimtraveler&amp;quot; &amp;quot;pipertomcat&amp;quot;     &amp;quot;pistox&amp;quot;         
+
+## [106] &amp;quot;pkhope&amp;quot;          &amp;quot;project11&amp;quot;       &amp;quot;proskynneo&amp;quot;     
+
+## [109] &amp;quot;publicworker&amp;quot;    &amp;quot;puffin&amp;quot;          &amp;quot;ranchorelaxo&amp;quot;   
+
+## [112] &amp;quot;rawnetics&amp;quot;       &amp;quot;rayphu&amp;quot;          &amp;quot;rea&amp;quot;            
+
+## [115] &amp;quot;recursive&amp;quot;       &amp;quot;renohq&amp;quot;          &amp;quot;riverhead&amp;quot;      
+
+## [118] &amp;quot;roadscape&amp;quot;       &amp;quot;robrigo&amp;quot;         &amp;quot;rok-sivante&amp;quot;    
+
+## [121] &amp;quot;rook&amp;quot;            &amp;quot;safari&amp;quot;          &amp;quot;scorpion&amp;quot;       
+
+## [124] &amp;quot;sean1980&amp;quot;        &amp;quot;smooth&amp;quot;          &amp;quot;someone&amp;quot;        
+
+## [127] &amp;quot;stan&amp;quot;            &amp;quot;steem&amp;quot;           &amp;quot;steemed&amp;quot;        
+
+## [130] &amp;quot;steemit&amp;quot;         &amp;quot;steemitblog&amp;quot;     &amp;quot;stellabelle&amp;quot;    
+
+## [133] &amp;quot;str11ngfello&amp;quot;    &amp;quot;sunnyray&amp;quot;        &amp;quot;susanlo&amp;quot;        
+
+## [136] &amp;quot;tamim&amp;quot;           &amp;quot;teamsteem&amp;quot;       &amp;quot;thecryptofiend&amp;quot; 
+
+## [139] &amp;quot;thejohalfiles&amp;quot;   &amp;quot;trafalgar&amp;quot;       &amp;quot;transisto&amp;quot;      
+
+## [142] &amp;quot;val-a&amp;quot;           &amp;quot;val-b&amp;quot;           &amp;quot;wackou&amp;quot;         
+
+## [145] &amp;quot;wanbin&amp;quot;          &amp;quot;waterflier&amp;quot;      &amp;quot;webclerk&amp;quot;       
+
+## [148] &amp;quot;witness.svk&amp;quot;     &amp;quot;wjm&amp;quot;             &amp;quot;wjs2634&amp;quot;        
+
+## [151] &amp;quot;wongshiying&amp;quot;     &amp;quot;xeldal&amp;quot;          &amp;quot;zoef&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On the other hand, those who follow him but he does not follow (yet) are:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;abit&amp;quot;            &amp;quot;abusalam&amp;quot;        &amp;quot;acrich&amp;quot;         
+
+##   [4] &amp;quot;adraaz&amp;quot;          &amp;quot;alexieong&amp;quot;       &amp;quot;alfredchen&amp;quot;     
+
+##   [7] &amp;quot;aniksh&amp;quot;          &amp;quot;artsyppl&amp;quot;        &amp;quot;asskick&amp;quot;        
+
+##  [10] &amp;quot;aster&amp;quot;           &amp;quot;atc&amp;quot;             &amp;quot;atrix&amp;quot;          
+
+##  [13] &amp;quot;avilsd&amp;quot;          &amp;quot;avinger&amp;quot;         &amp;quot;babasikandar&amp;quot;   
+
+##  [16] &amp;quot;baixu1018&amp;quot;       &amp;quot;bajeheart&amp;quot;       &amp;quot;bassemm&amp;quot;        
+
+##  [19] &amp;quot;bbkivines&amp;quot;       &amp;quot;beautifulbella&amp;quot;  &amp;quot;benou&amp;quot;          
+
+##  [22] &amp;quot;berke&amp;quot;           &amp;quot;biddle&amp;quot;          &amp;quot;bilalhaider&amp;quot;    
+
+##  [25] &amp;quot;bindu&amp;quot;           &amp;quot;bocaiwen&amp;quot;        &amp;quot;brianchen&amp;quot;      
+
+##  [28] &amp;quot;britt.the.ish&amp;quot;   &amp;quot;carinewhy&amp;quot;       &amp;quot;carolynseymour&amp;quot; 
+
+##  [31] &amp;quot;catwomanteresa&amp;quot;  &amp;quot;chumhumnews&amp;quot;     &amp;quot;cryptochamo&amp;quot;    
+
+##  [34] &amp;quot;danishali&amp;quot;       &amp;quot;danm2017&amp;quot;        &amp;quot;davidad&amp;quot;        
+
+##  [37] &amp;quot;daxiblog&amp;quot;        &amp;quot;dcc&amp;quot;             &amp;quot;deanliu&amp;quot;        
+
+##  [40] &amp;quot;diablocro&amp;quot;       &amp;quot;diaohuijun&amp;quot;      &amp;quot;dimidrolshina&amp;quot;  
+
+##  [43] &amp;quot;dinsha&amp;quot;          &amp;quot;dobro88888888&amp;quot;   &amp;quot;dominicmi&amp;quot;      
+
+##  [46] &amp;quot;dragos0897&amp;quot;      &amp;quot;dtworker&amp;quot;        &amp;quot;fitinfun&amp;quot;       
+
+##  [49] &amp;quot;frankbuse&amp;quot;       &amp;quot;gamemusic&amp;quot;       &amp;quot;gatmi&amp;quot;          
+
+##  [52] &amp;quot;goaln&amp;quot;           &amp;quot;gowldie&amp;quot;         &amp;quot;gribtertong&amp;quot;    
+
+##  [55] &amp;quot;grildrig&amp;quot;        &amp;quot;hamzaoui&amp;quot;        &amp;quot;harttwohartllc&amp;quot; 
+
+##  [58] &amp;quot;hebro&amp;quot;           &amp;quot;hilarski&amp;quot;        &amp;quot;hofffman&amp;quot;       
+
+##  [61] &amp;quot;hongmeng&amp;quot;        &amp;quot;hoof&amp;quot;            &amp;quot;hqfzone&amp;quot;        
+
+##  [64] &amp;quot;imagediet&amp;quot;       &amp;quot;imako&amp;quot;           &amp;quot;initnas&amp;quot;        
+
+##  [67] &amp;quot;investlimestone&amp;quot; &amp;quot;iqbalbireuen&amp;quot;    &amp;quot;irphotography&amp;quot;  
+
+##  [70] &amp;quot;ishaq&amp;quot;           &amp;quot;istox&amp;quot;           &amp;quot;iszarl&amp;quot;         
+
+##  [73] &amp;quot;itan05&amp;quot;          &amp;quot;itissimple&amp;quot;      &amp;quot;jackmiller&amp;quot;     
+
+##  [76] &amp;quot;jamal83&amp;quot;         &amp;quot;jason-donovan&amp;quot;   &amp;quot;jhonnight&amp;quot;      
+
+##  [79] &amp;quot;jones420&amp;quot;        &amp;quot;joseburgos&amp;quot;      &amp;quot;jukas&amp;quot;          
+
+##  [82] &amp;quot;junyi&amp;quot;           &amp;quot;justyy&amp;quot;          &amp;quot;kabindra&amp;quot;       
+
+##  [85] &amp;quot;katythompson&amp;quot;    &amp;quot;khairulmuammar&amp;quot;  &amp;quot;kishore1988&amp;quot;    
+
+##  [88] &amp;quot;krasotka&amp;quot;        &amp;quot;kristjannacaj&amp;quot;   &amp;quot;landeberg&amp;quot;      
+
+##  [91] &amp;quot;lautenglye&amp;quot;      &amp;quot;ledygaga25&amp;quot;      &amp;quot;lemooljiang&amp;quot;    
+
+##  [94] &amp;quot;liangfengyouren&amp;quot; &amp;quot;lifeofkly&amp;quot;       &amp;quot;lifishake&amp;quot;      
+
+##  [97] &amp;quot;lilywang&amp;quot;        &amp;quot;liufeng&amp;quot;         &amp;quot;luckerme&amp;quot;       
+
+## [100] &amp;quot;lykencrypto&amp;quot;     &amp;quot;lynx&amp;quot;            &amp;quot;marianpancu&amp;quot;    
+
+## [103] &amp;quot;mehdioraki3973&amp;quot;  &amp;quot;minknsa&amp;quot;         &amp;quot;mkotibabu&amp;quot;      
+
+## [106] &amp;quot;monalishabiswas&amp;quot; &amp;quot;mydarlings2&amp;quot;     &amp;quot;myfirst&amp;quot;        
+
+## [109] &amp;quot;mytamilabiz&amp;quot;     &amp;quot;natashahall&amp;quot;     &amp;quot;nationalpark&amp;quot;   
+
+## [112] &amp;quot;nawar93&amp;quot;         &amp;quot;newsagg&amp;quot;         &amp;quot;notregme&amp;quot;       
+
+## [115] &amp;quot;oflyhigh&amp;quot;        &amp;quot;ohammedfelahi&amp;quot;   &amp;quot;patricksanlin&amp;quot;  
+
+## [118] &amp;quot;phyohtetpaing&amp;quot;   &amp;quot;powerfj&amp;quot;         &amp;quot;qipashuo&amp;quot;       
+
+## [121] &amp;quot;redje&amp;quot;           &amp;quot;renua&amp;quot;           &amp;quot;revolusi&amp;quot;       
+
+## [124] &amp;quot;riansteem&amp;quot;       &amp;quot;rifattb&amp;quot;         &amp;quot;robi8888&amp;quot;       
+
+## [127] &amp;quot;rodneyaspiras&amp;quot;   &amp;quot;rogerwilson&amp;quot;     &amp;quot;sbamsoneu&amp;quot;      
+
+## [130] &amp;quot;secora&amp;quot;          &amp;quot;securetalk&amp;quot;      &amp;quot;sequentialvibe&amp;quot; 
+
+## [133] &amp;quot;shaheer001&amp;quot;      &amp;quot;shankhunsam&amp;quot;     &amp;quot;shengjian&amp;quot;      
+
+## [136] &amp;quot;sheval&amp;quot;          &amp;quot;showoff&amp;quot;         &amp;quot;skynyc&amp;quot;         
+
+## [139] &amp;quot;somebody&amp;quot;        &amp;quot;stackin&amp;quot;         &amp;quot;steem.engine&amp;quot;   
+
+## [142] &amp;quot;steemitguide&amp;quot;    &amp;quot;sthitaprajna&amp;quot;    &amp;quot;suitup&amp;quot;         
+
+## [145] &amp;quot;sunnyjolly&amp;quot;      &amp;quot;superhardness&amp;quot;   &amp;quot;swssmarketing&amp;quot;  
+
+## [148] &amp;quot;tastetwist&amp;quot;      &amp;quot;themessengers&amp;quot;   &amp;quot;toninux&amp;quot;        
+
+## [151] &amp;quot;trevis&amp;quot;          &amp;quot;vax-rambo&amp;quot;       &amp;quot;vishal1088&amp;quot;     
+
+## [154] &amp;quot;walkman90&amp;quot;       &amp;quot;warrkin&amp;quot;         &amp;quot;whydowork&amp;quot;      
+
+## [157] &amp;quot;worldwidetravel&amp;quot; &amp;quot;xiaohui&amp;quot;         &amp;quot;xiaokongcom&amp;quot;    
+
+## [160] &amp;quot;xjb&amp;quot;             &amp;quot;yellowkersie&amp;quot;    &amp;quot;ygern&amp;quot;          
+
+## [163] &amp;quot;yuxi&amp;quot;            &amp;quot;zerozero777&amp;quot;     &amp;quot;zhijun&amp;quot;         
+
+## [166] &amp;quot;zhuqiankun&amp;quot;      &amp;quot;zwal&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is weird that  @abit and @justyy are in   @tumutanzi Steemit&amp;rsquo;s following list, but not in the list of  &lt;a href=&#34;https://steemdb.com/@tumutanzi/following&#34;&gt;steemdb&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I would suggest @tumutanzi should follow them before they read this post. Hurry!&lt;/p&gt;
+
+&lt;p&gt;If you would like to have a similar report about your ID&amp;rsquo;s followers and following, please  visit the online tool &lt;a href=&#34;https://pzhao.shinyapps.io/steemr/&#34;&gt;steemr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;To be continued&amp;hellip;&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

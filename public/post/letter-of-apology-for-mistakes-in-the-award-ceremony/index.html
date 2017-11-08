@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>致歉：新人“三个一”颁奖乌龙事件 Letter of Apology for Mistakes in the Award Ceremony | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">致歉：新人“三个一”颁奖乌龙事件 Letter of Apology for Mistakes in the Award Ceremony</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-10-14 21:37 GMT</h2>
+</div>
+
+<main>
+<p>原文链接: <a href="https://steemit.com/cn/@dapeng/letter-of-apology-for-mistakes-in-the-award-ceremony">steemit</a>, <a href="https://cnsteem.com/cn/@dapeng/letter-of-apology-for-mistakes-in-the-award-ceremony">cnsteem</a>, <a href="https://chainbb.com/cn/@dapeng/letter-of-apology-for-mistakes-in-the-award-ceremony">chainbb</a>, <a href="https://busy.org/cn/@dapeng/letter-of-apology-for-mistakes-in-the-award-ceremony">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/letter-of-apology-for-mistakes-in-the-award-ceremony.md">markdown</a></p>
+
+<p>2017 年奥斯卡颁奖典礼上，颁奖嘉宾把最佳影片奖颁给了 *La La Land*。当该影片的演职人员激动的捧过小金人向支持他们的亲朋好友一一道谢时，却被告之，奖发错啦！真正的获奖影片是 *Moonlight*。</p>
+
+<p>真糗。我想。这要是我，那恨不得找个地缝钻进去。</p>
+
+<p>哪知道，几个月之后，这一幕在我身上上演：今天早上的新人三个一活动颁奖典礼，我也把奖发！错！了！</p>
+
+<p><img src="https://c1.staticflickr.com/6/5086/5299579966_846d4cb9ea_b.jpg" alt="" /></p>
+
+<p>Image credit: c1.staticflickr.com</p>
+
+<p>今天比较忙，一早匆匆发了帖，就出去遛娃了。期间看了一下 steemit 上的回复，有朋友提醒我，说可能我把文章的评论人数算错了。我大吃一惊，心急如焚，但是没办法，带娃的时候不可能去查数据。所以在此我奉劝那些单身的或者还没生娃的朋友：珍惜你们的自由时光吧，这是你们玩 steemit 的好时候。等一有了娃，就身不由己咯。</p>
+
+<p>带了一天娃，累个半死，终于都伺候睡了，我就核查数据。我用的是 steemsql 数据库。再三检查，我发现一个非常奇怪的现象：steemit 上看到的某篇文章的回复，跟数据库里查询的结果有不同。</p>
+
+<p>比如『<a href="https://steemit.com/cn/@acactus1013/25">回望我的25岁|“三个一”活动</a> 』这篇文章，steemit 上显示的回复人数，扳着指头数了数是 15 个（包括作者本人）。但是，steemsql 数据库里，搜 root_title 为<strong>回望我的25岁|“三个一”活动</strong>的回复，人数只有 11 个。有 4 个人，例如 @veronicazhu 的回复，没有列在里面。</p>
+
+<p>这里说说 root_title 是什么。每条回复信息，在 steemsql 数据库里都有对应的发布时间、作者、链接等信息。怎么判断一条回复属于哪个帖子呢？有个 root_title 字段，显示的就是帖子的标题。理论上，只要筛选出<strong>回望我的25岁|“三个一”活动</strong>标题的回复，就行了。那为什么漏了？</p>
+
+<p>我还以为时间范围弄错了，反复检查无误。这就奇怪了。</p>
+
+<p>于是我搜漏掉的 @veronicazhu 发布的所有回复，逐条检查，终于发现，有一条回复的帖子标题是<strong>回望我的25岁</strong>！不包含<strong>三个一活动</strong>这几个字！难怪没搜到！</p>
+
+<p>于是，我把<strong>回望我的25岁|“三个一”活动</strong>和<strong>回望我的25岁</strong>两个标题所有的回复都找出来，发现这样就齐全了！</p>
+
+<p><img src="https://steemitimages.com/DQmYM6mQgCwkZ2XMbF6huZ8MsjKB3pWv1T9pr83st42ZbGu/31error.jpg" alt="31error.jpg" /></p>
+
+<p>对此，我的推测是，可能作者 @acactus1013 在发布文章后修改过标题，于是文章的回复就被分到了不同的标题下面。而我原以为一篇文章的 root_title 字段是不会更改的——事实上，颁奖前我抽查了两三篇文章，不幸的是这两三篇的标题恰恰没改过——于是就导致了颁奖的乌龙事件！</p>
+
+<p>steemsql 没有明确的使用说明书，很多东西靠猜。经过这个事件，我发现，判断一条回复属于哪篇文章，不能用 root_title ，而需要用 root_comment，这是个整数，跟每篇文章唯一对应，不会更改。</p>
+
+<p>下面是经过修正的获奖者名单：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">奖项</th>
+<th align="left">作者</th>
+<th align="left">标题</th>
+<th align="right">评论人数</th>
+<th align="right">收益</th>
+<th align="right">赞</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">金奖</td>
+<td align="left">@acactus1013</td>
+<td align="left"><a href="https://steemit.com/cn/@acactus1013/25">回望我的25岁-“三个一”活动</a></td>
+<td align="right">15</td>
+<td align="right">20.68</td>
+<td align="right">32</td>
+</tr>
+
+<tr>
+<td align="left">银奖</td>
+<td align="left">@xiaoshancun</td>
+<td align="left"><a href="https://steemit.com/cn/@xiaoshancun/4ykg3k">地瓜花与母亲的渴望</a></td>
+<td align="right">14</td>
+<td align="right">18.80</td>
+<td align="right">31</td>
+</tr>
+
+<tr>
+<td align="left">放弃</td>
+<td align="left">@xiaoshancun</td>
+<td align="left"><a href="https://steemit.com/cn/@xiaoshancun/7tlug7">错过风景，???能错过一个你</a></td>
+<td align="right">13</td>
+<td align="right">19.74</td>
+<td align="right">44</td>
+</tr>
+
+<tr>
+<td align="left">铜奖</td>
+<td align="left">@victory622</td>
+<td align="left"><a href="https://steemit.com/cn/@victory622/steem">望 - steem 华语区新人&rdquo;三个一&rdquo;活动 - 我唱了首名字叫做《望》的歌</a></td>
+<td align="right">13</td>
+<td align="right">19.21</td>
+<td align="right">62</td>
+</tr>
+</tbody>
+</table>
+
+<p>以上名单和全部参赛作品的统计数据，已经在『<a href="https://steemit.com/cn/@dapeng/1-or-awards-ceremony-for-the-welcome-prize-new-steemians">新人“三个一”活动第 1 期颁奖典礼</a>』一文中做了更正。</p>
+
+<p>乌龙事件当然不能怪作者修改标题。这完全是我一个人的疏忽导致的。在此，我向所有参加或关心本活动的朋友们郑重道歉，尤其是向前三名获奖者道歉。已经错发出去的奖金不再收回，漏发的奖金已经由我个人出资补发。感谢提醒我的朋友，请大家继续监督我的工作，继续关注新人”三个一”的第二期活动！谢谢！</p>
+
+<p>Tags: #cn-reader #cn-31 #cn-contest #contest</p>
+
+<p><img src="https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg" alt="大鹏" /></p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/letter-of-apology-for-mistakes-in-the-award-ceremony\/';
+    var disqus_title = '致歉：新人“三个一”颁奖乌龙事件 Letter of Apology for Mistakes in the Award Ceremony';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/letter-of-apology-for-mistakes-in-the-award-ceremony\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

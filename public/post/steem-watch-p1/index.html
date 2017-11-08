@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>谷哥点名第 1 期“精彩瞬间”回顾（大鹏观察 Steem&#39;s Watch P1） | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">谷哥点名第 1 期“精彩瞬间”回顾（大鹏观察 Steem&#39;s Watch P1）</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-08-22 22:10 GMT</h2>
+</div>
+
+<main>
+
+
+<p>原文链接: <a href="https://steemit.com/cn/@dapeng/steem-watch-p1">steemit</a>, <a href="https://cnsteem.com/cn/@dapeng/steem-watch-p1">cnsteem</a>, <a href="https://chainbb.com/cn/@dapeng/steem-watch-p1">chainbb</a>, <a href="https://busy.org/cn/@dapeng/steem-watch-p1">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-watch-p1.md">markdown</a></p>
+
+<p>不久前，为了玩得开心，我把&rdquo;谷哥点名&rdquo;第一期活动参与的帖子<a href="https://steemit.com/cn/@dapeng/6wpnvk">整理成了一本电子书</a>。后来，在做“<a href="https://steemit.com/cn/@dapeng/steem-id-report-1-justyy-1">大鹏观察</a> ”活动时，觉得与其单纯整理电子书，还不如用类似的方法对参赛帖子进行一些数据分析和挖掘，也许更有指导意义。于是，就有了“大鹏观察”之“谷哥点名”。本文是第一期，对谷哥点名第一期进行回顾。第二期很快就可以出台了，争取赶上谷哥点名的进度。欢迎大家提意见反馈。</p>
+
+<p>用的数据来源是 steemdata.com，数据获取、分析、报告编写全程使用人见人爱的 R 语言。仅供参考，如果有数字与官方不符，请以官方数字为准。</p>
+
+<h2 id="大鹏观察-谷哥点名第一期回顾">大鹏观察： 谷哥点名第一期回顾</h2>
+
+<h3 id="参赛基本信息">参赛基本信息</h3>
+
+<ul>
+<li><p>主题：精彩瞬间</p></li>
+
+<li><p>日期：2017-08-02 &ndash; 2017-08-09</p></li>
+
+<li><p>发起：<a href="https://steemit.com/cn/@jubi/42wvdr">关于“谷哥点名”游戏的初步设想</a></p></li>
+
+<li><p>颁奖：<a href="https://steemit.com/cn/@jubi/4tsdsb-and">第一期“谷哥点名”活动结束 &amp; 第二期开始！</a></p></li>
+
+<li><p>参赛作品列表：见文末。</p></li>
+</ul>
+
+<h3 id="帖中之最">帖中之最</h3>
+
+<p>本期活动参赛作品共 26 篇。获奖作品的介绍已经在本文开头给出了链接，是按 google 搜索结果排名的，不再赘述。我们也可以用其他方式排名，来看看参赛作品里几个第一名。</p>
+
+<p><strong>字符最多</strong></p>
+
+<ul>
+<li><a href="https://steemit.com/@catwomanteresa/4">長毛家的毛寶貝#4 : 二毛帶給我生活中無數的精彩瞬间 Pets in our family#4: The countless wonderful moments Er-Mao brings to me</a>，含 4833 个字符。</li>
+</ul>
+
+<p><strong>插图最多</strong></p>
+
+<ul>
+<li><a href="https://steemit.com/@catwomanteresa/4">長毛家的毛寶貝#4 : 二毛帶給我生活中無數的精彩瞬间 Pets in our family#4: The countless wonderful moments Er-Mao brings to me</a>，含 13 张图片。</li>
+</ul>
+
+<p><strong>修改间隔最长.</strong></p>
+
+<ul>
+<li><a href="https://steemit.com/@justyy/5hgpar">记录那些值得回忆的精彩瞬间</a>，发布 93.1 小时即 3.9 天之后，作者做了最后一次修改。</li>
+</ul>
+
+<p><strong>得赞最多</strong></p>
+
+<ul>
+<li><a href="https://steemit.com/@mrpointp/three-of-my-wonderful-moments">我的三个精彩瞬间/Three of My Wonderful Moments</a>，得到 124 个赞。</li>
+</ul>
+
+<p><strong>赚钱最多</strong></p>
+
+<ul>
+<li><a href="https://steemit.com/@angelababy/7vearl">精彩瞬间-施比受更有福</a>，收入为 48 美元。</li>
+</ul>
+
+<p><strong>帖子正文里出现最多的关键词</strong></p>
+
+<p>下面是所有帖子里出现的字符长度超过2个、出现次数超过10次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。当然，我们去掉了“精彩瞬间”。</p>
+
+<p><img src="https://steemitimages.com/DQmdD6LnAyqQaafMqZmj3aR7QvDT1WMKeU7mvQsq5hqfDBt/unnamed-chunk-7-1.png" alt="unnamed-chunk-7-1.png" /></p>
+
+<h3 id="参赛选手">参赛选手</h3>
+
+<p>下图是参赛选手的注册id序号分布图。全网目前共有 313128 个 ID。参赛选手中排在最前面的是第 18783 个 ID，最后面的是 第 289368 个 ID。猜猜他们都是谁？</p>
+
+<p><img src="https://steemitimages.com/DQmP3Q2v8wMuF87ykkm5T2RBmyKWT5yFrVS6PXMNAu925YY/unnamed-chunk-8-1.png" alt="unnamed-chunk-8-1.png" /></p>
+
+<p>下图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7月注册的居多。</p>
+
+<p><img src="https://steemitimages.com/DQmTzghBuNYqSFgA8hmoxkKGzjxXz69WpqoUVwHhmcufrsN/unnamed-chunk-9-1.png" alt="unnamed-chunk-9-1.png" /></p>
+
+<h3 id="发帖">发帖</h3>
+
+<p>活动期间，每天累计发帖总数：</p>
+
+<p><img src="https://steemitimages.com/DQmRY4GR1MBjA9X5dEBFN3HsErJn6pLmNjeiUpVsnXBCB1E/unnamed-chunk-10-1.png" alt="unnamed-chunk-10-1.png" /></p>
+
+<p>下图是个特殊的时钟，一圈是24小时，显示了一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的???子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是发帖高峰时段。</p>
+
+<p>可以发现，在标准时间 2 点到 10 点发帖的人最多。大家猜猜这是为什么？我觉得这说明参赛者里位于欧洲的比较少。</p>
+
+<p><img src="https://steemitimages.com/DQmY6APo4VqwY7jPCbrV52XuGmNysA3kYvcYrtMSgeXhxTv/unnamed-chunk-11-1.png" alt="unnamed-chunk-11-1.png" /></p>
+
+<p>本活动是在 &lsquo;cn&rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签。我们看看除此之外，大家还使用了那些标签以及使用频率。</p>
+
+<p><img src="https://steemitimages.com/DQmf2E9BhNokFAjGu16xnwFAjUskmGC4w34dpkSaZ8MDzi8/unnamed-chunk-12-1.png" alt="unnamed-chunk-12-1.png" /></p>
+
+<p>最显眼的标签是什么？我觉得是 jubi， 你觉得呢？</p>
+
+<h3 id="收入">收入</h3>
+
+<p>最后我们来谈钱。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 参与活动的 26 篇帖子，总收入为 112.11 SBD， 单帖收入最高为47.87 SBD，平均每帖收入为4.31 SBD。</p>
+
+<p><img src="https://steemitimages.com/DQmcR4DG4n2axeLDksnyqRt1oHuRmnW1YqN66cX1Spwwh8R/unnamed-chunk-13-1.png" alt="unnamed-chunk-13-1.png" /></p>
+
+<p>下图是各篇帖子获得的投票（点赞）数。 累计得赞 1022 个，单帖得到的点赞数最高为 124 个，平均每帖得赞 39.3 个。</p>
+
+<p><img src="https://steemitimages.com/DQmbecakvFPpySzdkufYpGqSGqcsYUBZNDmhX63G3txBq87/unnamed-chunk-14-1.png" alt="unnamed-chunk-14-1.png" /></p>
+
+<p>为本次活动能够投票次数最多的前三位是 @jubi, @abit, @lordp。下面是投票次数超过 10 次的 ID 词云图。</p>
+
+<p><img src="https://steemitimages.com/DQmcEqJVEUUN79TcGBVmyajhq1Bpc1DZUkV2CwcWpW9TjhA/unnamed-chunk-15-1.png" alt="unnamed-chunk-15-1.png" /></p>
+
+<p>为本次活动点赞收入贡献最多的前三位伯乐是 @abit, @tumutanzi, @trafalgar。他们一共贡献了全部收入的 85%。感谢他们的支持！</p>
+
+<hr />
+
+<p>感谢关注“大鹏观察”。欢迎参加下一期的活动，也欢迎提出宝贵意见。谢谢。</p>
+
+<h3 id="附录-参赛作品列表">附录：参赛作品列表</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left">created</th>
+<th align="left">author</th>
+<th align="left">title</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">2017-08-02 04:06:24</td>
+<td align="left">@fundurian</td>
+<td align="left"><a href="https://steemit/com/@fundurian/hdv45">谈谈精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-02 05:20:18</td>
+<td align="left">@mrspointm</td>
+<td align="left"><a href="https://steemit/com/@mrspointm/the-wonderful-moment-from-foodie">The wonderful moment from a foodie / 来自一枚吃货的精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-02 06:16:15</td>
+<td align="left">@mrpointp</td>
+<td align="left"><a href="https://steemit/com/@mrpointp/three-of-my-wonderful-moments">我的三个精彩瞬间/Three of My Wonderful Moments</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-02 07:23:12</td>
+<td align="left">@coldhair</td>
+<td align="left"><a href="https://steemit/com/@coldhair/6vdmca">热爱生活，每一刻都是精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-02 09:19:00</td>
+<td align="left">@larus</td>
+<td align="left"><a href="https://steemit/com/@larus/x">游戏X生活中的那些精彩瞬间，值得记录！</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-02 12:07:36</td>
+<td align="left">@dixonloveart</td>
+<td align="left"><a href="https://steemit/com/@dixonloveart/3-three-moments-worth-remembered-in-the-last-2-years">回首过去，难忘的3个精彩瞬间 Three Moments worth remembered in the last 2 years</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-02 22:42:51</td>
+<td align="left">@justyy</td>
+<td align="left"><a href="https://steemit/com/@justyy/5hgpar">记录那些值得回忆的精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-03 01:55:51</td>
+<td align="left">@htliao</td>
+<td align="left"><a href="https://steemit/com/@htliao/3i973e">我的精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-03 02:23:12</td>
+<td align="left">@syh7758520</td>
+<td align="left"><a href="https://steemit/com/@syh7758520/34w14j-steemit">在steemit的几个精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-03 12:35:45</td>
+<td align="left">@kitcat</td>
+<td align="left"><a href="https://steemit/com/@kitcat/5sngfq">我的精彩瞬间 －苦尽甘来的哲理</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-03 14:18:57</td>
+<td align="left">@catwomanteresa</td>
+<td align="left"><a href="https://steemit/com/@catwomanteresa/4">長毛家的毛寶貝#4 : 二毛帶給我生活中無數的精彩瞬间 Pets in our family#4: The countless wonderful moments Er-Mao brings to me</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-03 15:39:00</td>
+<td align="left">@kenchung</td>
+<td align="left"><a href="https://steemit/com/@kenchung/6acthe">我們的精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-03 15:57:48</td>
+<td align="left">@tvb</td>
+<td align="left"><a href="https://steemit/com/@tvb/acrostic-poem-of-wonderful-moment">藏头诗：七绝-精彩瞬间（中华新韵）Acrostic Poem of Wonderful Moment</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-04 05:59:51</td>
+<td align="left">@superhardness</td>
+<td align="left"><a href="https://steemit/com/@superhardness/wonderful-and-ordinary-moment">Wonderful and ordinary moment&ndash;精彩瞬间与平凡同行</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-05 09:11:30</td>
+<td align="left">@chaofanjun</td>
+<td align="left"><a href="https://steemit/com/@chaofanjun/5oy7zz">我的生活哪有精彩瞬间？</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-06 18:54:42</td>
+<td align="left">@tumutanzi</td>
+<td align="left"><a href="https://steemit/com/@tumutanzi/7enuof">精彩瞬间带来美好回忆——中年大叔的人生故事</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-07 04:12:45</td>
+<td align="left">@towardsthesun</td>
+<td align="left"><a href="https://steemit/com/@towardsthesun/my-first-steemit-post-a-beautiful-moment">My first steemit post - a beautiful moment // 精彩瞬间让我们更勇敢</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-07 05:01:21</td>
+<td align="left">@herlife</td>
+<td align="left"><a href="https://steemit/com/@herlife/wonderful-moments">Wonderful Moments知足常乐，生活处处是精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-07 07:46:36</td>
+<td align="left">@blacktranquility</td>
+<td align="left"><a href="https://steemit/com/@blacktranquility/mbtqr">骑行路上的精彩瞬间~水管</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-07 08:31:18</td>
+<td align="left">@dapeng</td>
+<td align="left"><a href="https://steemit/com/@dapeng/2wot2j">与周华健同台演出 [视频 精彩瞬间]</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-07 12:53:12</td>
+<td align="left">@zhijun</td>
+<td align="left"><a href="https://steemit/com/@zhijun/5spugd">生命至今的三个精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-07 16:46:18</td>
+<td align="left">@timknip</td>
+<td align="left"><a href="https://steemit/com/@timknip/witness-fuli">新witness节点上线了，fuli 精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-07 21:00:36</td>
+<td align="left">@joythewanderer</td>
+<td align="left"><a href="https://steemit/com/@joythewanderer/memorable-moments-in-my-life">我难忘的几个精彩瞬间 Memorable Moments in my Life</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-08 00:46:36</td>
+<td align="left">@guyverckw</td>
+<td align="left"><a href="https://steemit/com/@guyverckw/4jwkyd">人生中最「精彩瞬间」的事件！</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-08 01:40:15</td>
+<td align="left">@victorier</td>
+<td align="left"><a href="https://steemit/com/@victorier/3to5b4">谈一谈我与精彩瞬间</a></td>
+</tr>
+
+<tr>
+<td align="left">2017-08-08 15:27:12</td>
+<td align="left">@angelababy</td>
+<td align="left"><a href="https://steemit/com/@angelababy/7vearl">精彩瞬间-施比受更有福</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>Tags: #blog #cn-blog #steemit #steem</p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/steem-watch-p1\/';
+    var disqus_title = '谷哥点名第 1 期“精彩瞬间”回顾（大鹏观察 Steem\x27s Watch P1）';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/steem-watch-p1\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

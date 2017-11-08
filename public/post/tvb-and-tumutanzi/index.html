@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@tvb 和 @tumutanzi 在一起，无图无真相 （兼谈一天里几点钟发帖最赚钱） | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">@tvb 和 @tumutanzi 在一起，无图无真相 （兼谈一天里几点钟发帖最赚钱）</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-09-30 18:58 GMT</h2>
+</div>
+
+<main>
+<p>原文链接: <a href="https://steemit.com/cn/@dapeng/tvb-and-tumutanzi">steemit</a>, <a href="https://cnsteem.com/cn/@dapeng/tvb-and-tumutanzi">cnsteem</a>, <a href="https://chainbb.com/cn/@dapeng/tvb-and-tumutanzi">chainbb</a>, <a href="https://busy.org/cn/@dapeng/tvb-and-tumutanzi">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/tvb-and-tumutanzi.md">markdown</a></p>
+
+<p><img src="https://cdn.pixabay.com/photo/2015/09/03/08/04/child-920128_960_720.jpg" alt="" /></p>
+
+<p>Image credit: Pixabay.com</p>
+
+<p>总是有新朋友反复问同一个问题：在 steemit 的 cn 区发布文章，一天里到底几点钟发帖最赚钱？</p>
+
+<p>对于这个问题，最直观的想法是：看看那些“<strong>赚钱的文章发布在几点钟</strong>”，不就行了嘛！</p>
+
+<p>这好办。我们用万能的 R 语言，统计一下有史以来标有 cn 标签的所有帖子，共计 29518 篇，其中收益超过 100 SBD 的帖子的发布时间。见下图。</p>
+
+<p><img src="https://steemitimages.com/DQmRo3JFZ6HN1Mc2TbfYT9MdcnVoTCJqvpBTGVMtqwCZXcb/high.png" alt="high.png" /></p>
+
+<p>熟悉我写的“大鹏观察”系列帖子的朋友都知道，这是个24小时的时钟，每个扇形显示的是对应时刻发帖数量所占总数的百分比。很容易看出来，这些高收益的文章在 24 小时内都有，而在 12 时到 15 时（即北京时间 20 时 到 23 时）之间最为集中。</p>
+
+<p>这下恍然大悟了吧：那就晚上发帖吧！</p>
+
+<p>但是，——且慢！</p>
+
+<p>下面是收益低于 10 SBD 的帖子发布时间分布图：</p>
+
+<p><img src="https://steemitimages.com/DQmeDgXKm8VJ4aKWUpH7ywA6Ac8WTpCXq4bGycMW2S5Ms14/low.png" alt="low.png" /></p>
+
+<p>怎么回事？低收益的跟高收益的差不多啊！也是晚上最集中！</p>
+
+<p>再看看收益等于 0 的帖子：</p>
+
+<p><img src="https://steemitimages.com/DQmfLYTw1aqVXnNWVuTMGu4cZmLh1JjfN261g4pwtZsdutk/0.png" alt="0.png" /></p>
+
+<p>没错，也是集中在晚上！晚上发帖，高收益和低收益都有可能，甚至可能没收益！</p>
+
+<p>问题出在哪里？出在逻辑上：“<strong>赚钱的帖子发布在几点</strong>”跟“<strong>发布在几点最赚钱</strong>”是<strong>完全不同</strong>的两个问题！</p>
+
+<p>为什么都集中在晚上呢？因为 cn 区发帖的作者，不管大鲸还是小鱼??都是集中在晚上活动啊！下图是所有帖子的分布（该图在“<a href="https://steemit.com/cn/@dapeng/steem-2016-07-2017-08-steem-s-watch-tcn0">Steem 中国策 前传: 2016.07 - 2017.08</a> ”现身过）：</p>
+
+<p><img src="https://steemitimages.com/DQmQKcdacAYx5EUywcqycfhihZuTWtMvHQJd5xXePw4iUnx/all.png" alt="all.png" /></p>
+
+<p>那么，如果我们把上图的每个扇形里，按照收益大小区分一下颜色，比如 0 &ndash; 30 SBD 用蓝色， 30 &ndash; 60 SBD 用绿色， 60 &ndash; 90 SBD 用橘色，&gt; 90 SBD 用红色表示，是不是就可以发现一些秘密呢？</p>
+
+<p><img src="https://steemitimages.com/DQmPrXEvgjjhHEetYc8jo3ejGRpvMnbV19WvffrSG8x58sM/all_color.png" alt="all_color.png" /></p>
+
+<p>肉眼看分布，其实各小时都差不多。仔细比较的话，0 时到 4 时（即北京时 8 时到 12 时）发布的帖子里，收益超过 30 SBD 的文章数 比其他时段略大一些。这似乎说明一条结论：上午发帖容易收益高。</p>
+
+<p>遗憾的是，这个结论一点用都没有。这是所有人所有帖子混合起来的结果。而现实却是，别人上午发帖收益高，你未必。</p>
+
+<p>这话怎么讲？</p>
+
+<p>故事讲到这里，终于可以有请本文的女主角  @tvb 和男主角 @tumutanzi 出场了。</p>
+
+<p>如果 @tvb 和 @tumutanzi  在一起，得到的图的真相是这样的：</p>
+
+<p><img src="https://steemitimages.com/DQmQyKSGpSQ5wykz6ZUxT5g2dviteFfWqDDPAweeMvkTnRu/both.png" alt="both.png" /></p>
+
+<p>发布在 12时、14时和22时的帖子里， &gt; 90 SBD 的比例最高。那么对于 @tvb 来说，是不是只要选择在这几个黄金时段发帖就能赚大钱了呢？我们单独看看 @tvb 的帖子：</p>
+
+<p><img src="https://steemitimages.com/DQmeLRyW3mGS6wfPpUtJUr2zeH1uE4KCHDP5VTpRhGH7Ly5/tvb.png" alt="tvb.png" /></p>
+
+<p>22 时的黄金时段，跟 @tvb 没有半点关系。倒是 12 时和 14 时比较吻合，但这仅仅是巧合罢了，因为我们单独看看 @tumutanzi 就知道了：</p>
+
+<p><img src="https://steemitimages.com/DQmRqXtZ24FBxEDTifoJT3BexNUh5dtfsocBe7twKXJKLfr/tumu.png" alt="tumu.png" /></p>
+
+<p>12 时跟 14 时的高收益文章，几乎全部??自 @tumutanzi 的贡献！</p>
+
+<p>所以，前面这三万篇帖子的收益统计分布，很大程度上，是受 @tumutanzi 这种影响力大的人所影响的。</p>
+
+<p>是时候给出结论了：别琢磨几点发帖能赚钱了。文章收益跟发文时间的关系，完全可以忽略不计。影响力大的人，几点发帖都赚钱; 如果发帖不赚钱，不是因为发帖时段不对，而是作者的影响力不够大。要想提高影响力，两条路：好好创作优质文章，或投资买 SP。</p>
+
+<p>可能有朋友会坚持：那么我只看我自己的数据不就行了？</p>
+
+<p>不行的。你的影响力也在变化。数据只反映过去，不反映未来。除非建立个模型来预测，否则，得出的结论没有意义。</p>
+
+<p>幸运的是我，赶在 @tvb 影响力爆发的前夜，做出了上面的图。让我们期待 @tvb 影响力的大爆发，将来再看她跟 @tumutanzi 在一起的模样吧！</p>
+
+<p>PS: 本文属于<a href="https://steemit.com/cn/@dapeng/steem-tvb">&ldquo;Steem 史记&rdquo;</a> 的番外篇。Steem 史记，steem 之绝唱，无韵之离骚。</p>
+
+<p><img src="https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg" alt="大鹏" /></p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/tvb-and-tumutanzi\/';
+    var disqus_title = '@tvb 和 @tumutanzi 在一起，无图无真相 （兼谈一天里几点钟发帖最赚钱）';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/tvb-and-tumutanzi\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

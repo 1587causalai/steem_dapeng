@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cn-newbie on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/cn-newbie/index.xml</link>
+    <description>Recent content in Cn-newbie on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/cn-newbie/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tips: How to insert Emoji on Steemit ??  [Steem 技巧] 如何添加表情符号</title>
+      <link>https://steemit.netlify.com/post/how-to-insert-emoji-on-steemit/</link>
+      <pubDate>Wed, 23 Aug 2017 08:26:00 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/how-to-insert-emoji-on-steemit/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/how-to-insert-emoji-on-steemit&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/how-to-insert-emoji-on-steemit&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/how-to-insert-emoji-on-steemit&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/how-to-insert-emoji-on-steemit&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/how-to-insert-emoji-on-steemit.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Steemit supports Emoji. However, if you follow &lt;code&gt;Markdown Styling Guide&lt;/code&gt; below your editor, you might probably be disappointed. The guide does not work. ??&lt;/p&gt;
+
+&lt;p&gt;Thanks to @larus&amp;rsquo;s and @blueorgy&amp;rsquo; replies. You can easily input Emoji on your smartphone or Apple products. But how to insert it on your PC?&lt;/p&gt;
+
+&lt;p&gt;Today I found an easy way to intert Emoji into your posts, relies, or titles.??&lt;/p&gt;
+
+&lt;p&gt;? Go to  &lt;a href=&#34;https://emojikeyboard.org/&#34;&gt;https://emojikeyboard.org/&lt;/a&gt;, find a symbol, click, and paste in to your editor. Done!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://2.bp.blogspot.com/-MTmoGMeE2cc/WSGIutFSHoI/AAAAAAAAK6o/Ya-tX6NvAqUM2LqV4VlxzsfwzD8xXEPFACLcB/s1600/254___thumbs-up-emoji.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Steemit 支持输入表情符号，是我在点击编辑器下方的 Markdown Styling Guide 后看到的。按照说明，照理说只要输入 &lt;code&gt;:smile:&lt;/code&gt;，就应该显示??。但是我试了，不灵。换个浏览器也不行。??&lt;/p&gt;
+
+&lt;p&gt;感谢 @larus 的提醒，手机上可以直接输入表情符号。不过，在电脑上如何实现？&lt;/p&gt;
+
+&lt;p&gt;今天，我找到了插入表情符号的简单办法。不仅可以往帖子里，还可以往回复里、标题里添加。??&lt;/p&gt;
+
+&lt;p&gt;方法很简单：访问网站 &lt;a href=&#34;https://emojikeyboard.org/&#34;&gt;https://emojikeyboard.org/&lt;/a&gt;，找到需要的符号，鼠标左键单击，然后粘贴到需要的地方就行了！??&lt;/p&gt;
+
+&lt;p&gt;表情符号有没有必要？非常有必要。在现实生活里说话时，我们辅以表情、动作等肢体语言，从而能表达感情色彩。而在网上仅靠文字交流的话，有时候很难判断感情色彩。一句脏话，说给朋友听的时候可以增进亲密；一句赞美，说给对手听的时候可能被认为是嘲讽。语言有复杂性，每个人解读的结果跟预先的设定有关。加上表情符号，其实就是为了展示你的预设，展示你对对方的态度是???是友。一般情况下，一用表情符号，就显得轻松随意，表示是朋友。&lt;/p&gt;
+
+&lt;p&gt;表情符号跟插图有什么区别？表情符号是融于文字中的，有时候起的是标点符号的作用。表情符号要用得恰到好处，不可不用，不可滥用。就像饮酒，小饮怡情，大饮伤身。&lt;/p&gt;
+
+&lt;p&gt;好了，技术上弄清楚了，大家好好玩！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://getemoji.com/assets/og/mobile.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1651 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/post/index.xml</link>
+    <description>Recent content in Posts on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Nov 2017 10:22:48 +0000</lastBuildDate>
+    <atom:link href="https://steemit.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>同桌的你 - 华语好声音</title>
+      <link>https://steemit.netlify.com/post/4wcxic/</link>
+      <pubDate>Tue, 07 Nov 2017 10:22:48 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/4wcxic/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/4wcxic&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/4wcxic&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/4wcxic&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/4wcxic&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/4wcxic.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;@tumutanzi 曾经&lt;a href=&#34;https://steemit.com/cn/@tumutanzi/6ncvsc&#34;&gt;发文慨叹&lt;/a&gt;，他的昔日女神们“并不是照片中的那般美丽模样”。对于已婚男人来说，这其实是幸运的。&lt;/p&gt;
+
+&lt;p&gt;相比之下，我就比较惨，遇见昔日的女神同桌，发现人家依旧光鲜亮丽，而我自己却是“绿树成荫子满枝了”……&lt;/p&gt;
+
+&lt;p&gt;点击下图播放，或点击&lt;a href=&#34;http://node.kg.qq.com/play?s=GOw8gwGzT8xVKG2q&amp;amp;g_f=personal&#34;&gt;这里&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;166&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/352318112&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2151/2141447534_0211219e90_b.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Build a mirror/backup site for your own steem posts in 30 minutes - 30 分钟搭建自己的 steem 镜像备份网站</title>
+      <link>https://steemit.netlify.com/post/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/</link>
+      <pubDate>Mon, 06 Nov 2017 09:44:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yesterday, I built two mirror sites for my steem posts (&lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;mirror 1&lt;/a&gt;，&lt;a href=&#34;https://steemit.netlify.com/&#34;&gt;mirror 2&lt;/a&gt;) as backups, which are synced automatically everyday, thanks to steemsql and steemdata. The mirror sites are very useful:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;for emergency, in case that steemit.com and busy.org are down,&lt;/li&gt;
+&lt;li&gt;as backups, in case that steemsql and steemdata are gone,&lt;/li&gt;
+&lt;li&gt;for revision, where the posts are allowed to be modified even after 7 days,&lt;/li&gt;
+&lt;li&gt;for more replies, thanks to disqus,&lt;/li&gt;
+&lt;li&gt;for a stable looking, no matter how the interface of steemit changes in the future, and&lt;/li&gt;
+&lt;li&gt;for fast browsing, especially when your posts are more than 100.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Both of these sites are free of costs, and updated automatically.&lt;/p&gt;
+
+&lt;p&gt;How long does it take to build a site like them?&lt;/p&gt;
+
+&lt;p&gt;Following my steps, it takes less than half an hour, if you are an expert on R language. For newbies, it depends on how long it takes you to learn R. Anyway, you will save much time that I wasted in many failed attempts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmVGn1eWfueYNVC9Xw4Hy41F9xDPR16jdGojPCDcJsfVxv/mirror1.jpg&#34; alt=&#34;mirror1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are the steps.&lt;/p&gt;
+
+&lt;h3 id=&#34;build-a-hugo-site-with-r-blogdown&#34;&gt;Build a Hugo site with R blogdown&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Install R and RStudio.&lt;/li&gt;
+&lt;li&gt;Created a blogdown project from RStudio&amp;rsquo;s menu.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;download-your-posts-from-steemsql-or-steemdata&#34;&gt;Download your posts from steemsql or steemdata&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;R RODBC can visit steemsql database, and R mongolite can visit steemdata database. Either is OK.&lt;/li&gt;
+&lt;li&gt;Download the target posts, and organize them into markdown files with R.&lt;/li&gt;
+&lt;li&gt;Copy the markdown files into the contents folder in your site folder.&lt;/li&gt;
+&lt;li&gt;Run the build_site() function in R blogdown.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;publish-your-site-folder-to-github&#34;&gt;Publish your site folder to Github&lt;/h3&gt;
+
+&lt;p&gt;Create a new repo on Github, and publish your site folder.&lt;/p&gt;
+
+&lt;h3 id=&#34;deploy-with-netlify&#34;&gt;Deploy with Netlify&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Log in Netlify.com with your github account.&lt;/li&gt;
+&lt;li&gt;Created a new site, choose your site folder from github, and use hugo_0.19 as the command.&lt;/li&gt;
+&lt;li&gt;Wait seconds or minutes, and you can visit your mirror sites!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;sync-automatically-everyday&#34;&gt;Sync automatically everyday&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Write a .bat script on Windows, or .sh script on Linux, to call your R script, which downloads the new posts, builds the site, and syncs with Github repo.&lt;/li&gt;
+&lt;li&gt;Use the task scheduler on Windows or crontab on Linux to run the .bat or .sh automatically everyday or every hour or whatever.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That&amp;rsquo;s all. Wish you success!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbNZ7kw2ynuig2qZjhmDPHKynQobL2iiSatQsGJgQJZiB/mirror2.jpg&#34; alt=&#34;mirror2.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;昨天，我为自己在 steem 上发布的帖子制作了两个镜像网站（&lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;镜像1&lt;/a&gt;，&lt;a href=&#34;https://steemit.netlify.com/&#34;&gt;镜像2&lt;/a&gt;）。每天定时跟 steem 同步更新，作为备份用。&lt;/p&gt;
+
+&lt;p&gt;镜像网站的好处是：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;应急。万一 steemit.com、busy.org 等前端网站挂了，至少我自己的文章还能来镜像访问。&lt;/li&gt;
+&lt;li&gt;备份。有朝一日万一 steemsql 等数据库黄了，万一区块链挂了，我辛辛苦苦码出的文章还健在。&lt;/li&gt;
+&lt;li&gt;修改。steem 上的文章过了7天后就没法修改，而镜像网站的永远可以修改，可以精益求精。&lt;/li&gt;
+&lt;li&gt;评论。镜像网站上配置的是 disqus 评论系统，多引入一个评论方式。&lt;/li&gt;
+&lt;li&gt;美观。不管 steemit 等网站界面好看难看，我有一片独立的自留地。&lt;/li&gt;
+&lt;li&gt;快捷。找自己的文章时，再也不用往下拉，载入，等待，再拉，再载入，再等待……&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这两个镜像全部是免费搭建的，搭建完毕后就每天自动更新，不用再操心了。&lt;/p&gt;
+
+&lt;p&gt;那么，搭建一个这样的网站需要多久？&lt;/p&gt;
+
+&lt;p&gt;熟悉 R 语言的话，从零开始到成功访问，整个过程用不了半小时。如果是 R 语言的新手，那么主要取决于多久能学会 R。无论如何，我花了很多时间来尝试，才建立了下面的步骤，这个时间你可以省了。&lt;/p&gt;
+
+&lt;p&gt;搭建这两个网站，用的主要工具是 R 语言的 blogdown 包。大体流程是：用 R 语言在本地搭建一个 Hugo 框架的静态网站，然后同步到 GitHub，再由 Netlify 布署。&lt;/p&gt;
+
+&lt;p&gt;下面简要说说步骤。&lt;/p&gt;
+
+&lt;h3 id=&#34;用-r-语言搭建-hugo-网站&#34;&gt;用 R 语言搭建 Hugo 网站&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;先安装 R 语言和 RStudio。&lt;/li&gt;
+&lt;li&gt;从 RStudio 的菜单栏创建一个 blogdown 项目，选择中意的网站主题，用不了1分钟，一个静态的 HUGO 网站框架就搭建好了，所有文件都保存在本地的一个文件夹里。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;用-r-语言从-steemsql-或-steemdata-下载帖子&#34;&gt;用 R 语言从 steemsql 或 steemdata 下载帖子&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;如果访问 steemsql 数据库，请安装 R 语言的 RODBC 包；如果访问 steemdata 数据库，请安装 mongolite 包。两个数据库都可以提供 steem 上文章的所有信息。&lt;/li&gt;
+&lt;li&gt;从数据库将需要的帖子下载到本地，并整理成 markdown 格式的文本文件。&lt;/li&gt;
+&lt;li&gt;将文本文件拷贝到你的网站文件夹的 contents 里。&lt;/li&gt;
+&lt;li&gt;运行 R blogdown 的建站函数。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;将网站文件夹发布到-github&#34;&gt;将网站文件夹发布到 Github&lt;/h3&gt;
+
+&lt;p&gt;在 Github 上创建一个新的项目，将你的网站文件夹发布上去。&lt;/p&gt;
+
+&lt;h3 id=&#34;用-netlify-布署&#34;&gt;用 Netlify 布署&lt;/h3&gt;
+
+&lt;p&gt;用你的 Github 账号登陆 Netlify，创建一个新站点，选择你的网站文件夹，并用 hugo_0.19 作为布署命令。设置完毕后，短则几秒，长则几分钟，就可以访问你的镜像网站啦！&lt;/p&gt;
+
+&lt;p&gt;Netlify 提供免费的二级域名。当然，你也可以买个域名来绑定。&lt;/p&gt;
+
+&lt;h3 id=&#34;每天自动同步&#34;&gt;每天自动同步&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;编写一个批处理程序，来调用 R 代码，从而完成下载帖子、建站、与 GitHub 同步的工作。&lt;/li&gt;
+&lt;li&gt;用 Windows 的自动任务，每天自动运行上述批处理，就实现了每天自动同步。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;最近我在看美剧《西部世界》。我的机器人 @pzhao 可不能亏待，所以我为 @pzhao 也做了一个&lt;a href=&#34;https://steemcn.netlify.com/&#34;&gt;镜像&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>第二届“华语好声音”大奖赛欢迎你！ CN Voice 2</title>
+      <link>https://steemit.netlify.com/post/cn-voice-2/</link>
+      <pubDate>Sun, 05 Nov 2017 09:37:21 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/cn-voice-2/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/cn-voice-2&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/cn-voice-2&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/cn-voice-2&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/cn-voice-2&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/cn-voice-2.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;第二届&lt;strong&gt;“华语好声音大奖赛&amp;rdquo;&lt;/strong&gt;开始啦！本届评奖&lt;strong&gt;不限新老用户，不限主题&lt;/strong&gt;！反正目前 cn 区也没啥钱可赚，不如大家来唱歌吧。当然，也可以朗诵、脱口秀……只要是你自己的嗓音，都可以参加。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;“华语好声音”，写倦的时候，让我们聆听你文字背后的声音。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZWJqGdRqMnXDeXFRHbUzbPsEon1hq7fU9dtGzAadvUUv/cn-voice.jpg&#34; alt=&#34;cn-voice.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;谁可以参加&#34;&gt;谁可以参加&lt;/h2&gt;
+
+&lt;p&gt;steem 的所有用户都欢迎参加！投稿，点赞，留言，赞助……都可以！形式不限。&lt;/p&gt;
+
+&lt;h2 id=&#34;怎样参加&#34;&gt;怎样参加&lt;/h2&gt;
+
+&lt;p&gt;在 steem 上发布一篇符合以下要求的文章就行。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;参加活动的文章里需包含：
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;录音或包含声音的录像：主题不限，标题不限，形式不限，例如唱歌（清唱或卡拉OK均可）、朗诵（诗歌、散文、信件、故事等均可）、脱口秀、自我介绍&lt;/strong&gt;等，重点是&lt;strong&gt;必须包含自己的嗓音&lt;/strong&gt;。不管是普通话/國語，还是方言，都行。录制声音、歌曲和将录音录像插入文章的方法，见下文。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一段文字&lt;/strong&gt;：写一段跟录音有关的文字，需&lt;strong&gt;原创，字数不限（写倦了就少写几句）&lt;/strong&gt;。例如，写写你为什么喜欢朗诵的散文或唱的歌。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;为了方便统计，文章的标签（Tag）必须包含 cn-voice，第一标签必须是 cn。如果是唱歌，可以加上 music 标签。&lt;/li&gt;
+&lt;li&gt;欢迎同一 id 多次投稿，取其中最高名次的一篇参加评奖。&lt;/li&gt;
+&lt;li&gt;投稿的文章可以参加 steem 上同期举办的其他活动，只需同时满足其他活动的要求即可。&lt;/li&gt;
+&lt;li&gt;如有抄袭、剽窃，零容忍，一经发现，将会被列入共享黑名单，没有黄牌，直接红牌！&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;具体的例子，请看&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/1-or-award-ceremony-for-the-welcome-prize-new-steemians&#34;&gt;本活动第一届的投稿&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果你的外语好，那么可以附上录音文本和原创文字的英文翻译，并添加相关标签。这样会获得更多来自其他语种用户的点赞，让你赚更多钱。只是建议哦，不做要求。&lt;/p&gt;
+
+&lt;h2 id=&#34;活动时间&#34;&gt;活动时间&lt;/h2&gt;
+
+&lt;p&gt;活动自本文发布起开始，截至 2017-11-19 星期日 23:59 (北京时间)。&lt;/p&gt;
+
+&lt;p&gt;赶紧动手吧！因为，越早越容易获奖！评奖办法见下文（跟“三个一相同”）。&lt;/p&gt;
+
+&lt;h2 id=&#34;奖项和评奖办法&#34;&gt;奖项和评奖办法&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;奖金：&lt;strong&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/cn-voice-start&#34;&gt;本活动第一届发起帖的文章部分净收益&lt;/a&gt; + 热心人的赞助&lt;/strong&gt;；本文净收益将留作下次活动使用。&lt;/li&gt;
+&lt;li&gt;奖项：&lt;strong&gt;暂定金奖 1 名（ 6 SBD）、银奖 3 名（4 SBD）、铜奖 5 名（2 SBD），幸运奖 3 名 （1 SBD）。接受赞助！欢迎赞助不同奖项！比如，收到赞助 1 SBD，我们就增设幸运奖一名; 收到 2 SBD， 就增设铜奖一名，依次类推，不设上限！&lt;/strong&gt;如果奖项数量多于参加人数，那么盈余就留作下次（如果有的话）或“三个一”活动使用，届时会公布款项清单，欢迎大家监督。&lt;/li&gt;
+&lt;li&gt;评奖范围：所有奖项将在参加活动的&lt;strong&gt;所有用户&lt;/strong&gt;里产生。&lt;/li&gt;
+&lt;li&gt;评奖规则：按文章后面得到的留言（Reply）人数从多到少排序决定奖项。注意，是人数，不是留言的条数。发布多条留言的人按 1 个人计算（即不重复计算）。如有并列，按文章发表较迟的优先获奖。一人多次投稿的，取其中最高名次的一篇参加评奖。幸运奖随机抽选。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;赞助名单-按时间顺序&#34;&gt;赞助名单 (按时间顺序)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;@tvb 6 SBD&lt;/li&gt;
+&lt;li&gt;@winniex 4 SBD&lt;/li&gt;
+&lt;li&gt;@dancingapple 4 SBD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;技术问题-如何录音-录歌-如何往文章里插入音频或视频&#34;&gt;技术问题：如何录音、录歌，如何往文章里插入音频或视频&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;录音：
+
+&lt;ul&gt;
+&lt;li&gt;对于朗诵或清唱，如今的智能手机都可以录音，用手机自带的摄像功能或录音机就行。&lt;/li&gt;
+&lt;li&gt;对于卡拉 OK，可以在手机上安装个卡拉 OK 类的 app???例如我用过的“全民 K 歌”，自带很多伴奏，录制效果不错。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;把音频或视频插入文章，方法也很多：
+
+&lt;ul&gt;
+&lt;li&gt;如果是“唱吧”或“全民 K 歌”，那么在手机上录完上传，然后把分享链接贴到文章里就行了。“唱吧”本身支持的原音文件下载，而“全民 K 歌”的原音文件可以用&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/ok&#34;&gt;我介绍的方法&lt;/a&gt;免费无限量下载。&lt;/li&gt;
+&lt;li&gt;如果是手机自带的录音机，那么可以把录音文件上传到 Youtube 或 SoundCloud，方法见 @jubi 的教程&lt;a href=&#34;https://steemit.com/cn/@jubi/post&#34;&gt;『让post不局限于文字，完善属于你的自己的富媒体』&lt;/a&gt;。SoundCloud 的使用方法我也写过&lt;a href=&#34;https://steemit.com/cn/@dapeng/tips-how-to-embed-music-or-sound-into-a-steem-post&#34;&gt;详细教程&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;活动的最终解释权归 @dapeng 所有。&lt;/p&gt;
+
+&lt;p&gt;欢迎大家留言，对活动提出你的建议或意见！谢谢！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>If You Dislike the STEEMIT-GREEN - 若是讨厌那片绿</title>
+      <link>https://steemit.netlify.com/post/if-you-dislike-the-steemit-green-or/</link>
+      <pubDate>Sat, 04 Nov 2017 20:51:57 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/if-you-dislike-the-steemit-green-or/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/if-you-dislike-the-steemit-green-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I really like the new interface of steemit, especially the green color for the fonts. So please don&amp;rsquo;t flag this post if you dislike it or not.&lt;/p&gt;
+
+&lt;p&gt;If you really dislike the STEEMI-GREEN, however, you could simply switch it off. All the popular web browsers have such a option or plug-in or add-on. As an example, this post will tell you how to do it on Firefox.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNeeWjZZZFNP22TeDTF2dAUsU1cYDrcLActkJXVbe8APy/green.jpg&#34; alt=&#34;green.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;1-plug-in-free&#34;&gt;1 Plug-in free&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Click the triple-bar button on the top-right, and click&amp;rsquo;Options&amp;rsquo;. Or simply press alt &amp;mdash; t &amp;mdash; o.&lt;/li&gt;
+&lt;li&gt;Click &amp;lsquo;Content&amp;rsquo; on the left bar, then click the &amp;lsquo;Colors&amp;rsquo;  button on the left.&lt;/li&gt;
+&lt;li&gt;Change the link colors. Below the &amp;lsquo;Override &amp;hellip;&amp;rsquo; text, choose &amp;lsquo;Always&amp;rsquo;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Done.&lt;/p&gt;
+
+&lt;p&gt;The new color style works not only for steemit, but also for all sites. You might feel bored when you are browsing other sites and you have to repeat Step 1 &amp;mdash; 3 to switch off your customized colors. Is there a single-click solution?&lt;/p&gt;
+
+&lt;p&gt;Yes, there is, only if you&amp;rsquo;d like to install an add-on.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-no-color-add-on&#34;&gt;2 &amp;lsquo;No Color&amp;rsquo; Add-on&lt;/h3&gt;
+
+&lt;p&gt;Click the triple-bar button on the top-right, and find &amp;lsquo;Add-ons&amp;rsquo;. Search &amp;lsquo;No Color&amp;rsquo; add-on.&lt;/p&gt;
+
+&lt;p&gt;After installing it, you will see one more button on the toolbar. A single-click can switch the font colors between the site colors and your customized ones.&lt;/p&gt;
+
+&lt;p&gt;Is this the best solution?&lt;/p&gt;
+
+&lt;p&gt;No. There is a better one.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-nosquint-plus-add-on&#34;&gt;3 &amp;lsquo;NoSquint Plus&amp;rsquo; Add-on&lt;/h3&gt;
+
+&lt;p&gt;After installing &amp;lsquo;NoSquint Plus&amp;rsquo; add-on, you will see one more button on the toolbar. Click it, and you can set the colors. There is an option of &amp;lsquo;Global settings&amp;rsquo; for all sites. If you only want to change the colors on steemit, cross the &amp;lsquo;exclude site&amp;rsquo; option.&lt;/p&gt;
+
+&lt;p&gt;However, all the tricks above mean nothing to me, because I love the STEEMIT-GREEN! Really really.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbLZnSapRKENMWPcbnmDoQXQkevM8Ejs9nnoqzdMkYXDA/blue.jpg&#34; alt=&#34;blue.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;你喜欢 steemit 的新界面吗？尤其是那一片绿……&lt;/p&gt;
+
+&lt;p&gt;如果不喜欢，本文告诉你如何方便快捷地更改。目前的主流浏览器都支持更改网页的默认颜色。本文就以 Firefox 为例，给出三种方法，任你选。&lt;/p&gt;
+
+&lt;p&gt;方法 1：点击 firefox 右上角三条小横线按钮，点击“选项” &amp;mdash; “内容” &amp;mdash;  “颜色” &amp;mdash;“覆盖”下面选永远。&lt;/p&gt;
+
+&lt;p&gt;这种方法的好处是啥都不用额外安装。坏处是所有网站都变成了你指定的颜色，想切换回去的话又得点一遍。有没有办法一键切换？&lt;/p&gt;
+
+&lt;p&gt;方法 2：在“选项”里点“插件”，搜索 “No Color”插件。安装完毕后，工具栏多出个按钮。点它，就可以一键在你定义的颜色跟网站原来的颜色之间切换了。&lt;/p&gt;
+
+&lt;p&gt;虽然切换方便，但是有没有办法不切换，自动把且仅把 steemit 颜色改了？&lt;/p&gt;
+
+&lt;p&gt;方法3：安装 &amp;lsquo;NoSquint Plus&amp;rsquo; 插件，工具栏又多个按钮。点它，设置颜色。“全局选项”可以选择对所有网站都改颜色。如果只对 steemit 改，那么把&amp;rsquo;排除‘&amp;rsquo;勾上就行了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>新人“三个一”活动第 3 期颁奖典礼 - Award Ceremony for the Welcome Prize New Steemians 3</title>
+      <link>https://steemit.netlify.com/post/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3/</link>
+      <pubDate>Fri, 03 Nov 2017 21:44:12 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;新人&lt;a href=&#34;https://steemit.com/cn/@dapeng/welcome-prize-for-new-steemians&#34;&gt;“三个一”活动&lt;/a&gt;第 3 期圆满落幕！活动共收到稿件 11 篇，来自 10 位作者，更多统计数字和全部文章清单附后。下面是所有稿件的词云图，图中空白区是本期的主题：“问”。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNTHHU1bnvnsZx6tyBwuvdSABVC1BGUWTBtq1nMNh7nBY/wen.jpg&#34; alt=&#34;wen.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;现在，请准备好你的掌声，我们公布获奖名单。&lt;/p&gt;
+
+&lt;h2 id=&#34;颁奖&#34;&gt;颁奖&lt;/h2&gt;
+
+&lt;p&gt;按照活动规则，我们根据文章的留言人数评出获奖作者，并随机抽取幸运作者，获奖名单如下：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;奖项&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;评论人数&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;收益&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;赞&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;金奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@winniex&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@winniex/stop-asking-who-i-am&#34;&gt;夜游症患者之别问我是谁 Stop Asking Who I Am&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.31&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;银奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@melaleuca&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@melaleuca/world&#34;&gt;孩子，你问我是谁，我却想回答你世界是什么样子｜华语区新人“三个一”活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.17&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;31&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;银奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@eric15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@eric15/-2017111t214844853z&#34;&gt;问自己问题是所有进步的开始&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;银奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@nahaha&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@nahaha/3wgnqg-or&#34;&gt;遠方的問好 - 新人＂三個一＂活動第三期&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.67&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;14&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;铜奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@lixing&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@lixing/4csyer&#34;&gt;桐花万里丹山路，雏凤清于老凤声-三个一活动投稿&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;由于参加活动的新人人数少于奖项，有 4 个铜奖无人获取。&lt;/p&gt;
+
+&lt;p&gt;幸运奖设置了4个，未获金银铜奖的，除去@tvb弃权外，只剩4位了，所以不用抽，全部获奖，名单是：&lt;/p&gt;
+
+&lt;p&gt;@sunnyjolly, @xiaoshancun, @spearous, @dancingapple&lt;/p&gt;
+
+&lt;p&gt;祝贺获奖者！&lt;/p&gt;
+
+&lt;p&gt;本期奖金来自本人的文章收益，金奖 6 SBD，银奖每人 4 SBD ， 铜奖每人 2 SBD，幸运奖每人 1 SBD。请大家看看有没有错误，欢迎反馈。如无错误，奖金稍后就发到获奖者的钱包里。&lt;/p&gt;
+
+&lt;h2 id=&#34;致谢&#34;&gt;致谢&lt;/h2&gt;
+
+&lt;p&gt;@tvb 放弃了参加评奖，把机会让给新人。感谢她！&lt;/p&gt;
+
+&lt;h2 id=&#34;统计数字&#34;&gt;统计数字&lt;/h2&gt;
+
+&lt;p&gt;下面是本期活动的一些统计数字。&lt;/p&gt;
+
+&lt;p&gt;本期活动共收到稿件 11 篇，来自 10 位作者。截至活动结束时，投稿文章收益共计 44.8 SBD，获赞共计 278 个。参加活动的账号注册天数分布如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWDJ7ctn3CcdY2cGVHfeyEPxyVsjLLVZc2a7zBX9BgvCL/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;参加活动的全部文章按投稿时间顺序排列如下：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;评论人数&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;收益&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;赞&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@winniex&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@winniex/tell-me-why-an-english-poem-and-a-photo&#34;&gt;孩子们的为什么，英文童诗及原创图片 — Tell Me Why, an English Poem and a Photo&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.55&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;31&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/or-3&#34;&gt;少壮不努力老大徒伤悲-“三个一”活动第 3 期&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.66&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@nahaha&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@nahaha/3wgnqg-or&#34;&gt;遠方的問好 - 新人＂三個一＂活動第三期&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.67&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;14&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@xiaoshancun&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@xiaoshancun/2qkath-or&#34;&gt;留一份空明在心间-参加“三个一”活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.72&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;34&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@spearous&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@spearous/my-baby&#34;&gt;My baby，你的一生会怎样？- 参加“三个一”活动 -月旦评&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@eric15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@eric15/-2017111t214844853z&#34;&gt;问自己问题是所有进步的开始&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@melaleuca&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@melaleuca/world&#34;&gt;孩子，你问我是谁，我却想回答你世界是什么样子｜华语区新人“三个一”活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.17&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;31&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@tvb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@tvb/love-till-death-do-us-part&#34;&gt;问世间情是何物 直教生死相许 Famous poetry:Love till death do us part.&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;26&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.41&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;62&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@lixing&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@lixing/4csyer&#34;&gt;桐花万里丹山路，雏凤清于老凤声-三个一活动投稿&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@winniex&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@winniex/stop-asking-who-i-am&#34;&gt;夜游症患者之别问我是谁 Stop Asking Who I Am&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.31&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@dancingapple&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@dancingapple/3egizb&#34;&gt;问仙&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15.80&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;40&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Tags: #cn-reader #cn-31 #cn-contest&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Use of useless - 庄子说：假如我是头猪</title>
+      <link>https://steemit.netlify.com/post/use-of-useless-or/</link>
+      <pubDate>Fri, 03 Nov 2017 10:34:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/use-of-useless-or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/use-of-useless-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/use-of-useless-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/use-of-useless-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/use-of-useless-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/use-of-useless-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;One day, my wife picked some wild garlic chives from the botanic garden and cooked it for dinner. My elder son J asked, &amp;lsquo;is it grass?&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;I explained to him the difference between grass and vegetables. &amp;lsquo;Don&amp;rsquo;t eat anything wild that you don&amp;rsquo;t know, not only wild vegetables, but also meat. Pork, mutton, chicken are good for our health. That is why we eat them. Why don&amp;rsquo;t we eat the meat of rats or squirrels? They are not tasty or good to out health&amp;rsquo;, I talked a little further.&lt;/p&gt;
+
+&lt;p&gt;J said, &amp;lsquo;then rats or squirrels are lucky. They can live longer than those eaten by us.&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;This reminds me of a Chinese Philosopher, Master Zhuang, who  lived 2400 years ago. He once told a story.&lt;/p&gt;
+
+&lt;p&gt;Once upon a time, some villagers  wanted to cut a big tree so as to build a house. The tree was already hundreds of years old. However, the most experienced carpenter in the viilage said that it was not a good idea because the tree was absolutely useless. If the tree were useful, it would have been cut long time ago and could not have been still living.&lt;/p&gt;
+
+&lt;p&gt;In the night, the carpenter had a dream. The tree said to him in the dream, &amp;lsquo;why did you say that I am useless? Well, I am not useful to humans, and this is just why I can survive. I am useful to myself. If you don&amp;rsquo;t understand this, you are the one who is useless.&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;Everyone knows the use of useful, but does anybody know the use of useless?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.publicdomainpictures.net/pictures/200000/nahled/pigs-1478813226qX0.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;@eduter 在&lt;a href=&#34;https://cnsteem.com/cn/@eduter/3ey314&#34;&gt;心理疾病&lt;/a&gt;里写到：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;庄子说，假如我是头猪，与其我被喂的饱饱的并打扮的漂漂亮亮的送上祭坛，我还是更愿意脏兮兮地在泥巴地里打滚和捡东西吃。&lt;/p&gt;
+
+&lt;p&gt;其实庄子没说过这句话。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;庄子虽然没说过这句话，但这句话里蕴含的哲理确实来自庄子。&lt;/p&gt;
+
+&lt;p&gt;有一次，孩子妈去植物园割了一些野韭菜，给我们做晚饭。大娃京生得知这韭菜不是超市买的，而是从草地上割来的，就问：”这是草吗？”&lt;/p&gt;
+
+&lt;p&gt;我意识到，爱国主义和科普教育的机会来了，于是放下筷子，开始长篇大论：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“这是个好问题。你看，中文的草，菜，药这三个字，都是草字头。很久以前，这三种东西长在一起，长得很像，人们分不出来，饿了不会吃，有病不会治。&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;后来，有个叫神农氏的人，中国人哦，很勇敢，冒着生命危险自己去品尝，尝了100种，分出了哪些好吃又健康，就叫做菜；哪些不好吃或者有毒不能吃，就叫做草；哪些能治病，就叫做药。小朋友分不清，在外边玩的时候不能乱吃。&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;不光是菜哦，肉也是。我们为什么吃猪肉，牛肉，羊肉，鸡肉，不吃狼肉，狮子肉，大象肉呢？很久以前，人们花了很多时间去试，才挑出了这些好吃的健康的肉；那些我们平常不吃的肉，就是不好吃或者不健康的，小朋友不要乱吃。”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;京生想了想说：”那狼，狮子，大象真是很幸运，没被人吃掉，能活的时间长。”&lt;/p&gt;
+
+&lt;p&gt;我觉得，儿子这简短一句话的价值，秒杀我前面啰里啰唆说的一切。因为他自己悟出的这个道理，是庄子的观点。庄子讲的故事是这样的：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;从前，有个木匠，路过一棵大树，看上去非常粗壮茂密，树龄有几百年了。大家说，这树砍了盖房子多好。木匠却说，这棵树肯定没用；要是有用，早就被砍了。&lt;/p&gt;
+
+&lt;p&gt;木匠夜里做梦，这棵树对木匠说：“你凭什么说我没用？我对人来说没有用，但我能保自己的命，这就是最大的用处，连这个都不明白，你才没用呢。”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;庄子原话是这么说的：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;山木，自寇也；膏火，自煎也。桂可食，故伐之；漆可用，故割之。人皆知有用之用，而莫知无用之用也。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我孤陋寡闻，“无用之用”我到高中才第一次听说，听说的时候还觉得豁然开朗。如今，却被7岁的儿子轻易点破了。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>阿舅</title>
+      <link>https://steemit.netlify.com/post/2ljz4e/</link>
+      <pubDate>Tue, 31 Oct 2017 13:22:57 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/2ljz4e/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/2ljz4e&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2ljz4e&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/2ljz4e&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/2ljz4e&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/2ljz4e.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;早年听过一个相声，忘了是谁表演的了，只记得里面说，孩子的幼儿园里有个男幼师。孩子们觉得，无论叫“叔叔”还是叫“老师”都不合适，于是就叫“阿舅”，因为他们管女幼师叫“阿姨”。&lt;/p&gt;
+
+&lt;p&gt;二娃的幼儿园招聘，就招来一位阿舅。阿舅一来，幼儿园就有了新故事。&lt;/p&gt;
+
+&lt;p&gt;首先，是不是录用阿舅，园长苏珊娜需要先征求家长委员会的意见：家长们接受男老师吗？性别歧视可是违法的哦。另外，这位老师是英国人，说的是地道的英语。你愿意让孩子学外语吗？&lt;/p&gt;
+
+&lt;p&gt;呃……二娃是男孩，我们完全欢迎男老师，只是这英语嘛……二娃已经有汉语和德语了呀。&lt;/p&gt;
+
+&lt;p&gt;我们决定还是先沉默，看看别的家长的态度吧。&lt;/p&gt;
+
+&lt;p&gt;苏珊娜又补充了一些材料：阿舅 29 岁，8 年前开始在英国、肯尼亚、印度和意大利从事幼儿教育工作，学习过 CACHE 3级和5级的课程。&lt;/p&gt;
+
+&lt;p&gt;CACHE是什么？一搜才知道，CACHE 就是  Council for Awards in Care, Health and Education，“是国际标准的教师培训课程，是英国儿童教育的基础课程资格证，在英国从事儿童教育的最基本要求。二级适用于幼儿和青少年的管理和教 育工作。在英国，若从事幼儿教育工作，必须拥有该资质。它基于西方方法论和教育学，现今的调查研究以及反映了西方早教发展趋势，探索式学习，幼儿中心，概 念驱动，并将当前的研究融入幼儿如何学习中。”&lt;/p&gt;
+
+&lt;p&gt;看样子，苏珊娜挺愿意录用阿舅的。&lt;/p&gt;
+
+&lt;p&gt;很快，家长们的意见反馈上来了。所有人都说，让孩子接触地道的英伦腔太棒了。雅各布的爸爸妈妈甚至说，这简直就是雅各布的好运气，因为雅各布两个月后就要从幼儿园毕业了。&lt;/p&gt;
+
+&lt;p&gt;那么性别呢？&lt;/p&gt;
+
+&lt;p&gt;里欧的妈妈和塔哈的妈妈认为，只要资质合格就行，性别无所谓啦。我们可以考察一段时间再说。从男老师身上，孩子可以学到不同的东西。&lt;/p&gt;
+
+&lt;p&gt;莱昂纳多的妈妈谈了谈莱昂纳多的问题。这孩子胆小，大概是自小被女人照看的缘故，除了他爸爸，不敢跟别的男人玩，希望男老师能够改变现状。&lt;/p&gt;
+
+&lt;p&gt;大卫的爸爸说，他无法理解男老师怎么会受歧视。&lt;/p&gt;
+
+&lt;p&gt;这时，我们听到一位妈妈很不客气的声音：我不想让我的女儿被一个男人照顾。我要换个幼儿园。&lt;/p&gt;
+
+&lt;p&gt;最终，在多数人投赞成票的情况下，阿舅克里斯光荣上岗。&lt;/p&gt;
+
+&lt;p&gt;我起初担心男幼师会不会太阴柔纤细，一看克里斯就打消了这个顾虑。这是个大胡子的粗壮青年。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Lion-Kids-Lion-Father-Big-Cats-Wild-Animals-Drawing-1791988.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image credit: maxpixel.freegreatpicture.com&lt;/p&gt;
+
+&lt;p&gt;过了一段时间，我们渐渐发现，幼儿园里有个阿舅，果然不一样。&lt;/p&gt;
+
+&lt;p&gt;这个幼儿园很小，只有一个班，十几个小朋友，包括园长在内有四位老师。这家幼儿园是家长共治式，很多事情需要家长参与，比如每天的卫生都是我们这些家长轮流值周打扫。&lt;/p&gt;
+
+&lt;p&gt;阿舅没来的时候，晚上打扫卫生时，活儿特别多，光给垃圾分类倒掉就花去20分钟。阿舅来了之后，每天顺手就把垃圾倒了。值周的家长感觉轻松多了。&lt;/p&gt;
+
+&lt;p&gt;幼儿园的小车棚太小，每次婴儿车都挤得放不下。阿舅亲手做个了架子，分上下两层，有效地利用了空间，婴儿车终于有地方放了。&lt;/p&gt;
+
+&lt;p&gt;花园里原来有一块空地，阿舅勤快地开辟出来，带着小朋友们种花种菜。&lt;/p&gt;
+
+&lt;p&gt;最关键的，早上送孩子上幼儿园，孩子有时候扭扭捏捏不想进去。原先，女老师们总是说，家长多陪一会儿再走。现在，阿舅二话不说，一手把孩子抱起来就进去了。&lt;/p&gt;
+
+&lt;p&gt;朋友听说之后，慕名而来，说什么也??来给他家孩子报个名。&lt;/p&gt;
+
+&lt;p&gt;虽然，他家住得好远好远。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>steemsql 也开始不靠谱了</title>
+      <link>https://steemit.netlify.com/post/steemsql/</link>
+      <pubDate>Mon, 30 Oct 2017 09:49:27 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steemsql/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemsql&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemsql&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steemsql&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steemsql&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemsql.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;今天的“希望工程”日报一出来，我就发现新人新帖里很多垃圾文，没有经过过滤。&lt;/p&gt;
+
+&lt;p&gt;我有个小号 @pzhao ，当作机器人来用，打算自动发布一些模板化的帖子和评论。目前，”历史上的今天“已经交给机器人发布了。我一直想等着“希望工程”日报做成熟之后，也交过去，免得对我的一些 followers 造成骚扰。可是，除了 steem python API 经常发不出去文章之外，还时不时出点别的幺蛾子。steemsql 就是一个。&lt;/p&gt;
+
+&lt;p&gt;“希望工程”日报的垃圾帖过滤工作，是用 R 语言程序完成的。R 程序自动从 steemsql 数据库里，读取 @incrediblesnow 最新发布的 cn-abuse 报告，从中获取新增的灰名单和黑名单，然后对新人新帖进行过滤。&lt;/p&gt;
+
+&lt;p&gt;然而，&lt;a href=&#34;https://cnsteem.com/cn/@incrediblesnow/29-10-2017-cn-abuse-report-for-cn-abuse-on-29-10-2017&#34;&gt;昨天的 cn-abuse 报告&lt;/a&gt;，在 steemsql 里看不见。例如搜索：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+SELECT body 
+
+FROM Comments 
+
+WHERE title like N&#39;%Cn-abuse 的报告%&#39; 
+
+  AND author = &#39;incrediblesnow&#39; 
+
+  AND json_metadata like &#39;%\&amp;quot;cn\&amp;quot;%&#39; 
+
+  AND created BETWEEN &#39;2017/10/29&#39; and &#39;2017/10/30&#39;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;结果是零条。&lt;/p&gt;
+
+&lt;p&gt;放宽一下搜索条件：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+SELECT title 
+
+FROM Comments 
+
+WHERE author = &#39;incrediblesnow&#39; 
+
+  AND created BETWEEN &#39;2017/10/20&#39; and &#39;2017/10/30&#39; 
+
+  AND title &amp;lt;&amp;gt; &#39;&#39;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;仍然搜不到。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmT2EerJQhoLsMUTQEKzCfgQiQ8vhnRH4etzrFU2gZ8Va3/steemsql.jpg&#34; alt=&#34;steemsql.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这就导致昨天的灰名单和黑名单没有被读到，所以“希望工程”的日报就没有得到过滤。好在，就算是没过滤，新人新帖也比前些天大为减少了。&lt;/p&gt;
+
+&lt;p&gt;两个月前，我发现 &lt;a href=&#34;https://steemit.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;steemdata 的数据框不靠谱&lt;/a&gt;，于是换到了 steemsql。现在连 steemsql 也不靠谱了，该怎么办？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>欢迎参加新人“三个一”活动第 3 期 Welcome Prize for New Steemians 3</title>
+      <link>https://steemit.netlify.com/post/3-welcome-prize-for-new-steemians-3/</link>
+      <pubDate>Sun, 29 Oct 2017 08:30:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/3-welcome-prize-for-new-steemians-3/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/3-welcome-prize-for-new-steemians-3&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/3-welcome-prize-for-new-steemians-3&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/3-welcome-prize-for-new-steemians-3&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-welcome-prize-for-new-steemians-3&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/3-welcome-prize-for-new-steemians-3.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;希望工程“三个一”活动第 3 期隆重开幕！欢迎所有新老用户参加，投稿，点赞，留言，赞助……形式不限。本活动的发起详见&lt;a href=&#34;https://steemit.com/cn/@dapeng/welcome-prize-for-new-steemians&#34;&gt;第一期的简介&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZZuvwFeacPW4KqrXFdjWhTjP1USNhZ4FQyM83Ms8wLCy/cn-31-3.jpg&#34; alt=&#34;cn-31-3.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;怎样参加&#34;&gt;怎样参加&lt;/h2&gt;
+
+&lt;p&gt;只需在 steem 上发布一篇符合以下要求的文章即可：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;参加活动的文章里需包含“&lt;strong&gt;三个一&lt;/strong&gt;”：即&lt;strong&gt;一张原创照片&lt;/strong&gt; + &lt;strong&gt;一首诗（不必原创，注明出处）&lt;/strong&gt; + &lt;strong&gt;一段原创文字&lt;/strong&gt;。“三个一”的顺序可以随意。文章标题不限。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;本期主题：&lt;strong&gt;“问”&lt;/strong&gt;。打开脑洞，随便想，只要能跟“问”字扯上关系的，都行。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;照片和文字必须原创。如有抄袭、剽窃，零容忍，一经发现，将会被列入共享黑名单，以后永无机会参加“希望工程”的任何活动。没有黄牌，直接红牌！&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;为了方便统计，文章的标签（Tag）必须包含 cn-31，第一标签必须是 cn。建议标签: cn cn-reader cn-31 photography poetry&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;欢迎一人多次投稿，取其中最高名次的一篇参加评奖。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;投稿的文章可以参加 steem 上同期举办的其他活动，对“三个一”评奖没有任何影响。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;具体实例，请看&lt;a href=&#34;https://steemit.com/cn/@dapeng/1-or-awards-ceremony-for-the-welcome-prize-new-steemians&#34;&gt;以前的投稿作品&lt;/a&gt;即可。&lt;/p&gt;
+
+&lt;h2 id=&#34;活动时间&#34;&gt;活动时间&lt;/h2&gt;
+
+&lt;p&gt;活动自本文发布起开始，截至 2017-11-03 23:59 (北京时间)，即下周五晚上，为期大约一周。颁奖时间为2017-11-04 星期六。&lt;/p&gt;
+
+&lt;h2 id=&#34;全新的奖项设置和评奖办法&#34;&gt;全新的奖项设置和评奖办法&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;奖金：暂定 32 SBD，来自&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2yuqbh-welcome-prize-for-new-steemians&#34;&gt;本活动上一期发起帖&lt;/a&gt;的文章净收益。接受赞助！ 本文净收益将留给下期活动使用。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;奖项：暂定 金奖 1 名（ 6 SBD）、银奖 3 名（各 4 SBD）、铜奖 5 名（各 2 SBD），幸运奖 4 名 （各 1 SBD），共 13 名。欢迎赞助不同奖项！比如，收到赞助 1 SBD，我们就增设幸运奖一名; 收到 2 SBD， 就增设铜奖一名，依次类推，不设上限！如果奖项数量多于参加人数，那么盈余就留作下次活动使用。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;评奖范围：金银铜奖，将在注册未满 60 天（2017 年 8 月 30 日当天（UTC）及以后注册）的用户里产生，幸运奖，将在参加活动的所有用户里产生，随机抽取。注册时间可以去 &lt;a href=&#34;https://steemdb.com/@dapeng/data&#34;&gt;https://steemdb.com/@dapeng/data&lt;/a&gt;，请把这个链接里我的 id 换成你的 id。网页表格里 created 一项就是你的注册时间。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;评奖规则：按文章后面得到的留言（Reply）人数从多到少排序决定奖项。注意，是人数，不是留言的条数。发布多条留言的人按 1 个人计算（即不重复计算）。如有并列，按文章发表较迟的优先获奖。一人多次投稿的，取其中最高名次的一篇参加评奖。幸运奖随机抽选。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;活动的最终解释权归 @dapeng 所有。&lt;/p&gt;
+
+&lt;p&gt;欢迎大家留言，对活动提出你的建议或意见！谢谢！&lt;/p&gt;
+
+&lt;p&gt;Tags: #cn-reader #cn-contest #contest&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>“华语好声音”活动第 1 期颁奖典礼 - Award ceremony for the Welcome Prize New Steemians</title>
+      <link>https://steemit.netlify.com/post/1-or-award-ceremony-for-the-welcome-prize-new-steemians/</link>
+      <pubDate>Sat, 28 Oct 2017 05:28:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/1-or-award-ceremony-for-the-welcome-prize-new-steemians/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/1-or-award-ceremony-for-the-welcome-prize-new-steemians&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/1-or-award-ceremony-for-the-welcome-prize-new-steemians&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/1-or-award-ceremony-for-the-welcome-prize-new-steemians&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/1-or-award-ceremony-for-the-welcome-prize-new-steemians&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/1-or-award-ceremony-for-the-welcome-prize-new-steemians.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/cn-voice-start&#34;&gt;“华语好声音”活动&lt;/a&gt;第 1 期圆满落幕！活动共收到稿件 19 篇，来自 16 位作者，更多统计数字和全部文章清单附后。&lt;/p&gt;
+
+&lt;p&gt;现在，请准备好你的掌声，我们公布获奖名单。&lt;/p&gt;
+
+&lt;h2 id=&#34;颁奖&#34;&gt;颁奖&lt;/h2&gt;
+
+&lt;p&gt;按照活动规则，我们根据文章的留言人数评出获奖作者，并随机抽取幸运作者，获奖名单如下：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;奖项&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;评论人数&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;收益&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;赞&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;金奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@mrspointm/we-are-just-like-summer-and-autumn-or&#34;&gt;一个像夏天一个像秋天 We are just like summer and autumn - “华语好声音”大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;24&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;21.32&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;68&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;银奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@acactus1013&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@acactus1013/or&#34;&gt;斑马 斑马 -华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.54&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;36&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;银奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tvb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@tvb/9hkpz-or&#34;&gt;《秋意浓》+《秋天的眼泪》-参加“华语好声音”活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.55&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;54&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;铜奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@winniex&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@winniex/2b2uwj-or&#34;&gt;诗朗诵《秋天》献给Steemit !- 参加华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;24.80&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;铜奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@hqy&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@hqy/6v8jlm&#34;&gt;牵肠挂肚话《送别》 #华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;13&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29.18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;铜奖&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@dancingapple&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@dancingapple/4g2oel&#34;&gt;《李香兰》【华语声音】&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.97&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;24&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;幸运奖按照&lt;a href=&#34;https://steemit.com/cn/@dapeng/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest&#34;&gt;事先公布的随机抽选法&lt;/a&gt;，抽到的幸运儿是：&lt;/p&gt;
+
+&lt;p&gt;@sunnyjolly&lt;/p&gt;
+
+&lt;p&gt;祝贺获奖者！&lt;/p&gt;
+
+&lt;p&gt;本期奖金共 34 SBD，金奖 8 SBD，银奖每人 6 SBD ， 铜奖每人 4 SBD，幸运奖 2 SBD。获奖名单公示24小时，请大家看看有没有错误，欢迎反馈。如无错误，奖金稍后就发到获奖者的钱包里。&lt;/p&gt;
+
+&lt;h2 id=&#34;反馈&#34;&gt;反馈&lt;/h2&gt;
+
+&lt;p&gt;很多热心朋友反馈说，觉得本期活动主题“秋”选得比较受限制，建议以后的活动主题选得相对宽泛一点，甚至不限主题。非常好的建议，我们下次活动将不限主题，尽情发挥。&lt;/p&gt;
+
+&lt;p&gt;大家如果有别的建议或意见，欢迎在此留言。&lt;/p&gt;
+
+&lt;h2 id=&#34;致谢&#34;&gt;致谢&lt;/h2&gt;
+
+&lt;p&gt;本期奖金来自以下朋友的赞助（按时间先后）：&lt;/p&gt;
+
+&lt;p&gt;@dapeng  @shenchensucc @kona&lt;/p&gt;
+
+&lt;p&gt;谢谢朋友们提出的建议！我们下期再见！&lt;/p&gt;
+
+&lt;h2 id=&#34;统计数字&#34;&gt;统计数字&lt;/h2&gt;
+
+&lt;p&gt;下面是本期活动的一些统计数字。&lt;/p&gt;
+
+&lt;p&gt;本期活动共收到稿件 19 篇，来自 16 位作者。截至活动结束时，投稿文章收益共计 190.17 SBD，获赞共计 591 个。参加活动的账号注册天数分布如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmRCyM69rPuXc21WB9eNgaBuc1v6utjNa2UtiSgaprQ1ux/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;参加活动的全部文章按投稿时间顺序排列如下：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;评论人数&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;收益&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;赞&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@blacktranquility&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@blacktranquility/cn-voice&#34;&gt;cn-voice 万水千山总是情&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.63&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@mrspointm/we-are-just-like-summer-and-autumn-or&#34;&gt;一个像夏天一个像秋天 We are just like summer and autumn - “华语好声音”大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;24&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;21.32&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;68&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@dapeng&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/chengdu&#34;&gt;春雷路的尽头，载不动许多愁 - &amp;ldquo;华语好声音&amp;rdquo;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17.36&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;50&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@metten&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@metten/2zkfix&#34;&gt;天净沙·秋思｜华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10.04&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@windowglass&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@windowglass/7mgpdm&#34;&gt;红叶落索的时候｜华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5.18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@hqy&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@hqy/6v8jlm&#34;&gt;牵肠挂肚话《送别》 #华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;13&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29.18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/or-12&#34;&gt;同手同脚-谷哥点名#12 “华语好声音”&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8.21&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@bigbigfish&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@bigbigfish/5muu8b&#34;&gt;《紫》——唱出一种属于秋天的离愁别绪（期待华语好声音有人演绎！）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.91&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;21&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@acactus1013&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@acactus1013/or&#34;&gt;斑马 斑马 -华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.54&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;36&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@winniex&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@winniex/2b2uwj-or&#34;&gt;诗朗诵《秋天》献给Steemit !- 参加华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;24.80&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/2g7g7h-or&#34;&gt;会呼吸的痛-华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10.29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@victory622&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@victory622/or&#34;&gt;《秋叙道别时》 -  “在提灯而来的夜，诗人已打烊。致《恋恋风尘》” - 华语声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11.62&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;36&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@seee&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@seee/singing-buddies&#34;&gt;【华语好声音】Singing buddies / 一个像夏天，一个像秋天&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.61&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;25&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@melaleuca&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@melaleuca/music&#34;&gt;那个秋天，我认识了，同桌的你 - &amp;ldquo;华语好声音&amp;rdquo;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.54&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@dapeng&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/5pfvvr&#34;&gt;恋恋风尘：回致《秋叙道别时》&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.49&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;36&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@dancingapple&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@dancingapple/4g2oel&#34;&gt;《李香兰》【华语声音】&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.97&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;24&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@tvb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@tvb/9hkpz-or&#34;&gt;《秋意浓》+《秋天的眼泪》-参加“华语好声音”活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.55&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;54&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@veronicazhu&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@veronicazhu/34kzqa-or&#34;&gt;『哄我入睡』- 华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.05&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@bigbigfish&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@bigbigfish/or-or&#34;&gt;《越过山丘》&amp;ndash;华语好声音&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.88&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Tags: #cn-voice #cn-contest&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Can the Gossip Tell us Why Ned Undelegated SP? The answer is no</title>
+      <link>https://steemit.netlify.com/post/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no/</link>
+      <pubDate>Fri, 27 Oct 2017 15:44:27 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Data can prove something, as well as data can cheat some people. Gossip is fun, but one has to be seriously careful if one&amp;rsquo;s gossip can ruin others&amp;rsquo; reputation.&lt;/p&gt;
+
+&lt;p&gt;In one of @paulag&amp;rsquo;s latest posts some data were displayed. Frankly speaking, I read some of @paulag&amp;rsquo;s data analysis reports, which were impressive and useful. However, the post &lt;a href=&#34;https://cnsteem.com/steemit/@paulag/can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence#@dapeng/re-paulag-can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence-20171027t093322442z&#34;&gt;Can the Data Tell us Why Ned Undelegated so much Steem Power?&lt;/a&gt; was rather disappointing. The hints or conclusions of this post were unreliable to my comment sense. As the author said that &amp;lsquo;the data is correct&amp;rsquo;, I decided to see if it is true.&lt;/p&gt;
+
+&lt;p&gt;The data displayed in this post were taken from Steemsql held by @arcange.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-data-in-paulag-s-post-was-incorrect&#34;&gt;The Data in @paulag&amp;rsquo;s Post Was Incorrect&lt;/h3&gt;
+
+&lt;p&gt;It is easy to find that the first table in @paulag&amp;rsquo;s post disagrees with the chart. The maximum of @surpassinggoolge&amp;rsquo;s votes (grey area) was 700 votes per day in the chart, while the average was 1327.4  votes per day. &lt;strong&gt;Apparently wrong. The average cannot be greater than the maximum.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmYu6ghDtHpKWnDWZ5BboaiPeFpN3zvPvPvLfCXC6URrNR/1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image taken from @paulag&amp;rsquo;s Post.&lt;/p&gt;
+
+&lt;p&gt;So, what is the truth?&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s firstly see the time when @ned delegated and undelaged the SP.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;delegator&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;delegatee&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;vesting_shares&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;timestamp&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;htliao&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:15:00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;nicolemoker&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:15:18&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;linuslee0216&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:15:45&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;tumutanzi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:16:54&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;sweetsssj&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:20:45&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;surpassinggoogle&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:25:18&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ramengirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:28:24&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;sweetsssj&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 11:54:27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ramengirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 11:57:30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;nicolemoker&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 11:58:57&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;tumutanzi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 12:02:51&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;htliao&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 12:03:09&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;linuslee0216&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 12:03:21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;If we ignore the fist day and the last day, each delegation lasted 76 days.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+SELECT * FROM TxVotes WHERE voter IN (&#39;htliao&#39;,  &#39;linuslee0216&#39;, &#39;nicolemoker&#39;, &#39;surpassinggoogle&#39;, &#39;sweetsssj&#39;, &#39;tumutanzi&#39;,  &#39;ramengirl&#39;) AND timestamp BETWEEN &#39;2017/08/09&#39; and &#39;2017/10/24
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In  @paulag&amp;rsquo;s post, nicolemoker voted 3114 times in total. 3114 / 76. How could the average votes per day be 207.6?&lt;/p&gt;
+
+&lt;p&gt;I examined the data and got a new table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Voter&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;No of Votes&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Average votes per day&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;nicolemoker&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3093&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;40.69737&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ramengirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3971&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;52.25000&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;surpassinggoogle&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19901&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;261.85526&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;linuslee0216&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5555&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;73.09211&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;htliao&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9759&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;128.40789&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;tumutanzi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7680&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;101.05263&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;sweetsssj&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9626&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;126.65789&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The daily averages are around &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;5&lt;/sub&gt; of @paulag&amp;rsquo;s calculations.&lt;/p&gt;
+
+&lt;p&gt;The numbers of votes are slightly different from @paulag&amp;rsquo;s, perhaps because  @paulag&amp;rsquo;s post took a different period of delegation, which was not mentioned in @paulag&amp;rsquo;s post. This slight difference could be simply ignored.&lt;/p&gt;
+
+&lt;p&gt;Based on @paulag&amp;rsquo;s &lt;strong&gt;incorrect calculation&lt;/strong&gt;, all the subsequent numbers and conclusions were wrong, including the &amp;lsquo;$457K&amp;rsquo;, &amp;lsquo;Voting over 1300 times a day, this does not surprise me&amp;rsquo;,&amp;lsquo;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;What still makes sense is the pie chart, some ratios and percentages, and the cluster diagram. &lt;strong&gt;However, I would double check them, as the post was carelessly written in  the first place.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;facts-or-opinions&#34;&gt;Facts or Opinions?&lt;/h3&gt;
+
+&lt;p&gt;It seems that @paulag&amp;rsquo;s post was intended to give  some facts or data, but actually it was giving only some opinions based on wrong data and groundless assumptions.&lt;/p&gt;
+
+&lt;p&gt;In the section &amp;lsquo;Transfer data&amp;rsquo;, @paulag&amp;rsquo;s post gave three conclusions:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1 Reading the top memo on the table below, it very quickly because clear that @htliao was selling votes.&lt;/p&gt;
+
+&lt;p&gt;2 The data clearly shows @sweetsssj was also selling votes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I doubt what &amp;lsquo;selling&amp;rsquo; means here. In my mind, if A sells somehing to B, it means that B pays A money and takes something away from A. But in @paulag&amp;rsquo;s data, you can only see B paid A money. What did B take away from A? If nothing, was A selling? If I transfer some SBD to @paulag, can I immediately say that  @paulag is selling votes to me?&lt;/p&gt;
+
+&lt;p&gt;I am sure that &lt;strong&gt;the logic of @paulag&amp;rsquo; post was broken&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;3 Within the memo for @htliao were also suggestions that @htliao may be leasing out some power.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This conclusion was based on the transfer and delegation history between @htliao and @justyy. Many people have explained that justyy was just collecting some SP so as to support minnows. As a feedback and acknowledgement, justyy paid some so-called &amp;lsquo;interests&amp;rsquo; to the delegators. I delegated some. Besides @htliao and me, there have been some other delegators too, receiving interests from justyy everyday. It was not surprising that @paulag&amp;rsquo;s post did not mention this, because &lt;strong&gt;the author knew nothing about the minnow support program.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;As @paulag&amp;rsquo;s post gave incorrect data, broken logic, and knew nothing about some facts, I think the post makes no sense to its title. Furthermore, it is badly misleading many readers, and ruining the reputations  of the innocents.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lsquo;I also decided to have a dig through the memos,&amp;rsquo; said @paulag&amp;rsquo;s post. I am looking forward to a further report, hopefully with no mistakes. This post of mine is only mentioning the mistakes in @paulag&amp;rsquo;s post itself rather than my opinion to the author in person. I really like @paulag&amp;rsquo;s previous reports, especially the nice charts in them. I wish @paulag could share the excel sheets so as to make the data analysis reproducible, repeatable, and reliable.&lt;/p&gt;
+
+&lt;h3 id=&#34;voting-with-bots&#34;&gt;Voting with bots?&lt;/h3&gt;
+
+&lt;p&gt;The wrong data in @paulag&amp;rsquo;s post, especially the daily average votes, e.g. voting over 1300 times a day, mislead some people. They thought that these lucky guys  voted with bots.  Is voting with bots forbidden or a shame? I do not know. But let&amp;rsquo;s see if they did it.&lt;/p&gt;
+
+&lt;p&gt;The figures below showed some 24-hour clocks, indicating the hours when they voted. The diameters of each sector showed the percentage of the quantity of their total votes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUCXwNUtJz8GATLHEW4gyusoK4sQ2p8Tge6KzfDhhi6ui/unnamed-chunk-69-1.png&#34; alt=&#34;unnamed-chunk-69-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There were nearly no vote in some hours of htliao, linuslee0216, nicolemoker, ramengirl and tumutanzi&amp;rsquo;s clocks (humans have to sleep), while surpassinggoogle&amp;rsquo;s votes covered all 24 hours. If this is the reason why @ned is still delegating SP surpassinggoogle, then why did @ned undelegate from sweetsssj, whose voting hours showed  a similar pattern?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Can the Data Tell us Why Ned Undelegated so much Steem Power? Apparently the answer is &amp;lsquo;no&amp;rsquo;. Data only show the facts (if the data is correct ), rather than the cause or intention. Only @ned himself can tell us the answer.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;before-and-after-ned-s-delegation&#34;&gt;Before and after @ned&amp;rsquo;s Delegation&lt;/h3&gt;
+
+&lt;p&gt;What happend after @ned&amp;rsquo;s delegation? See the comments (posts + replies) under cn category in the figure below. The vertical line indicates the date when @ned delegated SP.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmamLMPh6nqbnyppRMqsCVcgXBPEpq43id8UwnW7DmYUYm/unnamed-chunk-70-1.png&#34; alt=&#34;unnamed-chunk-70-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before ned&amp;rsquo;s delegation, there were averagely 579 comments per day under cn category. After ned&amp;rsquo;s delegation, there were averagely 1600 comments per day under cn category.&lt;/p&gt;
+
+&lt;p&gt;We will see what will happen after ned&amp;rsquo;s undelegation. If ned&amp;rsquo;s delegation was an experiment, I think his undelegation was the beginning of another.&lt;/p&gt;
+
+&lt;p&gt;PS. If you find any mistakes in my post, please let me know and you are highly appreciated.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;本文是对污蔑几位临时大鲸的帖子 &lt;a href=&#34;https://cnsteem.com/steemit/@paulag/can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence#@dapeng/re-paulag-can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence-20171027t093322442z&#34;&gt;Can the Data Tell us Why Ned Undelegated so much Steem Power?&lt;/a&gt; 的反驳。中文翻译过来就是：污蔑帖子用的数据是错的，计算是错的，逻辑是错的，而且不了解一些基本事实，所以纯属胡说八道。谢谢。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>恋恋风尘：回致《秋叙道别时》</title>
+      <link>https://steemit.netlify.com/post/5pfvvr/</link>
+      <pubDate>Wed, 25 Oct 2017 20:43:45 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/5pfvvr/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5pfvvr&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5pfvvr&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5pfvvr&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5pfvvr&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/5pfvvr.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;@victory622  投稿“华语好声音”，唱的是《秋叙道别时》，歌选得真不错，唱得也动听，只是……&lt;/p&gt;
+
+&lt;p&gt;他的副标题是“致《恋恋风尘》”？这么老的校园民谣，我年轻的时候爱唱的，居然还有人提起？&lt;/p&gt;
+
+&lt;p&gt;青春已散场，我就以老迈之躯，回顾这首当年没能唱给她的歌曲。&lt;/p&gt;
+
+&lt;p&gt;点击播放键，或点击&lt;a href=&#34;https://kg2.qq.com/node/play?s=fW2I62fYl_iEmfYQ&amp;amp;shareuid=649d9d85212c3489&amp;amp;topsource=a0_pn201001006_z11_u60004132_l1_t1508965605__&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;166&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/348494312&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steem 中国策第 4 期: 凛冬已至, 谁主沉浮  - CN Weekly 2017-10-25</title>
+      <link>https://steemit.netlify.com/post/steem-4-or-cn-weekly-2017-10-25/</link>
+      <pubDate>Wed, 25 Oct 2017 09:33:00 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steem-4-or-cn-weekly-2017-10-25/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-4-or-cn-weekly-2017-10-25&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-4-or-cn-weekly-2017-10-25&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-4-or-cn-weekly-2017-10-25&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-4-or-cn-weekly-2017-10-25&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-4-or-cn-weekly-2017-10-25.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最近两天没看微信。昨晚，照例去给“好声音”活动点我&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/upvote-of-fifty-cents&#34;&gt;那五毛钱的赞&lt;/a&gt;。在 @victory622 新发的唱歌帖后面，看到 @winniex 问了一句“很好奇 cn区以前什么样子”，我有点摸不着头脑，赶紧听听是不是歌里唱到 cn 区了，听后更没头没脑。今早读了几篇 Steem 华语区的帖子 ，才闹明白是怎么回事：原来，是&lt;strong&gt;皇上把下放的摇钱树和尚方宝剑收回去了&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;在这个时候，让我们看一下 cn 社区的&lt;a href=&#34;https://steemit.com/cn/@dapeng/6mnla8-steemit-cn&#34;&gt;水浒英雄榜&lt;/a&gt;。总地来说，原来的 5 条大鲸全部降级为小鲸或海豚。水泊梁山的总市值缩水了 24 %，实际权力总和缩水了 74 %（详见下文）。也就是说，从此以后，华语区每个人生活水平，将降低到原来的 1/4，甚至更低（abit 减持，sweetsssj 点赞不限于 cn）。&lt;/p&gt;
+
+&lt;p&gt;这是什么概念呢？这就相当于，原先一日三餐加宵夜，现在一天只能吃一顿饭，勒紧裤腰带过日子了。这大约相当于《三体》里描述的“大低谷”时代。&lt;/p&gt;
+
+&lt;p&gt;Steem 华语区，凛冬已至，哀鸿遍野。&lt;/p&gt;
+
+&lt;p&gt;然而，跟历史相比，这算得了什么呢？&lt;/p&gt;
+
+&lt;p&gt;如果你留意一下我每天发布的“历史上的今天”，你会发现，我们水浒英雄榜榜首的 sweetsssj，在去年的这个时候，每篇帖子也只不过二三十 SBD 的收益；cn 区每天发布的帖子数，大约只有现在的 1/10。而今，并不是突然变得冰冷了，而是本来就应该这么冷，只是前两个月反常地火热而已。&lt;/p&gt;
+
+&lt;p&gt;如果你像我一样，爱看《冰与火之歌》或《权力的游戏》，那么，Winter is coming 这句话自然涌入脑海。冬天，是考验人的时候。一些人会冻死，另一些人脱颖而出；有些人选择背叛，有些人则忠于友情。&lt;/p&gt;
+
+&lt;p&gt;沧海横流，方显出英雄本色。从下面的数据可以看出，那些级别越高的账号，受冬天影响就越大。光脚的不怕穿鞋的，在冬天到来的时候，无产阶级失去的只是枷锁。小鱼们，你们翻身的好机会来了！&lt;/p&gt;
+
+&lt;p&gt;而大鱼们，这同样是你们转型的机会。在华语区这个小圈子里，翻来覆去是不是玩腻了？华语区的海，开始干涸，成为只够小鱼们玩耍的水洼，大鱼们可能转身都转不开。那么，何必局限在区区一个华语区？广阔天地，大有作为！&lt;/p&gt;
+
+&lt;p&gt;在此，我们向几位临时大鲸致敬。他们是 @sweetsssj, @tumutanzi, @htliao, @linuslee0216, @nicolemoker. 从今天起，当你发现文章收益锐减的时候，你就会想起临时大鲸曾经给你带来的好处。在过去的几个月里，他们妥善地使用了手里的 SP，花费了很多时间和精力，点赞了无数人无数帖，为 cn 区的繁荣做出了极大的贡献。我本人也从中受惠良多。在他们走下大鲸舞台的时刻，让我们为他们鼓掌喝彩，并期待有朝一日他们再次登台亮相！&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;鹰击长空，鱼翔浅底，万类霜天竞自由。怅寥廓，问苍茫大地，谁主沉浮！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://c1.staticflickr.com/4/3682/11604270553_3f8dcf1a3a_z.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image credit: c1.staticflickr.com&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;目前，水浒英雄榜上有 217 条英雄好汉（尚未入伙的，请联系 @dapeng 入伙）。下面，我们通过目前的状态、最近一周的变化和大鲸小鲸的活动来分别描述。&lt;/p&gt;
+
+&lt;h2 id=&#34;状态&#34;&gt;状态&lt;/h2&gt;
+
+&lt;p&gt;水泊梁山这 217 条英雄好汉里，目前有 0 条大鲸（即权力值超过 48.6 万 SP），5 条小鲸（即权力值超过 4.86 万 SP），14 条海豚（即权力值超过 4860 SP），40 条大鱼（即权力值超过 486 SP），158 条小鱼（即权力值低于 486 SP）。做成图是这样的：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmYyHvcehc4WrvcnjaE28x1iTSjNJenDxuHpr94nZgT1Gi/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;资历最老的，已经注册了 549 天；最年轻的，注册了只有 10 天。平均为 139 天，中位数为94天。有50 % 的账号集中在63 到 134 天之间。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNRPnQUJEUydR5quyyK6BuKr5b692ts7AUsYB7orry8y6/unnamed-chunk-2-1.png&#34; alt=&#34;unnamed-chunk-2-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;考察一下这个圈子的声望值，平均为 50.57，中位数为52.68，最低的是3.52，最高的是75.11。有50 % 的账号集中在45.22 到 58.92 之间——如果你在这个区间，不必担心，高于这个区间或低于这个区间的，都只有 25% 而已。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSAF2xXN1qgqieNjr3FKQFSNHtGhuj6XDkU8UGSk7yJyn/unnamed-chunk-4-1.png&#34; alt=&#34;unnamed-chunk-4-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;社区成长和权力更迭&#34;&gt;社区成长和权力更迭&lt;/h2&gt;
+
+&lt;p&gt;跟上周相比，入伙人数净增了 11 位好汉。由于 ned 代理的 SP 收回，账号价值总和由上周的约 55 万 减少到本周的 42 万 ，减少了约 13 万，合 24.1%. 实际权力（ESP）总和由上周的 332 万 SP 减少到本周的 85 万 SP，减少额度为 -247 万，合 -74.3%.&lt;/p&gt;
+
+&lt;p&gt;在小鱼到大鲸的五个等级中，新增 10 条小鱼, 1 条大鱼,  4 条海豚, 1 条小鲸。新增的海豚和小鲸其实是来自原来的临时大鲸，而原来的 5 条大鲸全部消失。权力的平均值比上周减少了 1.2 万 SP，而权力的中位数则增长了 12.7 SP；声望的平均值比上周增长了 1，声望的中位数则增长了 0.8。&lt;/p&gt;
+
+&lt;p&gt;可见，受影响的主要是原来的几位临时大鲸的有效权力。整体上，大家仍然在成长。&lt;/p&gt;
+
+&lt;p&gt;具体到每个人，在过去的一周里，按实权（ESP）排座次水浒 108 将里，上升最快的是 @wilsonwei777, 英雄角色从上周的&amp;rdquo;地勇星 孙立&amp;rdquo;上升为&amp;rdquo;天究星 穆弘&amp;rdquo; 。下面列出了在水浒英雄榜座次上升最快的前十名好汉。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;账号&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;上周座次&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;本周座次&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;上升位数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@bobdos&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;146&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;27&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;119&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@sweetcoin&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;201&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;140&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;61&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@jiba&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;182&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;144&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;38&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@ceciliali&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;176&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;141&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@cifer&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;173&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;143&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@baixu1018&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;197&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;169&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@chaoyang&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;196&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;168&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@jessie901220&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;189&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;161&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@lessercold&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;198&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;170&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;@wlcpu&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;190&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;162&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;28&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;点赞时间&#34;&gt;点赞时间&lt;/h2&gt;
+
+&lt;p&gt;临时大鲸消失，我们只看看未入伙的 @abit 。下图第一排是评论和发帖的 24 小时分布，第二排是点赞的 24 小时时间分布。13 &amp;ndash; 16 时（北京时间 19 &amp;ndash; 22 时）点赞活动比较多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUU3zUixjeKNfeP8dLg2nuFRCHcadnMCZKPgatAH5Js23/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;几位杀人鲸（小鲸）的活跃时间分布见下图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTohVGadWpsZ5WwQHtPukLxjXw9YFaG2GscPrW4UtDtYz/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;“试看书林隐处，几多俊逸儒流。” Steem 中国策，观察 cn 生态，见证英雄浮沉。感谢关注“大鹏观察”。&lt;/p&gt;
+
+&lt;p&gt;Tags: #steemswatch #steemit #ranking&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Thank you for your attention to Steems&amp;rsquo; Watch by @dapeng.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏观察&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>《三体》第一部为啥读起来不够好 (无剧透) The three-body problem</title>
+      <link>https://steemit.netlify.com/post/the-three-body-problem/</link>
+      <pubDate>Tue, 24 Oct 2017 12:50:39 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/the-three-body-problem/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn-book/@dapeng/the-three-body-problem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn-book/@dapeng/the-three-body-problem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn-book/@dapeng/the-three-body-problem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn-book/@dapeng/the-three-body-problem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/the-three-body-problem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;昨天，我在『&lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem#@mrspointm/re-dapeng-the-very-first-thing-to-do-for-new-steemians-or-steem-20171023t133706762z&#34;&gt;Steem 新手必须做的第一件事&lt;/a&gt; 』一文里谈到如何保存 steem 的密码时，以科幻小说《三体》为例，因为里面讲到，保存资料最安全最长久的办法，是&amp;rdquo;刻在石头上&amp;rdquo;。恰巧 @lemooljiang 的品乐书会也在&lt;a href=&#34;https://cnsteem.com/cn-book/@lemooljiang/12&#34;&gt;聊《三体》&lt;/a&gt;，认为《三体》第一部读起来比较失望。这部小说我在六年前第一次读过，后来又重温过几遍，同样觉得第一部不够好。这是为什么呢？&lt;/p&gt;
+
+&lt;p&gt;一个原因是《三体》的文笔不够好，人物刻画得不到位。不光是第一部，包括后面两部都是，女性角色写得很失败，不是师太类就是纯情少女类。&lt;/p&gt;
+
+&lt;p&gt;不过，与别类小说以塑造人物为目的有所不同，科幻故事的主角往往不是人物，而是科学设想。&lt;/p&gt;
+
+&lt;p&gt;科幻小说的美，往往在于先提出科学理论，然后推导开去，演绎人们或者别的生物们在该设想之下的故事，或有趣，或悲壮，或快乐，或辛酸。阿西莫夫的经典著作《机器人三定律》，读完之后我什么角色都没记住，唯独记住了三定律。&lt;/p&gt;
+
+&lt;p&gt;《三体》的主角不是叶文洁，也不是罗辑，也不是程心，而是“宇宙社会学两定律”。阅读科幻小说的审美过程，犹如推导一条数学定理，推导的过程峰回路转，读到第二部结局的刹那，宛如在无数行推导后被证明的最后那一行“∴”（所以），有一种难以名状的快感，就像炎炎盛夏汗流浃背的时候喝了一瓶冰镇白啤。&lt;/p&gt;
+
+&lt;p&gt;此外，《三体》第一部不太好看，是因为第一部其实是所有故事的序幕，作用是为后两部打下伏笔和铺垫。梦工厂曾经将圣经里的两个故事改编成了电影：一部是《梦之王约瑟》，一部是《埃及王子》。后者是我最爱的动画片之一，讲的是摩西出埃及的故事。相比之下，《梦之王约瑟》没那么好看，但却是《埃及王子》的前传和序章，讲的是摩西的祖先约瑟去埃及释梦，其实是为后来埃及王子的故事做铺垫的，正如《三体》第一部。&lt;/p&gt;
+
+&lt;p&gt;如果因为《三体》第一部读不下去就放弃了，那就会错过后面极大的精神享受。其实，不妨先从第二部《三体-黑暗森林》读起。三部曲的核心“宇宙社会学”直到第二部才出现，而故事正是从第二部开始纷繁和精彩起来，就像摩西出埃及一样，那是一位伟大先知的故事。读完第二部，再把第一部当前传来读，感觉就不同了。而第三部《三体-死神永生》，则是一个惊喜，在我眼里，是个浪漫的宇宙科幻爱情故事。&lt;/p&gt;
+
+&lt;p&gt;《三体》是原汁原味的中国小说，故事里有很多中国元素。作者是中国人，生活的地点在娘子关，故事的主人公是中国人，外星人终于不说英语了，周文王、墨子和伽利略、牛顿一样粉墨登场。而包括太阳系被毁灭等所有故事，都从文革时代的文攻武斗起源并顺理成章地展开，这让我百感交集。《X战警》里反面角色的性格来源不也是德国的纳粹时代么？同样也是人间地狱的文革，如果允许我们反思的话，中国该有多少精彩的文艺作品和伟大的思想从中诞生呢？&lt;/p&gt;
+
+&lt;p&gt;将《三体》称为&amp;rdquo;中国科幻小说的巅峰之作&amp;rdquo;，我认为是恰如其分的。在此之前，国外科幻界一直是欧美文化的天下。刘慈欣横空出世，凭一人之力带着中国科幻杀入国际领域，这是什么感觉？这就好比，某个说英文的老外，用英文写了部??国题材的武侠小说，然后翻译成中文，风头盖过了金庸。&lt;/p&gt;
+
+&lt;p&gt;《三体》最让我称道的，是建立在一整套科学技术、社会伦理、宗教信仰的基础上，作者构建了一个壮阔瑰丽的宇宙体系。这个体系的完整程度，堪比《指环王》里构建的整个世界；这个体系的精彩程度，超过了《星球大战》里的星系联盟。其实，《星球大战》从科幻角度来说跟《三体》不可同日而语，《星球大战》完全是把古老的神话故事移植到了地球之外而已，与其说是科幻不如说是魔幻。相比之下，《三体》如此美妙绝伦，所有的故事围绕“宇宙社会学”两定律而展开，如同欧几里得从“几何五公设”推出的煌煌欧氏几何体系，同样的审美享受在阅读《三体》的过程中畅快淋漓地实现了。&lt;/p&gt;
+
+&lt;p&gt;同样让我震惊的，还有《三体》中挑战人类思维极限的想象力。作者把宇宙中可能存在的千奇百怪用文字展现在我的面前。我坚信，作者笔下那个宇宙只能在文字中想象。任何试图描绘同样内容的图画或者动画，无论色彩多么绚丽，跟想象力相比都会黯然失色。&lt;/p&gt;
+
+&lt;p&gt;听说《三体》要拍成电影了。不知会用何种特效来展示三体人的探测器“水滴”，何种手段来展示降维打击，何种方法来展示从四维空间看三维空间的“无限细节”呢？&lt;/p&gt;
+
+&lt;p&gt;让我们拭目以待。&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/0I-zRs8sP3Q&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Youtube 视频：三年时间制作的14 分钟短片，一镜到底展示三体里的水滴。对原著无剧透。我看到第三遍才看明白，然后击节叫好。然后，不寒而栗。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The very first thing a new Steemian has  to do - Steem 新手必须做的第一件事</title>
+      <link>https://steemit.netlify.com/post/the-very-first-thing-to-do-for-new-steemians-or-steem/</link>
+      <pubDate>Mon, 23 Oct 2017 10:07:57 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/the-very-first-thing-to-do-for-new-steemians-or-steem/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/the-very-first-thing-to-do-for-new-steemians-or-steem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the very first thing that a new steemian has to do? Posting your first comment happily? Reading the top-paid posts to learn how to earn money excitedly? Uploading your photo and setting your profile eagerly? &lt;strong&gt;No&lt;/strong&gt;! The very first thing is: write down your master/owner key on a piece of paper, and keep the paper in a safe. Maybe &lt;strong&gt;in a worn-out shoe under your bed&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are not sure of your hand copying, just grab your camera, take a picture of your master/owner key, and print it out. Do not forget to delete the digital picture immediately.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2014/12/25/10/55/digital-579553_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image credit: pixabay.com&lt;/p&gt;
+
+&lt;p&gt;Days ago an ID with the reputation 67 was fished by @cheetoh, who looks like @cheetah the famous bot. The master key was lost and 4000 SP+SBD was gone. I keep my fingers crossed for her, although I know that it is difficult, or even impossible, to recover the key and have the money back.&lt;/p&gt;
+
+&lt;p&gt;New steemians get a long string when they have just signed up. This string is officially called &amp;lsquo;master/owner key&amp;rsquo;. New steemians think it is a &lt;em&gt;password&lt;/em&gt;, the same as the thing they get when signing up other websites. Normally a user is able to recover the &lt;em&gt;password&lt;/em&gt;  via an email or phone number.  Therefore they log in for the first time, read some posts, close steemit, and leave steem all behind. Days later, steem comes to their mind again, and they want to log in. Well, nobody can remember the long string. OK, recover it&amp;hellip;&amp;hellip;what? It CANNOT be recovered??!!&lt;/p&gt;
+
+&lt;p&gt;I guess it must be one of the reasons why so many accounts on Steem are dead.&lt;/p&gt;
+
+&lt;p&gt;New steemians are not sufficiently told of the importance of their passwords. A user once posted his master key publicly in a chat group of the Chinese community by mistaken copy-and-paste. Another user sent a screenshot of his wallet-permission page to me and asked what those four long strings meant. Nobody was fishing them. They just did not know what they were doing.&lt;/p&gt;
+
+&lt;p&gt;If you lose your ID card in reality, you go to the center of ID cards, i.e. the Police Station. If you lose your credit card, you call your credit card service center. If you lose your Steem password, sorry, there is no Steem center. Steem is a blockchain, &lt;strong&gt;&lt;em&gt;decentralized&lt;/em&gt;&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;A user&amp;rsquo;s &lt;em&gt;password&lt;/em&gt; on Steem is not only a &lt;em&gt;password&lt;/em&gt;. It is a combination like:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Your Steem password = your login password + your ID card + your credit card + your smartphone + your signature&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Anyone can use your password to log in, to transfer money, to comment others, and fish your friends. What would you call it? &amp;lsquo;Master/owner key&amp;rsquo; is not enough. I would call this long string &lt;strong&gt;&amp;lsquo;Steem ID&amp;rsquo;s Life&amp;rsquo;. If stolen, dead&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I would warn every new Steemian: &lt;strong&gt;NEVER, EVER use your master/owner key&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;ALWAYS login with your &lt;strong&gt;posting key&lt;/strong&gt;. It is sufficient for everyday use.&lt;/p&gt;
+
+&lt;p&gt;If you are doing something related to your money, then use the &lt;strong&gt;active key&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;When do you have to use your master/owner key? Only when you want to recover something. Take it as the &amp;lsquo;restore to factory settings&amp;rsquo; option of  your smartphone.&lt;/strong&gt;   You never use it, do you?&lt;/p&gt;
+
+&lt;p&gt;That is why you had better print it out on a piece of paper and save it in an worn-out shoe under your bed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/0x0/http://i.imgur.com/F0aJyNM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image credit: steemit.com&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;作为 Steem 新手，必须做的最要紧的事情是什么？是兴奋地发第一帖宣告自己的降生吗？是看看收益最高的帖子来学习如何在 steem 赚钱吗？还是上传自己帅帅的头像？全不是！第一件事，至关重要的任务，是立刻抓起你的相机，对着显示器上的 steem 密码拍个照片，打印到纸上，删掉数码照片，然后把这张纸塞到一只鞋???里，藏在床底下。&lt;/p&gt;
+
+&lt;p&gt;几天前，有个声望达到 67 的账号被  @cheetoh 用钓鱼手段骗过了眼睛。这个盗贼看上去很像著名的机器人 @cheetah。价值数万人民币的 SP+SBD 和无法估量的其他损失，就这么进了别人钱包，让人痛心。找回密码和账号很困难，几乎是不可能的。&lt;/p&gt;
+
+&lt;p&gt;steem 新手注册成功后，会得到一个很长的字符串。官方称其为“万能钥匙” (master/owner key)。这很容易让新手误以为是个登录密码。别的网站不都是如此吗？忘就忘了，不都是能用邮箱或手机恢复吗？于是，他们首次登录，愉快地发布第一帖，读了一些别人的文章，然后关掉了网页，把一切都抛诸脑后。几天之后，他们突然想起了 steem，想登录看看自己是不是赚了点钱。可是那么长的密码，谁记得住呢？恢复一下吧……我靠，居然不能恢复？？！！&lt;/p&gt;
+
+&lt;p&gt;Steem 上很多死账号，我怀疑这就是原因之一。&lt;/p&gt;
+
+&lt;p&gt;我觉得，新手并未被充分告知密码的重要性。在中文微信群里，曾有个用户不小心把密码复制粘贴出来，每个人都看见了。还有个用户，把他的钱包-权限页的四个密码截了屏，一起发给我，问我这些是什么意思。没人钓鱼欺骗他们，他们只是不知道他们自己在做什么。&lt;/p&gt;
+
+&lt;p&gt;现实生活里，如果丢了身份证，可以去身份证中心——派出所或警察局补办。如果丢了信用卡，可以去信用卡中心——拨打服务热线挂失。Steem 的世界里，如果丢了密码，对不起，没有哪个中心可以去，因为 Steem 用的是区块链，去中心化！&lt;/p&gt;
+
+&lt;p&gt;实际上， steem 用户的主密码不只是个密码，而是个多合一的混合体，相当于：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Steem 主密码 = 登陆密码 + 身份证 + 银行卡 + 手机 + 签名&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;只要有了你的主密码，任何人都可以在 steem 上登录你的账号，转账，发帖，给别人留言，钓鱼欺骗你的朋友。这玩意儿到底应该叫什么？”万能钥匙/主密码“ (Master/owner key) 这个称呼远远不够。我觉得应该管它叫”Steem 账号的命根子“。一旦丢失，就是死路一条。&lt;/p&gt;
+
+&lt;p&gt;在这里，我想再次警告新手们：永远不要使用你的主密码！&lt;/p&gt;
+
+&lt;p&gt;钱包（Wallet）-权限（Permissions）页面有四个密码。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;登录的时候，用发帖密码（posting key），足够平时使用。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;只有在跟钱打交道时，才使用活跃密码（Active key）。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;那么主密码是干什么用的？只有重置账号时才用。你可以当作是手机上的”恢复出厂设置“。这个功能你从来没用过，是不是？&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;所以，最好把主密码打印出来，塞到鞋子里，藏到床底下。&lt;/p&gt;
+
+&lt;p&gt;就像科幻小说《三体III》里所讲，如何保存资料最安全? 刻在石头上！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

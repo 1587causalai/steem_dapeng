@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>如何在 steemit 竞赛活动里认真抽取幸运奖 -谷哥点名#10  (How to Randomly Choose a Participator for the Lucky Prize in a Steemit Contest) | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">如何在 steemit 竞赛活动里认真抽取幸运奖 -谷哥点名#10  (How to Randomly Choose a Participator for the Lucky Prize in a Steemit Contest)</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-10-07 13:18 GMT</h2>
+</div>
+
+<main>
+<p>原文链接: <a href="https://steemit.com/cn/@dapeng/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest">steemit</a>, <a href="https://cnsteem.com/cn/@dapeng/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest">cnsteem</a>, <a href="https://chainbb.com/cn/@dapeng/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest">chainbb</a>, <a href="https://busy.org/cn/@dapeng/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest.md">markdown</a></p>
+
+<blockquote>
+<p>It is easy to randomly choose a participator for a lucky prize in reality: use a dice, or write each participator&rsquo;s name on a slice of paper, mix them, and choose one, in public. It is not easy to do it in a Steemit contest. How can you show the dice or the chosen slice of paper to public and everyone believes you and thinks that it is fair? See the R scripts in this post and you will get the best-ever solution.</p>
+</blockquote>
+
+<p>昨天公布的希望工程<a href="https://steemit.com/cn/@dapeng/welcome-prize-for-new-steemians">新人&rdquo;三个一&rdquo;活动</a>，新老用户都可以参加幸运奖的抽取，而抽选方法并未公开。不是为了保密，而是因为这部分比较偏技术，而且篇幅长，怕喧宾夺主。本文详细说说，如何在一场 steemit 的竞赛中，以认真的态度随机挑选幸运奖。</p>
+
+<p><img src="https://cdn.pixabay.com/photo/2016/11/20/08/12/dice-1842135_960_720.png" alt="" /></p>
+
+<p>在现实中，随机抽取幸运奖的方法很简单：每个名字写到一个纸团里，混匀，<strong>当众</strong>随便拿一个出来就行了。如果不超过 6 个，<strong>当众</strong>掷一次骰子就行。这跟编程实现的效果是等同的。例如，R 语言里有现成的随机选择代码。我们暂且用 31 活动的赞助名单，来举个例子。</p>
+
+<pre><code>
+names &lt;- c('victory622', 'tvb', 'shenchensucc', 'wangwenjing', 'drunkevil', 'dapeng')
+
+n &lt;- length(names)
+
+</code></pre>
+
+<p>n 表示参加人数。从 n 里随便选 1 个，只需运行：</p>
+
+<pre><code>
+names[sample(n, 1)]
+
+</code></pre>
+
+<p>完事儿。</p>
+
+<p>但是，这个方法的致命缺陷是：<strong>当众</strong>。我说我运行代码的结果是 dapeng，谁信啊！没人亲眼看见我的运行结果啊！别说别人，我自己重新再运行一次，结果可能就变了呀！如果奖金额度小，可能大家不计较，万一是一笔巨款呢？谁知道是不是暗箱操作内定的？</p>
+
+<p>所以，这个做法用在 steemit 的竞赛上，不够认真。</p>
+
+<p>怎么做才算认真，才能服众？R 语言里早就考虑到这个问题了。为了实现可重复性，可以这样来：</p>
+
+<pre><code>
+names &lt;- c('victory622', 'tvb', 'shenchensucc', 'wangwenjing', 'drunkevil', 'dapeng')
+
+n &lt;- length(names)
+
+set.seed(31); names[sample(n, 1)]
+
+</code></pre>
+
+<p>前两行跟此前的代码完全相同。第三行先设置个种子，然后再随机选。这里，我们暂且给种子编号为 31。这样的话，不管啥时候，不管在哪台电脑上运行上面三行代码，都是同样的结果。免得大家怀疑主办方作弊，把幸运奖给内定了。如果你电脑上装了 R 语言，不妨试试上面的代码，看看结果是不是 wangwenjing。</p>
+
+<p>由于参赛名单不到最后一刻谁都不知道，所以运行的结果没法事先内定。</p>
+
+<p>也许还会有人质疑：你糊弄谁呢？我又不懂 R 语言，怎么检验你的结果？</p>
+
+<p>这个也好办。即使不懂 R 语言，你也可以轻松检查上述代码的运行结果。随便访问个 R 语言在线网站，例如<a href="http://rextester.com/l/r_online_compiler">这里</a>、<a href="http://www.r-fiddle.org/#/fiddle?id=IMMSu4Na">这里</a>、或<a href="https://www.jdoodle.com/execute-r-online">这里</a>，把上面那三行代码复制粘贴进去，点运行，就看到结果了。看看是不是 wangwenjing。</p>
+
+<p>这已经是认真到万无一失了，但我们还可以更进一步，把事情做绝：将来抽奖的时候，我们把上面示例代码的种子编号 31，改为最后一位参加者发布文章时间的秒数，以区块链记录该文章的 created 时间为准。</p>
+
+<p>好了，不到最后一刻，谁都不知道最终的实际参加人数，也不知道种子编号。哪位能提供更认真的方法吗？欢迎拿出来单挑。</p>
+
+<p>至于“三个一”活动幸运奖最终花落谁家，让我们拭目以待。</p>
+
+<p><img src="https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg" alt="dapeng" /></p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest\/';
+    var disqus_title = '如何在 steemit 竞赛活动里认真抽取幸运奖 -谷哥点名#10  (How to Randomly Choose a Participator for the Lucky Prize in a Steemit Contest)';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

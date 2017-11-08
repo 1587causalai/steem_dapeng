@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>中文段首加空格和增加段落间距 （steemit markdown） | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">中文段首加空格和增加段落间距 （steemit markdown）</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-08-13 09:05 GMT</h2>
+</div>
+
+<main>
+<p>原文链接: <a href="https://steemit.com/cn/@dapeng/steemit-markdown">steemit</a>, <a href="https://cnsteem.com/cn/@dapeng/steemit-markdown">cnsteem</a>, <a href="https://chainbb.com/cn/@dapeng/steemit-markdown">chainbb</a>, <a href="https://busy.org/cn/@dapeng/steemit-markdown">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemit-markdown.md">markdown</a></p>
+
+<p><br></p>
+
+<p>　　有朋友在 steemit 的 cn-reader 的微信群里问了一个 markdown 中文排版的问题：如何为中文段首增加空格，以及改变段落间的间距。这个简单：使用中文的全角空格。</p>
+
+<p><img src="https://steemitimages.com/DQmQjSRg9PkM2gGmsqa7jm5wNxorgGgWQid3on1QwPeaoLa/quanjiao.jpg" alt="quanjiao.jpg" /></p>
+
+<p>　　</p>
+
+<p>　　一般的中文输入法都有上述设置界面。点一下弯月符号（或快捷键shift+空格）就变成满月，这就是全角。此时按空格键，就会输入一个汉字宽度的空白。所以，段首输入两个全角空白就行了。</p>
+
+<p>　　不过，如果是紧跟在非普通文本（全文第一段，插图，代码等）后面，这种方法会失效，那么可以在全角空格前面加上个<code>&lt;br&gt;</code>就行了。</p>
+
+<p>　　一般来说，在markdown编辑器里输入全角空格后再换行，就会多插入一行空白。下面我们用这种方法输入一行空白。</p>
+
+<p>　　</p>
+
+<p>　　</p>
+
+<p>　　但连续几个空行 steemit 就不支持了。那么可以输入：</p>
+
+<p><code>&lt;br&gt;</code></p>
+
+<p>也同样是插入一个空行。输入几个<code>&lt;br&gt;</code>就插入几个空行。下面，我们插入两个空行。<br><br></p>
+
+<p>　　<code>&lt;br&gt;</code>其实是 html 语言的代码。“全角空格”是html界的魔法占位符。善用“全角空格”这个小魔法，就可以实现诸如　　对　　齐　　等其他功能。</p>
+
+<p>　　要想使用复杂的格式，就需要复杂的命令或按钮来排版，容易偏离对内容的关注。而 steemit 使用的 markdown 语法，在内容和形式之间达到了最微妙的平衡，让你用最简单的指令，实现日常99%以上的排版需求。</p>
+
+<p>　　不过，markdown 也尊重其他1%用户的特殊需求。原则上，markdown 支持 html，所以，要想对你的帖子的格式进行复杂排版，那么就学习 html 吧，少年！</p>
+
+<p>　　中文段首空格原本是用来印刷时方便划分自然段的。在网络时代，自然段完全可以通过段落间距看得出来，所以段首空格丧失了原本的意义。不过，作为对纸质书和印刷时代的怀念，用一下段首空格，不失为一种情怀吧。</p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/steemit-markdown\/';
+    var disqus_title = '中文段首加空格和增加段落间距 （steemit markdown）';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/steemit-markdown\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

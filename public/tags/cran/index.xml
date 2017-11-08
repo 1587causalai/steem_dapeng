@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cran on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/cran/index.xml</link>
+    <description>Recent content in Cran on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/cran/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>如何在 steemit 竞赛活动里认真抽取幸运奖 -谷哥点名#10  (How to Randomly Choose a Participator for the Lucky Prize in a Steemit Contest)</title>
+      <link>https://steemit.netlify.com/post/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest/</link>
+      <pubDate>Sat, 07 Oct 2017 13:18:06 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/how-to-randomly-choose-an-participator-for-the-lucky-prize-in-a-steemit-contest.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It is easy to randomly choose a participator for a lucky prize in reality: use a dice, or write each participator&amp;rsquo;s name on a slice of paper, mix them, and choose one, in public. It is not easy to do it in a Steemit contest. How can you show the dice or the chosen slice of paper to public and everyone believes you and thinks that it is fair? See the R scripts in this post and you will get the best-ever solution.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;昨天公布的希望工程&lt;a href=&#34;https://steemit.com/cn/@dapeng/welcome-prize-for-new-steemians&#34;&gt;新人&amp;rdquo;三个一&amp;rdquo;活动&lt;/a&gt;，新老用户都可以参加幸运奖的抽取，而抽选方法并未公开。不是为了保密，而是因为这部分比较偏技术，而且篇幅长，怕喧宾夺主。本文详细说说，如何在一场 steemit 的竞赛中，以认真的态度随机挑选幸运奖。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2016/11/20/08/12/dice-1842135_960_720.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在现实中，随机抽取幸运奖的方法很简单：每个名字写到一个纸团里，混匀，&lt;strong&gt;当众&lt;/strong&gt;随便拿一个出来就行了。如果不超过 6 个，&lt;strong&gt;当众&lt;/strong&gt;掷一次骰子就行。这跟编程实现的效果是等同的。例如，R 语言里有现成的随机选择代码。我们暂且用 31 活动的赞助名单，来举个例子。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+names &amp;lt;- c(&#39;victory622&#39;, &#39;tvb&#39;, &#39;shenchensucc&#39;, &#39;wangwenjing&#39;, &#39;drunkevil&#39;, &#39;dapeng&#39;)
+
+n &amp;lt;- length(names)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;n 表示参加人数。从 n 里随便选 1 个，只需运行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+names[sample(n, 1)]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;完事儿。&lt;/p&gt;
+
+&lt;p&gt;但是，这个方法的致命缺陷是：&lt;strong&gt;当众&lt;/strong&gt;。我说我运行代码的结果是 dapeng，谁信啊！没人亲眼看见我的运行结果啊！别说别人，我自己重新再运行一次，结果可能就变了呀！如果奖金额度小，可能大家不计较，万一是一笔巨款呢？谁知道是不是暗箱操作内定的？&lt;/p&gt;
+
+&lt;p&gt;所以，这个做法用在 steemit 的竞赛上，不够认真。&lt;/p&gt;
+
+&lt;p&gt;怎么做才算认真，才能服众？R 语言里早就考虑到这个问题了。为了实现可重复性，可以这样来：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+names &amp;lt;- c(&#39;victory622&#39;, &#39;tvb&#39;, &#39;shenchensucc&#39;, &#39;wangwenjing&#39;, &#39;drunkevil&#39;, &#39;dapeng&#39;)
+
+n &amp;lt;- length(names)
+
+set.seed(31); names[sample(n, 1)]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;前两行跟此前的代码完全相同。第三行先设置个种子，然后再随机选。这里，我们暂且给种子编号为 31。这样的话，不管啥时候，不管在哪台电脑上运行上面三行代码，都是同样的结果。免得大家怀疑主办方作弊，把幸运奖给内定了。如果你电脑上装了 R 语言，不妨试试上面的代码，看看结果是不是 wangwenjing。&lt;/p&gt;
+
+&lt;p&gt;由于参赛名单不到最后一刻谁都不知道，所以运行的结果没法事先内定。&lt;/p&gt;
+
+&lt;p&gt;也许还会有人质疑：你糊弄谁呢？我又不懂 R 语言，怎么检验你的结果？&lt;/p&gt;
+
+&lt;p&gt;这个也好办。即使不懂 R 语言，你也可以轻松检查上述代码的运行结果。随便访问个 R 语言在线网站，例如&lt;a href=&#34;http://rextester.com/l/r_online_compiler&#34;&gt;这里&lt;/a&gt;、&lt;a href=&#34;http://www.r-fiddle.org/#/fiddle?id=IMMSu4Na&#34;&gt;这里&lt;/a&gt;、或&lt;a href=&#34;https://www.jdoodle.com/execute-r-online&#34;&gt;这里&lt;/a&gt;，把上面那三行代码复制粘贴进去，点运行，就看到结果了。看看是不是 wangwenjing。&lt;/p&gt;
+
+&lt;p&gt;这已经是认真到万无一失了，但我们还可以更进一步，把事情做绝：将来抽奖的时候，我们把上面示例代码的种子编号 31，改为最后一位参加者发布文章时间的秒数，以区块链记录该文章的 created 时间为准。&lt;/p&gt;
+
+&lt;p&gt;好了，不到最后一刻，谁都不知道最终的实际参加人数，也不知道种子编号。哪位能提供更认真的方法吗？欢迎拿出来单挑。&lt;/p&gt;
+
+&lt;p&gt;至于“三个一”活动幸运奖最终花落谁家，让我们拭目以待。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>月旦评导读 2017-09-23</title>
+      <link>https://steemit.netlify.com/post/cn-monthly-review-guide-2017-09-23/</link>
+      <pubDate>Sat, 23 Sep 2017 16:08:57 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/cn-monthly-review-guide-2017-09-23/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/cn-monthly-review-guide-2017-09-23&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/cn-monthly-review-guide-2017-09-23&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/cn-monthly-review-guide-2017-09-23&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/cn-monthly-review-guide-2017-09-23&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/cn-monthly-review-guide-2017-09-23.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在&lt;a href=&#34;https://steemit.com/cn/@rivalhw/6apkrp-steemit&#34;&gt;月旦评广纳良策&lt;/a&gt;时，我留言说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;突然有个新建议，很不成熟，暂且记录在这里:&lt;/p&gt;
+
+&lt;p&gt;steemit 帖子总是重赞轻评，但是reply其实非常重要，尤其是手里没啥 sp 的小鱼，他们的评论比点赞更有意义。有没有可能针对参赛作品后面的评论设置个奖项，鼓励小鱼留言？比如最佳评论奖？但这样会给评委太大工作压力了……&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;@rivalhw 回复道：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;这个想法很不错，但如果让评委来做确实压力太大，可否让民众来选择最佳评论？以及有没更好的机制来统计，若是这事如果由我来统计评论，就该轮到我压力太大了 囧&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这两天，我就琢磨这个事儿，怎样用最小的精力筛选出最好的评论，为评委和读者们节省时间。&lt;/p&gt;
+
+&lt;p&gt;我想到一个办法：把当天的所有评论都汇总在一个帖子里，假定字数越多的评论质量越高（这个假设当然是错的，权宜之计吧），按评论字数排序，列成表格，一目了然，可以快速筛选出好评论，减轻大家的阅读压力。&lt;/p&gt;
+
+&lt;p&gt;所以就有了本文。见下面的表格。这是自活动开始以来的评论汇总。&lt;/p&gt;
+
+&lt;p&gt;注意，现在并没有设置最佳评论奖！本文只是用来试试水，看看设置最佳评论奖的可行性有多大。&lt;/p&gt;
+
+&lt;p&gt;顺便我把帖子也列出来，按照字数估计了一下每篇的阅读时间（不一定准，仅供参考），方便大家阅读。&lt;/p&gt;
+
+&lt;p&gt;暂名“月旦评导读”，大家觉得怎么样？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQmRah48P6kkrXMCQPogV2JKLG4TLR9KGwwYTzddxfXALif/%E6%9C%88%E6%97%A6%E8%AF%84logo2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;图片来自 @tvb&lt;/p&gt;
+
+&lt;h3 id=&#34;投稿汇总&#34;&gt;投稿汇总&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;发布时间&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;预计阅读时间（分钟）&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-09-21 07:06:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@rivalhw&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@rivalhw/3pugju&#34;&gt;(鼓励更多创作，发现优秀作者)中文社区“月旦评”活动开始！&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-09-21 10:36:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@berlin1997&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@berlin1997/7an55a&#34;&gt;中秋爱人 中文区“月旦评”中秋征文活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-09-21 22:46:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@feng1925&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@feng1925/6cwj4e&#34;&gt;记忆中的中秋节 参加中文区“月旦评”活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-09-22 06:23:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@ernestine&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@ernestine/4tjppu&#34;&gt;忘不了的中秋，割不断的情&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-09-22 07:44:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@icedream&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@icedream/the-mid-autumn-festival&#34;&gt;那年中秋，思乡浓浓——the Mid-autumn Festival&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-09-22 08:22:06&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@luojia&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@luojia/37bgqf&#34;&gt;中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-09-22 12:41:03&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@sunnyjolly/1&#34;&gt;人在归途 #1&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-09-22 23:59:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/monthly-contest-mid-autumn-mooncake&#34;&gt;從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-09-23 13:09:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@kona&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@kona/mental-health-4&#34;&gt;今天來談談心理健康(四)–情緒之悲秋- 谷哥点名#8&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;评论汇总&#34;&gt;评论汇总&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;序号&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@hannahwu/re-berlin1997-7an55a-20170922t030704995z&#34;&gt;一粒天浆籽，落地，带着爱破土而出，茁壮参天后，结下满枝感恩。 养母之恩动情，愿你永存感恩之心，不在惊天动地，而在风雨来临之时和无时的点滴之间。&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/1#@rivalhw/re-sunnyjolly-1-20170922t144533601z&#34;&gt;每到一站凤就雀喜万分，打开朋友圈发个定位加个笑脸。 离家在外的游子，那种热切地盼望早些到家见到父母亲人时才有的那种心理活动,俨然跃然纸上。&amp;mdash;「人在归途 #1」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@ernestine/4tjppu#@rivalhw/re-ernestine-4tjppu-20170922t065803969z&#34;&gt;我媳妇怀我老大的时候，也是有些抑郁症的表现，回过头来想下，怀孕生小孩，个中艰辛，不为人父母，真是很难体会其中的非常不容易&amp;mdash;「忘不了的中秋，割不断的情」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@lydiachan/re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t013010813z&#34;&gt;唉 , 政府財團永遠只有貪得無厭可以形容啊~ 不過還是先祝你中秋節快樂!! 我這幾天吃了不少顆手工月餅, 好讚啊~~&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@shengui/re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t012206111z&#34;&gt;月饼的畅销，商家得到了利益，不过也的确是因为对中秋节的重视月饼才会畅销，反过来月饼的出现也在增强人们对中秋节的意识。&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@rivalhw/re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t034436691z&#34;&gt;我有时候也在想，就拿中秋节日来说，既是一个节日，花好月圆幸福美满之下，是否也是提醒人们勿忘亲情珍惜当下&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-sunnyjolly-re-berlin1997-7an55a-20170921t120046612z&#34;&gt;嗯嗯，好吃是一种情怀，月饼因为有了亲人的思念，吃起来会更甜，养母的恩情就像是石榴汁水，哺育了???健康成长&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@susanli3769/re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t114159675z&#34;&gt;是啊。这个社会越来越急功近利了。而作为在这里的一分子，很多时候觉得也在随大流……虽然不喜欢??&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;9&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@dobartim/re-luojia-37bgqf-20170922t082855636z&#34;&gt;I do not understand Chinese, but I support you.&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-melaleuca-re-berlin1997-7an55a-20170921t132900942z&#34;&gt;我故乡是北方，那里的乡下普遍都有种植石榴树。哈哈，应该也是前排交作业的。你也加油哦！加油加油！&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@ernestine/4tjppu#@berlin1997/re-ernestine-4tjppu-20170922t073343177z&#34;&gt;为人母真是不容易啊，听说坐月子落下的病还有可能伴随一生，很辛苦，给你一个抱抱！好文！&amp;mdash;「忘不了的中秋，割不断的情」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@ernestine/4tjppu#@hannahwu/re-ernestine-4tjppu-20170922t074331850z&#34;&gt;苦尽若能甘来，这是特别美好的事情，你是幸福的！ 还有，你是一个孝顺的人，成熟和自立。&amp;mdash;「忘不了的中秋，割不断的情」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;13&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@icedream/the-mid-autumn-festival#@hannahwu/re-icedream-the-mid-autumn-festival-20170922t084635056z&#34;&gt;儿行千里母担忧，中秋佳节盼团圆，异乡异客久了，更发觉家的浓厚之情，中秋回家挺好。&amp;mdash;「那年中秋，思乡浓浓——the Mid-autumn Festival」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;14&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@chinesegirl/re-bestmz-re-feng1925-6cwj4e-20170922t035606207z&#34;&gt;是呀，以前一些???较贵的东西要过年过节才吃得到。 现在，好像天天比以前过年好；&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-catwomanteresa-re-berlin1997-7an55a-20170922t021221923z&#34;&gt;能够说到这份上的，想必您也是感情丰富且懂得感恩的人！感谢阅读！谢谢您的支持！&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@icedream/the-mid-autumn-festival#@rivalhw/re-icedream-the-mid-autumn-festival-20170922t083805537z&#34;&gt;摸秋?我还是第一次听到这样的节目，听着名字就很有创意，很新鲜，一定很有趣吧&amp;mdash;「那年中秋，思乡浓浓——the Mid-autumn Festival」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;17&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@catwomanteresa/re-berlin1997-7an55a-20170922t015650647z&#34;&gt;很感人哪！從小地方感受母親的愛，可見你是個情感豐富又懂得感恩的人。&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@icedream/the-mid-autumn-festival#@sunnyjolly/re-icedream-the-mid-autumn-festival-20170922t075622969z&#34;&gt;那年花开月正圆，春风十里不如你，明朝一代骊姬转，不如江南俏风景。&amp;mdash;「那年中秋，思乡浓浓——the Mid-autumn Festival」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;19&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@guyverckw/re-lydiachan-re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t015259104z&#34;&gt;妹子要小心呀，月餅可是很邪惡的食品呀。 我也祝妹子中秋節快樂！&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;20&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-tvb-re-berlin1997-7an55a-20170921t111243037z&#34;&gt;朋友安慰我说，两个娘也挺好的，我觉得正是这个理儿呢，多个人爱。&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;21&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/1#@sunnyjolly/re-hannahwu-re-sunnyjolly-1-20170922t153331960z&#34;&gt;突然感觉我的故事有了更多的可能性，谢谢你的问号书记，么么哒&amp;mdash;「人在归途 #1」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;22&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@guyverckw/re-rivalhw-re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t041317830z&#34;&gt;年輕時不知為何不會這樣想的。現在年紀大了，自然的會想起來&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;23&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-hannahwu-re-berlin1997-7an55a-20170922t074922806z&#34;&gt;非常感谢支持，这是厚爱啊啊啊&amp;hellip;&amp;hellip;十分感谢，谢谢！&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;24&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@veronicazhu/re-luojia-37bgqf-20170922t094222142z&#34;&gt;看哭我了&amp;hellip;.. 我也想我父亲了&amp;hellip;&amp;hellip;..&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;25&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@wangwenjing/re-feng1925-6cwj4e-20170921t232033877z&#34;&gt;哈哈，你们家乡的习俗真可爱，弱弱地问一下，老家哪里？&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;26&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@melaleuca/re-berlin1997-7an55a-20170921t131910622z&#34;&gt;家里有石榴树，好稀奇啊。你应该是第一个交作业的。&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;27&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/1#@hannahwu/re-sunnyjolly-1-20170922t140741629z&#34;&gt;凤妈妈是跟野男人跑了？改嫁了？生病了？还是去世了？&amp;mdash;「人在归途 #1」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;28&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@icedream/the-mid-autumn-festival#@veronicazhu/re-jubi-re-sunnyjolly-re-icedream-the-mid-autumn-festival-20170922t094422935z&#34;&gt;+1 sunnyjolly 服了你了&amp;hellip;..&amp;mdash;「那年中秋，思乡浓浓——the Mid-autumn Festival」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@rivalhw/re-berlin1997-7an55a-20170921t111358886z&#34;&gt;看完后很感动，人世间让人感动的莫过于真情留露了&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;30&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@ernestine/4tjppu#@shengui/re-rivalhw-re-ernestine-4tjppu-20170922t095632544z&#34;&gt;同样深有体会，我媳妇还去看了好几次心理医生。&amp;mdash;「忘不了的中秋，割不断的情」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;31&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-rivalhw-re-berlin1997-7an55a-20170921t112553900z&#34;&gt;谢谢大伟哥的鼓励！！谢谢月旦评活动！感谢！！&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@kona/re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t102216450z&#34;&gt;現在是垂死掙扎，能不能救就要看我們這一代！&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@icedream/the-mid-autumn-festival#@sunnyjolly/re-jubi-re-sunnyjolly-re-icedream-the-mid-autumn-festival-20170922t082420440z&#34;&gt;拜倒在我的文学涵养石榴裙下了吗，呜哈哈哈哈&amp;mdash;「那年中秋，思乡浓浓——the Mid-autumn Festival」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;34&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-qimingzi-re-berlin1997-7an55a-20170921t133003435z&#34;&gt;感动！您的喜欢就是我写作的动力，非常感谢！&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;35&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@catwomanteresa/re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t052234717z&#34;&gt;中秋節引起這樣的感嘆，心情看來有點沈重哪&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;36&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@wangwenjing/re-luojia-37bgqf-20170922t130408743z&#34;&gt;感情好真挚，祝愿您的父亲在天堂一切安好。&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;37&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@hannahwu/re-feng1925-6cwj4e-20170922t024415441z&#34;&gt;o(&lt;sup&gt;▽&lt;/sup&gt;)o 我们小时候也是要拜拜的~&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;38&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@tvb/re-luojia-37bgqf-20170922t153235103z&#34;&gt;好感人，父亲在天国一定会有他的幸福的！&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@hqy/re-luojia-37bgqf-20170922t124313988z&#34;&gt;感动，伟大的挑夫，满满的父女情。好文！&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;40&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@berlin1997/re-luojia-37bgqf-20170922t111204127z&#34;&gt;父爱如山，一位好父亲，一篇好文，赞??&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;41&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@feng1925/re-rivalhw-re-feng1925-6cwj4e-20170922t090910720z&#34;&gt;好的，已经增加了标签，谢谢！十分感激&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@tvb/re-berlin1997-7an55a-20170921t110644869z&#34;&gt;生娘没有养娘大。好感人的文章，我哭了&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;43&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@guyverckw/re-shengui-re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t041438727z&#34;&gt;也有道理。現今吃月餅又變成了潮流。&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;44&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@melaleuca/re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t005100266z&#34;&gt;配图很赞，写得很有情怀周末愉快！&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@bestmz/re-feng1925-6cwj4e-20170922t031408777z&#34;&gt;生活条件好了，对节日的期待也少了。&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;46&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@guyverckw/re-catwomanteresa-re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t054109446z&#34;&gt;香港的情況就是令人心情沉重&amp;hellip;&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;47&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@icedream/the-mid-autumn-festival#@icedream/re-rivalhw-re-icedream-the-mid-autumn-festival-20170922t085241457z&#34;&gt;是哒，我们从小玩的，很好玩的哦&amp;mdash;「那年中秋，思乡浓浓——the Mid-autumn Festival」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@ernestine/4tjppu#@ernestine/re-rivalhw-re-ernestine-4tjppu-20170922t100714754z&#34;&gt;确实是这个道理，养儿才知父母恩&amp;mdash;「忘不了的中秋，割不断的情」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;49&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@veronicazhu/re-berlin1997-7an55a-20170921t134451279z&#34;&gt;好真挚的情感&amp;hellip; 感人&amp;hellip;&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;50&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-ljj-re-berlin1997-7an55a-20170921t120200906z&#34;&gt;谢谢，很感谢您的点评，谢谢！&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-veronicazhu-re-berlin1997-7an55a-20170921t142815984z&#34;&gt;多谢点评，谢谢鼓励，谢谢！&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;52&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@sunnyjolly/re-berlin1997-7an55a-20170921t115948549z&#34;&gt;好吃是一种情怀，养母的恩情&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;53&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@icedream/the-mid-autumn-festival#@feng1925/re-icedream-the-mid-autumn-festival-20170922t090527081z&#34;&gt;好好玩的摸秋，我也想玩；&amp;mdash;「那年中秋，思乡浓浓——the Mid-autumn Festival」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/1#@candiceji/re-sunnyjolly-1-20170922t125325920z&#34;&gt;想看接下来的 好好看&amp;mdash;「人在归途 #1」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;55&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@ernestine/4tjppu#@ernestine/re-berlin1997-re-ernestine-4tjppu-20170922t100754617z&#34;&gt;所以以后对媳妇好点！！&amp;mdash;「忘不了的中秋，割不断的情」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;56&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-feng1925-re-berlin1997-7an55a-20170921t120340877z&#34;&gt;哈哈，期待你们的佳作哦&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;57&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@ljj/re-berlin1997-7an55a-20170921t115709537z&#34;&gt;感人，每逢佳节倍思亲～&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;58&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@shengui/re-luojia-37bgqf-20170922t095034981z&#34;&gt;言辞恳切，感情真挚！&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;59&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@icedream/the-mid-autumn-festival#@icedream/re-sunnyjolly-re-icedream-the-mid-autumn-festival-20170922t081643906z&#34;&gt;下次花开，我们再相聚&amp;mdash;「那年中秋，思乡浓浓——the Mid-autumn Festival」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;60&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@feng1925/re-berlin1997-re-feng1925-6cwj4e-20170923t113008416z&#34;&gt;是呀，你又被诱惑到吗&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;61&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@rivalhw/re-berlin1997-7an55a-20170921t111233176z&#34;&gt;你这速度真厉害赞一个&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;62&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@vandadream/re-luojia-37bgqf-20170922t152707778z&#34;&gt;感动！伟大的父亲！&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;63&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@luojia/re-dobartim-re-luojia-37bgqf-20170922t150913714z&#34;&gt;thankyou!&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文???动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;64&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@drunkevil/re-luojia-37bgqf-20170922t140045193z&#34;&gt;真挚的感情，祝好！&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;65&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@icedream/the-mid-autumn-festival#@icedream/re-hannahwu-re-icedream-the-mid-autumn-festival-20170922t085302488z&#34;&gt;要跟我回家么？嘿嘿&amp;mdash;「那年中秋，思乡浓浓——the Mid-autumn Festival」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;66&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@icedream/the-mid-autumn-festival#@jubi/re-sunnyjolly-re-icedream-the-mid-autumn-festival-20170922t080824659z&#34;&gt;请收下我的膝盖……&amp;mdash;「那年中秋，思乡浓浓——the Mid-autumn Festival」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;67&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@berlin1997/re-feng1925-6cwj4e-20170921t225854888z&#34;&gt;家乡的味道最诱人！&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;68&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@feng1925/re-berlin1997-7an55a-20170921t115125337z&#34;&gt;眼泪在眼睛中转呀转&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;69&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@luneknight/re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t040833538z&#34;&gt;月亮那张拍的真好&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;70&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@tumutanzi/re-luojia-37bgqf-20170922t162656292z&#34;&gt;请注意图片版权。&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;71&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@ernestine/4tjppu#@winniex/re-ernestine-4tjppu-20170922t065044457z&#34;&gt;珍惜家人的团圆&amp;mdash;「忘不了的中秋，割不断的情」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;72&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@feng1925/re-berlin1997-re-feng1925-6cwj4e-20170923t102741878z&#34;&gt;走走走，回家。&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;73&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-sunnyjolly-re-berlin1997-7an55a-20170921t120252531z&#34;&gt;谢谢您的支持！&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;74&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/1#@sunnyjolly/re-candiceji-re-sunnyjolly-1-20170922t125603126z&#34;&gt;谢谢你的夸奖&amp;mdash;「人在归途 #1」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;75&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/1#@karasui/re-sunnyjolly-1-20170922t125046587z&#34;&gt;故事呢，期待&amp;mdash;「人在归途 #1」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;76&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-mxg-re-berlin1997-re-luojia-re-berlin1997-7an55a-20170921t115812282z&#34;&gt;谢谢，谢谢！&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;77&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@luojia/re-rivalhw-re-luojia-37bgqf-20170922t151045454z&#34;&gt;谢谢告知!&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;78&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@ernestine/4tjppu#@berlin1997/re-ernestine-re-berlin1997-re-ernestine-4tjppu-20170922t122203745z&#34;&gt;哈哈哈！！&amp;mdash;「忘不了的中秋，割不断的情」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;79&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@feng1925/re-berlin1997-re-feng1925-6cwj4e-20170923t102803361z&#34;&gt;我们回家吧&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;80&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@feng1925/re-wangwenjing-re-feng1925-6cwj4e-20170922t000016882z&#34;&gt;哈哈，是呀&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;81&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@mxg/re-berlin1997-re-luojia-re-berlin1997-7an55a-20170921t115123000z&#34;&gt;很好的故事&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;82&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@berlin1997/re-luojia-re-berlin1997-7an55a-20170921t113537787z&#34;&gt;谢谢点评！&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;83&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@guyverckw/monthly-contest-mid-autumn-mooncake#@wangwenjing/re-guyverckw-monthly-contest-mid-autumn-mooncake-20170923t010606079z&#34;&gt;怀旧情怀&amp;mdash;「從&amp;rdquo;中秋月餅&amp;rdquo;看改變中的我和社會 - &amp;ldquo;月旦評&amp;rdquo;活動」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;84&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/1#@sunnyjolly/re-karasui-re-sunnyjolly-1-20170922t125628483z&#34;&gt;敬请期待&amp;mdash;「人在归途 #1」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;85&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@luojia/re-drunkevil-re-luojia-37bgqf-20170922t150826066z&#34;&gt;谢谢！&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;86&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@luojia/re-berlin1997-re-luojia-37bgqf-20170922t133732805z&#34;&gt;谢谢！&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;87&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@luojia/re-hqy-re-luojia-37bgqf-20170922t133707521z&#34;&gt;谢谢！&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;88&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@luojia/re-wangwenjing-re-luojia-37bgqf-20170922t133643112z&#34;&gt;谢谢！&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;89&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@luojia/37bgqf#@luojia/re-shengui-re-luojia-37bgqf-20170922t110034497z&#34;&gt;谢谢！&amp;mdash;「中秋忆父 （原创首发） 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;90&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@feng1925/6cwj4e#@feng1925/re-hannahwu-re-feng1925-6cwj4e-20170922t090805876z&#34;&gt;哈哈；&amp;mdash;「记忆中的中秋节 参加中文区“月旦评”活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;91&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@qimingzi/re-berlin1997-7an55a-20170921t124059804z&#34;&gt;我喜欢&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;92&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@berlin1997/7an55a#@luojia/re-berlin1997-7an55a-20170921t114128267z&#34;&gt;不错。&amp;mdash;「中秋爱人 中文区“月旦评”中秋征文活动」&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Tags: #cn-reader #cn-midautumn #steemswatch #cran&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWKRoZhpvHW3sFkHUnfkbZGNsZUe8FBEgEbkRXQXoE4bu/end.png&#34; alt=&#34;end.png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>&#34;月旦评文集&#34;征求大家的意见</title>
+      <link>https://steemit.netlify.com/post/cn-monthly-review-book/</link>
+      <pubDate>Thu, 21 Sep 2017 09:21:54 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/cn-monthly-review-book/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/cn-monthly-review-book&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/cn-monthly-review-book&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/cn-monthly-review-book&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/cn-monthly-review-book&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/cn-monthly-review-book.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;大家翘首以盼的“&lt;a href=&#34;https://steemit.com/cn/@rivalhw/3pugju&#34;&gt;月旦评&lt;/a&gt;”活动，终于轰轰烈烈地拉开了序幕。看看组委会名单，阵容豪华得晃眼睛，我都不敢直视……赶紧低下头，该干啥干啥。&lt;/p&gt;
+
+&lt;p&gt;一低头，就看到 @lemooljiang 做出了&lt;a href=&#34;https://steemit.com/cn/@rivalhw/6apkrp-steemit#@lemooljiang/re-rivalhw-re-lemooljiang-re-rivalhw-6apkrp-steemit-20170916t104939604z&#34;&gt;最高指示&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;最好看下能不能做成文集保存下来，也算是大家的一点小成果！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这任务我接了，谁都别拦我，拦也拦不住。不久前，我刚刚&lt;a href=&#34;https://steemit.com/cn/@dapeng/6wpnvk&#34;&gt;为谷哥点名做了一次文集&lt;/a&gt;。“月旦评文集”的任务简直就是为我量身定做的。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;先给大家看一下“月旦评”文集的预期效果吧，下面是我自己文集其中两个，作为示例。&lt;/p&gt;
+
+&lt;p&gt;第一个范例是我的中文育儿博客合集《&lt;a href=&#34;https://bookdown.org/baydap/papasdiary/three-laws.html&#34;&gt;爸爸三定律&lt;/a&gt;》。发布在网上的模样是这样的：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmP5XxTH4GmZ4XzYirEbWGk6RvyyLi4KE2B3LvaahtC7re/bookdown1.jpg&#34; alt=&#34;bookdown1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;pdf 格式文档是这样的（点击图片看大图：封面，目录，正文）：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://steemitimages.com/DQmW8XrM5SnTcY7gbzeUigfkAzoZC7PGyTw4aLmphn4ZZLo/Slide1.JPG&#34;&gt;&lt;img src=&#34;https://steemitimages.com/DQmW8XrM5SnTcY7gbzeUigfkAzoZC7PGyTw4aLmphn4ZZLo/Slide1.JPG&#34; alt=&#34;Slide1.JPG&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;第二个范例是我写的一本英文书 &lt;a href=&#34;https://bookdown.org/baydap/bookdownplus/&#34;&gt;R bookdownplus Textbook&lt;/a&gt;。发布在网上的模样是这样的：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNRShVSAAk78RsXR6uPiHLNNnar65ozjjnEiBy43nvKE5/bookdown2.jpg&#34; alt=&#34;bookdown2.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;pdf 格式文档是这样的（点击图片看大图：封面，目录，正文）：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://steemitimages.com/DQmfX7uhByRt9ZRNUBmxKWBGyQjNycxcPw1qzddJpg1JzVX/Slide2.JPG&#34;&gt;&lt;img src=&#34;https://steemitimages.com/DQmfX7uhByRt9ZRNUBmxKWBGyQjNycxcPw1qzddJpg1JzVX/Slide2.JPG&#34; alt=&#34;Slide2.JPG&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;我的初步设想是：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;“月旦评文集”可以每期一册，每年可以做一本合订本，或精选集。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;每册文集都有个固定网址。打开网址，就看到上面展示的网页版。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;网页上方的几个按钮，分别是显示目录、搜索、改变字体、修改（&lt;strong&gt;是的，文集永远可以修改！脱离了区块链的限制！&lt;/strong&gt;）、下载、分享等。下载按钮按下去，就可以下载文集的其他格式，包括 epub（下载到手机上离线阅读），pdf（精致排版方便打印）和 word 文档。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;下面简单说说这是怎么做出来的。对技术不感兴趣的请跳过，直接读文末最后一部分。&lt;/p&gt;
+
+&lt;p&gt;熟悉我的人都知道，我是 R 语言的粉丝。以前写的“大鹏观察”系列帖子，数据的获取、分析、作图，甚至 markdown 文件的编写，用的都是 R 语言。&lt;/p&gt;
+
+&lt;p&gt;R 语言的 bookdown 程序包，天生就是为了把 markdown 文件做成文集。而steemit 的源文件，就是 markdown。&lt;/p&gt;
+
+&lt;p&gt;steemit 想做文集而遇到 bookdown，简直是孙悟空遇到定海神针：史上最称手兵器，前世量身打造！&lt;/p&gt;
+
+&lt;p&gt;可惜的是，原生的 bookdown 用起来不是那么方便。所以，前不久，我开发了个 R 程序包，叫做 bookdownplus，已经&lt;a href=&#34;https://CRAN.R-project.org/package=bookdownplus&#34;&gt;在 CRAN 正式发布&lt;/a&gt;，相当于 bookdown 的咖啡伴侣。&lt;/p&gt;
+
+&lt;p&gt;所以，上面的文集范例，都是用我自产自销的 bookdownplus 做出来的。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;方案是现成的，稍作修改就能用。但是，显然我们不会止步于“能用”。我们要做得更好。&lt;/p&gt;
+
+&lt;p&gt;首先，&lt;strong&gt;为了减少文集里的格式混乱和错误，建议大家在投稿里注意&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;插图时请使用 markdown 语法，不要用 html 语法。这是为了方便制作 pdf。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;不要滥用标题格式。有些帖子为了强调正文里某些???字，就用标题格式&lt;code&gt;#&lt;/code&gt;，这是不合规矩的。正文就是正文，只有标题才适合用标题格式。想强调的话，用&lt;strong&gt;粗体&lt;/strong&gt;&lt;code&gt;**粗体**&lt;/code&gt;足矣。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;对 markdown 不熟的话，建议使用 Typora 编辑器，详见&lt;a href=&#34;https://steemit.com/cn/@dapeng/markdown-steemit-tips-the-best-markdown-editors&#34;&gt;我写的教程&lt;/a&gt;。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;当然，这是建议，不是强求。如果你不按这个建议，只是最后增加了制作文集的工作量，增加了文集里的错误格式而已。格式太混乱的话，可能最后被踢出文集……&lt;/p&gt;
+
+&lt;p&gt;此外，我想征求大家的意见和帮助。例如:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;有没有哪位可以设计个封面，作为pdf 文档的首页？“月旦评”文集可以每期换一个封面，也可以不换。大家说呢？&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;R 语言可以方便地往文集里插入“大鹏观察”的统计数据，例如在文集后面加个附录，列出关键词词云图、参赛选手的声望值分布、年龄分布等等。大家说说需要什么数据，我就加什么数据。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;大家还有别的什么建议？欢迎在这里留言。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmb3NCyeZRFcGHDKGXW1i3K23gwFY1xwva7LqG7wpCqKCb/end.png&#34; alt=&#34;end.png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

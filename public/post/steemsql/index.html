@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>steemsql 也开始不靠谱了 | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">steemsql 也开始不靠谱了</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-10-30 09:49 GMT</h2>
+</div>
+
+<main>
+<p>原文链接: <a href="https://steemit.com/cn/@dapeng/steemsql">steemit</a>, <a href="https://cnsteem.com/cn/@dapeng/steemsql">cnsteem</a>, <a href="https://chainbb.com/cn/@dapeng/steemsql">chainbb</a>, <a href="https://busy.org/cn/@dapeng/steemsql">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemsql.md">markdown</a></p>
+
+<p>今天的“希望工程”日报一出来，我就发现新人新帖里很多垃圾文，没有经过过滤。</p>
+
+<p>我有个小号 @pzhao ，当作机器人来用，打算自动发布一些模板化的帖子和评论。目前，”历史上的今天“已经交给机器人发布了。我一直想等着“希望工程”日报做成熟之后，也交过去，免得对我的一些 followers 造成骚扰。可是，除了 steem python API 经常发不出去文章之外，还时不时出点别的幺蛾子。steemsql 就是一个。</p>
+
+<p>“希望工程”日报的垃圾帖过滤工作，是用 R 语言程序完成的。R 程序自动从 steemsql 数据库里，读取 @incrediblesnow 最新发布的 cn-abuse 报告，从中获取新增的灰名单和黑名单，然后对新人新帖进行过滤。</p>
+
+<p>然而，<a href="https://cnsteem.com/cn/@incrediblesnow/29-10-2017-cn-abuse-report-for-cn-abuse-on-29-10-2017">昨天的 cn-abuse 报告</a>，在 steemsql 里看不见。例如搜索：</p>
+
+<pre><code>
+SELECT body 
+
+FROM Comments 
+
+WHERE title like N'%Cn-abuse 的报告%' 
+
+  AND author = 'incrediblesnow' 
+
+  AND json_metadata like '%\&quot;cn\&quot;%' 
+
+  AND created BETWEEN '2017/10/29' and '2017/10/30'
+
+</code></pre>
+
+<p>结果是零条。</p>
+
+<p>放宽一下搜索条件：</p>
+
+<pre><code>
+SELECT title 
+
+FROM Comments 
+
+WHERE author = 'incrediblesnow' 
+
+  AND created BETWEEN '2017/10/20' and '2017/10/30' 
+
+  AND title &lt;&gt; ''
+
+</code></pre>
+
+<p>仍然搜不到。</p>
+
+<p><img src="https://steemitimages.com/DQmT2EerJQhoLsMUTQEKzCfgQiQ8vhnRH4etzrFU2gZ8Va3/steemsql.jpg" alt="steemsql.jpg" /></p>
+
+<p>这就导致昨天的灰名单和黑名单没有被读到，所以“希望工程”的日报就没有得到过滤。好在，就算是没过滤，新人新帖也比前些天大为减少了。</p>
+
+<p>两个月前，我发现 <a href="https://steemit.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem">steemdata 的数据框不靠谱</a>，于是换到了 steemsql。现在连 steemsql 也不靠谱了，该怎么办？</p>
+
+<p><img src="https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg" alt="dapeng" /></p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/steemsql\/';
+    var disqus_title = 'steemsql 也开始不靠谱了';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/steemsql\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

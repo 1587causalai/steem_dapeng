@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/markdown/index.xml</link>
+    <description>Recent content in Markdown on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>给大家推荐一款无可挑剔的 Markdown 编辑器 [Steemit Tips: The best markdown editor]</title>
+      <link>https://steemit.netlify.com/post/markdown-steemit-tips-the-best-markdown-editors/</link>
+      <pubDate>Mon, 18 Sep 2017 12:29:06 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/markdown-steemit-tips-the-best-markdown-editors/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/markdown-steemit-tips-the-best-markdown-editors&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/markdown-steemit-tips-the-best-markdown-editors&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/markdown-steemit-tips-the-best-markdown-editors&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/markdown-steemit-tips-the-best-markdown-editors&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/markdown-steemit-tips-the-best-markdown-editors.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Steemit 上很多新手不喜欢默认的 markdown 编辑器。在此，我郑重推荐一款免费开源、老少咸宜的编辑器：&lt;a href=&#34;https://typora.io/&#34;&gt;Typora&lt;/a&gt;。有了她，让你从此爱上markdown。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Hereby I introduce a markdown editor to new steemians. It is the best markdown editor I have ever seen. Please see the animation figures as a tutorial.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;其实，CN 区的 @timknip 和 @jubi 都曾先后介绍过 Typora 的部分功能。我迟迟没介绍，是因为我发现 Typora 有个致命的 bug；只要有这个 bug 存在，我就不敢放心用。两个多月前，我向 Typora 的开发团队&lt;a href=&#34;https://github.com/typora/typora-issues/issues/750&#34;&gt;提交了这个 bug 报告&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;最近，新版的 Typora 终于把这个问题解决了。经过试用，我觉得这款软件已是无可挑剔。是向大家郑重推荐的时候了。&lt;/p&gt;
+
+&lt;h3 id=&#34;适合新手-for-beginners&#34;&gt;适合新手 *For beginners*　　&lt;/h3&gt;
+
+&lt;p&gt;　　&lt;/p&gt;
+
+&lt;p&gt;　　&lt;/p&gt;
+
+&lt;p&gt;　　&lt;/p&gt;
+
+&lt;p&gt;我是 markdown 的重度用户，用了很多年，尝试过很多 Markdown 编辑器。比较常见的是双栏布局：左边敲源码，右边显示渲染结果。我以前在&lt;a href=&#34;http://dapengde.com/archives/17712&#34;&gt;自己博客&lt;/a&gt;上推荐过桌面版 MarkdownPad，网页版的 StackEdit，Dillinger，国产的麻花编辑器等均属此类。我&lt;a href=&#34;http://dapengde.com/guestbook&#34;&gt;博客的留言区&lt;/a&gt;也算是其中之一，只不过是上下栏。在这些双栏编辑器里，最优秀的当属 &lt;a href=&#34;https://stackedit.io/&#34;&gt;StackEdit&lt;/a&gt;，是Google Drive 的官方御用编辑器，有丰富的工具栏和快捷键，很适合新手。&lt;/p&gt;
+
+&lt;p&gt;不过，自从遇见 Typora，我就彻底抛弃上述所有软件了。Typora 完全颠覆了我对 markdown 编辑器的固有看法。&lt;/p&gt;
+
+&lt;p&gt;Typora 是单栏布局。它虽然顶部没有工具栏，但只要点击右键，工具栏就出现了，非常适合新手。并且，是“所见即所得”：输入格式标记后，光标一离开，就立刻显示为想要的样子。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUkU9MeiSYFPSXFpT1keuc7MUbDuoaoWTxRq3eAxbt8VU/typora1.gif&#34; alt=&#34;typora1.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Right click and you will see the tool bar.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;等熟练之后，就无需右键工具栏，丰富的快捷键可以实现各种格式。ctrl + b 是粗体，ctrl + i 是斜体，ctrl + shift + i 是插入图片， ctrl + k 是插入超链接。常用的就这么几个。不常用的，点菜单栏就看得见。&lt;/p&gt;
+
+&lt;p&gt;Typora 是自动保存的。再也不怕死机、断电造成辛辛苦苦写好的文字丢失了！&lt;/p&gt;
+
+&lt;p&gt;据说每篇帖子在 1000 到 2000 字最好？Typora 右下角即时显示当前的字数。&lt;/p&gt;
+
+&lt;h3 id=&#34;强大的拷贝粘贴功能-powerful-copy-and-paste&#34;&gt;强大的拷贝粘贴功能 &lt;em&gt;Powerful copy and paste&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;在 markdown 里输入表格不够爽。你可以在 Excel 输入，然后拷贝粘贴到 Typora 里，就直接转成表格了。甚至网页上的表格，只需拷贝粘贴到 Excel 里，再从 Excel 里拷贝粘贴到 Typora 里就行了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmead2dGVuTH7yFACD68wD5XXniziJgXeXZdDnfY4Pghig/typora2.gif&#34; alt=&#34;typora2.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Paste a table from a webpage.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;如果你想给一段文字加上超级链接，只需拷贝链接，然后选中文字，按一下ctrl + k，链接就添上了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbX6DuQB75kpcZBT7gQCKHex5ui4EgKXqbktCy59eGffR/typora3.gif&#34; alt=&#34;typora3.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Paste a hyperlink to text.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;如果拷贝的是带超级链接的文字，那么粘贴到 Typora 里时，自动带上了超级链接。&lt;/p&gt;
+
+&lt;p&gt;上面讲的是从外拷贝东西往 Typora 里粘贴。你还可以从 Typora 拷贝东西往外贴，直接转换成html或纯文本格式。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQma3dCFf3wVN77KSrkVKq7yLxKcvaNcURdcYTLgXLnZmhz/typora4.gif&#34; alt=&#34;typora4.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Convert markdown to html easily.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;让老手惊讶-for-advanced-users&#34;&gt;让老手惊讶 &lt;em&gt;For advanced users&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;在 Theme 菜单栏里，可以更换??辑器的主题。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmS9AWtMLyhMvyBCwboVoy5voDbT7qFNcY53UcvGgzCCQE/typora5.gif&#34; alt=&#34;typora5.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;View 菜单里，可以选择不同的视图。大纲视图（Outliine）会显示各级标题，文件视图（Articles）会显示当前文件夹所有 markdown 文件预览，而文件树视图（File Tree）则显示了文件夹和文件的树状结构列表。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmaSfwaMrYfKEVzFJLnsf3ALVQGvGzT724VwS6Co8eJncn/typora6.gif&#34; alt=&#34;typora6.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;你可以选择打字机（Typewriter）模式，或使用快捷键 ctrl+shift+t。这个模式下，光标永远处在编辑窗口的正中间一行，让你的颈椎永远处于最舒服的状态。也可以选择焦点（Focus）模式，帮助你将注意力集中在当前行。按 F11 可以进入全屏模式，有利于专心写作。&lt;/p&gt;
+
+&lt;p&gt;你还可以选择源代码模式，只需按 ctrl + / ，或点击左下角的 &amp;lt;/&amp;gt; 即可。&lt;/p&gt;
+
+&lt;p&gt;上面介绍的功能已经够多，不过仍然不全。你还可以很方便的插入数学公式，脚注，目录。当然，这些格式未必被 steemit 支持，但是你可以导出为 HTML，pdf，Word使用。还有更多功能，等你去发现。&lt;/p&gt;
+
+&lt;p&gt;而且，Typora 竟然是免费的，开源的，跨平台的！Windows ，mac 和 linux 平台都可以用！&lt;/p&gt;
+
+&lt;p&gt;这么好的编辑器，不推荐，根本忍不住。来试一下吧，告诉我你的体验。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tips: How to Embed Music or Sound into a Steem Post 如何在帖子里添加音乐或声音</title>
+      <link>https://steemit.netlify.com/post/tips-how-to-embed-music-or-sound-into-a-steem-post/</link>
+      <pubDate>Wed, 30 Aug 2017 12:36:30 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/tips-how-to-embed-music-or-sound-into-a-steem-post/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/tips-how-to-embed-music-or-sound-into-a-steem-post&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/tips-how-to-embed-music-or-sound-into-a-steem-post&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/tips-how-to-embed-music-or-sound-into-a-steem-post&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/tips-how-to-embed-music-or-sound-into-a-steem-post&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/tips-how-to-embed-music-or-sound-into-a-steem-post.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I guess everyone knows how to insert images (&lt;code&gt;![](img link)&lt;/code&gt;) or video clips (&lt;code&gt;Youtube&lt;/code&gt;) into a Steem markdown post. But do you know how to embed music or sound clips?&lt;/p&gt;
+
+&lt;p&gt;It is very simple:  &lt;a href=&#34;https://soundcloud.com/&#34;&gt;soundcloud.com&lt;/a&gt;. I made a tutorial as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQSPRVpVFc9qbJK3JAmjj7WwRt4MTQxuuyqJsAafJ4Vkg/soundcloud.gif&#34; alt=&#34;soundcloud.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is the description:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Search for music or upload your own.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Open the web page of your target music or sound.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click the &amp;lsquo;share&amp;rsquo; button below the comment bar.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click &amp;lsquo;Embed&amp;rsquo; on the top of the new small window, and you will get the code.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Copy and paste it into your steem post. Done!&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can choose whether to play it automatically (please don&amp;rsquo;t), and the starting point.&lt;/p&gt;
+
+&lt;p&gt;Got it? If so, show it in a reply to this post! Here is mine:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;166&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144848972&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;可能每个人都知道如何往 steemit 的帖子里插入图片 (&lt;code&gt;![](img link)&lt;/code&gt;) 或视频 (&lt;code&gt;Youtube&lt;/code&gt;) 。但是你知道如何插入音乐或声音吗?&lt;/p&gt;
+
+&lt;p&gt;非常简单： &lt;a href=&#34;https://soundcloud.com/&#34;&gt;soundcloud.com&lt;/a&gt;。我做了个简单的教程动画，见本文开头。文字描述如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;搜索或上传音乐或声音。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;打开目标声音的页面。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;点击 &amp;lsquo;share&amp;rsquo; 按钮。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;点击窗口顶部的 &amp;lsquo;Embed&amp;rsquo;，就得到了代码。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;将代码拷贝粘贴到帖子里。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;大功告成！&lt;/p&gt;
+
+&lt;p&gt;你可以进一步选择是否自动播放（不推荐），也可以选择起始时间点。&lt;/p&gt;
+
+&lt;p&gt;如果你成功了，请回复本帖，在回复里插入一段音乐让我们听听吧！&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>中文段首加空格和增加段落间距 （steemit markdown）</title>
+      <link>https://steemit.netlify.com/post/steemit-markdown/</link>
+      <pubDate>Sun, 13 Aug 2017 09:05:33 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steemit-markdown/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-markdown&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemit-markdown&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steemit-markdown&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steemit-markdown&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemit-markdown.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;　　有朋友在 steemit 的 cn-reader 的微信群里问了一个 markdown 中文排版的问题：如何为中文段首增加空格，以及改变段落间的间距。这个简单：使用中文的全角空格。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQjSRg9PkM2gGmsqa7jm5wNxorgGgWQid3on1QwPeaoLa/quanjiao.jpg&#34; alt=&#34;quanjiao.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　&lt;/p&gt;
+
+&lt;p&gt;　　一般的中文输入法都有上述设置界面。点一下弯月符号（或快捷键shift+空格）就变成满月，这就是全角。此时按空格键，就会输入一个汉字宽度的空白。所以，段首输入两个全角空白就行了。&lt;/p&gt;
+
+&lt;p&gt;　　不过，如果是紧跟在非普通文本（全文第一段，插图，代码等）后面，这种方法会失效，那么可以在全角空格前面加上个&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;就行了。&lt;/p&gt;
+
+&lt;p&gt;　　一般来说，在markdown编辑器里输入全角空格后再换行，就会多插入一行空白。下面我们用这种方法输入一行空白。&lt;/p&gt;
+
+&lt;p&gt;　　&lt;/p&gt;
+
+&lt;p&gt;　　&lt;/p&gt;
+
+&lt;p&gt;　　但连续几个空行 steemit 就不支持了。那么可以输入：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;也同样是插入一个空行。输入几个&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;就插入几个空行。下面，我们插入两个空行。&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;　　&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;其实是 html 语言的代码。“全角空格”是html界的魔法占位符。善用“全角空格”这个小魔法，就可以实现诸如　　对　　齐　　等其他功能。&lt;/p&gt;
+
+&lt;p&gt;　　要想使用复杂的格式，就需要复杂的命令或按钮来排版，容易偏离对内容的关注。而 steemit 使用的 markdown 语法，在内容和形式之间达到了最微妙的平衡，让你用最简单的指令，实现日常99%以上的排版需求。&lt;/p&gt;
+
+&lt;p&gt;　　不过，markdown 也尊重其他1%用户的特殊需求。原则上，markdown 支持 html，所以，要想对你的帖子的格式进行复杂排版，那么就学习 html 吧，少年！&lt;/p&gt;
+
+&lt;p&gt;　　中文段首空格原本是用来印刷时方便划分自然段的。在网络时代，自然段完全可以通过段落间距看得出来，所以段首空格丧失了原本的意义。不过，作为对纸质书和印刷时代的怀念，用一下段首空格，不失为一种情怀吧。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

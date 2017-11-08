@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大鲸和小鱼等级计算方法的建议  Suggestions on Definition of Small Fishes and Big Whales on Steemit | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">大鲸和小鱼等级计算方法的建议  Suggestions on Definition of Small Fishes and Big Whales on Steemit</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-09-29 08:30 GMT</h2>
+</div>
+
+<main>
+<p>原文链接: <a href="https://steemit.com/cn/@dapeng/definition-of-small-fish-and-big-whale-on-steemit">steemit</a>, <a href="https://cnsteem.com/cn/@dapeng/definition-of-small-fish-and-big-whale-on-steemit">cnsteem</a>, <a href="https://chainbb.com/cn/@dapeng/definition-of-small-fish-and-big-whale-on-steemit">chainbb</a>, <a href="https://busy.org/cn/@dapeng/definition-of-small-fish-and-big-whale-on-steemit">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/definition-of-small-fish-and-big-whale-on-steemit.md">markdown</a></p>
+
+<p>严格来讲， steemit 并没有“大鲸”和“小鱼”。</p>
+
+<p>Steem 上“鲸”和“鱼”的分级来自 <a href="https://steemitboard.com/">steemitboard</a> ，将用户分 5 级，从小到大依次是：红鱼，米诺鱼，海豚，杀人鲸，鲸。你看，里面根本没有“大鲸”和“小鱼”的说法。后者只是俗称。</p>
+
+<p>那么，这5级是怎么定义的？</p>
+
+<blockquote>
+<p>The title of this post is technically wrong. There is neither small fish nor big while. Five levels of steemians were given by  <a href="https://steemitboard.com/">steemitboard</a>. They are red fish, minnow, dolphin, orca, and whale. They are defined according to the  vesting shares of the account.</p>
+</blockquote>
+
+<p>是根据用户的 vesting_shares 定义的。如果用户的 vesting_shares 少于 1000000（6个零，即 1 M）， 那就是红鱼；多于 1000000000（9个零，即1 G），就是鲸。介于两者之间，每多个零，就升一级。也就是说：</p>
+
+<pre><code>
+红鱼 &lt; 1M &lt; 米诺鱼 &lt; 10M &lt; 海豚 &lt; 100M &lt; 杀人鲸 &lt; 1G &lt; 鲸
+
+Red fish &lt; 1M &lt; Minnow &lt; 10M &lt; Dolphin &lt; 100M &lt; Orca &lt; 1G &lt; Whale
+
+</code></pre>
+
+<p>那么，vesting_shares 是什么？</p>
+
+<p>其实就是 Steem Power （SP，即“权力”）换算成另一个单位而已，中间需要一个由区块链内部定义的常数，叫做  steem_per_mvests，可以在 <a href="https://steemd.com/">steemd</a> 网页右上角看到，目前的值是 485.668。每 1 M 的 vesting_shares，约等于486 个 SP。</p>
+
+<pre><code>
+Steem Power =  vesting_share * 485.668 / 1000000
+
+</code></pre>
+
+<p>这样一换算，就很容易通过权力（SP）来判断等级了：</p>
+
+<blockquote>
+<p>As the Steem Power (SP) is calculated from the vesting power and the steem per mvests (485.668, which can be found on <a href="https://steemd.com/">steemd</a>), we can define the user level by SP:</p>
+</blockquote>
+
+<pre><code>
+红鱼 &lt; 486SP &lt; 米诺鱼 &lt; 4860SP &lt; 海豚 &lt; 48600SP &lt; 杀人鲸 &lt; 486000SP &lt; 鲸
+
+Red fish &lt; 486SP &lt; Minnow &lt; 4860SP &lt; Dolphin &lt; 48600SP &lt; Orca &lt; 486000SP &lt; Whale
+
+</code></pre>
+
+<p>为了方便，这里只取三位有效数字，并忽略科学记数法的问题。</p>
+
+<p>米诺鱼是一种小型鲤鱼，红鱼是一道好菜。这些名称不够直观。结合大家的惯用法，我建议在中文区把他们叫做：小鱼，大鱼，海豚，小鲸，大鲸。</p>
+
+<p>所以，更简单来说， SP 高于5百，就是大鱼；5千，海豚；5万，小鲸； 50 万，大鲸。</p>
+
+<blockquote>
+<p>I think these names are too complicated to steemians, especially to those who know nothing about zoology or have never been to a sea. For simplicity, I would call them small fish, big fish, dolphin, small whale, big whale.</p>
+
+<p>I think it is unfair to define the level by SP. ESP makes more sense. BTW, On steemiboard, a user with no activity is marked as dead fish. It is unfair as well. On the name list of CN community,  user levels are given according to ESP, and nobody is dead fish. After all, dolphins and whales are mammals. They are not fishes at all!</p>
+</blockquote>
+
+<p><img src="https://steemitimages.com/DQmasoQQNTKQpSBb96y4QQ9o5sPhiF8tjPX7YG4dCL3axc1/level.jpg" alt="level.jpg" /></p>
+
+<p>然而，如果你用 <a href="https://steemitboard.com/">steemitboard</a> 查某个用户的等级，例如<a href="https://steemitboard.com/@tumutanzi">查询有“临时大鲸鱼”美称的 @tumutanzi</a>，却发现他只是个海豚；而<a href="https://steemitboard.com/board.html?user=myfirst">一哥 @myfirst</a> 更离谱，是条死鱼。这是怎么回事？</p>
+
+<p>因为 @tumutanzi 有 50 万的权力来自 ned 的代理 ，从而“实权”(即有效权力，Effective SP，ESP) 达到了大鲸的等级。“临时大鲸鱼”这个名称是我最先叫出来的，灵感来源于孙中山先生的“临时大总统”一职。按照 ESP 来分等级的话，我们还可以称呼某个人“临时小鲸”，&rdquo;临时海豚&rdquo;等。</p>
+
+<p>而 @myfirst ，只要最近 7 天没活动，就被 steemitboard 标为死鱼。</p>
+
+<p>既然 ESP 比 SP 更具有现实意义，那么 steemitboard  用SP 算等级就显得不合理了，而7天不活动就标死的做法更是不近人情。我认为应该按 ESP 来算。所以，在 <a href="https://steemit.com/cn/@dapeng/6mnla8-steemit-cn">Steem 中文区水浒英雄排行榜</a>上，我新增了“用户等级”一栏，按 ESP 来显示用户属于哪一级。目前的 108 将里，有 5 条大鲸，4 条小鲸，8 条海豚，37 条大鱼，剩下的 54 条（恰好占一半）是小鱼。</p>
+
+<p>来<a href="http://steemr.org/">排行榜</a>看看吧，你属于哪种鱼？</p>
+
+<p>PS：海豚和鲸其实都属于哺乳动物，不是鱼。</p>
+
+<p><img src="https://steemitimages.com/DQmWKRoZhpvHW3sFkHUnfkbZGNsZUe8FBEgEbkRXQXoE4bu/end.png" alt="end.png" /></p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/definition-of-small-fish-and-big-whale-on-steemit\/';
+    var disqus_title = '大鲸和小鱼等级计算方法的建议  Suggestions on Definition of Small Fishes and Big Whales on Steemit';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/definition-of-small-fish-and-big-whale-on-steemit\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

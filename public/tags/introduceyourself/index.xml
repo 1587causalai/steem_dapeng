@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduceyourself on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/introduceyourself/index.xml</link>
+    <description>Recent content in Introduceyourself on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/introduceyourself/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>New Steemians, have you ever thought about your data privacy?</title>
+      <link>https://steemit.netlify.com/post/new-steemians-have-you-have-thought-about-your-data-privacy/</link>
+      <pubDate>Wed, 26 Jul 2017 20:56:21 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/new-steemians-have-you-have-thought-about-your-data-privacy/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/new-steemians-have-you-have-thought-about-your-data-privacy.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If  you are a new Steemian, I was wondering if you are aware of your data privacy. If not, you&amp;rsquo;d better know it in advance. Here I display @tumutanzi&amp;rsquo;s public data (&lt;a href=&#34;https://steemdb.com/&#34;&gt;https://steemdb.com/&lt;/a&gt;,  sampled at  2017-07-26 22:06:46 CEST) in an easy way with R language. This is Part I. This is an English version of the &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit&#34;&gt;original post in Chinese&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;@tumutanzi has 319 followers. The word cloud according to the number of their followers is like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmY4qfoEu9XZzpYjg6aR52bVMpPvcfMXej56AKvmu46j1E/unnamed-chunk-2-1.png&#34; alt=&#34;unnamed-chunk-2-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A larger ID means more followers.&lt;/p&gt;
+
+&lt;p&gt;It can be plotted by the number of posts as well:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSBtokTVueC2qxCnBqxn7vU24HaiJzhCgFqSUQ257fFLG/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;or by the number of Vests:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcrddtPW9tH3HaFjAcEiMc9qFiwRt5ePe4AHGEfMxUBWc/unnamed-chunk-4-1.png&#34; alt=&#34;unnamed-chunk-4-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;@abit is scary, who has 4077000000 Vests. Let&amp;rsquo;s kick him out:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTfss2wX94T9NjpQ74u4pXVd1E1gdT7tsvTZ6VMAt8cGS/unnamed-chunk-5-1.png&#34; alt=&#34;unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s see those whom @tumutanzi is following.&lt;/p&gt;
+
+&lt;p&gt;@tumutanzi follows/followed 305 ID in total, in which 152 IDs interact with @tumutanzi bidirectionally, while 153 IDs do not follow him, including:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;ace108&amp;quot;          &amp;quot;act&amp;quot;             &amp;quot;adm&amp;quot;            
+
+##   [4] &amp;quot;adoal&amp;quot;           &amp;quot;adsactly&amp;quot;        &amp;quot;alice&amp;quot;          
+
+##   [7] &amp;quot;anwenbaumeister&amp;quot; &amp;quot;arcurus&amp;quot;         &amp;quot;arhag&amp;quot;          
+
+##  [10] &amp;quot;azazqwe&amp;quot;         &amp;quot;batel&amp;quot;           &amp;quot;ben&amp;quot;            
+
+##  [13] &amp;quot;birds90&amp;quot;         &amp;quot;bitcube&amp;quot;         &amp;quot;blocktrades&amp;quot;    
+
+##  [16] &amp;quot;blueorgy&amp;quot;        &amp;quot;bob&amp;quot;             &amp;quot;brothermic&amp;quot;     
+
+##  [19] &amp;quot;btsabc&amp;quot;          &amp;quot;bziing&amp;quot;          &amp;quot;candiceji&amp;quot;      
+
+##  [22] &amp;quot;ceciliali&amp;quot;       &amp;quot;chinadaily&amp;quot;      &amp;quot;cnfund&amp;quot;         
+
+##  [25] &amp;quot;coldhair&amp;quot;        &amp;quot;cornelia&amp;quot;        &amp;quot;cqf&amp;quot;            
+
+##  [28] &amp;quot;created&amp;quot;         &amp;quot;cybercodetwins&amp;quot;  &amp;quot;damarth&amp;quot;        
+
+##  [31] &amp;quot;dan&amp;quot;             &amp;quot;dantheman&amp;quot;       &amp;quot;databass&amp;quot;       
+
+##  [34] &amp;quot;davidyuan&amp;quot;       &amp;quot;deadlinefarmer&amp;quot;  &amp;quot;dek&amp;quot;            
+
+##  [37] &amp;quot;dixonloveart&amp;quot;    &amp;quot;dmilash&amp;quot;         &amp;quot;ekitcho&amp;quot;        
+
+##  [40] &amp;quot;elfkitchen&amp;quot;      &amp;quot;engagement&amp;quot;      &amp;quot;everittdmickey&amp;quot; 
+
+##  [43] &amp;quot;feelapi&amp;quot;         &amp;quot;flysaga&amp;quot;         &amp;quot;freedom&amp;quot;        
+
+##  [46] &amp;quot;frostfan&amp;quot;        &amp;quot;fuzzyvest&amp;quot;       &amp;quot;fyrstikken&amp;quot;     
+
+##  [49] &amp;quot;gaoduzhu&amp;quot;        &amp;quot;gavvet&amp;quot;          &amp;quot;gefa&amp;quot;           
+
+##  [52] &amp;quot;glitterfart&amp;quot;     &amp;quot;goku1&amp;quot;           &amp;quot;guyverckw&amp;quot;      
+
+##  [55] &amp;quot;haster&amp;quot;          &amp;quot;hendrikdegrote&amp;quot;  &amp;quot;hingman&amp;quot;        
+
+##  [58] &amp;quot;holabebe&amp;quot;        &amp;quot;huaji&amp;quot;           &amp;quot;icedream&amp;quot;       
+
+##  [61] &amp;quot;incrediblesnow&amp;quot;  &amp;quot;ivanba12&amp;quot;        &amp;quot;j-bex&amp;quot;          
+
+##  [64] &amp;quot;jademont&amp;quot;        &amp;quot;jaewoocho&amp;quot;       &amp;quot;jamesc&amp;quot;         
+
+##  [67] &amp;quot;jamesc1&amp;quot;         &amp;quot;jasonmcz&amp;quot;        &amp;quot;jeicko19&amp;quot;       
+
+##  [70] &amp;quot;jholdsworthy&amp;quot;    &amp;quot;jinbo&amp;quot;           &amp;quot;kawaiiiiiiii030&amp;quot;
+
+##  [73] &amp;quot;kenchung&amp;quot;        &amp;quot;kitcat&amp;quot;          &amp;quot;krischy&amp;quot;        
+
+##  [76] &amp;quot;laodr&amp;quot;           &amp;quot;laoyao&amp;quot;          &amp;quot;lcb&amp;quot;            
+
+##  [79] &amp;quot;lief&amp;quot;            &amp;quot;linuslee0216&amp;quot;    &amp;quot;logic&amp;quot;          
+
+##  [82] &amp;quot;lukestokes&amp;quot;      &amp;quot;matrix&amp;quot;          &amp;quot;miacats&amp;quot;        
+
+##  [85] &amp;quot;michael-a&amp;quot;       &amp;quot;michael-b&amp;quot;       &amp;quot;microluck&amp;quot;      
+
+##  [88] &amp;quot;minfon&amp;quot;          &amp;quot;minority-report&amp;quot; &amp;quot;monkimo&amp;quot;        
+
+##  [91] &amp;quot;morten&amp;quot;          &amp;quot;mottler&amp;quot;         &amp;quot;ned&amp;quot;            
+
+##  [94] &amp;quot;nextgen622&amp;quot;      &amp;quot;nicolemoker&amp;quot;     &amp;quot;nuagnorab&amp;quot;      
+
+##  [97] &amp;quot;orientaledu&amp;quot;     &amp;quot;papa-pepper&amp;quot;     &amp;quot;penguinpablo&amp;quot;   
+
+## [100] &amp;quot;peterpan&amp;quot;        &amp;quot;pfunk&amp;quot;           &amp;quot;pharesim&amp;quot;       
+
+## [103] &amp;quot;pilgrimtraveler&amp;quot; &amp;quot;pipertomcat&amp;quot;     &amp;quot;pistox&amp;quot;         
+
+## [106] &amp;quot;pkhope&amp;quot;          &amp;quot;project11&amp;quot;       &amp;quot;proskynneo&amp;quot;     
+
+## [109] &amp;quot;publicworker&amp;quot;    &amp;quot;puffin&amp;quot;          &amp;quot;ranchorelaxo&amp;quot;   
+
+## [112] &amp;quot;rawnetics&amp;quot;       &amp;quot;rayphu&amp;quot;          &amp;quot;rea&amp;quot;            
+
+## [115] &amp;quot;recursive&amp;quot;       &amp;quot;renohq&amp;quot;          &amp;quot;riverhead&amp;quot;      
+
+## [118] &amp;quot;roadscape&amp;quot;       &amp;quot;robrigo&amp;quot;         &amp;quot;rok-sivante&amp;quot;    
+
+## [121] &amp;quot;rook&amp;quot;            &amp;quot;safari&amp;quot;          &amp;quot;scorpion&amp;quot;       
+
+## [124] &amp;quot;sean1980&amp;quot;        &amp;quot;smooth&amp;quot;          &amp;quot;someone&amp;quot;        
+
+## [127] &amp;quot;stan&amp;quot;            &amp;quot;steem&amp;quot;           &amp;quot;steemed&amp;quot;        
+
+## [130] &amp;quot;steemit&amp;quot;         &amp;quot;steemitblog&amp;quot;     &amp;quot;stellabelle&amp;quot;    
+
+## [133] &amp;quot;str11ngfello&amp;quot;    &amp;quot;sunnyray&amp;quot;        &amp;quot;susanlo&amp;quot;        
+
+## [136] &amp;quot;tamim&amp;quot;           &amp;quot;teamsteem&amp;quot;       &amp;quot;thecryptofiend&amp;quot; 
+
+## [139] &amp;quot;thejohalfiles&amp;quot;   &amp;quot;trafalgar&amp;quot;       &amp;quot;transisto&amp;quot;      
+
+## [142] &amp;quot;val-a&amp;quot;           &amp;quot;val-b&amp;quot;           &amp;quot;wackou&amp;quot;         
+
+## [145] &amp;quot;wanbin&amp;quot;          &amp;quot;waterflier&amp;quot;      &amp;quot;webclerk&amp;quot;       
+
+## [148] &amp;quot;witness.svk&amp;quot;     &amp;quot;wjm&amp;quot;             &amp;quot;wjs2634&amp;quot;        
+
+## [151] &amp;quot;wongshiying&amp;quot;     &amp;quot;xeldal&amp;quot;          &amp;quot;zoef&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On the other hand, those who follow him but he does not follow (yet) are:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;abit&amp;quot;            &amp;quot;abusalam&amp;quot;        &amp;quot;acrich&amp;quot;         
+
+##   [4] &amp;quot;adraaz&amp;quot;          &amp;quot;alexieong&amp;quot;       &amp;quot;alfredchen&amp;quot;     
+
+##   [7] &amp;quot;aniksh&amp;quot;          &amp;quot;artsyppl&amp;quot;        &amp;quot;asskick&amp;quot;        
+
+##  [10] &amp;quot;aster&amp;quot;           &amp;quot;atc&amp;quot;             &amp;quot;atrix&amp;quot;          
+
+##  [13] &amp;quot;avilsd&amp;quot;          &amp;quot;avinger&amp;quot;         &amp;quot;babasikandar&amp;quot;   
+
+##  [16] &amp;quot;baixu1018&amp;quot;       &amp;quot;bajeheart&amp;quot;       &amp;quot;bassemm&amp;quot;        
+
+##  [19] &amp;quot;bbkivines&amp;quot;       &amp;quot;beautifulbella&amp;quot;  &amp;quot;benou&amp;quot;          
+
+##  [22] &amp;quot;berke&amp;quot;           &amp;quot;biddle&amp;quot;          &amp;quot;bilalhaider&amp;quot;    
+
+##  [25] &amp;quot;bindu&amp;quot;           &amp;quot;bocaiwen&amp;quot;        &amp;quot;brianchen&amp;quot;      
+
+##  [28] &amp;quot;britt.the.ish&amp;quot;   &amp;quot;carinewhy&amp;quot;       &amp;quot;carolynseymour&amp;quot; 
+
+##  [31] &amp;quot;catwomanteresa&amp;quot;  &amp;quot;chumhumnews&amp;quot;     &amp;quot;cryptochamo&amp;quot;    
+
+##  [34] &amp;quot;danishali&amp;quot;       &amp;quot;danm2017&amp;quot;        &amp;quot;davidad&amp;quot;        
+
+##  [37] &amp;quot;daxiblog&amp;quot;        &amp;quot;dcc&amp;quot;             &amp;quot;deanliu&amp;quot;        
+
+##  [40] &amp;quot;diablocro&amp;quot;       &amp;quot;diaohuijun&amp;quot;      &amp;quot;dimidrolshina&amp;quot;  
+
+##  [43] &amp;quot;dinsha&amp;quot;          &amp;quot;dobro88888888&amp;quot;   &amp;quot;dominicmi&amp;quot;      
+
+##  [46] &amp;quot;dragos0897&amp;quot;      &amp;quot;dtworker&amp;quot;        &amp;quot;fitinfun&amp;quot;       
+
+##  [49] &amp;quot;frankbuse&amp;quot;       &amp;quot;gamemusic&amp;quot;       &amp;quot;gatmi&amp;quot;          
+
+##  [52] &amp;quot;goaln&amp;quot;           &amp;quot;gowldie&amp;quot;         &amp;quot;gribtertong&amp;quot;    
+
+##  [55] &amp;quot;grildrig&amp;quot;        &amp;quot;hamzaoui&amp;quot;        &amp;quot;harttwohartllc&amp;quot; 
+
+##  [58] &amp;quot;hebro&amp;quot;           &amp;quot;hilarski&amp;quot;        &amp;quot;hofffman&amp;quot;       
+
+##  [61] &amp;quot;hongmeng&amp;quot;        &amp;quot;hoof&amp;quot;            &amp;quot;hqfzone&amp;quot;        
+
+##  [64] &amp;quot;imagediet&amp;quot;       &amp;quot;imako&amp;quot;           &amp;quot;initnas&amp;quot;        
+
+##  [67] &amp;quot;investlimestone&amp;quot; &amp;quot;iqbalbireuen&amp;quot;    &amp;quot;irphotography&amp;quot;  
+
+##  [70] &amp;quot;ishaq&amp;quot;           &amp;quot;istox&amp;quot;           &amp;quot;iszarl&amp;quot;         
+
+##  [73] &amp;quot;itan05&amp;quot;          &amp;quot;itissimple&amp;quot;      &amp;quot;jackmiller&amp;quot;     
+
+##  [76] &amp;quot;jamal83&amp;quot;         &amp;quot;jason-donovan&amp;quot;   &amp;quot;jhonnight&amp;quot;      
+
+##  [79] &amp;quot;jones420&amp;quot;        &amp;quot;joseburgos&amp;quot;      &amp;quot;jukas&amp;quot;          
+
+##  [82] &amp;quot;junyi&amp;quot;           &amp;quot;justyy&amp;quot;          &amp;quot;kabindra&amp;quot;       
+
+##  [85] &amp;quot;katythompson&amp;quot;    &amp;quot;khairulmuammar&amp;quot;  &amp;quot;kishore1988&amp;quot;    
+
+##  [88] &amp;quot;krasotka&amp;quot;        &amp;quot;kristjannacaj&amp;quot;   &amp;quot;landeberg&amp;quot;      
+
+##  [91] &amp;quot;lautenglye&amp;quot;      &amp;quot;ledygaga25&amp;quot;      &amp;quot;lemooljiang&amp;quot;    
+
+##  [94] &amp;quot;liangfengyouren&amp;quot; &amp;quot;lifeofkly&amp;quot;       &amp;quot;lifishake&amp;quot;      
+
+##  [97] &amp;quot;lilywang&amp;quot;        &amp;quot;liufeng&amp;quot;         &amp;quot;luckerme&amp;quot;       
+
+## [100] &amp;quot;lykencrypto&amp;quot;     &amp;quot;lynx&amp;quot;            &amp;quot;marianpancu&amp;quot;    
+
+## [103] &amp;quot;mehdioraki3973&amp;quot;  &amp;quot;minknsa&amp;quot;         &amp;quot;mkotibabu&amp;quot;      
+
+## [106] &amp;quot;monalishabiswas&amp;quot; &amp;quot;mydarlings2&amp;quot;     &amp;quot;myfirst&amp;quot;        
+
+## [109] &amp;quot;mytamilabiz&amp;quot;     &amp;quot;natashahall&amp;quot;     &amp;quot;nationalpark&amp;quot;   
+
+## [112] &amp;quot;nawar93&amp;quot;         &amp;quot;newsagg&amp;quot;         &amp;quot;notregme&amp;quot;       
+
+## [115] &amp;quot;oflyhigh&amp;quot;        &amp;quot;ohammedfelahi&amp;quot;   &amp;quot;patricksanlin&amp;quot;  
+
+## [118] &amp;quot;phyohtetpaing&amp;quot;   &amp;quot;powerfj&amp;quot;         &amp;quot;qipashuo&amp;quot;       
+
+## [121] &amp;quot;redje&amp;quot;           &amp;quot;renua&amp;quot;           &amp;quot;revolusi&amp;quot;       
+
+## [124] &amp;quot;riansteem&amp;quot;       &amp;quot;rifattb&amp;quot;         &amp;quot;robi8888&amp;quot;       
+
+## [127] &amp;quot;rodneyaspiras&amp;quot;   &amp;quot;rogerwilson&amp;quot;     &amp;quot;sbamsoneu&amp;quot;      
+
+## [130] &amp;quot;secora&amp;quot;          &amp;quot;securetalk&amp;quot;      &amp;quot;sequentialvibe&amp;quot; 
+
+## [133] &amp;quot;shaheer001&amp;quot;      &amp;quot;shankhunsam&amp;quot;     &amp;quot;shengjian&amp;quot;      
+
+## [136] &amp;quot;sheval&amp;quot;          &amp;quot;showoff&amp;quot;         &amp;quot;skynyc&amp;quot;         
+
+## [139] &amp;quot;somebody&amp;quot;        &amp;quot;stackin&amp;quot;         &amp;quot;steem.engine&amp;quot;   
+
+## [142] &amp;quot;steemitguide&amp;quot;    &amp;quot;sthitaprajna&amp;quot;    &amp;quot;suitup&amp;quot;         
+
+## [145] &amp;quot;sunnyjolly&amp;quot;      &amp;quot;superhardness&amp;quot;   &amp;quot;swssmarketing&amp;quot;  
+
+## [148] &amp;quot;tastetwist&amp;quot;      &amp;quot;themessengers&amp;quot;   &amp;quot;toninux&amp;quot;        
+
+## [151] &amp;quot;trevis&amp;quot;          &amp;quot;vax-rambo&amp;quot;       &amp;quot;vishal1088&amp;quot;     
+
+## [154] &amp;quot;walkman90&amp;quot;       &amp;quot;warrkin&amp;quot;         &amp;quot;whydowork&amp;quot;      
+
+## [157] &amp;quot;worldwidetravel&amp;quot; &amp;quot;xiaohui&amp;quot;         &amp;quot;xiaokongcom&amp;quot;    
+
+## [160] &amp;quot;xjb&amp;quot;             &amp;quot;yellowkersie&amp;quot;    &amp;quot;ygern&amp;quot;          
+
+## [163] &amp;quot;yuxi&amp;quot;            &amp;quot;zerozero777&amp;quot;     &amp;quot;zhijun&amp;quot;         
+
+## [166] &amp;quot;zhuqiankun&amp;quot;      &amp;quot;zwal&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is weird that  @abit and @justyy are in   @tumutanzi Steemit&amp;rsquo;s following list, but not in the list of  &lt;a href=&#34;https://steemdb.com/@tumutanzi/following&#34;&gt;steemdb&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I would suggest @tumutanzi should follow them before they read this post. Hurry!&lt;/p&gt;
+
+&lt;p&gt;If you would like to have a similar report about your ID&amp;rsquo;s followers and following, please  visit the online tool &lt;a href=&#34;https://pzhao.shinyapps.io/steemr/&#34;&gt;steemr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;To be continued&amp;hellip;&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bilingually Writing on Steemit? 创造一种双语写作的新文体</title>
+      <link>https://steemit.netlify.com/post/bilingually-writing-on-steemit/</link>
+      <pubDate>Wed, 26 Jul 2017 09:21:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/bilingually-writing-on-steemit/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/bilingually-writing-on-steemit&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/bilingually-writing-on-steemit&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/bilingually-writing-on-steemit&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/bilingually-writing-on-steemit&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/bilingually-writing-on-steemit.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In @tumutanzi&amp;rsquo;s new post &lt;a href=&#34;https://steemit.com/cn/@tumutanzi/q9syu-steemit&#34;&gt;Use your native language to write on Steemit&lt;/a&gt;,&lt;/p&gt;
+
+&lt;p&gt;@justyy commented that 800 words is more than enough to clear this easy problem. I know what the former meant, and I agree with the latter.  Let&amp;rsquo;s re-write this post within 20 Words:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Bilingually Writing on Steemit? If you can, do it. If not, don&amp;rsquo;t.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I cannot, but I will.&lt;/p&gt;
+
+&lt;p&gt;When I began my Steemit, I saw many posts were written bilingually.  @jessicameng writes even  trilingually. I thought it might be a hidden rule on Steemit. Therefore I started writing in Chinese with an English translation. My English is not good, but I have been making progress in improving it. In the meanwhile, I found that bilingually writing is rather a hobby than a rule on Steemit. I am happy that I was mislead.&lt;/p&gt;
+
+&lt;p&gt;After reading some bilingual posts, I decided to read only those paragraphs written in Chinese in them. Although this post was written bilingually, I would suggest that you had better read the texts in Chinese if you can, which is much better than those in English. English is not my mother tongue, and my English is not good. However, it is better than machine&amp;rsquo;s translation. I would be glad to exchange my thoughts with international friends on the topics of common interest.&lt;/p&gt;
+
+&lt;p&gt;I wish there were data showing the improvements which bilingual writing could make. Does it really attract more attention or even less? If more, is it worth it? Furthermore, we might even develop a new writing style in bilingual writing. If you read the paragraphs in Chinese, it is story A; if those in English, it is story B, although with the same pictures. It is worth a shot, isn&amp;rsquo;t it?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bebrainfit.com/wp-content/uploads/2016/05/globe-hands.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;@tumutanzi 新发了??篇帖子：&lt;a href=&#34;https://steemit.com/cn/@tumutanzi/q9syu-steemit&#34;&gt; Steemit中文用户有必要写中英文双语文章吗？&lt;/a&gt;。 @justyy 评论说“这么浅显的道理你竟然碎碎练了一篇800字作文”。我明白前者的良苦用心，对后者的评论也很赞同。不如我们来做一道小学生作文题吧：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;小学生作文题：请把这篇800字的帖子缩写到20字以内。&lt;/p&gt;
+
+&lt;p&gt;我的解答：&lt;/p&gt;
+
+&lt;p&gt;在 Steemit 双语写作？能写好就写，写不好别写。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;然而，我觉得我就写不好，但是我还是要写。&lt;/p&gt;
+
+&lt;p&gt;我刚来 Steemit 的时候，看到 cn 区很多帖子都是双语写的， @jessicameng 甚至用三种语言来写，我误以为这是 Steemit 约定俗成的惯例呢。所以我自己的帖子尽量附上英文。写了几篇之后，我发现这样确实挺练习英文写作的。同时发现，原来这并不是惯例，只是个人爱好……感觉自己受骗了，但是被骗得很高兴。&lt;/p&gt;
+
+&lt;p&gt;阅读了 cn 区的一些双语帖之后，我就转为只挑中文段落读了。从学习角度来说，中国人的英文毕竟不如母语英文的人写得好。所以，本文虽然是双语写的，但尽量别读我的英文，不地道。关注我的人里有一位 @acrich，中英写作，说自己是加拿大人，中文说得很好，我说他是第二个大山，并且觉得从他这样的人写的双语帖子里应该会发现一些有趣有益的东西。从交流角度，中文之外有英文，当然对跨文化交流大大有利，不仅方便不懂中文的朋友了解帖子内容，而且可以让学中文的老外用作学习素材。&lt;/p&gt;
+
+&lt;p&gt;如果有统计数字就好了，比如比较一下双语写作与单语写作，收益是提高了还是降低了，提高的话高出多少，高出这部分值不值当。&lt;/p&gt;
+
+&lt;p&gt;如果玩得好，我希望能从 cn 区的双语写作里发展出一种新文体，那就是虽然配图相同，但中文是一个故事，而英文讲的是另一个，并且完美融合。&lt;/p&gt;
+
+&lt;p&gt;要不来试试？&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Self introduction of @dapeng 大鹏</title>
+      <link>https://steemit.netlify.com/post/self-introduction-of-dapeng/</link>
+      <pubDate>Tue, 25 Jul 2017 15:11:39 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/self-introduction-of-dapeng/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/introduceyourself/@dapeng/self-introduction-of-dapeng&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/introduceyourself/@dapeng/self-introduction-of-dapeng&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/introduceyourself/@dapeng/self-introduction-of-dapeng&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/introduceyourself/@dapeng/self-introduction-of-dapeng&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/self-introduction-of-dapeng.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hi everyone! My name is Peng. My friends call me &lt;em&gt;dapeng&lt;/em&gt; (&lt;a href=&#34;https://en.wikipedia.org/wiki/Peng_(mythology)&#34;&gt;see the meaning&lt;/a&gt;) as my nickname. Thus my Steemit ID is &lt;a href=&#34;https://steemit.com/@dapeng&#34;&gt;@dapeng&lt;/a&gt;, which can be found in most of the figures in my posts like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQmcZE5dqN8FPNLySugSupqdnNcyQFbm5pDxXyijyuuPRcC/i2017-07-25_04_academy2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It is me and my wife. It is hard to find a nice picture with me alone in it after I got married.&lt;/p&gt;
+
+&lt;h2 id=&#34;story-of-steemit-and-me&#34;&gt;Story of Steemit and me&lt;/h2&gt;
+
+&lt;p&gt;I joined Steemit in October 2016, following the introduction by @tumutanzi. Considering Steemit&amp;rsquo;s starting time in March 2016, I was indeed an &lt;strong&gt;early bird&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;However, I am a &lt;strong&gt;careless bird&lt;/strong&gt; as well. I lost my password soon after &lt;a href=&#34;https://steemit.com/life/@dapeng/how-to-rent-an-appartment-in-germany-and-austria&#34;&gt;my first post&lt;/a&gt; was posted. If you are aware of SRS (the Seven Rules of Steemit), you know what it means: DISASTER. DEPRESSION. DESPERATION. I tried ways to recover my password, but none of them worked. I became an &lt;strong&gt;angry bird&lt;/strong&gt;. Temper did not work, though. The only cure was to forget about Steemit.&lt;/p&gt;
+
+&lt;p&gt;Nine months later, @tumutanzi introduced Steemit to (not only) me again, and told me that he had made a lot of money out of his Steemit posts. In the meanwhile I had made not even a penny from my personal &lt;a href=&#34;http://dapengde.com&#34;&gt;blog&lt;/a&gt;. I was not a &lt;strong&gt;stupid bird&lt;/strong&gt;, was I?  I guessed @tumutanzi would intentionally or unintentionally bother me again in the future when he becomes a Steemit millionaire. Fortunately and amazingly, I found my lost Steemit password.  If you are aware of SRS, you know what it means: INTERESTING. INCREDIBLE. IMPOSSIBLE.  I thought it was a miracle and I was destined to come back to Steemit so as to shut @tumutanzi&amp;rsquo;s mouth up.&lt;/p&gt;
+
+&lt;p&gt;What a &lt;strong&gt;lucky bird&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;h2 id=&#34;what-i-am-blogging-and-not-blogging&#34;&gt;What I am blogging and not blogging&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I am a tourist who has been to many places on the Earth. I am  posting pictures taken in these places, such as in China, Germany, Korea, Italy, Czech, Switzerland, France, the Netherlands, Hungary, Liechtenstein, Slovenia and so on.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I am currently living in Austria. I am writing the everyday life in Austria.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I father two kids. I am writing their funny stories. My elder son plays the piano and I play the guitar more or less. I am sharing some videos of our music.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I speak Chinese, English, and a little German. I am writing some inter-cultural topics.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I am an R user and package developer. I might write something about R language.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I am a long-term blogger. I am re-posting some old posts from my blog with new updates, e.g. new pictures, new idears, with English translation. They were written in markdown syntax and it is easy to migrate.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Moreover, I am a scientific researcher in Micrometeorology, or more generally, Atmospheric Sciences, or Environmental Sciences, &amp;mdash; you don&amp;rsquo;t have to know what it is. I won&amp;rsquo;t mention it in my Steem blog. But in case you are interested, please visit &lt;a href=&#34;http://pzhao.org&#34;&gt;my personal website&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Nice meeting you guys here!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQmXbiU6jS6D53RA2sUDX63K2511ENqzJUe3ak81dwf3v56/2017-07-25_sunset.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;大家好！我是大鹏，Steemit 账号就是 &lt;a href=&#34;https://steemit.com/@dapeng&#34;&gt;@dapeng&lt;/a&gt;。我的帖子里，插图大部分都有我的ID，本文的两幅插图就是例子。&lt;/p&gt;
+
+&lt;h2 id=&#34;我和-steemit&#34;&gt;我和 Steemit&lt;/h2&gt;
+
+&lt;p&gt;2016年十月，我响应  @tumutanzi 的号召而加入了 Steemit，算是来得早的，笨鸟先飞嘛。只是，我发布了 &lt;a href=&#34;https://steemit.com/life/@dapeng/how-to-rent-an-appartment-in-germany-and-austria&#34;&gt;第一篇帖子&lt;/a&gt;后，就把登录密码给忘了，确实是个笨鸟。如果你知道 Steemit 的七项条例，你就明白这是多大的灾难。密码丢了就找不回来了，唯一的解决办法，就是三十六???走为上。&lt;/p&gt;
+
+&lt;p&gt;九个月之后，@tumutanzi 又来了，这回他居然晒了他的钱包，说他从 Steemit 赚了大钱。与此同时，我的&lt;a href=&#34;http://dapengde.com&#34;&gt;博客&lt;/a&gt;一毛钱都没赚到。都一样是写博客，做人的差距咋就这么大呢？那我还是重回 Steemit 再试试吧。不然的话，将来等 @tumutanzi 成了亿万富翁的时候再来晒钱包，不管他是有意还是无意，我可能都会被刺激到。与此同时，我的 Steemit 密码竟然被我找回来了！我觉得这是冥冥之中自有天意。&lt;/p&gt;
+
+&lt;h2 id=&#34;我会写什么&#34;&gt;我会写什么&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;游记。晒照片。介绍景点和旅游攻略。我去过中国很多地方，也去过德国，韩国，意大利，捷克，瑞士，法国，荷兰，匈牙利，斯洛文尼亚，列支敦士登等国家。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;奥地利的日常生活。这是我目前生活的地方。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;育儿。我家有俩娃，很多趣事值得记录。大娃弹钢琴，我会弹一点吉他，所以我会在这里贴一些我们的音乐视频。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;跨文化交流。我说汉语，英语和德语，懂一点韩语。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;R 语言。我开发了几个R语言包，并且写了一本书，今年即将出版。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;我博客上的旧帖子。当时写得草率，如今趁机重新整理加工，附上英文翻译，添加照片，在这里梅开二度。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;我的正经工作是科研，专业是微气象学，或者往上一级算是大气科学，环境科学。专业领域的东西我一般不在这里写。但是如果碰巧你感兴趣，欢迎移步我的 &lt;a href=&#34;http://pzhao.org&#34;&gt;个人网站&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;谢谢！&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,339 @@
+---
+title: "Steem 史记： @mrpointp 列传 （告别篇）"
+author: dapeng
+date: "2017-09-13 06:58:54"
+slug: steem-mrpointp
+categories: [cn]
+tags: 
+  - cn
+  - blog
+  - cn-blog
+  - steemswatch
+  - cn-reader
+---
+
+原文链接: [steemit](https://steemit.com/cn/@dapeng/steem-mrpointp), [cnsteem](https://cnsteem.com/cn/@dapeng/steem-mrpointp), [chainbb](https://chainbb.com/cn/@dapeng/steem-mrpointp), [busy](https://busy.org/cn/@dapeng/steem-mrpointp), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-mrpointp.md)
+
+由于[近期发现数据源 steemdata 的不靠谱行为](https://steemit.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem)， “大鹏观察”决定无限期停业整顿。本期“Steem 史记”是停业整顿之前的最后一期，向大家告别。所以，本期不接受下期报名了，请见谅。本期使用的数据来源主要仍然是 steemdata.com，主角的粉丝数据仍然有问题，所以粉丝数据采用了 steemsql。
+
+
+“大鹏观察”本期故事的主角是 @mrpointp。跟前面发布过的 [@mrspointm 列传](https://steemit.com/cn/@dapeng/steem-mrspointm) 的主角是两口子，所以建议大家对照着看——你懂的。
+
+
+在撰写本帖时，@mrpointp 在 [Steem CN 好友群](http://steemr.org/)里按有效 SP 排序坐第 24 把交椅，相当于梁山好汉的穆弘，绰号“没遮拦”。
+
+
+让我们从 @mrpointp 帖子里关键词的词云图开始。
+
+
+![MrP.jpg](https://steemitimages.com/DQmeLQS2nD2vFXLeLeYB9H4EWKpmdN3uU1mCSK6rQDHKbYg/MrP.jpg)
+
+
+*前情回顾*:
+
+
+- Steem 史记： [@tumutanzi](https://steemit.com/@tumutanzi) 世家([1](https://steemit.com/cn/@dapeng/steemit), [2](https://steemit.com/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data), [3](https://steemit.com/cn/@dapeng/no-1s-of-his-steem-posts-steem))
+
+- [Steem 史记： @justyy 列传](https://steemit.com/cn/@dapeng/steem-id-report-1-justyy-1)
+
+- [Steem 史记： @htliao 列传](https://steemit.com/cn/@dapeng/steem-htliao-steem-s-watch-a2)
+
+- [Steem 史记： @shenchensucc 列传](https://steemit.com/cn/@pzhao/steem-shenchensucc)
+
+- [Steem 史记： @mrspointm列传](https://steemit.com/cn/@dapeng/steem-mrspointm)
+
+- [Steem 史记： @hannahwu 列传](https://steemit.com/cn/@dapeng/steem-hannahwu)
+
+
+----
+
+
+## Steem 史记： @mrpointp 列传
+
+
+ @mrpointp 者，China 人氏，活跃于东八区。由于本文涉及的时间均采用标准时区 UTC，换算成该时区均需加上 8 小时。
+
+
+话说那是个载入史册的时刻： 2017-06-27 13:54:12。乾坤混沌，天地苍茫，每个人都不知道 steem 未来的方向在哪里，不知何去何从。就在这时，某个角落，传来一声婴儿的响亮啼哭。 作为这个世界的第 226739 个生命，@mrpointp 降生了。
+
+
+光阴荏苒，如今已是 2017-09-12 16:18:01, Steem 全网注册用户总数已有 349432 个，全网发帖总数已经有 2128981 篇。在这茫茫人海里， @mrpointp 有过哪些壮举和作为？
+
+
+This is a report of the Steemit ID @mrpointp. The data were sampled from https://steemdata.com/ at 2017-09-12 16:18:01, when there were in total 349432 accounts and 2128981 posts on Steem. Data were processes and this report was written in R
+
+ language.
+
+
+
+### @mrpointp 的基本信息 Profile
+
+
+
+| items           | info                                     |
+| :-------------- | :--------------------------------------- |
+| name            | mrpointp                                 |
+| id              | 226739/349432                            |
+| created         | 2017-06-27 11:54:12                      |
+| profile_image   | ![](http://i.niupic.com/images/2017/07/30/uIugqt.png) |
+| about           | bodybuilding, travel, food, film, novel，photography |
+| location        | China                                    |
+| website         | https://steemit.com/@mrpointp            |
+| post_count      | 1044                                     |
+| available_STEEM | 0                                        |
+| available_SBD   | 0.687                                    |
+| available_VESTS | 3626297.70275                            |
+| reputation      | 60.95                         |
+| followers_count | 413                                      |
+| following_count | 94                                       |
+
+
+
+### 帖中之最 Top Posts
+
+
+自诞生后，@mrpointp 就对这个世界发出了自己独特的声音，共发帖 125 篇。我们来看看 @mrpointp 发布的帖子里的几个第一名。
+
+
+In this section we listed @mrpointp's top posts.
+
+
+**字符最多的帖子 Top post with the most characters.**
+
+
+
+
+
+- [How to DIY your sweet phone shells (Part II) 自制干花手机壳教程](https://steemit.com/@mrpointp/mrpointp-s-leisure-time-3-how-to-diy-your-sweet-phone-shells-part-ii)，含 7551 个字符。
+
+
+**插图最多的帖子 Top post with the most figures.**
+
+
+- [My Travel— The 2nd day in Beijing （The temple of Heaven,Water Cube-National Aquatic Center, National Stadium）(Original) /北京之行（天坛、水立方、鸟巢）（第二天）](https://steemit.com/@mrpointp/my-travel-the-2nd-day-in-beijing-the-temple-of-heaven-water-cube-national-aquatic-center-national-stadium-original)，含 18 张图片。
+
+
+**修改间隔最长的帖子 Top post with the longest time between the publication and the final edit.**
+
+
+
+
+
+- [There is always someone keeping working out (part 7)(Original) /总有一个比你忙，比你穷，比你老的人在健身（七）](https://steemit.com/@mrpointp/there-is-always-someone-keeping-working-out-part-7-original)，发布 165.9 小时即 6.9 天之后，作者做了最后一次修改。
+
+
+**得票数最多的帖子 Top post with the most upvotes.**
+
+
+
+
+
+- [我的三个精彩瞬间/Three of My Wonderful Moments](https://steemit.com/@mrpointp/three-of-my-wonderful-moments)，得到 124 个赞。
+
+
+**赚钱最多的帖子 Top post with the most payout value.**
+
+
+
+
+
+- [How to DIY your sweet  phone shells (Part I) / 自制仿真奶油卡通手机壳教程](https://steemit.com/@mrpointp/mrpointp-s-leisure-time-2-how-to-diy-your-sweet-phone-shells)，收入为 72 美元。
+
+
+
+
+
+### 粉丝情况 Followers and following
+
+
+@mrpointp 广结四海豪杰，有 413 个追随者，@mrpointp 关注的 ID 总数是 94。其中，有 41 个 ID 跟 @mrpointp 是双向关注的，而 53 个ID 虽然被 @mrpointp 关注，但却??有关注 @mrpointp 。
+
+
+@mrpointp had 413 followers. @mrpointp followed 94 IDs in total, in which 41 IDs interacted with @mrpointp bidirectionally, while 53 IDs did not follow @mrpointp.
+
+
+
+![a9-1.png](https://steemitimages.com/DQmUVj57AthrtRYBtggRV33EH7vp4XWNSJjyLeciTG6bVzp/a9-1.png)
+
+
+
+若问上图中红色和蓝色区域的名单，请使用 @dapeng 开发的[在线小工具 steemr](https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr)。
+
+
+随着朋友数量的变化， @mrpointp 逐渐积累声望。下面是声望值增长的时间趋势。
+
+
+![a10-1.png](https://steemitimages.com/DQmRi8xDGWz9sgumFozxbsBkwnBmiMYV7D9ebHSSxQoJ22Y/a10-1.png)
+
+
+
+
+
+### 发帖 Posts
+
+
+
+下图是 @mrpointp 的发帖时间图，图里每个点代表一篇帖子，往左水平看对应的是发帖的时刻，往下垂直看是发帖的日期。图中使用的标准时区 UTC。
+
+
+The following figure shows @mrpointp's active time. The green line indicates @mrpointp's register time on Steem.
+
+
+![a11-1.png](https://steemitimages.com/DQmNpjgzJEANrC3icV1H7F84NDDbvDE47gNXWEd1YzHAH3F/a11-1.png)
+
+
+
+下图是个特殊的时钟，一圈是24小时，显示了 @mrpointp 一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的帖子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是  @mrpointp 发帖的高峰时段。主要集中在北京时间 9 时和 20 - 21 时。跟  @mrspointm 有相似之处。
+
+
+The figure above shows the frequency of @mrpointp's posts. 
+
+
+![a13-1.png](https://steemitimages.com/DQmSL1PXdnMzPggHgEB3SLzuqxizG8Fohvxdt7XiTr4urwW/a13-1.png)
+
+
+
+下图是每周累计发帖总数。前期比较高产，最近比较有节制。
+
+
+![a14-1.png](https://steemitimages.com/DQmSbqmgiFiLXFUyz9pWyYd4fwoJQ43rmaBugk6o6hZ6ufE/a14-1.png)
+
+
+
+### 留言 Reply
+
+
+下图是 @mrpointp 对别人帖子的评论（留言）时间图。蓝色点表示周一到周五???红色表示周六和周日。八月有一段时间没有留言。
+
+
+
+![a15-1.png](https://steemitimages.com/DQmRPTFF9PVrixGWPVqNqTBGmb1xCWt9AgnAeWmRRymmrv1/a15-1.png)
+
+
+
+下图是 @mrpointp 每天发布评论的时刻统计。24 小时全有？
+
+
+
+![a17-1.png](https://steemitimages.com/DQmRpd6tRXjB3Pq7fxHDeyvJyHyUrMSwBxSLnh6rZefCAmw/a17-1.png)
+
+
+下图是每周发表的评论总数。
+
+
+![a18-1.png](https://steemitimages.com/DQmQaYRGYfC1eVe7DCt7sskNJpyRhTWJGaQXLKQwAB1btvY/a18-1.png)
+
+
+### 点赞 Vote
+
+
+下图是 @mrpointp 发布投票（点赞）的时间趋势图。
+
+
+The following figure shows @mrpointp's active vote time. 
+
+
+![a19-1.png](https://steemitimages.com/DQmeJnRKKssaD1Zp8qCtSTqX41CGqz1FzvAMBcK575TKWqc/a19-1.png)
+
+
+下图是 @mrpointp 点赞的24小时分布图。24小时全有？
+
+
+
+![a21-1.png](https://steemitimages.com/DQmYLoJgRJJTqjpbNMufTCmek5HyxKjpgqyaEcrNC7NVLNy/a21-1.png)
+
+
+每周点赞总数：
+
+
+![a22-1.png](https://steemitimages.com/DQmQ6mjadmn9fAapRjL4FHP6tzxXEmQPe4Kji2yzjYjL11d/a22-1.png)
+
+
+### 帖子的质量和收入 Quality and money
+
+
+
+下面的数据表格是 @mrpointp 发帖的首选分区的次数。@mrpointp 发帖最多的圈子是 'cn'。
+
+
+The table below shows the categories (the first tags) of @mrpointp's posts. @mrpointp posted most posts in 'cn'.
+
+
+
+| category              | Freq |
+| :-------------------- | ---: |
+| animedrawingchallenge |    1 |
+| cn                    |  108 |
+| diy                   |    3 |
+| drawingchallenge      |    2 |
+| food                  |    4 |
+| introduceyourself     |    2 |
+| issue                 |    1 |
+| photography           |    1 |
+| selfportrait-contest  |    1 |
+| steemit               |    1 |
+| travel                |    1 |
+
+
+
+现在我们来谈谈钱。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 @mrpointp 共发帖 125篇，总收入为 1199.66 SBD， 单帖收入最高为72.24 SBD，平均每帖收入为9.6 SBD。
+
+
+Now let's talk about money. The figure below shows the dollars @mrpointp got from each post. Averagely @mrpointp earned 9.6 dollars per post, with the maximum of 72.24 dollars from one post.
+
+
+
+![a25-1.png](https://steemitimages.com/DQmeP7sWNWUAFF7Pa8f4xoiB1wfSSDBUWkAZ3Ch6Bh7t6WC/a25-1.png)
+
+
+
+下图显示的是每帖收入的时间趋势。
+
+
+The figure below shows the trend of @mrpointp's money per post.
+
+
+![a26-1.png](https://steemitimages.com/DQmW6gZFmCTvr7XTHMUYn1TpV56VmT4BUNSFeMuttq68FtV/a26-1.png)
+
+
+下图是 @mrpointp 帖子获得的投票（点赞）数。 @mrpointp 累计得赞 6352  个，单帖得到的点赞数最高为 124 个，平均每帖得赞 50.8  个。
+
+
+The figure below shows the upvote number of each post. Averagely @mrpointp earned 50.8 upvotes per post, with the maximum of 124 upvotes.
+
+
+![a27-1.png](https://steemitimages.com/DQmVg5r5vJ9DghD9cCXpE1x3BDWbKkevbDB15FZdFfrCwnL/a27-1.png)
+
+
+下图是平均每赞得到的收益 SBD 的时间趋势。
+
+
+![a28-1.png](https://steemitimages.com/DQmbuapao44Ay6WQ1TCxJG8d4SndSte3ujpqswdYensUvfx/a28-1.png)
+
+
+下图是每周收入总和的时间趋势。
+
+
+![a29-1.png](https://steemitimages.com/DQmUGskHxbTvvJoFYD9YbfoE9o1NTZu2Yi5u872S1MLdLhp/a29-1.png)
+
+
+为 @mrpointp 帖子得到的投票次数最多的前三位伯乐是  @banjo, @cnfund, @minnowsupport。下面为 @mrpointp 帖子得到的投票次数超过 20 次的 ID 词云图。
+
+
+![a30-1.png](https://steemitimages.com/DQmZxM4ptqsHJWmvK8EbRzv2jVdypJvpWjhQsdQyAQmUSD3/a30-1.png)
+
+
+为 @mrpointp 帖子收益贡献最多的前三位伯乐/金主/贵人是 @abit, @linuslee0216, @htliao。他们一共贡献了 @mrpointp 全部收入的 75%。排在他们后面的第 4 到第 10 位的贡献比例如下图。
+
+
+![a31-1.png](https://steemitimages.com/DQmdF4m8K3DS7Lk8xEfygAZGjxUGUazTBD8GmvcVgQdCRs5/a31-1.png)
+
+
+---
+
+
+
+感谢关注“大鹏观察”。欢迎提出宝贵意见。谢谢。
+
+
+![](https://steemitimages.com/0x0/https://steemitimages.com/DQmbKrfakkprV9jDF6nr4akB25gdq4qQm5dRr8GkGNUS9Gy/steeemswatch_dapeng.jpg)

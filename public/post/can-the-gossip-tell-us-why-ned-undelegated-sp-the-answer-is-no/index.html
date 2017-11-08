@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Can the Gossip Tell us Why Ned Undelegated SP? The answer is no | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Can the Gossip Tell us Why Ned Undelegated SP? The answer is no</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-10-27 15:44 GMT</h2>
+</div>
+
+<main>
+
+
+<p>原文链接: <a href="https://steemit.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no">steemit</a>, <a href="https://cnsteem.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no">cnsteem</a>, <a href="https://chainbb.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no">chainbb</a>, <a href="https://busy.org/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no.md">markdown</a></p>
+
+<p>Data can prove something, as well as data can cheat some people. Gossip is fun, but one has to be seriously careful if one&rsquo;s gossip can ruin others&rsquo; reputation.</p>
+
+<p>In one of @paulag&rsquo;s latest posts some data were displayed. Frankly speaking, I read some of @paulag&rsquo;s data analysis reports, which were impressive and useful. However, the post <a href="https://cnsteem.com/steemit/@paulag/can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence#@dapeng/re-paulag-can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence-20171027t093322442z">Can the Data Tell us Why Ned Undelegated so much Steem Power?</a> was rather disappointing. The hints or conclusions of this post were unreliable to my comment sense. As the author said that &lsquo;the data is correct&rsquo;, I decided to see if it is true.</p>
+
+<p>The data displayed in this post were taken from Steemsql held by @arcange.</p>
+
+<h3 id="the-data-in-paulag-s-post-was-incorrect">The Data in @paulag&rsquo;s Post Was Incorrect</h3>
+
+<p>It is easy to find that the first table in @paulag&rsquo;s post disagrees with the chart. The maximum of @surpassinggoolge&rsquo;s votes (grey area) was 700 votes per day in the chart, while the average was 1327.4  votes per day. <strong>Apparently wrong. The average cannot be greater than the maximum.</strong></p>
+
+<p><img src="https://steemitimages.com/DQmYu6ghDtHpKWnDWZ5BboaiPeFpN3zvPvPvLfCXC6URrNR/1.png" alt="" /></p>
+
+<p>Image taken from @paulag&rsquo;s Post.</p>
+
+<p>So, what is the truth?</p>
+
+<p>Let&rsquo;s firstly see the time when @ned delegated and undelaged the SP.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">delegator</th>
+<th align="left">delegatee</th>
+<th align="right">vesting_shares</th>
+<th align="left">timestamp</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ned</td>
+<td align="left">htliao</td>
+<td align="right">1029059275</td>
+<td align="left">2017-08-08 15:15:00</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">nicolemoker</td>
+<td align="right">1029059275</td>
+<td align="left">2017-08-08 15:15:18</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">linuslee0216</td>
+<td align="right">1029059275</td>
+<td align="left">2017-08-08 15:15:45</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">tumutanzi</td>
+<td align="right">1029059275</td>
+<td align="left">2017-08-08 15:16:54</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">sweetsssj</td>
+<td align="right">1029059275</td>
+<td align="left">2017-08-08 15:20:45</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">surpassinggoogle</td>
+<td align="right">1029059275</td>
+<td align="left">2017-08-08 15:25:18</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">ramengirl</td>
+<td align="right">1029059275</td>
+<td align="left">2017-08-08 15:28:24</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">sweetsssj</td>
+<td align="right">0</td>
+<td align="left">2017-10-24 11:54:27</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">ramengirl</td>
+<td align="right">0</td>
+<td align="left">2017-10-24 11:57:30</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">nicolemoker</td>
+<td align="right">0</td>
+<td align="left">2017-10-24 11:58:57</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">tumutanzi</td>
+<td align="right">0</td>
+<td align="left">2017-10-24 12:02:51</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">htliao</td>
+<td align="right">0</td>
+<td align="left">2017-10-24 12:03:09</td>
+</tr>
+
+<tr>
+<td align="left">ned</td>
+<td align="left">linuslee0216</td>
+<td align="right">0</td>
+<td align="left">2017-10-24 12:03:21</td>
+</tr>
+</tbody>
+</table>
+
+<p>If we ignore the fist day and the last day, each delegation lasted 76 days.</p>
+
+<pre><code>
+SELECT * FROM TxVotes WHERE voter IN ('htliao',  'linuslee0216', 'nicolemoker', 'surpassinggoogle', 'sweetsssj', 'tumutanzi',  'ramengirl') AND timestamp BETWEEN '2017/08/09' and '2017/10/24
+
+</code></pre>
+
+<p>In  @paulag&rsquo;s post, nicolemoker voted 3114 times in total. 3114 / 76. How could the average votes per day be 207.6?</p>
+
+<p>I examined the data and got a new table:</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Voter</th>
+<th align="right">No of Votes</th>
+<th align="right">Average votes per day</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">nicolemoker</td>
+<td align="right">3093</td>
+<td align="right">40.69737</td>
+</tr>
+
+<tr>
+<td align="left">ramengirl</td>
+<td align="right">3971</td>
+<td align="right">52.25000</td>
+</tr>
+
+<tr>
+<td align="left">surpassinggoogle</td>
+<td align="right">19901</td>
+<td align="right">261.85526</td>
+</tr>
+
+<tr>
+<td align="left">linuslee0216</td>
+<td align="right">5555</td>
+<td align="right">73.09211</td>
+</tr>
+
+<tr>
+<td align="left">htliao</td>
+<td align="right">9759</td>
+<td align="right">128.40789</td>
+</tr>
+
+<tr>
+<td align="left">tumutanzi</td>
+<td align="right">7680</td>
+<td align="right">101.05263</td>
+</tr>
+
+<tr>
+<td align="left">sweetsssj</td>
+<td align="right">9626</td>
+<td align="right">126.65789</td>
+</tr>
+</tbody>
+</table>
+
+<p>The daily averages are around <sup>1</sup>&frasl;<sub>5</sub> of @paulag&rsquo;s calculations.</p>
+
+<p>The numbers of votes are slightly different from @paulag&rsquo;s, perhaps because  @paulag&rsquo;s post took a different period of delegation, which was not mentioned in @paulag&rsquo;s post. This slight difference could be simply ignored.</p>
+
+<p>Based on @paulag&rsquo;s <strong>incorrect calculation</strong>, all the subsequent numbers and conclusions were wrong, including the &lsquo;$457K&rsquo;, &lsquo;Voting over 1300 times a day, this does not surprise me&rsquo;,&lsquo;&hellip;</p>
+
+<p>What still makes sense is the pie chart, some ratios and percentages, and the cluster diagram. <strong>However, I would double check them, as the post was carelessly written in  the first place.</strong></p>
+
+<h3 id="facts-or-opinions">Facts or Opinions?</h3>
+
+<p>It seems that @paulag&rsquo;s post was intended to give  some facts or data, but actually it was giving only some opinions based on wrong data and groundless assumptions.</p>
+
+<p>In the section &lsquo;Transfer data&rsquo;, @paulag&rsquo;s post gave three conclusions:</p>
+
+<blockquote>
+<p>1 Reading the top memo on the table below, it very quickly because clear that @htliao was selling votes.</p>
+
+<p>2 The data clearly shows @sweetsssj was also selling votes.</p>
+</blockquote>
+
+<p>I doubt what &lsquo;selling&rsquo; means here. In my mind, if A sells somehing to B, it means that B pays A money and takes something away from A. But in @paulag&rsquo;s data, you can only see B paid A money. What did B take away from A? If nothing, was A selling? If I transfer some SBD to @paulag, can I immediately say that  @paulag is selling votes to me?</p>
+
+<p>I am sure that <strong>the logic of @paulag&rsquo; post was broken</strong>.</p>
+
+<blockquote>
+<p>3 Within the memo for @htliao were also suggestions that @htliao may be leasing out some power.</p>
+</blockquote>
+
+<p>This conclusion was based on the transfer and delegation history between @htliao and @justyy. Many people have explained that justyy was just collecting some SP so as to support minnows. As a feedback and acknowledgement, justyy paid some so-called &lsquo;interests&rsquo; to the delegators. I delegated some. Besides @htliao and me, there have been some other delegators too, receiving interests from justyy everyday. It was not surprising that @paulag&rsquo;s post did not mention this, because <strong>the author knew nothing about the minnow support program.</strong></p>
+
+<p><strong>As @paulag&rsquo;s post gave incorrect data, broken logic, and knew nothing about some facts, I think the post makes no sense to its title. Furthermore, it is badly misleading many readers, and ruining the reputations  of the innocents.</strong></p>
+
+<p>&lsquo;I also decided to have a dig through the memos,&rsquo; said @paulag&rsquo;s post. I am looking forward to a further report, hopefully with no mistakes. This post of mine is only mentioning the mistakes in @paulag&rsquo;s post itself rather than my opinion to the author in person. I really like @paulag&rsquo;s previous reports, especially the nice charts in them. I wish @paulag could share the excel sheets so as to make the data analysis reproducible, repeatable, and reliable.</p>
+
+<h3 id="voting-with-bots">Voting with bots?</h3>
+
+<p>The wrong data in @paulag&rsquo;s post, especially the daily average votes, e.g. voting over 1300 times a day, mislead some people. They thought that these lucky guys  voted with bots.  Is voting with bots forbidden or a shame? I do not know. But let&rsquo;s see if they did it.</p>
+
+<p>The figures below showed some 24-hour clocks, indicating the hours when they voted. The diameters of each sector showed the percentage of the quantity of their total votes.</p>
+
+<p><img src="https://steemitimages.com/DQmUCXwNUtJz8GATLHEW4gyusoK4sQ2p8Tge6KzfDhhi6ui/unnamed-chunk-69-1.png" alt="unnamed-chunk-69-1.png" /></p>
+
+<p>There were nearly no vote in some hours of htliao, linuslee0216, nicolemoker, ramengirl and tumutanzi&rsquo;s clocks (humans have to sleep), while surpassinggoogle&rsquo;s votes covered all 24 hours. If this is the reason why @ned is still delegating SP surpassinggoogle, then why did @ned undelegate from sweetsssj, whose voting hours showed  a similar pattern?</p>
+
+<p><strong>Can the Data Tell us Why Ned Undelegated so much Steem Power? Apparently the answer is &lsquo;no&rsquo;. Data only show the facts (if the data is correct ), rather than the cause or intention. Only @ned himself can tell us the answer.</strong></p>
+
+<h3 id="before-and-after-ned-s-delegation">Before and after @ned&rsquo;s Delegation</h3>
+
+<p>What happend after @ned&rsquo;s delegation? See the comments (posts + replies) under cn category in the figure below. The vertical line indicates the date when @ned delegated SP.</p>
+
+<p><img src="https://steemitimages.com/DQmamLMPh6nqbnyppRMqsCVcgXBPEpq43id8UwnW7DmYUYm/unnamed-chunk-70-1.png" alt="unnamed-chunk-70-1.png" /></p>
+
+<p>Before ned&rsquo;s delegation, there were averagely 579 comments per day under cn category. After ned&rsquo;s delegation, there were averagely 1600 comments per day under cn category.</p>
+
+<p>We will see what will happen after ned&rsquo;s undelegation. If ned&rsquo;s delegation was an experiment, I think his undelegation was the beginning of another.</p>
+
+<p>PS. If you find any mistakes in my post, please let me know and you are highly appreciated.</p>
+
+<hr />
+
+<p>本文是对污蔑几位临时大鲸的帖子 <a href="https://cnsteem.com/steemit/@paulag/can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence#@dapeng/re-paulag-can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence-20171027t093322442z">Can the Data Tell us Why Ned Undelegated so much Steem Power?</a> 的反驳。中文翻译过来就是：污蔑帖子用的数据是错的，计算是错的，逻辑是错的，而且不了解一些基本事实，所以纯属胡说八道。谢谢。</p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no\/';
+    var disqus_title = 'Can the Gossip Tell us Why Ned Undelegated SP? The answer is no';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

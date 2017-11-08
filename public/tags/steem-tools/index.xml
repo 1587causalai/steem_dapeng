@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Steem-tools on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/steem-tools/index.xml</link>
+    <description>Recent content in Steem-tools on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/steem-tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>steemr: an easy web-based tool for Steemians 开发了一个易用的在线小工具 steemr</title>
+      <link>https://steemit.netlify.com/post/steemr-a-web-based-tool-for-steemers-or-steemians-steemr/</link>
+      <pubDate>Thu, 27 Jul 2017 13:23:39 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steemr-a-web-based-tool-for-steemers-or-steemians-steemr/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemr-a-web-based-tool-for-steemers-or-steemians-steemr.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In my previous post &lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;&lt;em&gt;New Steemians, have you ever thought about your data privacy? (1)&lt;/em&gt;&lt;/a&gt; , some friends asked me to make such a report for them. It might be useful to develop an on-line tool for every Steemer/Steemian. Thus I have developed &lt;a href=&#34;http://steemr.org&#34;&gt;steemr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is easy to use. Click the &lt;code&gt;Follower report&lt;/code&gt;  tab and input an ID , or click the &lt;code&gt;Voter report&lt;/code&gt;  tab and input the link of post you are interested in. Then click &lt;code&gt;GO&lt;/code&gt;. Wait 5 &amp;ndash; 20 seconds and you will see the results.&lt;/p&gt;
+
+&lt;p&gt;It is only a tip of the iceberg. More features of this tool are coming soon.&lt;/p&gt;
+
+&lt;p&gt;Think twice before blogging on Steemit. You can&amp;rsquo;t put the genie back in the bottle,  and  it is no use crying over spilt milk.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcdcBY7j8ntos4qcu1HVsUYTd2WgCPH8SfwHTnDqdJG4J/steemr-fr.jpg&#34; alt=&#34;steemr-fr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmS9hzu1w1wkqeruLwxR1X2FUtekL6mHdUxJvmBkrhFiDZ/steemr-vr.jpg&#34; alt=&#34;steemr-vr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在&lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;Steemit 的新手们，你们考虑过数据隐私的问题吗 (1)&lt;/a&gt; 一文发布后，的确有朋友要我对他的 ID 的关注者信息也写一个类似的报告。我想，不如开发个在线工具，大家谁想查就自己查吧。于是就有了 &lt;a href=&#34;https://pzhao.shinyapps.io/steemr/&#34;&gt;steemr&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;用起来很简单：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;点击 &lt;code&gt;Follower report&lt;/code&gt; 标签，输入你想查的 ID，点击 &lt;code&gt;GO&lt;/code&gt; 按钮，等几秒钟或十几秒钟（取决于服务器的速度和 你要查的 ID 的情况）就可以看到结果了，包括粉丝 （followers） ID 的词云图，按这些粉丝的粉丝数量、发帖数量和vests大小??序。如果粉丝超过30个，就取前三十个。词云图下方，还给出了尚未互粉的 ID 列表。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;点击&lt;code&gt;Voter report&lt;/code&gt;  标签，输入你想查的帖子链接（可以是完整链接，也可以是从@符号开头到末尾），点击 &lt;code&gt;GO&lt;/code&gt; 按钮，等几秒钟或十几秒钟，就可以看到为该帖点赞的名单和百分比。图下面给出了尚未投票的粉丝名单（类似的工具有 &lt;a href=&#34;https://helloacm.com/tools/steemit/who-has-not-voted/&#34;&gt; @justyy 的网页界面&lt;/a&gt; ，&lt;a href=&#34;https://steemit.com/cn/@beautifulbella/use-excel-to-find-your-friends-who-does-not-upvote-you-excel&#34;&gt; @beautifulbella 的Excel 方法&lt;/a&gt;，&lt;a href=&#34;https://steemit.com/cn/@oflyhigh/voter-list&#34;&gt; @oflyhigh 的Python 方法&lt;/a&gt;）。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;本工具以后会进一步开发完善。这只是冰山的一角。再次提醒大家：在 steemit 发文发照片要三思，免得后悔，覆水难收。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,259 @@
+---
+title: "Steem 中国策 前传: 2016.07 - 2017.08 （大鹏观察 Steem's Watch Tcn0）"
+author: dapeng
+date: "2017-08-25 20:16:15"
+slug: steem-2016-07-2017-08-steem-s-watch-tcn0
+categories: [cn]
+tags: 
+  - cn
+  - cn-programming
+  - steemit
+  - steemit-stats
+  - steemswatch
+---
+
+原文链接: [steemit](https://steemit.com/cn/@dapeng/steem-2016-07-2017-08-steem-s-watch-tcn0), [cnsteem](https://cnsteem.com/cn/@dapeng/steem-2016-07-2017-08-steem-s-watch-tcn0), [chainbb](https://chainbb.com/cn/@dapeng/steem-2016-07-2017-08-steem-s-watch-tcn0), [busy](https://busy.org/cn/@dapeng/steem-2016-07-2017-08-steem-s-watch-tcn0), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-2016-07-2017-08-steem-s-watch-tcn0.md)
+
+前不久，我推出了“大鹏观察”的账号数据分析系列，对 Steem 的 ID 进行数据挖掘，反响不错。然而，对单一用户观察得到的视角毕竟是有限的，结论具有很大的偶然性。这次新推出一个系列，针对标签/类目/板块的整体数据进行一点研究，编号为Tcn 系列，旨在对 cn 板块的帖子进行一些数据分析和挖掘，展示一些有趣的结果，希望对社区发展具有一些纪念意义和参考价值。使用的数据来源是 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言。计划每周一期，仅供参考，如果有数字与官方有出入，请以官方为准。
+
+
+大家对活动有什么建议，欢迎提出来，毕竟现在的数据分析还很粗浅，将来可供拓展的方向很多。
+
+
+正如了“大鹏观察”的账号数据系列取名为“Steem 史记”一样，“大鹏观察”的板块系列取名为“Steem 中国策”，当然是源自《战国策》。是的，以后说不定还会开发“德国策”，“韩国策”，“美国策”，"联合国策"......
+
+
+------------------------------------------------------------------------
+
+
+Steem 中国策 前传: 2016.07 - 2017.08 （大鹏观察 Steem's Watch Tcn0）
+
+--------------------------------------------------------------------
+
+
+本期是 “大鹏观察中国策”系列的首篇，对2017年8月之前的历史做个总结回顾。从下一篇开始为周刊，对前一周的数据做分析。
+
+
+### 帖子排行榜
+
+
+截至 2017-08-25 15:32:31, 以 cn 为标签的帖子共 19838 篇。其中，纳入 cn 类目（category）的有 8929 篇。
+
+
+我们来看看关于帖子的几个第一名。
+
+
+**发布最早排行榜**
+
+
+-   [芬兰马克及NXT团队成员启动3.0项目HEAT，将联合ICOO进行众筹](https://steemit.com/@roseebit/nxt-3-0-heat-icoo)，@roseebit 发布于 2016-07-08 23:38:27。
+
+-   [什么是STEEM 网络货币? (Steem sumup in Chinese)](https://steemit.com/@sictransitgloria/steem-steem-sumup-in-chinese)，@sictransitgloria 发布于 2016-07-19 09:52:03。
+
+-   [What will you do if Steem becomes Chinese in the future ?](https://steemit.com/@sictransitgloria/what-will-you-do-if-steem-becomes-chinese-in-the-future)，@sictransitgloria 发布于 2016-07-22 01:52:33。
+
+
+**字数排行榜**
+
+
+字符最多：
+
+
+-   [Real-Time Update of RobinHood Whale Project 罗宾鲸火贴实时更新 16-12](https://steemit.com/@laonie/robinhoodwhale-16-12-2016)，含 45592 个字符。
+
+-   [Real-Time Update of RobinHood Whale Project 罗宾鲸火贴实时更新 18-12](https://steemit.com/@laonie/robinhoodwhale-18-12-2016)，含 45212 个字符。
+
+-   [Real-Time Update of RobinHood Whale Project 罗宾鲸火贴实时更新 15-12](https://steemit.com/@laonie/robinhoodwhale-15-12-2016)，含 42888 个字符。
+
+
+字符最少：
+
+
+-   [a](https://steemit.com/@frankdoing/or-2)，含 1 个字符。
+
+-   [don't read](https://steemit.com/@itissimple/the-netherlands-keukenhof-love-flowers)，含 1 个字符。
+
+-   [Hi Guys](https://steemit.com/@timsykes/6vvov4-hi-guys)，含 1 个字符。
+
+
+**插图排行榜**
+
+
+-   [Chinese blue and white porcelain. 玩乐天津--天津博物馆青花瓷展](https://steemit.com/@bestmz/chinese-blue-and-white-porcelain)，含 173 张图片。
+
+-   [转:中国最美的100个地方](https://steemit.com/@pcoo/100)，含 100 张图片。
+
+-   [Travel with me \#60 : I was (almost) hit by a train! - The Maeklong Train Market!](https://steemit.com/@sweetsssj/travel-with-me-60-i-was-almost-hit-by-a-train-the-maeklong-train-market)，含 99 张图片。
+
+
+**得赞排行榜**
+
+
+-   \[BitShares Hangout \#13 w/ @chris4210 & @officialfuzzy! - 2017-03-24\](<https://steemit.com/@officialfuzzy/bitshares-hangout-13-w-chris4210-and-officialfuzzy-2017-03-24>)，2326 个赞。
+
+-   [Why I think 99% of Steemians get the WRONG ideas about curation rewards](https://steemit.com/@htliao/why-i-think-99-of-steemians-get-the-wrong-ideas-about-curation-rewards)，2314 个赞。
+
+-   [Travel with me \#81 : Round up of the Beach Tower and Royal Towers at Atlantis - Which Hotel is better ?](https://steemit.com/@sweetsssj/travel-with-me-81-round-up-of-the-beach-tower-and-royal-towers-at-atlantis-which-hotel-is-better)，2226 个赞。
+
+
+**吸金排行榜**
+
+
+-   [Steem White Paper Translated into Chinese](https://steemit.com/@somebody/steem-white-paper-translated-into-chinese)，3283.441 SBD。
+
+-   [This post is going to become the best paid post today!](https://steemit.com/@teamsteem/this-post-is-going-to-become-the-best-paid-post-today)，2358.322 SBD。
+
+-   [Hello steemit! I am Laonie, a Super Superhero, a Hero of Heroes. 老聂的牛逼哄哄的自我介绍贴](https://steemit.com/@laonie/hello-steemit-i-am-laonie-a-super-superhero-a-hero-of-heroes)，2213.37 SBD。
+
+
+**关键词排行榜**
+
+
+下面是 cn 所有帖子正文里出现的字符长度超过 2 个、出现次数超过 10 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。
+
+
+![unnamed-chunk-8-1.png](https://steemitimages.com/DQmfASj99HBuEXeJ8v23BMYYWh8UuhuLxrrBdhEcPsCLKz7/unnamed-chunk-8-1.png)
+
+
+### 发帖
+
+
+2016.07 - 2017-08 期间，cn 每天累计发帖总数如下图所示。低谷期每天发文屈指可数，高峰期每天超过 100 篇。史上出现过三次高峰，分别是 2016 年七八月份，2016年年底，以及2017年七八月（也就是现在）。
+
+
+![unnamed-chunk-9-1.png](https://steemitimages.com/DQmWuyjJTZbsASKMNeF9HrirZU4SFZgTAqcSesKEDWbipwW/unnamed-chunk-9-1.png)
+
+
+下图是个特殊的时钟，一圈是24小时，显示了一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的帖子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是发帖高峰时段。UTC 18 时到 0 时之间发帖最少，对应东八区（如北京时间）为 2 点到 8 点，这说明 cn 区发帖的作者大多数位于这一区域，包括中国大陆、港澳台、新加坡或者澳洲等。UTC 12 时到 15 时 （北京时间 20 时 到 23时）发帖最为集中。
+
+
+![unnamed-chunk-10-1.png](https://steemitimages.com/DQmQYjJZFtb73JSQY73J1aRpiULZEMArNogj2SQUf5ZT5wJ/unnamed-chunk-10-1.png)
+
+
+除了 cn 为首选标签外，我们看看大家还使用了那些标签以及使用频率。
+
+
+![unnamed-chunk-11-1.png](https://steemitimages.com/DQmb29nJbavvKETtuUZeNo1cx635snPkHPG9gf8K7SiDUGG/unnamed-chunk-11-1.png)
+
+
+### 作者
+
+
+**高产排行榜**
+
+
+有史以来，cn 区共有 2279 位作者出没。其中，发布帖子最多的前十位是：
+
+
+1.  @chinadaily, 共 755 篇。
+
+2.  @ace108, 共 536 篇。
+
+3.  @myfirst, 共 422 篇。
+
+4.  @blacktranquility, 共 413 篇。
+
+5.  @lemooljiang, 共 361 篇。
+
+6.  @oflyhigh, 共 334 篇。
+
+7.  @birds90, 共 279 篇。
+
+8.  @rivalhw, 共 277 篇。
+
+9.  @elfkitchen, 共 277 篇。
+
+10.  @sweetsssj, 共 254 篇。
+
+
+**富豪排行榜**
+
+
+帖子收益(total payout value)最大的前十位是：
+
+
+1.  @sweetsssj, 共 57349 SBD。
+
+2.  @oflyhigh, 共 22338 SBD。
+
+3.  @myfirst, 共 17880 SBD。
+
+4.  @elfkitchen, 共 12468 SBD。
+
+5.  @deanliu, 共 11206 SBD。
+
+6.  @rivalhw, 共 10163 SBD。
+
+7.  @chinadaily, 共 9305 SBD。
+
+8.  @helene, 共 9151 SBD。
+
+9.  @birds90, 共 8660 SBD。
+
+10.  @officialfuzzy, 共 8647 SBD。
+
+
+**人气排行榜**
+
+
+获得点赞最多的前十位是：
+
+
+1.  @sweetsssj, 共 121967 个赞。
+
+2.  @chinadaily, 共 63429 个赞。
+
+3.  @ace108, 共 45721 个赞。
+
+4.  @myfirst, 共 35465 个赞。
+
+5.  @elfkitchen, 共 33174 个赞。
+
+6.  @oflyhigh, 共 31000 个赞。
+
+7.  @birds90, 共 29557 个赞。
+
+8.  @xiaohui, 共 19340 个赞。
+
+9.  @helene, 共 19296 个赞。
+
+10.  @deanliu, 共 17522 ??赞。
+
+
+### 收入
+
+
+最后我们来谈钱。历史上，cn 板块的总收益为 384069.57 SBD， 单帖收入最高为 3283.44 SBD，平均每帖收入为 19.36 SBD。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。
+
+
+![unnamed-chunk-15-1.png](https://steemitimages.com/DQmNw6xPCm7dnpNHRnLHNBoaLk4h28KozZ1kkaYBEcJbjM5/unnamed-chunk-15-1.png)
+
+
+下图是各篇帖子获得的投票（点赞）数。 累计得赞 1000278 个，单帖得到的点赞数最高为 2326 个，平均每帖得赞 50.4 个。
+
+
+![unnamed-chunk-16-1.png](https://steemitimages.com/DQmVrVUFaa5HgqsgRGn5GhrW8XxyhMMbY7Tn6QQa28s4ibU/unnamed-chunk-16-1.png)
+
+
+这些帖子能够投票次数最多的前三位是 @abit, @myfirst, @lemooljiang。下面是投票次数超过 1000 次的 ID 词云图。
+
+
+![unnamed-chunk-17-1.png](https://steemitimages.com/DQmXpYzbQ8y5NbweBDtBZSuyBN5dxc7X7V2bz6aujFt3Bab/unnamed-chunk-17-1.png)
+
+
+为 cn 板块点赞收入贡献最多的前三位伯乐是 @abit, @10000, @wang。他们一共贡献了全部收入的 33%。排在他们后面的第 4 到第 10 位的贡献比例如下图。感谢他们的支持！
+
+
+![unnamed-chunk-18-1.png](https://steemitimages.com/DQmV7UTNuD31dBtzd8J3KAHGDGEgiYHkCbVmvyi9eb5Szvd/unnamed-chunk-18-1.png)
+
+
+最后，我想补充一句。在撰写本文的过程中，极其偶然地，我发现一篇帖子。它的收益只有 9 SBD，获赞只有区区三十个，它甚至在任何排名中都默默无闻。然而，它却宛若大山密林深处里的一眼清泉，cn 区如今波澜壮阔的大江大海，皆因它而起；前世今生的多少爱恨情仇，皆由此而生。这篇帖子便是：
+
+
+-   [建议大家使用cn这个tag ,I suggest Chinese use tag cn, in order to filter Chinese posts](https://steemit.com/@laonie/3hw2me)，@laonie 发布于 2016-07-24 23:13:15。
+
+
+------------------------------------------------------------------------
+
+
+感谢关注“大鹏观察”。欢迎继续关注，也欢迎提出宝贵意见。谢谢。

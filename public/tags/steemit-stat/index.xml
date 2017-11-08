@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Steemit-stat on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/steemit-stat/index.xml</link>
+    <description>Recent content in Steemit-stat on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/steemit-stat/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>谷哥点名第 3 期“梦”回顾（大鹏观察 Steem&#39;s Watch P6）</title>
+      <link>https://steemit.netlify.com/post/3-steem-s-watch-p6/</link>
+      <pubDate>Mon, 28 Aug 2017 14:50:12 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/3-steem-s-watch-p6/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@pzhao/3-steem-s-watch-p6&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@pzhao/3-steem-s-watch-p6&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@pzhao/3-steem-s-watch-p6&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@pzhao/3-steem-s-watch-p6&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_pzhao/master/content/post/3-steem-s-watch-p6.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;@dapeng 发布的&amp;rdquo;大鹏观察&amp;rdquo;系列帖子，受到了很多朋友的欢迎。由于用的程序代码是现成的，很多图表风格类似，弄得像个机器人。其实是个大活人。倒是希望能把这个系列的帖子弄成机器人，但是目前还做不到。&lt;/p&gt;
+
+&lt;p&gt;这个系列越出越多，这两天为了赶上“七夕征文”的进度（活动第三天我才开始发布第一天的报告），就在一天内连发了好几篇，引起了朋友们的担忧，这种帖子本来就是出于兴趣爱好而发的，收益不多，万一哪天不小心触到红线被踩，把主 id 给弄垮了不值得。朋友们提出了很好的建议，建议把这个系列的帖子放到一个小号里发布。所以，就挪到这个小号来了。这样也好，免得对不喜欢这个系列帖子的 followers 带来骚扰。所以，从今往后，“大鹏观察”就交给 @pzhao 这个账号来发布，目前这个账号由 @dapeng 维护。将来不排除做成机器人的可能。&lt;/p&gt;
+
+&lt;p&gt;“&lt;a href=&#34;https://steemit.com/cn/@jubi/42wvdr&#34;&gt;谷哥点名&lt;/a&gt;”是 steem 中文社区 @jubi 发起的半命题作文活动。“大鹏观察”旨在对参赛帖子进行一些数据分析和挖掘，展示一些有趣的结果，希望对以后的活动具有一些参考价值。使用的数据来源是 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言。仅供参考，如果有数字与官方有出入，请以官方为准。&lt;/p&gt;
+
+&lt;p&gt;大鹏观察： 谷哥点名第 3 期回顾&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;参赛基本信息&#34;&gt;参赛基本信息&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;主题：梦&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;日期：2017-08-16 &amp;ndash; 2017-08-23&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;发起：&lt;a href=&#34;https://steemit.com/cn/@jubi/sxzgw-and&#34;&gt;“谷哥点名”第3期开始&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;颁奖：&lt;a href=&#34;https://steemit.com/cn/@jubi/2bummy-and&#34;&gt;“谷哥点名”第3期结束&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;参赛作品列表：见文末。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;帖中之最&#34;&gt;帖中之最&lt;/h3&gt;
+
+&lt;p&gt;本期活动参赛作品共 61 篇。获奖作品的介绍已经在本文开头给出了链接，是按 google 搜索结果排名的，不再赘述。我们也可以用其他方式排名，来看看参赛作品里几个第一名。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;字符最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@susanli3769/life-dream-of-a-little-woman&#34;&gt;(梦）- 小女子的追梦奋斗史- life dream of a little woman&lt;/a&gt;，含 13069 个字符。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;插图最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@bestmz/aircraft-carrier-theme-park-in-tianjin-china&#34;&gt;Aircraft Carrier Theme Park in Tianjin China. 梦幻基辅号&amp;ndash;中国唯一运营中的航母公园&amp;ndash;天津泰达航母公园(二)&lt;/a&gt;，含 60 张图片。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;修改间隔最长&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@xierdear/coldhair&#34;&gt;致吕医生@coldhair：一起做梦&lt;/a&gt;，发布 151.1 小时即 6.3 天之后，作者做了最后一次修改。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;得赞最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@plokmi/7hleya&#34;&gt;小时候的你，至少还会做梦。&lt;/a&gt;，得到 247 个赞。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;赚钱最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@linuslee0216/5iwfru&#34;&gt;杂记——延续梦想的残渣，澳洲帕罗尼拉公园&lt;/a&gt;，收入为 134 美元。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;帖子正文里出现最多的关键词&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;下面是所有帖子里出现的字符长度超过 2 个、出现次数超过 10 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。当然，我们去掉了本期指定的关键词&amp;rdquo;梦&amp;rdquo;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeyqXcJHqWb7PUhPD5SMW5Ji2vhX79KPWwgZ3dv2LXDrE/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;参赛选手&#34;&gt;参赛选手&lt;/h3&gt;
+
+&lt;p&gt;下图是参赛选手的注册 ID 序号分布图。全网目前共有 325943 个 ID。参赛选手中一半以上都排在第 226739 个注册 ID 之后。排在最前面的是第 18783 个 ID，最后面的是 第 313030 个 ID。猜猜他们都是谁？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQtNdeE1nhqRh1uVaaEKo4TJoSHA2DowYrM2ynZ51yUyP/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;???图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7 月注册的居多。也有一些早期用户。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNnq6VWtfFyJrbnkzUQNac5isGqZhPT2Gm8sHb6AduiCS/unnamed-chunk-9-1.png&#34; alt=&#34;unnamed-chunk-9-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;发帖&#34;&gt;发帖&lt;/h3&gt;
+
+&lt;p&gt;活动期间，每天累计发帖总数：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbLdjqFgZg8CH284b8He4XggYitMq9tnSU97XEca7x2ZC/unnamed-chunk-10-1.png&#34; alt=&#34;unnamed-chunk-10-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是个特殊的时钟，一圈是24小时，显示了一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的帖子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是发帖高峰时段。&lt;/p&gt;
+
+&lt;p&gt;可以发现，在标准时间11 点到 14 点（北京时间 19 到 23 点）发帖的人最多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfYew8qWixX9qdDDvsm2srM5Yt9jENdVQbfeQYXKo9sSn/unnamed-chunk-11-1.png&#34; alt=&#34;unnamed-chunk-11-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本活动是在 &amp;lsquo;cn&amp;rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签。我们看看除此之外，大家还使用了那些标签以及使用频率。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQme5UajjDNjzR82M4EEcf5ah9uu2gjgp31yD2uZpfyHaSY/unnamed-chunk-12-1.png&#34; alt=&#34;unnamed-chunk-12-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;收入&#34;&gt;收入&lt;/h3&gt;
+
+&lt;p&gt;最后我们来谈钱。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 参与活动的 61 篇帖子，总收入为 2092.62 SBD， 单帖收入最高为 134.37 SBD，平均每帖收入为 34.31 SBD。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmf51bzTreYjGHqRE8RDwCFLkjZTMYwTRWHLWS8f9XvuD2/unnamed-chunk-13-1.png&#34; alt=&#34;unnamed-chunk-13-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是各篇帖子获得的投票（点赞）数。 累计得赞 2866 个，单帖得到的点赞数最高为 247 个，平均每帖得赞 47 个。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTPUmzSFMpThCssXDsf77R9EKrYhTrpBXNqE1Y8Jui9Bo/unnamed-chunk-14-1.png&#34; alt=&#34;unnamed-chunk-14-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为本次活动能够投票次数最多的前三位是 @tumutanzi, @jubi, @htliao。下面是投票次数超过 10 次的 ID 词云图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXjjtJo4yBUxjqVrrxDRdS1WQAHY1XjP5C75wmyGHiVYo/unnamed-chunk-15-1.png&#34; alt=&#34;unnamed-chunk-15-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为本次活动点赞收入贡献最多的前三位伯乐是 @abit, @tumutanzi, @linuslee0216。他们一共贡献了全部收入的 70%。排在他们后面的第 4 到第 10 位的贡献比例如下图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmdXyBaPknP9MYuevX8BoRXqXoQE368gJWxgQagH6RFysV/unnamed-chunk-16-1.png&#34; alt=&#34;unnamed-chunk-16-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢关注“大鹏观察”。欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+
+&lt;h3 id=&#34;附录-参赛作品列表&#34;&gt;附录：参赛作品列表&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;created&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-16 08:57:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@ernestine&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@ernestine/the-dream-here-only-for-the-dead&#34;&gt;梦&amp;mdash;-这里的梦是为逝者造的-The Dream Here Only For The Dead&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-16 10:16:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@justyy&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@justyy/7d7hyi&#34;&gt;中年大叔还有梦可以做么？&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-16 12:52:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@xiaolizi&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@xiaolizi/37kqfj&#34;&gt;【谷哥点名】梦想怎么才能照进现实？&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-16 13:21:36&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tensaix2j&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tensaix2j/04-lottery-dream&#34;&gt;原创漫画 04：梦到真字 Lottery Dream&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-16 13:35:00&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@shanghairabbit&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@shanghairabbit/what-you-give-me-is-a-colorful-dream&#34;&gt;What you give me is a colorful dream（答谷哥点名第三期：谢谢你给我的彩色的梦）&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-16 13:52:27&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@cornelia&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@cornelia/5ytxna&#34;&gt;梦，陪我成长直到现在&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-16 15:31:09&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@candiceji&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@candiceji/journey-of-dreams-hulun-buir-grassland&#34;&gt;一川草色，半缕斜阳，呼伦贝尔的逐梦之旅【Journey of Dreams&amp;ndash;Hulun Buir Grassland】&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-16 17:58:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@plokmi&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@plokmi/7hleya&#34;&gt;小时候的你，至少还会做梦。&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-16 20:43:00&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@terinadx&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@terinadx/6sxsra&#34;&gt;梦——活着&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-16 20:49:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@goodv123&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@goodv123/6k16za&#34;&gt;我從小到大都是作夢怪 // 我从小到大都是作梦怪 “谷哥点名”第三期&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 00:34:27&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@ace108&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@ace108/732ca8-by-ace108&#34;&gt;梦-怪谈 - Chinese content only but feel free to comment in English if you understand (by @ace108)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 00:34:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/dream-or&#34;&gt;Dream / 梦 - &amp;ldquo;谷哥点名&amp;rdquo; 第三回&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 00:45:30&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@susanli3769&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@susanli3769/life-dream-of-a-little-woman&#34;&gt;(梦）- 小女子的追梦奋斗史- life dream of a little woman&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 01:34:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@zsilence&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@zsilence/5ichc3&#34;&gt;[谷哥点名]梦断红楼——《红楼梦》读书笔记&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 02:38:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@blacktranquility&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@blacktranquility/5mtwb3-cn&#34;&gt;小写cn历史里百姓的梦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 02:59:24&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrspointm/gone-love-is-just-like-a-dream-mrspointm-or&#34;&gt;一场游戏一场梦/Gone love is just like a dream(内附@mrspointm歌唱视频) -谷歌点名第三期&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 04:28:00&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@zhijun&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@zhijun/ckqqr&#34;&gt;梦与梦想&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 05:12:09&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@herlife&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@herlife/dream-it-possible&#34;&gt;种在心里的梦，才是真的梦 Dream it Possible&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 05:19:57&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@shenchensucc&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@shenchensucc/3aesgn&#34;&gt;梦 &amp;ndash; 平安 谷哥点名 第三期&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 06:29:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@yinlovesu0914&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@yinlovesu0914/or&#34;&gt;&amp;lt;谷哥點名&amp;gt; 梦 - 每次幻想都是一個平行時空的誕生&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 10:28:30&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@superhardness&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@superhardness/i-have-some-dreams&#34;&gt;谷歌点名第三期，我也要说“梦”&amp;ndash;I have some dreams.&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 10:42:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@bigyellow&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@bigyellow/58eyy8&#34;&gt;浅谈我的梦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 11:51:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@laodr&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@laodr/4h7wwu-laodr-tea-house&#34;&gt;LAODR Tea House / 老道茶館 今日话题： 梦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 13:04:06&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@lemooljiang&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@lemooljiang/179&#34;&gt;来自深渊的梦&amp;ndash;时代的歌之179&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 13:55:06&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@nigulax&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@nigulax/2pdgry&#34;&gt;谷歌点名第三期: 梦想&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 15:15:57&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@ai-max&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@ai-max/steemit-jubi&#34;&gt;我的梦想: 居桃花源，写Steemit博客，赚大钱，改变世界&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 15:34:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@jessicameng&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@jessicameng/dreams-of-ms-meng&#34;&gt;梦小姐的梦 Dreams of Miss Meng&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 23:07:30&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@linuslee0216&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@linuslee0216/6f5h4x&#34;&gt;梦与现实的交汇点，我的大学生活/ 谷哥点名活动第三期&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-17 23:39:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@kenchung&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@kenchung/2zisay&#34;&gt;追梦者要聽的廣東歌&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-18 02:15:03&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@fundurian&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@fundurian/2rf4pv&#34;&gt;”谷哥点名”第三期，”梦”-小时候有什么梦想&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-18 05:50:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@bestmz&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@bestmz/2uuya8&#34;&gt;Aircraft Carrier Theme Park in Tianjin China. 梦幻基辅号&amp;ndash;中国唯一运营中的航母公园&amp;ndash;天津泰达航母公园(一)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-18 06:21:21&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@yunxiaohui&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@yunxiaohui/4qckwt&#34;&gt;现实与梦&amp;mdash;&amp;mdash;&amp;ndash;谷歌点名三期&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-18 11:12:36&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@mrpointp&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrpointp/6iy58l&#34;&gt;致曾经纯洁无暇的梦想&amp;mdash;谷歌点名第三期&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-18 13:25:09&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@sylvia1997&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@sylvia1997/5tllc9&#34;&gt;追梦人——为我的超人爸爸写个故事&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-18 16:16:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@bestmz&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@bestmz/aircraft-carrier-theme-park-in-tianjin-china&#34;&gt;Aircraft Carrier Theme Park in Tianjin China. 梦幻基辅号&amp;ndash;中国唯一运营中的航母公园&amp;ndash;天津泰达航母公园(二)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-18 18:52:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@joythewanderer&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@joythewanderer/5lwwtt&#34;&gt;一梦好多年&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-18 21:03:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@dapeng&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@dapeng/3cxhbi&#34;&gt;谷哥点名争诉梦，老汉歌曲请君听（录音）&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-18 22:46:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@magicmonk&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@magicmonk/2025-steemit-2025-a-story-on-the-steemian-dream&#34;&gt;2025年: 一個Steemit作家的梦 (2025: A Steemian&amp;rsquo;s dream)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-18 23:31:27&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@bxt&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@bxt/a-young-man-s-dream-about-decorating&#34;&gt;A young man’s dream about decorating 一个年轻人的装修梦！&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-19 00:36:36&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@bestmz&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@bestmz/6hbxze-aircraft-carrier-theme-park-in-tianjin-china&#34;&gt;Aircraft Carrier Theme Park in Tianjin China. 梦幻基辅号&amp;ndash;中国唯一运营中的航母公园&amp;ndash;天津泰达航母公园(三)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-19 02:18:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@icedream&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@icedream/klcxu&#34;&gt;加班狗的白日梦-Daydreaming of overtime&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-19 07:48:27&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@liflorence&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@liflorence/5zgah7&#34;&gt;谷歌点名第三期 说说自己的小梦想&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-19 09:08:27&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@luneknight&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@luneknight/49vrrd&#34;&gt;梦旅人&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-19 10:41:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/6cjb4e&#34;&gt;假如爱情和梦想背道而驰 Give up your Dreams to be with Someone you Love&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-19 11:53:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@jubi&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@jubi/41xhcb&#34;&gt;楚门一场梦，为欢几何？&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-20 00:20:57&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@linuslee0216&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@linuslee0216/5iwfru&#34;&gt;杂记——延续梦想的残渣，澳洲帕罗尼拉公园&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-20 01:00:00&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@chaofanjun&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@chaofanjun/6jucqy&#34;&gt;一场春梦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-20 09:11:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@icedream&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@icedream/achieve-my-daydream&#34;&gt;白日梦的“实现”&amp;mdash;Achieve My Daydream&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-20 12:18:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@coldhair&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@coldhair/4hfmcz-steemit&#34;&gt;梦——我的Steemit发财梦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-21 01:53:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/2txoai&#34;&gt;十年一梦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-21 03:35:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@eduter&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@eduter/2g8cu7&#34;&gt;梦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-21 06:46:57&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@wseemfree&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@wseemfree/steemit-steem&#34;&gt;对《梦——我的Steemit发财梦》的回复兼对steem未来的猜想&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-21 10:51:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@ryanfan11&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@ryanfan11/or&#34;&gt;為左夢想, 你可以去到幾盡 - “谷哥点名”第三期 梦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-21 10:54:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@lemooljiang&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@lemooljiang/6&#34;&gt;《梦的解析》来看看大师解梦 / 品乐书会#6&amp;mdash;阅读经典，分享创作&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-21 13:08:06&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@climax&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@climax/mjzrj&#34;&gt;梦一样的她&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-22 01:20:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tvb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tvb/exumx-original-poetry-to-my-lover&#34;&gt;Original poetry to first half of my life 填词《如梦令》&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-22 06:17:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@xierdear&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@xierdear/coldhair&#34;&gt;致吕医生@coldhair：一起做梦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-22 11:03:21&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tiffanychen&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tiffanychen/5xa3av&#34;&gt;比起未知的命运，你们才是日复一日的梦想&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-22 13:47:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@karasui&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@karasui/6k5tlf&#34;&gt;小小的梦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-22 13:51:03&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@kitcat&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@kitcat/5nxy9d&#34;&gt;梦想的公路&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-22 16:29:24&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@seastar&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@seastar/7gm6gc&#34;&gt;梦起航的地方&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;#steemit-stat #steemswatch&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

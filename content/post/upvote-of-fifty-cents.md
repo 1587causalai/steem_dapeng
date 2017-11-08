@@ -1,0 +1,60 @@
+---
+title: "五毛钱的点赞 Upvote of Fifty Cents"
+author: dapeng
+date: "2017-10-04 08:28:03"
+slug: upvote-of-fifty-cents
+categories: [cn]
+tags: 
+  - cn
+  - movie
+  - culture
+  - steemit
+  - philosophy
+---
+
+原文链接: [steemit](https://steemit.com/cn/@dapeng/upvote-of-fifty-cents), [cnsteem](https://cnsteem.com/cn/@dapeng/upvote-of-fifty-cents), [chainbb](https://chainbb.com/cn/@dapeng/upvote-of-fifty-cents), [busy](https://busy.org/cn/@dapeng/upvote-of-fifty-cents), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/upvote-of-fifty-cents.md)
+
+> Yesterday I got my delegated 1000 SP back from @justyy. It has been 7 days since my application. He complained to me and asked why I withdrew the money and asked if he did something wrong. Nothing. The only reason was that I was not rich. No extra money to save.
+
+
+昨天，我存到 @justyy 银行里的 1000 SP 终于全部取出来了。从发起申请算起来，花了 7 天。银行行长哀怨地问我为何不存了，是不是他做错了什么。没有啊，取钱的理由很简单：手头太紧，钱不够花。这年头，地主家也没有余粮啊，更别提我了。
+
+
+> Currently I have only two thousand Steem powers. My voting power is usually 20% - 30%. I boasted in the [CN Welcome Center Plan](https://steemit.com/cn/@dapeng/steem-cn-project-hope-2017-10-04) that I will support new Steemians. However, an upvote of mine was worth only several cents. With the 1000 SP back, one upvote will be worth 0.5 SBD when my VP is 100%. I still remember that I bought a beer to celebrate my post which got 0.5 SBD for the first time.  The cheapest beer costs 0.5 SBD in the supermarkets of the city where I am living in. Now a new steemian will be treated with a beer if I upvote. Somehow, it reminds me of the film *Shawshank Redemption* . Andy risked his death to treat his desperate prisoner friends with three beers, which gave them the happiest time and hope  in the sunshine. More or less, I think I have Andy's joy, if only for a short while.
+
+
+我的 SP 总共只有两千多，平时的 VP 一般维持在 20% - 30% 左右。就这点家底，我还在“[希望工程](https://steemit.com/cn/@dapeng/steem-cn-project-hope-2017-10-04)”里口口声声宣称要扶助新人。每次给新人点个赞，只值几分钱。我觉得，至少得上 1 毛钱，才拿得出手。
+
+
+现在好了，收回这 1000 SP 后，当我 VP 满血的时候，100% 点赞大约有五毛钱。当初，我的文章收益第一次达到 5 毛钱的时候，特意去买了瓶啤酒庆祝。—— 0.5 SBD，够买一瓶廉价超市最便宜的啤酒。现在，我成了五毛党。只要我给新人点一下赞，就等于请他们喝了一瓶啤酒。
+
+
+不知怎的，这让我想起了电影 *Shawshank Redemption* (肖申克的救赎)：安迪冒着死的危险，为那些绝望的狱友们赢来了每人三瓶啤酒的犒赏。在阳谷的沐浴下痛饮这三瓶啤酒，是他们最大的享受。而我，享受的是安迪的快乐，哪怕只有片刻。
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rcj2GoIbFHk" frameborder="0" allowfullscreen></iframe>
+
+
+Youtube video: The Shawshank Redemption Beer
+
+
+
+> When I talked about this,   @tvb said, sadly, that her upvote was only worth 5 cents. I said 'Xiangruyimo'. This is an old Chinese phrase, originated from Master Zhuang,  a philosopher who lived 2400 years ago. He told a story about fishes in a spring which was dried up. The fishes had to moisten one another by their saliva so as to survive. New steemians with few SPs are called small fishes on steemit board. What a coincidence!
+
+
+当我在新人 QQ 群里说起这事儿的时候， @tvb 哀怨地说，她的 SP 全算上，点赞也就 5 分钱。我说，那我们就“相濡以沫”吧。我觉得，“相濡以沫”用在 steemit 上，是非常贴切的一个词。
+
+
+@victorier 曾写过[相濡以沫真的只止於這四個字嗎?](https://steemit.com/cn/@victorier/7hnr9e)一文，介绍了这个成语。成语来自庄子，说的是两条小鱼在一个干涸的泉眼里快要死了，只好吐出泡沫抹在对方身上，才能生存。steemit 上的那些新人，恰恰被称为小鱼。这是巧合吗？
+
+
+> Furthermore, Master Zhuang said, it would be better for the fishes to forget one another in the rivers and lakes. I was wondering when steem grows to a large lake so that we can forget one another one day!
+
+
+庄子还说；相濡以沫，还不如回到江湖里，俩俩相忘。只要日子过得好，总比死在一起强。
+
+
+那么，啥时候 steemit 才能发展成一条大江呢？steemit 上的小鱼大鱼们，我们啥时候才能相忘于江湖呢？
+
+
+![大鹏观察](https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg)

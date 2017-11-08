@@ -1,0 +1,1355 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Steem on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/steem/index.xml</link>
+    <description>Recent content in Steem on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/steem/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The very first thing a new Steemian has  to do - Steem 新手必须做的第一件事</title>
+      <link>https://steemit.netlify.com/post/the-very-first-thing-to-do-for-new-steemians-or-steem/</link>
+      <pubDate>Mon, 23 Oct 2017 10:07:57 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/the-very-first-thing-to-do-for-new-steemians-or-steem/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/the-very-first-thing-to-do-for-new-steemians-or-steem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the very first thing that a new steemian has to do? Posting your first comment happily? Reading the top-paid posts to learn how to earn money excitedly? Uploading your photo and setting your profile eagerly? &lt;strong&gt;No&lt;/strong&gt;! The very first thing is: write down your master/owner key on a piece of paper, and keep the paper in a safe. Maybe &lt;strong&gt;in a worn-out shoe under your bed&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are not sure of your hand copying, just grab your camera, take a picture of your master/owner key, and print it out. Do not forget to delete the digital picture immediately.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2014/12/25/10/55/digital-579553_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image credit: pixabay.com&lt;/p&gt;
+
+&lt;p&gt;Days ago an ID with the reputation 67 was fished by @cheetoh, who looks like @cheetah the famous bot. The master key was lost and 4000 SP+SBD was gone. I keep my fingers crossed for her, although I know that it is difficult, or even impossible, to recover the key and have the money back.&lt;/p&gt;
+
+&lt;p&gt;New steemians get a long string when they have just signed up. This string is officially called &amp;lsquo;master/owner key&amp;rsquo;. New steemians think it is a &lt;em&gt;password&lt;/em&gt;, the same as the thing they get when signing up other websites. Normally a user is able to recover the &lt;em&gt;password&lt;/em&gt;  via an email or phone number.  Therefore they log in for the first time, read some posts, close steemit, and leave steem all behind. Days later, steem comes to their mind again, and they want to log in. Well, nobody can remember the long string. OK, recover it&amp;hellip;&amp;hellip;what? It CANNOT be recovered??!!&lt;/p&gt;
+
+&lt;p&gt;I guess it must be one of the reasons why so many accounts on Steem are dead.&lt;/p&gt;
+
+&lt;p&gt;New steemians are not sufficiently told of the importance of their passwords. A user once posted his master key publicly in a chat group of the Chinese community by mistaken copy-and-paste. Another user sent a screenshot of his wallet-permission page to me and asked what those four long strings meant. Nobody was fishing them. They just did not know what they were doing.&lt;/p&gt;
+
+&lt;p&gt;If you lose your ID card in reality, you go to the center of ID cards, i.e. the Police Station. If you lose your credit card, you call your credit card service center. If you lose your Steem password, sorry, there is no Steem center. Steem is a blockchain, &lt;strong&gt;&lt;em&gt;decentralized&lt;/em&gt;&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;A user&amp;rsquo;s &lt;em&gt;password&lt;/em&gt; on Steem is not only a &lt;em&gt;password&lt;/em&gt;. It is a combination like:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Your Steem password = your login password + your ID card + your credit card + your smartphone + your signature&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Anyone can use your password to log in, to transfer money, to comment others, and fish your friends. What would you call it? &amp;lsquo;Master/owner key&amp;rsquo; is not enough. I would call this long string &lt;strong&gt;&amp;lsquo;Steem ID&amp;rsquo;s Life&amp;rsquo;. If stolen, dead&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I would warn every new Steemian: &lt;strong&gt;NEVER, EVER use your master/owner key&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;ALWAYS login with your &lt;strong&gt;posting key&lt;/strong&gt;. It is sufficient for everyday use.&lt;/p&gt;
+
+&lt;p&gt;If you are doing something related to your money, then use the &lt;strong&gt;active key&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;When do you have to use your master/owner key? Only when you want to recover something. Take it as the &amp;lsquo;restore to factory settings&amp;rsquo; option of  your smartphone.&lt;/strong&gt;   You never use it, do you?&lt;/p&gt;
+
+&lt;p&gt;That is why you had better print it out on a piece of paper and save it in an worn-out shoe under your bed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/0x0/http://i.imgur.com/F0aJyNM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image credit: steemit.com&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;作为 Steem 新手，必须做的最要紧的事情是什么？是兴奋地发第一帖宣告自己的降生吗？是看看收益最高的帖子来学习如何在 steem 赚钱吗？还是上传自己帅帅的头像？全不是！第一件事，至关重要的任务，是立刻抓起你的相机，对着显示器上的 steem 密码拍个照片，打印到纸上，删掉数码照片，然后把这张纸塞到一只鞋???里，藏在床底下。&lt;/p&gt;
+
+&lt;p&gt;几天前，有个声望达到 67 的账号被  @cheetoh 用钓鱼手段骗过了眼睛。这个盗贼看上去很像著名的机器人 @cheetah。价值数万人民币的 SP+SBD 和无法估量的其他损失，就这么进了别人钱包，让人痛心。找回密码和账号很困难，几乎是不可能的。&lt;/p&gt;
+
+&lt;p&gt;steem 新手注册成功后，会得到一个很长的字符串。官方称其为“万能钥匙” (master/owner key)。这很容易让新手误以为是个登录密码。别的网站不都是如此吗？忘就忘了，不都是能用邮箱或手机恢复吗？于是，他们首次登录，愉快地发布第一帖，读了一些别人的文章，然后关掉了网页，把一切都抛诸脑后。几天之后，他们突然想起了 steem，想登录看看自己是不是赚了点钱。可是那么长的密码，谁记得住呢？恢复一下吧……我靠，居然不能恢复？？！！&lt;/p&gt;
+
+&lt;p&gt;Steem 上很多死账号，我怀疑这就是原因之一。&lt;/p&gt;
+
+&lt;p&gt;我觉得，新手并未被充分告知密码的重要性。在中文微信群里，曾有个用户不小心把密码复制粘贴出来，每个人都看见了。还有个用户，把他的钱包-权限页的四个密码截了屏，一起发给我，问我这些是什么意思。没人钓鱼欺骗他们，他们只是不知道他们自己在做什么。&lt;/p&gt;
+
+&lt;p&gt;现实生活里，如果丢了身份证，可以去身份证中心——派出所或警察局补办。如果丢了信用卡，可以去信用卡中心——拨打服务热线挂失。Steem 的世界里，如果丢了密码，对不起，没有哪个中心可以去，因为 Steem 用的是区块链，去中心化！&lt;/p&gt;
+
+&lt;p&gt;实际上， steem 用户的主密码不只是个密码，而是个多合一的混合体，相当于：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Steem 主密码 = 登陆密码 + 身份证 + 银行卡 + 手机 + 签名&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;只要有了你的主密码，任何人都可以在 steem 上登录你的账号，转账，发帖，给别人留言，钓鱼欺骗你的朋友。这玩意儿到底应该叫什么？”万能钥匙/主密码“ (Master/owner key) 这个称呼远远不够。我觉得应该管它叫”Steem 账号的命根子“。一旦丢失，就是死路一条。&lt;/p&gt;
+
+&lt;p&gt;在这里，我想再次警告新手们：永远不要使用你的主密码！&lt;/p&gt;
+
+&lt;p&gt;钱包（Wallet）-权限（Permissions）页面有四个密码。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;登录的时候，用发帖密码（posting key），足够平时使用。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;只有在跟钱打交道时，才使用活跃密码（Active key）。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;那么主密码是干什么用的？只有重置账号时才用。你可以当作是手机上的”恢复出厂设置“。这个功能你从来没用过，是不是？&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;所以，最好把主密码打印出来，塞到鞋子里，藏到床底下。&lt;/p&gt;
+
+&lt;p&gt;就像科幻小说《三体III》里所讲，如何保存资料最安全? 刻在石头上！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What shall I do when steemit.com is down (Steemit 挂掉的时候我该做什么)</title>
+      <link>https://steemit.netlify.com/post/what-shall-i-do-when-steemit-com-is-down-or-steemit/</link>
+      <pubDate>Fri, 06 Oct 2017 08:00:27 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/what-shall-i-do-when-steemit-com-is-down-or-steemit/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/what-shall-i-do-when-steemit-com-is-down-or-steemit&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/what-shall-i-do-when-steemit-com-is-down-or-steemit&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/what-shall-i-do-when-steemit-com-is-down-or-steemit&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/what-shall-i-do-when-steemit-com-is-down-or-steemit&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/what-shall-i-do-when-steemit-com-is-down-or-steemit.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This morning when I got up, I found that I was unable to visit steemit.com. The first thing coming to my mind was: has all my steem dollars been stolen by some hackers, or taken away by the investors?&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t panic. I told myself. Think about those whales and orcas. They will lose more than you. Then I felt much better.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;今天早上起床来，发现上不去 steemit.com 了。涌进我脑子的第一个念头是：我 steem 上的钱不会是被黑客黑了吧？不会被投资人卷走了吧——&lt;/p&gt;
+
+&lt;p&gt;别慌。我对自己说。想想那些大鲸们。他们损失更大。这么一想，顿时好受多了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;OK. I was just joking. When you get used to steem, you feel uncomfortable with steemit.com down. Here is what you could do if it happens again.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Go to &lt;a href=&#34;http://downforeveryoneorjustme.com/steemit.com&#34;&gt;&lt;a href=&#34;http://downforeveryoneorjustme.com/&#34;&gt;Down For Everyone Or Just Me&lt;/a&gt;&lt;/a&gt;, which tells you whether the website is down for everyone or only for you. If it is just you, check your Internet status.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If steemit.com is down for everyone, you can visit other websites based on the blockchain database, e.g.:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://beta.chainbb.com/@dapeng&#34;&gt;https://beta.chainbb.com&lt;/a&gt; for browsing and posting, and other operations,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemdb.com/@dapeng/posts&#34;&gt;https://steemdb.com&lt;/a&gt; for browsing only,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://busy.org/@dapeng&#34;&gt;https://busy.org&lt;/a&gt;, which might work or not,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://eostalk.io/@dapeng&#34;&gt;https://eostalk.io&lt;/a&gt; which might work or not, or&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Shutdown your computer or cellphone and go jogging. Life is far more than steem.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWU8UX9yioJdZcNthFSe4DuCMSmFikunPSzzT4fYHTveo/downorme.jpg&#34; alt=&#34;downorme.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWE4W9ug2VHw9WEPN45JpvDt4pDp1RDCnPg4fFPD2aV36/chainbb.jpg&#34; alt=&#34;chainbb.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;好啦，不开玩笑了。当你习惯了上 steem 的时候，一旦 steemit.com 挂了，可能会有各种不适应，就像烟瘾发作一样。下面告诉你该怎么做：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;访问 &lt;a href=&#34;http://downforeveryoneorjustme.com/steemit.com&#34;&gt;挂的到底是你一个还是所有人&lt;/a&gt;，看看是不是你自己的网络问题。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果是 steemit.com 的问题，你可以改用其他的网站，都是基于 steem 区块链数据库，如：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://beta.chainbb.com/@dapeng&#34;&gt;https://beta.chainbb.com&lt;/a&gt;， 可以像 steemit 一样浏览、发帖或其他操作，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemdb.com/@dapeng/posts&#34;&gt;https://steemdb.com&lt;/a&gt;，只能浏览，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://busy.org/@dapeng&#34;&gt;https://busy.org&lt;/a&gt;， 是否管用不好说，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://eostalk.io/@dapeng&#34;&gt;https://eostalk.io&lt;/a&gt;，是否管用不好说&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;或者，关掉你的电脑或手机，出去跑个步。生活，比 steem 要大得多。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>大鲸和小鱼等级计算方法的建议  Suggestions on Definition of Small Fishes and Big Whales on Steemit</title>
+      <link>https://steemit.netlify.com/post/definition-of-small-fish-and-big-whale-on-steemit/</link>
+      <pubDate>Fri, 29 Sep 2017 08:30:09 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/definition-of-small-fish-and-big-whale-on-steemit/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/definition-of-small-fish-and-big-whale-on-steemit&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/definition-of-small-fish-and-big-whale-on-steemit&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/definition-of-small-fish-and-big-whale-on-steemit&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/definition-of-small-fish-and-big-whale-on-steemit&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/definition-of-small-fish-and-big-whale-on-steemit.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;严格来讲， steemit 并没有“大鲸”和“小鱼”。&lt;/p&gt;
+
+&lt;p&gt;Steem 上“鲸”和“鱼”的分级来自 &lt;a href=&#34;https://steemitboard.com/&#34;&gt;steemitboard&lt;/a&gt; ，将用户分 5 级，从小到大依次是：红鱼，米诺鱼，海豚，杀人鲸，鲸。你看，里面根本没有“大鲸”和“小鱼”的说法。后者只是俗称。&lt;/p&gt;
+
+&lt;p&gt;那么，这5级是怎么定义的？&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The title of this post is technically wrong. There is neither small fish nor big while. Five levels of steemians were given by  &lt;a href=&#34;https://steemitboard.com/&#34;&gt;steemitboard&lt;/a&gt;. They are red fish, minnow, dolphin, orca, and whale. They are defined according to the  vesting shares of the account.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;是根据用户的 vesting_shares 定义的。如果用户的 vesting_shares 少于 1000000（6个零，即 1 M）， 那就是红鱼；多于 1000000000（9个零，即1 G），就是鲸。介于两者之间，每多个零，就升一级。也就是说：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+红鱼 &amp;lt; 1M &amp;lt; 米诺鱼 &amp;lt; 10M &amp;lt; 海豚 &amp;lt; 100M &amp;lt; 杀人鲸 &amp;lt; 1G &amp;lt; 鲸
+
+Red fish &amp;lt; 1M &amp;lt; Minnow &amp;lt; 10M &amp;lt; Dolphin &amp;lt; 100M &amp;lt; Orca &amp;lt; 1G &amp;lt; Whale
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;那么，vesting_shares 是什么？&lt;/p&gt;
+
+&lt;p&gt;其实就是 Steem Power （SP，即“权力”）换算成另一个单位而已，中间需要一个由区块链内部定义的常数，叫做  steem_per_mvests，可以在 &lt;a href=&#34;https://steemd.com/&#34;&gt;steemd&lt;/a&gt; 网页右上角看到，目前的值是 485.668。每 1 M 的 vesting_shares，约等于486 个 SP。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+Steem Power =  vesting_share * 485.668 / 1000000
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样一换算，就很容易通过权力（SP）来判断等级了：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;As the Steem Power (SP) is calculated from the vesting power and the steem per mvests (485.668, which can be found on &lt;a href=&#34;https://steemd.com/&#34;&gt;steemd&lt;/a&gt;), we can define the user level by SP:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+红鱼 &amp;lt; 486SP &amp;lt; 米诺鱼 &amp;lt; 4860SP &amp;lt; 海豚 &amp;lt; 48600SP &amp;lt; 杀人鲸 &amp;lt; 486000SP &amp;lt; 鲸
+
+Red fish &amp;lt; 486SP &amp;lt; Minnow &amp;lt; 4860SP &amp;lt; Dolphin &amp;lt; 48600SP &amp;lt; Orca &amp;lt; 486000SP &amp;lt; Whale
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;为了方便，这里只取三位有效数字，并忽略科学记数法的问题。&lt;/p&gt;
+
+&lt;p&gt;米诺鱼是一种小型鲤鱼，红鱼是一道好菜。这些名称不够直观。结合大家的惯用法，我建议在中文区把他们叫做：小鱼，大鱼，海豚，小鲸，大鲸。&lt;/p&gt;
+
+&lt;p&gt;所以，更简单来说， SP 高于5百，就是大鱼；5千，海豚；5万，小鲸； 50 万，大鲸。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I think these names are too complicated to steemians, especially to those who know nothing about zoology or have never been to a sea. For simplicity, I would call them small fish, big fish, dolphin, small whale, big whale.&lt;/p&gt;
+
+&lt;p&gt;I think it is unfair to define the level by SP. ESP makes more sense. BTW, On steemiboard, a user with no activity is marked as dead fish. It is unfair as well. On the name list of CN community,  user levels are given according to ESP, and nobody is dead fish. After all, dolphins and whales are mammals. They are not fishes at all!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmasoQQNTKQpSBb96y4QQ9o5sPhiF8tjPX7YG4dCL3axc1/level.jpg&#34; alt=&#34;level.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然而，如果你用 &lt;a href=&#34;https://steemitboard.com/&#34;&gt;steemitboard&lt;/a&gt; 查某个用户的等级，例如&lt;a href=&#34;https://steemitboard.com/@tumutanzi&#34;&gt;查询有“临时大鲸鱼”美称的 @tumutanzi&lt;/a&gt;，却发现他只是个海豚；而&lt;a href=&#34;https://steemitboard.com/board.html?user=myfirst&#34;&gt;一哥 @myfirst&lt;/a&gt; 更离谱，是条死鱼。这是怎么回事？&lt;/p&gt;
+
+&lt;p&gt;因为 @tumutanzi 有 50 万的权力来自 ned 的代理 ，从而“实权”(即有效权力，Effective SP，ESP) 达到了大鲸的等级。“临时大鲸鱼”这个名称是我最先叫出来的，灵感来源于孙中山先生的“临时大总统”一职。按照 ESP 来分等级的话，我们还可以称呼某个人“临时小鲸”，&amp;rdquo;临时海豚&amp;rdquo;等。&lt;/p&gt;
+
+&lt;p&gt;而 @myfirst ，只要最近 7 天没活动，就被 steemitboard 标为死鱼。&lt;/p&gt;
+
+&lt;p&gt;既然 ESP 比 SP 更具有现实意义，那么 steemitboard  用SP 算等级就显得不合理了，而7天不活动就标死的做法更是不近人情。我认为应该按 ESP 来算。所以，在 &lt;a href=&#34;https://steemit.com/cn/@dapeng/6mnla8-steemit-cn&#34;&gt;Steem 中文区水浒英雄排行榜&lt;/a&gt;上，我新增了“用户等级”一栏，按 ESP 来显示用户属于哪一级。目前的 108 将里，有 5 条大鲸，4 条小鲸，8 条海豚，37 条大鱼，剩下的 54 条（恰好占一半）是小鱼。&lt;/p&gt;
+
+&lt;p&gt;来&lt;a href=&#34;http://steemr.org/&#34;&gt;排行榜&lt;/a&gt;看看吧，你属于哪种鱼？&lt;/p&gt;
+
+&lt;p&gt;PS：海豚和鲸其实都属于哺乳动物，不是鱼。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWKRoZhpvHW3sFkHUnfkbZGNsZUe8FBEgEbkRXQXoE4bu/end.png&#34; alt=&#34;end.png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>我没有抱怨——答@deanliu 前辈及其他朋友们</title>
+      <link>https://steemit.netlify.com/post/deanliu/</link>
+      <pubDate>Fri, 22 Sep 2017 20:06:21 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/deanliu/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/deanliu&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/deanliu&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/deanliu&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/deanliu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/deanliu.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;“修罗刀下死，做鬼也风流。”金庸《天龙八部》这句话很符合我的心情。前两天，我写的小文「&lt;a href=&#34;https://steemit.com/cn/@dapeng/three-lies-on-steemit&#34;&gt;Steemit 的三大谎言&lt;/a&gt;」被传说中的 @deanliu 前辈也就是刘美女给&lt;a href=&#34;https://steemit.com/cn/@deanliu/dapeng-steemit&#34;&gt;点名修理&lt;/a&gt;了，心里欢喜得紧，仿佛被翻了牌子。在这里，我做个回应。&lt;/p&gt;
+
+&lt;p&gt;首先要说明的是，刘前辈文章里用了很多第二人称“你”，有的时候指的是我 @dapeng ，大多数时候是对读者的泛指。刘前辈文中多次提到了“抱怨”，不管指的是不是我的态度，我都愿意在这里解释一下：我没有抱怨。&lt;/p&gt;
+
+&lt;p&gt;还有几位朋友，说我揭露了血淋淋的现实，“野蛮社会”一词用得精辟。其实，我在说“野蛮社会”的时候，前面分明还有半句“这似乎说明”，后面还有一句“不过”呀。&lt;/p&gt;
+
+&lt;p&gt;也许是我用力过猛，也许是用词过于严肃，让很多朋友感受到的是负面消极情绪。其实，我通篇都是积极向上的呀。&lt;/p&gt;
+
+&lt;p&gt;对“写作赚钱”这个谎言，我的建议是“注重社交”。&lt;/p&gt;
+
+&lt;p&gt;对“没有审查”这个谎言，我的建议是“维持平衡”。&lt;/p&gt;
+
+&lt;p&gt;对“言论自由”这个谎言，我的建议是“弄清潜规则”。&lt;/p&gt;
+
+&lt;p&gt;你看！通篇我都是在告诉新人要调整心态，好好做事，没有任何逃避和怨天尤人，多健康阳光积极向上啊！&lt;/p&gt;
+
+&lt;p&gt;这让我想起，有人问刘慈欣《三体3：死神永生》为何写得对人类那么悲观，刘慈欣很诧异，说：我很乐观啊，整个宇宙都完蛋了，人类文明还存在，这多乐观的态度啊！&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我为什么写“三大谎言”这篇帖子呢？&lt;/p&gt;
+
+&lt;p&gt;主要是因为，最近 cn 区出现了一些纷扰，光我知道的就有两起。捕风捉影了解到一点皮毛，由此而发，写出来，就成了“三大谎言”。&lt;/p&gt;
+
+&lt;p&gt;在文中，我推荐了个动画短片《平衡》，碍于篇幅，没有展开讲，但非常重要，很多朋友却没注意到，这里我再次推荐。&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/vZiEt5RUYSk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;这个片子只有几分钟。德国拍的，但是没有对白，所以不存在语言问题。我认为，这个片子是对steemit 上一些纠纷的绝妙隐喻。下面是剧透。&lt;/p&gt;
+
+&lt;p&gt;几个人站在一个平台，一无所有，平台保持平衡。隐喻着我们尚未接触 steemit 之前的状态。&lt;/p&gt;
+
+&lt;p&gt;有一个人偶尔钓到一个箱子，隐喻着我们当中有人先接触到了 steemit，得到了一些利益。但这些利益，不靠别人的帮助，是会落空的。&lt;/p&gt;
+
+&lt;p&gt;没得到箱子的想抢占，得到箱子的想独吞，平台开始失衡，隐喻着 steemit 上大鲸小鱼们的种种心态。&lt;/p&gt;
+
+&lt;p&gt;最后，我不说大家也能想得出来。&lt;/p&gt;
+
+&lt;p&gt;这个动画短片，当然不只是隐喻 steemit，从中还能解读出很多。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我诚惶诚恐，对刘前辈的帖子划了划重点，却发现满满都是爱：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;大鵬是個認真的作者，雖然我跟你互動不算太多，但偶而還是會看到。&lt;/p&gt;
+
+&lt;p&gt;我希望你不要一直待在那個位子，你要有志氣成為被抱怨的人。&lt;/p&gt;
+
+&lt;p&gt;我大概就是認識到大鵬等這一波人吧，就連大鵬我也比較少互動，只是大概知道是個有想法的人，要是你哪天沒人關照了，我會過去看看能幫什麼的這種。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;不仅如此，我还惊喜地发现，刘前辈发帖后，我的原帖浏览量和评论数呼呼往上涨。专业术语叫做“蹭热度”。甚至 steemit 的首页宣传语都改成了“Money Talks ”（钱说了算），好像是专门对我说: 瞧，这回不是谎言了吧？&lt;/p&gt;
+
+&lt;p&gt;这让我不由地想起，冷发哥 @coldhair 发了篇「&lt;a href=&#34;https://steemit.com/cn/@coldhair/3zrcxz-steemit&#34;&gt;写在Steemit倒闭之前&lt;/a&gt;」，刘前辈就回了篇「&lt;a href=&#34;https://steemit.com/steem/@deanliu/steem-oh-the-eagle-flies-high&#34;&gt;写在 Steem 腾飞之前&lt;/a&gt;」，导致冷发哥原文也蹭了不少热度。&lt;/p&gt;
+
+&lt;p&gt;从中，我就发现了这样一个秘密：&lt;/p&gt;
+
+&lt;p&gt;唱衰 steem 吧！说不定，你也能获得刘前辈的关怀……&lt;/p&gt;
+
+&lt;p&gt;跟我和冷发哥一起唱，你要不要试试？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWKRoZhpvHW3sFkHUnfkbZGNsZUe8FBEgEbkRXQXoE4bu/end.png&#34; alt=&#34;end.png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steemit 的三大谎言 （新手必读） Three Lies on Steemit</title>
+      <link>https://steemit.netlify.com/post/three-lies-on-steemit/</link>
+      <pubDate>Tue, 19 Sep 2017 07:51:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/three-lies-on-steemit/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/three-lies-on-steemit&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/three-lies-on-steemit&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/three-lies-on-steemit&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/three-lies-on-steemit&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/three-lies-on-steemit.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;“写文章赚钱”，这是 steemit 最大的谎言。对此，新手知道得越早越好。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAZJAAAAJDExYTZjNDZjLTk4ODItNDAyOS04MjFiLTJhYTFiYjU2Zjk3MA.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image credit to www.linkedin.com/pulse/lie-me-6-signs-someone-lying-you-alexandre-marins-augusto&lt;/p&gt;
+
+&lt;p&gt;Blog, vote and get paid.  这大概是 steemit 对外宣传的最大噱头，也是吸引很多人（包括我）来 steemit 的主要原因。&lt;/p&gt;
+
+&lt;p&gt;实际上，光靠 blog 和 vote，很多人没有 get paid，悻悻而去。&lt;/p&gt;
+
+&lt;p&gt;是上当受骗了吗？不对啊，你会看到别人的很多文章赚了很多钱，哪怕读起来质量不高。这是为何？&lt;/p&gt;
+
+&lt;p&gt;就我目前的体会而言，某篇文章的收益决定因素，除了文章质量本身，很大程度上，是作者长期经营的效果。如果一个作者长期连续写出好文字，并且长期跟社区良好互动，那么就会逐渐积累大家的关注。这些关注可以来自点赞团队，也可以来自机器人。他们点赞某篇文章，一部分出于这篇文章的质量，另一部分出于对作者的信赖。信赖的建立，需要时间。&lt;/p&gt;
+
+&lt;p&gt;比如说我自己的帖子，最初的几篇，质量不比现在的差，但收益不到现在的千分之一，就是这个原因。&lt;/p&gt;
+
+&lt;p&gt;文章收益有滞后效应。你看到有些质量不高的文章收益高，那是因为作者早先写过大量优质文章而带来的延迟收益。如果这个作者不珍惜信誉，继续写烂帖，那么将来收益就会降下来——当然，这也有滞后效应。信誉破产，也需要时间。&lt;/p&gt;
+
+&lt;p&gt;所以，有些新人虽然写得好，但酒香也怕巷子深；尚未引起大家的关注之前，好文章可能一分钱也赚不到。来 steemit 上靠写东西赚钱，做短线是不可能的。&lt;/p&gt;
+
+&lt;p&gt;steemit 实际是个社交平台，光靠写作赚不到钱。两条腿走路，才能走得快；社交和写作兼顾，才能赚到钱。这恰恰是很多新人没有意识到的。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;steemit 的第二大谎言，是“没有审查”，去中心化。&lt;/strong&gt; 想写什么就写什么，没有敏感词过滤，也不会突然哪一天根据相关法律法规你搜索的内容无法显示。&lt;/p&gt;
+
+&lt;p&gt;实际上，steemit 上，审查无处不在。如果哪些言论越界，每个人都是“朝阳群众”，声望高的账号可以踩（Flag）声望低的账号，让帖子折叠隐藏，让被踩账号声望急剧下降。然后，大家一看你声望低，知道你臭名昭著，就没人跟你玩了。&lt;/p&gt;
+
+&lt;p&gt;当然，你的越界言论仍然在区块链上，想读就能读到。&lt;/p&gt;
+
+&lt;p&gt;此外，也许你的言论并未越界，但仍然被踩，究其原因，可能是误会，可能是含冤，可能是私人恩怨，甚至可能是踩你那人当时心情不好，看你不顺眼。你可能莫名其妙得到个臭名，是别人给你扣的屎盆子。谁知道呢？去中心化就意味着，你想写什么就可以写什么，别人想怎么踩你就怎么踩你。当然，你也可以踩别人。这样的蛮荒导致的结果就是，在一段混乱期之后，整体上达到一个平衡，使利益最大化。大家找到这个平衡点，然后临深履薄，尽量不要打破它。&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/vZiEt5RUYSk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;强烈推荐德国动画片《平衡》。我认为这是对 steemit 的绝妙隐喻。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这个平衡点，体现在 &lt;strong&gt;steemit 上的第三大谎言：自由。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;世界上不存在绝对的自由，这是很简单的事实。你的自由就是对别人自由的侵犯，所以需要法律和道德来约束。steemit 除了对抄袭比较敏感外，几乎没有明显的法律和道德，似乎最自由。&lt;/p&gt;
+
+&lt;p&gt;然而，steemit 上运行的，是更难把握的潜规则??&lt;/p&gt;
+
+&lt;p&gt;比如，你会看到一种更难以置信的现象：有些有权（Steem Power）的账号，只要付钱给他，他就给你的文章点赞，不管你的文章写得多烂。光天化日之下，这种赤裸裸的钱权交易，在 steemit 天天上演。&lt;/p&gt;
+
+&lt;p&gt;再如，&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem&#34;&gt;前一段时间&lt;/a&gt;，我用中文写了一篇关于德语的文章，用了deutsch 这个标签，也就是德语的“德语”，结果被大鲸踩，警告我说 deutsch 标签的文章必须用德语写，而这条规定我在任何地方都找不到，因为这是条潜规则。&lt;/p&gt;
+
+&lt;p&gt;说到这里，我由衷钦佩 cn 区的小猎豹。cn 区接受的帖子要求“用中文写”或“内容必须跟 China 和 Chinese 有关”，但新用户未必知道这条规则。而小猎豹对不适合的帖子总是先善意提醒，把潜规则明朗化，让新人不至于太困惑。小猎豹日复一日志愿这样做，这种精神让我敬佩。&lt;/p&gt;
+
+&lt;p&gt;此外，还有传说中的“过度自我点赞”，也会被踩。这个我未曾亲历，因为我自己点个赞最多值2毛钱，甩开膀子拼命点也算不上“过度”，所以只是听说。那么问题来了：自我点赞超过具体多少数额才算“过度”？这个“度”是什么？没规定，所以是潜规则，靠你自己体会。&lt;/p&gt;
+
+&lt;p&gt;除了“标签咋用叫滥用”和“自赞多少算过度”之外，steemit 上还有很多潜规则。不同圈子的潜规则有不同，并且随着时间有变动。想靠写东西赚钱的话，你需要慢慢摸索。我也在摸索中，也经常感到不确定。写本文来批评 steemit 的谎言，我并不确定是否破坏了某个潜规则——七天后看本文的最终收益就知道了。&lt;/p&gt;
+
+&lt;p&gt;话又说回来，“弄清楚潜规则”，这就是 steem 的游戏规则。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;steemit 上， 写文章不一定能赚钱，赚钱不一定靠写文章。写文章对赚钱来说，既不是充分条件，也不是必要条件。这就是 steemit 的真相。&lt;/p&gt;
+
+&lt;p&gt;这似乎说明，steemit 这里是个野蛮社会，文明处于未开化状态，大家遵循的是丛林法则。&lt;/p&gt;
+
+&lt;p&gt;不过，换个角度想，经历了蛮荒社会，能流传下来的故事，就是神话；能存活下来的人，就是神。“三皇五帝神圣事”，皆是如此。&lt;/p&gt;
+
+&lt;p&gt;很多人跟我一样，来 steemit 是为了靠写东西赚点钱。我是幸运的，从零起步，纯靠码字，得到了很多前辈的提携，声望居然混到了63，对此我十分感谢。没有大家的支持，我可能早就拍拍屁股走人了。但是，恐怕更多的人来了之后发现跟预期的相去甚远，不免有些负面情绪。&lt;/p&gt;
+
+&lt;p&gt;爱玩不玩，愿赌服输，在 steemit 上写作其实就是个游戏，仅此而已。新手早点了解这一点，有助于理解 steemit 上发生的一些现象，有助于摆正心态，做自己该做的事。 steemit 这个游戏，没人强迫你来玩，来去随意，这是你最底层的自由，没有任何人可以侵犯。&lt;/p&gt;
+
+&lt;p&gt;steemit 的元老老聂，对“在steemit 上写作的收入从哪里来”这个问题回答道：就像矿工挖矿，写东西的作者是矿工，文章收益就是矿工的工钱。言外之意，“挖”值钱，而“矿”更值钱；矿工赚钱，矿老板更赚钱。&lt;/p&gt;
+
+&lt;p&gt;要知道，写作，终究是一种劳动。用劳动换钱，永远是小打小闹。只有用钱生钱，才是赚钱的王道。&lt;/p&gt;
+
+&lt;p&gt;当然，我来 steemit 的时间还不长，上文只是我阶段性的理解，当然有可能完全是错的。你对此怎么看？欢迎留言指正。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>谷哥点名第 1 期“精彩瞬间”回顾（大鹏观察 Steem&#39;s Watch P1）</title>
+      <link>https://steemit.netlify.com/post/steem-watch-p1/</link>
+      <pubDate>Tue, 22 Aug 2017 22:10:45 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steem-watch-p1/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-watch-p1&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-watch-p1&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-watch-p1&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-watch-p1&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-watch-p1.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;不久前，为了玩得开心，我把&amp;rdquo;谷哥点名&amp;rdquo;第一期活动参与的帖子&lt;a href=&#34;https://steemit.com/cn/@dapeng/6wpnvk&#34;&gt;整理成了一本电子书&lt;/a&gt;。后来，在做“&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-id-report-1-justyy-1&#34;&gt;大鹏观察&lt;/a&gt; ”活动时，觉得与其单纯整理电子书，还不如用类似的方法对参赛帖子进行一些数据分析和挖掘，也许更有指导意义。于是，就有了“大鹏观察”之“谷哥点名”。本文是第一期，对谷哥点名第一期进行回顾。第二期很快就可以出台了，争取赶上谷哥点名的进度。欢迎大家提意见反馈。&lt;/p&gt;
+
+&lt;p&gt;用的数据来源是 steemdata.com，数据获取、分析、报告编写全程使用人见人爱的 R 语言。仅供参考，如果有数字与官方不符，请以官方数字为准。&lt;/p&gt;
+
+&lt;h2 id=&#34;大鹏观察-谷哥点名第一期回顾&#34;&gt;大鹏观察： 谷哥点名第一期回顾&lt;/h2&gt;
+
+&lt;h3 id=&#34;参赛基本信息&#34;&gt;参赛基本信息&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;主题：精彩瞬间&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;日期：2017-08-02 &amp;ndash; 2017-08-09&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;发起：&lt;a href=&#34;https://steemit.com/cn/@jubi/42wvdr&#34;&gt;关于“谷哥点名”游戏的初步设想&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;颁奖：&lt;a href=&#34;https://steemit.com/cn/@jubi/4tsdsb-and&#34;&gt;第一期“谷哥点名”活动结束 &amp;amp; 第二期开始！&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;参赛作品列表：见文末。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;帖中之最&#34;&gt;帖中之最&lt;/h3&gt;
+
+&lt;p&gt;本期活动参赛作品共 26 篇。获奖作品的介绍已经在本文开头给出了链接，是按 google 搜索结果排名的，不再赘述。我们也可以用其他方式排名，来看看参赛作品里几个第一名。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;字符最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@catwomanteresa/4&#34;&gt;長毛家的毛寶貝#4 : 二毛帶給我生活中無數的精彩瞬间 Pets in our family#4: The countless wonderful moments Er-Mao brings to me&lt;/a&gt;，含 4833 个字符。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;插图最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@catwomanteresa/4&#34;&gt;長毛家的毛寶貝#4 : 二毛帶給我生活中無數的精彩瞬间 Pets in our family#4: The countless wonderful moments Er-Mao brings to me&lt;/a&gt;，含 13 张图片。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;修改间隔最长.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@justyy/5hgpar&#34;&gt;记录那些值得回忆的精彩瞬间&lt;/a&gt;，发布 93.1 小时即 3.9 天之后，作者做了最后一次修改。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;得赞最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@mrpointp/three-of-my-wonderful-moments&#34;&gt;我的三个精彩瞬间/Three of My Wonderful Moments&lt;/a&gt;，得到 124 个赞。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;赚钱最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@angelababy/7vearl&#34;&gt;精彩瞬间-施比受更有福&lt;/a&gt;，收入为 48 美元。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;帖子正文里出现最多的关键词&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;下面是所有帖子里出现的字符长度超过2个、出现次数超过10次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。当然，我们去掉了“精彩瞬间”。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmdD6LnAyqQaafMqZmj3aR7QvDT1WMKeU7mvQsq5hqfDBt/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;参赛选手&#34;&gt;参赛选手&lt;/h3&gt;
+
+&lt;p&gt;下图是参赛选手的注册id序号分布图。全网目前共有 313128 个 ID。参赛选手中排在最前面的是第 18783 个 ID，最后面的是 第 289368 个 ID。猜猜他们都是谁？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmP3Q2v8wMuF87ykkm5T2RBmyKWT5yFrVS6PXMNAu925YY/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7月注册的居多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTzghBuNYqSFgA8hmoxkKGzjxXz69WpqoUVwHhmcufrsN/unnamed-chunk-9-1.png&#34; alt=&#34;unnamed-chunk-9-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;发帖&#34;&gt;发帖&lt;/h3&gt;
+
+&lt;p&gt;活动期间，每天累计发帖总数：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmRY4GR1MBjA9X5dEBFN3HsErJn6pLmNjeiUpVsnXBCB1E/unnamed-chunk-10-1.png&#34; alt=&#34;unnamed-chunk-10-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是个特殊的时钟，一圈是24小时，显示了一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的???子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是发帖高峰时段。&lt;/p&gt;
+
+&lt;p&gt;可以发现，在标准时间 2 点到 10 点发帖的人最多。大家猜猜这是为什么？我觉得这说明参赛者里位于欧洲的比较少。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmY6APo4VqwY7jPCbrV52XuGmNysA3kYvcYrtMSgeXhxTv/unnamed-chunk-11-1.png&#34; alt=&#34;unnamed-chunk-11-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本活动是在 &amp;lsquo;cn&amp;rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签。我们看看除此之外，大家还使用了那些标签以及使用频率。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmf2E9BhNokFAjGu16xnwFAjUskmGC4w34dpkSaZ8MDzi8/unnamed-chunk-12-1.png&#34; alt=&#34;unnamed-chunk-12-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最显眼的标签是什么？我觉得是 jubi， 你觉得呢？&lt;/p&gt;
+
+&lt;h3 id=&#34;收入&#34;&gt;收入&lt;/h3&gt;
+
+&lt;p&gt;最后我们来谈钱。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 参与活动的 26 篇帖子，总收入为 112.11 SBD， 单帖收入最高为47.87 SBD，平均每帖收入为4.31 SBD。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcR4DG4n2axeLDksnyqRt1oHuRmnW1YqN66cX1Spwwh8R/unnamed-chunk-13-1.png&#34; alt=&#34;unnamed-chunk-13-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是各篇帖子获得的投票（点赞）数。 累计得赞 1022 个，单帖得到的点赞数最高为 124 个，平均每帖得赞 39.3 个。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbecakvFPpySzdkufYpGqSGqcsYUBZNDmhX63G3txBq87/unnamed-chunk-14-1.png&#34; alt=&#34;unnamed-chunk-14-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为本次活动能够投票次数最多的前三位是 @jubi, @abit, @lordp。下面是投票次数超过 10 次的 ID 词云图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcEqJVEUUN79TcGBVmyajhq1Bpc1DZUkV2CwcWpW9TjhA/unnamed-chunk-15-1.png&#34; alt=&#34;unnamed-chunk-15-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为本次活动点赞收入贡献最多的前三位伯乐是 @abit, @tumutanzi, @trafalgar。他们一共贡献了全部收入的 85%。感谢他们的支持！&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢关注“大鹏观察”。欢迎参加下一期的活动，也欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+
+&lt;h3 id=&#34;附录-参赛作品列表&#34;&gt;附录：参赛作品列表&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;created&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-02 04:06:24&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@fundurian&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@fundurian/hdv45&#34;&gt;谈谈精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-02 05:20:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@mrspointm/the-wonderful-moment-from-foodie&#34;&gt;The wonderful moment from a foodie / 来自一枚吃货的精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-02 06:16:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@mrpointp&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@mrpointp/three-of-my-wonderful-moments&#34;&gt;我的三个精彩瞬间/Three of My Wonderful Moments&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-02 07:23:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@coldhair&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@coldhair/6vdmca&#34;&gt;热爱生活，每一刻都是精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-02 09:19:00&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@larus&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@larus/x&#34;&gt;游戏X生活中的那些精彩瞬间，值得记录！&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-02 12:07:36&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@dixonloveart&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@dixonloveart/3-three-moments-worth-remembered-in-the-last-2-years&#34;&gt;回首过去，难忘的3个精彩瞬间 Three Moments worth remembered in the last 2 years&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-02 22:42:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@justyy&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@justyy/5hgpar&#34;&gt;记录那些值得回忆的精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-03 01:55:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@htliao&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@htliao/3i973e&#34;&gt;我的精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-03 02:23:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@syh7758520&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@syh7758520/34w14j-steemit&#34;&gt;在steemit的几个精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-03 12:35:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@kitcat&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@kitcat/5sngfq&#34;&gt;我的精彩瞬间 －苦尽甘来的哲理&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-03 14:18:57&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@catwomanteresa&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@catwomanteresa/4&#34;&gt;長毛家的毛寶貝#4 : 二毛帶給我生活中無數的精彩瞬间 Pets in our family#4: The countless wonderful moments Er-Mao brings to me&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-03 15:39:00&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@kenchung&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@kenchung/6acthe&#34;&gt;我們的精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-03 15:57:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tvb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@tvb/acrostic-poem-of-wonderful-moment&#34;&gt;藏头诗：七绝-精彩瞬间（中华新韵）Acrostic Poem of Wonderful Moment&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-04 05:59:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@superhardness&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@superhardness/wonderful-and-ordinary-moment&#34;&gt;Wonderful and ordinary moment&amp;ndash;精彩瞬间与平凡同行&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-05 09:11:30&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@chaofanjun&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@chaofanjun/5oy7zz&#34;&gt;我的生活哪有精彩瞬间？&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-06 18:54:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumutanzi&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@tumutanzi/7enuof&#34;&gt;精彩瞬间带来美好回忆——中年大叔的人生故事&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-07 04:12:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@towardsthesun&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@towardsthesun/my-first-steemit-post-a-beautiful-moment&#34;&gt;My first steemit post - a beautiful moment // 精彩瞬间让我们更勇敢&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-07 05:01:21&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@herlife&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@herlife/wonderful-moments&#34;&gt;Wonderful Moments知足常乐，生活处处是精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-07 07:46:36&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@blacktranquility&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@blacktranquility/mbtqr&#34;&gt;骑行路上的精彩瞬间~水管&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-07 08:31:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@dapeng&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@dapeng/2wot2j&#34;&gt;与周华健同台演出 [视频 精彩瞬间]&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-07 12:53:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@zhijun&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@zhijun/5spugd&#34;&gt;生命至今的三个精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-07 16:46:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@timknip&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@timknip/witness-fuli&#34;&gt;新witness节点上线了，fuli 精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-07 21:00:36&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@joythewanderer&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@joythewanderer/memorable-moments-in-my-life&#34;&gt;我难忘的几个精彩瞬间 Memorable Moments in my Life&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 00:46:36&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@guyverckw/4jwkyd&#34;&gt;人生中最「精彩瞬间」的事件！&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 01:40:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@victorier&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@victorier/3to5b4&#34;&gt;谈一谈我与精彩瞬间&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:27:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@angelababy&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit/com/@angelababy/7vearl&#34;&gt;精彩瞬间-施比受更有福&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Tags: #blog #cn-blog #steemit #steem&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>看到他暴露的 Steem 用户数据后我震惊了 a preliminary analysis of a steem ID&#39;s data</title>
+      <link>https://steemit.netlify.com/post/steem-a-preliminary-analysis-of-a-steem-id-s-data/</link>
+      <pubDate>Mon, 31 Jul 2017 10:14:24 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steem-a-preliminary-analysis-of-a-steem-id-s-data/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-a-preliminary-analysis-of-a-steem-id-s-data.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In my previous posts (&lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool&#34;&gt;2&lt;/a&gt;), I talked again and again about steem users&amp;rsquo; data. Sorry that I am not good at talking, and maybe some do not know exactly what I was talking about. In this post, I will show you what information you can get out of any steem ID. Yes, anyone like me can get such information easily, even he/she knows nothing about hacking skills. &lt;strong&gt;Think twice before you do something on Steem.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks to @tumutanzi for his generosity of letting me use his data as an example.&lt;/p&gt;
+
+&lt;p&gt;在前两篇帖子里（&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool&#34;&gt;2&lt;/a&gt;），我反复强调了 steem 用户的个人数据，并且开发了个&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;小工具 steemr&lt;/a&gt;，方便大家查阅其中的部分数据。 @tumutanzi 嫌&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr#@tumutanzi/re-dapeng-steemr-a-web-based-tool-for-steemers-or-steemians-steemr-20170727t162813885z&#34;&gt;口味不够重&lt;/a&gt;。别急，那只是开胃小菜，好吃的都在后头，让我们渐入佳境。这次稍微加点佐料，我们对 @tumutanzi 的发帖数据进行进一步深挖，看看能八出什么秘密。&lt;/p&gt;
+
+&lt;p&gt;注意，我不是黑客，任何用户的这些数据都可以轻易得到，根本不需要任何黑客技术。所以，&lt;strong&gt;请你注意自己在 steem 上的一举一动&lt;/strong&gt;！我对你的个人隐私没有兴趣，但这并不代???别人对你也没有兴趣，而别人的技术和分析手段可能比我高明得多！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://yaeckerdesign.com/wp-content/uploads/Tell-You-The-Secret-To-Maintain-Wedding-Gowns-yrqEpo.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure source: &lt;a href=&#34;http://yaeckerdesign.com&#34;&gt;http://yaeckerdesign.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;his-active-time-活跃时间&#34;&gt;His active time 活跃时间&lt;/h2&gt;
+
+&lt;p&gt;The following figure shows his active time. The green line indicates his register time on Steem.&lt;/p&gt;
+
+&lt;p&gt;下图是他自注册以来的发帖时间图，图里每个点代表一篇帖子，水平往左看对应的是发帖时间，垂直往下看是发帖日期，绿线是他在 steem 的注册时间。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcTM5RxGavjgjAzpt1drRXm23LFQ5hzawshYvDRi9PWzB/unnamed-chunk-2-1.png&#34; alt=&#34;unnamed-chunk-2-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Until July 30 2017, he had posted 78 posts. On the first day, he posted three posts. For some reason, there was a long break for three months in 2017. Afterwards, he became very active, especially in July 2017. Most of his posts were posted between 8:00 and 24:00, which might be his getting-up and going-to-sleep time.&lt;/p&gt;
+
+&lt;p&gt;截至2017年7月30日，@tumutanzi 发帖总数是 78篇。在注册当天下午，他就&amp;rdquo;Duang-Duang-Duang&amp;rdquo;连发三帖（上图绿线上的三个点。收入全是 0，详见下文）。在2017年3月以前，发帖断断续续。不知什么原因，他的发帖在2016年11月份有短暂中断，而在2017年连续中断了3个月，到7月份突然非常活跃。发帖的时间多在早上8点以后（UTC，下同）和0点以前，这可能是他的起床和就寝时间。他的作息时间是比较规律的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmdK1K3w21pHzDCZMLmvrPrbp2ATgoZc3ye7UnjCYpwEtF/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure above shows the frequency of his posts. There were 25% of the posts were posted after 22:00, and 50% after 17:00. He is active at night. That is why he wrote below his ID, &amp;lsquo;Falling in love with Steemit and I have no time for X&amp;hellip;&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;上图显示的是他一天24小时里发帖的频次，横坐标是每天的几点钟。阴影面积越??的时段，发帖数就越多。 从图上看，有25% 的帖子都是 22:00 以后发布的，而50% 的帖子是在下午 17点以后发布的。晚上是坛子发帖的活跃期。难怪他的 ID 下面写着：“爱上Steemit后，X生活都没时间了……”&lt;/p&gt;
+
+&lt;p&gt;His attitude to posts 对帖子的态度&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmPQKtr74UsXiLwqWbWvD34Nu6RrBY9RSK9V6zppH1smtf/unnamed-chunk-4-1.png&#34; alt=&#34;unnamed-chunk-4-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure above shows how many edits for each post. At the beginning, he editted most of the posts fewer than two times each. In July 2017, most posts were editted more than three times. On post was editted even 15 times! He is getting more and more careful with his words.&lt;/p&gt;
+
+&lt;p&gt;上图是每个帖子的编辑次数，图里每个点代表一篇帖子，水平往左看对应的是该帖被编辑的次数。 在刚刚进入steem的时候，他发帖以后修改的次数比较少，大部分在每帖2次以下。而进入2017年7月以后，修改次数明显增多，大部分帖子都修改3次以上，修改最多的次数达到了15次之多。反复修改说明他对自己的帖子精益求精。要知道，他长久以为只有24小时内才能修改，如果他知道7天之内都能修改的话，修改次数可能更多。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;category&lt;/th&gt;
+&lt;th&gt;Freq&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;bitcoin&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;cn&lt;/td&gt;
+&lt;td&gt;62&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;education&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;electric-toothbrush&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;hiking&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;imagej&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;luck&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;make-money&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;revolut&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;smart-tv&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;sports&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;steemit&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;talented&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;tech&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;uk&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The table above shows the categories (the first tags) of his posts. He posted most of them in CN.&lt;/p&gt;
+
+&lt;p&gt;上面的数据是他发帖的首选分区的次数。虽然身在海外，但他把???的青春绝大部分都奉献给了他的家乡：CN区。鼓掌！&lt;/p&gt;
+
+&lt;h2 id=&#34;quality-and-money-帖子的质量和收入&#34;&gt;Quality and money 帖子的质量和收入&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTMZQv2Wo6rradTGXncVMD5fkrmuFHFBQ1mJ7FMji4MQX/unnamed-chunk-6-1.png&#34; alt=&#34;unnamed-chunk-6-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s talk about money. The figure above shows the dollars he got from each post. Averagely he earned 27.03 dollars per post, with the maximum of 191 dollars from one post. However, half of his posts had a value below 6 dollars. A quarter of them even were less than 1 dollar. He used to be a rookie as well as you and me.&lt;/p&gt;
+
+&lt;p&gt;现在我们来谈谈钱。上图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 @tumutanzi 现在动不动就每帖收入近百美元，单帖收入最高为191美元，平均每帖收入为27.03 美元。但是，有一半的帖子收入都在6美元以下；25% 的帖子，收入不到1美元。而75%的帖子带来的收入都不足45美元。他也是从菜鸟过来的呀。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZUzWtuGW6RFxrjBSTg1rdfFztNFJ5NCRpKB8tfCC9cBm/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;His posts have a long-life time. Most of them still attracted comments 63 hours or 2.6 days after posted. Somebody even commented on one of his post after 8021 hours 334 days! Well done!&lt;/p&gt;
+
+&lt;p&gt;他的帖子生命力很顽强，有半数以上的帖子在发布63小时即2.6天后仍然有人在帖子后面留言。有的帖子，在发布8021小时即334天后，仍然有人评论。好样的！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmagwbmTZedfWDQRvp6K7qmac3KDwBstskd7eoFWLaokKo/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure above shows the trend of his money per post. At the beginning, each post gave him no money. After three months, he got 10 dollars per post. It increased sharply in July 2017. So just keep writing good posts and money will come to you.&lt;/p&gt;
+
+&lt;p&gt;上图显示的是每帖收入的时间趋势。早期的帖子收入很多都在0附近徘徊。坚持三个月???，单帖收入到了10美元左右。到了2017年7月陡增。一方面，即使像 @tumutanzi 这样的优秀博主写的好帖子，有个别帖子到现在也难逃低收入的厄运：另一方面，大部分的优质帖子还是得到了丰厚的回报的。所以新手们不要沮丧，坚持写，写好帖，你的收入会像他这样上升。我们往往羡慕别人今天的成就，却忽视他曾经走过的路，忽视他昨天付出的艰辛和努力。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQSYQaGPowkdzwQzvJbUGLMqAyroVTzNGwELfqdHyNjqQ/unnamed-chunk-9-1.png&#34; alt=&#34;unnamed-chunk-9-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure above shows the upvote number of each post. Although he was more active in July 2017 than before, his upvote number seemed not larger. Let&amp;rsquo;s look forward to his future trend!&lt;/p&gt;
+
+&lt;p&gt;上图是坛子帖子获得的投票数。虽然7月份发帖比较活跃，但是单篇的投票数并没有比去年12月多多少。 @tumutanzi，加油！&lt;/p&gt;
+
+&lt;p&gt;If you are interested in your own ID, please upvote this post and leave a comment, and I will post the figures of you!&lt;/p&gt;
+
+&lt;p&gt;最后，如果有哪位想对自己的 ID 数据进行上述分析，请 upvote 本帖并留言，我可以把分析图表贴出来。仅限自己的 ID 哦！如果要查的人太多，我就把这个功能放到我的&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;小工具 steemr&lt;/a&gt;里，只需输入个目标 ID，每个人就可以想查谁就查谁，大家说这样好不好？&lt;/p&gt;
+
+&lt;p&gt;To be continued &amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;未完，待续&amp;hellip;&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>来 Steemit 两周，与写作的初衷背道而驰  Two weeks on Steemit:  rather a social platform than a writing tool</title>
+      <link>https://steemit.netlify.com/post/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool/</link>
+      <pubDate>Sun, 30 Jul 2017 13:16:21 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1&lt;/h2&gt;
+
+&lt;p&gt;不瞒各位，我来 Steemit 是冲着赚钱。两周前读了 @tumutanzi 写在他独立博客的帖子《&lt;a href=&#34;https://tumutanzi.com/archives/15866&#34;&gt;来吧，Steemit 欢迎你，写篇文章可能上百美刀收入&lt;/a&gt;》，别的我没注意，眼球只被其中一句话吸引了：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;基于区块链的Steemit，顺便还能给写作者带来可能可观的收入。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;算起来我写博客都超过10年了，写得不好，没赚到钱，本来也没打算赚钱，正所谓求仁得仁。这回我想，反正是要写，在哪儿不是写呀，还能“&lt;strong&gt;顺便&lt;/strong&gt;”赚点钱，何乐而不为。我相信，很多人跟我一样，多多少少带着点赚钱的动机来到了Steemit。正因为 @tumutanzi 的独立博主身份和他 的这篇帖子，强调了好好写作，Steemit 一直让我误以为它是个写作平台。&lt;/p&gt;
+
+&lt;p&gt;其实，它不是。至少目前不是。&lt;/p&gt;
+
+&lt;p&gt;两周之后，我发现，我在 steemit 上是一门心思只想着怎么赚钱了，写点有用的东西反倒成了&amp;rdquo;&lt;strong&gt;顺便&lt;/strong&gt;&amp;ldquo;。就好比用智能手机，本来是为了充分利用碎片化时间，可是用到现在，把原来完整的时间也给弄成碎片了。&lt;/p&gt;
+
+&lt;p&gt;在 Steemit，距离写作的初衷渐行渐远。&lt;/p&gt;
+
+&lt;p&gt;到底是哪里出了问题？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcrbrXaK7meCMsfyHuzptuDN6Gs5cmJHChdKDfVbpayC8/maxresdefault.jpg&#34; alt=&#34;maxresdefault.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2&#34;&gt;2&lt;/h2&gt;
+
+&lt;p&gt;在 introduceyourself 板块读新人自我介绍帖，很多新人发照片或视频时举个牌子写着自己的 ID，就好比林冲上梁山时被迫立下的投名状，看起来很荒谬。而帖子下面很多留言是这样的：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;我关注了你，请你也关注我。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;有些留言，我无法判断是不是机器人，但能确定的是，留言者根本没有读帖子的内容。这如果是在独立博客圈，我的原则是你的文章写得好我就粉，不好就不粉，但是在 Steemit，我突破底线地互粉了，因为觉得这样可能会多点人气，多赚点钱。 就这样，为五斗米就折了腰。&lt;/p&gt;
+
+&lt;p&gt;既然写作能赚钱，天经地义的道理当然是写得越好就赚钱越多。那么，我就去看看哪种帖子赚得多吧，效仿先贤就是了。然而，读了很多收益几百美元的帖子，我糊涂了：好帖凤毛麟角，其他帖子好在哪里了？我看不出来。也许写得也不坏，但还不如有些只得到几美分的文章写得好。与此同时，新人的新帖发布几小时之后就沉了底。有些写得很好的帖子，很快就淹没在茫茫帖海里。“虽有名马，祗辱于奴隶人之手，骈死于槽枥之间，不以千里称也。”&lt;/p&gt;
+
+&lt;p&gt;对 Steem 多了一些了解之后我才知道，一篇帖子的收益其实主要靠大佬股东的眷顾。一万个草民开足马力点赞，也抵不上一位庄家动动小拇指。于是天天盼大佬来访，那心情宛如失宠的后宫嫔妃，每天想着“皇上今晚会不会翻我的牌子？”这不就是个极权社会么？这不会造成争相抱大腿献媚么？只要有钱就可以拥有 power，然后就可以想捧就捧，想踩就踩，谁来限制他们的权力？帖子优劣的评判标准是什么？是大佬们的个人品味么？那大佬们喜欢什么我就写什么好了，万一写出一句“云想衣裳花想容，春风拂槛露华浓”这样水平的马屁文流传千古也不错哦。就让我摧眉折腰事权贵咯，哪怕不得开心颜。&lt;/p&gt;
+
+&lt;p&gt;来了两周，Steemit 给我的感觉是泥沙俱下。每次见到获利高又写得好的文章，都觉得欣慰；遇见获利高却写得烂的文章，就觉得不平；遇见获利低而写得好的文章，就觉得惋惜。&lt;/p&gt;
+
+&lt;p&gt;Steem 不是个写作工具，而是个社交平台，是个社会的???影。正如 @pachenko 在 &lt;a href=&#34;https://steemit.com/steemit/@pachenko/why-inequality-on-steemit-is-a-good-thing&#34;&gt;&lt;em&gt;Why Inequality on Steemit is a Good Thing&lt;/em&gt;&lt;/a&gt; 一文里写道：天天都有人为世界的不平等抱怨。这有啥稀奇的，世界就是这样运转的。想开点，别当愤青了，现实一点比较好。现实生活里，不是也有很多好剧本找不到投资人来拍电影，而拍出的电影里有很多烂片么？&lt;/p&gt;
+
+&lt;h2 id=&#34;3&#34;&gt;3&lt;/h2&gt;
+
+&lt;p&gt;这种情形，似曾相识。&lt;/p&gt;
+
+&lt;p&gt;年轻的时候我被“安利”过。这个不是借喻，而是真的被朋友拉去听过几次安利的课程。当时的卖点就是，来安利吧，为了健康生活。反正你得刷牙洗澡对不对？用别的牌子也就是自用而已，而用安利的牌子，不光质量好，而且能赚到钱。退一步说，就算赚不到钱，至少得到了健康。&lt;/p&gt;
+
+&lt;p&gt;跟 Steemit 的口号何其相似：Blog and get paid。&lt;/p&gt;
+
+&lt;p&gt;后来怎么样了？大家开始无限夸大牙膏的优点，容不得半点质疑。凡是能把牙膏的好处吹得天花乱坠的，销量就好，被捧为英雄。每个人开始拼命巴结上一级领导，谁巴结得好，谁就能得到进一步的支持。&lt;/p&gt;
+
+&lt;p&gt;不是为了健康生活么？怎么后来都成了为了赚钱呢？跟 Steemit 目前的社区结构何其相似。好在 Steemit 是允许质疑的，大家对 Steem 的发展可以畅所欲言。能够自我反省，这是我认为 Steemi 上最珍贵的东西。&lt;/p&gt;
+
+&lt;p&gt;然而，Steem 的未来将何去何从？&lt;/p&gt;
+
+&lt;p&gt;@coldhair 在《&lt;a href=&#34;https://steemit.com/cn/@coldhair/3zrcxz-steemit#@dapeng/re-coldhair-re-dapeng-re-coldhair-3zrcxz-steemit-20170727t065157917z&#34;&gt;写在Steemit倒闭之前&lt;/a&gt;》一文里提出了他的担忧：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;我个人认为，很多人在这里挣到的钱，并不是内容的真正价值，而是一种暂时的泡沫。&lt;/p&gt;
+
+&lt;p&gt;为什么说它是一种泡沫？&lt;/p&gt;
+
+&lt;p&gt;绝大部分人来这里是为了挣钱的，而还几乎没有人来购买的有价值的东西，有几个人就是为了为文章付费、为音乐付费或为视频付费而来的？或者又有几个人为这里的注意力经济而付费的，为了在这里做广告而付费的又有几个？恐怕还很少很少吧。&lt;/p&gt;
+
+&lt;p&gt;不是有很多人在这里面投钱了吗？对呀，很多人确实花真金白银购买了Steem呀。&lt;/p&gt;
+
+&lt;p&gt;可是，在这里投钱的人绝大部分不是为了购买价值，而是为了挣钱，为了从Steem里面捞钱。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我在文后留言说：“目前我在 Steemit 看到的一些现象，有点像传销。”作者答复说：“确实的点像传销，不过，真的不是传销，放心玩吧。”&lt;/p&gt;
+
+&lt;p&gt;我的担忧也许是多余的。还不如跟很多人那样，只是抱着玩玩看的心态，捞到钱就走，哪怕走后洪水滔天。&lt;/p&gt;
+
+&lt;p&gt;然而，区块链是个天才的设想，超级棒的底层设计，我希望 Steem 能朝着良性的方向发展，不然的话，发展成老鼠会就太让人痛心了。&lt;/p&gt;
+
+&lt;h2 id=&#34;4&#34;&gt;4&lt;/h2&gt;
+
+&lt;p&gt;换个心态看，大佬们其实就是投资人，发帖相当于一份项目申请书，看投资人愿不愿给你注资。捧优质帖和踩垃圾帖对股东们和散户们都有长远利益。事实上，我来 Steemit 才两周，收获已经远远超出预期了：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;通过写作赚的钱虽然不多，但超过我最近10年写博客的广告收入总和；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;精心筛选之后，确实新交到一些很棒的朋友；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;为了赢取外国用户的关注，我开始练习英文写作，确实感受到了自己在外语上的进步；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;开发 &lt;a href=&#34;http://steemr.org&#34;&gt;steemr&lt;/a&gt; 小工具的过程里，对 R 语言的使用进入了一个新阶段。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我是幸运的，得到了 @tumutanzi @justyy @fonnh 等博客圈老朋友们的支持，有些帖子还得到了 CN 区 @abit @oflyhigh @myfirst 等大神们的提携（感谢！）。但是，对很多新用户来说，未必能有这样的好运，反而是要多注意更重要的问题：个人隐私。&lt;/p&gt;
+
+&lt;p&gt;以我的观察，很多新用户没有意识到自己的隐私问题。要知道，用户在 Steem 上的一举一动，都是记??在案，并且公诸于众的。有人说，在互联网上没有隐私可言，什么都查得到。但是我认为 Steem 不一样。比如说，如果我想知道你的微信或 QQ 账号有哪些好友，你最喜欢跟谁聊天，你一般每天几点钟最活跃，这些数据虽然在腾讯的服务器上，但是我获取不了。 Steem 虽然对用户的部分数据做了加密，但上述这些数据却是对所有人开放的。只要别人想，就可以得到。而这些数据，永远晾在那里，千秋万代，一桶浆糊。拿 @tumutanzi 的话来说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;如果在Steemit上晒一张（照片）呢？对不起，24小时后无法再删除，也无法隐藏，就是Steem开发者也无法，这是一个分布式数据库，你几乎不可能成功修改整条区块链超过51%节点的数据库，你的信息将与Steem区块链同在。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在得知这一点后，我倒吸一口冷气，赶紧看了一下即将发出来的照片，从里面去掉了媳妇和孩子的特写。万一孩子长大后不同意呢？不论如何，发张单人照也就算了，但是发合影的时候，务必征得合影人的同意。大师王林的合影，让多少达官贵人丢了脸，这就是教训。&lt;/p&gt;
+
+&lt;p&gt;然而， @coldhair  有不同&lt;a href=&#34;https://steemit.com/cn/@coldhair/3zrcxz-steemit#@dapeng/re-coldhair-re-dapeng-re-coldhair-3zrcxz-steemit-20170727t065157917z&#34;&gt;见解&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;如果Steem不能创造真正的价值，泡沫必然破裂，届时，人们运行Steem区块链的节点得不到回报，找不到意义，也就没有人再运行节点了，Steem便自然消失了，这篇文章也就找不到了。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;不论如何，我再三提醒大家：在 steemit 发文要三思，发布之前多想想，免得后悔。在区块链上，水一旦泼出去，就再也收不回来了。而 Steem 的前景如何，尚不得知。&lt;/p&gt;
+
+&lt;h2 id=&#34;5&#34;&gt;5&lt;/h2&gt;
+
+&lt;p&gt;@tumutanzi 振臂一呼，独立博客的博主们蜂拥而至，我觉得，独立博客这几年苟延残喘， Steem 可能是压倒独立博客的最后一根稻草，是独立博客的终结者。&lt;/p&gt;
+
+&lt;p&gt;然而，Steem上的写作跟独立博客大有不同。在 Steem 上写作，危险的做法是随意暴露隐私，安全的做法是发言之前三思，有趣的做法是开发工具来分析用户数据，无耻的做法是搜集粗心用户的隐私信息。&lt;/p&gt;
+
+&lt;p&gt;这个平台迷雾重重，那么，为什么我还要留在这里？&lt;/p&gt;
+
+&lt;p&gt;越是乱象丛生，越要细细甄别。大浪淘沙，留下来的才是金子。&lt;/p&gt;
+
+&lt;p&gt;Steem 是把双刃剑。粗心做事暴露隐私，细心做人提升自我。Steem 上的写作比独立博客累，既要考虑如何利益最大化，又要考虑如何风险最小化，然而这正是一种提升的方向。&lt;/p&gt;
+
+&lt;p&gt;来 Steemit 两周，是调整心态的时候了。不管 Steem 将来是发展成一个鼓励内容创作者的优质平台，还是发展成一个人人喊打的老鼠会，有一样是只赚不赔的：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;创作优质内容。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;也许你的帖子不被关注，也许你没有赚到钱，也许 Steem 将来真的泡沫破裂而倒闭，但是，你的原创文字永远是你自己的，是你的一部分灵魂所在，永远有它的价值。&lt;/p&gt;
+
+&lt;p&gt;自古皆死，不朽者文！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://i.imgsafe.org/b3e9c5e6b3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>steemr: an easy web-based tool for Steemians 开发了一个易用的在线小工具 steemr</title>
+      <link>https://steemit.netlify.com/post/steemr-a-web-based-tool-for-steemers-or-steemians-steemr/</link>
+      <pubDate>Thu, 27 Jul 2017 13:23:39 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steemr-a-web-based-tool-for-steemers-or-steemians-steemr/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemr-a-web-based-tool-for-steemers-or-steemians-steemr.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In my previous post &lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;&lt;em&gt;New Steemians, have you ever thought about your data privacy? (1)&lt;/em&gt;&lt;/a&gt; , some friends asked me to make such a report for them. It might be useful to develop an on-line tool for every Steemer/Steemian. Thus I have developed &lt;a href=&#34;http://steemr.org&#34;&gt;steemr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is easy to use. Click the &lt;code&gt;Follower report&lt;/code&gt;  tab and input an ID , or click the &lt;code&gt;Voter report&lt;/code&gt;  tab and input the link of post you are interested in. Then click &lt;code&gt;GO&lt;/code&gt;. Wait 5 &amp;ndash; 20 seconds and you will see the results.&lt;/p&gt;
+
+&lt;p&gt;It is only a tip of the iceberg. More features of this tool are coming soon.&lt;/p&gt;
+
+&lt;p&gt;Think twice before blogging on Steemit. You can&amp;rsquo;t put the genie back in the bottle,  and  it is no use crying over spilt milk.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcdcBY7j8ntos4qcu1HVsUYTd2WgCPH8SfwHTnDqdJG4J/steemr-fr.jpg&#34; alt=&#34;steemr-fr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmS9hzu1w1wkqeruLwxR1X2FUtekL6mHdUxJvmBkrhFiDZ/steemr-vr.jpg&#34; alt=&#34;steemr-vr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在&lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;Steemit 的新手们，你们考虑过数据隐私的问题吗 (1)&lt;/a&gt; 一文发布后，的确有朋友要我对他的 ID 的关注者信息也写一个类似的报告。我想，不如开发个在线工具，大家谁想查就自己查吧。于是就有了 &lt;a href=&#34;https://pzhao.shinyapps.io/steemr/&#34;&gt;steemr&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;用起来很简单：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;点击 &lt;code&gt;Follower report&lt;/code&gt; 标签，输入你想查的 ID，点击 &lt;code&gt;GO&lt;/code&gt; 按钮，等几秒钟或十几秒钟（取决于服务器的速度和 你要查的 ID 的情况）就可以看到结果了，包括粉丝 （followers） ID 的词云图，按这些粉丝的粉丝数量、发帖数量和vests大小??序。如果粉丝超过30个，就取前三十个。词云图下方，还给出了尚未互粉的 ID 列表。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;点击&lt;code&gt;Voter report&lt;/code&gt;  标签，输入你想查的帖子链接（可以是完整链接，也可以是从@符号开头到末尾），点击 &lt;code&gt;GO&lt;/code&gt; 按钮，等几秒钟或十几秒钟，就可以看到为该帖点赞的名单和百分比。图下面给出了尚未投票的粉丝名单（类似的工具有 &lt;a href=&#34;https://helloacm.com/tools/steemit/who-has-not-voted/&#34;&gt; @justyy 的网页界面&lt;/a&gt; ，&lt;a href=&#34;https://steemit.com/cn/@beautifulbella/use-excel-to-find-your-friends-who-does-not-upvote-you-excel&#34;&gt; @beautifulbella 的Excel 方法&lt;/a&gt;，&lt;a href=&#34;https://steemit.com/cn/@oflyhigh/voter-list&#34;&gt; @oflyhigh 的Python 方法&lt;/a&gt;）。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;本工具以后会进一步开发完善。这只是冰山的一角。再次提醒大家：在 steemit 发文发照片要三思，免得后悔，覆水难收。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Steemians, have you ever thought about your data privacy?</title>
+      <link>https://steemit.netlify.com/post/new-steemians-have-you-have-thought-about-your-data-privacy/</link>
+      <pubDate>Wed, 26 Jul 2017 20:56:21 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/new-steemians-have-you-have-thought-about-your-data-privacy/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/new-steemians-have-you-have-thought-about-your-data-privacy.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If  you are a new Steemian, I was wondering if you are aware of your data privacy. If not, you&amp;rsquo;d better know it in advance. Here I display @tumutanzi&amp;rsquo;s public data (&lt;a href=&#34;https://steemdb.com/&#34;&gt;https://steemdb.com/&lt;/a&gt;,  sampled at  2017-07-26 22:06:46 CEST) in an easy way with R language. This is Part I. This is an English version of the &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit&#34;&gt;original post in Chinese&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;@tumutanzi has 319 followers. The word cloud according to the number of their followers is like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmY4qfoEu9XZzpYjg6aR52bVMpPvcfMXej56AKvmu46j1E/unnamed-chunk-2-1.png&#34; alt=&#34;unnamed-chunk-2-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A larger ID means more followers.&lt;/p&gt;
+
+&lt;p&gt;It can be plotted by the number of posts as well:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSBtokTVueC2qxCnBqxn7vU24HaiJzhCgFqSUQ257fFLG/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;or by the number of Vests:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcrddtPW9tH3HaFjAcEiMc9qFiwRt5ePe4AHGEfMxUBWc/unnamed-chunk-4-1.png&#34; alt=&#34;unnamed-chunk-4-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;@abit is scary, who has 4077000000 Vests. Let&amp;rsquo;s kick him out:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTfss2wX94T9NjpQ74u4pXVd1E1gdT7tsvTZ6VMAt8cGS/unnamed-chunk-5-1.png&#34; alt=&#34;unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s see those whom @tumutanzi is following.&lt;/p&gt;
+
+&lt;p&gt;@tumutanzi follows/followed 305 ID in total, in which 152 IDs interact with @tumutanzi bidirectionally, while 153 IDs do not follow him, including:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;ace108&amp;quot;          &amp;quot;act&amp;quot;             &amp;quot;adm&amp;quot;            
+
+##   [4] &amp;quot;adoal&amp;quot;           &amp;quot;adsactly&amp;quot;        &amp;quot;alice&amp;quot;          
+
+##   [7] &amp;quot;anwenbaumeister&amp;quot; &amp;quot;arcurus&amp;quot;         &amp;quot;arhag&amp;quot;          
+
+##  [10] &amp;quot;azazqwe&amp;quot;         &amp;quot;batel&amp;quot;           &amp;quot;ben&amp;quot;            
+
+##  [13] &amp;quot;birds90&amp;quot;         &amp;quot;bitcube&amp;quot;         &amp;quot;blocktrades&amp;quot;    
+
+##  [16] &amp;quot;blueorgy&amp;quot;        &amp;quot;bob&amp;quot;             &amp;quot;brothermic&amp;quot;     
+
+##  [19] &amp;quot;btsabc&amp;quot;          &amp;quot;bziing&amp;quot;          &amp;quot;candiceji&amp;quot;      
+
+##  [22] &amp;quot;ceciliali&amp;quot;       &amp;quot;chinadaily&amp;quot;      &amp;quot;cnfund&amp;quot;         
+
+##  [25] &amp;quot;coldhair&amp;quot;        &amp;quot;cornelia&amp;quot;        &amp;quot;cqf&amp;quot;            
+
+##  [28] &amp;quot;created&amp;quot;         &amp;quot;cybercodetwins&amp;quot;  &amp;quot;damarth&amp;quot;        
+
+##  [31] &amp;quot;dan&amp;quot;             &amp;quot;dantheman&amp;quot;       &amp;quot;databass&amp;quot;       
+
+##  [34] &amp;quot;davidyuan&amp;quot;       &amp;quot;deadlinefarmer&amp;quot;  &amp;quot;dek&amp;quot;            
+
+##  [37] &amp;quot;dixonloveart&amp;quot;    &amp;quot;dmilash&amp;quot;         &amp;quot;ekitcho&amp;quot;        
+
+##  [40] &amp;quot;elfkitchen&amp;quot;      &amp;quot;engagement&amp;quot;      &amp;quot;everittdmickey&amp;quot; 
+
+##  [43] &amp;quot;feelapi&amp;quot;         &amp;quot;flysaga&amp;quot;         &amp;quot;freedom&amp;quot;        
+
+##  [46] &amp;quot;frostfan&amp;quot;        &amp;quot;fuzzyvest&amp;quot;       &amp;quot;fyrstikken&amp;quot;     
+
+##  [49] &amp;quot;gaoduzhu&amp;quot;        &amp;quot;gavvet&amp;quot;          &amp;quot;gefa&amp;quot;           
+
+##  [52] &amp;quot;glitterfart&amp;quot;     &amp;quot;goku1&amp;quot;           &amp;quot;guyverckw&amp;quot;      
+
+##  [55] &amp;quot;haster&amp;quot;          &amp;quot;hendrikdegrote&amp;quot;  &amp;quot;hingman&amp;quot;        
+
+##  [58] &amp;quot;holabebe&amp;quot;        &amp;quot;huaji&amp;quot;           &amp;quot;icedream&amp;quot;       
+
+##  [61] &amp;quot;incrediblesnow&amp;quot;  &amp;quot;ivanba12&amp;quot;        &amp;quot;j-bex&amp;quot;          
+
+##  [64] &amp;quot;jademont&amp;quot;        &amp;quot;jaewoocho&amp;quot;       &amp;quot;jamesc&amp;quot;         
+
+##  [67] &amp;quot;jamesc1&amp;quot;         &amp;quot;jasonmcz&amp;quot;        &amp;quot;jeicko19&amp;quot;       
+
+##  [70] &amp;quot;jholdsworthy&amp;quot;    &amp;quot;jinbo&amp;quot;           &amp;quot;kawaiiiiiiii030&amp;quot;
+
+##  [73] &amp;quot;kenchung&amp;quot;        &amp;quot;kitcat&amp;quot;          &amp;quot;krischy&amp;quot;        
+
+##  [76] &amp;quot;laodr&amp;quot;           &amp;quot;laoyao&amp;quot;          &amp;quot;lcb&amp;quot;            
+
+##  [79] &amp;quot;lief&amp;quot;            &amp;quot;linuslee0216&amp;quot;    &amp;quot;logic&amp;quot;          
+
+##  [82] &amp;quot;lukestokes&amp;quot;      &amp;quot;matrix&amp;quot;          &amp;quot;miacats&amp;quot;        
+
+##  [85] &amp;quot;michael-a&amp;quot;       &amp;quot;michael-b&amp;quot;       &amp;quot;microluck&amp;quot;      
+
+##  [88] &amp;quot;minfon&amp;quot;          &amp;quot;minority-report&amp;quot; &amp;quot;monkimo&amp;quot;        
+
+##  [91] &amp;quot;morten&amp;quot;          &amp;quot;mottler&amp;quot;         &amp;quot;ned&amp;quot;            
+
+##  [94] &amp;quot;nextgen622&amp;quot;      &amp;quot;nicolemoker&amp;quot;     &amp;quot;nuagnorab&amp;quot;      
+
+##  [97] &amp;quot;orientaledu&amp;quot;     &amp;quot;papa-pepper&amp;quot;     &amp;quot;penguinpablo&amp;quot;   
+
+## [100] &amp;quot;peterpan&amp;quot;        &amp;quot;pfunk&amp;quot;           &amp;quot;pharesim&amp;quot;       
+
+## [103] &amp;quot;pilgrimtraveler&amp;quot; &amp;quot;pipertomcat&amp;quot;     &amp;quot;pistox&amp;quot;         
+
+## [106] &amp;quot;pkhope&amp;quot;          &amp;quot;project11&amp;quot;       &amp;quot;proskynneo&amp;quot;     
+
+## [109] &amp;quot;publicworker&amp;quot;    &amp;quot;puffin&amp;quot;          &amp;quot;ranchorelaxo&amp;quot;   
+
+## [112] &amp;quot;rawnetics&amp;quot;       &amp;quot;rayphu&amp;quot;          &amp;quot;rea&amp;quot;            
+
+## [115] &amp;quot;recursive&amp;quot;       &amp;quot;renohq&amp;quot;          &amp;quot;riverhead&amp;quot;      
+
+## [118] &amp;quot;roadscape&amp;quot;       &amp;quot;robrigo&amp;quot;         &amp;quot;rok-sivante&amp;quot;    
+
+## [121] &amp;quot;rook&amp;quot;            &amp;quot;safari&amp;quot;          &amp;quot;scorpion&amp;quot;       
+
+## [124] &amp;quot;sean1980&amp;quot;        &amp;quot;smooth&amp;quot;          &amp;quot;someone&amp;quot;        
+
+## [127] &amp;quot;stan&amp;quot;            &amp;quot;steem&amp;quot;           &amp;quot;steemed&amp;quot;        
+
+## [130] &amp;quot;steemit&amp;quot;         &amp;quot;steemitblog&amp;quot;     &amp;quot;stellabelle&amp;quot;    
+
+## [133] &amp;quot;str11ngfello&amp;quot;    &amp;quot;sunnyray&amp;quot;        &amp;quot;susanlo&amp;quot;        
+
+## [136] &amp;quot;tamim&amp;quot;           &amp;quot;teamsteem&amp;quot;       &amp;quot;thecryptofiend&amp;quot; 
+
+## [139] &amp;quot;thejohalfiles&amp;quot;   &amp;quot;trafalgar&amp;quot;       &amp;quot;transisto&amp;quot;      
+
+## [142] &amp;quot;val-a&amp;quot;           &amp;quot;val-b&amp;quot;           &amp;quot;wackou&amp;quot;         
+
+## [145] &amp;quot;wanbin&amp;quot;          &amp;quot;waterflier&amp;quot;      &amp;quot;webclerk&amp;quot;       
+
+## [148] &amp;quot;witness.svk&amp;quot;     &amp;quot;wjm&amp;quot;             &amp;quot;wjs2634&amp;quot;        
+
+## [151] &amp;quot;wongshiying&amp;quot;     &amp;quot;xeldal&amp;quot;          &amp;quot;zoef&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On the other hand, those who follow him but he does not follow (yet) are:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;abit&amp;quot;            &amp;quot;abusalam&amp;quot;        &amp;quot;acrich&amp;quot;         
+
+##   [4] &amp;quot;adraaz&amp;quot;          &amp;quot;alexieong&amp;quot;       &amp;quot;alfredchen&amp;quot;     
+
+##   [7] &amp;quot;aniksh&amp;quot;          &amp;quot;artsyppl&amp;quot;        &amp;quot;asskick&amp;quot;        
+
+##  [10] &amp;quot;aster&amp;quot;           &amp;quot;atc&amp;quot;             &amp;quot;atrix&amp;quot;          
+
+##  [13] &amp;quot;avilsd&amp;quot;          &amp;quot;avinger&amp;quot;         &amp;quot;babasikandar&amp;quot;   
+
+##  [16] &amp;quot;baixu1018&amp;quot;       &amp;quot;bajeheart&amp;quot;       &amp;quot;bassemm&amp;quot;        
+
+##  [19] &amp;quot;bbkivines&amp;quot;       &amp;quot;beautifulbella&amp;quot;  &amp;quot;benou&amp;quot;          
+
+##  [22] &amp;quot;berke&amp;quot;           &amp;quot;biddle&amp;quot;          &amp;quot;bilalhaider&amp;quot;    
+
+##  [25] &amp;quot;bindu&amp;quot;           &amp;quot;bocaiwen&amp;quot;        &amp;quot;brianchen&amp;quot;      
+
+##  [28] &amp;quot;britt.the.ish&amp;quot;   &amp;quot;carinewhy&amp;quot;       &amp;quot;carolynseymour&amp;quot; 
+
+##  [31] &amp;quot;catwomanteresa&amp;quot;  &amp;quot;chumhumnews&amp;quot;     &amp;quot;cryptochamo&amp;quot;    
+
+##  [34] &amp;quot;danishali&amp;quot;       &amp;quot;danm2017&amp;quot;        &amp;quot;davidad&amp;quot;        
+
+##  [37] &amp;quot;daxiblog&amp;quot;        &amp;quot;dcc&amp;quot;             &amp;quot;deanliu&amp;quot;        
+
+##  [40] &amp;quot;diablocro&amp;quot;       &amp;quot;diaohuijun&amp;quot;      &amp;quot;dimidrolshina&amp;quot;  
+
+##  [43] &amp;quot;dinsha&amp;quot;          &amp;quot;dobro88888888&amp;quot;   &amp;quot;dominicmi&amp;quot;      
+
+##  [46] &amp;quot;dragos0897&amp;quot;      &amp;quot;dtworker&amp;quot;        &amp;quot;fitinfun&amp;quot;       
+
+##  [49] &amp;quot;frankbuse&amp;quot;       &amp;quot;gamemusic&amp;quot;       &amp;quot;gatmi&amp;quot;          
+
+##  [52] &amp;quot;goaln&amp;quot;           &amp;quot;gowldie&amp;quot;         &amp;quot;gribtertong&amp;quot;    
+
+##  [55] &amp;quot;grildrig&amp;quot;        &amp;quot;hamzaoui&amp;quot;        &amp;quot;harttwohartllc&amp;quot; 
+
+##  [58] &amp;quot;hebro&amp;quot;           &amp;quot;hilarski&amp;quot;        &amp;quot;hofffman&amp;quot;       
+
+##  [61] &amp;quot;hongmeng&amp;quot;        &amp;quot;hoof&amp;quot;            &amp;quot;hqfzone&amp;quot;        
+
+##  [64] &amp;quot;imagediet&amp;quot;       &amp;quot;imako&amp;quot;           &amp;quot;initnas&amp;quot;        
+
+##  [67] &amp;quot;investlimestone&amp;quot; &amp;quot;iqbalbireuen&amp;quot;    &amp;quot;irphotography&amp;quot;  
+
+##  [70] &amp;quot;ishaq&amp;quot;           &amp;quot;istox&amp;quot;           &amp;quot;iszarl&amp;quot;         
+
+##  [73] &amp;quot;itan05&amp;quot;          &amp;quot;itissimple&amp;quot;      &amp;quot;jackmiller&amp;quot;     
+
+##  [76] &amp;quot;jamal83&amp;quot;         &amp;quot;jason-donovan&amp;quot;   &amp;quot;jhonnight&amp;quot;      
+
+##  [79] &amp;quot;jones420&amp;quot;        &amp;quot;joseburgos&amp;quot;      &amp;quot;jukas&amp;quot;          
+
+##  [82] &amp;quot;junyi&amp;quot;           &amp;quot;justyy&amp;quot;          &amp;quot;kabindra&amp;quot;       
+
+##  [85] &amp;quot;katythompson&amp;quot;    &amp;quot;khairulmuammar&amp;quot;  &amp;quot;kishore1988&amp;quot;    
+
+##  [88] &amp;quot;krasotka&amp;quot;        &amp;quot;kristjannacaj&amp;quot;   &amp;quot;landeberg&amp;quot;      
+
+##  [91] &amp;quot;lautenglye&amp;quot;      &amp;quot;ledygaga25&amp;quot;      &amp;quot;lemooljiang&amp;quot;    
+
+##  [94] &amp;quot;liangfengyouren&amp;quot; &amp;quot;lifeofkly&amp;quot;       &amp;quot;lifishake&amp;quot;      
+
+##  [97] &amp;quot;lilywang&amp;quot;        &amp;quot;liufeng&amp;quot;         &amp;quot;luckerme&amp;quot;       
+
+## [100] &amp;quot;lykencrypto&amp;quot;     &amp;quot;lynx&amp;quot;            &amp;quot;marianpancu&amp;quot;    
+
+## [103] &amp;quot;mehdioraki3973&amp;quot;  &amp;quot;minknsa&amp;quot;         &amp;quot;mkotibabu&amp;quot;      
+
+## [106] &amp;quot;monalishabiswas&amp;quot; &amp;quot;mydarlings2&amp;quot;     &amp;quot;myfirst&amp;quot;        
+
+## [109] &amp;quot;mytamilabiz&amp;quot;     &amp;quot;natashahall&amp;quot;     &amp;quot;nationalpark&amp;quot;   
+
+## [112] &amp;quot;nawar93&amp;quot;         &amp;quot;newsagg&amp;quot;         &amp;quot;notregme&amp;quot;       
+
+## [115] &amp;quot;oflyhigh&amp;quot;        &amp;quot;ohammedfelahi&amp;quot;   &amp;quot;patricksanlin&amp;quot;  
+
+## [118] &amp;quot;phyohtetpaing&amp;quot;   &amp;quot;powerfj&amp;quot;         &amp;quot;qipashuo&amp;quot;       
+
+## [121] &amp;quot;redje&amp;quot;           &amp;quot;renua&amp;quot;           &amp;quot;revolusi&amp;quot;       
+
+## [124] &amp;quot;riansteem&amp;quot;       &amp;quot;rifattb&amp;quot;         &amp;quot;robi8888&amp;quot;       
+
+## [127] &amp;quot;rodneyaspiras&amp;quot;   &amp;quot;rogerwilson&amp;quot;     &amp;quot;sbamsoneu&amp;quot;      
+
+## [130] &amp;quot;secora&amp;quot;          &amp;quot;securetalk&amp;quot;      &amp;quot;sequentialvibe&amp;quot; 
+
+## [133] &amp;quot;shaheer001&amp;quot;      &amp;quot;shankhunsam&amp;quot;     &amp;quot;shengjian&amp;quot;      
+
+## [136] &amp;quot;sheval&amp;quot;          &amp;quot;showoff&amp;quot;         &amp;quot;skynyc&amp;quot;         
+
+## [139] &amp;quot;somebody&amp;quot;        &amp;quot;stackin&amp;quot;         &amp;quot;steem.engine&amp;quot;   
+
+## [142] &amp;quot;steemitguide&amp;quot;    &amp;quot;sthitaprajna&amp;quot;    &amp;quot;suitup&amp;quot;         
+
+## [145] &amp;quot;sunnyjolly&amp;quot;      &amp;quot;superhardness&amp;quot;   &amp;quot;swssmarketing&amp;quot;  
+
+## [148] &amp;quot;tastetwist&amp;quot;      &amp;quot;themessengers&amp;quot;   &amp;quot;toninux&amp;quot;        
+
+## [151] &amp;quot;trevis&amp;quot;          &amp;quot;vax-rambo&amp;quot;       &amp;quot;vishal1088&amp;quot;     
+
+## [154] &amp;quot;walkman90&amp;quot;       &amp;quot;warrkin&amp;quot;         &amp;quot;whydowork&amp;quot;      
+
+## [157] &amp;quot;worldwidetravel&amp;quot; &amp;quot;xiaohui&amp;quot;         &amp;quot;xiaokongcom&amp;quot;    
+
+## [160] &amp;quot;xjb&amp;quot;             &amp;quot;yellowkersie&amp;quot;    &amp;quot;ygern&amp;quot;          
+
+## [163] &amp;quot;yuxi&amp;quot;            &amp;quot;zerozero777&amp;quot;     &amp;quot;zhijun&amp;quot;         
+
+## [166] &amp;quot;zhuqiankun&amp;quot;      &amp;quot;zwal&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is weird that  @abit and @justyy are in   @tumutanzi Steemit&amp;rsquo;s following list, but not in the list of  &lt;a href=&#34;https://steemdb.com/@tumutanzi/following&#34;&gt;steemdb&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I would suggest @tumutanzi should follow them before they read this post. Hurry!&lt;/p&gt;
+
+&lt;p&gt;If you would like to have a similar report about your ID&amp;rsquo;s followers and following, please  visit the online tool &lt;a href=&#34;https://pzhao.shinyapps.io/steemr/&#34;&gt;steemr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;To be continued&amp;hellip;&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bilingually Writing on Steemit? 创造一种双语写作的新文体</title>
+      <link>https://steemit.netlify.com/post/bilingually-writing-on-steemit/</link>
+      <pubDate>Wed, 26 Jul 2017 09:21:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/bilingually-writing-on-steemit/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/bilingually-writing-on-steemit&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/bilingually-writing-on-steemit&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/bilingually-writing-on-steemit&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/bilingually-writing-on-steemit&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/bilingually-writing-on-steemit.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In @tumutanzi&amp;rsquo;s new post &lt;a href=&#34;https://steemit.com/cn/@tumutanzi/q9syu-steemit&#34;&gt;Use your native language to write on Steemit&lt;/a&gt;,&lt;/p&gt;
+
+&lt;p&gt;@justyy commented that 800 words is more than enough to clear this easy problem. I know what the former meant, and I agree with the latter.  Let&amp;rsquo;s re-write this post within 20 Words:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Bilingually Writing on Steemit? If you can, do it. If not, don&amp;rsquo;t.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I cannot, but I will.&lt;/p&gt;
+
+&lt;p&gt;When I began my Steemit, I saw many posts were written bilingually.  @jessicameng writes even  trilingually. I thought it might be a hidden rule on Steemit. Therefore I started writing in Chinese with an English translation. My English is not good, but I have been making progress in improving it. In the meanwhile, I found that bilingually writing is rather a hobby than a rule on Steemit. I am happy that I was mislead.&lt;/p&gt;
+
+&lt;p&gt;After reading some bilingual posts, I decided to read only those paragraphs written in Chinese in them. Although this post was written bilingually, I would suggest that you had better read the texts in Chinese if you can, which is much better than those in English. English is not my mother tongue, and my English is not good. However, it is better than machine&amp;rsquo;s translation. I would be glad to exchange my thoughts with international friends on the topics of common interest.&lt;/p&gt;
+
+&lt;p&gt;I wish there were data showing the improvements which bilingual writing could make. Does it really attract more attention or even less? If more, is it worth it? Furthermore, we might even develop a new writing style in bilingual writing. If you read the paragraphs in Chinese, it is story A; if those in English, it is story B, although with the same pictures. It is worth a shot, isn&amp;rsquo;t it?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bebrainfit.com/wp-content/uploads/2016/05/globe-hands.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;@tumutanzi 新发了??篇帖子：&lt;a href=&#34;https://steemit.com/cn/@tumutanzi/q9syu-steemit&#34;&gt; Steemit中文用户有必要写中英文双语文章吗？&lt;/a&gt;。 @justyy 评论说“这么浅显的道理你竟然碎碎练了一篇800字作文”。我明白前者的良苦用心，对后者的评论也很赞同。不如我们来做一道小学生作文题吧：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;小学生作文题：请把这篇800字的帖子缩写到20字以内。&lt;/p&gt;
+
+&lt;p&gt;我的解答：&lt;/p&gt;
+
+&lt;p&gt;在 Steemit 双语写作？能写好就写，写不好别写。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;然而，我觉得我就写不好，但是我还是要写。&lt;/p&gt;
+
+&lt;p&gt;我刚来 Steemit 的时候，看到 cn 区很多帖子都是双语写的， @jessicameng 甚至用三种语言来写，我误以为这是 Steemit 约定俗成的惯例呢。所以我自己的帖子尽量附上英文。写了几篇之后，我发现这样确实挺练习英文写作的。同时发现，原来这并不是惯例，只是个人爱好……感觉自己受骗了，但是被骗得很高兴。&lt;/p&gt;
+
+&lt;p&gt;阅读了 cn 区的一些双语帖之后，我就转为只挑中文段落读了。从学习角度来说，中国人的英文毕竟不如母语英文的人写得好。所以，本文虽然是双语写的，但尽量别读我的英文，不地道。关注我的人里有一位 @acrich，中英写作，说自己是加拿大人，中文说得很好，我说他是第二个大山，并且觉得从他这样的人写的双语帖子里应该会发现一些有趣有益的东西。从交流角度，中文之外有英文，当然对跨文化交流大大有利，不仅方便不懂中文的朋友了解帖子内容，而且可以让学中文的老外用作学习素材。&lt;/p&gt;
+
+&lt;p&gt;如果有统计数字就好了，比如比较一下双语写作与单语写作，收益是提高了还是降低了，提高的话高出多少，高出这部分值不值当。&lt;/p&gt;
+
+&lt;p&gt;如果玩得好，我希望能从 cn 区的双语写作里发展出一种新文体，那就是虽然配图相同，但中文是一个故事，而英文讲的是另一个，并且完美融合。&lt;/p&gt;
+
+&lt;p&gt;要不来试试？&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wechat on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/wechat/index.xml</link>
+    <description>Recent content in Wechat on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/wechat/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>豪华版 Steemit CN 微信群名单</title>
+      <link>https://steemit.netlify.com/post/steemit-cn/</link>
+      <pubDate>Sat, 02 Sep 2017 14:15:54 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steemit-cn/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-cn&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemit-cn&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steemit-cn&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steemit-cn&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemit-cn.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;前两天， &lt;a href=&#34;https://steemit.com/@bullda&#34;&gt;@bullda&lt;/a&gt; 做了个&lt;a href=&#34;https://steemit.com/cn/@bullda/steemit&#34;&gt;&amp;ldquo;Steemit好友微信群&amp;rdquo;排行榜&lt;/a&gt;，我俩&lt;a href=&#34;https://steemit.com/cn/@bullda/steemit#@bullda/re-tumutanzi-re-bullda-re-xiaozuo-re-bullda-steemit-20170831t095541324z&#34;&gt;商量了一下&lt;/a&gt;，打算过两天做个动态在线表格。还没等动手， @justyy 已经&lt;a href=&#34;https://steemit.com/cn/@justyy/steemit-daily-wechat-group-ranking-steemit&#34;&gt;做出来了&lt;/a&gt;，真是心有灵犀。做得非常好，而且业界良心地提供了 超级好用的API。可惜的是，跟我设想的样子不大相同。&lt;/p&gt;
+
+&lt;p&gt;今天，我把设想的样子做出来了，称为“豪华版微信群名单”。豪华在哪里？&lt;/p&gt;
+
+&lt;p&gt;1、可以输入一个 ID，给出该 ID 的声誉、权力等各项指标排位座次，以及邻座坐的是谁。看看谁坐在我旁边：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUJSE478ZdswdSMv4zzFvSpyN4bWnLSHZmS2yjr1vQigw/steemr.jpg&#34; alt=&#34;steemr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2、可以给定一个名次范围，画出该范围内的名单词云图，谁越排在前面，谁的名字就越大。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNfdRYpyH4Fv2yVjTQnpRrLuZXCJ5ZddH1217aX4uoTBF/steemr2.jpg&#34; alt=&#34;steemr2.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3、除了同样给出了全部名单列表，并且点击每列标题就可以顺序逆序外，还可以过滤。来，我们搜索一下声望值超过 70、注册时间为 410多 天的名单：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmVR7HyaaAi16eJ32YbKTnzqRqHJKA7UZwZkspxvJ8Bp7Z/steemr3.jpg&#34; alt=&#34;steemr3.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;豪华是有代价的：页面载入有点慢，需要个几秒钟，就看你有没有耐心。追求速度的话还是移步访问本文开头介绍那二位的网页吧。&lt;/p&gt;
+
+&lt;p&gt;这个排名座次有没有让你联想到什么？我联想到了很多，于是给这个名单取名为：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Steem 中国聚义厅&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;这个在线名单，作为一个组建，纳入??我开发的 steemr 小工具。steemr已经被收入 &lt;a href=&#34;http://steemtools.com/&#34;&gt;steemtools.com&lt;/a&gt;的列表里，直接访问地址是:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://steemr.org&#34;&gt;http://steemr.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;steemr 是我刚来 steemit时开始开发的（&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;简介&lt;/a&gt;），后来有朋友反馈了一些问题，这次顺手解决了，包括：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Follower Report 里查询的 ID 粉丝太多时出现的问题，例如查询 @tumutanzi ，原来总是重载，后来发现是原始数据某个粉丝的数据格式问题没有得到兼容，现在已解决。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Follower Report 新增韦恩图。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;原来的“哪个粉丝没有赞某篇帖子”功能意义不大，删掉。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;欢迎大家测（调）试（戏）和反（点）馈（赞）。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

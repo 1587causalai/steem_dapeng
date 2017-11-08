@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Steemit on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/categories/steemit/index.xml</link>
+    <description>Recent content in Steemit on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/categories/steemit/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>If You Dislike the STEEMIT-GREEN - 若是讨厌那片绿</title>
+      <link>https://steemit.netlify.com/post/if-you-dislike-the-steemit-green-or/</link>
+      <pubDate>Sat, 04 Nov 2017 20:51:57 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/if-you-dislike-the-steemit-green-or/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/if-you-dislike-the-steemit-green-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I really like the new interface of steemit, especially the green color for the fonts. So please don&amp;rsquo;t flag this post if you dislike it or not.&lt;/p&gt;
+
+&lt;p&gt;If you really dislike the STEEMI-GREEN, however, you could simply switch it off. All the popular web browsers have such a option or plug-in or add-on. As an example, this post will tell you how to do it on Firefox.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNeeWjZZZFNP22TeDTF2dAUsU1cYDrcLActkJXVbe8APy/green.jpg&#34; alt=&#34;green.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;1-plug-in-free&#34;&gt;1 Plug-in free&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Click the triple-bar button on the top-right, and click&amp;rsquo;Options&amp;rsquo;. Or simply press alt &amp;mdash; t &amp;mdash; o.&lt;/li&gt;
+&lt;li&gt;Click &amp;lsquo;Content&amp;rsquo; on the left bar, then click the &amp;lsquo;Colors&amp;rsquo;  button on the left.&lt;/li&gt;
+&lt;li&gt;Change the link colors. Below the &amp;lsquo;Override &amp;hellip;&amp;rsquo; text, choose &amp;lsquo;Always&amp;rsquo;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Done.&lt;/p&gt;
+
+&lt;p&gt;The new color style works not only for steemit, but also for all sites. You might feel bored when you are browsing other sites and you have to repeat Step 1 &amp;mdash; 3 to switch off your customized colors. Is there a single-click solution?&lt;/p&gt;
+
+&lt;p&gt;Yes, there is, only if you&amp;rsquo;d like to install an add-on.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-no-color-add-on&#34;&gt;2 &amp;lsquo;No Color&amp;rsquo; Add-on&lt;/h3&gt;
+
+&lt;p&gt;Click the triple-bar button on the top-right, and find &amp;lsquo;Add-ons&amp;rsquo;. Search &amp;lsquo;No Color&amp;rsquo; add-on.&lt;/p&gt;
+
+&lt;p&gt;After installing it, you will see one more button on the toolbar. A single-click can switch the font colors between the site colors and your customized ones.&lt;/p&gt;
+
+&lt;p&gt;Is this the best solution?&lt;/p&gt;
+
+&lt;p&gt;No. There is a better one.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-nosquint-plus-add-on&#34;&gt;3 &amp;lsquo;NoSquint Plus&amp;rsquo; Add-on&lt;/h3&gt;
+
+&lt;p&gt;After installing &amp;lsquo;NoSquint Plus&amp;rsquo; add-on, you will see one more button on the toolbar. Click it, and you can set the colors. There is an option of &amp;lsquo;Global settings&amp;rsquo; for all sites. If you only want to change the colors on steemit, cross the &amp;lsquo;exclude site&amp;rsquo; option.&lt;/p&gt;
+
+&lt;p&gt;However, all the tricks above mean nothing to me, because I love the STEEMIT-GREEN! Really really.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbLZnSapRKENMWPcbnmDoQXQkevM8Ejs9nnoqzdMkYXDA/blue.jpg&#34; alt=&#34;blue.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;你喜欢 steemit 的新界面吗？尤其是那一片绿……&lt;/p&gt;
+
+&lt;p&gt;如果不喜欢，本文告诉你如何方便快捷地更改。目前的主流浏览器都支持更改网页的默认颜色。本文就以 Firefox 为例，给出三种方法，任你选。&lt;/p&gt;
+
+&lt;p&gt;方法 1：点击 firefox 右上角三条小横线按钮，点击“选项” &amp;mdash; “内容” &amp;mdash;  “颜色” &amp;mdash;“覆盖”下面选永远。&lt;/p&gt;
+
+&lt;p&gt;这种方法的好处是啥都不用额外安装。坏处是所有网站都变成了你指定的颜色，想切换回去的话又得点一遍。有没有办法一键切换？&lt;/p&gt;
+
+&lt;p&gt;方法 2：在“选项”里点“插件”，搜索 “No Color”插件。安装完毕后，工具栏多出个按钮。点它，就可以一键在你定义的颜色跟网站原来的颜色之间切换了。&lt;/p&gt;
+
+&lt;p&gt;虽然切换方便，但是有没有办法不切换，自动把且仅把 steemit 颜色改了？&lt;/p&gt;
+
+&lt;p&gt;方法3：安装 &amp;lsquo;NoSquint Plus&amp;rsquo; 插件，工具栏又多个按钮。点它，设置颜色。“全局选项”可以选择对所有网站都改颜色。如果只对 steemit 改，那么把&amp;rsquo;排除‘&amp;rsquo;勾上就行了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Can the Gossip Tell us Why Ned Undelegated SP? The answer is no</title>
+      <link>https://steemit.netlify.com/post/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no/</link>
+      <pubDate>Fri, 27 Oct 2017 15:44:27 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Data can prove something, as well as data can cheat some people. Gossip is fun, but one has to be seriously careful if one&amp;rsquo;s gossip can ruin others&amp;rsquo; reputation.&lt;/p&gt;
+
+&lt;p&gt;In one of @paulag&amp;rsquo;s latest posts some data were displayed. Frankly speaking, I read some of @paulag&amp;rsquo;s data analysis reports, which were impressive and useful. However, the post &lt;a href=&#34;https://cnsteem.com/steemit/@paulag/can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence#@dapeng/re-paulag-can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence-20171027t093322442z&#34;&gt;Can the Data Tell us Why Ned Undelegated so much Steem Power?&lt;/a&gt; was rather disappointing. The hints or conclusions of this post were unreliable to my comment sense. As the author said that &amp;lsquo;the data is correct&amp;rsquo;, I decided to see if it is true.&lt;/p&gt;
+
+&lt;p&gt;The data displayed in this post were taken from Steemsql held by @arcange.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-data-in-paulag-s-post-was-incorrect&#34;&gt;The Data in @paulag&amp;rsquo;s Post Was Incorrect&lt;/h3&gt;
+
+&lt;p&gt;It is easy to find that the first table in @paulag&amp;rsquo;s post disagrees with the chart. The maximum of @surpassinggoolge&amp;rsquo;s votes (grey area) was 700 votes per day in the chart, while the average was 1327.4  votes per day. &lt;strong&gt;Apparently wrong. The average cannot be greater than the maximum.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmYu6ghDtHpKWnDWZ5BboaiPeFpN3zvPvPvLfCXC6URrNR/1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image taken from @paulag&amp;rsquo;s Post.&lt;/p&gt;
+
+&lt;p&gt;So, what is the truth?&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s firstly see the time when @ned delegated and undelaged the SP.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;delegator&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;delegatee&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;vesting_shares&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;timestamp&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;htliao&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:15:00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;nicolemoker&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:15:18&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;linuslee0216&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:15:45&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;tumutanzi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:16:54&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;sweetsssj&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:20:45&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;surpassinggoogle&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:25:18&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ramengirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1029059275&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-08 15:28:24&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;sweetsssj&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 11:54:27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ramengirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 11:57:30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;nicolemoker&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 11:58:57&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;tumutanzi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 12:02:51&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;htliao&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 12:03:09&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ned&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;linuslee0216&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-10-24 12:03:21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;If we ignore the fist day and the last day, each delegation lasted 76 days.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+SELECT * FROM TxVotes WHERE voter IN (&#39;htliao&#39;,  &#39;linuslee0216&#39;, &#39;nicolemoker&#39;, &#39;surpassinggoogle&#39;, &#39;sweetsssj&#39;, &#39;tumutanzi&#39;,  &#39;ramengirl&#39;) AND timestamp BETWEEN &#39;2017/08/09&#39; and &#39;2017/10/24
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In  @paulag&amp;rsquo;s post, nicolemoker voted 3114 times in total. 3114 / 76. How could the average votes per day be 207.6?&lt;/p&gt;
+
+&lt;p&gt;I examined the data and got a new table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Voter&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;No of Votes&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Average votes per day&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;nicolemoker&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3093&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;40.69737&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ramengirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3971&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;52.25000&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;surpassinggoogle&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19901&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;261.85526&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;linuslee0216&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5555&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;73.09211&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;htliao&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9759&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;128.40789&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;tumutanzi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7680&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;101.05263&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;sweetsssj&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9626&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;126.65789&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The daily averages are around &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;5&lt;/sub&gt; of @paulag&amp;rsquo;s calculations.&lt;/p&gt;
+
+&lt;p&gt;The numbers of votes are slightly different from @paulag&amp;rsquo;s, perhaps because  @paulag&amp;rsquo;s post took a different period of delegation, which was not mentioned in @paulag&amp;rsquo;s post. This slight difference could be simply ignored.&lt;/p&gt;
+
+&lt;p&gt;Based on @paulag&amp;rsquo;s &lt;strong&gt;incorrect calculation&lt;/strong&gt;, all the subsequent numbers and conclusions were wrong, including the &amp;lsquo;$457K&amp;rsquo;, &amp;lsquo;Voting over 1300 times a day, this does not surprise me&amp;rsquo;,&amp;lsquo;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;What still makes sense is the pie chart, some ratios and percentages, and the cluster diagram. &lt;strong&gt;However, I would double check them, as the post was carelessly written in  the first place.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;facts-or-opinions&#34;&gt;Facts or Opinions?&lt;/h3&gt;
+
+&lt;p&gt;It seems that @paulag&amp;rsquo;s post was intended to give  some facts or data, but actually it was giving only some opinions based on wrong data and groundless assumptions.&lt;/p&gt;
+
+&lt;p&gt;In the section &amp;lsquo;Transfer data&amp;rsquo;, @paulag&amp;rsquo;s post gave three conclusions:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1 Reading the top memo on the table below, it very quickly because clear that @htliao was selling votes.&lt;/p&gt;
+
+&lt;p&gt;2 The data clearly shows @sweetsssj was also selling votes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I doubt what &amp;lsquo;selling&amp;rsquo; means here. In my mind, if A sells somehing to B, it means that B pays A money and takes something away from A. But in @paulag&amp;rsquo;s data, you can only see B paid A money. What did B take away from A? If nothing, was A selling? If I transfer some SBD to @paulag, can I immediately say that  @paulag is selling votes to me?&lt;/p&gt;
+
+&lt;p&gt;I am sure that &lt;strong&gt;the logic of @paulag&amp;rsquo; post was broken&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;3 Within the memo for @htliao were also suggestions that @htliao may be leasing out some power.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This conclusion was based on the transfer and delegation history between @htliao and @justyy. Many people have explained that justyy was just collecting some SP so as to support minnows. As a feedback and acknowledgement, justyy paid some so-called &amp;lsquo;interests&amp;rsquo; to the delegators. I delegated some. Besides @htliao and me, there have been some other delegators too, receiving interests from justyy everyday. It was not surprising that @paulag&amp;rsquo;s post did not mention this, because &lt;strong&gt;the author knew nothing about the minnow support program.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;As @paulag&amp;rsquo;s post gave incorrect data, broken logic, and knew nothing about some facts, I think the post makes no sense to its title. Furthermore, it is badly misleading many readers, and ruining the reputations  of the innocents.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lsquo;I also decided to have a dig through the memos,&amp;rsquo; said @paulag&amp;rsquo;s post. I am looking forward to a further report, hopefully with no mistakes. This post of mine is only mentioning the mistakes in @paulag&amp;rsquo;s post itself rather than my opinion to the author in person. I really like @paulag&amp;rsquo;s previous reports, especially the nice charts in them. I wish @paulag could share the excel sheets so as to make the data analysis reproducible, repeatable, and reliable.&lt;/p&gt;
+
+&lt;h3 id=&#34;voting-with-bots&#34;&gt;Voting with bots?&lt;/h3&gt;
+
+&lt;p&gt;The wrong data in @paulag&amp;rsquo;s post, especially the daily average votes, e.g. voting over 1300 times a day, mislead some people. They thought that these lucky guys  voted with bots.  Is voting with bots forbidden or a shame? I do not know. But let&amp;rsquo;s see if they did it.&lt;/p&gt;
+
+&lt;p&gt;The figures below showed some 24-hour clocks, indicating the hours when they voted. The diameters of each sector showed the percentage of the quantity of their total votes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUCXwNUtJz8GATLHEW4gyusoK4sQ2p8Tge6KzfDhhi6ui/unnamed-chunk-69-1.png&#34; alt=&#34;unnamed-chunk-69-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There were nearly no vote in some hours of htliao, linuslee0216, nicolemoker, ramengirl and tumutanzi&amp;rsquo;s clocks (humans have to sleep), while surpassinggoogle&amp;rsquo;s votes covered all 24 hours. If this is the reason why @ned is still delegating SP surpassinggoogle, then why did @ned undelegate from sweetsssj, whose voting hours showed  a similar pattern?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Can the Data Tell us Why Ned Undelegated so much Steem Power? Apparently the answer is &amp;lsquo;no&amp;rsquo;. Data only show the facts (if the data is correct ), rather than the cause or intention. Only @ned himself can tell us the answer.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;before-and-after-ned-s-delegation&#34;&gt;Before and after @ned&amp;rsquo;s Delegation&lt;/h3&gt;
+
+&lt;p&gt;What happend after @ned&amp;rsquo;s delegation? See the comments (posts + replies) under cn category in the figure below. The vertical line indicates the date when @ned delegated SP.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmamLMPh6nqbnyppRMqsCVcgXBPEpq43id8UwnW7DmYUYm/unnamed-chunk-70-1.png&#34; alt=&#34;unnamed-chunk-70-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before ned&amp;rsquo;s delegation, there were averagely 579 comments per day under cn category. After ned&amp;rsquo;s delegation, there were averagely 1600 comments per day under cn category.&lt;/p&gt;
+
+&lt;p&gt;We will see what will happen after ned&amp;rsquo;s undelegation. If ned&amp;rsquo;s delegation was an experiment, I think his undelegation was the beginning of another.&lt;/p&gt;
+
+&lt;p&gt;PS. If you find any mistakes in my post, please let me know and you are highly appreciated.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;本文是对污蔑几位临时大鲸的帖子 &lt;a href=&#34;https://cnsteem.com/steemit/@paulag/can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence#@dapeng/re-paulag-can-the-data-tell-us-why-ned-undelegated-so-much-steem-power-steemit-business-intelligence-20171027t093322442z&#34;&gt;Can the Data Tell us Why Ned Undelegated so much Steem Power?&lt;/a&gt; 的反驳。中文翻译过来就是：污蔑帖子用的数据是错的，计算是错的，逻辑是错的，而且不了解一些基本事实，所以纯属胡说八道。谢谢。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The very first thing a new Steemian has  to do - Steem 新手必须做的第一件事</title>
+      <link>https://steemit.netlify.com/post/the-very-first-thing-to-do-for-new-steemians-or-steem/</link>
+      <pubDate>Mon, 23 Oct 2017 10:07:57 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/the-very-first-thing-to-do-for-new-steemians-or-steem/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/the-very-first-thing-to-do-for-new-steemians-or-steem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the very first thing that a new steemian has to do? Posting your first comment happily? Reading the top-paid posts to learn how to earn money excitedly? Uploading your photo and setting your profile eagerly? &lt;strong&gt;No&lt;/strong&gt;! The very first thing is: write down your master/owner key on a piece of paper, and keep the paper in a safe. Maybe &lt;strong&gt;in a worn-out shoe under your bed&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are not sure of your hand copying, just grab your camera, take a picture of your master/owner key, and print it out. Do not forget to delete the digital picture immediately.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2014/12/25/10/55/digital-579553_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image credit: pixabay.com&lt;/p&gt;
+
+&lt;p&gt;Days ago an ID with the reputation 67 was fished by @cheetoh, who looks like @cheetah the famous bot. The master key was lost and 4000 SP+SBD was gone. I keep my fingers crossed for her, although I know that it is difficult, or even impossible, to recover the key and have the money back.&lt;/p&gt;
+
+&lt;p&gt;New steemians get a long string when they have just signed up. This string is officially called &amp;lsquo;master/owner key&amp;rsquo;. New steemians think it is a &lt;em&gt;password&lt;/em&gt;, the same as the thing they get when signing up other websites. Normally a user is able to recover the &lt;em&gt;password&lt;/em&gt;  via an email or phone number.  Therefore they log in for the first time, read some posts, close steemit, and leave steem all behind. Days later, steem comes to their mind again, and they want to log in. Well, nobody can remember the long string. OK, recover it&amp;hellip;&amp;hellip;what? It CANNOT be recovered??!!&lt;/p&gt;
+
+&lt;p&gt;I guess it must be one of the reasons why so many accounts on Steem are dead.&lt;/p&gt;
+
+&lt;p&gt;New steemians are not sufficiently told of the importance of their passwords. A user once posted his master key publicly in a chat group of the Chinese community by mistaken copy-and-paste. Another user sent a screenshot of his wallet-permission page to me and asked what those four long strings meant. Nobody was fishing them. They just did not know what they were doing.&lt;/p&gt;
+
+&lt;p&gt;If you lose your ID card in reality, you go to the center of ID cards, i.e. the Police Station. If you lose your credit card, you call your credit card service center. If you lose your Steem password, sorry, there is no Steem center. Steem is a blockchain, &lt;strong&gt;&lt;em&gt;decentralized&lt;/em&gt;&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;A user&amp;rsquo;s &lt;em&gt;password&lt;/em&gt; on Steem is not only a &lt;em&gt;password&lt;/em&gt;. It is a combination like:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Your Steem password = your login password + your ID card + your credit card + your smartphone + your signature&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Anyone can use your password to log in, to transfer money, to comment others, and fish your friends. What would you call it? &amp;lsquo;Master/owner key&amp;rsquo; is not enough. I would call this long string &lt;strong&gt;&amp;lsquo;Steem ID&amp;rsquo;s Life&amp;rsquo;. If stolen, dead&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I would warn every new Steemian: &lt;strong&gt;NEVER, EVER use your master/owner key&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;ALWAYS login with your &lt;strong&gt;posting key&lt;/strong&gt;. It is sufficient for everyday use.&lt;/p&gt;
+
+&lt;p&gt;If you are doing something related to your money, then use the &lt;strong&gt;active key&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;When do you have to use your master/owner key? Only when you want to recover something. Take it as the &amp;lsquo;restore to factory settings&amp;rsquo; option of  your smartphone.&lt;/strong&gt;   You never use it, do you?&lt;/p&gt;
+
+&lt;p&gt;That is why you had better print it out on a piece of paper and save it in an worn-out shoe under your bed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/0x0/http://i.imgur.com/F0aJyNM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image credit: steemit.com&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;作为 Steem 新手，必须做的最要紧的事情是什么？是兴奋地发第一帖宣告自己的降生吗？是看看收益最高的帖子来学习如何在 steem 赚钱吗？还是上传自己帅帅的头像？全不是！第一件事，至关重要的任务，是立刻抓起你的相机，对着显示器上的 steem 密码拍个照片，打印到纸上，删掉数码照片，然后把这张纸塞到一只鞋???里，藏在床底下。&lt;/p&gt;
+
+&lt;p&gt;几天前，有个声望达到 67 的账号被  @cheetoh 用钓鱼手段骗过了眼睛。这个盗贼看上去很像著名的机器人 @cheetah。价值数万人民币的 SP+SBD 和无法估量的其他损失，就这么进了别人钱包，让人痛心。找回密码和账号很困难，几乎是不可能的。&lt;/p&gt;
+
+&lt;p&gt;steem 新手注册成功后，会得到一个很长的字符串。官方称其为“万能钥匙” (master/owner key)。这很容易让新手误以为是个登录密码。别的网站不都是如此吗？忘就忘了，不都是能用邮箱或手机恢复吗？于是，他们首次登录，愉快地发布第一帖，读了一些别人的文章，然后关掉了网页，把一切都抛诸脑后。几天之后，他们突然想起了 steem，想登录看看自己是不是赚了点钱。可是那么长的密码，谁记得住呢？恢复一下吧……我靠，居然不能恢复？？！！&lt;/p&gt;
+
+&lt;p&gt;Steem 上很多死账号，我怀疑这就是原因之一。&lt;/p&gt;
+
+&lt;p&gt;我觉得，新手并未被充分告知密码的重要性。在中文微信群里，曾有个用户不小心把密码复制粘贴出来，每个人都看见了。还有个用户，把他的钱包-权限页的四个密码截了屏，一起发给我，问我这些是什么意思。没人钓鱼欺骗他们，他们只是不知道他们自己在做什么。&lt;/p&gt;
+
+&lt;p&gt;现实生活里，如果丢了身份证，可以去身份证中心——派出所或警察局补办。如果丢了信用卡，可以去信用卡中心——拨打服务热线挂失。Steem 的世界里，如果丢了密码，对不起，没有哪个中心可以去，因为 Steem 用的是区块链，去中心化！&lt;/p&gt;
+
+&lt;p&gt;实际上， steem 用户的主密码不只是个密码，而是个多合一的混合体，相当于：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Steem 主密码 = 登陆密码 + 身份证 + 银行卡 + 手机 + 签名&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;只要有了你的主密码，任何人都可以在 steem 上登录你的账号，转账，发帖，给别人留言，钓鱼欺骗你的朋友。这玩意儿到底应该叫什么？”万能钥匙/主密码“ (Master/owner key) 这个称呼远远不够。我觉得应该管它叫”Steem 账号的命根子“。一旦丢失，就是死路一条。&lt;/p&gt;
+
+&lt;p&gt;在这里，我想再次警告新手们：永远不要使用你的主密码！&lt;/p&gt;
+
+&lt;p&gt;钱包（Wallet）-权限（Permissions）页面有四个密码。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;登录的时候，用发帖密码（posting key），足够平时使用。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;只有在跟钱打交道时，才使用活跃密码（Active key）。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;那么主密码是干什么用的？只有重置账号时才用。你可以当作是手机上的”恢复出厂设置“。这个功能你从来没用过，是不是？&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;所以，最好把主密码打印出来，塞到鞋子里，藏到床底下。&lt;/p&gt;
+
+&lt;p&gt;就像科幻小说《三体III》里所讲，如何保存资料最安全? 刻在石头上！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Steemians, have you ever thought about your data privacy?</title>
+      <link>https://steemit.netlify.com/post/new-steemians-have-you-have-thought-about-your-data-privacy/</link>
+      <pubDate>Wed, 26 Jul 2017 20:56:21 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/new-steemians-have-you-have-thought-about-your-data-privacy/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/new-steemians-have-you-have-thought-about-your-data-privacy.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If  you are a new Steemian, I was wondering if you are aware of your data privacy. If not, you&amp;rsquo;d better know it in advance. Here I display @tumutanzi&amp;rsquo;s public data (&lt;a href=&#34;https://steemdb.com/&#34;&gt;https://steemdb.com/&lt;/a&gt;,  sampled at  2017-07-26 22:06:46 CEST) in an easy way with R language. This is Part I. This is an English version of the &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit&#34;&gt;original post in Chinese&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;@tumutanzi has 319 followers. The word cloud according to the number of their followers is like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmY4qfoEu9XZzpYjg6aR52bVMpPvcfMXej56AKvmu46j1E/unnamed-chunk-2-1.png&#34; alt=&#34;unnamed-chunk-2-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A larger ID means more followers.&lt;/p&gt;
+
+&lt;p&gt;It can be plotted by the number of posts as well:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSBtokTVueC2qxCnBqxn7vU24HaiJzhCgFqSUQ257fFLG/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;or by the number of Vests:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcrddtPW9tH3HaFjAcEiMc9qFiwRt5ePe4AHGEfMxUBWc/unnamed-chunk-4-1.png&#34; alt=&#34;unnamed-chunk-4-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;@abit is scary, who has 4077000000 Vests. Let&amp;rsquo;s kick him out:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTfss2wX94T9NjpQ74u4pXVd1E1gdT7tsvTZ6VMAt8cGS/unnamed-chunk-5-1.png&#34; alt=&#34;unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s see those whom @tumutanzi is following.&lt;/p&gt;
+
+&lt;p&gt;@tumutanzi follows/followed 305 ID in total, in which 152 IDs interact with @tumutanzi bidirectionally, while 153 IDs do not follow him, including:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;ace108&amp;quot;          &amp;quot;act&amp;quot;             &amp;quot;adm&amp;quot;            
+
+##   [4] &amp;quot;adoal&amp;quot;           &amp;quot;adsactly&amp;quot;        &amp;quot;alice&amp;quot;          
+
+##   [7] &amp;quot;anwenbaumeister&amp;quot; &amp;quot;arcurus&amp;quot;         &amp;quot;arhag&amp;quot;          
+
+##  [10] &amp;quot;azazqwe&amp;quot;         &amp;quot;batel&amp;quot;           &amp;quot;ben&amp;quot;            
+
+##  [13] &amp;quot;birds90&amp;quot;         &amp;quot;bitcube&amp;quot;         &amp;quot;blocktrades&amp;quot;    
+
+##  [16] &amp;quot;blueorgy&amp;quot;        &amp;quot;bob&amp;quot;             &amp;quot;brothermic&amp;quot;     
+
+##  [19] &amp;quot;btsabc&amp;quot;          &amp;quot;bziing&amp;quot;          &amp;quot;candiceji&amp;quot;      
+
+##  [22] &amp;quot;ceciliali&amp;quot;       &amp;quot;chinadaily&amp;quot;      &amp;quot;cnfund&amp;quot;         
+
+##  [25] &amp;quot;coldhair&amp;quot;        &amp;quot;cornelia&amp;quot;        &amp;quot;cqf&amp;quot;            
+
+##  [28] &amp;quot;created&amp;quot;         &amp;quot;cybercodetwins&amp;quot;  &amp;quot;damarth&amp;quot;        
+
+##  [31] &amp;quot;dan&amp;quot;             &amp;quot;dantheman&amp;quot;       &amp;quot;databass&amp;quot;       
+
+##  [34] &amp;quot;davidyuan&amp;quot;       &amp;quot;deadlinefarmer&amp;quot;  &amp;quot;dek&amp;quot;            
+
+##  [37] &amp;quot;dixonloveart&amp;quot;    &amp;quot;dmilash&amp;quot;         &amp;quot;ekitcho&amp;quot;        
+
+##  [40] &amp;quot;elfkitchen&amp;quot;      &amp;quot;engagement&amp;quot;      &amp;quot;everittdmickey&amp;quot; 
+
+##  [43] &amp;quot;feelapi&amp;quot;         &amp;quot;flysaga&amp;quot;         &amp;quot;freedom&amp;quot;        
+
+##  [46] &amp;quot;frostfan&amp;quot;        &amp;quot;fuzzyvest&amp;quot;       &amp;quot;fyrstikken&amp;quot;     
+
+##  [49] &amp;quot;gaoduzhu&amp;quot;        &amp;quot;gavvet&amp;quot;          &amp;quot;gefa&amp;quot;           
+
+##  [52] &amp;quot;glitterfart&amp;quot;     &amp;quot;goku1&amp;quot;           &amp;quot;guyverckw&amp;quot;      
+
+##  [55] &amp;quot;haster&amp;quot;          &amp;quot;hendrikdegrote&amp;quot;  &amp;quot;hingman&amp;quot;        
+
+##  [58] &amp;quot;holabebe&amp;quot;        &amp;quot;huaji&amp;quot;           &amp;quot;icedream&amp;quot;       
+
+##  [61] &amp;quot;incrediblesnow&amp;quot;  &amp;quot;ivanba12&amp;quot;        &amp;quot;j-bex&amp;quot;          
+
+##  [64] &amp;quot;jademont&amp;quot;        &amp;quot;jaewoocho&amp;quot;       &amp;quot;jamesc&amp;quot;         
+
+##  [67] &amp;quot;jamesc1&amp;quot;         &amp;quot;jasonmcz&amp;quot;        &amp;quot;jeicko19&amp;quot;       
+
+##  [70] &amp;quot;jholdsworthy&amp;quot;    &amp;quot;jinbo&amp;quot;           &amp;quot;kawaiiiiiiii030&amp;quot;
+
+##  [73] &amp;quot;kenchung&amp;quot;        &amp;quot;kitcat&amp;quot;          &amp;quot;krischy&amp;quot;        
+
+##  [76] &amp;quot;laodr&amp;quot;           &amp;quot;laoyao&amp;quot;          &amp;quot;lcb&amp;quot;            
+
+##  [79] &amp;quot;lief&amp;quot;            &amp;quot;linuslee0216&amp;quot;    &amp;quot;logic&amp;quot;          
+
+##  [82] &amp;quot;lukestokes&amp;quot;      &amp;quot;matrix&amp;quot;          &amp;quot;miacats&amp;quot;        
+
+##  [85] &amp;quot;michael-a&amp;quot;       &amp;quot;michael-b&amp;quot;       &amp;quot;microluck&amp;quot;      
+
+##  [88] &amp;quot;minfon&amp;quot;          &amp;quot;minority-report&amp;quot; &amp;quot;monkimo&amp;quot;        
+
+##  [91] &amp;quot;morten&amp;quot;          &amp;quot;mottler&amp;quot;         &amp;quot;ned&amp;quot;            
+
+##  [94] &amp;quot;nextgen622&amp;quot;      &amp;quot;nicolemoker&amp;quot;     &amp;quot;nuagnorab&amp;quot;      
+
+##  [97] &amp;quot;orientaledu&amp;quot;     &amp;quot;papa-pepper&amp;quot;     &amp;quot;penguinpablo&amp;quot;   
+
+## [100] &amp;quot;peterpan&amp;quot;        &amp;quot;pfunk&amp;quot;           &amp;quot;pharesim&amp;quot;       
+
+## [103] &amp;quot;pilgrimtraveler&amp;quot; &amp;quot;pipertomcat&amp;quot;     &amp;quot;pistox&amp;quot;         
+
+## [106] &amp;quot;pkhope&amp;quot;          &amp;quot;project11&amp;quot;       &amp;quot;proskynneo&amp;quot;     
+
+## [109] &amp;quot;publicworker&amp;quot;    &amp;quot;puffin&amp;quot;          &amp;quot;ranchorelaxo&amp;quot;   
+
+## [112] &amp;quot;rawnetics&amp;quot;       &amp;quot;rayphu&amp;quot;          &amp;quot;rea&amp;quot;            
+
+## [115] &amp;quot;recursive&amp;quot;       &amp;quot;renohq&amp;quot;          &amp;quot;riverhead&amp;quot;      
+
+## [118] &amp;quot;roadscape&amp;quot;       &amp;quot;robrigo&amp;quot;         &amp;quot;rok-sivante&amp;quot;    
+
+## [121] &amp;quot;rook&amp;quot;            &amp;quot;safari&amp;quot;          &amp;quot;scorpion&amp;quot;       
+
+## [124] &amp;quot;sean1980&amp;quot;        &amp;quot;smooth&amp;quot;          &amp;quot;someone&amp;quot;        
+
+## [127] &amp;quot;stan&amp;quot;            &amp;quot;steem&amp;quot;           &amp;quot;steemed&amp;quot;        
+
+## [130] &amp;quot;steemit&amp;quot;         &amp;quot;steemitblog&amp;quot;     &amp;quot;stellabelle&amp;quot;    
+
+## [133] &amp;quot;str11ngfello&amp;quot;    &amp;quot;sunnyray&amp;quot;        &amp;quot;susanlo&amp;quot;        
+
+## [136] &amp;quot;tamim&amp;quot;           &amp;quot;teamsteem&amp;quot;       &amp;quot;thecryptofiend&amp;quot; 
+
+## [139] &amp;quot;thejohalfiles&amp;quot;   &amp;quot;trafalgar&amp;quot;       &amp;quot;transisto&amp;quot;      
+
+## [142] &amp;quot;val-a&amp;quot;           &amp;quot;val-b&amp;quot;           &amp;quot;wackou&amp;quot;         
+
+## [145] &amp;quot;wanbin&amp;quot;          &amp;quot;waterflier&amp;quot;      &amp;quot;webclerk&amp;quot;       
+
+## [148] &amp;quot;witness.svk&amp;quot;     &amp;quot;wjm&amp;quot;             &amp;quot;wjs2634&amp;quot;        
+
+## [151] &amp;quot;wongshiying&amp;quot;     &amp;quot;xeldal&amp;quot;          &amp;quot;zoef&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On the other hand, those who follow him but he does not follow (yet) are:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;abit&amp;quot;            &amp;quot;abusalam&amp;quot;        &amp;quot;acrich&amp;quot;         
+
+##   [4] &amp;quot;adraaz&amp;quot;          &amp;quot;alexieong&amp;quot;       &amp;quot;alfredchen&amp;quot;     
+
+##   [7] &amp;quot;aniksh&amp;quot;          &amp;quot;artsyppl&amp;quot;        &amp;quot;asskick&amp;quot;        
+
+##  [10] &amp;quot;aster&amp;quot;           &amp;quot;atc&amp;quot;             &amp;quot;atrix&amp;quot;          
+
+##  [13] &amp;quot;avilsd&amp;quot;          &amp;quot;avinger&amp;quot;         &amp;quot;babasikandar&amp;quot;   
+
+##  [16] &amp;quot;baixu1018&amp;quot;       &amp;quot;bajeheart&amp;quot;       &amp;quot;bassemm&amp;quot;        
+
+##  [19] &amp;quot;bbkivines&amp;quot;       &amp;quot;beautifulbella&amp;quot;  &amp;quot;benou&amp;quot;          
+
+##  [22] &amp;quot;berke&amp;quot;           &amp;quot;biddle&amp;quot;          &amp;quot;bilalhaider&amp;quot;    
+
+##  [25] &amp;quot;bindu&amp;quot;           &amp;quot;bocaiwen&amp;quot;        &amp;quot;brianchen&amp;quot;      
+
+##  [28] &amp;quot;britt.the.ish&amp;quot;   &amp;quot;carinewhy&amp;quot;       &amp;quot;carolynseymour&amp;quot; 
+
+##  [31] &amp;quot;catwomanteresa&amp;quot;  &amp;quot;chumhumnews&amp;quot;     &amp;quot;cryptochamo&amp;quot;    
+
+##  [34] &amp;quot;danishali&amp;quot;       &amp;quot;danm2017&amp;quot;        &amp;quot;davidad&amp;quot;        
+
+##  [37] &amp;quot;daxiblog&amp;quot;        &amp;quot;dcc&amp;quot;             &amp;quot;deanliu&amp;quot;        
+
+##  [40] &amp;quot;diablocro&amp;quot;       &amp;quot;diaohuijun&amp;quot;      &amp;quot;dimidrolshina&amp;quot;  
+
+##  [43] &amp;quot;dinsha&amp;quot;          &amp;quot;dobro88888888&amp;quot;   &amp;quot;dominicmi&amp;quot;      
+
+##  [46] &amp;quot;dragos0897&amp;quot;      &amp;quot;dtworker&amp;quot;        &amp;quot;fitinfun&amp;quot;       
+
+##  [49] &amp;quot;frankbuse&amp;quot;       &amp;quot;gamemusic&amp;quot;       &amp;quot;gatmi&amp;quot;          
+
+##  [52] &amp;quot;goaln&amp;quot;           &amp;quot;gowldie&amp;quot;         &amp;quot;gribtertong&amp;quot;    
+
+##  [55] &amp;quot;grildrig&amp;quot;        &amp;quot;hamzaoui&amp;quot;        &amp;quot;harttwohartllc&amp;quot; 
+
+##  [58] &amp;quot;hebro&amp;quot;           &amp;quot;hilarski&amp;quot;        &amp;quot;hofffman&amp;quot;       
+
+##  [61] &amp;quot;hongmeng&amp;quot;        &amp;quot;hoof&amp;quot;            &amp;quot;hqfzone&amp;quot;        
+
+##  [64] &amp;quot;imagediet&amp;quot;       &amp;quot;imako&amp;quot;           &amp;quot;initnas&amp;quot;        
+
+##  [67] &amp;quot;investlimestone&amp;quot; &amp;quot;iqbalbireuen&amp;quot;    &amp;quot;irphotography&amp;quot;  
+
+##  [70] &amp;quot;ishaq&amp;quot;           &amp;quot;istox&amp;quot;           &amp;quot;iszarl&amp;quot;         
+
+##  [73] &amp;quot;itan05&amp;quot;          &amp;quot;itissimple&amp;quot;      &amp;quot;jackmiller&amp;quot;     
+
+##  [76] &amp;quot;jamal83&amp;quot;         &amp;quot;jason-donovan&amp;quot;   &amp;quot;jhonnight&amp;quot;      
+
+##  [79] &amp;quot;jones420&amp;quot;        &amp;quot;joseburgos&amp;quot;      &amp;quot;jukas&amp;quot;          
+
+##  [82] &amp;quot;junyi&amp;quot;           &amp;quot;justyy&amp;quot;          &amp;quot;kabindra&amp;quot;       
+
+##  [85] &amp;quot;katythompson&amp;quot;    &amp;quot;khairulmuammar&amp;quot;  &amp;quot;kishore1988&amp;quot;    
+
+##  [88] &amp;quot;krasotka&amp;quot;        &amp;quot;kristjannacaj&amp;quot;   &amp;quot;landeberg&amp;quot;      
+
+##  [91] &amp;quot;lautenglye&amp;quot;      &amp;quot;ledygaga25&amp;quot;      &amp;quot;lemooljiang&amp;quot;    
+
+##  [94] &amp;quot;liangfengyouren&amp;quot; &amp;quot;lifeofkly&amp;quot;       &amp;quot;lifishake&amp;quot;      
+
+##  [97] &amp;quot;lilywang&amp;quot;        &amp;quot;liufeng&amp;quot;         &amp;quot;luckerme&amp;quot;       
+
+## [100] &amp;quot;lykencrypto&amp;quot;     &amp;quot;lynx&amp;quot;            &amp;quot;marianpancu&amp;quot;    
+
+## [103] &amp;quot;mehdioraki3973&amp;quot;  &amp;quot;minknsa&amp;quot;         &amp;quot;mkotibabu&amp;quot;      
+
+## [106] &amp;quot;monalishabiswas&amp;quot; &amp;quot;mydarlings2&amp;quot;     &amp;quot;myfirst&amp;quot;        
+
+## [109] &amp;quot;mytamilabiz&amp;quot;     &amp;quot;natashahall&amp;quot;     &amp;quot;nationalpark&amp;quot;   
+
+## [112] &amp;quot;nawar93&amp;quot;         &amp;quot;newsagg&amp;quot;         &amp;quot;notregme&amp;quot;       
+
+## [115] &amp;quot;oflyhigh&amp;quot;        &amp;quot;ohammedfelahi&amp;quot;   &amp;quot;patricksanlin&amp;quot;  
+
+## [118] &amp;quot;phyohtetpaing&amp;quot;   &amp;quot;powerfj&amp;quot;         &amp;quot;qipashuo&amp;quot;       
+
+## [121] &amp;quot;redje&amp;quot;           &amp;quot;renua&amp;quot;           &amp;quot;revolusi&amp;quot;       
+
+## [124] &amp;quot;riansteem&amp;quot;       &amp;quot;rifattb&amp;quot;         &amp;quot;robi8888&amp;quot;       
+
+## [127] &amp;quot;rodneyaspiras&amp;quot;   &amp;quot;rogerwilson&amp;quot;     &amp;quot;sbamsoneu&amp;quot;      
+
+## [130] &amp;quot;secora&amp;quot;          &amp;quot;securetalk&amp;quot;      &amp;quot;sequentialvibe&amp;quot; 
+
+## [133] &amp;quot;shaheer001&amp;quot;      &amp;quot;shankhunsam&amp;quot;     &amp;quot;shengjian&amp;quot;      
+
+## [136] &amp;quot;sheval&amp;quot;          &amp;quot;showoff&amp;quot;         &amp;quot;skynyc&amp;quot;         
+
+## [139] &amp;quot;somebody&amp;quot;        &amp;quot;stackin&amp;quot;         &amp;quot;steem.engine&amp;quot;   
+
+## [142] &amp;quot;steemitguide&amp;quot;    &amp;quot;sthitaprajna&amp;quot;    &amp;quot;suitup&amp;quot;         
+
+## [145] &amp;quot;sunnyjolly&amp;quot;      &amp;quot;superhardness&amp;quot;   &amp;quot;swssmarketing&amp;quot;  
+
+## [148] &amp;quot;tastetwist&amp;quot;      &amp;quot;themessengers&amp;quot;   &amp;quot;toninux&amp;quot;        
+
+## [151] &amp;quot;trevis&amp;quot;          &amp;quot;vax-rambo&amp;quot;       &amp;quot;vishal1088&amp;quot;     
+
+## [154] &amp;quot;walkman90&amp;quot;       &amp;quot;warrkin&amp;quot;         &amp;quot;whydowork&amp;quot;      
+
+## [157] &amp;quot;worldwidetravel&amp;quot; &amp;quot;xiaohui&amp;quot;         &amp;quot;xiaokongcom&amp;quot;    
+
+## [160] &amp;quot;xjb&amp;quot;             &amp;quot;yellowkersie&amp;quot;    &amp;quot;ygern&amp;quot;          
+
+## [163] &amp;quot;yuxi&amp;quot;            &amp;quot;zerozero777&amp;quot;     &amp;quot;zhijun&amp;quot;         
+
+## [166] &amp;quot;zhuqiankun&amp;quot;      &amp;quot;zwal&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is weird that  @abit and @justyy are in   @tumutanzi Steemit&amp;rsquo;s following list, but not in the list of  &lt;a href=&#34;https://steemdb.com/@tumutanzi/following&#34;&gt;steemdb&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I would suggest @tumutanzi should follow them before they read this post. Hurry!&lt;/p&gt;
+
+&lt;p&gt;If you would like to have a similar report about your ID&amp;rsquo;s followers and following, please  visit the online tool &lt;a href=&#34;https://pzhao.shinyapps.io/steemr/&#34;&gt;steemr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;To be continued&amp;hellip;&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>拒绝《弟子规》 拥抱《千字文》</title>
+      <link>https://steemit.netlify.com/post/dusxv/</link>
+      <pubDate>Mon, 17 Jul 2017 13:42:18 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/dusxv/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/dusxv&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/dusxv&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/dusxv&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/dusxv&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/dusxv.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在德国生活的时候，我有位华人朋友，是个年轻妈妈，已经在德国定居，却担心孩子忘记了博大精深的中华文化，于是给家里的女儿报了个读经班，要孩子背诵《弟子规》。&lt;/p&gt;
+
+&lt;p&gt;老实说，此前我从来没有读过《弟子规》的原文，只是听说这些年来比较火，于是就拿来翻了一翻，挺吃惊：里面的糟粕太多了，跟现代文明完全背道而驰，就像一条年久失修的老路，走两步就能绊一个跟头。特别是当这本书出现在德国这样一个现代国家，显得格外荒谬。可怜很多海外华人家庭，他们心系祖国，生怕孩子忘了自己的根，于是就想法设法让孩子们多接触中国文化，却苦于如何在浩如烟海的读物里做出选择。我家有两个孩子，算是有一点育儿经验了。我的意见是，赶快扔掉《弟子规》，拥抱《千字文》。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ent.people.com.cn/NMediaFile/2014/0130/MAIN201401302132000463462635857.JPG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;插图 1 甲午年央视春晚“剑心书韵”节目，以《千字文》为舞台背景&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;天地玄黄 宇宙洪荒 日月盈昃 辰宿列张 寒来暑往 秋收冬藏 闰余成岁 律吕调阳&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这是《千字文》的开头几句。南朝梁武帝令大臣周兴嗣把王羲之写过的 1000 个汉字连成一篇文章，增加临帖练字的便利和趣味性。周兴嗣冥思苦想，一夜未眠，东方既白，大作已成，镜中一照，黑发尽如雪。&lt;/p&gt;
+
+&lt;p&gt;《千字文》是一篇千古奇文，所用的 1000 个汉字不仅无一重复，而且押韵对仗，读来朗朗上口；句子不仅有含义，而且文史和自然知识丰富，构思精巧，虽然跟《三字经》和《百家姓》合称《三百千》而齐名，然而我认为，较之《百家姓》的空洞无物和《三字经》的酸腐说教，《千字文》气势恢宏，意境高远，在国学启蒙读物???，千百年来无书能出其右。&lt;/p&gt;
+
+&lt;p&gt;作为启蒙读物，我觉得《千字文》有几大用处：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;识汉字。只要能认得《千字文》，其他的汉字也会很容易根据形声字的规律学习；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;通声律。只要能背诵《千字文》，则对汉语的声律和诗文的对仗就有了感性认识，大大利于遣词造句；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;长知识。只要能理解《千字文》，就学会了“云腾致雨”等自然常识、“浮渭据泾”等地理知识、“有虞陶唐”等文史典故；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;修德行。只要能遵守《千字文》，就具备了“罔谈彼短，靡恃己长”等道德操守和行为规范。值得方崔二人一读。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这篇只有千字的短文，写作水平之高，虽然我不信是一夜写成的，但是只怕我每天写一千字写一辈子，也难以望其项背。&lt;/p&gt;
+
+&lt;p&gt;白头一夜千字文，作为理科生的我，从来都不相信这个神话，“一夜白头”不符合生物学规律嘛。另外，《千字文》的创作难度太大，我也不相信仅凭一人之力能一夜写成，哪怕他是天才。以我的小人之心，我杜撰了两个版本的故事，说不定更接近真相。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;版本一：&lt;/p&gt;
+
+&lt;p&gt;大臣周兴嗣主动说：“王羲之的字要是能不重不漏地列出来，就方便临摹了。”&lt;/p&gt;
+
+&lt;p&gt;皇帝说：“爱卿学问大，能列一下吗？”&lt;/p&gt;
+
+&lt;p&gt;周兴嗣说：“臣不仅能列出来，而且能连成一篇文章。”&lt;/p&gt;
+
+&lt;p&gt;皇帝大惊：“爱卿如能，朕赏金。要多久？”&lt;/p&gt;
+
+&lt;p&gt;周兴嗣说：“一晚。”&lt;/p&gt;
+
+&lt;p&gt;皇帝说：“不信。要是能这么快，朕就给爱卿放一个月带薪假。”&lt;/p&gt;
+
+&lt;p&gt;周兴嗣于是回家安安稳稳睡了一夜。第二天，从箱子里翻出自己年轻时花了一年写好的文字游戏《千字文》，并且把头上夹杂在黑发中的白头发全部梳在外边，上朝面君去了。&lt;/p&gt;
+
+&lt;p&gt;版本二：&lt;/p&gt;
+
+&lt;p&gt;临近毕业，博士生周兴嗣还没发表一篇论文。情急之下，导师梁武帝建议他以‘??重字’为创新点投稿。周就召集所有同学帮忙拼字，终于用一夜攒出了一篇初稿。投出，被拒，退稿修改，改了再投，投了再拒，拒了再改，如此博士延期了两年，文章终于被接收了，搞得周兴嗣头发都白了。后人只知道周兴嗣作为第一作者一夜完稿和熬白头发，就记到了史书上。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这只是说笑，历史的真相我们永远不得而知。然而，不管是如何成书的，《千字文》都是一部神作。&lt;/p&gt;
+
+&lt;p&gt;儿子还是个婴儿的时候，我常把《千字文》当作摇篮曲，读来哄他入睡。本文最后奉上我重新排版的《千字文》，排版到一张A4纸上，便于打印贴到墙上。为啥贴墙上？因为有的婴儿，是需要老爸站立着抱在怀里哄着才不哭的，贴墙上方便读啊……&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;千字文单页打印上墙版&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;3&#34;&gt;&lt;img src=&#34;https://qg5vba.dm2303.livefilestore.com/y2pXXcvkeFf4SxbNH2wpVuapAZ23GruqVK2LUWY2QKc3WKWOfu1KHx1rbRw40zDUoRIEUj6_hlPL_thXknnlqO0_vg9V2ZOnHCvcTV48wbhkXY/2014-02-01_%E5%8D%83%E5%AD%97%E6%96%87%E6%89%93%E5%8D%B0%E7%89%88.png&#34; alt=&#34;&#34; /&gt;&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

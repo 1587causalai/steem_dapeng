@@ -1,0 +1,2923 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cn-programming on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/cn-programming/index.xml</link>
+    <description>Recent content in Cn-programming on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/cn-programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>steemsql 也开始不靠谱了</title>
+      <link>https://steemit.netlify.com/post/steemsql/</link>
+      <pubDate>Mon, 30 Oct 2017 09:49:27 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steemsql/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemsql&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemsql&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steemsql&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steemsql&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemsql.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;今天的“希望工程”日报一出来，我就发现新人新帖里很多垃圾文，没有经过过滤。&lt;/p&gt;
+
+&lt;p&gt;我有个小号 @pzhao ，当作机器人来用，打算自动发布一些模板化的帖子和评论。目前，”历史上的今天“已经交给机器人发布了。我一直想等着“希望工程”日报做成熟之后，也交过去，免得对我的一些 followers 造成骚扰。可是，除了 steem python API 经常发不出去文章之外，还时不时出点别的幺蛾子。steemsql 就是一个。&lt;/p&gt;
+
+&lt;p&gt;“希望工程”日报的垃圾帖过滤工作，是用 R 语言程序完成的。R 程序自动从 steemsql 数据库里，读取 @incrediblesnow 最新发布的 cn-abuse 报告，从中获取新增的灰名单和黑名单，然后对新人新帖进行过滤。&lt;/p&gt;
+
+&lt;p&gt;然而，&lt;a href=&#34;https://cnsteem.com/cn/@incrediblesnow/29-10-2017-cn-abuse-report-for-cn-abuse-on-29-10-2017&#34;&gt;昨天的 cn-abuse 报告&lt;/a&gt;，在 steemsql 里看不见。例如搜索：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+SELECT body 
+
+FROM Comments 
+
+WHERE title like N&#39;%Cn-abuse 的报告%&#39; 
+
+  AND author = &#39;incrediblesnow&#39; 
+
+  AND json_metadata like &#39;%\&amp;quot;cn\&amp;quot;%&#39; 
+
+  AND created BETWEEN &#39;2017/10/29&#39; and &#39;2017/10/30&#39;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;结果是零条。&lt;/p&gt;
+
+&lt;p&gt;放宽一下搜索条件：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+SELECT title 
+
+FROM Comments 
+
+WHERE author = &#39;incrediblesnow&#39; 
+
+  AND created BETWEEN &#39;2017/10/20&#39; and &#39;2017/10/30&#39; 
+
+  AND title &amp;lt;&amp;gt; &#39;&#39;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;仍然搜不到。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmT2EerJQhoLsMUTQEKzCfgQiQ8vhnRH4etzrFU2gZ8Va3/steemsql.jpg&#34; alt=&#34;steemsql.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这就导致昨天的灰名单和黑名单没有被读到，所以“希望工程”的日报就没有得到过滤。好在，就算是没过滤，新人新帖也比前些天大为减少了。&lt;/p&gt;
+
+&lt;p&gt;两个月前，我发现 &lt;a href=&#34;https://steemit.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;steemdata 的数据框不靠谱&lt;/a&gt;，于是换到了 steemsql。现在连 steemsql 也不靠谱了，该怎么办？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>妙笔生金：我的 cnsteem 宣传语提案被采纳，“尸体木”提案被否决  - My proposal for cnsteem tagline accepted</title>
+      <link>https://steemit.netlify.com/post/cnsteem-or-my-proposal-for-cnsteem-tagline-accepted/</link>
+      <pubDate>Fri, 20 Oct 2017 09:50:03 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/cnsteem-or-my-proposal-for-cnsteem-tagline-accepted/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/cnsteem-or-my-proposal-for-cnsteem-tagline-accepted&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/cnsteem-or-my-proposal-for-cnsteem-tagline-accepted&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/cnsteem-or-my-proposal-for-cnsteem-tagline-accepted&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/cnsteem-or-my-proposal-for-cnsteem-tagline-accepted&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/cnsteem-or-my-proposal-for-cnsteem-tagline-accepted.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Miaobishengjin. Your brilliant pen creates gold. This is a tagline I proposed to &lt;a href=&#34;http://cnsteem.com/&#34;&gt;cnsteem.com&lt;/a&gt; , the Chinese version of steemit. It is modified from a traditional Chinese idiom, Miaobishenghua, meaning &amp;lsquo;write like an angel&amp;rsquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;ldquo;妙笔生金&amp;rdquo;，是我为 @skenan 开发的 &lt;a href=&#34;http://cnsteem.com/&#34;&gt;cnsteem.com&lt;/a&gt; （广告：这个网站真快！steemit上不去的时候建议用它）提出的宣传语&lt;a href=&#34;https://steemit.com/cn/@lemooljiang/6s9r6z-steem#@dapeng/re-lemooljiang-6s9r6z-steem-20171018t183040209z&#34;&gt;提案&lt;/a&gt;。今天很高兴地发现，这个提案已经被采纳啦！那个让人见一次就扎一次眼睛的“鬼推磨”，哦耶，它终于走了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQmWB7DwDTXarhbtpJGqAAauB8J5DYPEPmwxdBXzDieGZW4/image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image credit:  @skenan&lt;/p&gt;
+
+&lt;p&gt;这个提案的灵感来自前辈 @deanliu 提出的&lt;a href=&#34;https://steemit.com/cn/@skenan/2jopvy-steemit#@deanliu/re-skenan-2jopvy-steemit-20171018t020135529z&#34;&gt;“书写中自有黄金屋”&lt;/a&gt;，这是所有提案里我最喜欢的，只是有点长，读起来有点绕。保留“金”字，以“笔”代“书”，Duang！“妙笔生金”的想法就冒出来了。&lt;/p&gt;
+
+&lt;p&gt;同时，我还投了 @klausv587 一票，他为 steem 取的中文翻译是“思鼎”，意思是“思想像九鼎一样有分量”。信达雅兼备，是目前我最中意的翻译。跟我提议的“尸体木”相比是天壤之别。&lt;/p&gt;
+
+&lt;p&gt;我的草稿箱里，藏着一些 steem 的宣传方案，都是我刚来 steem 时回复别人的，想集中发布。后来觉得好笑，就一直没发。借此机会发出来，博大家一笑。&lt;/p&gt;
+
+&lt;h3 id=&#34;steem-真人秀-是真人-不是秀&#34;&gt;Steem 真人秀：是真人，不是秀。&lt;/h3&gt;
+
+&lt;p&gt;这是我给 @oflyhigh 的一条&lt;a href=&#34;https://steemit.com/cn/@oflyhigh/steem-and#@dapeng/re-oflyhigh-steem-and-20170801t111024722z&#34;&gt;回复&lt;/a&gt;里提到的。Steem 上发帖无法删除的特点，导致 steem 会成为一个过滤器：假的被滤掉，留下来真的。君子是真君子，小人也是真小人。&lt;/p&gt;
+
+&lt;h3 id=&#34;虚拟人生&#34;&gt;虚拟人生&lt;/h3&gt;
+
+&lt;p&gt;这是我给 @sweetpanda 的一条&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool#@sweetpanda/re-dapeng-steemit-two-weeks-on-steemit-rather-a-social-platform-than-a-writing-tool-20170801t055601140z&#34;&gt;回复&lt;/a&gt; 里提到的。并不是每个大鱼都能眷顾你，即使是大鱼的帖子也不是每篇都受人眷顾。就跟真实生活一样一样的。&lt;/p&gt;
+
+&lt;h3 id=&#34;思鼎慢&#34;&gt;思鼎慢&lt;/h3&gt;
+
+&lt;p&gt;这是我给 @coldhair 的一条&lt;a href=&#34;https://steemit.com/cn/@coldhair/61mxl6-steemit#@dapeng/re-coldhair-61mxl6-steemit-20170801t120156961z&#34;&gt;回复&lt;/a&gt;里提到的。大家都说 steem 访问太慢。慢就慢呗。当年我一个大学室友就忿忿不平地说，为啥要那么快，慢点不挺好么？这位同学最喜欢做的事情就是拿本英语字典从头到尾背单词。&lt;/p&gt;
+
+&lt;p&gt;我觉得硬的不行可以来软的，拿“慢”当卖点，从文化宣传上轮番轰炸，让大家觉得 steem 的慢不是缺点而是优点。说难听点，就是给大家洗脑：)&lt;/p&gt;
+
+&lt;p&gt;比如天天在大喇叭里放：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;记得早先少年时&lt;/p&gt;
+
+&lt;p&gt;大家诚诚恳恳&lt;/p&gt;
+
+&lt;p&gt;说一句 是一句&lt;/p&gt;
+
+&lt;p&gt;清早上火车站&lt;/p&gt;
+
+&lt;p&gt;长街黑暗无行人&lt;/p&gt;
+
+&lt;p&gt;卖豆浆的小店冒着热气&lt;/p&gt;
+
+&lt;p&gt;从前的日色变得慢&lt;/p&gt;
+
+&lt;p&gt;车 马 邮件都慢&lt;/p&gt;
+
+&lt;p&gt;一生只够爱一个人&lt;/p&gt;
+
+&lt;p&gt;这样的世外桃源&lt;/p&gt;
+
+&lt;p&gt;如今哪里有&lt;/p&gt;
+
+&lt;p&gt;有啊&lt;/p&gt;
+
+&lt;p&gt;就在 steemit&lt;/p&gt;
+
+&lt;p&gt;来吧&lt;/p&gt;
+
+&lt;p&gt;我们摆好了八仙桌&lt;/p&gt;
+
+&lt;p&gt;等你来&lt;/p&gt;
+
+&lt;p&gt;不信你试试&lt;/p&gt;
+
+&lt;p&gt;门半天都&lt;/p&gt;
+
+&lt;p&gt;推——不——开——&lt;/p&gt;
+
+&lt;p&gt;&amp;mdash; @dapeng 改自木心《从前慢》&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>推广之前先做好产品：也谈 steemit 的推广构想 Product before marketing</title>
+      <link>https://steemit.netlify.com/post/first-product-then-marketing/</link>
+      <pubDate>Mon, 25 Sep 2017 15:11:21 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/first-product-then-marketing/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/first-product-then-marketing&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/first-product-then-marketing&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/first-product-then-marketing&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/first-product-then-marketing&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/first-product-then-marketing.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;@htliao 今天发帖，谈了&lt;a href=&#34;https://steemit.com/cn/@htliao/steemit&#34;&gt;一个推广 Steemit  的小构想&lt;/a&gt;。我对此一直有些零零碎碎的想法，借此机会做个小结，跟 @htliao 和其他感兴趣的朋友交流一下。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;@htliao wrote a nice  &lt;a href=&#34;https://steemit.com/cn/@htliao/steemit&#34;&gt;post&lt;/a&gt;, talking about the marketing of steemit. In his post and the replies, a problem was mentioned many times: many new users leave steemit after using it for a short time. Why? I think we cannot blame users. The only reason is that the product is not good enough.&lt;/p&gt;
+
+&lt;p&gt;In this post, I proposed some ideas to attract potential Chinese users.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在这篇文章及其评论里， @htliao @enchung @deanliu 等朋友都提到了一个现象：steemit 的用户流失严重。用户流失，我觉得不能怪到用户头上，只能说明产品不够好。所以，我的推广建议是：&lt;strong&gt;先做好产品，再推广。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;到目前为止，我在 steemit 上靠写字算是赚了点小钱，但是，我没有向任何亲朋好友推荐 steemit，一个都没有。为什么？因为我觉得，steem 虽然好，但 steemit.com 还不够好。现在推荐的话，让有些人失望而去，即使将来 steemit 够好了，想再拉也拉不回来了。&lt;/p&gt;
+
+&lt;p&gt;与其这样，我宁可强忍着如火的热情，等待时机成熟的那一天。&lt;/p&gt;
+
+&lt;p&gt;那么，steemit 的用户为什么会流失？&lt;/p&gt;
+
+&lt;p&gt;根子上，是因为 steem 的底层设计，就是加入越晚越缺少话语权，这个改不了。&lt;/p&gt;
+
+&lt;p&gt;但是，面子上可以修改，让界面对新手更友好一些，让新手从感情和收入两方面喜欢上这里，来了不愿意走。&lt;/p&gt;
+
+&lt;p&gt;这是可以通过优化 steemit.com 的界面来得到改善的。下面，是我为 steemit 在华语区的推广提出的方案：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcwHcd3Y7YrDTx7PGRBLe3y2TL38uY29CTG1NW7EvUsv9/marketing-738013_640.png&#34; alt=&#34;marketing-738013_640.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;隐藏别人的帖子收益-hide-the-payouts-of-others-posts&#34;&gt;隐藏别人的帖子收益 Hide the payouts of others&amp;rsquo; posts&lt;/h3&gt;
+
+&lt;p&gt;@tvb 说过，人比人得死，货比货得扔。很多用户来了又走的原因，不是看到自己帖子收益少，而是看到别人帖子收益多，从而产生了过高的心理预期。就好比明明月入5000元，却跟月入50万的富豪住在同一个小区，每天看着邻居的生活状态，不搬走才怪。&lt;/p&gt;
+
+&lt;p&gt;试想，如果看不到别人的收益，只能看到自己的，那么，一发帖就赚钱，哪怕只有 5 分钱，也比在 facebook 和微信朋友圈发帖要划算啊。&lt;/p&gt;
+
+&lt;p&gt;建议 steemit 增加个功能，在声望达到比如说 65 之前，都看不到别人的帖子收益，只能看自己的收益，我觉得能多留下很多新人。&lt;/p&gt;
+
+&lt;p&gt;等混到 65，能看别人收益的时候，也就不太在意攀比了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Many users leave because of not their low payouts, but others&amp;rsquo; high payouts. They are jealous and think it is  unfair.&lt;/p&gt;
+
+&lt;p&gt;Hide the payouts of others&amp;rsquo; posts. Only show the user&amp;rsquo;s own payouts before his/her reputation reaches 65.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;增强文章管理功能-enhance-the-management-of-posts&#34;&gt;增强文章管理功能 Enhance the management of posts&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;个人界面的 blog 标签下，增加帖子置顶功能，把自己最想让访问者阅读的文章置顶。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;个人界面增加 “收藏” 标签，汇集读过的好文章，并且可以自己加标签。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;类目（版块）界面增加置顶和简介功能，对本类目做介绍，并介绍约定俗成的版规或发帖建议。这样可以避免滥用便签。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Allow users to stick some posts to the top of the Blog tab.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add a &lt;em&gt;Bookmark&lt;/em&gt; tab to personal page for collecting favorite posts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Allow a category page to stick some posts to the top for introducing the category, so that new users will not abuse the tag.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;文章属性展示-enhance-the-display-of-posts&#34;&gt;文章属性展示 Enhance the display of posts&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;每篇文章在收益和点赞数字之外，并排显示被收藏的数量。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;steemit 首页和各类目页面都新增一个&amp;rdquo;收藏&amp;rdquo;标签，按帖子被收藏的数量进行排序。这样可以避免好帖沉底。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;steemit 首页和各类目页面都新增一个&amp;rdquo;回复&amp;rdquo;标签，将最新得到回复的帖子置顶。同样也是为了避免好帖沉底。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Show the number of &amp;lsquo;bookmarked&amp;rsquo; beside the numbers of payout, upvote and response.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add a &lt;em&gt;Bookmark&lt;/em&gt; tab to the home page of steemit and each category, showing the posts ordered in bookmarked number.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add a &lt;em&gt;Response&lt;/em&gt; tab to put the latest replied posts on the top.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;网站中文化-chinese-elements&#34;&gt;网站中文化 Chinese elements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;界面中文化。所有页面元素翻译成中文。像 home, new, submit a story, feed 等等，这些界面元素都翻译成中文。这个其实很容易。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;一键翻译文章内容，以及简繁体转换。steemit 是个国际平台，文章有多个语种，无疑英文文章最多。但是，如果用户没有能力或不喜欢阅读外语，就容易被 steemit 吓跑。 Google Translate 虽然可以将整个网页翻译成指定语言的 ，可是，由于众所周知的原因，很多华语区用户无法使用。如果让 steemit 从后台调用谷歌翻译，在界面输出翻译结果，就会方便很多&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;增加本土化的一键分享功能，方便把文章分享到微信、微博、QQ空间等。steemit 目前在微信上分享的界面惨不忍睹。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;增加本土视频插入功能，方便地插入优酷、腾讯等视频。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;?Chinese interface.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;One-click to translate a post into Chinese.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;One-click to share a post to Wechat, Weibo, QQ Space.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Support inserting videos from Youku, TencentVideo.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;据我所知，上述功能在技术上实现并不难。而且，据说 steemit.com 网站的源代码是开源的。我们完全有可能做出一个具有上述改良的 steemit.cn 来。&lt;/p&gt;
+
+&lt;p&gt;在这个新的世界里，新手不攀比，享受小确幸；好帖不沉底，享受长寿命；消除语言障碍，结交四海朋友。这样???话，还愁 steemit 的用户流失吗？&lt;/p&gt;
+
+&lt;p&gt;后记：本文发布前后，我看到大家纷纷就此话题发表了自己的看法，列在这里备查：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;@sunnyjolly &lt;a href=&#34;https://steemit.com/cn/@sunnyjolly/4xmjfd-steemit&#34;&gt;谈谈我对推广steemit的几个想法&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@bestmz &lt;a href=&#34;https://steemit.com/cn/@bestmz/steemit-2000-cn-steemit&#34;&gt;如果Steemit一天涌入2000名CN区作者&amp;hellip;&amp;hellip;（我对Steemit社区的一些思考）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@fundurian &lt;a href=&#34;https://steemit.com/cn/@fundurian/steemit-my-thought-on-steemit&#34;&gt;如何改进steemit的个人看法my thought on steemit&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@incrediblesnow &lt;a href=&#34;https://steemit.com/cn/@incrediblesnow/am2zg-steemit&#34;&gt;谈谈的如何改进 Steemit和推广 Steemit&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWKRoZhpvHW3sFkHUnfkbZGNsZUe8FBEgEbkRXQXoE4bu/end.png&#34; alt=&#34;end.png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unreliable analysis on Steem data 不靠谱的 steem 数据分析</title>
+      <link>https://steemit.netlify.com/post/unreliable-analysis-on-steem-data-steem/</link>
+      <pubDate>Sun, 10 Sep 2017 16:24:24 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/unreliable-analysis-on-steem-data-steem/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/unreliable-analysis-on-steem-data-steem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;First of all, I would like to thank @furion so much for providing &lt;a href=&#34;https://steemdata.com/&#34;&gt;steemdata&lt;/a&gt;, and @arcange for &lt;a href=&#34;http://steemsql.com/&#34;&gt;steemsql&lt;/a&gt;. Both have been helping me learn a lot about blockchain, and earn my first bucket of gold on Steem via &amp;ldquo;Steem&amp;rsquo;s Watch&amp;rdquo; reports.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;首先，我要深深感谢 @furion 提供了 &lt;a href=&#34;https://steemdata.com/&#34;&gt;steemdata&lt;/a&gt; 这个数据平台，感谢 @arcange 提供了 &lt;a href=&#34;http://steemsql.com/&#34;&gt;steemsql&lt;/a&gt;。二者极大地帮助我理解区块链，并让我通过“大鹏观察”系列报告赚到了我在steem上的第一桶金。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I started my data analysis with steemdata and produces several reports. Many Steemians like them. However, I have found some strange problems recently.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我是从 steemdata 开始进行数据分析的，写了不少数据报告，幸运地得到了很多朋友的喜爱。然而，最近，我发现了一些奇怪问题。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In the &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-hannahwu&#34;&gt;account report of @hannahwu&lt;/a&gt; I wrote two days ago, data from steemdata showed that @hannahwu had 227 followers and 165 followings.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;两天前，我写了一份&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-hannahwu&#34;&gt; @hannahwu 的用户数据报告&lt;/a&gt; 。来自 steemdata 的数据显示， @hannahwu 有 227 个粉丝，而她粉了 165 个账号。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfThhbvG1hN6Y1SiiiWXfJYLbGwwVCJMADExzAjn9dxBj/steemdataproblem2.jpg&#34; alt=&#34;steemdataproblem2.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;However, the profile of @hannahwu on Steemit showed 419 followers and 218  following. Now two days has passed, the data from steemdata are still the same.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;然而，她的 Steemit 主页却显示 419 个粉丝，粉了 218 个账号。现在，我写的数据报告已经发布了两天，我看了一下， steemdata 的这两项数据仍然没变。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXxF7SukEoaTTYLJnMq9idc84KTYaPcA5GPJJxasK9gMu/steemdataproblem2-1.jpg&#34; alt=&#34;steemdataproblem2-1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Another example is the account @ochedgreat, who has posted multiple posts recently. However, this account cannot be found in the Collection  of Accounts in steemdata, although @ochedgreat&amp;rsquo;s posts are listed in the Collection of Posts. Does it mean that Accounts Collection is not compatible with the Posts Collection in steemdata?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;另一个例子是账号 @ochedgreat，最近发布了多篇帖子。然而，在 steemdata  数据库的 Accounts 里却找不到这个账号。奇怪的是，@ochedgreat 的帖子却可以在 steemdata 的 Posts 里找到。这是不是说明，Accounts 和 Posts 两者并未同步？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZZzsYYJrYknBNhAUtLtn5jf2PS4MeP9TdVWKftRYqSRG/steemdataproblem1.jpg&#34; alt=&#34;steemdataproblem1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If you search ochedgreat on steemsql, you could find the account information. This account was created three days ago. Maybe it was too soon for steemdata to sync?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;如果在 steemsql 里查找ochedgreat，是能够找到账号信息的。该账号创建于三天前。是不是因为太新，还没被 steemdata 收录?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNmxbkbS1QSD7wsCSMe2iDrmyYXJNjJCocJmDPFRJtjDY/steemdataproblem1-1.jpg&#34; alt=&#34;steemdataproblem1-1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I cannot find any hint on the official website of steemdata about the delay time of data synchronization. In &lt;a href=&#34;https://steemit.com/cn/@oflyhigh/steemdata&#34;&gt;a post by @oflyhigh&lt;/a&gt;, it was mentioned that data are synchronized from the blockchain to steemdata in real time, which confused me even more.  Thus, I searched for the account created most lately.  The latest account in steemdata was @asn191, created on 2017-09-10 07:54:06 UTC.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在 steemdata 的官网上，我没有找到关于数据更新时间的介绍。只有 &lt;a href=&#34;https://steemit.com/cn/@oflyhigh/steemdata&#34;&gt;@oflyhigh 的一篇帖子里提到&lt;/a&gt;，区块链的数据是实时同步到 steemdata 的。这令我更为困惑。于是，我就搜???了 steemdata 上的所有账号，发现最新的账号是 @asn191，创建于 2017-09-10 07:54:06 UTC。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Why is ochedgreat, created on 2017-09-07, not in Steemdata? It seems not  a problem of time, but a problem of some missing data.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;为什么创建于2017-09-07的 ochedgreat 不在 steemdata 上呢? 看起来不是个时间问题，而是数据丢失的问题了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In steemdata, @hannahwu loses nearly 200 followers, while @ochedgreat loses the identification. Shall I abandon steemdata and use steemsql instead? I would not like to, because many of my R scripts have been written to retrieve data from steemdata.com. But if it not reliable, all my data analysis are to be questioned, which is a disaster.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在 steemdata 里， @hannahwu 丢失了将近 200 个粉丝，而 @ochedgreat 连自己的户口都丢了。我是不是该抛弃 steemdata，换用 steemsql？ 我不想这么做，因为我的很多R语言代码都是从 steemdata 获取数据的，我懒得改。但是，如果数据源本身不可靠，那么，我所有的数据分析都是可疑的，这无疑是个灾难。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steemit CN 好友群豪华升级版：看看你是水浒里的哪位英雄</title>
+      <link>https://steemit.netlify.com/post/6mnla8-steemit-cn/</link>
+      <pubDate>Sat, 09 Sep 2017 07:50:54 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/6mnla8-steemit-cn/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/6mnla8-steemit-cn&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/6mnla8-steemit-cn&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/6mnla8-steemit-cn&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/6mnla8-steemit-cn&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/6mnla8-steemit-cn.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;《水浒》里面哪段情节最激动人心？我觉得是“忠义堂石碣受天文，梁山泊英雄排座次”。小说开头放出的 108 员天罡地煞星，历经千难万险，终于再度聚齐。英雄好汉们按威望（Reputation）、能力（ESP）、财力（Account Value）、长幼（Online Days）等综合实力排名次，上下有序，一片和谐，摩拳擦掌，准备干一番大事业。就像来自五湖四海的 Steemit CN 用户，最近纷纷聚到了同一个微信群。不知大家怎么看，反正我有种“英雄好汉齐聚梁山泊”的感觉。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://history.people.com.cn/mediafile/201103/12/F201103121128435196300106.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;图片来源：history.people.com.cn&lt;/p&gt;
+
+&lt;p&gt;在制作&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-cn&#34;&gt;豪华版 Steemit CN 微信群名单&lt;/a&gt;时，我为它取名为“Steem 中国聚义厅”，当时就想，排名仅仅是个数字，冷冰冰，乏味单调。如果加点别的元素进去，也许会不同。这就好比，说起生日来大家无感，但说起星座来就有趣了。&lt;/p&gt;
+
+&lt;p&gt;如果给名单加入水浒要素，会不会有趣一点？比如，我的 ID 在这个圈子里按“实权”（ESP）排在第 29 位，那么相当于梁山哪位好汉呢？按“声望”排27位，又相当于谁？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZXpHnKbSKWaFa7arZmvnxgvRffiiuk8aCvV1fNdWTgHJ/steemr1.jpg&#34; alt=&#34;steemr1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这就是升级豪华版的 Steemit CN 好友名单！访问地址：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://steemr.org&#34;&gt;http://steemr.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;加入水浒要素，不只是为了好玩。Steemit 本质上是个权力江湖。弄清楚自己是谁，有助于约束你在 steemit 上的言行，帮助你了解自己的坐标。这么说吧，我是阮小五，自从我弄清自己的身份地位之后，这两天在啥场合该说啥话，遇见宋江哥哥遇见了李逵兄弟该怎么做，我也就心里有数了，十分踏实。&lt;/p&gt;
+
+&lt;p&gt;除了加入水浒味儿之外，名单还有一下新功能：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;按 @oflyhigh（水浒座次：林教头）的指示，上面演示的查询特定 ID 排名，按回车就可以确认。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;名单的列数比较多，新版名单可以选择显示哪些列。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcN6Gq4FdYbidVDcTJvTe39FgWSRKCiCA7yxB9gNbV1dq/steemr2.jpg&#34; alt=&#34;steemr2.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;点击名单任一列标题，就能按该列正序或逆序重排表格。虽然如此，但名次的序号数起来仍然麻烦。现在，新版可以选择根据不同指标得到的座次，列在名单第一列，默认按ESP（实权）排序。注意，最后一列的英雄角色永远参照 ESP。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQ7NjPktQy3S4miFEYq6SRHxtjK2NqoXeTSPDZmDB2xQ9/steemr3.jpg&#34; alt=&#34;steemr3.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;随着入伙人数越来越多，名单也越来越长，所以支持分页展示。梁山 108 条好汉，分 36 天罡星和 72 地煞星，名单里默认显示 36 天罡。当然你可以选择显示全部名单。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmdZfrSH3LrVJ6PeATdXpTedRUJasBtsUs9gxr2epdEEQS/steemr4.jpg&#34; alt=&#34;steemr4.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;按 @jubi (水浒座次：李逵)的指示，添加了统计图表，显示各项指标的分布图。例如，下图表示所有群友（175位）账号的声誉（reputation）分布。最小的声誉值为 4， 最大的是 75。一半账号的声誉值在 51 以上（即中位数，median，蓝线）。25 % 的账号声誉值低于 41（绿线），25% 的账号声誉值高于 59 （红线），而 41 和 59 之间，集中了半数的账号。由于不是正态分布，所以平均值和标准偏差的意义不大，这里仅给出了平均值（mean）。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmU7HLVsAkfFJuvTCzDLMComqn55Atwz9zSnVz2T4Cn3gv/steemr5.jpg&#34; alt=&#34;steemr5.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;名单数据来自 @justyy。如果你发现里面缺少你的名字，请联系他入伙。不喜欢微信？没有微信账号？我觉得不要紧吧。我也不??欢微信。梁山正是用人之际，不会因为你没带微信就不让入伙吧&amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;好了，来看看吧，在 Steem CN 的聚义厅里，你是哪条英雄好汉？坐哪把交椅？&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>豪华版 Steemit CN 微信群名单</title>
+      <link>https://steemit.netlify.com/post/steemit-cn/</link>
+      <pubDate>Sat, 02 Sep 2017 14:15:54 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steemit-cn/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-cn&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemit-cn&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steemit-cn&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steemit-cn&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemit-cn.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;前两天， &lt;a href=&#34;https://steemit.com/@bullda&#34;&gt;@bullda&lt;/a&gt; 做了个&lt;a href=&#34;https://steemit.com/cn/@bullda/steemit&#34;&gt;&amp;ldquo;Steemit好友微信群&amp;rdquo;排行榜&lt;/a&gt;，我俩&lt;a href=&#34;https://steemit.com/cn/@bullda/steemit#@bullda/re-tumutanzi-re-bullda-re-xiaozuo-re-bullda-steemit-20170831t095541324z&#34;&gt;商量了一下&lt;/a&gt;，打算过两天做个动态在线表格。还没等动手， @justyy 已经&lt;a href=&#34;https://steemit.com/cn/@justyy/steemit-daily-wechat-group-ranking-steemit&#34;&gt;做出来了&lt;/a&gt;，真是心有灵犀。做得非常好，而且业界良心地提供了 超级好用的API。可惜的是，跟我设想的样子不大相同。&lt;/p&gt;
+
+&lt;p&gt;今天，我把设想的样子做出来了，称为“豪华版微信群名单”。豪华在哪里？&lt;/p&gt;
+
+&lt;p&gt;1、可以输入一个 ID，给出该 ID 的声誉、权力等各项指标排位座次，以及邻座坐的是谁。看看谁坐在我旁边：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUJSE478ZdswdSMv4zzFvSpyN4bWnLSHZmS2yjr1vQigw/steemr.jpg&#34; alt=&#34;steemr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2、可以给定一个名次范围，画出该范围内的名单词云图，谁越排在前面，谁的名字就越大。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNfdRYpyH4Fv2yVjTQnpRrLuZXCJ5ZddH1217aX4uoTBF/steemr2.jpg&#34; alt=&#34;steemr2.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3、除了同样给出了全部名单列表，并且点击每列标题就可以顺序逆序外，还可以过滤。来，我们搜索一下声望值超过 70、注册时间为 410多 天的名单：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmVR7HyaaAi16eJ32YbKTnzqRqHJKA7UZwZkspxvJ8Bp7Z/steemr3.jpg&#34; alt=&#34;steemr3.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;豪华是有代价的：页面载入有点慢，需要个几秒钟，就看你有没有耐心。追求速度的话还是移步访问本文开头介绍那二位的网页吧。&lt;/p&gt;
+
+&lt;p&gt;这个排名座次有没有让你联想到什么？我联想到了很多，于是给这个名单取名为：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Steem 中国聚义厅&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;这个在线名单，作为一个组建，纳入??我开发的 steemr 小工具。steemr已经被收入 &lt;a href=&#34;http://steemtools.com/&#34;&gt;steemtools.com&lt;/a&gt;的列表里，直接访问地址是:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://steemr.org&#34;&gt;http://steemr.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;steemr 是我刚来 steemit时开始开发的（&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;简介&lt;/a&gt;），后来有朋友反馈了一些问题，这次顺手解决了，包括：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Follower Report 里查询的 ID 粉丝太多时出现的问题，例如查询 @tumutanzi ，原来总是重载，后来发现是原始数据某个粉丝的数据格式问题没有得到兼容，现在已解决。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Follower Report 新增韦恩图。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;原来的“哪个粉丝没有赞某篇帖子”功能意义不大，删掉。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;欢迎大家测（调）试（戏）和反（点）馈（赞）。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>“七夕征文大赛”第 3 天（2017-08-28） 排行榜 (大鹏观察 Steem&#39;s Watch P5)</title>
+      <link>https://steemit.netlify.com/post/5-2017-08-28-steem-s-watch-p5/</link>
+      <pubDate>Mon, 28 Aug 2017 12:52:24 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/5-2017-08-28-steem-s-watch-p5/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5-2017-08-28-steem-s-watch-p5&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5-2017-08-28-steem-s-watch-p5&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5-2017-08-28-steem-s-watch-p5&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5-2017-08-28-steem-s-watch-p5&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/5-2017-08-28-steem-s-watch-p5.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本文是“大鹏观察”为“七夕征文大赛”制作的每日排行榜，以便为读者提供帮助，并为评委会筛选优质文章提供参考，以尽 @dapeng 的绵薄之力。本文使用的数据来源是 steemsql.com 和 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言，数据的获取时间是 2017-08-28 12:47:06 UTC。注意：投票仍然在继续，作者有可能修改正文，所以本文列举的数字不是最终结果。此外，本文列举的投稿时间是 UTC。从本期开始，为了跟主办方一致，我们的统计按照北京时（UTC+8）划分日期。如有疏漏，欢迎指正。&lt;/p&gt;
+
+&lt;p&gt;前情回顾：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/08-26&#34;&gt;七夕征文大赛首日（08-26）排行榜 (大鹏观察 Steem&amp;rsquo;s Watch P3)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/2-2017-08-27-steem-s-watch-p4&#34;&gt;七夕征文大赛第2天（08-27）排行榜 (大鹏观察 Steem&amp;rsquo;s Watch P4)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;“七夕征文大赛”第 3 天（2017-08-28 排行榜 (大鹏观察 Steem&amp;rsquo;s Watch P5)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;参赛基本信息&#34;&gt;参赛基本信息&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;发起：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/lhihf-steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;参赛作品：新作品共 21 篇，清单见文末。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;入围作品：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/steemit-08-28&#34;&gt;入选文章&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;人气排行榜&#34;&gt;人气排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;投票数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 05:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@victorier&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@victorier/chinese-valentine-s-day-literature-writing-contest&#34;&gt;這是一個愛情故事 －七夕情人節徵文比賽 Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 07:27:30&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@liflorence&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@liflorence/or-or-or&#34;&gt;微小说 -如若深情是一桩悲剧，定以死句读。&amp;ndash;七夕中文社区征文赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;87&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 04:05:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/5uhqtm&#34;&gt;祖辈爱情（三）：最美好的初恋≠最终的归宿&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;77&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 21:46:24&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@susanli3769&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@susanli3769/6nai6b&#34;&gt;我和老公的跨国情- 淡淡的情，浓浓的爱 - 七夕爱情征文作品&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;77&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 06:55:15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@magicmonk&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@magicmonk/4ultij&#34;&gt;我上電視追尋爱情的故事&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;70&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;字符数排行榜&#34;&gt;字符数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;字符数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 06:55:15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@magicmonk&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@magicmonk/4ultij&#34;&gt;我上電視追尋爱情的故事&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3509&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 21:46:24&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@susanli3769&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@susanli3769/6nai6b&#34;&gt;我和老公的跨国情- 淡淡的情，浓浓的爱 - 七夕爱情征文作品&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3123&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 10:16:45&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@pzhao&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@pzhao/jkpms&#34;&gt;爸爸讲故事：博笑 (七夕征文大赛 谷哥点名爱情主题)&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2453&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 03:54:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@lingfei&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@lingfei/3wktq4&#34;&gt;Love will be an end, and regret will be no end（天长地久有时尽，此恨绵绵无绝期！）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2310&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 08:59:03&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@leogor1234&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@leogor1234/sxacq&#34;&gt;給您的一封信 - 守護著你的人上&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2193&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;插图数排行榜&#34;&gt;插图数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;插图数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 03:54:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@lingfei&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@lingfei/3wktq4&#34;&gt;Love will be an end, and regret will be no end（天长地久有时尽，此恨绵绵无绝期！）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:21:18&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@tiffanychen&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@tiffanychen/4dvzqg&#34;&gt;每个情人节，我只想要你&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 05:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@victorier&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@victorier/chinese-valentine-s-day-literature-writing-contest&#34;&gt;這是一個愛情故事 －七夕情人節徵文比賽 Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:49:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mumingduozi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mumingduozi/bn7ea&#34;&gt;爱的天使&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 23:47:42&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@linuslee0216&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@linuslee0216/or-or-steemit&#34;&gt;仅属于新一代大学生的浪漫，超越爱情的友情，男女之间模糊的分界线 &amp;ndash;七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;关键词排行榜&#34;&gt;关键词排行榜&lt;/h3&gt;
+
+&lt;p&gt;下面是所有帖子里出现的字符长度超过 2 个、出现次数超过 10 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcEimd2FL5Hq7sBcF2JCbgdMiPiAsSqFyr8uhmaciXz6F/unnamed-chunk-5-1.png&#34; alt=&#34;unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;参赛选手&#34;&gt;参赛选手&lt;/h3&gt;
+
+&lt;p&gt;下图是参赛选手的注册 ID 序号分布图。参赛选手中一半以上都排在第 243488.5 个注册 ID 之后。排在最前面的是第 29666 个 ID，最后面的是 第 332611 个 ID。猜猜他们都是谁？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmY24eAQa44TcWYvgqZFfHBeMbhsdtiAG2YG1iNn1nTckZ/unnamed-chunk-6-1.png&#34; alt=&#34;unnamed-chunk-6-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7 月注册的居多。也有一些早期用户。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmVH6aCUnXy7skqfbXhK5ZaAsYmgHfTBTfZTF1pkCrGBez/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本活动是在 &amp;lsquo;cn&amp;rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签。我们看看除此之外，大家还使用了那些标??以及使用频率。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZAVEbfFwmy8vSP3dD5CEZTwxWQp7ZLy61qzcneBpv9c5/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢关注“大鹏观察”。欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+
+&lt;h3 id=&#34;附录-参赛作品列表&#34;&gt;附录：参赛作品列表&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;插图数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;投票数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;字符数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 21:46:24&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@susanli3769&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@susanli3769/6nai6b&#34;&gt;我和老公的跨国情- 淡淡的情，浓浓的爱 - 七夕爱情征文作品&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;77&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3123&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 22:51:30&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mrpointp&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrpointp/steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&amp;mdash;令人煞费苦心的情人节礼物&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;56&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1916&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 23:47:42&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@linuslee0216&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@linuslee0216/or-or-steemit&#34;&gt;仅属于新一代大学生的浪漫，超越爱情的友情，男女之间模糊的分界线 &amp;ndash;七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;98&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1436&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 00:16:12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@wanderwithtwo&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@wanderwithtwo/2iksz6&#34;&gt;谷歌点名(七夕节活动): 友情变成爱情的第二次 ??&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;14&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;724&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:21:18&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@tiffanychen&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@tiffanychen/4dvzqg&#34;&gt;每个情人节，我只想要你&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1526&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:36:33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@feng1925&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@feng1925/in-china-how-did-i-spend-the-chinese-valentine-s-the-double-seventh-festival&#34;&gt;In China, how did I spend the Chinese Valentine&amp;rsquo;s the Double Seventh Festival？在中国，人们如何过七夕？&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1262&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:44:27&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@ernestine&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@ernestine/2g9mqe&#34;&gt;执子之手，与子偕老&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;14&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1372&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:48:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/6s2qbr&#34;&gt;???辈爱情（二）：战火纷飞，爱的伏笔&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1798&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:49:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mumingduozi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mumingduozi/bn7ea&#34;&gt;爱的天使&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;753&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 03:54:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@lingfei&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@lingfei/3wktq4&#34;&gt;Love will be an end, and regret will be no end（天长地久有时尽，此恨绵绵无绝期！）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;68&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2310&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 04:05:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/5uhqtm&#34;&gt;祖辈爱情（三）：最美好的初恋≠最终的归宿&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;77&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1862&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 05:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@victorier&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@victorier/chinese-valentine-s-day-literature-writing-contest&#34;&gt;這是一個愛情故事 －七夕情人節徵文比賽 Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2105&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 06:55:15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@magicmonk&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@magicmonk/4ultij&#34;&gt;我上電視追尋爱情的故事&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;70&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3509&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 07:10:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@syh7758520&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@syh7758520/2mlsrf&#34;&gt;关于爱情&amp;mdash;&amp;ndash;谷歌点名四期&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;711&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 07:27:30&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@liflorence&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@liflorence/or-or-or&#34;&gt;微小说 -如若深情是一桩悲剧，定以死句读。&amp;ndash;七夕中文社区征文赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;87&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1982&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 08:59:03&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@leogor1234&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@leogor1234/sxacq&#34;&gt;給您的一封信 - 守護著你的人上&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2193&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 09:01:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@sunnyjolly/5xhzgh&#34;&gt;叶子&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1088&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 09:26:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@livinguktaiwan&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@livinguktaiwan/39peuj&#34;&gt;七夕情人节情征文大赛 ~ 現代愛情故事&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;46&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1231&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 09:33:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrspointm/original-or-or&#34;&gt;错过的爱情 (Original) &amp;ndash; 七夕原创微小说&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;48&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1908&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 09:34:12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@rezarezz&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@rezarezz/if-the-affection-is-a-tragedy-will-be-written-to-death-sentence-the-chinese-community-essay-contest&#34;&gt;If the affection is a tragedy, will be written to death sentence. The Chinese community essay contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6240&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 10:16:45&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@pzhao&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@pzhao/jkpms&#34;&gt;爸爸讲故事：博笑 (七夕征文大赛 谷哥点名爱情主题)&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2453&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;#cn-love #cn-reader #cn-programming #steemswatch&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>“七夕征文大赛”第 2 天（2017-08-27）排行榜 (大鹏观察 Steem&#39;s Watch P4)</title>
+      <link>https://steemit.netlify.com/post/2-2017-08-27-steem-s-watch-p4/</link>
+      <pubDate>Mon, 28 Aug 2017 08:26:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/2-2017-08-27-steem-s-watch-p4/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/2-2017-08-27-steem-s-watch-p4&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2-2017-08-27-steem-s-watch-p4&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/2-2017-08-27-steem-s-watch-p4&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/2-2017-08-27-steem-s-watch-p4&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/2-2017-08-27-steem-s-watch-p4.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本文是“大鹏观察”为“七夕征文大赛”制作的每日排行榜，以便为读者提供帮助，并为评委会筛选优质文章提供参考，以尽 @dapeng 的绵薄之力。本文使用的数据来源是 steemsql.com 和 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言，数据的获取时间是 2017-08-28 08:18:12 UTC。&lt;/p&gt;
+
+&lt;p&gt;注意：投票仍然在继续，作者有可能修改正文，所以本文列举的数字不是最终结果。此外，本文列举的投稿时间是 UTC。从本期开始，为了跟主办方一致，我们的统计按照北京时（UTC+8）划分日期。如有疏漏，欢迎指正。&lt;/p&gt;
+
+&lt;p&gt;前情回顾：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/08-26&#34;&gt;七夕征文大赛首日（08-26）排行榜 (大鹏观察 Steem&amp;rsquo;s Watch P3)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;大鹏观察：“七夕征文大赛”第 2 天（2017-08-27）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;参赛基本信息&#34;&gt;参赛基本信息&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;发起：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/lhihf-steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;参赛作品：新作品共 27 篇，清单见文末。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;入围作品：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/steemit-08-27&#34;&gt;第二日（08-27）入选文章&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;人气排行榜&#34;&gt;人气排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;投票数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 01:24:33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@kitcat&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@kitcat/chinese-valentine-s-day-literature-writing-contest&#34;&gt;七夕情人節徵文比賽 － 藍夢 (散文) Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;107&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 00:30:57&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@carinewhy&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@carinewhy/4fwydl-steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 - 在愛情中是沒有壞人的&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;102&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:02:06&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/steemit&#34;&gt;午餐 &amp;ndash; 七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;99&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:12:21&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/steemit&#34;&gt;瑰麗粉紅 ｜七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 10:35:36&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@biuiam&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@biuiam/steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 - 科學。愛?&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;93&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;字符数排行榜&#34;&gt;字符数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;字符数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 02:24:48&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@herlife&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@herlife/18&#34;&gt;梦回18岁，你还在吗？【错过的爱情故事，七夕征文比赛】&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3012&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 19:09:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@plokmi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@plokmi/5whofb&#34;&gt;小狐狸的爱&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2574&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2316&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 01:24:33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@kitcat&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@kitcat/chinese-valentine-s-day-literature-writing-contest&#34;&gt;七夕情人節徵文比賽 － 藍夢 (散文) Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2251&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:02:06&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/steemit&#34;&gt;午餐 &amp;ndash; 七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2036&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;插图数排行榜&#34;&gt;插图数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;插图数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 08:00:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrspointm/5l7wyk&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&amp;mdash;其实爱对了人，情人节每天都过&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 22:35:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/4xusx6&#34;&gt;夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 11:45:12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@sunnyjolly/practice-love&#34;&gt;倾尽年华，修炼爱情 Practice Love&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:02:06&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/steemit&#34;&gt;午餐 &amp;ndash; 七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;关键词排行榜&#34;&gt;关键词排行榜&lt;/h3&gt;
+
+&lt;p&gt;下面是所有帖子里出现的字符长度超过 2 个、出现次数超过 10 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNVFbDApFmKziidfzpZ8pK3PnSY6TJ6eR8fmXKeNYvxad/unnamed-chunk-5-1.png&#34; alt=&#34;unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;参赛选手&#34;&gt;参赛选手&lt;/h3&gt;
+
+&lt;p&gt;下图是参赛选手的注册 ID 序号分布图。参赛选手中一半以上都排在第 247091 个注册 ID 之后。排在最前面的是第 39653 个 ID，最后面的是 第 328139 个 ID。猜猜他们都是谁？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXT9pRsQH281g3EBYb3t9DYpBzBPM9azk5gXSjwBFbEyJ/unnamed-chunk-6-1.png&#34; alt=&#34;unnamed-chunk-6-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7 月注册的居多。也有一些早期用户。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXWNM6tT3nF1p4atYgHcw22x5YQ2R3A3z6tcNPZyYdQtL/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本活动是在 &amp;lsquo;cn&amp;rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签。我们看看除此之外，大家还使用了那些标签以及使用频率。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQn3WotiRUDSyX552kdvZzG6EPTNEpEMAXbN6p55mYECJ/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢关注“大鹏观察”。欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+
+&lt;h3 id=&#34;附录-参赛作品列表&#34;&gt;附录：参赛作品列表&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;插图数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;投票数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;字符数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 16:26:42&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@dancingapple&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@dancingapple/3typ3z&#34;&gt;犹是春闺梦里人&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1917&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 17:16:33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@moicc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@moicc/or-love-is-a-decision-you-make&#34;&gt;爱是你做的决定 - Love is a decision you make&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;19&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1231&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 19:09:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@plokmi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@plokmi/5whofb&#34;&gt;小狐狸的爱&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2574&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 22:35:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/4xusx6&#34;&gt;夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;75&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1710&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:08:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@michaelleeld&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@michaelleeld/52mpnq&#34;&gt;七夕祝福－初恋回到故乡&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;45&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1584&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;67&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2316&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 00:30:57&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@carinewhy&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@carinewhy/4fwydl-steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 - 在愛情中是沒有壞人的&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;102&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1441&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 00:32:12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@superhardness&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@superhardness/love-story&#34;&gt;有点泥土气息的“爱情故事”&amp;ndash;Love story&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;57&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1335&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 01:24:33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@kitcat&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@kitcat/chinese-valentine-s-day-literature-writing-contest&#34;&gt;七夕情人節徵文比賽 － 藍夢 (散文) Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;107&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2251&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 02:11:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@sylvia1997&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@sylvia1997/7nexhw&#34;&gt;小丸子时代???爱情故事&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;65&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1418&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 02:24:48&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@herlife&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@herlife/18&#34;&gt;梦回18岁，你还在吗？【错过的爱情故事，七夕征文比赛】&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;56&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3012&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 02:56:27&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mumingduozi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mumingduozi/ahugw&#34;&gt;烟火&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;18&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1754&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 03:10:45&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@blacktranquility&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@blacktranquility/if-i-love-a-steemit-girl&#34;&gt;If I love a steemit girl&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;41&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;259&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:02:06&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/steemit&#34;&gt;午餐 &amp;ndash; 七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;99&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2036&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:12:21&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/steemit&#34;&gt;瑰麗粉紅 ｜七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1785&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:24:18&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@towardsthesun&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@towardsthesun/5jcp5s&#34;&gt;爱情需要归宿么？白头偕老怎么样？&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;893&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:57:36&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@kanxsh&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@kanxsh/6aqxhm&#34;&gt;祝娘子七夕节快乐！&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;26&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1192&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 06:09:42&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@veronicazhu&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@veronicazhu/52bwgt&#34;&gt;父母恩爱 - 是对子女最好的馈赠&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;31&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1365&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 07:18:15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@haoworld&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@haoworld/5zzt67&#34;&gt;你身后等待的目光&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;339&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 08:00:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrspointm/5l7wyk&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&amp;mdash;其实爱对了人，情人节每天都过&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;78&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1668&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 08:16:30&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@hugowong&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@hugowong/steemit&#34;&gt;那一天，我追赶着日落并找到你-七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;17&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1002&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 10:29:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@blacktranquility&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@blacktranquility/beautiful-poppy-flower&#34;&gt;惊艳的罂栗花 beautiful poppy flower&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;17&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;324&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 10:35:36&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@biuiam&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@biuiam/steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 - 科學。愛?&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;93&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1595&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 11:45:12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@sunnyjolly/practice-love&#34;&gt;倾尽年华，修炼爱情 Practice Love&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;48&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1820&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 12:04:57&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/4kzcgx&#34;&gt;祖辈爱情（一）：陪伴是最长情的告白&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;68&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1937&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 12:14:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@kona&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@kona/steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 - [問世間情為何物，直教人生死相許]&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;20&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1164&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 12:26:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@rivalhw&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@rivalhw/steemit-08-27&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 第二日（08-27）入选文章&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;184&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3605&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;#cn-love #cn-reader #cn-programming #steemswatch&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>七夕征文大赛 首日（08-26）排行榜 (大鹏观察 Steem&#39;s Watch P3)</title>
+      <link>https://steemit.netlify.com/post/08-26/</link>
+      <pubDate>Sun, 27 Aug 2017 22:42:48 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/08-26/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/08-26&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/08-26&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/08-26&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/08-26&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/08-26.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;受 @rivalhw 之托，“大鹏观察”为“七夕征文大赛”做相关数据统计分析日报，以便读者朋友们浏览，以及评委会更好更方便地筛选优质文章。&lt;/p&gt;
+
+&lt;p&gt;本文是第一期。使用的数据来源是 steemsql.com 和 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言。如有疏漏，欢迎指正。&lt;/p&gt;
+
+&lt;p&gt;大鹏观察：“七夕征文大赛”第一天（8月26日）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;参赛基本信息&#34;&gt;参赛基本信息&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;发起：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/lhihf-steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;参赛作品：2017/08/26 共 15 篇，清单见文末。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;入围作品：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/steemit-08-26&#34;&gt;首日（08-26）入选文章&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;字符数排行榜&#34;&gt;字符数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;nchar&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/5zsevj-or&#34;&gt;他情她爱 - 原創短篇小說  “谷哥点名” 第四期活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4424&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@michellejoyful/memory-with-my-lover&#34;&gt;Memory with my lover &lt;sup&gt;-&lt;/sup&gt; 缘不知所起，身不由己 心不知所动，微波涟漪 情不知所起 一往而深&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@michellejoyful&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4422&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@plokmi/5whofb&#34;&gt;小狐狸的爱&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@plokmi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2574&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/93xgk&#34;&gt;缘来就是你 [贺庆媛老师作品]&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2549&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2316&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;插图数排行榜&#34;&gt;插图数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;img&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@michellejoyful/memory-with-my-lover&#34;&gt;Memory with my lover &lt;sup&gt;-&lt;/sup&gt; 缘不知所起，身不由己 心不知所动，微波涟漪 情不知所起 一往而深&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@michellejoyful&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/93xgk&#34;&gt;缘来就是你 [贺庆媛老师作品]&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@yinlovesu0914/cn-love-or&#34;&gt;&lt;cn-love&gt;   相約於這天 無視所有變遷&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@yinlovesu0914&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/4xusx6&#34;&gt;夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;人气排行榜&#34;&gt;人气排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;votes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@pakyeechan/or-steemit&#34;&gt;致愛情   七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@pakyeechan&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;115&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/5zsevj-or&#34;&gt;他情她爱 - 原創短篇小說  “谷哥点名” 第四期活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;109&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/4xusx6&#34;&gt;夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;72&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/93xgk&#34;&gt;缘来就是你 [贺庆媛老师作品]&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;68&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;67&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;关键词排行榜&#34;&gt;关键词排行榜&lt;/h3&gt;
+
+&lt;p&gt;下面是所有帖子里出现的字符长度超过 2 个、出现次数超过 10 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmRwu8x1v6ynYP4NekmMR3Jz6HF5DtE7uNTMQxcyxGZ9Ku/unnamed-chunk-4-1.png&#34; alt=&#34;unnamed-chunk-4-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;参赛选手&#34;&gt;参赛选手&lt;/h3&gt;
+
+&lt;p&gt;下图是参赛选手的注册 ID 序号分布图。全网目前共有 325515 个 ID。参赛选手中一半以上都排在第 245651 个注册 ID 之后。排在最前面的是第 39653 个 ID，最后面的是 第 328163 个 ID。猜猜他们都是谁？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSMhUK4zWQKoDrUPgH3KFBfhmhcnsik8nXNSijZgUZz9P/unnamed-chunk-6-1.png&#34; alt=&#34;unnamed-chunk-6-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7 月注册的居多。也有一些早期用户。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUn1GNeSzXZPcUpbu1jXqu49khV5qRhnJp9UrtzqMPLi5/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本活动是在 &amp;lsquo;cn&amp;rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签。我们看看除此之外，大家还使用了那些标签???及使用频率。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmVSP3fmmL4sj9cChjdb1dackdih8T1SMkQsvu8W98B1Ry/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢关注“大鹏观察”。欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+
+&lt;h3 id=&#34;附录-参赛作品列表&#34;&gt;附录：参赛作品列表&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;created&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;img&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;votes&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;nchar&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 01:34:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@yinlovesu0914&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@yinlovesu0914/cn-love-or&#34;&gt;&lt;cn-love&gt;   相約於這天 無視所有變遷&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1714&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 02:44:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/5zsevj-or&#34;&gt;他情她爱 - 原創短篇小說  “谷哥点名” 第四期活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;109&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4424&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 03:12:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@ryanfan11&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@ryanfan11/or-miss-u-y-robot-girlfriend-or&#34;&gt;我的機器人女友，你還好嗎? Miss U，Ｍy Robot Girlfriend   “谷哥点名”第四期 情 或者 爱&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1903&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 03:25:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@zhijun&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@zhijun/6n92c7&#34;&gt;亲爱的那不是爱情&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;839&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 06:02:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@pakyeechan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@pakyeechan/or-steemit&#34;&gt;致愛情   七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;115&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1545&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 06:20:30&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@michellejoyful&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@michellejoyful/memory-with-my-lover&#34;&gt;Memory with my lover &lt;sup&gt;-&lt;/sup&gt; 缘不知所起，身不由己 心不知所动，微波涟漪 情不知所起 一往而深&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4422&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 07:15:21&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/93xgk&#34;&gt;缘来就是你 [贺庆媛老师作品]&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;68&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2549&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 11:34:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@ygern&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@ygern/uce7v&#34;&gt;情與愛，還有那鬼遮眼的七月&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;51&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1643&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 13:32:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@rivalhw&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@rivalhw/steemit-08-26&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 首日（08-26）入选文章&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;197&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1790&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 16:26:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@dancingapple&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@dancingapple/3typ3z&#34;&gt;犹是春闺梦里人&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1917&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 17:16:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@moicc&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@moicc/or-love-is-a-decision-you-make&#34;&gt;爱是你做的决定   Love is a decision you make&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1231&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 19:09:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@plokmi&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@plokmi/5whofb&#34;&gt;小狐狸的爱&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2574&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 22:35:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/4xusx6&#34;&gt;夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;72&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1710&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:08:09&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@michaelleeld&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@michaelleeld/52mpnq&#34;&gt;七夕祝福－初恋回到故乡&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;37&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1582&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:13:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;67&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2316&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;#cn-love #cn-reader #cn-programming #steemswatch&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>谷哥点名第 2 期“第一次”回顾（大鹏观察 Steem&#39;s Watch P2）</title>
+      <link>https://steemit.netlify.com/post/2-steem-s-watch-p2/</link>
+      <pubDate>Sun, 27 Aug 2017 20:45:54 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/2-steem-s-watch-p2/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/2-steem-s-watch-p2&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2-steem-s-watch-p2&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/2-steem-s-watch-p2&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/2-steem-s-watch-p2&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/2-steem-s-watch-p2.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;“&lt;a href=&#34;https://steemit.com/cn/@jubi/42wvdr&#34;&gt;谷哥点名&lt;/a&gt;”是 steem 中文社区 @jubi 发起的半命题作文活动。“大鹏观察”旨在对参赛帖子进行一些数据分析和挖掘，展示一些有趣的结果，希望对以后的活动具有一些参考价值。使用的数据来源是 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言。仅供参考，如果有数字与官方有出入，请以官方为准。&lt;/p&gt;
+
+&lt;p&gt;大鹏观察： 谷哥点名第2期回顾&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;参赛基本信息&#34;&gt;参赛基本信息&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;主题：第一次&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;日期：2017-08-09 &amp;ndash; 2017-08-16&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;发起：&lt;a href=&#34;https://steemit.com/cn/@jubi/4tsdsb-and&#34;&gt;“谷哥点名”第2期开始&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;颁奖：&lt;a href=&#34;https://steemit.com/cn/@jubi/sxzgw-and&#34;&gt;“谷哥点名”第2期结束&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;参赛作品列表：见文末。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;帖中之最&#34;&gt;帖中之最&lt;/h3&gt;
+
+&lt;p&gt;本期活动参赛作品共 65 篇。获奖作品的介绍已经在本文开头给出了链接，是按 google 搜索结果排名的，不再赘述。我们也可以用其他方式排名，来看看参赛作品里几个第一名。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;字符最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@carinewhy/or-the-first-time-my-first-family-trip-tai-chung&#34;&gt;第一次 - 在第一次家族旅行 - 台中 (內有家族旅行的心得）| The first time - My first family trip - Tai Chung&lt;/a&gt;，含 9500 个字符。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;插图最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@carinewhy/or-the-first-time-my-first-family-trip-tai-chung&#34;&gt;第一次 - 在第一次家族旅行 - 台中 (內有家族旅行的心得）| The first time - My first family trip - Tai Chung&lt;/a&gt;，含 51 张图片。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;修改间隔最长&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@tvb/the-first-but-also-last-love&#34;&gt;Original poetry 第一次绝恋&amp;ndash;最后的初恋 The first but also last love.&lt;/a&gt;，??布 139.3 小时即 5.8 天之后，作者做了最后一次修改。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;得赞最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@oflyhigh/steemsql&#34;&gt;第一次使用STEEMSQL查询谷哥点名数据&lt;/a&gt;，得到 330 个赞。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;赚钱最多&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@oflyhigh/steemsql&#34;&gt;第一次使用STEEMSQL查询谷哥点名数据&lt;/a&gt;，收入为 243 美元。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;帖子正文里出现最多的关键词&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;下面是所有帖子里出现的字符长度超过 2 个、出现次数超过 10 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。当然，我们去掉了本期指定的关键词&amp;rdquo;第一次&amp;rdquo;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmPabXLoBUzSsbUpRq7HYFKGWrHwcgeEHt7zVFMWS5Zgar/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;参赛选手&#34;&gt;参赛选手&lt;/h3&gt;
+
+&lt;p&gt;下图是参赛选手的注册 ID 序号分布图。全网目前共有 325451 个 ID。参赛选手中一半以上都排在第 209970 个注册 ID 之后。排在最前面的是第 18783 个 ID，最后面的是 第 307645 个 ID。猜猜他们都是谁？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmPs7wH93zSzCcZUgv6p65zVHCdugUjqzzRWi3EW2t6xy6/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7 月注册的居多。也有一些早期用户。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmYpcCHHAz3iq1ECCgnVi7yT4TZhDoCAhXYkDaiwLDaBNX/unnamed-chunk-9-1.png&#34; alt=&#34;unnamed-chunk-9-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;发帖&#34;&gt;发帖&lt;/h3&gt;
+
+&lt;p&gt;活动期间，每天累计发帖总数：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmS5nz9eDxZL2KUWsSRTJzw9oThdLC29whQDHiWA7pygQk/unnamed-chunk-10-1.png&#34; alt=&#34;unnamed-chunk-10-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是个特殊的时钟，一圈是24小时，显示了一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的帖子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是发帖高峰时段。&lt;/p&gt;
+
+&lt;p&gt;可以发现，在标准时间 5 点到 9 ???发帖的人最多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmdrWQmDNYiF2pkVZZe2qHv8iUPriFouf9zqDZcxCrW8xJ/unnamed-chunk-11-1.png&#34; alt=&#34;unnamed-chunk-11-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本活动是在 &amp;lsquo;cn&amp;rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签。我们看看除此之外，大家还使用了那些标签以及使用频率。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQZ7Heh9fTJJRxVSXvYyHjNbUf5hUL98vvX8ke34Mfwxd/unnamed-chunk-12-1.png&#34; alt=&#34;unnamed-chunk-12-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;收入&#34;&gt;收入&lt;/h3&gt;
+
+&lt;p&gt;最后我们来谈钱。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 参与活动的 65 篇帖子，总收入为 2295.02 SBD， 单帖收入最高为 243.24 SBD，平均每帖收入为 35.31 SBD。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmevt3HaRUbhxPD2GDjWxY4CJMFZ6UkasFkkCZE3LvaSqn/unnamed-chunk-13-1.png&#34; alt=&#34;unnamed-chunk-13-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是各篇帖子获得的投票（点赞）数。 累计得赞 2972 个，单帖得到的点赞数最高为 330 个，平均每帖得赞 45.7 个。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmY6455yyZ4z3CQFGzSMuzWZUTr1qXgJNQdcvYDJyaUYNB/unnamed-chunk-14-1.png&#34; alt=&#34;unnamed-chunk-14-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为本次活动能够投票次数最多的前三位是 @jubi, @linuslee0216, @htliao。下面是投票次数超过 10 次的 ID 词云图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmRD2Xjk86zB8bNEK1VSeSwsTfM2VvRsGXyYU37QZ4xVQA/unnamed-chunk-15-1.png&#34; alt=&#34;unnamed-chunk-15-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为本次活动点赞收入贡献最多的前三位伯乐是 @abit, @linuslee0216, @tumutanzi。他们一共贡献了全部收入的 60%。排在他们后面的第 4 到第 10 位的贡献比例如下图。感谢他们的支持！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmdZy31DtfJYcAqbLYxbYfECe3zEKbrxW9HWagSHF266FK/unnamed-chunk-16-1.png&#34; alt=&#34;unnamed-chunk-16-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢关注“大鹏观察”。欢迎关注和参加下一期的活动，也欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+
+&lt;h3 id=&#34;附录-参赛作品列表&#34;&gt;附录：参赛作品列表&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;created&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 07:10:30&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@pakyeechan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@pakyeechan/or&#34;&gt;第一次 - 離鄉別井 - “谷哥点名”活动&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 08:31:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@dixonloveart&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@dixonloveart/13-meet-the-beauty-of-xinjiang-first-time-in-china-national-winter-games&#34;&gt;相约大美新疆,第一次在第13届全国冬运会现场 Meet the beauty of Xinjiang,first time in China national winter games&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 10:15:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrspointm/my-first-encounter-with-steemit-steemit-or&#34;&gt;My first encounter with steemit/我与steemit的第一次邂逅 - 谷歌点名&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 10:31:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@sunnyjolly/n&#34;&gt;我人生的N种第一次&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 10:52:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@icedream&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@icedream/2rutwi&#34;&gt;第一次认识这个世界&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 11:00:00&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@livinguktaiwan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@livinguktaiwan/59nvof&#34;&gt;第一次 - 英國行山篇 &amp;ldquo;谷歌点名&amp;rdquo;活動 Hiking South Downs Way England&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 13:07:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@xiaolizi&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@xiaolizi/steemit&#34;&gt;【参加谷哥点名】我在Steemit的第一次发帖&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 14:12:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@herlife&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@herlife/3y1gfc&#34;&gt;第一次离开熟悉的地方外出闯荡&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 14:26:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@kitcat&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@kitcat/3bfjat&#34;&gt;成就人生的第一次&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 17:11:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@zhijun&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@zhijun/first-time&#34;&gt;第一次 // First Time&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-09 18:12:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@candiceji&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@candiceji/7dq4r7&#34;&gt;人生第一次——不仅有酸甜苦辣，更有悲欢离合&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 00:34:03&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@ace108&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@ace108/chinese-content-only-but-feel-free-to-comment-in-english-if-you-understsand-by-ace108&#34;&gt;第一次 - The First Time (Chinese content only but feel free to comment in English if you understsand) - (by @ace108)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 01:11:24&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/or&#34;&gt;第一次， 细看妈妈的皱纹- “谷哥点名”活动&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 01:22:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@superhardness&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@superhardness/first-exploration&#34;&gt;爱上第一次&amp;ndash;First Exploration&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 01:24:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@victorier&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@victorier/2vxpy6&#34;&gt;如何看待你人生中的第一次？&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 02:06:03&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@laodr&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@laodr/laodr-tea-house-170810&#34;&gt;老道茶館 －請上坐，喝杯茶，說點事；今日話題－第一次 （跨域合作：茶館Ｘ谷哥点名）&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 03:55:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@yinlovesu0914&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@yinlovesu0914/2&#34;&gt;#隨筆2 第一次 - 谷哥点名&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 04:09:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@coldhair&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@coldhair/3dqe3s&#34;&gt;第一次在星级大酒店吃饭&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 04:37:30&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tvb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tvb/the-first-but-also-last-love&#34;&gt;Original poetry 第一次绝恋&amp;ndash;最后的初恋 The first but also last love.&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 05:10:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/my-first-time-ups-and-downs-in-life&#34;&gt;第一次品味人生百态 My First Time - Ups and Downs in Life&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 05:14:57&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@shirlam&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@shirlam/4grndt&#34;&gt;第一次 ── 我和我的友生&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 05:44:24&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@herlife&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@herlife/steemit&#34;&gt;第一次拿到在steemit上写作的钱&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 06:52:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@sylvia1997&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@sylvia1997/4ctrkh&#34;&gt;领导，今天是我第一次喝酒，可不可以。。。&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 11:40:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@blacktranquility&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@blacktranquility/the-ancient-wine-cups-of-the-chinese-history&#34;&gt;第一次去博物馆之中国古代的酒具 The ancient wine cups of the Chinese history&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 13:56:00&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@cornelia&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@cornelia/6fjigk&#34;&gt;第一次去油菜花地里玩，种下了心灵里的树&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 18:45:03&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@kenchung&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@kenchung/my-first-and-long-leave-from-my-hometown&#34;&gt;My first and long leave from my hometown // 第一次離鄉別井&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 21:50:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@bxt&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@bxt/the-first-time-i-made-my-rose-steamed-buns&#34;&gt;The first time i made my rose steamed buns 第一次做玫瑰花馒头！&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-10 23:03:06&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@linuslee0216&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@linuslee0216/or-my-university-life-my-first-time-living-in-a-university-hostel&#34;&gt;第一次 — 住在大学宿舍经历 / 谷哥点名活动 - My university life, my first time living in a university hostel&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 01:16:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@carinewhy&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@carinewhy/or-the-first-time-my-first-family-trip-tai-chung&#34;&gt;第一次 - 在第一次家族旅行 - 台中 (內有家族旅行的心得）- The first time - My first family trip - Tai Chung&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 01:30:00&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/or&#34;&gt;很多第一次的第一次 - &amp;ldquo;谷哥点名&amp;rdquo;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 04:10:27&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@mrpointp&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrpointp/the-first-time-for-being-a-parent&#34;&gt;第一次“体验”做父母的感觉 / The First Time for Being a &amp;ldquo;Parent&amp;rdquo; - 谷歌点名&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 06:23:21&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@incrediblesnow&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@incrediblesnow/79hzy9&#34;&gt;第一次来华文区时的情景与华文区如何发展&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 08:18:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@bestmz&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@bestmz/ftczm&#34;&gt;第一次注册域名&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 09:15:57&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@biuiam&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@biuiam/the-first-time-the-tirst-time-for-scientific-research&#34;&gt;第一次，科學研究的第一次/ “谷哥点名”活动 The First time: The Tirst Time for Scientific Research&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 09:28:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@hopsken&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@hopsken/35ffg5&#34;&gt;第一次去海边 —— “温良恭俭让”的北威尔士海滨小镇兰迪德诺&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 09:36:03&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@krischy&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@krischy/6jpatl&#34;&gt;第二期“谷哥点名”???動： 第一次 離鄉別井&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 10:22:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@wilkinshui&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@wilkinshui/4xkxlc&#34;&gt;我的第一次的虛擬人生&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 10:37:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@rencircle&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@rencircle/3ewrb2&#34;&gt;一天之内的两个第一次&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 12:05:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@oflyhigh&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@oflyhigh/steemsql&#34;&gt;第一次使用STEEMSQL查询谷哥点名数据&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 14:28:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@blacktranquility&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@blacktranquility/5sorag&#34;&gt;历史的传承~第一次去博物馆&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 14:39:03&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@chaofanjun&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@chaofanjun/20&#34;&gt;我第一次挑大梁就让公司损失了20万&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 15:30:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@jessicameng&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@jessicameng/32tqsx&#34;&gt;第一次危险那么近 （分享：留学时的真实经历）&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 17:34:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tiffchiuhk123&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tiffchiuhk123/7lqic&#34;&gt;第一次戀愛&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-11 22:36:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@magicmonk&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@magicmonk/playing-tennis-for-the-first-time&#34;&gt;第一次 打網球 Playing tennis for the first time&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-12 00:33:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@fundurian&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@fundurian/4jgfas&#34;&gt;&amp;ldquo;谷哥点名&amp;rdquo;, 我的第一次倒霉事&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-12 01:42:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@syh7758520&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@syh7758520/79qx58&#34;&gt;第一次距离死亡那么近&amp;mdash;&amp;mdash;谷哥点名二期&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-12 02:45:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@wseemfree&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@wseemfree/blocktrades&#34;&gt;第一次使用blocktrades&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-12 03:40:03&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@leogor1234&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@leogor1234/2aqqc&#34;&gt;第一次踏進公開試的試場 - 谷歌點名第二期&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-12 04:19:15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@timknip&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@timknip/5zhfhd&#34;&gt;第一次连写三篇恐怖小说，原来可以这么短&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-12 05:11:24&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@doggieandfoodie&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@doggieandfoodie/throwback-the-first-day-we-met&#34;&gt;Throwback- The First Day We Met 第一次見面&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-12 08:12:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@zsilence&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@zsilence/muuvv&#34;&gt;[谷哥点名]第一次被骗的经历&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-12 09:06:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@richen&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@richen/3l95fj&#34;&gt;男生也要保養?! 第一次護臉&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-12 10:46:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@flyingcondor&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@flyingcondor/eqhbe&#34;&gt;第一次 - 我全新生活的体会&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-12 20:15:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@plokmi&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@plokmi/2nlzp8&#34;&gt;第一次&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-13 03:09:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@lydiachan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@lydiachan/5pyxz9&#34;&gt;第一次, 上洗手間遇到史無前例的窘境!!! 冏&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-13 13:08:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@nigulax&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@nigulax/5wwpfu&#34;&gt;谷歌点名第二期: 第一次&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-13 21:50:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@dapeng&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@dapeng/6wpnvk&#34;&gt;第一次将“谷哥点名”活动整理成文集&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-14 07:13:27&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@luneknight&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@luneknight/2ryxd2&#34;&gt;第一次陪床&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-14 08:01:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@blacktranquility&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@blacktranquility/6x3uzs&#34;&gt;谷歌点名 &amp;lsquo;第一次&amp;rsquo; 目前的排名情况&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-14 11:43:12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@justyy&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@justyy/200steem-1-sp&#34;&gt;第一次打肿脸充胖子 - 花了200STEEM租1万SP四周！&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-14 14:08:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@gladysmak&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@gladysmak/day-off-in-hong-kong-my-first-time-standup-paddleboarding-in-big-wave-bay-shek-o-eng&#34;&gt;Day Off in Hong Kong : My First Time Standup Paddleboarding in Big Wave Bay,Shek O / 我在香港的第一次立槳衝浪經驗 (Eng/中文）&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-14 16:17:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@lonsoft&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@lonsoft/6sjkod&#34;&gt;第一次远行&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-14 17:04:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@jiangchen&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@jiangchen/4d3k1k&#34;&gt;无数的第一次，只是为了每一次的精彩&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-15 05:17:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@xyj&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@xyj/zewc7&#34;&gt;Drawing Challenge#2 画荷花 第一次参加画画挑战&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-15 23:57:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@mcw&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@mcw/the-first-time-the-first-time-enter-a-research-lab&#34;&gt;第一次，進入研究實驗室的第一次/ “谷哥点名”活动 The First time: The First Time enter a research lab&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;tags: #cn-programming #steemit #steemit-stats #steemswatch&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steem 中国策 前传: 2016.07 - 2017.08 （大鹏观察 Steem&#39;s Watch Tcn0）</title>
+      <link>https://steemit.netlify.com/post/steem-2016-07-2017-08-steem-s-watch-tcn0/</link>
+      <pubDate>Fri, 25 Aug 2017 20:16:15 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steem-2016-07-2017-08-steem-s-watch-tcn0/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-2016-07-2017-08-steem-s-watch-tcn0&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-2016-07-2017-08-steem-s-watch-tcn0&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-2016-07-2017-08-steem-s-watch-tcn0&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-2016-07-2017-08-steem-s-watch-tcn0&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-2016-07-2017-08-steem-s-watch-tcn0.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;前不久，我推出了“大鹏观察”的账号数据分析系列，对 Steem 的 ID 进行数据挖掘，反响不错。然而，对单一用户观察得到的视角毕竟是有限的，结论具有很大的偶然性。这次新推出一个系列，针对标签/类目/板块的整体数据进行一点研究，编号为Tcn 系列，旨在对 cn 板块的帖子进行一些数据分析和挖掘，展示一些有趣的结果，希望对社区发展具有一些纪念意义和参考价值。使用的数据来源是 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言。计划每周一期，仅供参考，如果有数字与官方有出入，请以官方为准。&lt;/p&gt;
+
+&lt;p&gt;大家对活动有什么建议，欢迎提出来，毕竟现在的数据分析还很粗浅，将来可供拓展的方向很多。&lt;/p&gt;
+
+&lt;p&gt;正如了“大鹏观察”的账号数据系列取名为“Steem 史记”一样，“大鹏观察”的板块系列取名为“Steem 中国策”，当然是源自《战国策》。是的，以后说不定还会开发“德国策”，“韩国策”，“美国策”，&amp;rdquo;联合国策&amp;rdquo;&amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Steem 中国策 前传: 2016.07 - 2017.08 （大鹏观察 Steem&amp;rsquo;s Watch Tcn0）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;本期是 “大鹏观察中国策”系列的首篇，对2017年8月之前的历史做个总结回顾。从下一篇开始为周刊，对前一周的数据做分析。&lt;/p&gt;
+
+&lt;h3 id=&#34;帖子排行榜&#34;&gt;帖子排行榜&lt;/h3&gt;
+
+&lt;p&gt;截至 2017-08-25 15:32:31, 以 cn 为标签的帖子共 19838 篇。其中，纳入 cn 类目（category）的有 8929 篇。&lt;/p&gt;
+
+&lt;p&gt;我们来看看关于帖子的几个第一名。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;发布最早排行榜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@roseebit/nxt-3-0-heat-icoo&#34;&gt;芬兰马克及NXT团队成员启动3.0项目HEAT，将联合ICOO进行众筹&lt;/a&gt;，@roseebit 发布于 2016-07-08 23:38:27。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@sictransitgloria/steem-steem-sumup-in-chinese&#34;&gt;什么是STEEM 网络货币? (Steem sumup in Chinese)&lt;/a&gt;，@sictransitgloria 发布于 2016-07-19 09:52:03。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@sictransitgloria/what-will-you-do-if-steem-becomes-chinese-in-the-future&#34;&gt;What will you do if Steem becomes Chinese in the future ?&lt;/a&gt;，@sictransitgloria 发布于 2016-07-22 01:52:33。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;字数排行榜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;字符最多：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@laonie/robinhoodwhale-16-12-2016&#34;&gt;Real-Time Update of RobinHood Whale Project 罗宾鲸火贴实时更新 16-12&lt;/a&gt;，含 45592 个字符。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@laonie/robinhoodwhale-18-12-2016&#34;&gt;Real-Time Update of RobinHood Whale Project 罗宾鲸火贴实时更新 18-12&lt;/a&gt;，含 45212 个字符。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@laonie/robinhoodwhale-15-12-2016&#34;&gt;Real-Time Update of RobinHood Whale Project 罗宾鲸火贴实时更新 15-12&lt;/a&gt;，含 42888 个字符。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;字符最少：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@frankdoing/or-2&#34;&gt;a&lt;/a&gt;，含 1 个字符。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@itissimple/the-netherlands-keukenhof-love-flowers&#34;&gt;don&amp;rsquo;t read&lt;/a&gt;，含 1 个字符。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@timsykes/6vvov4-hi-guys&#34;&gt;Hi Guys&lt;/a&gt;，含 1 个字符。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;插图排行榜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@bestmz/chinese-blue-and-white-porcelain&#34;&gt;Chinese blue and white porcelain. 玩乐天津&amp;ndash;天津博物馆青花瓷展&lt;/a&gt;，含 173 张图片。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@pcoo/100&#34;&gt;转:中国最美的100个地方&lt;/a&gt;，含 100 张图片。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@sweetsssj/travel-with-me-60-i-was-almost-hit-by-a-train-the-maeklong-train-market&#34;&gt;Travel with me #60 : I was (almost) hit by a train! - The Maeklong Train Market!&lt;/a&gt;，含 99 张图片。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;得赞排行榜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;[BitShares Hangout #13 w/ @chris4210 &amp;amp; @officialfuzzy! - 2017-03-24](&lt;a href=&#34;https://steemit.com/@officialfuzzy/bitshares-hangout-13-w-chris4210-and-officialfuzzy-2017-03-24&#34;&gt;https://steemit.com/@officialfuzzy/bitshares-hangout-13-w-chris4210-and-officialfuzzy-2017-03-24&lt;/a&gt;)，2326 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@htliao/why-i-think-99-of-steemians-get-the-wrong-ideas-about-curation-rewards&#34;&gt;Why I think 99% of Steemians get the WRONG ideas about curation rewards&lt;/a&gt;，2314 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@sweetsssj/travel-with-me-81-round-up-of-the-beach-tower-and-royal-towers-at-atlantis-which-hotel-is-better&#34;&gt;Travel with me #81 : Round up of the Beach Tower and Royal Towers at Atlantis - Which Hotel is better ?&lt;/a&gt;，2226 个赞。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;吸金排行榜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@somebody/steem-white-paper-translated-into-chinese&#34;&gt;Steem White Paper Translated into Chinese&lt;/a&gt;，3283.441 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@teamsteem/this-post-is-going-to-become-the-best-paid-post-today&#34;&gt;This post is going to become the best paid post today!&lt;/a&gt;，2358.322 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/@laonie/hello-steemit-i-am-laonie-a-super-superhero-a-hero-of-heroes&#34;&gt;Hello steemit! I am Laonie, a Super Superhero, a Hero of Heroes. 老聂的牛逼哄哄的自我介绍贴&lt;/a&gt;，2213.37 SBD。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;关键词排行榜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;下面是 cn 所有帖子正文里出现的字符长度超过 2 个、出现次数超过 10 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfASj99HBuEXeJ8v23BMYYWh8UuhuLxrrBdhEcPsCLKz7/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;发帖&#34;&gt;发帖&lt;/h3&gt;
+
+&lt;p&gt;2016.07 - 2017-08 期间，cn 每天累计发帖总数如下图所示。低谷期每天发文屈指可数，高峰期每天超过 100 篇。史上出现过三次高峰，分别是 2016 年七八月份，2016年年底，以及2017年七八月（也就是现在）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWuyjJTZbsASKMNeF9HrirZU4SFZgTAqcSesKEDWbipwW/unnamed-chunk-9-1.png&#34; alt=&#34;unnamed-chunk-9-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是个特殊的时钟，一圈是24小时，显示了一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的帖子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是发帖高峰时段。UTC 18 时到 0 时之间发帖最少，对应东八区（如北京时间）为 2 点到 8 点，这说明 cn 区发帖的作者大多数位于这一区域，包括中国大陆、港澳台、新加坡或者澳洲等。UTC 12 时到 15 时 （北京时间 20 时 到 23时）发帖最为集中。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQYjJZFtb73JSQY73J1aRpiULZEMArNogj2SQUf5ZT5wJ/unnamed-chunk-10-1.png&#34; alt=&#34;unnamed-chunk-10-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;除了 cn 为首选标签外，我们看看大家还使用了那些标签以及使用频率。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmb29nJbavvKETtuUZeNo1cx635snPkHPG9gf8K7SiDUGG/unnamed-chunk-11-1.png&#34; alt=&#34;unnamed-chunk-11-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;作者&#34;&gt;作者&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;高产排行榜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;有史以来，cn 区共有 2279 位作者出没。其中，发布帖子最多的前十位是：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;@chinadaily, 共 755 篇。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@ace108, 共 536 篇。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@myfirst, 共 422 篇。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@blacktranquility, 共 413 篇。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@lemooljiang, 共 361 篇。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@oflyhigh, 共 334 篇。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@birds90, 共 279 篇。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@rivalhw, 共 277 篇。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@elfkitchen, 共 277 篇。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@sweetsssj, 共 254 篇。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;富豪排行榜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;帖子收益(total payout value)最大的前十位是：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;@sweetsssj, 共 57349 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@oflyhigh, 共 22338 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@myfirst, 共 17880 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@elfkitchen, 共 12468 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@deanliu, 共 11206 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@rivalhw, 共 10163 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@chinadaily, 共 9305 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@helene, 共 9151 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@birds90, 共 8660 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@officialfuzzy, 共 8647 SBD。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;人气排行榜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;获得点赞最多的前十位是：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;@sweetsssj, 共 121967 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@chinadaily, 共 63429 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@ace108, 共 45721 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@myfirst, 共 35465 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@elfkitchen, 共 33174 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@oflyhigh, 共 31000 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@birds90, 共 29557 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@xiaohui, 共 19340 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@helene, 共 19296 个赞。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@deanliu, 共 17522 ??赞。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;收入&#34;&gt;收入&lt;/h3&gt;
+
+&lt;p&gt;最后我们来谈钱。历史上，cn 板块的总收益为 384069.57 SBD， 单帖收入最高为 3283.44 SBD，平均每帖收入为 19.36 SBD。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNw6xPCm7dnpNHRnLHNBoaLk4h28KozZ1kkaYBEcJbjM5/unnamed-chunk-15-1.png&#34; alt=&#34;unnamed-chunk-15-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是各篇帖子获得的投票（点赞）数。 累计得赞 1000278 个，单帖得到的点赞数最高为 2326 个，平均每帖得赞 50.4 个。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmVrVUFaa5HgqsgRGn5GhrW8XxyhMMbY7Tn6QQa28s4ibU/unnamed-chunk-16-1.png&#34; alt=&#34;unnamed-chunk-16-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这些帖子能够投票次数最多的前三位是 @abit, @myfirst, @lemooljiang。下面是投票次数超过 1000 次的 ID 词云图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXpYzbQ8y5NbweBDtBZSuyBN5dxc7X7V2bz6aujFt3Bab/unnamed-chunk-17-1.png&#34; alt=&#34;unnamed-chunk-17-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为 cn 板块点赞收入贡献最多的前三位伯乐是 @abit, @10000, @wang。他们一共贡献了全部收入的 33%。排在他们后面的第 4 到第 10 位的贡献比例如下图。感谢他们的支持！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmV7UTNuD31dBtzd8J3KAHGDGEgiYHkCbVmvyi9eb5Szvd/unnamed-chunk-18-1.png&#34; alt=&#34;unnamed-chunk-18-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最后，我想补充一句。在撰写本文的过程中，极其偶然地，我发现一篇帖子。它的收益只有 9 SBD，获赞只有区区三十个，它甚至在任何排名中都默默无闻。然而，它却宛若大山密林深处里的一眼清泉，cn 区如今波澜壮阔的大江大海，皆因它而起；前世今生的多少爱恨情仇，皆由此而生。这篇帖子便是：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@laonie/3hw2me&#34;&gt;建议大家使用cn这个tag ,I suggest Chinese use tag cn, in order to filter Chinese posts&lt;/a&gt;，@laonie 发布于 2016-07-24 23:13:15。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢关注“大鹏观察”。欢迎继续关注，也欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steem 史记： @htliao 列传（大鹏观察 Steem&#39;s Watch A2）</title>
+      <link>https://steemit.netlify.com/post/steem-htliao-steem-s-watch-a2/</link>
+      <pubDate>Wed, 23 Aug 2017 20:06:00 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steem-htliao-steem-s-watch-a2/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-htliao-steem-s-watch-a2&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-htliao-steem-s-watch-a2&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-htliao-steem-s-watch-a2&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-htliao-steem-s-watch-a2&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-htliao-steem-s-watch-a2.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;“大鹏观察”是 @dapeng 在 steemit 发起的活动，每周一期，旨在对用户数据进行分析，以期得到一些有用有趣的结果，对用户本人在区块链上的活动具有一定的纪念意义和参考价值。使用的数据来源是 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言。仅供参考，如果与官方有出入，请以官方为准。&lt;/p&gt;
+
+&lt;p&gt;对哪些用户进行分析呢？这就需要你的参与了。从本期活动开始，我们采用新的报名方式： &lt;strong&gt;只接受自荐。如果希望下一期对你自己的用户数据进行分析，那么在最新一期的“大鹏观察”上点赞（Upvote）和留言（Reply）即可。被顶次数最多、位置最靠上的 ID，将是我们下一期的故事主角。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;大家对活动有什么建议，也欢迎提出来，毕竟现在的数据分析还很粗浅，将来可供拓展的方向很多。&lt;/p&gt;
+
+&lt;p&gt;“大鹏观察”第 2 期，故事的主角是 @htliao。看到&lt;a href=&#34;https://steemit.com/cn/@zsilence/4dybom-steemit#@rivalhw/re-dapeng-re-zsilence-4dybom-steemit-20170822t143154389z&#34;&gt;有朋友开始为知名 ID 写人物志&lt;/a&gt;，受其启发，从本期开始，我们稍微换了一下报告方式，那就是——&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Steem 史记： @htliao 列传&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;@htliao 者，Hong Kong 人氏，活跃于东八区。由于本文涉及的时间均采用标准时区 UTC，换算成该时区均需加上 8 小时。&lt;/p&gt;
+
+&lt;p&gt;话说那是个载入史册的时刻： 2017-05-09 15:49:57。乾坤混沌，天地苍茫，每个人都不知道 steem 未来的方向在哪里，不知何去何从。就在这时，某个角落，传来一声婴儿的响亮啼哭。 作为这个世界的第 153668 个生命，@htliao 降生了。&lt;/p&gt;
+
+&lt;p&gt;光阴荏苒，如今已是 2017-08-23 10:20:07, Steem 全网注册用户总数已有 313550 个，全网发帖总数已经有 1712778 篇。在这茫茫人海里， @htliao 有过哪些壮举和作为？&lt;/p&gt;
+
+&lt;p&gt;This is a report of the Steemit ID @htliao. The data were sampled from &lt;a href=&#34;https://steemdata.com/&#34;&gt;https://steemdata.com/&lt;/a&gt; at 2017-08-23 10:20:07, when there were in total 313550 accounts and 1712778 posts on Steem. Data were processes and this report was written in R language.&lt;/p&gt;
+
+&lt;h3 id=&#34;htliao-的基本信息-profile&#34;&gt;@htliao 的基本信息 Profile&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;items&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;info&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;name&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;htliao&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;sup&gt;153668&lt;/sup&gt;&amp;frasl;&lt;sub&gt;313550&lt;/sub&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;created&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2017-05-09 15:49:57&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;profile_image&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;img src=&#34;https://steemitimages.com/DQmV4x9UNaCzJwhPsPdvJNL3f8FBE8YbtNGeq89ivzG3b9w/IMG_6474.JPG&#34; alt=&#34;&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;about&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Steemit Team HK curator&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;location&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Hong Kong&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;website&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NULL&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;post_count&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2582&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;available_STEEM&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;available_SBD&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;5.935&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;available_VESTS&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;7000753.153246&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;reputation&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;20989959785722&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;followers_count&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1220&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;following_count&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;465&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;帖中之最-top-posts&#34;&gt;帖中之最 Top Posts&lt;/h3&gt;
+
+&lt;p&gt;自诞生后，@htliao 就对这个世界发出了自己独特的声音，共发帖 134 篇。我们来看看 @htliao 发布的帖子里的几个第一名。&lt;/p&gt;
+
+&lt;p&gt;In this section we listed @htliao&amp;rsquo;s top posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;字符最多的帖子 Top post with the most characters.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@&#39;r%20id&#39;/a-brief-introduction-of-the-great-authors-from-hong-kong-part-1&#34;&gt;A brief introduction of the great authors from Hong Kong(Part 1)&lt;/a&gt;，含 8247 个字符。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;插图最多的帖子 Top post with the most figures.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@htliao/3z4uze&#34;&gt;我的深圳一日遊&lt;/a&gt;，含 33 张图片。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;修改间隔最长的帖子 Top post with the longest time between the publication and the final edit.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@htliao/my-silver-collection-7-7&#34;&gt;My Silver Coins Collection #7 我的銀幣收藏 #7&lt;/a&gt;，发布 136.5 小时即 5.7 天之后，作者做了最后一次修改。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;得票数最多的帖子 Top post with the most upvotes.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@htliao/why-i-think-99-of-steemians-get-the-wrong-ideas-about-curation-rewards&#34;&gt;Why I think 99% of Steemians get the WRONG ideas about curation rewards&lt;/a&gt;，得到 2314 个赞。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;赚钱最多的帖子 Top post with the most payout value.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/@htliao/the-first-steemit-team-hk-gathering-check-it-out&#34;&gt;The FIRST Steemit Team HK gathering! Check it out!&lt;/a&gt;，收入为 321 美元。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;帖子里出现最多的关键词 Key words&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;下面是 @htliao 所有帖子里出现的字符长度超过2个的中文关键词词云图。字符越大，在 @htliao 帖子里出现次数就越多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmPRC5Mc7mFfFKLHjb2YLxjUB3MuRj5cyCCyRH5onjX1cp/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;粉丝情况-followers-and-following&#34;&gt;粉丝情况 Followers and following&lt;/h3&gt;
+
+&lt;p&gt;@htliao 广结四海英雄，有 1220 个追随者，@htliao 关注的 ID 总数是 465。其中，有 205 个 ID 跟 @htliao 是双向关注的，而 260 个ID 虽然被 @htliao 关注，但却没有关注 @htliao 。&lt;/p&gt;
+
+&lt;p&gt;@htliao had 1220 followers. @htliao followed 465 ID in total, in which 205 IDs interacted with @htliao bidirectionally, while 260 IDs did not follow @htliao.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSfz9sYoxsmSwceGnGA36ayijHHXRDjgHkHfYSExrtcCJ/VennDiagram.png&#34; alt=&#34;VennDiagram.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;若问上图中红色和蓝色区域的名单，请使用 @dapeng 开发的&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;在线小工具 steemr&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;随着朋友数量的变化， @htliao 逐渐积累着江湖声望。下面是声望值增长的时间趋势。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWQhFudUyvygbrFjYiLUF6o47qRVsvhGKaZMcT1Ko2SF2/unnamed-chunk-10-1.png&#34; alt=&#34;unnamed-chunk-10-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;发帖-posts&#34;&gt;发帖 Posts&lt;/h3&gt;
+
+&lt;p&gt;下图是 @htliao 的发帖时间图，图里每个点代表一篇帖子，往左水平看对应的是发帖的时刻，往下垂直看是发帖的日期。图中使用的标准时区 UTC。&lt;/p&gt;
+
+&lt;p&gt;The following figure shows @htliao&amp;rsquo;s active time. The green line indicates @htliao&amp;rsquo;s register time on Steem.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmYohBBxcjpiN4xzSNuA1ivRxpgAEFLPZKZw38tHjtyPxD/unnamed-chunk-11-1.png&#34; alt=&#34;unnamed-chunk-11-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是个特殊的时钟，一圈是24小时，显示了 @htliao 一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的帖子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是 @htliao 发帖的高峰时段。可以发现，@htliao 除了在 18 时到 21 时(香港时间 2 时到 5 时)之间从未发过帖之外，在其他时段均有发帖活动。最活跃的时段是 10 时 到 14 时（香港时间 18 时 到 22 时）。&lt;/p&gt;
+
+&lt;p&gt;The figure above shows the frequency of @htliao&amp;rsquo;s posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmaAJELA7jznb7StGX23QcTmZrSXAN7ft5ss9giAh1239f/unnamed-chunk-13-1.png&#34; alt=&#34;unnamed-chunk-13-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是每周累计发帖总数。在 2017 年 6 月发帖最多，高峰期每周发帖超过了 25 篇。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeLURjaSLKACgm3RuSpfZ34YRhR9Ks1bYEa476F5gvw24/unnamed-chunk-14-1.png&#34; alt=&#34;unnamed-chunk-14-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;留言-reply&#34;&gt;留言 Reply&lt;/h3&gt;
+
+&lt;p&gt;下图是 @htliao 对别人帖子的评论（留言）时间图。蓝色点表示周一到周五，红色表示周六和周日。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUf2LdEVYhxmRz3VHEt2fXuSSUMWo3qq7tGxzSFZgzKgo/unnamed-chunk-15-1.png&#34; alt=&#34;unnamed-chunk-15-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是 @htliao 每天发布评论的时刻统计。24 小时均有评论活动！仍然是在香港时间的晚上比较频繁。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmezM8HHWVYD1uUw2pXkRssEq2trMcrffHmiWYYYwUBrVz/unnamed-chunk-17-1.png&#34; alt=&#34;unnamed-chunk-17-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是每周发表的评论总数。仍然是 6 月份达到高峰的每周超过 1000 条评论。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWZmdUaK3N6sZso3BXL2xGXTrVCzZLqq6oUwNgeghACNr/unnamed-chunk-18-1.png&#34; alt=&#34;unnamed-chunk-18-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;点赞-vote&#34;&gt;点赞 Vote&lt;/h3&gt;
+
+&lt;p&gt;下图是 @htliao 发布投票（点赞）的时间趋势图。&lt;/p&gt;
+
+&lt;p&gt;The following figure shows @htliao&amp;rsquo;s active vote time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTBPvRj6EQDNMxWuyKtkhu56tNRJiKSSiDAqVN42BCmei/unnamed-chunk-19-1.png&#34; alt=&#34;unnamed-chunk-19-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是 @htliao 点赞的24小时分布图。点赞活动主要集中在香港时间的晚上，其次是在香港时间的上午 8 时 到 12 时之间。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmRYG1ZkVJrxiHoVXjSLEojWYZzodmGRvvRq9BK1xGig22/unnamed-chunk-21-1.png&#34; alt=&#34;unnamed-chunk-21-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;每周点赞总数：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeNvyU8Wh6h5ZAKR82y8iCVW5fLi9ZZ4GdcThWs82E2Ji/unnamed-chunk-22-1.png&#34; alt=&#34;unnamed-chunk-22-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;帖子的质量和收入-quality-and-money&#34;&gt;帖子的质量和收入 Quality and money&lt;/h3&gt;
+
+&lt;p&gt;下面的数据表格是 @htliao 发帖的首选分区的次数。@htliao 发帖最多的圈子是 &amp;lsquo;chainbb-general&amp;rsquo;。&lt;/p&gt;
+
+&lt;p&gt;The table below shows the categories (the first tags) of @htliao&amp;rsquo;s posts. @htliao posted most posts in &amp;lsquo;chainbb-general&amp;rsquo;.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;category&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Freq&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;bitcoin&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;chainbb-general&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;chainbb-suggestions&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;charity&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cn&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cn-conspiracy&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cn-cryptocurrency&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cn-food&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cn-money&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cn-silver&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;colorchallenge&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;conspiracy&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cryptocurrency&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;curation&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;digibyte&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;drawing&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;drawingchallenge&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;eos&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ethereum&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;food&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;gold&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;introduceyourself&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;life&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;news&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;silver&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;steem&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;steemit&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;travel&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;treetuesday&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;现在我们来谈谈钱。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 @htliao 共发帖 134篇，总收入为 3446.29 SBD， 单帖收入最高为320.6 SBD，平均每帖收入为25.72 SBD。&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s talk about money. The figure below shows the dollars @htliao got from each post. Averagely @htliao earned 25.72 dollars per post, with the maximum of 320.6 dollars from one post.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmPGcBygf4M5XWURpXdMB8CTCEYJ2CEpxptSx7Ly8zBqYD/unnamed-chunk-25-1.png&#34; alt=&#34;unnamed-chunk-25-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图显示的是每帖收入的时间趋势。高峰期每周收入超过 900 SBD。&lt;/p&gt;
+
+&lt;p&gt;The figure below shows the trend of @htliao&amp;rsquo;s money per post.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTh8wW91cQ98CoDm8Hi4vM5adF2Yy1wSyAQLm8yeR6a5x/unnamed-chunk-26-1.png&#34; alt=&#34;unnamed-chunk-26-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是 @htliao 帖子获得的投票（点赞）数。 @htliao 累计得赞 10021 个，单帖得到的点赞数最高为 2314 个，平均每帖得赞 74.8 个。&lt;/p&gt;
+
+&lt;p&gt;The figure below shows the upvote number of each post. Averagely @htliao earned 74.8 upvotes per post, with the maximum of 2314 upvotes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUoGSW4U31D3Ao9G5oQMsVM66DFeBMWAmdAxJkth18GzL/unnamed-chunk-27-1.png&#34; alt=&#34;unnamed-chunk-27-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是平均每赞得到的收益 SBD 的时间趋势。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSqHK9wPpziRCTghcpBV7g6EYJCy8opvLeicrdG3BYitg/unnamed-chunk-28-1.png&#34; alt=&#34;unnamed-chunk-28-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是每周收入总和的时间趋势。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmd6dF8YKVXUyQseVSwVAVM562CtnM4LCztmezw6CQhVKZ/unnamed-chunk-29-1.png&#34; alt=&#34;unnamed-chunk-29-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为 @htliao 帖子得到的投票次数最多的前三位伯乐是 @susanlo, @cryptoemperor, @yvonnetse。下面为 @htliao 帖子得到的投票次数超过 20 次的 ID 词云图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmasY6wMLFDtH3Fv24DsDwJw53ThkBDLhCTBxyS57VT4M2/unnamed-chunk-30-1.png&#34; alt=&#34;unnamed-chunk-30-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为 @htliao 帖子收益贡献最多的前三位伯乐/金主/贵人是 @abit, @linuslee0216, @nicolemoker。他们一共贡献了 @htliao 全部收入的 56%。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢???注“大鹏观察”。欢迎参加下一期的活动，也欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+
+&lt;p&gt;您也许对以下帖子感兴趣：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;大鹏观察 A0：Steem 史记 @tumutanzi &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit&#34;&gt;前传 1&lt;/a&gt;， &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;前传 2&lt;/a&gt;，&lt;a href=&#34;https://steemit.com/cn/@dapeng/no-1s-of-his-steem-posts-steem&#34;&gt;前传 3&lt;/a&gt;。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;大鹏观察 A1：&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-id-report-1-justyy-1&#34;&gt;Steem 史记 @justyy 列传&lt;/a&gt;。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;大鹏观察 P1：&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-watch-p1&#34;&gt;谷哥点名第 1 期“精彩瞬间”回顾&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tags: #cn-programming #cn-reader #steemit #steemswatch&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>steemr: an easy web-based tool for Steemians 开发了一个易用的在线小工具 steemr</title>
+      <link>https://steemit.netlify.com/post/steemr-a-web-based-tool-for-steemers-or-steemians-steemr/</link>
+      <pubDate>Thu, 27 Jul 2017 13:23:39 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steemr-a-web-based-tool-for-steemers-or-steemians-steemr/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steemr-a-web-based-tool-for-steemers-or-steemians-steemr.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In my previous post &lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;&lt;em&gt;New Steemians, have you ever thought about your data privacy? (1)&lt;/em&gt;&lt;/a&gt; , some friends asked me to make such a report for them. It might be useful to develop an on-line tool for every Steemer/Steemian. Thus I have developed &lt;a href=&#34;http://steemr.org&#34;&gt;steemr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is easy to use. Click the &lt;code&gt;Follower report&lt;/code&gt;  tab and input an ID , or click the &lt;code&gt;Voter report&lt;/code&gt;  tab and input the link of post you are interested in. Then click &lt;code&gt;GO&lt;/code&gt;. Wait 5 &amp;ndash; 20 seconds and you will see the results.&lt;/p&gt;
+
+&lt;p&gt;It is only a tip of the iceberg. More features of this tool are coming soon.&lt;/p&gt;
+
+&lt;p&gt;Think twice before blogging on Steemit. You can&amp;rsquo;t put the genie back in the bottle,  and  it is no use crying over spilt milk.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcdcBY7j8ntos4qcu1HVsUYTd2WgCPH8SfwHTnDqdJG4J/steemr-fr.jpg&#34; alt=&#34;steemr-fr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmS9hzu1w1wkqeruLwxR1X2FUtekL6mHdUxJvmBkrhFiDZ/steemr-vr.jpg&#34; alt=&#34;steemr-vr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在&lt;a href=&#34;https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy&#34;&gt;Steemit 的新手们，你们考虑过数据隐私的问题吗 (1)&lt;/a&gt; 一文发布后，的确有朋友要我对他的 ID 的关注者信息也写一个类似的报告。我想，不如开发个在线工具，大家谁想查就自己查吧。于是就有了 &lt;a href=&#34;https://pzhao.shinyapps.io/steemr/&#34;&gt;steemr&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;用起来很简单：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;点击 &lt;code&gt;Follower report&lt;/code&gt; 标签，输入你想查的 ID，点击 &lt;code&gt;GO&lt;/code&gt; 按钮，等几秒钟或十几秒钟（取决于服务器的速度和 你要查的 ID 的情况）就可以看到结果了，包括粉丝 （followers） ID 的词云图，按这些粉丝的粉丝数量、发帖数量和vests大小??序。如果粉丝超过30个，就取前三十个。词云图下方，还给出了尚未互粉的 ID 列表。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;点击&lt;code&gt;Voter report&lt;/code&gt;  标签，输入你想查的帖子链接（可以是完整链接，也可以是从@符号开头到末尾），点击 &lt;code&gt;GO&lt;/code&gt; 按钮，等几秒钟或十几秒钟，就可以看到为该帖点赞的名单和百分比。图下面给出了尚未投票的粉丝名单（类似的工具有 &lt;a href=&#34;https://helloacm.com/tools/steemit/who-has-not-voted/&#34;&gt; @justyy 的网页界面&lt;/a&gt; ，&lt;a href=&#34;https://steemit.com/cn/@beautifulbella/use-excel-to-find-your-friends-who-does-not-upvote-you-excel&#34;&gt; @beautifulbella 的Excel 方法&lt;/a&gt;，&lt;a href=&#34;https://steemit.com/cn/@oflyhigh/voter-list&#34;&gt; @oflyhigh 的Python 方法&lt;/a&gt;）。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;本工具以后会进一步开发完善。这只是冰山的一角。再次提醒大家：在 steemit 发文发照片要三思，免得后悔，覆水难收。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

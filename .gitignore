@@ -1,3 +1,16 @@
+#archetypes/
+#content/
+#data/
+#layouts/
+R/
+#static/
+#themes/
+#config.toml
+#index.Rmd
+steemxmin.Rproj
+.Rproj.user/
+index.Rmd
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

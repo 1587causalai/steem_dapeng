@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cn-love on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/cn-love/index.xml</link>
+    <description>Recent content in Cn-love on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/cn-love/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>“七夕征文大赛”第 3 天（2017-08-28） 排行榜 (大鹏观察 Steem&#39;s Watch P5)</title>
+      <link>https://steemit.netlify.com/post/5-2017-08-28-steem-s-watch-p5/</link>
+      <pubDate>Mon, 28 Aug 2017 12:52:24 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/5-2017-08-28-steem-s-watch-p5/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5-2017-08-28-steem-s-watch-p5&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5-2017-08-28-steem-s-watch-p5&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5-2017-08-28-steem-s-watch-p5&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5-2017-08-28-steem-s-watch-p5&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/5-2017-08-28-steem-s-watch-p5.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本文是“大鹏观察”为“七夕征文大赛”制作的每日排行榜，以便为读者提供帮助，并为评委会筛选优质文章提供参考，以尽 @dapeng 的绵薄之力。本文使用的数据来源是 steemsql.com 和 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言，数据的获取时间是 2017-08-28 12:47:06 UTC。注意：投票仍然在继续，作者有可能修改正文，所以本文列举的数字不是最终结果。此外，本文列举的投稿时间是 UTC。从本期开始，为了跟主办方一致，我们的统计按照北京时（UTC+8）划分日期。如有疏漏，欢迎指正。&lt;/p&gt;
+
+&lt;p&gt;前情回顾：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/08-26&#34;&gt;七夕征文大赛首日（08-26）排行榜 (大鹏观察 Steem&amp;rsquo;s Watch P3)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/2-2017-08-27-steem-s-watch-p4&#34;&gt;七夕征文大赛第2天（08-27）排行榜 (大鹏观察 Steem&amp;rsquo;s Watch P4)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;“七夕征文大赛”第 3 天（2017-08-28 排行榜 (大鹏观察 Steem&amp;rsquo;s Watch P5)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;参赛基本信息&#34;&gt;参赛基本信息&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;发起：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/lhihf-steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;参赛作品：新作品共 21 篇，清单见文末。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;入围作品：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/steemit-08-28&#34;&gt;入选文章&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;人气排行榜&#34;&gt;人气排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;投票数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 05:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@victorier&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@victorier/chinese-valentine-s-day-literature-writing-contest&#34;&gt;這是一個愛情故事 －七夕情人節徵文比賽 Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 07:27:30&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@liflorence&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@liflorence/or-or-or&#34;&gt;微小说 -如若深情是一桩悲剧，定以死句读。&amp;ndash;七夕中文社区征文赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;87&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 04:05:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/5uhqtm&#34;&gt;祖辈爱情（三）：最美好的初恋≠最终的归宿&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;77&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 21:46:24&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@susanli3769&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@susanli3769/6nai6b&#34;&gt;我和老公的跨国情- 淡淡的情，浓浓的爱 - 七夕爱情征文作品&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;77&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 06:55:15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@magicmonk&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@magicmonk/4ultij&#34;&gt;我上電視追尋爱情的故事&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;70&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;字符数排行榜&#34;&gt;字符数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;字符数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 06:55:15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@magicmonk&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@magicmonk/4ultij&#34;&gt;我上電視追尋爱情的故事&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3509&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 21:46:24&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@susanli3769&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@susanli3769/6nai6b&#34;&gt;我和老公的跨国情- 淡淡的情，浓浓的爱 - 七夕爱情征文作品&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3123&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 10:16:45&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@pzhao&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@pzhao/jkpms&#34;&gt;爸爸讲故事：博笑 (七夕征文大赛 谷哥点名爱情主题)&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2453&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 03:54:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@lingfei&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@lingfei/3wktq4&#34;&gt;Love will be an end, and regret will be no end（天长地久有时尽，此恨绵绵无绝期！）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2310&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 08:59:03&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@leogor1234&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@leogor1234/sxacq&#34;&gt;給您的一封信 - 守護著你的人上&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2193&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;插图数排行榜&#34;&gt;插图数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;插图数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 03:54:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@lingfei&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@lingfei/3wktq4&#34;&gt;Love will be an end, and regret will be no end（天长地久有时尽，此恨绵绵无绝期！）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:21:18&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@tiffanychen&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@tiffanychen/4dvzqg&#34;&gt;每个情人节，我只想要你&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 05:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@victorier&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@victorier/chinese-valentine-s-day-literature-writing-contest&#34;&gt;這是一個愛情故事 －七夕情人節徵文比賽 Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:49:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mumingduozi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mumingduozi/bn7ea&#34;&gt;爱的天使&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 23:47:42&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@linuslee0216&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@linuslee0216/or-or-steemit&#34;&gt;仅属于新一代大学生的浪漫，超越爱情的友情，男女之间模糊的分界线 &amp;ndash;七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;关键词排行榜&#34;&gt;关键词排行榜&lt;/h3&gt;
+
+&lt;p&gt;下面是所有帖子里出现的字符长度超过 2 个、出现次数超过 10 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcEimd2FL5Hq7sBcF2JCbgdMiPiAsSqFyr8uhmaciXz6F/unnamed-chunk-5-1.png&#34; alt=&#34;unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;参赛选手&#34;&gt;参赛选手&lt;/h3&gt;
+
+&lt;p&gt;下图是参赛选手的注册 ID 序号分布图。参赛选手中一半以上都排在第 243488.5 个注册 ID 之后。排在最前面的是第 29666 个 ID，最后面的是 第 332611 个 ID。猜猜他们都是谁？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmY24eAQa44TcWYvgqZFfHBeMbhsdtiAG2YG1iNn1nTckZ/unnamed-chunk-6-1.png&#34; alt=&#34;unnamed-chunk-6-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7 月注册的居多。也有一些早期用户。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmVH6aCUnXy7skqfbXhK5ZaAsYmgHfTBTfZTF1pkCrGBez/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本活动是在 &amp;lsquo;cn&amp;rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签。我们看看除此之外，大家还使用了那些标??以及使用频率。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZAVEbfFwmy8vSP3dD5CEZTwxWQp7ZLy61qzcneBpv9c5/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢关注“大鹏观察”。欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+
+&lt;h3 id=&#34;附录-参赛作品列表&#34;&gt;附录：参赛作品列表&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;插图数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;投票数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;字符数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 21:46:24&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@susanli3769&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@susanli3769/6nai6b&#34;&gt;我和老公的跨国情- 淡淡的情，浓浓的爱 - 七夕爱情征文作品&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;77&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3123&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 22:51:30&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mrpointp&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrpointp/steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&amp;mdash;令人煞费苦心的情人节礼物&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;56&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1916&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 23:47:42&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@linuslee0216&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@linuslee0216/or-or-steemit&#34;&gt;仅属于新一代大学生的浪漫，超越爱情的友情，男女之间模糊的分界线 &amp;ndash;七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;98&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1436&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 00:16:12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@wanderwithtwo&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@wanderwithtwo/2iksz6&#34;&gt;谷歌点名(七夕节活动): 友情变成爱情的第二次 ??&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;14&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;724&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:21:18&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@tiffanychen&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@tiffanychen/4dvzqg&#34;&gt;每个情人节，我只想要你&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1526&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:36:33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@feng1925&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@feng1925/in-china-how-did-i-spend-the-chinese-valentine-s-the-double-seventh-festival&#34;&gt;In China, how did I spend the Chinese Valentine&amp;rsquo;s the Double Seventh Festival？在中国，人们如何过七夕？&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1262&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:44:27&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@ernestine&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@ernestine/2g9mqe&#34;&gt;执子之手，与子偕老&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;14&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1372&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:48:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/6s2qbr&#34;&gt;???辈爱情（二）：战火纷飞，爱的伏笔&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1798&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 01:49:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mumingduozi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mumingduozi/bn7ea&#34;&gt;爱的天使&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;753&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 03:54:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@lingfei&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@lingfei/3wktq4&#34;&gt;Love will be an end, and regret will be no end（天长地久有时尽，此恨绵绵无绝期！）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;68&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2310&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 04:05:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/5uhqtm&#34;&gt;祖辈爱情（三）：最美好的初恋≠最终的归宿&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;77&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1862&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 05:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@victorier&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@victorier/chinese-valentine-s-day-literature-writing-contest&#34;&gt;這是一個愛情故事 －七夕情人節徵文比賽 Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2105&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 06:55:15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@magicmonk&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@magicmonk/4ultij&#34;&gt;我上電視追尋爱情的故事&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;70&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3509&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 07:10:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@syh7758520&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@syh7758520/2mlsrf&#34;&gt;关于爱情&amp;mdash;&amp;ndash;谷歌点名四期&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;711&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 07:27:30&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@liflorence&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@liflorence/or-or-or&#34;&gt;微小说 -如若深情是一桩悲剧，定以死句读。&amp;ndash;七夕中文社区征文赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;87&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1982&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 08:59:03&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@leogor1234&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@leogor1234/sxacq&#34;&gt;給您的一封信 - 守護著你的人上&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2193&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 09:01:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@sunnyjolly/5xhzgh&#34;&gt;叶子&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1088&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 09:26:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@livinguktaiwan&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@livinguktaiwan/39peuj&#34;&gt;七夕情人节情征文大赛 ~ 現代愛情故事&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;46&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1231&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 09:33:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrspointm/original-or-or&#34;&gt;错过的爱情 (Original) &amp;ndash; 七夕原创微小说&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;48&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1908&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 09:34:12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@rezarezz&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@rezarezz/if-the-affection-is-a-tragedy-will-be-written-to-death-sentence-the-chinese-community-essay-contest&#34;&gt;If the affection is a tragedy, will be written to death sentence. The Chinese community essay contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6240&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-28 10:16:45&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@pzhao&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@pzhao/jkpms&#34;&gt;爸爸讲故事：博笑 (七夕征文大赛 谷哥点名爱情主题)&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2453&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;#cn-love #cn-reader #cn-programming #steemswatch&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>爸爸讲故事：博笑 (七夕征文大赛 谷哥点名爱情主题)</title>
+      <link>https://steemit.netlify.com/post/jkpms/</link>
+      <pubDate>Mon, 28 Aug 2017 10:16:45 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/jkpms/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@pzhao/jkpms&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@pzhao/jkpms&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@pzhao/jkpms&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@pzhao/jkpms&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_pzhao/master/content/post/jkpms.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;今天，爸爸给你讲个爱情故事。是个真事儿哦。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;什么是爱情？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;爱情啊，你才九岁，三言两语解释不清楚。听听爸爸讲的故事，你可能就明白了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2014/12/08/11/49/love-560783_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;图片来源: cdn.pixabay.com&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;从前，有个小男孩，住在一个城堡里，是含着金汤匙出生的。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;金汤匙是什么？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;就是勺子，金子做的，很贵。含着金子汤匙，意思就是他爷爷奶奶爸爸妈妈都很有钱。事实上，他家是城堡的主人。小男孩慢慢长大了，认识了很多女孩，但没有一个让他真心喜欢。直到 16 岁那年，他遇见了一个特别美的女孩子。有多美呢？如果拿来白雪公主故事里的魔镜，对镜子念咒语&amp;mdash;咒语怎么说来着？&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Mirror, mirror, on the wall,&lt;/p&gt;
+
+&lt;p&gt;Who in this land is the fairest of all?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;对。那么镜子一定会说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;这个女孩 is the fairest of all.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;就像所有的男人都喜欢美貌的女人一样，男孩深深爱上了这个女孩，对女孩百依百顺。为了她，他可以做任何事情。两个年轻人很快就结婚了，成为一对儿年轻的夫妻。&lt;/p&gt;
+
+&lt;p&gt;结婚时间长了，男孩发现一件事，觉得很奇怪，于是就问：”亲爱的，你为什么天天愁眉苦脸的？有什么伤心事？“&lt;/p&gt;
+
+&lt;p&gt;女孩皱着眉头说：”我也不知道为什么，就是笑不出来。我是不是应该看看医生，问问是不是得了抑郁症？“&lt;/p&gt;
+
+&lt;p&gt;男孩说：”不用吧，不如我来给你想想办法。“&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;咯吱她不就行了？弟弟一咯吱就笑。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;哎，早就咯吱过了，不管用啊。于是，男孩花了很多钱，请来世界上最好的马戏团的小丑表演。妻子看了一眼却说：”长得真难看！不好笑???“&lt;/p&gt;
+
+&lt;p&gt;男孩又给妻子讲了几个笑话，妻子却说：”tooooooold!！不好笑！“你看，给别人讲笑话要讲别人没听过的。男孩平时不看书不看报，脑子里就那几个老笑话，听的次数多就没意思了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;我给莱缇西亚讲笑话，她就会笑。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;嗯，所以我觉得主要原因还是这个女孩不够爱这个男孩吧。&lt;/p&gt;
+
+&lt;p&gt;总之，绞尽脑汁试了很多办法，后来连男孩自己都笑不起来了，心情很不好，推开窗户透透气，抬头一看，看见城堡高塔上的火把。&lt;/p&gt;
+
+&lt;p&gt;那个时候，盗贼横行，说不准什么时候就闯进城堡来抢东西。男孩的父母去世前告诉他，如果有强盗来抢东西，你就点燃高塔上的火把，父母的朋友们会立刻赶来帮忙，帮他赶走强盗。然而，这个火把男孩从来没有用过。&lt;/p&gt;
+
+&lt;p&gt;男孩想：”她从来没见过点燃的火把。不如去高塔上开个篝火晚会，说不定能让她笑一笑。“&lt;/p&gt;
+
+&lt;p&gt;男孩为这个新主意兴奋不已。他对妻子说：”亲爱的，今晚给你一个惊喜。“&lt;/p&gt;
+
+&lt;p&gt;晚上，男孩带妻子来到了高塔上，请来了一些朋友，”轰“地一下点燃了火把，奏响了音乐。男孩说：”来，大家唱起来跳起来！“&lt;/p&gt;
+
+&lt;p&gt;这一年，男孩才二十来岁；他不知道，自己已经不小心犯下了大错。&lt;/p&gt;
+
+&lt;p&gt;火把一亮，住在附近的亲戚朋友立刻知道：有强盗来抢东西了！&lt;/p&gt;
+
+&lt;p&gt;他们立刻穿上盔甲，带着人马连夜往城堡方向赶。他们要来救这个男孩，生怕晚来一分钟，他家就被坏人抢光，说不定他也会被抓走。&lt;/p&gt;
+
+&lt;p&gt;离得近的亲友们很快赶到了城堡。来到高塔一看，咦，男孩带着妻子载歌载舞，一点不像被强盗抢了的样子。&lt;/p&gt;
+
+&lt;p&gt;大家擦擦头上的汗，抹抹脸上的灰，面面相觑。妻子看到大家狼狈不堪的样子，笑了。&lt;/p&gt;
+
+&lt;p&gt;男孩大喜：”亲爱的，你的抑郁症治好啦！“然后对大家说：”没事儿没事儿，我们是军事演习，不是真的。???们快回去吧，辛苦辛苦！“&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;这个男孩太傻了。他肯定没听过狼来了的故事。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;也许吧。大家当然很气愤了，心想：演习也不事先说一声！大半夜折腾我们演习，你们却在开party！后来一想，这孩子，还是太年轻了， 20 岁当头，正是爱玩的岁数。算了，回去接着睡觉吧。&lt;/p&gt;
+
+&lt;p&gt;妻子一笑之后，抑郁症全好了。从此，男孩女孩过上了快乐的生活。&lt;/p&gt;
+
+&lt;p&gt;一般来说，童话故事讲到这里就可以结束了。可惜，这不是童话。&lt;/p&gt;
+
+&lt;p&gt;有一天，城堡的卫兵突然跑进来说：不好了不好了，强盗来了！&lt;/p&gt;
+
+&lt;p&gt;男孩大吃一惊：火把点了没？&lt;/p&gt;
+
+&lt;p&gt;卫兵说：点了，但是没人来！&lt;/p&gt;
+
+&lt;p&gt;男孩吓得冷汗直流，心想：糟了，大家不会以为是&amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;果然，亲友们看到了高塔的火把，以为又是这孩子的游戏，根本没在意，倒头接着睡。就像狼来了的故事，你欺骗戏弄了别人，以后哪怕说真话，别人都不相信你了。&lt;/p&gt;
+
+&lt;p&gt;没有人帮忙，强盗闯了进来，不光把城堡里的各种金银财宝好东西全部抢走，他们还把这个男孩杀死了。男孩死的时候才 24 岁。爸爸 24 岁的时候还没有遇见妈妈呢。&lt;/p&gt;
+
+&lt;p&gt;这男孩为博取爱人一笑，不光丢了江山，连命都没了。爱情不是童话，从此，他再也没有了快乐的生活。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;那他一定很后悔咯？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;不一定。有些人，为了爱情，愿意付出一切，愿意为爱人去死。这就是爱情。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;爸爸，我不想为爱情死。我要跟你和妈妈永远在一起。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我们也想跟你永远在一起。不过，人长大之后总会遇见自己爱的人，离开爸爸妈妈，跟爱人一起生活的。是不是愿意为爱情付出一切，到时候你就明白了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;那这个男孩真的死了？是真事儿？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;是真事儿。故事发生在三千年前的中国，男孩是个国王，叫做周幽王，女孩叫褒姒。这个故事，就叫做《周幽王烽火戏诸侯》。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;前???回顾：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/5qthqy&#34;&gt;爸爸讲故事：楔子 华容道&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/2kttem&#34;&gt;爸爸讲故事：治水&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/ftkq1&#34;&gt;爸爸讲故事：闹海&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/5j64mx&#34;&gt;爸爸讲故事：封神&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>“七夕征文大赛”第 2 天（2017-08-27）排行榜 (大鹏观察 Steem&#39;s Watch P4)</title>
+      <link>https://steemit.netlify.com/post/2-2017-08-27-steem-s-watch-p4/</link>
+      <pubDate>Mon, 28 Aug 2017 08:26:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/2-2017-08-27-steem-s-watch-p4/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/2-2017-08-27-steem-s-watch-p4&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2-2017-08-27-steem-s-watch-p4&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/2-2017-08-27-steem-s-watch-p4&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/2-2017-08-27-steem-s-watch-p4&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/2-2017-08-27-steem-s-watch-p4.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本文是“大鹏观察”为“七夕征文大赛”制作的每日排行榜，以便为读者提供帮助，并为评委会筛选优质文章提供参考，以尽 @dapeng 的绵薄之力。本文使用的数据来源是 steemsql.com 和 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言，数据的获取时间是 2017-08-28 08:18:12 UTC。&lt;/p&gt;
+
+&lt;p&gt;注意：投票仍然在继续，作者有可能修改正文，所以本文列举的数字不是最终结果。此外，本文列举的投稿时间是 UTC。从本期开始，为了跟主办方一致，我们的统计按照北京时（UTC+8）划分日期。如有疏漏，欢迎指正。&lt;/p&gt;
+
+&lt;p&gt;前情回顾：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/08-26&#34;&gt;七夕征文大赛首日（08-26）排行榜 (大鹏观察 Steem&amp;rsquo;s Watch P3)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;大鹏观察：“七夕征文大赛”第 2 天（2017-08-27）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;参赛基本信息&#34;&gt;参赛基本信息&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;发起：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/lhihf-steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;参赛作品：新作品共 27 篇，清单见文末。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;入围作品：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/steemit-08-27&#34;&gt;第二日（08-27）入选文章&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;人气排行榜&#34;&gt;人气排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;投票数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 01:24:33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@kitcat&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@kitcat/chinese-valentine-s-day-literature-writing-contest&#34;&gt;七夕情人節徵文比賽 － 藍夢 (散文) Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;107&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 00:30:57&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@carinewhy&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@carinewhy/4fwydl-steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 - 在愛情中是沒有壞人的&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;102&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:02:06&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/steemit&#34;&gt;午餐 &amp;ndash; 七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;99&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:12:21&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/steemit&#34;&gt;瑰麗粉紅 ｜七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 10:35:36&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@biuiam&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@biuiam/steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 - 科學。愛?&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;93&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;字符数排行榜&#34;&gt;字符数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;字符数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 02:24:48&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@herlife&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@herlife/18&#34;&gt;梦回18岁，你还在吗？【错过的爱情故事，七夕征文比赛】&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3012&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 19:09:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@plokmi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@plokmi/5whofb&#34;&gt;小狐狸的爱&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2574&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2316&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 01:24:33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@kitcat&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@kitcat/chinese-valentine-s-day-literature-writing-contest&#34;&gt;七夕情人節徵文比賽 － 藍夢 (散文) Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2251&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:02:06&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/steemit&#34;&gt;午餐 &amp;ndash; 七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2036&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;插图数排行榜&#34;&gt;插图数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;插图数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 08:00:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrspointm/5l7wyk&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&amp;mdash;其实爱对了人，情人节每天都过&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 22:35:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/4xusx6&#34;&gt;夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 11:45:12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@sunnyjolly/practice-love&#34;&gt;倾尽年华，修炼爱情 Practice Love&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:02:06&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/steemit&#34;&gt;午餐 &amp;ndash; 七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;关键词排行榜&#34;&gt;关键词排行榜&lt;/h3&gt;
+
+&lt;p&gt;下面是所有帖子里出现的字符长度超过 2 个、出现次数超过 10 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNVFbDApFmKziidfzpZ8pK3PnSY6TJ6eR8fmXKeNYvxad/unnamed-chunk-5-1.png&#34; alt=&#34;unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;参赛选手&#34;&gt;参赛选手&lt;/h3&gt;
+
+&lt;p&gt;下图是参赛选手的注册 ID 序号分布图。参赛选手中一半以上都排在第 247091 个注册 ID 之后。排在最前面的是第 39653 个 ID，最后面的是 第 328139 个 ID。猜猜他们都是谁？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXT9pRsQH281g3EBYb3t9DYpBzBPM9azk5gXSjwBFbEyJ/unnamed-chunk-6-1.png&#34; alt=&#34;unnamed-chunk-6-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7 月注册的居多。也有一些早期用户。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXWNM6tT3nF1p4atYgHcw22x5YQ2R3A3z6tcNPZyYdQtL/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本活动是在 &amp;lsquo;cn&amp;rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签。我们看看除此之外，大家还使用了那些标签以及使用频率。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQn3WotiRUDSyX552kdvZzG6EPTNEpEMAXbN6p55mYECJ/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢关注“大鹏观察”。欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+
+&lt;h3 id=&#34;附录-参赛作品列表&#34;&gt;附录：参赛作品列表&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;投稿时间&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;标题&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;插图数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;投票数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;字符数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 16:26:42&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@dancingapple&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@dancingapple/3typ3z&#34;&gt;犹是春闺梦里人&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1917&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 17:16:33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@moicc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@moicc/or-love-is-a-decision-you-make&#34;&gt;爱是你做的决定 - Love is a decision you make&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;19&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1231&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 19:09:51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@plokmi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@plokmi/5whofb&#34;&gt;小狐狸的爱&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2574&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 22:35:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/4xusx6&#34;&gt;夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;75&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1710&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:08:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@michaelleeld&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@michaelleeld/52mpnq&#34;&gt;七夕祝福－初恋回到故乡&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;45&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1584&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:13:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;67&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2316&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 00:30:57&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@carinewhy&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@carinewhy/4fwydl-steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 - 在愛情中是沒有壞人的&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;102&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1441&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 00:32:12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@superhardness&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@superhardness/love-story&#34;&gt;有点泥土气息的“爱情故事”&amp;ndash;Love story&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;57&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1335&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 01:24:33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@kitcat&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@kitcat/chinese-valentine-s-day-literature-writing-contest&#34;&gt;七夕情人節徵文比賽 － 藍夢 (散文) Chinese Valentine&amp;rsquo;s Day Literature Writing Contest&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;107&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2251&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 02:11:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@sylvia1997&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@sylvia1997/7nexhw&#34;&gt;小丸子时代???爱情故事&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;65&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1418&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 02:24:48&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@herlife&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@herlife/18&#34;&gt;梦回18岁，你还在吗？【错过的爱情故事，七夕征文比赛】&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;56&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3012&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 02:56:27&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mumingduozi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mumingduozi/ahugw&#34;&gt;烟火&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;18&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1754&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 03:10:45&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@blacktranquility&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@blacktranquility/if-i-love-a-steemit-girl&#34;&gt;If I love a steemit girl&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;41&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;259&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:02:06&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@guyverckw&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@guyverckw/steemit&#34;&gt;午餐 &amp;ndash; 七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;99&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2036&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:12:21&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/steemit&#34;&gt;瑰麗粉紅 ｜七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1785&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:24:18&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@towardsthesun&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@towardsthesun/5jcp5s&#34;&gt;爱情需要归宿么？白头偕老怎么样？&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;893&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 04:57:36&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@kanxsh&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@kanxsh/6aqxhm&#34;&gt;祝娘子七夕节快乐！&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;26&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1192&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 06:09:42&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@veronicazhu&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@veronicazhu/52bwgt&#34;&gt;父母恩爱 - 是对子女最好的馈赠&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;31&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1365&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 07:18:15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@haoworld&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@haoworld/5zzt67&#34;&gt;你身后等待的目光&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;339&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 08:00:39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@mrspointm&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrspointm/5l7wyk&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&amp;mdash;其实爱对了人，情人节每天都过&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;78&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1668&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 08:16:30&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@hugowong&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@hugowong/steemit&#34;&gt;那一天，我追赶着日落并找到你-七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;17&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1002&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 10:29:54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@blacktranquility&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@blacktranquility/beautiful-poppy-flower&#34;&gt;惊艳的罂栗花 beautiful poppy flower&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;17&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;324&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 10:35:36&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@biuiam&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@biuiam/steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 - 科學。愛?&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;93&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1595&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 11:45:12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@sunnyjolly&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@sunnyjolly/practice-love&#34;&gt;倾尽年华，修炼爱情 Practice Love&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;48&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1820&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 12:04:57&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@hannahwu&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/4kzcgx&#34;&gt;祖辈爱情（一）：陪伴是最长情的告白&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;68&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1937&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 12:14:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@kona&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@kona/steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 - [問世間情為何物，直教人生死相許]&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;20&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1164&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-27 12:26:09&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;@rivalhw&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://steemit.com/@rivalhw/steemit-08-27&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 第二日（08-27）入选文章&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;184&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3605&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;#cn-love #cn-reader #cn-programming #steemswatch&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>七夕征文大赛 首日（08-26）排行榜 (大鹏观察 Steem&#39;s Watch P3)</title>
+      <link>https://steemit.netlify.com/post/08-26/</link>
+      <pubDate>Sun, 27 Aug 2017 22:42:48 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/08-26/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/08-26&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/08-26&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/08-26&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/08-26&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/08-26.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;受 @rivalhw 之托，“大鹏观察”为“七夕征文大赛”做相关数据统计分析日报，以便读者朋友们浏览，以及评委会更好更方便地筛选优质文章。&lt;/p&gt;
+
+&lt;p&gt;本文是第一期。使用的数据来源是 steemsql.com 和 steemdata.com，数据获取、分析、图表制作、报告编写全程使用人见人爱的 R 语言。如有疏漏，欢迎指正。&lt;/p&gt;
+
+&lt;p&gt;大鹏观察：“七夕征文大赛”第一天（8月26日）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;参赛基本信息&#34;&gt;参赛基本信息&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;发起：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/lhihf-steemit&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;参赛作品：2017/08/26 共 15 篇，清单见文末。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;入围作品：&lt;a href=&#34;https://steemit.com/cn/@rivalhw/steemit-08-26&#34;&gt;首日（08-26）入选文章&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;字符数排行榜&#34;&gt;字符数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;nchar&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/5zsevj-or&#34;&gt;他情她爱 - 原創短篇小說  “谷哥点名” 第四期活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4424&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@michellejoyful/memory-with-my-lover&#34;&gt;Memory with my lover &lt;sup&gt;-&lt;/sup&gt; 缘不知所起，身不由己 心不知所动，微波涟漪 情不知所起 一往而深&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@michellejoyful&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4422&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@plokmi/5whofb&#34;&gt;小狐狸的爱&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@plokmi&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2574&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/93xgk&#34;&gt;缘来就是你 [贺庆媛老师作品]&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2549&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2316&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;插图数排行榜&#34;&gt;插图数排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;img&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@michellejoyful/memory-with-my-lover&#34;&gt;Memory with my lover &lt;sup&gt;-&lt;/sup&gt; 缘不知所起，身不由己 心不知所动，微波涟漪 情不知所起 一往而深&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@michellejoyful&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/93xgk&#34;&gt;缘来就是你 [贺庆媛老师作品]&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@yinlovesu0914/cn-love-or&#34;&gt;&lt;cn-love&gt;   相約於這天 無視所有變遷&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@yinlovesu0914&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/4xusx6&#34;&gt;夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;人气排行榜&#34;&gt;人气排行榜&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;votes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@pakyeechan/or-steemit&#34;&gt;致愛情   七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@pakyeechan&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;115&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/5zsevj-or&#34;&gt;他情她爱 - 原創短篇小說  “谷哥点名” 第四期活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;109&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/4xusx6&#34;&gt;夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;72&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/93xgk&#34;&gt;缘来就是你 [贺庆媛老师作品]&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;68&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;67&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;关键词排行榜&#34;&gt;关键词排行榜&lt;/h3&gt;
+
+&lt;p&gt;下面是所有帖子里出现的字符长度超过 2 个、出现次数超过 10 次的中文关键词词云图。字符越大，在全部帖子里重复出现的次数就越多。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmRwu8x1v6ynYP4NekmMR3Jz6HF5DtE7uNTMQxcyxGZ9Ku/unnamed-chunk-4-1.png&#34; alt=&#34;unnamed-chunk-4-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;参赛选手&#34;&gt;参赛选手&lt;/h3&gt;
+
+&lt;p&gt;下图是参赛选手的注册 ID 序号分布图。全网目前共有 325515 个 ID。参赛选手中一半以上都排在第 245651 个注册 ID 之后。排在最前面的是第 39653 个 ID，最后面的是 第 328163 个 ID。猜猜他们都是谁？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSMhUK4zWQKoDrUPgH3KFBfhmhcnsik8nXNSijZgUZz9P/unnamed-chunk-6-1.png&#34; alt=&#34;unnamed-chunk-6-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是参赛选手的注册日期分布图。大部分参赛者都是 2017 年 5 月后注册的新朋友，尤其是 2017 年 7 月注册的居多。也有一些早期用户。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUn1GNeSzXZPcUpbu1jXqu49khV5qRhnJp9UrtzqMPLi5/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本活动是在 &amp;lsquo;cn&amp;rsquo; 板块发起的，参加活动的帖子自然都贴上了该标签以及子区标签。我们看看除此之外，大家还使用了那些标签???及使用频率。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmVSP3fmmL4sj9cChjdb1dackdih8T1SMkQsvu8W98B1Ry/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢关注“大鹏观察”。欢迎提出宝贵意见。谢谢。&lt;/p&gt;
+
+&lt;h3 id=&#34;附录-参赛作品列表&#34;&gt;附录：参赛作品列表&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;created&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;author&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;title&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;img&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;votes&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;nchar&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 01:34:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@yinlovesu0914&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@yinlovesu0914/cn-love-or&#34;&gt;&lt;cn-love&gt;   相約於這天 無視所有變遷&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1714&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 02:44:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@aaronli&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@aaronli/5zsevj-or&#34;&gt;他情她爱 - 原創短篇小說  “谷哥点名” 第四期活动&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;109&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4424&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 03:12:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@ryanfan11&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@ryanfan11/or-miss-u-y-robot-girlfriend-or&#34;&gt;我的機器人女友，你還好嗎? Miss U，Ｍy Robot Girlfriend   “谷哥点名”第四期 情 或者 爱&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1903&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 03:25:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@zhijun&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@zhijun/6n92c7&#34;&gt;亲爱的那不是爱情&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;839&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 06:02:48&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@pakyeechan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@pakyeechan/or-steemit&#34;&gt;致愛情   七夕情人节Steemit中文社区文学群爱情征文大赛&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;115&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1545&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 06:20:30&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@michellejoyful&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@michellejoyful/memory-with-my-lover&#34;&gt;Memory with my lover &lt;sup&gt;-&lt;/sup&gt; 缘不知所起，身不由己 心不知所动，微波涟漪 情不知所起 一往而深&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4422&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 07:15:21&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/93xgk&#34;&gt;缘来就是你 [贺庆媛老师作品]&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;68&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2549&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 11:34:18&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@ygern&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@ygern/uce7v&#34;&gt;情與愛，還有那鬼遮眼的七月&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;51&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1643&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 13:32:45&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@rivalhw&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@rivalhw/steemit-08-26&#34;&gt;七夕情人节Steemit中文社区文学群爱情征文大赛 首日（08-26）入选文章&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;197&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1790&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 16:26:42&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@dancingapple&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@dancingapple/3typ3z&#34;&gt;犹是春闺梦里人&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1917&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 17:16:33&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@moicc&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@moicc/or-love-is-a-decision-you-make&#34;&gt;爱是你做的决定   Love is a decision you make&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1231&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 19:09:51&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@plokmi&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@plokmi/5whofb&#34;&gt;小狐狸的爱&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2574&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 22:35:39&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@tumuta&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@tumuta/4xusx6&#34;&gt;夫妻路上恩情长——我与妻子的爱情经历（平凡人的平凡故事）&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;72&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1710&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:08:09&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@michaelleeld&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@michaelleeld/52mpnq&#34;&gt;七夕祝福－初恋回到故乡&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;37&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1582&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2017-08-26 23:13:54&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;@travelgirl&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@travelgirl/3yss9s&#34;&gt;第四期 - “谷歌点名“ 活動 情／愛 - 最重要的決定 ????&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;67&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2316&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;#cn-love #cn-reader #cn-programming #steemswatch&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Long-distance relationship (Video) 两地情，一生爱（吉他弹唱视频）</title>
+      <link>https://steemit.netlify.com/post/long-distance-relationship-video/</link>
+      <pubDate>Thu, 24 Aug 2017 17:12:06 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/long-distance-relationship-video/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/long-distance-relationship-video&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/long-distance-relationship-video&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/long-distance-relationship-video&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/long-distance-relationship-video&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/long-distance-relationship-video.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The 7th day of the 7th month (double seven) in the lunar calendar, which often comes in August of the solar calendar, is called Qixi Festival in China since 2000 years ago. This festival is nowadays well-known as the Chinese Valentine&amp;rsquo;s Day. It celebrates a folktale of &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Weaver_Girl_and_the_Cowherd&#34;&gt;&lt;em&gt;the Weaver Girl and the Cowherd&lt;/em&gt;&lt;/a&gt;. This tale is referred to in the Tanabata festival in Japan, and in the Chilseok festival in Korea.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://68.media.tumblr.com/tumblr_lpcfu0JQpI1qiasj1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Can long distance relationship last long? Will you still love me after a long time with a long distance between you and me? In the science fiction &lt;em&gt;The Three-Body Problem&lt;/em&gt;, it is said that long distance between to planets results in communication difficulties, which leads to a suspicion chain.&lt;/p&gt;
+
+&lt;p&gt;A Chinese poet wrote the folktale of &lt;em&gt;the Weaver Girl and the Cowherd&lt;/em&gt; into a poem 1000 years ago, which was translated by &lt;a href=&#34;https://en.wikipedia.org/wiki/Xu_Yuanchong&#34;&gt;Xu Yuanchong&lt;/a&gt; into English:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Clouds float like works of art.  纤云弄巧&lt;/p&gt;
+
+&lt;p&gt;Stars shoot with grief at heart.  飞星传恨&lt;/p&gt;
+
+&lt;p&gt;Across the Milky Way the Cowherd meets the Maid.  银汉迢迢暗度&lt;/p&gt;
+
+&lt;p&gt;When Autumn’s Golden wind embraces Dew of Jades.  金风玉露一相逢&lt;/p&gt;
+
+&lt;p&gt;All the love scenes on earth, however many, fade.  便胜却人间无数&lt;/p&gt;
+
+&lt;p&gt;Their tender love flows like a stream. 柔情似水&lt;/p&gt;
+
+&lt;p&gt;This happy date seems but a dream. 佳期如梦&lt;/p&gt;
+
+&lt;p&gt;Can they bear a separate homeward way? 忍顾鹊桥归路&lt;/p&gt;
+
+&lt;p&gt;If love between both sides can last for aye. 两情若是久长时&lt;/p&gt;
+
+&lt;p&gt;Why need they stay together night and day?  又岂在朝朝暮暮&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这是宋朝诗人秦观的一首《鹊桥仙》，写的是牛郎织女两地恋的爱情。牛郎织女在银河两岸，一??才能见一面，恰如身边遇到的故事。身在国外，两地恋的真实故事看得太多了。有坚贞苦守的，有各奔东西的，有临时出轨的，有圆满团聚的……距离产生美，也产生沟通障碍，沟通障碍容易造成猜疑（见&lt;a href=&#34;http://dapengde.com/archives/13483&#34;&gt;科幻小说《三体》&lt;/a&gt;），所以有一首旧情歌里唱到：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;异乡的午夜特别冷清，一个男人和一颗热切的心，不知在远方的你是否能感应。&lt;/p&gt;
+
+&lt;p&gt;心中的话到现在才对你表明，不知道你是否会因此而清醒，让身在远方的我不必为你担心&lt;/p&gt;
+
+&lt;p&gt;你和他之间是否已经有了真感情，别隐瞒，对我说，别怕我伤心。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The longest distance is that between life and death. &lt;em&gt;Ghost: Mouichido Dakishimetai&lt;/em&gt; is a Japanese file, remade from the classic movie &lt;em&gt;Ghost&lt;/em&gt;. A friend of mine, Yang Liu, translated the theme song into Chinese. I edited the guitar chords and sang it with my guitar. Here is the video. At the end of this post, there is the lyrics and the guitar chords.&lt;/p&gt;
+
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/XUU87RKvo9A&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt; 
+
+&lt;p&gt;&lt;em&gt;youtube视频：我爱你&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;两地恋情，最要紧的是信任；一生所爱，最远的距离不是牵牛织女星，而是生与死。早年的电影《人鬼情未了》，感动了一代人。这部电影近年来被日本翻拍，其中的主题歌《アイシテル》曾让当时在法国留学的 &lt;a href=&#34;http://yangliufr.com/2014/03/12/lyric-i-love-you-by-yang-liu/&#34;&gt;yangliufr&lt;/a&gt; 同学夜不能寐，起身为这首歌填上了中文歌词。这让我想起了我年轻的时候，也曾经是会为一首歌激动的。网上可以找到&lt;a href=&#34;http://music.j-total.net/data/027hi/006_hirai_ken/023.html&#34;&gt;这首歌的和弦谱&lt;/a&gt;，但是过于繁琐，我做了一些简化。&lt;/p&gt;
+
+&lt;p&gt;上面是我为这首歌弹唱的一段视频。歌词和吉他谱附后。尽管降了一个调，但仍然唱不上去，歌词有唱错的，还有小孩捣乱的，凑合吧。在如今这个很多人只在乎及时享乐的时代，两地情，苦多于乐，坚持不下来的是正常人，坚持下来的有金子心。能避免两地的，还是尽量避免吧；避免不了的，愿终成眷属。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+我爱你
+
+作曲：平井坚
+
+填词：洋流范儿
+
+和弦编配：大鹏
+
+
+原调 1=D 选调 1=C
+
+
+[C]我~牵着你的[F]手 陪伴你左[E7]右 一路往前[Am7]走
+
+[Dm7]年轻的旅[E7]行 过往的风[Am7]景 只有[F]你的身影[G]住在我心
+
+爱的就是[C]你
+
+
+[C]雪~下了会融[F]化 纯洁又无[E7]暇 笑颜如桃[Am7]花
+
+[Dm7]冬去春又[E7]来 芬芳入我[Am7]怀 就用[F]你的体温[G]温暖我心
+
+
+[E7]过去曾经 [Am7]每天都黏[E7]在一起 形[Dm7]影不离[C]   
+
+留下[Bb]记忆一直[Am7]刻在[E7]心底
+
+
+我们现在[Dm7]却分居两[G]地 多想一下[Cm7]把你抱怀里
+
+你我都在[Dm7]努力 一齐[E7]见证奇[Am7]迹[A7]
+
+遇见你是[Dm7]我一生福[G]气 一路走来[Cm7]一辈子相依
+
+你我都要[Dm7]珍惜 一切[E7]来之不[Am7]易[A7]
+
+
+心往远方[Dm7]飞~去 [E7]找寻未来的[Am7]幸福[G]和甜[F]蜜
+
+[F]再说~一次~[G]我~爱~[C]你
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

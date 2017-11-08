@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Steemians, have you ever thought about your data privacy? | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">New Steemians, have you ever thought about your data privacy?</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-07-26 20:56 GMT</h2>
+</div>
+
+<main>
+<p>原文链接: <a href="https://steemit.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy">steemit</a>, <a href="https://cnsteem.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy">cnsteem</a>, <a href="https://chainbb.com/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy">chainbb</a>, <a href="https://busy.org/steemit/@dapeng/new-steemians-have-you-have-thought-about-your-data-privacy">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/new-steemians-have-you-have-thought-about-your-data-privacy.md">markdown</a></p>
+
+<p>If  you are a new Steemian, I was wondering if you are aware of your data privacy. If not, you&rsquo;d better know it in advance. Here I display @tumutanzi&rsquo;s public data (<a href="https://steemdb.com/">https://steemdb.com/</a>,  sampled at  2017-07-26 22:06:46 CEST) in an easy way with R language. This is Part I. This is an English version of the <a href="https://steemit.com/cn/@dapeng/steemit">original post in Chinese</a>.</p>
+
+<p>@tumutanzi has 319 followers. The word cloud according to the number of their followers is like this:</p>
+
+<p><img src="https://steemitimages.com/DQmY4qfoEu9XZzpYjg6aR52bVMpPvcfMXej56AKvmu46j1E/unnamed-chunk-2-1.png" alt="unnamed-chunk-2-1.png" /></p>
+
+<p>A larger ID means more followers.</p>
+
+<p>It can be plotted by the number of posts as well:</p>
+
+<p><img src="https://steemitimages.com/DQmSBtokTVueC2qxCnBqxn7vU24HaiJzhCgFqSUQ257fFLG/unnamed-chunk-3-1.png" alt="unnamed-chunk-3-1.png" /></p>
+
+<p>or by the number of Vests:</p>
+
+<p><img src="https://steemitimages.com/DQmcrddtPW9tH3HaFjAcEiMc9qFiwRt5ePe4AHGEfMxUBWc/unnamed-chunk-4-1.png" alt="unnamed-chunk-4-1.png" /></p>
+
+<p>@abit is scary, who has 4077000000 Vests. Let&rsquo;s kick him out:</p>
+
+<p><img src="https://steemitimages.com/DQmTfss2wX94T9NjpQ74u4pXVd1E1gdT7tsvTZ6VMAt8cGS/unnamed-chunk-5-1.png" alt="unnamed-chunk-5-1.png" /></p>
+
+<p>Now let&rsquo;s see those whom @tumutanzi is following.</p>
+
+<p>@tumutanzi follows/followed 305 ID in total, in which 152 IDs interact with @tumutanzi bidirectionally, while 153 IDs do not follow him, including:</p>
+
+<pre><code>##   [1] &quot;ace108&quot;          &quot;act&quot;             &quot;adm&quot;            
+
+##   [4] &quot;adoal&quot;           &quot;adsactly&quot;        &quot;alice&quot;          
+
+##   [7] &quot;anwenbaumeister&quot; &quot;arcurus&quot;         &quot;arhag&quot;          
+
+##  [10] &quot;azazqwe&quot;         &quot;batel&quot;           &quot;ben&quot;            
+
+##  [13] &quot;birds90&quot;         &quot;bitcube&quot;         &quot;blocktrades&quot;    
+
+##  [16] &quot;blueorgy&quot;        &quot;bob&quot;             &quot;brothermic&quot;     
+
+##  [19] &quot;btsabc&quot;          &quot;bziing&quot;          &quot;candiceji&quot;      
+
+##  [22] &quot;ceciliali&quot;       &quot;chinadaily&quot;      &quot;cnfund&quot;         
+
+##  [25] &quot;coldhair&quot;        &quot;cornelia&quot;        &quot;cqf&quot;            
+
+##  [28] &quot;created&quot;         &quot;cybercodetwins&quot;  &quot;damarth&quot;        
+
+##  [31] &quot;dan&quot;             &quot;dantheman&quot;       &quot;databass&quot;       
+
+##  [34] &quot;davidyuan&quot;       &quot;deadlinefarmer&quot;  &quot;dek&quot;            
+
+##  [37] &quot;dixonloveart&quot;    &quot;dmilash&quot;         &quot;ekitcho&quot;        
+
+##  [40] &quot;elfkitchen&quot;      &quot;engagement&quot;      &quot;everittdmickey&quot; 
+
+##  [43] &quot;feelapi&quot;         &quot;flysaga&quot;         &quot;freedom&quot;        
+
+##  [46] &quot;frostfan&quot;        &quot;fuzzyvest&quot;       &quot;fyrstikken&quot;     
+
+##  [49] &quot;gaoduzhu&quot;        &quot;gavvet&quot;          &quot;gefa&quot;           
+
+##  [52] &quot;glitterfart&quot;     &quot;goku1&quot;           &quot;guyverckw&quot;      
+
+##  [55] &quot;haster&quot;          &quot;hendrikdegrote&quot;  &quot;hingman&quot;        
+
+##  [58] &quot;holabebe&quot;        &quot;huaji&quot;           &quot;icedream&quot;       
+
+##  [61] &quot;incrediblesnow&quot;  &quot;ivanba12&quot;        &quot;j-bex&quot;          
+
+##  [64] &quot;jademont&quot;        &quot;jaewoocho&quot;       &quot;jamesc&quot;         
+
+##  [67] &quot;jamesc1&quot;         &quot;jasonmcz&quot;        &quot;jeicko19&quot;       
+
+##  [70] &quot;jholdsworthy&quot;    &quot;jinbo&quot;           &quot;kawaiiiiiiii030&quot;
+
+##  [73] &quot;kenchung&quot;        &quot;kitcat&quot;          &quot;krischy&quot;        
+
+##  [76] &quot;laodr&quot;           &quot;laoyao&quot;          &quot;lcb&quot;            
+
+##  [79] &quot;lief&quot;            &quot;linuslee0216&quot;    &quot;logic&quot;          
+
+##  [82] &quot;lukestokes&quot;      &quot;matrix&quot;          &quot;miacats&quot;        
+
+##  [85] &quot;michael-a&quot;       &quot;michael-b&quot;       &quot;microluck&quot;      
+
+##  [88] &quot;minfon&quot;          &quot;minority-report&quot; &quot;monkimo&quot;        
+
+##  [91] &quot;morten&quot;          &quot;mottler&quot;         &quot;ned&quot;            
+
+##  [94] &quot;nextgen622&quot;      &quot;nicolemoker&quot;     &quot;nuagnorab&quot;      
+
+##  [97] &quot;orientaledu&quot;     &quot;papa-pepper&quot;     &quot;penguinpablo&quot;   
+
+## [100] &quot;peterpan&quot;        &quot;pfunk&quot;           &quot;pharesim&quot;       
+
+## [103] &quot;pilgrimtraveler&quot; &quot;pipertomcat&quot;     &quot;pistox&quot;         
+
+## [106] &quot;pkhope&quot;          &quot;project11&quot;       &quot;proskynneo&quot;     
+
+## [109] &quot;publicworker&quot;    &quot;puffin&quot;          &quot;ranchorelaxo&quot;   
+
+## [112] &quot;rawnetics&quot;       &quot;rayphu&quot;          &quot;rea&quot;            
+
+## [115] &quot;recursive&quot;       &quot;renohq&quot;          &quot;riverhead&quot;      
+
+## [118] &quot;roadscape&quot;       &quot;robrigo&quot;         &quot;rok-sivante&quot;    
+
+## [121] &quot;rook&quot;            &quot;safari&quot;          &quot;scorpion&quot;       
+
+## [124] &quot;sean1980&quot;        &quot;smooth&quot;          &quot;someone&quot;        
+
+## [127] &quot;stan&quot;            &quot;steem&quot;           &quot;steemed&quot;        
+
+## [130] &quot;steemit&quot;         &quot;steemitblog&quot;     &quot;stellabelle&quot;    
+
+## [133] &quot;str11ngfello&quot;    &quot;sunnyray&quot;        &quot;susanlo&quot;        
+
+## [136] &quot;tamim&quot;           &quot;teamsteem&quot;       &quot;thecryptofiend&quot; 
+
+## [139] &quot;thejohalfiles&quot;   &quot;trafalgar&quot;       &quot;transisto&quot;      
+
+## [142] &quot;val-a&quot;           &quot;val-b&quot;           &quot;wackou&quot;         
+
+## [145] &quot;wanbin&quot;          &quot;waterflier&quot;      &quot;webclerk&quot;       
+
+## [148] &quot;witness.svk&quot;     &quot;wjm&quot;             &quot;wjs2634&quot;        
+
+## [151] &quot;wongshiying&quot;     &quot;xeldal&quot;          &quot;zoef&quot;
+</code></pre>
+
+<p>On the other hand, those who follow him but he does not follow (yet) are:</p>
+
+<pre><code>##   [1] &quot;abit&quot;            &quot;abusalam&quot;        &quot;acrich&quot;         
+
+##   [4] &quot;adraaz&quot;          &quot;alexieong&quot;       &quot;alfredchen&quot;     
+
+##   [7] &quot;aniksh&quot;          &quot;artsyppl&quot;        &quot;asskick&quot;        
+
+##  [10] &quot;aster&quot;           &quot;atc&quot;             &quot;atrix&quot;          
+
+##  [13] &quot;avilsd&quot;          &quot;avinger&quot;         &quot;babasikandar&quot;   
+
+##  [16] &quot;baixu1018&quot;       &quot;bajeheart&quot;       &quot;bassemm&quot;        
+
+##  [19] &quot;bbkivines&quot;       &quot;beautifulbella&quot;  &quot;benou&quot;          
+
+##  [22] &quot;berke&quot;           &quot;biddle&quot;          &quot;bilalhaider&quot;    
+
+##  [25] &quot;bindu&quot;           &quot;bocaiwen&quot;        &quot;brianchen&quot;      
+
+##  [28] &quot;britt.the.ish&quot;   &quot;carinewhy&quot;       &quot;carolynseymour&quot; 
+
+##  [31] &quot;catwomanteresa&quot;  &quot;chumhumnews&quot;     &quot;cryptochamo&quot;    
+
+##  [34] &quot;danishali&quot;       &quot;danm2017&quot;        &quot;davidad&quot;        
+
+##  [37] &quot;daxiblog&quot;        &quot;dcc&quot;             &quot;deanliu&quot;        
+
+##  [40] &quot;diablocro&quot;       &quot;diaohuijun&quot;      &quot;dimidrolshina&quot;  
+
+##  [43] &quot;dinsha&quot;          &quot;dobro88888888&quot;   &quot;dominicmi&quot;      
+
+##  [46] &quot;dragos0897&quot;      &quot;dtworker&quot;        &quot;fitinfun&quot;       
+
+##  [49] &quot;frankbuse&quot;       &quot;gamemusic&quot;       &quot;gatmi&quot;          
+
+##  [52] &quot;goaln&quot;           &quot;gowldie&quot;         &quot;gribtertong&quot;    
+
+##  [55] &quot;grildrig&quot;        &quot;hamzaoui&quot;        &quot;harttwohartllc&quot; 
+
+##  [58] &quot;hebro&quot;           &quot;hilarski&quot;        &quot;hofffman&quot;       
+
+##  [61] &quot;hongmeng&quot;        &quot;hoof&quot;            &quot;hqfzone&quot;        
+
+##  [64] &quot;imagediet&quot;       &quot;imako&quot;           &quot;initnas&quot;        
+
+##  [67] &quot;investlimestone&quot; &quot;iqbalbireuen&quot;    &quot;irphotography&quot;  
+
+##  [70] &quot;ishaq&quot;           &quot;istox&quot;           &quot;iszarl&quot;         
+
+##  [73] &quot;itan05&quot;          &quot;itissimple&quot;      &quot;jackmiller&quot;     
+
+##  [76] &quot;jamal83&quot;         &quot;jason-donovan&quot;   &quot;jhonnight&quot;      
+
+##  [79] &quot;jones420&quot;        &quot;joseburgos&quot;      &quot;jukas&quot;          
+
+##  [82] &quot;junyi&quot;           &quot;justyy&quot;          &quot;kabindra&quot;       
+
+##  [85] &quot;katythompson&quot;    &quot;khairulmuammar&quot;  &quot;kishore1988&quot;    
+
+##  [88] &quot;krasotka&quot;        &quot;kristjannacaj&quot;   &quot;landeberg&quot;      
+
+##  [91] &quot;lautenglye&quot;      &quot;ledygaga25&quot;      &quot;lemooljiang&quot;    
+
+##  [94] &quot;liangfengyouren&quot; &quot;lifeofkly&quot;       &quot;lifishake&quot;      
+
+##  [97] &quot;lilywang&quot;        &quot;liufeng&quot;         &quot;luckerme&quot;       
+
+## [100] &quot;lykencrypto&quot;     &quot;lynx&quot;            &quot;marianpancu&quot;    
+
+## [103] &quot;mehdioraki3973&quot;  &quot;minknsa&quot;         &quot;mkotibabu&quot;      
+
+## [106] &quot;monalishabiswas&quot; &quot;mydarlings2&quot;     &quot;myfirst&quot;        
+
+## [109] &quot;mytamilabiz&quot;     &quot;natashahall&quot;     &quot;nationalpark&quot;   
+
+## [112] &quot;nawar93&quot;         &quot;newsagg&quot;         &quot;notregme&quot;       
+
+## [115] &quot;oflyhigh&quot;        &quot;ohammedfelahi&quot;   &quot;patricksanlin&quot;  
+
+## [118] &quot;phyohtetpaing&quot;   &quot;powerfj&quot;         &quot;qipashuo&quot;       
+
+## [121] &quot;redje&quot;           &quot;renua&quot;           &quot;revolusi&quot;       
+
+## [124] &quot;riansteem&quot;       &quot;rifattb&quot;         &quot;robi8888&quot;       
+
+## [127] &quot;rodneyaspiras&quot;   &quot;rogerwilson&quot;     &quot;sbamsoneu&quot;      
+
+## [130] &quot;secora&quot;          &quot;securetalk&quot;      &quot;sequentialvibe&quot; 
+
+## [133] &quot;shaheer001&quot;      &quot;shankhunsam&quot;     &quot;shengjian&quot;      
+
+## [136] &quot;sheval&quot;          &quot;showoff&quot;         &quot;skynyc&quot;         
+
+## [139] &quot;somebody&quot;        &quot;stackin&quot;         &quot;steem.engine&quot;   
+
+## [142] &quot;steemitguide&quot;    &quot;sthitaprajna&quot;    &quot;suitup&quot;         
+
+## [145] &quot;sunnyjolly&quot;      &quot;superhardness&quot;   &quot;swssmarketing&quot;  
+
+## [148] &quot;tastetwist&quot;      &quot;themessengers&quot;   &quot;toninux&quot;        
+
+## [151] &quot;trevis&quot;          &quot;vax-rambo&quot;       &quot;vishal1088&quot;     
+
+## [154] &quot;walkman90&quot;       &quot;warrkin&quot;         &quot;whydowork&quot;      
+
+## [157] &quot;worldwidetravel&quot; &quot;xiaohui&quot;         &quot;xiaokongcom&quot;    
+
+## [160] &quot;xjb&quot;             &quot;yellowkersie&quot;    &quot;ygern&quot;          
+
+## [163] &quot;yuxi&quot;            &quot;zerozero777&quot;     &quot;zhijun&quot;         
+
+## [166] &quot;zhuqiankun&quot;      &quot;zwal&quot;
+</code></pre>
+
+<p>It is weird that  @abit and @justyy are in   @tumutanzi Steemit&rsquo;s following list, but not in the list of  <a href="https://steemdb.com/@tumutanzi/following">steemdb</a>.</p>
+
+<p>Anyway, I would suggest @tumutanzi should follow them before they read this post. Hurry!</p>
+
+<p>If you would like to have a similar report about your ID&rsquo;s followers and following, please  visit the online tool <a href="https://pzhao.shinyapps.io/steemr/">steemr</a>.</p>
+
+<p><em>To be continued&hellip;&hellip;</em></p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/new-steemians-have-you-have-thought-about-your-data-privacy\/';
+    var disqus_title = 'New Steemians, have you ever thought about your data privacy?';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/new-steemians-have-you-have-thought-about-your-data-privacy\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+
