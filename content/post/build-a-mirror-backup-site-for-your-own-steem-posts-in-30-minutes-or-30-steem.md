@@ -12,7 +12,7 @@ tags:
   - steemsql
 ---
 
-原文链接: [steemit](https://steemit.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [cnsteem](https://cnsteem.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [busy](https://busy.org/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [chainbb](https://chainbb.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [steemdb](https://steemdb.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [steemd](https://steemd.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [busy](https://busy.org/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem.md)
+原文链接: [steemit](https://steemit.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [cnsteem](https://cnsteem.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [busy](https://busy.org/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [chainbb](https://chainbb.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [steemdb](https://steemdb.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [steemd](https://steemd.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [busy](https://busy.org/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem.md)
 
 Yesterday, I built two mirror sites for my steem posts ([mirror 1](https://dapeng.netlify.com/)，[mirror 2](https://steemit.netlify.com/)) as backups, which are synced automatically everyday, thanks to steemsql and steemdata. The mirror sites are very useful:
 
@@ -115,7 +115,7 @@ Netlify 提供免费的二级域名。当然，你也可以买个域名来绑定
 1. 编写一个批处理程序，来调用 R 代码，从而完成下载帖子、建站、与 GitHub 同步的工作。
 2. 用 Windows 的自动任务，每天自动运行上述批处理，就实现了每天自动同步。
 
-最近我在看美剧《西部世界》。我的机器人 @pzhao 可不能亏待，所以我为 @pzhao 也做了一个[镜像](https://steemcn.netlify.com/)。
+最近我在看美剧《西部世界》。我的机器人 @pzhao 可不能亏待，所以我为 @pzhao 也做了一个[镜像](https://pz.netlify.com/)。
 
 
 

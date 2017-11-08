@@ -12,7 +12,7 @@ tags:
   - post
 ---
 
-原文链接: [steemit](https://steemit.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [cnsteem](https://cnsteem.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [busy](https://busy.org/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [chainbb](https://chainbb.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [steemdb](https://steemdb.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [steemd](https://steemd.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [busy](https://busy.org/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts.md)
+原文链接: [steemit](https://steemit.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [cnsteem](https://cnsteem.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [busy](https://busy.org/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [chainbb](https://chainbb.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [steemdb](https://steemdb.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [steemd](https://steemd.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [busy](https://busy.org/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts.md)
 
 本文是个广告帖，说不定对你有用。我想试试我的这点小伎俩有没有可能换成零花钱。
 

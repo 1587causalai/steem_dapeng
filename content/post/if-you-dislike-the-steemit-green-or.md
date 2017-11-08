@@ -12,7 +12,7 @@ tags:
   - howto
 ---
 
-原文链接: [steemit](https://steemit.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [cnsteem](https://cnsteem.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [busy](https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [chainbb](https://chainbb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [steemdb](https://steemdb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [steemd](https://steemd.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [busy](https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/if-you-dislike-the-steemit-green-or.md)
+原文链接: [steemit](https://steemit.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [cnsteem](https://cnsteem.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [busy](https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [chainbb](https://chainbb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [steemdb](https://steemdb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [steemd](https://steemd.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [busy](https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/if-you-dislike-the-steemit-green-or.md)
 
 I really like the new interface of steemit, especially the green color for the fonts. So please don't flag this post if you dislike it or not. 
 

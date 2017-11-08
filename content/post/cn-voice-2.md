@@ -11,7 +11,7 @@ tags:
   - contest
 ---
 
-原文链接: [steemit](https://steemit.com/cn/@dapeng/cn-voice-2), [cnsteem](https://cnsteem.com/cn/@dapeng/cn-voice-2), [busy](https://busy.org/cn/@dapeng/cn-voice-2), [chainbb](https://chainbb.com/cn/@dapeng/cn-voice-2), [steemdb](https://steemdb.com/cn/@dapeng/cn-voice-2), [steemd](https://steemd.com/cn/@dapeng/cn-voice-2), [busy](https://busy.org/cn/@dapeng/cn-voice-2), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/cn-voice-2.md)
+原文链接: [steemit](https://steemit.com/cn/@dapeng/cn-voice-2), [cnsteem](https://cnsteem.com/cn/@dapeng/cn-voice-2), [busy](https://busy.org/cn/@dapeng/cn-voice-2), [chainbb](https://chainbb.com/cn/@dapeng/cn-voice-2), [steemdb](https://steemdb.com/cn/@dapeng/cn-voice-2), [steemd](https://steemd.com/cn/@dapeng/cn-voice-2), [busy](https://busy.org/cn/@dapeng/cn-voice-2), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/cn-voice-2.md)
 
 第二届**“华语好声音大奖赛"**开始啦！本届评奖**不限新老用户，不限主题**！反正目前 cn 区也没啥钱可赚，不如大家来唱歌吧。当然，也可以朗诵、脱口秀……只要是你自己的嗓音，都可以参加。
 
