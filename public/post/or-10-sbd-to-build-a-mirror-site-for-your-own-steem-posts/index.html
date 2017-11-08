@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>10 SBD 为你制作一个 steem 镜像备份网站 - 10 SBD to build a mirror site for your own steem posts | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">10 SBD 为你制作一个 steem 镜像备份网站 - 10 SBD to build a mirror site for your own steem posts</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-11-08 10:15 GMT</h2>
+</div>
+
+<main>
+
+
+<p>原文链接: <a href="https://steemit.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts">steemit</a>, <a href="https://cnsteem.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts">cnsteem</a>, <a href="https://busy.org/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts">busy</a>, <a href="https://chainbb.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts">chainbb</a>, <a href="https://steemdb.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts">steemdb</a>, <a href="https://steemd.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts">steemd</a>, <a href="https://busy.org/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts.md">markdown</a></p>
+
+<p>本文是个广告帖，说不定对你有用。我想试试我的这点小伎俩有没有可能换成零花钱。</p>
+
+<p>很多朋友对我制作的 steem 镜像/备份网站感兴趣，想给自己也做一个。正如我在《<a href="https://cnsteem.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem#@guyverckw/re-dapeng-re-guyverckw-re-dapeng-build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem-20171108t074137642z">30 分钟搭建自己的 steem 镜像备份网站</a>》一文里所说，如果你会使用 R 语言，懂得 Github，那么完全可以花半小时自己搭建一个。限于篇幅，我只给出了主要技术路线，详细的过程大部分都写在我的新书《零基础学习R语言》里，即将出版，囿于版权，我暂时没法在这里贴出来。</p>
+
+<p>如果你不会也不想学 R 语言，那么可以来试试我的付费服务。下面是详细介绍。</p>
+
+<h3 id="你将得到什么">你将得到什么</h3>
+
+<p>一个二级域名的网站，比如我的这两个镜像（<a href="https://dapeng.netlify.com/">示例1</a>，<a href="https://steemit.netlify.com/">示例2</a>）。网站包括：</p>
+
+<ol>
+<li><p>你的 steem 账号发布的全部 blog 帖子。</p></li>
+
+<li><p>这些帖子的 markdown 源文件。</p></li>
+
+<li><p>镜像网站的全部源代码。</p></li>
+
+<li><p>将来有可能的扩展服务（目前尚不提供），例如：</p>
+
+<ul>
+<li><p>更多的网站主题，</p></li>
+
+<li><p>制作电子书，</p></li>
+
+<li><p>你的个人数据分析报告，</p></li>
+
+<li><p>绑定你自己的域名等等。</p></li>
+</ul></li>
+</ol>
+
+<h3 id="镜像网站的好处">镜像网站的好处</h3>
+
+<ol>
+<li><p>应急。万一 steemit.com、busy.org 等前端网站挂了，至少你自己的文章还能来镜像访问。</p></li>
+
+<li><p>备份。有朝一日万一 steemsql 等数据库黄了，万一区块链挂了，你辛辛苦苦码出的文章还健在。</p></li>
+
+<li><p>修改。steem 上的文章过了7天后就没法修改，而镜像网站的永远可以修改，可以精益求精。</p></li>
+
+<li><p>美观。不管 steemit 等网站界面好看难看，你有一片独立的自留地。</p></li>
+</ol>
+
+<h3 id="收费标准">收费标准</h3>
+
+<p>搭建和维护一个 steem 账号的帖子镜像网站，我收取的费用是：</p>
+
+<p><strong>初装费 (10 SBD) + 维护费 (每月 10 SBD) + 点赞 upvote 本广告帖 (7 天后就不用点了)</strong>。</p>
+
+<ol>
+<li><p>初装费：10 SBD。这项费用的意思是，镜像网站一次性做好，包含付款当天之前的所有帖子，不包括以后的更新。</p></li>
+
+<li><p>维护费：按月结算，每个月 10 SBD。这项费用涵盖的是镜像网站每天的定时更新，以及未来可能扩展的服务。</p></li>
+</ol>
+
+<p>以上收费标准参考的是我生活地区的薪资水平，这里的时薪大约 20 欧元。由于镜像网站使用的都是免费工具，所以上述收费是我的纯劳务费。</p>
+
+<h3 id="优惠">优惠</h3>
+
+<ol>
+<li><p>前三位顾客减免 10 SBD。</p></li>
+
+<li><p>如果一次性支付三个月的维护费 (30 SBD)，则免去初装费。</p></li>
+
+<li><p>如果 resteem 本帖，则减免 5 SBD。</p></li>
+</ol>
+
+<h3 id="付款方式">付款方式</h3>
+
+<p>通过 steem 转账，注明“镜像网站服务”，并在本帖后面留言即可。</p>
+
+<p>如果你有 disqus 账号，可以在转账时提供你 disqus 的 <a href="https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-">shortname</a>，这样就可以为网站增加个 disqus 评论栏。</p>
+
+<h3 id="退款条件">退款条件</h3>
+
+<p>如果不满意，初装费可以退款 50%；月维护可以提前终止，多余的月维护费全额退款。</p>
+
+<h3 id="免责声明">免责声明</h3>
+
+<ol>
+<li><p>因自然灾害等不可抗力造成的网站故障，本人不承担责任。</p></li>
+
+<li><p>帖子的数据来自 <a href="http://www.steemsql.com/">steemsql</a> 和 <a href="https://steemdata.com/">steemdata</a> 数据库。如果这两个数据库本身有缺陷，本人不承担责任。</p></li>
+</ol>
+
+<h3 id="联系方式">联系方式</h3>
+
+<p>回复本帖即可，或发送邮件至 dapengde@live.com.</p>
+
+<p><strong>如果将来本服务终止或收费有变动?? 请留意 @dapeng 对本帖的最新回复。</strong></p>
+
+<p><img src="https://c1.staticflickr.com/4/3867/15067077498_003aae096f_b.jpg" alt="" /></p>
+
+<p><em>Mirror. Image credit: c1.staticflickr.com</em></p>
+
+<p>If you know R language, you can <a href="https://cnsteem.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem">Build a mirror/backup site for your own steem posts in 30 minutes</a>. Otherwise, you can pay me 10 SBD to build it.</p>
+
+<h3 id="what-you-will-get">What you will get</h3>
+
+<p>A website like <a href="https://dapeng.netlify.com/">link 1</a> and <a href="https://steemit.netlify.com/">link 2</a>, including:</p>
+
+<ol>
+<li><p>all the blog posts of your steem account,</p></li>
+
+<li><p>all the markdown source files of your blog posts,</p></li>
+
+<li><p>all the source codes of the site, and</p></li>
+
+<li><p>potential extended services in the future (unavailable yet), such as</p>
+
+<ul>
+<li><p>changing the site theme,</p></li>
+
+<li><p>creating Ebooks,</p></li>
+
+<li><p>writing a data analysis report for your posts,</p></li>
+
+<li><p>binding your own domain&hellip;</p></li>
+</ul></li>
+</ol>
+
+<h3 id="why-a-mirror-site">Why a mirror site</h3>
+
+<ol>
+<li><p>for emergency, in case that steemit.com and busy.org are down,</p></li>
+
+<li><p>as backups, in case that steemsql and steemdata are gone,</p></li>
+
+<li><p>for revision, where the posts are allowed to be modified even after 7 days,</p></li>
+
+<li><p>for more replies, thanks to disqus,</p></li>
+
+<li><p>for a stable looking, no matter how the interface of steemit changes in the future, and</p></li>
+
+<li><p>for fast browsing, especially when your posts are more than 100.</p></li>
+</ol>
+
+<h3 id="costs">Costs</h3>
+
+<p>Start (10 SBD) + Update (10 SBD per month) + Upvote this post (no need after 7 days)**.</p>
+
+<ol>
+<li><p>Start fee: 10 SBD. The site includes the posts before the day you pay.</p></li>
+
+<li><p>Update fee: 10 SBD per month. Updated daily.</p></li>
+</ol>
+
+<h3 id="discounts">Discounts</h3>
+
+<ul>
+<li><p>3-month package: If you pay 30 SBD for the first time, you will get a three-month service, and the start fee is for free.</p></li>
+
+<li><p>If you resteem this post, you can get 5 SBD off.</p></li>
+</ul>
+
+<h3 id="how-to-pay">How to pay</h3>
+
+<p>Transfer on steem with a memo of &lsquo;mirror site&rsquo;, and reply this post.</p>
+
+<p>If you have a disqus account, you could write your disqus <a href="https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-">shortname</a> in the memo, so that your site will have a disqus comment system.</p>
+
+<h3 id="disclaimer-of-liability">Disclaimer of liability</h3>
+
+<p>I am not responsible for the loss of your mirror site due to</p>
+
+<ol>
+<li><p>natural disasters, or</p></li>
+
+<li><p>problems of <a href="http://www.steemsql.com/">steemsql</a> and <a href="https://steemdata.com/">steemdata</a>, from which your mirror site retrieves data.</p></li>
+</ol>
+
+<h3 id="contact">Contact</h3>
+
+<p>Reply this post, or emai: dapengde@live.com.</p>
+
+<p><strong>If this service is terminated or the service fee changes in the future, please refer to @dapeng&rsquo;s newest reply to this advertisement.</strong></p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts\/';
+    var disqus_title = '10 SBD 为你制作一个 steem 镜像备份网站 - 10 SBD to build a mirror site for your own steem posts';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

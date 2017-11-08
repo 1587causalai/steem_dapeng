@@ -9,12 +9,200 @@
     <atom:link href="https://steemit.netlify.com/tags/cn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>10 SBD 为你制作一个 steem 镜像备份网站 - 10 SBD to build a mirror site for your own steem posts</title>
+      <link>https://steemit.netlify.com/post/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts/</link>
+      <pubDate>Wed, 08 Nov 2017 10:15:39 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本文是个广告帖，说不定对你有用。我想试试我的这点小伎俩有没有可能换成零花钱。&lt;/p&gt;
+
+&lt;p&gt;很多朋友对我制作的 steem 镜像/备份网站感兴趣，想给自己也做一个。正如我在《&lt;a href=&#34;https://cnsteem.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem#@guyverckw/re-dapeng-re-guyverckw-re-dapeng-build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem-20171108t074137642z&#34;&gt;30 分钟搭建自己的 steem 镜像备份网站&lt;/a&gt;》一文里所说，如果你会使用 R 语言，懂得 Github，那么完全可以花半小时自己搭建一个。限于篇幅，我只给出了主要技术路线，详细的过程大部分都写在我的新书《零基础学习R语言》里，即将出版，囿于版权，我暂时没法在这里贴出来。&lt;/p&gt;
+
+&lt;p&gt;如果你不会也不想学 R 语言，那么可以来试试我的付费服务。下面是详细介绍。&lt;/p&gt;
+
+&lt;h3 id=&#34;你将得到什么&#34;&gt;你将得到什么&lt;/h3&gt;
+
+&lt;p&gt;一个二级域名的网站，比如我的这两个镜像（&lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;示例1&lt;/a&gt;，&lt;a href=&#34;https://steemit.netlify.com/&#34;&gt;示例2&lt;/a&gt;）。网站包括：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;你的 steem 账号发布的全部 blog 帖子。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;这些帖子的 markdown 源文件。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;镜像网站的全部源代码。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;将来有可能的扩展服务（目前尚不提供），例如：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;更多的网站主题，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;制作电子书，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;你的个人数据分析报告，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;绑定你自己的域名等等。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;镜像网站的好处&#34;&gt;镜像网站的好处&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;应急。万一 steemit.com、busy.org 等前端网站挂了，至少你自己的文章还能来镜像访问。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;备份。有朝一日万一 steemsql 等数据库黄了，万一区块链挂了，你辛辛苦苦码出的文章还健在。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;修改。steem 上的文章过了7天后就没法修改，而镜像网站的永远可以修改，可以精益求精。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;美观。不管 steemit 等网站界面好看难看，你有一片独立的自留地。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;收费标准&#34;&gt;收费标准&lt;/h3&gt;
+
+&lt;p&gt;搭建和维护一个 steem 账号的帖子镜像网站，我收取的费用是：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;初装费 (10 SBD) + 维护费 (每月 10 SBD) + 点赞 upvote 本广告帖 (7 天后就不用点了)&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;初装费：10 SBD。这项费用的意思是，镜像网站一次性做好，包含付款当天之前的所有帖子，不包括以后的更新。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;维护费：按月结算，每个月 10 SBD。这项费用涵盖的是镜像网站每天的定时更新，以及未来可能扩展的服务。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;以上收费标准参考的是我生活地区的薪资水平，这里的时薪大约 20 欧元。由于镜像网站使用的都是免费工具，所以上述收费是我的纯劳务费。&lt;/p&gt;
+
+&lt;h3 id=&#34;优惠&#34;&gt;优惠&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;前三位顾客减免 10 SBD。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果一次性支付三个月的维护费 (30 SBD)，则免去初装费。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果 resteem 本帖，则减免 5 SBD。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;付款方式&#34;&gt;付款方式&lt;/h3&gt;
+
+&lt;p&gt;通过 steem 转账，注明“镜像网站服务”，并在本帖后面留言即可。&lt;/p&gt;
+
+&lt;p&gt;如果你有 disqus 账号，可以在转账时提供你 disqus 的 &lt;a href=&#34;https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-&#34;&gt;shortname&lt;/a&gt;，这样就可以为网站增加个 disqus 评论栏。&lt;/p&gt;
+
+&lt;h3 id=&#34;退款条件&#34;&gt;退款条件&lt;/h3&gt;
+
+&lt;p&gt;如果不满意，初装费可以退款 50%；月维护可以提前终止，多余的月维护费全额退款。&lt;/p&gt;
+
+&lt;h3 id=&#34;免责声明&#34;&gt;免责声明&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;因自然灾害等不可抗力造成的网站故障，本人不承担责任。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;帖子的数据来自 &lt;a href=&#34;http://www.steemsql.com/&#34;&gt;steemsql&lt;/a&gt; 和 &lt;a href=&#34;https://steemdata.com/&#34;&gt;steemdata&lt;/a&gt; 数据库。如果这两个数据库本身有缺陷，本人不承担责任。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;联系方式&#34;&gt;联系方式&lt;/h3&gt;
+
+&lt;p&gt;回复本帖即可，或发送邮件至 dapengde@live.com.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;如果将来本服务终止或收费有变动?? 请留意 @dapeng 对本帖的最新回复。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://c1.staticflickr.com/4/3867/15067077498_003aae096f_b.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mirror. Image credit: c1.staticflickr.com&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If you know R language, you can &lt;a href=&#34;https://cnsteem.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;Build a mirror/backup site for your own steem posts in 30 minutes&lt;/a&gt;. Otherwise, you can pay me 10 SBD to build it.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-you-will-get&#34;&gt;What you will get&lt;/h3&gt;
+
+&lt;p&gt;A website like &lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;link 1&lt;/a&gt; and &lt;a href=&#34;https://steemit.netlify.com/&#34;&gt;link 2&lt;/a&gt;, including:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;all the blog posts of your steem account,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;all the markdown source files of your blog posts,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;all the source codes of the site, and&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;potential extended services in the future (unavailable yet), such as&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;changing the site theme,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;creating Ebooks,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;writing a data analysis report for your posts,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;binding your own domain&amp;hellip;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;why-a-mirror-site&#34;&gt;Why a mirror site&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;for emergency, in case that steemit.com and busy.org are down,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;as backups, in case that steemsql and steemdata are gone,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;for revision, where the posts are allowed to be modified even after 7 days,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;for more replies, thanks to disqus,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;for a stable looking, no matter how the interface of steemit changes in the future, and&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;for fast browsing, especially when your posts are more than 100.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;costs&#34;&gt;Costs&lt;/h3&gt;
+
+&lt;p&gt;Start (10 SBD) + Update (10 SBD per month) + Upvote this post (no need after 7 days)**.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Start fee: 10 SBD. The site includes the posts before the day you pay.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Update fee: 10 SBD per month. Updated daily.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;discounts&#34;&gt;Discounts&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;3-month package: If you pay 30 SBD for the first time, you will get a three-month service, and the start fee is for free.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If you resteem this post, you can get 5 SBD off.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;how-to-pay&#34;&gt;How to pay&lt;/h3&gt;
+
+&lt;p&gt;Transfer on steem with a memo of &amp;lsquo;mirror site&amp;rsquo;, and reply this post.&lt;/p&gt;
+
+&lt;p&gt;If you have a disqus account, you could write your disqus &lt;a href=&#34;https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-&#34;&gt;shortname&lt;/a&gt; in the memo, so that your site will have a disqus comment system.&lt;/p&gt;
+
+&lt;h3 id=&#34;disclaimer-of-liability&#34;&gt;Disclaimer of liability&lt;/h3&gt;
+
+&lt;p&gt;I am not responsible for the loss of your mirror site due to&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;natural disasters, or&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;problems of &lt;a href=&#34;http://www.steemsql.com/&#34;&gt;steemsql&lt;/a&gt; and &lt;a href=&#34;https://steemdata.com/&#34;&gt;steemdata&lt;/a&gt;, from which your mirror site retrieves data.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;contact&#34;&gt;Contact&lt;/h3&gt;
+
+&lt;p&gt;Reply this post, or emai: dapengde@live.com.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If this service is terminated or the service fee changes in the future, please refer to @dapeng&amp;rsquo;s newest reply to this advertisement.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>同桌的你 - 华语好声音</title>
       <link>https://steemit.netlify.com/post/4wcxic/</link>
       <pubDate>Tue, 07 Nov 2017 10:22:48 +0000</pubDate>
       
       <guid>https://steemit.netlify.com/post/4wcxic/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/4wcxic&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/4wcxic&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/4wcxic&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/4wcxic&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/4wcxic.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/4wcxic&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/4wcxic&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/4wcxic&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/4wcxic&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/4wcxic&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/4wcxic&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/4wcxic&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/4wcxic.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;@tumutanzi 曾经&lt;a href=&#34;https://steemit.com/cn/@tumutanzi/6ncvsc&#34;&gt;发文慨叹&lt;/a&gt;，他的昔日女神们“并不是照片中的那般美丽模样”。对于已婚男人来说，这其实是幸运的。&lt;/p&gt;
 
@@ -36,7 +224,7 @@
       <guid>https://steemit.netlify.com/post/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/</guid>
       <description>
 
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemdev/@dapeng/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Yesterday, I built two mirror sites for my steem posts (&lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;mirror 1&lt;/a&gt;，&lt;a href=&#34;https://steemit.netlify.com/&#34;&gt;mirror 2&lt;/a&gt;) as backups, which are synced automatically everyday, thanks to steemsql and steemdata. The mirror sites are very useful:&lt;/p&gt;
 
@@ -168,7 +356,7 @@
       <guid>https://steemit.netlify.com/post/cn-voice-2/</guid>
       <description>
 
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/cn-voice-2&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/cn-voice-2&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/cn-voice-2&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/cn-voice-2&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/cn-voice-2.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/cn-voice-2&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/cn-voice-2&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/cn-voice-2&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/cn-voice-2&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/cn-voice-2&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/cn-voice-2&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/cn-voice-2&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/cn-voice-2.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;第二届&lt;strong&gt;“华语好声音大奖赛&amp;rdquo;&lt;/strong&gt;开始啦！本届评奖&lt;strong&gt;不限新老用户，不限主题&lt;/strong&gt;！反正目前 cn 区也没啥钱可赚，不如大家来唱歌吧。当然，也可以朗诵、脱口秀……只要是你自己的嗓音，都可以参加。&lt;/p&gt;
 
@@ -257,7 +445,7 @@
       <guid>https://steemit.netlify.com/post/if-you-dislike-the-steemit-green-or/</guid>
       <description>
 
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/if-you-dislike-the-steemit-green-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/if-you-dislike-the-steemit-green-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I really like the new interface of steemit, especially the green color for the fonts. So please don&amp;rsquo;t flag this post if you dislike it or not.&lt;/p&gt;
 
@@ -323,7 +511,7 @@
       <guid>https://steemit.netlify.com/post/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3/</guid>
       <description>
 
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;新人&lt;a href=&#34;https://steemit.com/cn/@dapeng/welcome-prize-for-new-steemians&#34;&gt;“三个一”活动&lt;/a&gt;第 3 期圆满落幕！活动共收到稿件 11 篇，来自 10 位作者，更多统计数字和全部文章清单附后。下面是所有稿件的词云图，图中空白区是本期的主题：“问”。&lt;/p&gt;
 
@@ -533,7 +721,7 @@
       <pubDate>Fri, 03 Nov 2017 10:34:42 +0000</pubDate>
       
       <guid>https://steemit.netlify.com/post/use-of-useless-or/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/use-of-useless-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/use-of-useless-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/use-of-useless-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/use-of-useless-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/use-of-useless-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/use-of-useless-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/use-of-useless-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/use-of-useless-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/use-of-useless-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/use-of-useless-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/use-of-useless-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/use-of-useless-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/use-of-useless-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;One day, my wife picked some wild garlic chives from the botanic garden and cooked it for dinner. My elder son J asked, &amp;lsquo;is it grass?&amp;rsquo;&lt;/p&gt;
 
@@ -1555,92 +1743,6 @@ SELECT * FROM TxVotes WHERE voter IN (&#39;htliao&#39;,  &#39;linuslee0216&#39;,
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/0I-zRs8sP3Q&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Youtube 视频：三年时间制作的14 分钟短片，一镜到底展示三体里的水滴。对原著无剧透。我看到第三遍才看明白，然后击节叫好。然后，不寒而栗。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The very first thing a new Steemian has  to do - Steem 新手必须做的第一件事</title>
-      <link>https://steemit.netlify.com/post/the-very-first-thing-to-do-for-new-steemians-or-steem/</link>
-      <pubDate>Mon, 23 Oct 2017 10:07:57 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/the-very-first-thing-to-do-for-new-steemians-or-steem/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/the-very-first-thing-to-do-for-new-steemians-or-steem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;What is the very first thing that a new steemian has to do? Posting your first comment happily? Reading the top-paid posts to learn how to earn money excitedly? Uploading your photo and setting your profile eagerly? &lt;strong&gt;No&lt;/strong&gt;! The very first thing is: write down your master/owner key on a piece of paper, and keep the paper in a safe. Maybe &lt;strong&gt;in a worn-out shoe under your bed&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you are not sure of your hand copying, just grab your camera, take a picture of your master/owner key, and print it out. Do not forget to delete the digital picture immediately.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2014/12/25/10/55/digital-579553_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Image credit: pixabay.com&lt;/p&gt;
-
-&lt;p&gt;Days ago an ID with the reputation 67 was fished by @cheetoh, who looks like @cheetah the famous bot. The master key was lost and 4000 SP+SBD was gone. I keep my fingers crossed for her, although I know that it is difficult, or even impossible, to recover the key and have the money back.&lt;/p&gt;
-
-&lt;p&gt;New steemians get a long string when they have just signed up. This string is officially called &amp;lsquo;master/owner key&amp;rsquo;. New steemians think it is a &lt;em&gt;password&lt;/em&gt;, the same as the thing they get when signing up other websites. Normally a user is able to recover the &lt;em&gt;password&lt;/em&gt;  via an email or phone number.  Therefore they log in for the first time, read some posts, close steemit, and leave steem all behind. Days later, steem comes to their mind again, and they want to log in. Well, nobody can remember the long string. OK, recover it&amp;hellip;&amp;hellip;what? It CANNOT be recovered??!!&lt;/p&gt;
-
-&lt;p&gt;I guess it must be one of the reasons why so many accounts on Steem are dead.&lt;/p&gt;
-
-&lt;p&gt;New steemians are not sufficiently told of the importance of their passwords. A user once posted his master key publicly in a chat group of the Chinese community by mistaken copy-and-paste. Another user sent a screenshot of his wallet-permission page to me and asked what those four long strings meant. Nobody was fishing them. They just did not know what they were doing.&lt;/p&gt;
-
-&lt;p&gt;If you lose your ID card in reality, you go to the center of ID cards, i.e. the Police Station. If you lose your credit card, you call your credit card service center. If you lose your Steem password, sorry, there is no Steem center. Steem is a blockchain, &lt;strong&gt;&lt;em&gt;decentralized&lt;/em&gt;&lt;/strong&gt;!&lt;/p&gt;
-
-&lt;p&gt;A user&amp;rsquo;s &lt;em&gt;password&lt;/em&gt; on Steem is not only a &lt;em&gt;password&lt;/em&gt;. It is a combination like:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Your Steem password = your login password + your ID card + your credit card + your smartphone + your signature&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Anyone can use your password to log in, to transfer money, to comment others, and fish your friends. What would you call it? &amp;lsquo;Master/owner key&amp;rsquo; is not enough. I would call this long string &lt;strong&gt;&amp;lsquo;Steem ID&amp;rsquo;s Life&amp;rsquo;. If stolen, dead&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;I would warn every new Steemian: &lt;strong&gt;NEVER, EVER use your master/owner key&lt;/strong&gt;!&lt;/p&gt;
-
-&lt;p&gt;ALWAYS login with your &lt;strong&gt;posting key&lt;/strong&gt;. It is sufficient for everyday use.&lt;/p&gt;
-
-&lt;p&gt;If you are doing something related to your money, then use the &lt;strong&gt;active key&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;When do you have to use your master/owner key? Only when you want to recover something. Take it as the &amp;lsquo;restore to factory settings&amp;rsquo; option of  your smartphone.&lt;/strong&gt;   You never use it, do you?&lt;/p&gt;
-
-&lt;p&gt;That is why you had better print it out on a piece of paper and save it in an worn-out shoe under your bed.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/0x0/http://i.imgur.com/F0aJyNM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Image credit: steemit.com&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;作为 Steem 新手，必须做的最要紧的事情是什么？是兴奋地发第一帖宣告自己的降生吗？是看看收益最高的帖子来学习如何在 steem 赚钱吗？还是上传自己帅帅的头像？全不是！第一件事，至关重要的任务，是立刻抓起你的相机，对着显示器上的 steem 密码拍个照片，打印到纸上，删掉数码照片，然后把这张纸塞到一只鞋???里，藏在床底下。&lt;/p&gt;
-
-&lt;p&gt;几天前，有个声望达到 67 的账号被  @cheetoh 用钓鱼手段骗过了眼睛。这个盗贼看上去很像著名的机器人 @cheetah。价值数万人民币的 SP+SBD 和无法估量的其他损失，就这么进了别人钱包，让人痛心。找回密码和账号很困难，几乎是不可能的。&lt;/p&gt;
-
-&lt;p&gt;steem 新手注册成功后，会得到一个很长的字符串。官方称其为“万能钥匙” (master/owner key)。这很容易让新手误以为是个登录密码。别的网站不都是如此吗？忘就忘了，不都是能用邮箱或手机恢复吗？于是，他们首次登录，愉快地发布第一帖，读了一些别人的文章，然后关掉了网页，把一切都抛诸脑后。几天之后，他们突然想起了 steem，想登录看看自己是不是赚了点钱。可是那么长的密码，谁记得住呢？恢复一下吧……我靠，居然不能恢复？？！！&lt;/p&gt;
-
-&lt;p&gt;Steem 上很多死账号，我怀疑这就是原因之一。&lt;/p&gt;
-
-&lt;p&gt;我觉得，新手并未被充分告知密码的重要性。在中文微信群里，曾有个用户不小心把密码复制粘贴出来，每个人都看见了。还有个用户，把他的钱包-权限页的四个密码截了屏，一起发给我，问我这些是什么意思。没人钓鱼欺骗他们，他们只是不知道他们自己在做什么。&lt;/p&gt;
-
-&lt;p&gt;现实生活里，如果丢了身份证，可以去身份证中心——派出所或警察局补办。如果丢了信用卡，可以去信用卡中心——拨打服务热线挂失。Steem 的世界里，如果丢了密码，对不起，没有哪个中心可以去，因为 Steem 用的是区块链，去中心化！&lt;/p&gt;
-
-&lt;p&gt;实际上， steem 用户的主密码不只是个密码，而是个多合一的混合体，相当于：&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Steem 主密码 = 登陆密码 + 身份证 + 银行卡 + 手机 + 签名&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;只要有了你的主密码，任何人都可以在 steem 上登录你的账号，转账，发帖，给别人留言，钓鱼欺骗你的朋友。这玩意儿到底应该叫什么？”万能钥匙/主密码“ (Master/owner key) 这个称呼远远不够。我觉得应该管它叫”Steem 账号的命根子“。一旦丢失，就是死路一条。&lt;/p&gt;
-
-&lt;p&gt;在这里，我想再次警告新手们：永远不要使用你的主密码！&lt;/p&gt;
-
-&lt;p&gt;钱包（Wallet）-权限（Permissions）页面有四个密码。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;登录的时候，用发帖密码（posting key），足够平时使用。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;只有在跟钱打交道时，才使用活跃密码（Active key）。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;那么主密码是干什么用的？只有重置账号时才用。你可以当作是手机上的”恢复出厂设置“。这个功能你从来没用过，是不是？&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;所以，最好把主密码打印出来，塞到鞋子里，藏到床底下。&lt;/p&gt;
-
-&lt;p&gt;就像科幻小说《三体III》里所讲，如何保存资料最安全? 刻在石头上！&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
 </description>

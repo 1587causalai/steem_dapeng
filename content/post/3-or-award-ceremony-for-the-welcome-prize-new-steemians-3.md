@@ -11,7 +11,7 @@ tags:
   - cn-contest
 ---
 
-原文链接: [steemit](https://steemit.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [cnsteem](https://cnsteem.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [chainbb](https://chainbb.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [busy](https://busy.org/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3.md)
+原文链接: [steemit](https://steemit.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [cnsteem](https://cnsteem.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [busy](https://busy.org/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [chainbb](https://chainbb.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [steemdb](https://steemdb.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [steemd](https://steemd.com/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [busy](https://busy.org/cn/@dapeng/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/3-or-award-ceremony-for-the-welcome-prize-new-steemians-3.md)
 
 新人[“三个一”活动](https://steemit.com/cn/@dapeng/welcome-prize-for-new-steemians)第 3 期圆满落幕！活动共收到稿件 11 篇，来自 10 位作者，更多统计数字和全部文章清单附后。下面是所有稿件的词云图，图中空白区是本期的主题：“问”。
 

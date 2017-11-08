@@ -11,7 +11,7 @@ tags:
   - song
 ---
 
-原文链接: [steemit](https://steemit.com/cn/@dapeng/4wcxic), [cnsteem](https://cnsteem.com/cn/@dapeng/4wcxic), [chainbb](https://chainbb.com/cn/@dapeng/4wcxic), [busy](https://busy.org/cn/@dapeng/4wcxic), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/4wcxic.md)
+原文链接: [steemit](https://steemit.com/cn/@dapeng/4wcxic), [cnsteem](https://cnsteem.com/cn/@dapeng/4wcxic), [busy](https://busy.org/cn/@dapeng/4wcxic), [chainbb](https://chainbb.com/cn/@dapeng/4wcxic), [steemdb](https://steemdb.com/cn/@dapeng/4wcxic), [steemd](https://steemd.com/cn/@dapeng/4wcxic), [busy](https://busy.org/cn/@dapeng/4wcxic), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/4wcxic.md)
 
 @tumutanzi 曾经[发文慨叹](https://steemit.com/cn/@tumutanzi/6ncvsc)，他的昔日女神们“并不是照片中的那般美丽模样”。对于已婚男人来说，这其实是幸运的。
 

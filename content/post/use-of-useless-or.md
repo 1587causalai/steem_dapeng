@@ -12,7 +12,7 @@ tags:
   - blog
 ---
 
-原文链接: [steemit](https://steemit.com/cn/@dapeng/use-of-useless-or), [cnsteem](https://cnsteem.com/cn/@dapeng/use-of-useless-or), [chainbb](https://chainbb.com/cn/@dapeng/use-of-useless-or), [busy](https://busy.org/cn/@dapeng/use-of-useless-or), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/use-of-useless-or.md)
+原文链接: [steemit](https://steemit.com/cn/@dapeng/use-of-useless-or), [cnsteem](https://cnsteem.com/cn/@dapeng/use-of-useless-or), [busy](https://busy.org/cn/@dapeng/use-of-useless-or), [chainbb](https://chainbb.com/cn/@dapeng/use-of-useless-or), [steemdb](https://steemdb.com/cn/@dapeng/use-of-useless-or), [steemd](https://steemd.com/cn/@dapeng/use-of-useless-or), [busy](https://busy.org/cn/@dapeng/use-of-useless-or), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/use-of-useless-or.md)
 
 One day, my wife picked some wild garlic chives from the botanic garden and cooked it for dinner. My elder son J asked, 'is it grass?'
 
