@@ -9,6 +9,131 @@
     <atom:link href="https://steemit.netlify.com/tags/steemit/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Display all the posts of a steemian and the statistics - 展示一个账户的所有帖子和统计数据</title>
+      <link>https://steemit.netlify.com/post/display-all-the-posts-of-a-steemian-and-the-statistics-or/</link>
+      <pubDate>Thu, 09 Nov 2017 22:39:33 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/display-all-the-posts-of-a-steemian-and-the-statistics-or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/display-all-the-posts-of-a-steemian-and-the-statistics-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is hard to see all the posts of a steemian on steemit. You have to scroll down your browser, wait, and scroll, and wait &amp;hellip;&amp;hellip; Nothing is more boring if the author has hundreds of posts and you want to see the oldest one, which might be the self-introduction post.&lt;/p&gt;
+
+&lt;p&gt;I was suffering this problem for a long time. Today I could not stand it any longer. Thus I developed a web app: &lt;a href=&#34;http://steemr.org&#34;&gt;http://steemr.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Input an ID and press Enter, you can see a table of all the posts. Features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The table displays 20 posts per page by default. You could change the number on the topleft of the table to display 50 or 100 posts per page, or all the posts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Input something as keywords in the topright bar or the bottom bars, and you can search in the post titles.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;One single click can jump to the webpage of a post on steemit, cnsteem, chainbb, busy, steemdb, or steemd.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The time, payout and vote number are given. Click the column name and you can sort the posts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Statistic diagrams show the cumulative payout, votes and post number. A 24-hour diagram shows the active hour of the author.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following figure is an example, showing the growth of the cumulative payout of @deanliu&amp;rsquo;s posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmaB6PqmCqJPQNaXYPjbcsaGV7QQjcMB9VdwkTVCrg4sV6/payout.png&#34; alt=&#34;payout.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Have fun!&lt;/p&gt;
+
+&lt;p&gt;Steem 有个让人无比郁闷的毛病：想一目了然地看一个人的所有帖子，你得往下拉，等着载入，再拉，再等&amp;hellip;&amp;hellip;尤其是那些发布了几百上千篇帖子的大神，想看他们的旧帖，在 steemit 上难比登天。我只能去 chainbb，那里支持分页，点第一页就行了。但是，你还得点页码，仍然不是很方便。&lt;/p&gt;
+
+&lt;p&gt;为啥就没个文章全部列表呢？连杀人鲸 @deanliu  都&lt;a href=&#34;https://cnsteem.com/cn/@deanliu/juan&#34;&gt;抱怨&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;我其實等待這樣的我所有文章列表很久了，Steemit老是把resteem跟自己文章放一起，大半年了，說過的人甚至走一半了，也沒見有人理會。這樣列表的好處是，可以很快找到自己的很久以前舊文章&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;如今，能做到展示全部文章列表的，大概只有我量身定做的 &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;steem 镜像网站&lt;/a&gt;了（&lt;a href=&#34;https://deancrypto.netlify.com&#34;&gt;@deanliu 的镜像&lt;/a&gt;， &lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;@dapeng 的镜像&lt;/a&gt;， &lt;a href=&#34;https://pz.netlify.com/&#34;&gt;@pzhao 的镜像&lt;/a&gt;）。只是我仍不满意：没做镜像的怎么看？想看某人收益最高的帖子怎么办？每次都查数据库，太烦了。&lt;/p&gt;
+
+&lt;p&gt;于是我二话没说，操起 R 语言，光光光光，做好了，欢迎大家来调戏，地址是 &lt;a href=&#34;http://steemr.org。是的，就是我开发的&#34;&gt;http://steemr.org。是的，就是我开发的&lt;/a&gt; &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemit-cn&#34;&gt;steem 水浒英雄榜&lt;/a&gt;那个地址。英雄榜往后放，给帖子一览表让位。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbDaR2E7U2XhAtsCkVySBRxZQ6TNzEkucWpwCdxYrtBxh/steemr20171109.gif&#34; alt=&#34;steemr20171109.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;只要输入个 steem 账号，按回车，就显示这个账号的所有 blog 帖子（不包含 resteemed）。功能如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;默认每页显示 20 篇文章。你可以点击表格左上角的数字，选择每页 50 篇，或 100 篇，或全部显示。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;表格左上角和下放都有搜索栏，可以搜索标题里的关键字。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;每篇文章都给出了在 steemit , cnsteem, chainbb, busy, steemdb, steemd 的链接，点一下直达。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;每篇文章都给出了发布时间、收益（SBD）和点赞数量。点击标题栏，就可以实现排序。按时间顺序、逆序，按收益最大或最小，随便你排。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;附带给出了统计图表，展示作者累计收益、累计点赞、累计文章数量和 24 小时活跃时间的统计图。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;??图是 @deanliu 的作息时间图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfAd47vrT4ZjMhZCKtWKj5ZcQhdagdrhPNAXKDeDn1k8G/24.png&#34; alt=&#34;24.png&#34; /&gt;
+这个 app 我一直想做，拖拖拖拖拖到了今天才终于做出来。近期的心愿已了，我打算闭关一段时间，正如 @deanliu &lt;a href=&#34;https://deancrypto.netlify.com/post/owo-farewell/&#34;&gt;所说&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;接下来这一周我将不再发文章、不再参与讨论，也不再点赞，要把时间留给这个月来被我疏忽的家庭、进度落后的工作、脸书上的朋友，以及最重要的身体的健康。毕竟，日子还长呢，养精蓄锐之后，才能为自己的SteemLife注入新的能量。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;朋友们再见！下周的这个时候，我会回来给“华语好声音”颁奖。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>关于大长腿杀人鲸刘美女 @deanliu 的一切 - All bout @deanliu</title>
+      <link>https://steemit.netlify.com/post/deanliu-or-all-bout-deanliu/</link>
+      <pubDate>Thu, 09 Nov 2017 10:47:18 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/deanliu-or-all-bout-deanliu/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/deanliu-or-all-bout-deanliu.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;昨天我发了个广告，&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;提供制作 steem 镜像备份网站的有偿服务&lt;/a&gt;，第一个报名的就是人称“刘美女”的前辈 @deanliu ，一下订购了三个月的备份服务 。&lt;/p&gt;
+
+&lt;p&gt;刘美女何许人也？新人可能不太了解。刘美女 的 ESP 在 &lt;a href=&#34;https://cnsteem.com/steemit/@nationalpark/observation-and-analysis-to-please-the-lord&#34;&gt;全网 40 万用户里排名 229&lt;/a&gt;，华语区排名前 5，声望 72.35，级别是杀人鲸。一句话：你就知道刘美女是个大腿就好了。&lt;/p&gt;
+
+&lt;p&gt;保持尊重，认真去抱。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://deancrypto.netlify.com/&#34;&gt;刘美女的镜像网站&lt;/a&gt;很快做好了，将近 400 篇原创文章，一目了然，欢迎大家围观。本来，我只是想赚点零花钱，然而，没想到这回有很多意外收获。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://static.pexels.com/photos/90754/woman-portrait-girl-color-90754.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image Credit: pexels.com&lt;/p&gt;
+
+&lt;p&gt;这里我先道个歉，本文标题&amp;rdquo;关于前辈刘美女 @deanliu 的一切&amp;rdquo;取得哗众取宠了，配图也是在网上随便找的，目的是想吸引大家的眼球。好在，本文确实是有点料的。&lt;/p&gt;
+
+&lt;p&gt;比如，有个问题困扰了我很久：刘美女到底是男是女？产生这个问题的原因我就不详述了，总之困惑的不止我一个人。这回，在镜像网站上，我很快找到了答案，就在刘美女注册当天发布的&lt;a href=&#34;https://deancrypto.netlify.com/post/a-father-from-taiwan-thinking-introducing-myself-a-bit/&#34;&gt;自我介绍帖里&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;再比如， &amp;ldquo;deanliu&amp;rdquo; 到底是什么意思？是姓“刘”还是姓“柳”？我曾经疑心刘美女的真名是不是叫“柳得安”。这回，在镜像网站上，我找到了个刘美女自己认可的解释：“电流”。&lt;/p&gt;
+
+&lt;p&gt;从镜像网站收获的不只是八卦。我来 steem 实际只有三个多月，错过了很多往日的精彩，如今一边读刘美女的文章，一边再次感叹，原来很多人在 steem 上的心路历程都是如此相似。我们现在提的问题、有的困惑、自以为惊人的新发现，其实早就被前辈们说过了。&lt;/p&gt;
+
+&lt;p&gt;比如，注册 14 天的刘美女&lt;a href=&#34;https://deancrypto.netlify.com/post/cn/&#34;&gt;研究过每天几点钟发帖赚钱多&lt;/a&gt;，并且问了诸如&lt;a href=&#34;https://deancrypto.netlify.com/post/question-about-steem-2-in-chinese-steemit/&#34;&gt;Follow 和 Mute 是什么含义&lt;/a&gt;，&lt;a href=&#34;https://deancrypto.netlify.com/post/security-warning-for-cn-newbies/&#34;&gt;账号的几个密码到底怎么用的&lt;/a&gt;小鱼问题。 如今的小鱼们可以从中得到一些慰藉，你看大腿们当年也是这么过来的嘛。&lt;/p&gt;
+
+&lt;p&gt;比如，未满月的刘小鱼发现了 the abit line，为此提出了&lt;a href=&#34;https://deancrypto.netlify.com/post/post-payout-cn-cn/&#34;&gt;忠告&lt;/a&gt;，直到今天仍然是金玉良言：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;知福之后，要知祸。什么祸？被宠坏的祸。知祸才能避祸。如果随意写个今天天气不好的文章都能每天吃碗面，那这肯定不能长久。大家可能都知道大神也有点赞限制，一天点个20-40次就差不多了，他也没法在用户大量扩张下照顾所有人，大家必须自我成长，或许发英文帖，双语帖，或许寻求累积有内涵的中文作品，等待中国用户来临后才能开始发光发热。&lt;strong&gt;因为当海量用户来临时，海量的专业性竞争也会来&lt;/strong&gt; (英文圈正在发生)，先到者因为熟悉环境而有些先发优势，但仅此而已，天气文章终究只能发到微博吧。如此，此福才是福，知祸则祸离。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;刚满月的刘小鱼，曾经&lt;a href=&#34;https://deancrypto.netlify.com/post/owo-farewell/&#34;&gt;为疏忽家庭和工作而懊恼&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;将暂时与各位告别一周，听起来很短，但在Steemian Time里可是很长的。接下来这一周我将不再发文章、不再参???讨论，也不再点赞（可以看我刚刚发的英文帖#oneweekoff ），要把时间留给这个月来被我疏忽的家庭、进度落后的工作、脸书上的朋友，以及最重要的身体的健康。毕竟，日子还长呢，养精蓄锐之后，才能为自己的SteemLife注入新的能量。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;还有&lt;a href=&#34;https://deancrypto.netlify.com/post/4wdgxj/&#34;&gt;一篇帖子&lt;/a&gt;，是刘美女归来时对别人打招呼，读来会有种“咦，原来大神们小时候是这样一起玩大的”感觉。&lt;/p&gt;
+
+&lt;p&gt;注册一个半月的时候，刘美女对 steem 的思考已经很深了，见《&lt;a href=&#34;https://deancrypto.netlify.com/post/calculate-your-way-into-the-steemit-ocean-steemit/&#34;&gt;Steemit世界裡的加減乘除&lt;/a&gt; 》一文，至今仍然可以作为新人们的指南。&lt;/p&gt;
+
+&lt;p&gt;我每天发布的《希望工程日报》里搜集整理了很多对新人有益的帖子，但是上面这些基本都错过了——区块链的文章沉底太快，埋得太深。不过，这次做镜像网站倒是个发掘旧文八卦、回顾往日精彩的机会。&lt;/p&gt;
+
+&lt;p&gt;敢问路在何方？从前辈的帖子里剥茧抽丝，我们就可以看到，一条小鱼成长为大鲸的道路，原来就在我们自己的脚下。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Build a mirror/backup site for your own steem posts in 30 minutes - 30 分钟搭建自己的 steem 镜像备份网站</title>
       <link>https://steemit.netlify.com/post/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/</link>
       <pubDate>Mon, 06 Nov 2017 09:44:42 +0000</pubDate>
@@ -1473,104 +1598,6 @@ SELECT * FROM TxVotes WHERE voter IN (&#39;htliao&#39;,  &#39;linuslee0216&#39;,
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>五毛钱的点赞 Upvote of Fifty Cents</title>
-      <link>https://steemit.netlify.com/post/upvote-of-fifty-cents/</link>
-      <pubDate>Wed, 04 Oct 2017 08:28:03 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/upvote-of-fifty-cents/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/upvote-of-fifty-cents&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/upvote-of-fifty-cents&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/upvote-of-fifty-cents&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/upvote-of-fifty-cents&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/upvote-of-fifty-cents.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Yesterday I got my delegated 1000 SP back from @justyy. It has been 7 days since my application. He complained to me and asked why I withdrew the money and asked if he did something wrong. Nothing. The only reason was that I was not rich. No extra money to save.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;昨天，我存到 @justyy 银行里的 1000 SP 终于全部取出来了。从发起申请算起来，花了 7 天。银行行长哀怨地问我为何不存了，是不是他做错了什么。没有啊，取钱的理由很简单：手头太紧，钱不够花。这年头，地主家也没有余粮啊，更别提我了。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Currently I have only two thousand Steem powers. My voting power is usually 20% - 30%. I boasted in the &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-cn-project-hope-2017-10-04&#34;&gt;CN Welcome Center Plan&lt;/a&gt; that I will support new Steemians. However, an upvote of mine was worth only several cents. With the 1000 SP back, one upvote will be worth 0.5 SBD when my VP is 100%. I still remember that I bought a beer to celebrate my post which got 0.5 SBD for the first time.  The cheapest beer costs 0.5 SBD in the supermarkets of the city where I am living in. Now a new steemian will be treated with a beer if I upvote. Somehow, it reminds me of the film &lt;em&gt;Shawshank Redemption&lt;/em&gt; . Andy risked his death to treat his desperate prisoner friends with three beers, which gave them the happiest time and hope  in the sunshine. More or less, I think I have Andy&amp;rsquo;s joy, if only for a short while.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我的 SP 总共只有两千多，平时的 VP 一般维持在 20% - 30% 左右。就这点家底，我还在“&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-cn-project-hope-2017-10-04&#34;&gt;希望工程&lt;/a&gt;”里口口声声宣称要扶助新人。每次给新人点个赞，只值几分钱。我觉得，至少得上 1 毛钱，才拿得出手。&lt;/p&gt;
-
-&lt;p&gt;现在好了，收回这 1000 SP 后，当我 VP 满血的时候，100% 点赞大约有五毛钱。当初，我的文章收益第一次达到 5 毛钱的时候，特意去买了瓶啤酒庆祝。—— 0.5 SBD，够买一瓶廉价超市最便宜的啤酒。现在，我成了五毛党。只要我给新人点一下赞，就等于请他们喝了一瓶啤酒。&lt;/p&gt;
-
-&lt;p&gt;不知怎的，这让我想起了电影 &lt;em&gt;Shawshank Redemption&lt;/em&gt; (肖申克的救赎)：安迪冒着死的危险，为那些绝望的狱友们赢来了每人三瓶啤酒的犒赏。在阳谷的沐浴下痛饮这三瓶啤酒，是他们最大的享受。而我，享受的是安迪的快乐，哪怕只有片刻。&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/rcj2GoIbFHk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Youtube video: The Shawshank Redemption Beer&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;When I talked about this,   @tvb said, sadly, that her upvote was only worth 5 cents. I said &amp;lsquo;Xiangruyimo&amp;rsquo;. This is an old Chinese phrase, originated from Master Zhuang,  a philosopher who lived 2400 years ago. He told a story about fishes in a spring which was dried up. The fishes had to moisten one another by their saliva so as to survive. New steemians with few SPs are called small fishes on steemit board. What a coincidence!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;当我在新人 QQ 群里说起这事儿的时候， @tvb 哀怨地说，她的 SP 全算上，点赞也就 5 分钱。我说，那我们就“相濡以沫”吧。我觉得，“相濡以沫”用在 steemit 上，是非常贴切的一个词。&lt;/p&gt;
-
-&lt;p&gt;@victorier 曾写过&lt;a href=&#34;https://steemit.com/cn/@victorier/7hnr9e&#34;&gt;相濡以沫真的只止於這四個字嗎?&lt;/a&gt;一文，介绍了这个成语。成语来自庄子，说的是两条小鱼在一个干涸的泉眼里快要死了，只好吐出泡沫抹在对方身上，才能生存。steemit 上的那些新人，恰恰被称为小鱼。这是巧合吗？&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Furthermore, Master Zhuang said, it would be better for the fishes to forget one another in the rivers and lakes. I was wondering when steem grows to a large lake so that we can forget one another one day!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;庄子还说；相濡以沫，还不如回到江湖里，俩俩相忘。只要日子过得好，总比死在一起强。&lt;/p&gt;
-
-&lt;p&gt;那么，啥时候 steemit 才能发展成一条大江呢？steemit 上的小鱼大鱼们，我们啥时候才能相忘于江湖呢？&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏观察&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Steem 中国策：所有用户知道中国的中秋生活 (2017-10-02 CN Weekly)</title>
-      <link>https://steemit.netlify.com/post/steem-2017-10-02-cn-weekly/</link>
-      <pubDate>Mon, 02 Oct 2017 21:09:57 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/steem-2017-10-02-cn-weekly/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-2017-10-02-cn-weekly&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-2017-10-02-cn-weekly&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-2017-10-02-cn-weekly&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-2017-10-02-cn-weekly&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-2017-10-02-cn-weekly.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;很久很久以前——其实也就是一个来月——大家有没有觉得 steem 上时间过得比较慢，现实生活里一个月，steem 上像是过了一年？——我写过一篇&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-2016-07-2017-08-steem-s-watch-tcn0&#34;&gt;Steem 中国策 前传&lt;/a&gt;，对历史上 cn 区的发展做了个简单的回顾，并挖了挖 cn 区的源头。&lt;/p&gt;
-
-&lt;p&gt;当时，我不知天高地厚，扬言要每周写一份分析报告，后来才知道，很多前辈已经在做这个事情了，并且定时更新。所以我就把这事儿给搁置了。而且，当时我还没意识到的另外一点是，cn 区活跃的不只是中国大陆、港澳台的朋友，还有很多人来自其他国家和地区。我为文章取名“中国策”，大概是有点唐突罢。&lt;/p&gt;
-
-&lt;p&gt;不过，好在一词可以有多种解释。如果将“中国”理解成文化上的“中央之国”，似乎并无不可。随着 cn 社区的发展壮大，cn 好友群的热火朝天，我想，也许可以把我那停业整顿的“steem 史记”笔法转移到 “中国策”来，将 cn 区的整体生态做个概括，无论对新人还是老手，大概是不无裨益的。&lt;/p&gt;
-
-&lt;p&gt;比如，在“steem 史记”里出现过的关键词词云图，如果换用过去一周里整个 cn 区全部帖子，那么关键词是这样的：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmYq3NdTvhJdDSf5uY2jcnxH6i9ezebtMnJAFjScQatuTR/cnweekly.jpg&#34; alt=&#34;cnweekly.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;轮廓我选了一只大公鸡，是因为今年是鸡年。关键词的尺寸大小，大体反映了上周 cn 区的讨论话题。让我们连起来造个句：&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;“所有用户知道中国的中秋生活。”&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;再如，我们可以看看 cn 社区的&lt;a href=&#34;https://steemit.com/cn/@dapeng/6mnla8-steemit-cn&#34;&gt;水浒英雄榜&lt;/a&gt;。目前榜上有 200 条英雄好汉（尚未入伙的，请联系 @justyy 或 @rivalhw 入伙）。资历最老的，已经注册了 526 天；最年轻的，注册了只有 5 天。平均为 124 天，中位数为73天。有50 % 的账号集中在48 到 120 天之间。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmX6fAFGANMMn5PeH6z7w32PW4KagtADNFMApcVX2hdKSC/1.png&#34; alt=&#34;1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;再看看权力的等级分布。200位好汉里，有 5 条大鲸（即权力值超过 48.6 万 SBD），4 条小鲸（即权力值超过 4.86 万 SBD），10 条海豚（即权力值超过 4860 SBD），35 条大鱼（即权力值超过 486 SBD），146 条小鱼（即权力值低于 486 SBD）。做成图是这样的：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUQoEgTGXVQ7c3LKzbsT74PnJgESHEMTx654JvywEd7Cq/2.png&#34; alt=&#34;2.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;考察一下这个圈子的声望值，平均为 49.75，中位数为51.97，最低的是3.52，最高的是74.93。有50 % 的账号集中在44.16 到 59.96 之间——如果你在这个区间，可以放心，你既没拖后腿，又不用承担社区太多的责任和义务; 高于这个区间或低于这个区间的，都只有 25% 而已。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmPQBVBvRrZVykJJxbgDgfmEXotVPwQYZHo9cVSNak92nM/3.png&#34; alt=&#34;3.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;最后，我们观察一下这个梁山好汉社区的成长。跟上周相比，数量上净增了 1 位好汉。其中，小鱼减少了 3 位, 大鱼增加了  2 位， 海豚增加了 2 位。权力的平均值比上周降低32 SBD (新人加入)，权力的中位数则增长了 3.1 SBD；声望的平均值跟上周持平，声望的中位数则增长了 0.4。&lt;/p&gt;
-
-&lt;p&gt;整体上大家在成长。祝愿华语区蒸蒸日上，做 steem 的弄潮儿。&lt;/p&gt;
-
-&lt;p&gt;感谢关注“大鹏观察”。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Thank you for your attention to Steems&amp;rsquo; Watch by @dapeng.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Tags: #steemswatch #steemit #ranking&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏观察&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

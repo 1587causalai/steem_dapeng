@@ -9,6 +9,79 @@
     <atom:link href="https://steemit.netlify.com/tags/steemdev/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Display all the posts of a steemian and the statistics - 展示一个账户的所有帖子和统计数据</title>
+      <link>https://steemit.netlify.com/post/display-all-the-posts-of-a-steemian-and-the-statistics-or/</link>
+      <pubDate>Thu, 09 Nov 2017 22:39:33 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/display-all-the-posts-of-a-steemian-and-the-statistics-or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/display-all-the-posts-of-a-steemian-and-the-statistics-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is hard to see all the posts of a steemian on steemit. You have to scroll down your browser, wait, and scroll, and wait &amp;hellip;&amp;hellip; Nothing is more boring if the author has hundreds of posts and you want to see the oldest one, which might be the self-introduction post.&lt;/p&gt;
+
+&lt;p&gt;I was suffering this problem for a long time. Today I could not stand it any longer. Thus I developed a web app: &lt;a href=&#34;http://steemr.org&#34;&gt;http://steemr.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Input an ID and press Enter, you can see a table of all the posts. Features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The table displays 20 posts per page by default. You could change the number on the topleft of the table to display 50 or 100 posts per page, or all the posts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Input something as keywords in the topright bar or the bottom bars, and you can search in the post titles.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;One single click can jump to the webpage of a post on steemit, cnsteem, chainbb, busy, steemdb, or steemd.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The time, payout and vote number are given. Click the column name and you can sort the posts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Statistic diagrams show the cumulative payout, votes and post number. A 24-hour diagram shows the active hour of the author.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following figure is an example, showing the growth of the cumulative payout of @deanliu&amp;rsquo;s posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmaB6PqmCqJPQNaXYPjbcsaGV7QQjcMB9VdwkTVCrg4sV6/payout.png&#34; alt=&#34;payout.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Have fun!&lt;/p&gt;
+
+&lt;p&gt;Steem 有个让人无比郁闷的毛病：想一目了然地看一个人的所有帖子，你得往下拉，等着载入，再拉，再等&amp;hellip;&amp;hellip;尤其是那些发布了几百上千篇帖子的大神，想看他们的旧帖，在 steemit 上难比登天。我只能去 chainbb，那里支持分页，点第一页就行了。但是，你还得点页码，仍然不是很方便。&lt;/p&gt;
+
+&lt;p&gt;为啥就没个文章全部列表呢？连杀人鲸 @deanliu  都&lt;a href=&#34;https://cnsteem.com/cn/@deanliu/juan&#34;&gt;抱怨&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;我其實等待這樣的我所有文章列表很久了，Steemit老是把resteem跟自己文章放一起，大半年了，說過的人甚至走一半了，也沒見有人理會。這樣列表的好處是，可以很快找到自己的很久以前舊文章&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;如今，能做到展示全部文章列表的，大概只有我量身定做的 &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;steem 镜像网站&lt;/a&gt;了（&lt;a href=&#34;https://deancrypto.netlify.com&#34;&gt;@deanliu 的镜像&lt;/a&gt;， &lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;@dapeng 的镜像&lt;/a&gt;， &lt;a href=&#34;https://pz.netlify.com/&#34;&gt;@pzhao 的镜像&lt;/a&gt;）。只是我仍不满意：没做镜像的怎么看？想看某人收益最高的帖子怎么办？每次都查数据库，太烦了。&lt;/p&gt;
+
+&lt;p&gt;于是我二话没说，操起 R 语言，光光光光，做好了，欢迎大家来调戏，地址是 &lt;a href=&#34;http://steemr.org。是的，就是我开发的&#34;&gt;http://steemr.org。是的，就是我开发的&lt;/a&gt; &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemit-cn&#34;&gt;steem 水浒英雄榜&lt;/a&gt;那个地址。英雄榜往后放，给帖子一览表让位。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbDaR2E7U2XhAtsCkVySBRxZQ6TNzEkucWpwCdxYrtBxh/steemr20171109.gif&#34; alt=&#34;steemr20171109.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;只要输入个 steem 账号，按回车，就显示这个账号的所有 blog 帖子（不包含 resteemed）。功能如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;默认每页显示 20 篇文章。你可以点击表格左上角的数字，选择每页 50 篇，或 100 篇，或全部显示。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;表格左上角和下放都有搜索栏，可以搜索标题里的关键字。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;每篇文章都给出了在 steemit , cnsteem, chainbb, busy, steemdb, steemd 的链接，点一下直达。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;每篇文章都给出了发布时间、收益（SBD）和点赞数量。点击标题栏，就可以实现排序。按时间顺序、逆序，按收益最大或最小，随便你排。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;附带给出了统计图表，展示作者累计收益、累计点赞、累计文章数量和 24 小时活跃时间的统计图。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;??图是 @deanliu 的作息时间图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfAd47vrT4ZjMhZCKtWKj5ZcQhdagdrhPNAXKDeDn1k8G/24.png&#34; alt=&#34;24.png&#34; /&gt;
+这个 app 我一直想做，拖拖拖拖拖到了今天才终于做出来。近期的心愿已了，我打算闭关一段时间，正如 @deanliu &lt;a href=&#34;https://deancrypto.netlify.com/post/owo-farewell/&#34;&gt;所说&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;接下来这一周我将不再发文章、不再参与讨论，也不再点赞，要把时间留给这个月来被我疏忽的家庭、进度落后的工作、脸书上的朋友，以及最重要的身体的健康。毕竟，日子还长呢，养精蓄锐之后，才能为自己的SteemLife注入新的能量。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;朋友们再见！下周的这个时候，我会回来给“华语好声音”颁奖。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Build a mirror/backup site for your own steem posts in 30 minutes - 30 分钟搭建自己的 steem 镜像备份网站</title>
       <link>https://steemit.netlify.com/post/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/</link>
       <pubDate>Mon, 06 Nov 2017 09:44:42 +0000</pubDate>

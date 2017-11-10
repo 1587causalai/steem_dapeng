@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/display-all-the-posts-of-a-steemian-and-the-statistics-or/</loc>
+    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://steemit.netlify.com/post/deanliu-or-all-bout-deanliu/</loc>
+    <lastmod>2017-11-09T10:47:18+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts/</loc>
     <lastmod>2017-11-08T10:15:39+00:00</lastmod>
   </url>
@@ -732,7 +742,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/blog/</loc>
-    <lastmod>2017-11-08T10:15:39+00:00</lastmod>
+    <lastmod>2017-11-09T10:47:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -755,13 +765,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-11-08T10:15:39+00:00</lastmod>
+    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/cn/</loc>
-    <lastmod>2017-11-08T10:15:39+00:00</lastmod>
+    <lastmod>2017-11-09T10:47:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -827,7 +837,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-reader/</loc>
-    <lastmod>2017-11-04T20:51:57+00:00</lastmod>
+    <lastmod>2017-11-09T10:47:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1025,7 +1035,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-11-08T10:15:39+00:00</lastmod>
+    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
   </url>
   
   <url>
@@ -1162,13 +1172,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-11-08T10:15:39+00:00</lastmod>
+    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/tags/programming/</loc>
-    <lastmod>2017-11-06T09:44:42+00:00</lastmod>
+    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1222,25 +1232,25 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/steemdata/</loc>
-    <lastmod>2017-09-10T16:24:24+00:00</lastmod>
+    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/tags/steemdev/</loc>
-    <lastmod>2017-11-06T09:44:42+00:00</lastmod>
+    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/steemdev/</loc>
-    <lastmod>2017-11-06T09:44:42+00:00</lastmod>
+    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/tags/steemit/</loc>
-    <lastmod>2017-11-06T09:44:42+00:00</lastmod>
+    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
