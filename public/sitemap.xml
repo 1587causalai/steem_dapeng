@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/steem-or-one-week-without-steem/</loc>
+    <lastmod>2017-11-17T13:52:06+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/display-all-the-posts-of-a-steemian-and-the-statistics-or/</loc>
     <lastmod>2017-11-09T22:39:33+00:00</lastmod>
   </url>
@@ -742,7 +747,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/blog/</loc>
-    <lastmod>2017-11-09T10:47:18+00:00</lastmod>
+    <lastmod>2017-11-17T13:52:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -765,13 +770,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
+    <lastmod>2017-11-17T13:52:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/cn/</loc>
-    <lastmod>2017-11-09T10:47:18+00:00</lastmod>
+    <lastmod>2017-11-17T13:52:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1035,7 +1040,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
+    <lastmod>2017-11-17T13:52:06+00:00</lastmod>
   </url>
   
   <url>
@@ -1070,7 +1075,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/life/</loc>
-    <lastmod>2017-11-08T10:15:39+00:00</lastmod>
+    <lastmod>2017-11-17T13:52:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1172,7 +1177,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
+    <lastmod>2017-11-17T13:52:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
