@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/2-award-ceremony-for-the-cn-voice-prize/</loc>
+    <lastmod>2017-11-19T17:17:24+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/or-a-song-about-minows/</loc>
     <lastmod>2017-11-18T18:01:24+00:00</lastmod>
   </url>
@@ -775,13 +780,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-11-18T18:01:24+00:00</lastmod>
+    <lastmod>2017-11-19T17:17:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/cn/</loc>
-    <lastmod>2017-11-18T18:01:24+00:00</lastmod>
+    <lastmod>2017-11-19T17:17:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -817,7 +822,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-contest/</loc>
-    <lastmod>2017-11-05T09:37:21+00:00</lastmod>
+    <lastmod>2017-11-19T17:17:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -871,7 +876,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-voice/</loc>
-    <lastmod>2017-11-18T18:01:24+00:00</lastmod>
+    <lastmod>2017-11-19T17:17:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -895,7 +900,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/contest/</loc>
-    <lastmod>2017-11-05T09:37:21+00:00</lastmod>
+    <lastmod>2017-11-19T17:17:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1045,7 +1050,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-11-18T18:01:24+00:00</lastmod>
+    <lastmod>2017-11-19T17:17:24+00:00</lastmod>
   </url>
   
   <url>
@@ -1182,7 +1187,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-11-18T18:01:24+00:00</lastmod>
+    <lastmod>2017-11-19T17:17:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
