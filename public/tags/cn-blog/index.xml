@@ -9,6 +9,100 @@
     <atom:link href="https://steemit.netlify.com/tags/cn-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>我把青春献给你：排版 (1) - My story of Typesetting</title>
+      <link>https://steemit.netlify.com/post/1-or-latex-1/</link>
+      <pubDate>Tue, 21 Nov 2017 20:25:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/1-or-latex-1/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/1-or-latex-1&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/1-or-latex-1&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/1-or-latex-1&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/1-or-latex-1&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/1-or-latex-1&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/1-or-latex-1&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/1-or-latex-1&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/1-or-latex-1.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1&lt;/p&gt;
+
+&lt;p&gt;2017 年快要过去了。如果剩下这四十天不出什么幺蛾子的话，我今年的最蠢事情排行榜，基本是板上钉钉。名列榜首的，就是过早给《学 R》一书大肆宣传。跟罗永浩当年头一回卖锤子手机一样一样的，还没量产，就先吹牛，结果吹破了，打了自己的脸。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://5b0988e595225.cdn.sohucs.com/images/20170715/d6a28e43a55b48128265e4029fb4e6c2.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;其实，这本书早在今年 6 月就写完了，7 月做了最后一次修改。当时书号已经批了，封面也有了模样，我以为马上就能印出来了，于是告诉了我能告诉的每一个朋友。朋友们都很讲义气，把白花花的银子拍在桌上，就等着付钱买了。当了教授的老同学说：放心，到时候我送给我的学生人手一本！&lt;/p&gt;
+
+&lt;p&gt;谁知道，一晃四个多月过去了，书还没出来。我的前期宣传算是白费了。让人欣慰的是，直到现在，仍然有铁杆粉丝惦记着我，时不时发来鼓励的短信：“喂，你那书烂尾了吧？啊哈哈哈哈~~~~”&lt;/p&gt;
+
+&lt;p&gt;谢谢。&lt;/p&gt;
+
+&lt;p&gt;那么，四个月里，这书干嘛去了？&lt;/p&gt;
+
+&lt;p&gt;在排版。&lt;/p&gt;
+
+&lt;p&gt;《学 R》这本书，一直排不出理想的模样。&lt;/p&gt;
+
+&lt;p&gt;四个月是在反反复复修改排版里度过的。一直拖到上周，我们仍然看不到任何排版成功的迹象。2017 年所剩无几的耐心消耗殆尽，一咬牙一跺脚，我们决定壮士断腕。合作作者 Y 从出版社讨来排版文件，并且自己花钱购买了专业软件，自己排；我同时用  LaTeX 排，齐头并进。谁先排好就用谁的。我们谁都不想再拖，再拖就真的要吐血了。&lt;/p&gt;
+
+&lt;p&gt;当做出这个决定的第二天，Y 看到我用  LaTeX 做出的 pdf 书稿小样得到了印刷厂的认可，就放下了手里的专业软件，决定不干了：“ LaTeX 真厉害，有空我学一下&amp;hellip;&amp;hellip;”&lt;/p&gt;
+
+&lt;p&gt;我立马拦住：“最好别去学。这个坑太大。一入  LaTeX，坑深似海。”&lt;/p&gt;
+
+&lt;p&gt;2&lt;/p&gt;
+
+&lt;p&gt;出版社负责录入和排版的工作，简称“录排”。&lt;/p&gt;
+
+&lt;p&gt;这四个月来，录排可谓兢兢业业，全心全力为《学 R》排版。可惜，辛苦不一定有回报，排出的书稿，一直有层出不穷的问题。&lt;/p&gt;
+
+&lt;p&gt;比如说，丢失公式和特殊字符。原稿里的诸如 *R*2， π  等都莫名其妙消失了。&lt;/p&gt;
+
+&lt;p&gt;比如说，字体。原稿里的代码都是用等宽字体表示的，录排之后都成了跟正文一样的字体。&lt;/p&gt;
+
+&lt;p&gt;比如说，标点符号。原稿里的所有标点符号，包括代码里的逗号、引号、括号、冒号，都变成了中文标点符号。加上非等宽字体，书里的代码惨不忍睹。&lt;/p&gt;
+
+&lt;p&gt;最要命的是，原稿里的很多空格也都不翼而飞。比如录排稿：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.pzhao.org/img/xuer1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;是不是一头雾水？实际上原稿是：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.pzhao.org/img/xuer2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;每次从录排稿里挑问题，都恨不得把一双近视眼珠子抠出来，再拿着放大镜逐字逐句看。后来，索性放弃了很多想法。比如说，原先代码是彩色的，得知需要录排逐个字符手动修改，算了不要了；原先打算增加个小贴士目录，得知需要排完页码手动添加，算了不要了；原先打算给常用函数做个索引，方便读者从书里找示例，看样子也得手动做，算了不要了&amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;即便如此，每次的排版仍然会出现奇奇怪怪的问题。如此往返三次，《学 R》这本书我已经读得想呕吐了。&lt;/p&gt;
+
+&lt;p&gt;我百思不得其解：这到底是怎么回事？&lt;/p&gt;
+
+&lt;p&gt;3&lt;/p&gt;
+
+&lt;p&gt;来回折磨了四个月。终于， Y 试用了一下录排用的排版软件—— Adobe InDesign，俗称 ID，是国内出版业主流的专业排版软件。&lt;/p&gt;
+
+&lt;p&gt;Y 立刻对我说：“我明白问题出在哪里了！”&lt;/p&gt;
+
+&lt;p&gt;原来，录排是把我们提交的原稿，转成了 txt 文本文件；书里的插图，全部转成了 tif 图片。然后，把这些素材导入 ID，然后手动按照原稿 pdf 的样子做调整。&lt;/p&gt;
+
+&lt;p&gt;这正是录排一贯的工作流程。&lt;/p&gt;
+
+&lt;p&gt;这个流程，对文学类书籍没有问题。一篇小说，重要的是内容，不是格式；只要把文字分好段，就不会有大错。&lt;/p&gt;
+
+&lt;p&gt;然而，这个流程用在《学 R》 这本书上，就是个灾难。因为这本书，内容和格式，都很重要。&lt;/p&gt;
+
+&lt;p&gt;然而，这一点，录排不知道。&lt;/p&gt;
+
+&lt;p&gt;然而，我们不知道录排不知道。&lt;/p&gt;
+
+&lt;p&gt;然而，录排不知道我们不知道录排不知道。&lt;/p&gt;
+
+&lt;p&gt;四个月的大好青春，就是这样搭进去的。&lt;/p&gt;
+
+&lt;p&gt;对此我感到抱歉，让录排白白花了那么多时间和精力，我的吹毛求疵一定让录排很受折磨。同时我也感到遗憾，如果重来一次，这个坑恐怕仍然绕不开。&lt;/p&gt;
+
+&lt;p&gt;4，&lt;/p&gt;
+
+&lt;p&gt;好在我们及时止损了。&lt;/p&gt;
+
+&lt;p&gt;上周，我们从头做起，不仅四个月来积攒的问题一扫而空，而且彩色代码的格式保住了，索引也作出来了。 LaTeX 在这里显示了无与伦比的强大力量。以致于 Y 饶有兴趣地说：“ LaTeX 真厉害，有空我学一下&amp;hellip;&amp;hellip;”&lt;/p&gt;
+
+&lt;p&gt;我立马拦住：“最好别去学。这个坑太大。一入  LaTeX，坑深似海。”&lt;/p&gt;
+
+&lt;p&gt;如果你以为本文是为  LaTeX 做广告，呵呵，那你就错了。为啥？下回再说。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>侵权事件续：建议大家不要为此事浪费时间了</title>
       <link>https://steemit.netlify.com/post/how-to-protect-steem-authors-rights-continued/</link>
       <pubDate>Tue, 17 Oct 2017 14:10:24 +0000</pubDate>
@@ -1521,333 +1615,6 @@
 &lt;p&gt;火光在前，胜利在前。同学们，让我们携起手来，不忘初心，执着梦想，继往开来，奋勇前进吧。&lt;/p&gt;
 
 &lt;p&gt;Tags: #cn-reader #cn-blog&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Steem 史记： @hannahwu 列传</title>
-      <link>https://steemit.netlify.com/post/steem-hannahwu/</link>
-      <pubDate>Fri, 08 Sep 2017 08:23:42 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/steem-hannahwu/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-hannahwu&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-hannahwu&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-hannahwu&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-hannahwu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-hannahwu.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;是的，大家没有看错，本期“大鹏观察 - Steem 史记”的主角，正是万众期待的—— @hannahwu！（停顿，此处观众可能会有长时间的掌声。）&lt;/p&gt;
-
-&lt;p&gt;@hannahwu, 江湖人称“狼姐姐”。千呼万唤始出来，我特别制作了一张图。这是个词云图，是狼姐姐帖子里出现的关键词。字符越大，在狼姐姐帖子里出现次数就越多。所以，这是狼姐姐在 Steemit 发文的“指纹图”。所有关键词组成的轮廓，是一匹狼，一匹嗷嗷叫的狼。大家感觉如何？跟狼姐姐的形象匹配吗？&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://steemitimages.com/DQma9ULTms89jkrCjvwvCcntLBa6Tj1DVXbWbokqYD4C3Vy/a8-1.jpeg&#34;&gt;&lt;img src=&#34;https://steemitimages.com/DQma9ULTms89jkrCjvwvCcntLBa6Tj1DVXbWbokqYD4C3Vy/a8-1.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;受页面限制，图有点小，点击它就可以看大图了。&lt;/p&gt;
-
-&lt;p&gt;这是“大鹏观察”的一次升级。以后，凡是报名参加本活动的主角，都可以指定一张你喜欢的图片，我可以把帖子关键词做成你要的模样，就像这张狼图。&lt;/p&gt;
-
-&lt;p&gt;以往的“steem史记”，封面图片默认是主角profile里的图片。上期活动，默认用了 @mrspointm 的照片做封面，被我老婆看见了，我一顿解释，哎&amp;hellip;&amp;hellip;不说了，说多了都是泪&amp;hellip;&amp;hellip;以后，统统用指纹图作为帖子的封面图片。&lt;/p&gt;
-
-&lt;p&gt;需要注意的是，指纹图的图片要求是背景透明，不透明的部分将被关键词填充。如何制作背景透明的图片，可以参考我的帖子&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit-tips-create-your-steemit-watermark-using-powerpoint-steemit&#34;&gt;Powerpoint 制作你的专属 Steemit 透明背景水印&lt;/a&gt; 。也可以 google 搜索网上现成的图片，在搜索结果的工具选项里选择“透明”即可。&lt;/p&gt;
-
-&lt;p&gt;除了词云图形状升级之外，以前关键词的统计有些问题，因为很???无意义的词也统计在内了。在 @deanliu 前辈的建议下，从本期开始增加关键词过滤功能（stopwords），把一些无意义的词删掉了。即便如此，仍有一些漏网之鱼——中文的组合太复杂了，大家先凑合着看吧。&lt;/p&gt;
-
-&lt;p&gt;包括狼图制作在内，本文的数据获取、分析、图表制作、报告编写全程使用仍然是人见人爱的 R 语言，数据来源是 steemdata.com。&lt;/p&gt;
-
-&lt;p&gt;看了狼姐姐的数据后，我们发现两件怪事：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;八月中旬，狼姐姐既没有点赞，也没有评论，更别提发帖了。是一片空白，就像小龙女藏到了绝情谷底。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;一般人是 0 时到 8 时之间休息，不发帖，而狼姐姐是在 2 时到 10 时之间从未发过帖，仿佛生活在新疆。&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;这是为什么？你猜。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;前情回顾&lt;/em&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Steem 史记： &lt;a href=&#34;https://steemit.com/@tumutanzi&#34;&gt;@tumutanzi&lt;/a&gt; 世家(&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://steemit.com/cn/@dapeng/no-1s-of-his-steem-posts-steem&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-id-report-1-justyy-1&#34;&gt;Steem 史记： @justyy 列传&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-htliao-steem-s-watch-a2&#34;&gt;Steem 史记： @htliao 列传&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@pzhao/steem-shenchensucc&#34;&gt;Steem 史记： @shenchensucc 列传&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-mrspointm&#34;&gt;Steem 史记： @mrspointm列传&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;“Steem 史记”系列需要你的参与，报名方式为： &lt;strong&gt;自荐。如果希望下下一期（因为下一期已经有人选了）对你自己的用户数据进行分析，那么在最新一期的“Steem 史记”上点赞（Upvote）和留言（Reply）即可。被顶次数最多、位置最靠上的 ID，将是我们下下一期的故事主角。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;steem-史记-hannahwu-列传&#34;&gt;Steem 史记： @hannahwu 列传&lt;/h2&gt;
-
-&lt;p&gt;@hannahwu 者， 不知何方人氏，貌似常在苏州。由于本文涉及的时间均采用标准时区 UTC，换算成该时区均???加上 8 小时。&lt;/p&gt;
-
-&lt;p&gt;话说那是个载入史册的时刻： 2017-07-09 03:17:15。乾坤混沌，天地苍茫，每个人都不知道 steem 未来的方向在哪里，不知何去何从。就在这时，某个角落，传来一声婴儿的响亮啼哭。 作为这个世界的第 249952 个生命，@hannahwu 降生了。&lt;/p&gt;
-
-&lt;p&gt;光阴荏苒，如今已是 2017-09-06 14:36:11, Steem 全网注册用户总数已有 341491 个，全网发帖总数已经有 2025202 篇。在这茫茫人海里， @hannahwu 有过哪些壮举和作为？&lt;/p&gt;
-
-&lt;p&gt;This is a report of the Steemit ID @hannahwu. The data were sampled from &lt;a href=&#34;https://steemdata.com/&#34;&gt;https://steemdata.com/&lt;/a&gt; at 2017-09-06 14:36:11, when there were in total 341491 accounts and 2025202 posts on Steem. Data were processes and this report was written in R&lt;/p&gt;
-
-&lt;p&gt;language.&lt;/p&gt;
-
-&lt;h3 id=&#34;hannahwu-的基本信息-profile&#34;&gt;@hannahwu 的基本信息 Profile&lt;/h3&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;items&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;info&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;name&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;hannahwu&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;sup&gt;249952&lt;/sup&gt;&amp;frasl;&lt;sub&gt;341491&lt;/sub&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;created&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;2017-07-09 03:17:15&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;profile_image&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQmakBbB7qXDEVYRii5SMMUsQWFg6gRegHbYHSrzhww93XL/about.jpg&#34; alt=&#34;&#34; /&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;about&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Hannah，水瓶座，爱花，爱生活，爱田园，喜欢亲近大自然，喜爱小动物，爱好摄影。&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;location&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N.A.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;website&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://www.hannahwu.com/&#34;&gt;https://www.hannahwu.com/&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;post_count&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;981&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;available_STEEM&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;available_SBD&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;56.831&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;available_VESTS&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;1725461.75161&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;reputation&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;12731395804795&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;followers_count&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;227&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;following_count&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;165&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&#34;帖中之最-top-posts&#34;&gt;帖中之最 Top Posts&lt;/h3&gt;
-
-&lt;p&gt;???诞生后，@hannahwu 就对这个世界发出了自己独特的声音，共发帖 73 篇。我们来看看 @hannahwu 发布的帖子里的几个第一名。&lt;/p&gt;
-
-&lt;p&gt;In this section we listed @hannahwu&amp;rsquo;s top posts.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;字符最多的帖子 Top post with the most characters.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/yulong-snow-mountain-ski-at-4000-meters-above-sea-level&#34;&gt;玉龙雪山，四千米处撒欢 Yulong Snow Mountain, Ski at 4000 Meters above Sea-level&lt;/a&gt;，含 5601 个字符。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;插图最多的帖子 Top post with the most figures.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/yulong-snow-mountain-ski-at-4000-meters-above-sea-level&#34;&gt;玉龙雪山，四千米处撒欢 Yulong Snow Mountain, Ski at 4000 Meters above Sea-level&lt;/a&gt;，含 32 张图片。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;修改间隔最长的帖子 Top post with the longest time between the publication and the final edit.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/embrace-steemit-at-my-6th-blogoversary-steemit&#34;&gt;Embrace Steemit at my 6th Blogoversary!! 博客六周年之际来一篇Steemit安利&lt;/a&gt;，发布 41.2 小时即 1.7 天之后，作者做了最后一次修改。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;得票数最多的帖子 Top post with the most upvotes.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/selfportrait-contest&#34;&gt;Selfportrait Contest 自画像&lt;/a&gt;，得到 109 个赞。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;赚钱最多的帖子 Top post with the most payout value.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://steemit.com/@hannahwu/5uhqtm&#34;&gt;祖辈爱情（三）：最美好的初恋≠最终的归宿&lt;/a&gt;，收入为 94 美元。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;粉丝情况-followers-and-following&#34;&gt;粉丝情况 Followers and following&lt;/h3&gt;
-
-&lt;p&gt;@hannahwu 广结四海豪杰，有 227 个追随者，@hannahwu 关注的 ID 总数是 165。其中，有 47 个 ID 跟 @hannahwu 是双向关注的，而 118 个ID 虽然被 @hannahwu 关注，但却没有关注 @hannahwu 。&lt;/p&gt;
-
-&lt;p&gt;@hannahwu had 227 followers. @hannahwu followed 165 ID in total, in which 47 IDs interacted with @hannahwu bidirectionally, while 118 IDs did not follow @hannahwu.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmes7uLMw53HPoCsyUMEmMYRcnVNiB4e5X3ncyyNVhWB9A/a9-1.png&#34; alt=&#34;a9-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;若问上图中红色和蓝色区域的名单，请使用 @dapeng 开发的&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;在线小工具 steemr&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;随着朋友数量的变化， @hannahwu 逐渐积累声望。下面是声望值增长的时间趋势。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXqKTMsEJ4cbHGnRYRyofRsw8gMyCzwFDhg7bWB9xzdm1/a10-1.png&#34; alt=&#34;a10-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;发帖-posts&#34;&gt;发帖 Posts&lt;/h3&gt;
-
-&lt;p&gt;下图是 @hannahwu 的发帖时间图，图里每个点代表一篇帖子，往左水平看对应的是发帖的时刻，往下垂直看是发帖的日期。图中使用的标准时区 UTC。&lt;/p&gt;
-
-&lt;p&gt;The following figure shows @hannahwu&amp;rsquo;s active time. The green line indicates @hannahwu&amp;rsquo;s register time on Steem.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeVuRfPeP5FqUyn1APRdzZHPaGgSJfh42oRFMz8itV4Ro/a11-1.png&#34; alt=&#34;a11-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是个特殊的时钟，一圈是24小时，显示了 @hannahwu 一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的帖子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是  @hannahwu 发帖的高峰时段。主要集中在北京时间 13  时和 0 时。北京时间 2 时到 10 时之间从未发帖，很有规律。&lt;/p&gt;
-
-&lt;p&gt;The figure below shows the frequency of @hannahwu&amp;rsquo;s posts.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZMTDnukom4Nn93JDXnczLLQFbWQUxihTz4JyANSeyY1r/a13-1.png&#34; alt=&#34;a13-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是每周累计发帖总数。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmPgQuCDPXpzVbBUS4q6xwT8kc48zHF3Lry8x2mBkHc6eL/a14-1.png&#34; alt=&#34;a14-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;留言-reply&#34;&gt;留言 Reply&lt;/h3&gt;
-
-&lt;p&gt;下图是 @hannahwu 对别人帖子的评论（留言）时间图。蓝色点表示周一到周五，红色表示周六和周日。八月中旬好像发生了什么。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmaFBgNrVAVWG64NuKwQfgdzRFEDN6EfHDSGAN4A6qdr3W/a15-1.png&#34; alt=&#34;a15-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是 @hannahwu 每天发布评论的时刻统计。24 小时全有？&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUXMYrhCnxH24eiUYfdUGR3wn9BtdwuaVCwyrRobLtgqi/a17-1.png&#34; alt=&#34;a17-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是每周发表的评论总数。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmPuy2YGqKuCTWmTrkSxGf5DLt8ZzDssvsKbg8A5hEfyNo/a18-1.png&#34; alt=&#34;a18-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;点赞-vote&#34;&gt;点赞 Vote&lt;/h3&gt;
-
-&lt;p&gt;下图是 @hannahwu 发布投票（点赞）的时间趋势图。&lt;/p&gt;
-
-&lt;p&gt;The following figure shows @hannahwu&amp;rsquo;s active vote time.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTCS6XT26VyCgpe3Yurb3A3z7GnGVPtgRC8Te6AuDNCR1/a19-1.png&#34; alt=&#34;a19-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是 @hannahwu 点赞的24小时分布图。24小时全有？&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmenrjuMtQ6J6osFXSS3HzuPAhipQvFvaVoETD69Cf5Zog/a21-1.png&#34; alt=&#34;a21-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;每周点赞总数：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmPisRfs3GkSdjYx2qRu8XvuZhdLTZ2K39hfBiFTiyEkvE/a22-1.png&#34; alt=&#34;a22-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;帖子的质量和收入-quality-and-money&#34;&gt;帖子的质量和收入 Quality and money&lt;/h3&gt;
-
-&lt;p&gt;下面的数据表格是 @hannahwu 发帖的首选分区的次数。@hannahwu 发帖最多的圈子是 &amp;lsquo;cn&amp;rsquo;。&lt;/p&gt;
-
-&lt;p&gt;The table below shows the categories (the first tags) of @hannahwu&amp;rsquo;s posts. @hannahwu posted most posts in &amp;lsquo;cn&amp;rsquo;.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;category&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;Freq&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;cn&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;71&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;food&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;selfportrait-contest&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;现在我们来谈谈钱。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 @hannahwu 共发帖 73篇，总收入为 1377.76 SBD， 单帖收入最高为94.47 SBD，平均每帖收入为18.87 SBD。一半的帖子收入都在 34 SBD 以上。&lt;/p&gt;
-
-&lt;p&gt;Now let&amp;rsquo;s talk about money. The figure below shows the dollars @hannahwu got from each post. Averagely @hannahwu earned 18.87 dollars per post, with the maximum of 94.47 dollars from one post.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQfcLEv2zfBLiXQzR2MKagrKdTCf6PmFjCNXTeHZWoxWm/a25-1.png&#34; alt=&#34;a25-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图显示的是每帖收入的时间趋势。&lt;/p&gt;
-
-&lt;p&gt;The figure below shows the trend of @hannahwu&amp;rsquo;s money per post.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXERevhggEWdvi6s17voy7oKYR4WYkhLcJfoeyyMbpMxQ/a26-1.png&#34; alt=&#34;a26-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是 @hannahwu 帖子获得???投票（点赞）数。 @hannahwu 累计得赞 2776  个，单帖得到的点赞数最高为 109 个，平均每帖得赞 38  个。&lt;/p&gt;
-
-&lt;p&gt;The figure below shows the upvote number of each post. Averagely @hannahwu earned 38 upvotes per post, with the maximum of 109 upvotes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmW1euQSRAKkwJYXt2DEbUqZ9XCfzgvhQfBUu5zaEbMs1M/a27-1.png&#34; alt=&#34;a27-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是平均每赞得到的收益 SBD 的时间趋势。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSocPNNv5ogz55eXBu9LmR5V7TuTEnAe2DKudGbLUEG8j/a28-1.png&#34; alt=&#34;a28-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是每周收入总和的时间趋势。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXf2AoMVDio8LaCfex7ZUXKT8dU3RFHcwm3xQum5K1CNd/a29-1.png&#34; alt=&#34;a29-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;为 @hannahwu 帖子得到的投票次数最多的前三位伯乐是  @tumutanzi, @herlife, @jessicameng。下面为 @hannahwu 帖子得到的投票次数超过 20 次的 ID 词云图。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmW6xSazE2Y9k2msDF9crTCjLG73EVjLCneQavLRsfv8kZ/a30-1.png&#34; alt=&#34;a30-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;为 @hannahwu 帖子收益贡献最多的前三位伯乐/金主/贵人是 @abit, @tumutanzi, @linuslee0216。他们一共贡献了 @hannahwu 全部收入的 79%。排在他们后面的第 4 到第 10 位的贡献比例如下图。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcfqooYGRfNvyh6YnKk3pTEh3bEBM3QgUHaYrGXqXaCjt/a31-1.png&#34; alt=&#34;a31-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;感谢关注“大鹏观察”。欢迎参加下一期的活动，也欢迎提出宝贵意见。谢谢。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbKrfakkprV9jDF6nr4akB25gdq4qQm5dRr8GkGNUS9Gy/steeemswatch_dapeng.jpg&#34; alt=&#34;steeemswatch_dapeng.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Tags: #blog #cn-blog #steemswatch #cn-reader&lt;/p&gt;
 </description>
     </item>
     

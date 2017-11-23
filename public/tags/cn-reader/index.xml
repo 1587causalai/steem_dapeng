@@ -9,6 +9,216 @@
     <atom:link href="https://steemit.netlify.com/tags/cn-reader/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>我把青春献给你：排版 (1) - My story of Typesetting</title>
+      <link>https://steemit.netlify.com/post/1-or-latex-1/</link>
+      <pubDate>Tue, 21 Nov 2017 20:25:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/1-or-latex-1/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/1-or-latex-1&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/1-or-latex-1&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/1-or-latex-1&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/1-or-latex-1&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/1-or-latex-1&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/1-or-latex-1&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/1-or-latex-1&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/1-or-latex-1.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1&lt;/p&gt;
+
+&lt;p&gt;2017 年快要过去了。如果剩下这四十天不出什么幺蛾子的话，我今年的最蠢事情排行榜，基本是板上钉钉。名列榜首的，就是过早给《学 R》一书大肆宣传。跟罗永浩当年头一回卖锤子手机一样一样的，还没量产，就先吹牛，结果吹破了，打了自己的脸。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://5b0988e595225.cdn.sohucs.com/images/20170715/d6a28e43a55b48128265e4029fb4e6c2.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;其实，这本书早在今年 6 月就写完了，7 月做了最后一次修改。当时书号已经批了，封面也有了模样，我以为马上就能印出来了，于是告诉了我能告诉的每一个朋友。朋友们都很讲义气，把白花花的银子拍在桌上，就等着付钱买了。当了教授的老同学说：放心，到时候我送给我的学生人手一本！&lt;/p&gt;
+
+&lt;p&gt;谁知道，一晃四个多月过去了，书还没出来。我的前期宣传算是白费了。让人欣慰的是，直到现在，仍然有铁杆粉丝惦记着我，时不时发来鼓励的短信：“喂，你那书烂尾了吧？啊哈哈哈哈~~~~”&lt;/p&gt;
+
+&lt;p&gt;谢谢。&lt;/p&gt;
+
+&lt;p&gt;那么，四个月里，这书干嘛去了？&lt;/p&gt;
+
+&lt;p&gt;在排版。&lt;/p&gt;
+
+&lt;p&gt;《学 R》这本书，一直排不出理想的模样。&lt;/p&gt;
+
+&lt;p&gt;四个月是在反反复复修改排版里度过的。一直拖到上周，我们仍然看不到任何排版成功的迹象。2017 年所剩无几的耐心消耗殆尽，一咬牙一跺脚，我们决定壮士断腕。合作作者 Y 从出版社讨来排版文件，并且自己花钱购买了专业软件，自己排；我同时用  LaTeX 排，齐头并进。谁先排好就用谁的。我们谁都不想再拖，再拖就真的要吐血了。&lt;/p&gt;
+
+&lt;p&gt;当做出这个决定的第二天，Y 看到我用  LaTeX 做出的 pdf 书稿小样得到了印刷厂的认可，就放下了手里的专业软件，决定不干了：“ LaTeX 真厉害，有空我学一下&amp;hellip;&amp;hellip;”&lt;/p&gt;
+
+&lt;p&gt;我立马拦住：“最好别去学。这个坑太大。一入  LaTeX，坑深似海。”&lt;/p&gt;
+
+&lt;p&gt;2&lt;/p&gt;
+
+&lt;p&gt;出版社负责录入和排版的工作，简称“录排”。&lt;/p&gt;
+
+&lt;p&gt;这四个月来，录排可谓兢兢业业，全心全力为《学 R》排版。可惜，辛苦不一定有回报，排出的书稿，一直有层出不穷的问题。&lt;/p&gt;
+
+&lt;p&gt;比如说，丢失公式和特殊字符。原稿里的诸如 *R*2， π  等都莫名其妙消失了。&lt;/p&gt;
+
+&lt;p&gt;比如说，字体。原稿里的代码都是用等宽字体表示的，录排之后都成了跟正文一样的字体。&lt;/p&gt;
+
+&lt;p&gt;比如说，标点符号。原稿里的所有标点符号，包括代码里的逗号、引号、括号、冒号，都变成了中文标点符号。加上非等宽字体，书里的代码惨不忍睹。&lt;/p&gt;
+
+&lt;p&gt;最要命的是，原稿里的很多空格也都不翼而飞。比如录排稿：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.pzhao.org/img/xuer1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;是不是一头雾水？实际上原稿是：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.pzhao.org/img/xuer2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;每次从录排稿里挑问题，都恨不得把一双近视眼珠子抠出来，再拿着放大镜逐字逐句看。后来，索性放弃了很多想法。比如说，原先代码是彩色的，得知需要录排逐个字符手动修改，算了不要了；原先打算增加个小贴士目录，得知需要排完页码手动添加，算了不要了；原先打算给常用函数做个索引，方便读者从书里找示例，看样子也得手动做，算了不要了&amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;即便如此，每次的排版仍然会出现奇奇怪怪的问题。如此往返三次，《学 R》这本书我已经读得想呕吐了。&lt;/p&gt;
+
+&lt;p&gt;我百思不得其解：这到底是怎么回事？&lt;/p&gt;
+
+&lt;p&gt;3&lt;/p&gt;
+
+&lt;p&gt;来回折磨了四个月。终于， Y 试用了一下录排用的排版软件—— Adobe InDesign，俗称 ID，是国内出版业主流的专业排版软件。&lt;/p&gt;
+
+&lt;p&gt;Y 立刻对我说：“我明白问题出在哪里了！”&lt;/p&gt;
+
+&lt;p&gt;原来，录排是把我们提交的原稿，转成了 txt 文本文件；书里的插图，全部转成了 tif 图片。然后，把这些素材导入 ID，然后手动按照原稿 pdf 的样子做调整。&lt;/p&gt;
+
+&lt;p&gt;这正是录排一贯的工作流程。&lt;/p&gt;
+
+&lt;p&gt;这个流程，对文学类书籍没有问题。一篇小说，重要的是内容，不是格式；只要把文字分好段，就不会有大错。&lt;/p&gt;
+
+&lt;p&gt;然而，这个流程用在《学 R》 这本书上，就是个灾难。因为这本书，内容和格式，都很重要。&lt;/p&gt;
+
+&lt;p&gt;然而，这一点，录排不知道。&lt;/p&gt;
+
+&lt;p&gt;然而，我们不知道录排不知道。&lt;/p&gt;
+
+&lt;p&gt;然而，录排不知道我们不知道录排不知道。&lt;/p&gt;
+
+&lt;p&gt;四个月的大好青春，就是这样搭进去的。&lt;/p&gt;
+
+&lt;p&gt;对此我感到抱歉，让录排白白花了那么多时间和精力，我的吹毛求疵一定让录排很受折磨。同时我也感到遗憾，如果重来一次，这个坑恐怕仍然绕不开。&lt;/p&gt;
+
+&lt;p&gt;4，&lt;/p&gt;
+
+&lt;p&gt;好在我们及时止损了。&lt;/p&gt;
+
+&lt;p&gt;上周，我们从头做起，不仅四个月来积攒的问题一扫而空，而且彩色代码的格式保住了，索引也作出来了。 LaTeX 在这里显示了无与伦比的强大力量。以致于 Y 饶有兴趣地说：“ LaTeX 真厉害，有空我学一下&amp;hellip;&amp;hellip;”&lt;/p&gt;
+
+&lt;p&gt;我立马拦住：“最好别去学。这个坑太大。一入  LaTeX，坑深似海。”&lt;/p&gt;
+
+&lt;p&gt;如果你以为本文是为  LaTeX 做广告，呵呵，那你就错了。为啥？下回再说。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>逻辑娃 - Logical Kid</title>
+      <link>https://steemit.netlify.com/post/or-logical-kid/</link>
+      <pubDate>Tue, 21 Nov 2017 10:33:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/or-logical-kid/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/or-logical-kid&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-logical-kid&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-logical-kid&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/or-logical-kid&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/or-logical-kid&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/or-logical-kid&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-logical-kid&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/or-logical-kid.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;我家二娃，生于德国，于是网名唤作德生，年方四岁。小小年纪，逻辑思维能力值得写一写。&lt;/p&gt;
+
+&lt;p&gt;1&lt;/p&gt;
+
+&lt;p&gt;三岁的时候，德生数数的方式是这样的：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;&amp;hellip;,  十八，十九，十十，十十一，十十二，…..，十十九，十十十，十十十一……&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我和老婆惊得面面相觑：逻辑上好像没啥毛病哦！&lt;/p&gt;
+
+&lt;p&gt;德生其实是自己独立发明了罗马计数法，三十一写作XXXI（十十十一）。&lt;/p&gt;
+
+&lt;p&gt;2&lt;/p&gt;
+
+&lt;p&gt;有一天，幼儿园小班的“阿舅”克里斯对我们说：德生得练习上厕所了，不能老戴纸尿裤，因为转到大班后，那里的老师不负责换纸尿裤。&lt;/p&gt;
+
+&lt;p&gt;我们大吃一惊。奥地利和德国一样，三岁之前上Kinderkrippe，相当于小班；三岁之后上Kindergarten，相当于大班。大娃京生在德国上大班的时候，是可以换纸尿裤的。&lt;/p&gt;
+
+&lt;p&gt;于是在家里练。星期六，我们跟德生商量：除了睡觉和外出，其他时间不戴纸尿裤。德生不乐意，妈妈哄道：今天先戴着吧，明天星期天，在家不戴。德生同意了，重复道：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;今天戴，明天不戴。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我们很高兴：“说话算数哦！”&lt;/p&gt;
+
+&lt;p&gt;德生点点头。&lt;/p&gt;
+
+&lt;p&gt;第二天早上，脱下纸尿裤，德生要求换上新的。妈妈说：“不是说好了吗？今天不戴纸尿裤。”&lt;/p&gt;
+
+&lt;p&gt;德生睁大眼睛，一本正经地说：“今天戴，明天不戴！说话算数！”&lt;/p&gt;
+
+&lt;p&gt;这确实是我们的原话。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Inspiration-Innovation-Idea-Thought-Imagination-2123970.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image Credit: maxpixel.freegreatpicture.com&lt;/p&gt;
+
+&lt;p&gt;3&lt;/p&gt;
+
+&lt;p&gt;每天晚上哄德生睡觉，我们都会说，天黑了，喝奶、洗脸、洗脚、刷牙、睡觉。这套程序德生已经能背下来了。&lt;/p&gt;
+
+&lt;p&gt;星期天下午，我带德生去河边的游乐场玩。下午四点，太阳就转到山后面去了，气温立刻下降，我说：天要黑了，别玩了，回家吧。&lt;/p&gt;
+
+&lt;p&gt;德生点点头。&lt;/p&gt;
+
+&lt;p&gt;一进家门，妈妈就要脱掉德生的纸尿裤。德生哇哇大叫。妈妈说：“不是说好的吗？在家不戴纸尿裤。”&lt;/p&gt;
+
+&lt;p&gt;德生说：“爸爸说，天黑了要回家。天黑了，喝奶、洗脸、洗脚、刷牙、睡觉，睡觉要戴纸尿裤！”&lt;/p&gt;
+
+&lt;p&gt;逻辑上无懈可击。&lt;/p&gt;
+
+&lt;p&gt;4&lt;/p&gt;
+
+&lt;p&gt;我们家住半山腰，爬山有得天独厚的条件。然而德生愿意赖在家里玩玩具和看书。&lt;/p&gt;
+
+&lt;p&gt;德生说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;不敢去爬山，山上有老虎。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;妈妈：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;山上没老虎！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;德生：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;山上有没有动物园？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;妈妈：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;有啊！走，咱们爬山去看动物园&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;德生：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;动物园里有没有老虎？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;妈妈：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;有啊&amp;hellip;&amp;hellip;嗯？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;德生：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;那山上有没有老虎？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;妈妈：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;有&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
       <title>关于大长腿杀人鲸刘美女 @deanliu 的一切 - All bout @deanliu</title>
       <link>https://steemit.netlify.com/post/deanliu-or-all-bout-deanliu/</link>
       <pubDate>Thu, 09 Nov 2017 10:47:18 +0000</pubDate>
@@ -1277,199 +1487,6 @@
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQme2y8Rg92MTiBK2stWhZ9ZhTsvXBJyNLxTEjDvwBda9DK/steemcn1.jpg&#34; alt=&#34;steemcn1.jpg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQma26UjtrMxv1WndJ7DdLAVTCxTMrPM1eQcU7PXMAhMkYe/steemcn2.jpg&#34; alt=&#34;steemcn2.jpg&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>欢迎参加新人“三个一”活动第 2 期  Welcome Prize for New Steemians</title>
-      <link>https://steemit.netlify.com/post/2yuqbh-welcome-prize-for-new-steemians/</link>
-      <pubDate>Sun, 15 Oct 2017 08:34:48 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/2yuqbh-welcome-prize-for-new-steemians/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/2yuqbh-welcome-prize-for-new-steemians&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2yuqbh-welcome-prize-for-new-steemians&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/2yuqbh-welcome-prize-for-new-steemians&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/2yuqbh-welcome-prize-for-new-steemians&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/2yuqbh-welcome-prize-for-new-steemians.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;希望工程“三个一”活动第 2 期隆重开幕！欢迎所有新老用户参加，投稿，点赞，留言，赞助……形式不限。本活动的发起详见&lt;a href=&#34;https://steemit.com/cn/@dapeng/welcome-prize-for-new-steemians&#34;&gt;第一期的简介&lt;/a&gt;。与上一期不同的是，本期更改了奖金分配方案，并以全新而有趣的方式来征集和确定下期活动主题，详见下文。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeVYQaSsEtHBGZRJfejedPbv1FDsCckghUyKmcuDJPz7W/cn31-2.jpg&#34; alt=&#34;cn31-2.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;怎样参加&#34;&gt;怎样参加&lt;/h2&gt;
-
-&lt;p&gt;只需在 steem 上发布一篇符合以下要求的文章即可：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;参加活动的文章里需包含“&lt;strong&gt;三个一&lt;/strong&gt;”：即&lt;strong&gt;一张原创照片&lt;/strong&gt; + &lt;strong&gt;一首诗（不必原创，注明出处）&lt;/strong&gt; + &lt;strong&gt;一段原创文字&lt;/strong&gt;。“三个一”的顺序可以随意。文章标题不限。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;本期主题：&lt;strong&gt;“远”&lt;/strong&gt;。远方，远见，远行，疏远，马致远，张文远，萧远山……打开脑洞，随便想，只要能跟“远”字扯上关系的，都行。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;照片和文字必须原创。如有抄袭、剽窃，零容忍，一经发现，将会被列入共享黑名单，以后永无机会参加“希望工程”的任何活动。没有黄牌，直接红牌！&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;为了方便统计，文章的标签（Tag）必须包含 cn-31，第一标签必须是 cn。建议标签: cn cn-reader cn-31 photography poetry&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;欢迎一人多次投稿，取其中最高名次的一篇参加评奖。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;投稿的文章可以参加 steem 上同期举办的其他活动，例如“月旦评”和“谷哥点名”。只需同时满足其他活动的要求即可。对“三个一”评奖没有任何影响。举例：如果你的文章主题是“远”（三个一）和“角色”（谷哥点名），同时满足月旦评的字数和标题等要求，那么你可以一稿参加三个活动！如果哪里有摄影比赛的话，说不定能一稿四投，五投&amp;hellip;&amp;hellip;我就不教大家学坏了。打开你的脑洞自己想吧。预祝你玩得愉快！&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;具体实例，请看&lt;a href=&#34;https://steemit.com/cn/@dapeng/1-or-awards-ceremony-for-the-welcome-prize-new-steemians&#34;&gt;以前的投稿作品&lt;/a&gt;即可。&lt;/p&gt;
-
-&lt;h2 id=&#34;活动时间&#34;&gt;活动时间&lt;/h2&gt;
-
-&lt;p&gt;活动自本文发布起开始，截至 2017-10-20 23:59 (北京时间)，即下周五晚上，为期大约一周。颁奖时间为2017-10-21 星期六。&lt;/p&gt;
-
-&lt;h2 id=&#34;全新的奖项设置和评奖办法&#34;&gt;全新的奖项设置和评奖办法&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;奖金：我个人赞助 +  热心人的赞助。本文净收益将留给下期活动使用。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;奖项：&lt;strong&gt;全新的奖项设置！目前的赞助总额为 85 SBD，暂定 金奖 1 名（ 10 SBD）、银奖 3 名（各 8 SBD）、铜奖 7 名（各 6 SBD），幸运奖 3 名 （各 3 SBD），共 14 名！而且还有可能增加！欢迎赞助不同奖项！比如，收到赞助 3 SBD，我们就增设幸运奖一名; 收到 6 SBD， 就增设铜奖一名，依次类推，不设上限！&lt;/strong&gt;如果奖项数量多于参加人数，那么盈余就留作下次活动使用。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;评奖范围：金银铜奖，将在注册未满 60 天的用户里产生，照顾新人。幸运奖，将在参加活动的所有用户里产生，随机抽取。从今天算起，2017 年 8 月 15 日当天（UTC）及以后注册的用户，就算新人。注册时间可以去 &lt;a href=&#34;https://steemdb.com/@dapeng/data&#34;&gt;https://steemdb.com/@dapeng/data&lt;/a&gt;，请把这个链接里我的 id 换成你的 id。网页表格里 created 一项就是你的注册时间。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;评奖规则：按文章后面得到的留言（Reply）人数从多到少排序决定奖项。注意，是人数，不是留言的条数。发布多条留言的人按 1 个人计算（即不重复计算）。如有并列，按文章发表较迟的优先获奖。一人多次投稿的，取其中最高名次的一篇参加评奖。幸运奖随机抽选。&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;全新的主题接龙游戏&#34;&gt;全新的主题接龙游戏！&lt;/h2&gt;
-
-&lt;p&gt;上期和本期的主题连在一起是“望远”。以后，每期主题都将是一个汉字。我希望这作为一个接龙游戏玩下去，将来能连成一首诗，就像金庸的小说一样。如果是首七律的话，一年之后会凑齐这 56 个字，我们可以选取获奖作品，制作一本文集。&lt;/p&gt;
-
-&lt;p&gt;所以，&lt;strong&gt;欢迎参加本期活动的朋友们为第三期的主题提供建议，只需在投稿作品末尾注明即可。当然，不提供也没关系，不影响任何评奖。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;从大家的建议里筛选和确定第三期主题，由我们的选题团来决定。本次邀请的选题团成员为：热心人和诗词造诣深厚的 @tvb ，上期活动冠军 @acactus1013，为上期提供赞助最多的 @shenchensucc 。在此向他们表示感谢！让我们期待他们为我们出道好题！&lt;/p&gt;
-
-&lt;h2 id=&#34;本期赞助名单-按时间顺序&#34;&gt;本期赞助名单 (按时间顺序)&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;5 SBD @mrspointm&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;20.1 SBD  @xiaoshancun&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;9.9 SBD @dapeng&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;10 SBD @hannahwu&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;15 SBD @victory622&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;10 SBD @acactus1013&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;10 SBD @melaleuca&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;5 SBD @bigbigfish&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上合计 85 SBD，设奖 14 名。新增赞助会列在下面，最后一起计算获奖人数。&lt;/p&gt;
-
-&lt;p&gt;感谢提供赞助的朋友！&lt;/p&gt;
-
-&lt;p&gt;活动的最终解释权归 @dapeng 所有。&lt;/p&gt;
-
-&lt;p&gt;欢迎大家留言，对活动提出你的建议或意见！谢谢！&lt;/p&gt;
-
-&lt;p&gt;Tags: #cn-reader #cn-contest #contest&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>致歉：新人“三个一”颁奖乌龙事件 Letter of Apology for Mistakes in the Award Ceremony</title>
-      <link>https://steemit.netlify.com/post/letter-of-apology-for-mistakes-in-the-award-ceremony/</link>
-      <pubDate>Sat, 14 Oct 2017 21:37:24 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/letter-of-apology-for-mistakes-in-the-award-ceremony/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/letter-of-apology-for-mistakes-in-the-award-ceremony&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/letter-of-apology-for-mistakes-in-the-award-ceremony&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/letter-of-apology-for-mistakes-in-the-award-ceremony&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/letter-of-apology-for-mistakes-in-the-award-ceremony&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/letter-of-apology-for-mistakes-in-the-award-ceremony.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;2017 年奥斯卡颁奖典礼上，颁奖嘉宾把最佳影片奖颁给了 *La La Land*。当该影片的演职人员激动的捧过小金人向支持他们的亲朋好友一一道谢时，却被告之，奖发错啦！真正的获奖影片是 *Moonlight*。&lt;/p&gt;
-
-&lt;p&gt;真糗。我想。这要是我，那恨不得找个地缝钻进去。&lt;/p&gt;
-
-&lt;p&gt;哪知道，几个月之后，这一幕在我身上上演：今天早上的新人三个一活动颁奖典礼，我也把奖发！错！了！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://c1.staticflickr.com/6/5086/5299579966_846d4cb9ea_b.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Image credit: c1.staticflickr.com&lt;/p&gt;
-
-&lt;p&gt;今天比较忙，一早匆匆发了帖，就出去遛娃了。期间看了一下 steemit 上的回复，有朋友提醒我，说可能我把文章的评论人数算错了。我大吃一惊，心急如焚，但是没办法，带娃的时候不可能去查数据。所以在此我奉劝那些单身的或者还没生娃的朋友：珍惜你们的自由时光吧，这是你们玩 steemit 的好时候。等一有了娃，就身不由己咯。&lt;/p&gt;
-
-&lt;p&gt;带了一天娃，累个半死，终于都伺候睡了，我就核查数据。我用的是 steemsql 数据库。再三检查，我发现一个非常奇怪的现象：steemit 上看到的某篇文章的回复，跟数据库里查询的结果有不同。&lt;/p&gt;
-
-&lt;p&gt;比如『&lt;a href=&#34;https://steemit.com/cn/@acactus1013/25&#34;&gt;回望我的25岁|“三个一”活动&lt;/a&gt; 』这篇文章，steemit 上显示的回复人数，扳着指头数了数是 15 个（包括作者本人）。但是，steemsql 数据库里，搜 root_title 为&lt;strong&gt;回望我的25岁|“三个一”活动&lt;/strong&gt;的回复，人数只有 11 个。有 4 个人，例如 @veronicazhu 的回复，没有列在里面。&lt;/p&gt;
-
-&lt;p&gt;这里说说 root_title 是什么。每条回复信息，在 steemsql 数据库里都有对应的发布时间、作者、链接等信息。怎么判断一条回复属于哪个帖子呢？有个 root_title 字段，显示的就是帖子的标题。理论上，只要筛选出&lt;strong&gt;回望我的25岁|“三个一”活动&lt;/strong&gt;标题的回复，就行了。那为什么漏了？&lt;/p&gt;
-
-&lt;p&gt;我还以为时间范围弄错了，反复检查无误。这就奇怪了。&lt;/p&gt;
-
-&lt;p&gt;于是我搜漏掉的 @veronicazhu 发布的所有回复，逐条检查，终于发现，有一条回复的帖子标题是&lt;strong&gt;回望我的25岁&lt;/strong&gt;！不包含&lt;strong&gt;三个一活动&lt;/strong&gt;这几个字！难怪没搜到！&lt;/p&gt;
-
-&lt;p&gt;于是，我把&lt;strong&gt;回望我的25岁|“三个一”活动&lt;/strong&gt;和&lt;strong&gt;回望我的25岁&lt;/strong&gt;两个标题所有的回复都找出来，发现这样就齐全了！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmYM6mQgCwkZ2XMbF6huZ8MsjKB3pWv1T9pr83st42ZbGu/31error.jpg&#34; alt=&#34;31error.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;对此，我的推测是，可能作者 @acactus1013 在发布文章后修改过标题，于是文章的回复就被分到了不同的标题下面。而我原以为一篇文章的 root_title 字段是不会更改的——事实上，颁奖前我抽查了两三篇文章，不幸的是这两三篇的标题恰恰没改过——于是就导致了颁奖的乌龙事件！&lt;/p&gt;
-
-&lt;p&gt;steemsql 没有明确的使用说明书，很多东西靠猜。经过这个事件，我发现，判断一条回复属于哪篇文章，不能用 root_title ，而需要用 root_comment，这是个整数，跟每篇文章唯一对应，不会更改。&lt;/p&gt;
-
-&lt;p&gt;下面是经过修正的获奖者名单：&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;奖项&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;作者&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;标题&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;评论人数&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;收益&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;赞&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;金奖&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;@acactus1013&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@acactus1013/25&#34;&gt;回望我的25岁-“三个一”活动&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;20.68&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;32&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;银奖&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;@xiaoshancun&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@xiaoshancun/4ykg3k&#34;&gt;地瓜花与母亲的渴望&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;14&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;18.80&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;31&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;放弃&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;@xiaoshancun&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@xiaoshancun/7tlug7&#34;&gt;错过风景，???能错过一个你&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;13&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;19.74&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;44&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;铜奖&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;@victory622&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/cn/@victory622/steem&#34;&gt;望 - steem 华语区新人&amp;rdquo;三个一&amp;rdquo;活动 - 我唱了首名字叫做《望》的歌&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;13&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;19.21&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;62&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;以上名单和全部参赛作品的统计数据，已经在『&lt;a href=&#34;https://steemit.com/cn/@dapeng/1-or-awards-ceremony-for-the-welcome-prize-new-steemians&#34;&gt;新人“三个一”活动第 1 期颁奖典礼&lt;/a&gt;』一文中做了更正。&lt;/p&gt;
-
-&lt;p&gt;乌龙事件当然不能怪作者修改标题。这完全是我一个人的疏忽导致的。在此，我向所有参加或关心本活动的朋友们郑重道歉，尤其是向前三名获奖者道歉。已经错发出去的奖金不再收回，漏发的奖金已经由我个人出资补发。感谢提醒我的朋友，请大家继续监督我的工作，继续关注新人”三个一”的第二期活动！谢谢！&lt;/p&gt;
-
-&lt;p&gt;Tags: #cn-reader #cn-31 #cn-contest #contest&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
