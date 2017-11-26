@@ -9,6 +9,50 @@
     <atom:link href="https://steemit.netlify.com/categories/cn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>R 语言将博客全部从 WordPress 搬家到 Hugo - Migrating WordPress to Hugo with R</title>
+      <link>https://steemit.netlify.com/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r/</link>
+      <pubDate>Sat, 25 Nov 2017 17:39:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;从今天起，我的旧博客 dapengde.com 停止更新。旧博客的全部帖子已经搬到了 &lt;a href=&#34;http://www.pzhao.org&#34;&gt;pzhao.org&lt;/a&gt;，欢迎收藏（ctrl + d）和&lt;a href=&#34;http://www.pzhao.org/zh/index.xml&#34;&gt;订阅&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;半年多以前，我用 R 语言的 blogdown 包搭建了新网站，与旧博客并存至今。&lt;a href=&#34;http://www.pzhao.org/archives/19323/&#34;&gt;当时我就说&lt;/a&gt;，我要等着益辉同学把blogdown 的使用说明书“迁站”一章写好，就照步骤把旧博客内容全搬过去。前些日子，&lt;a href=&#34;https://bookdown.org/yihui/blogdown&#34;&gt;blogdown 书&lt;/a&gt;终于出版了，从 wordpress 搬到 hugo 的迁站方法写得很详细。迁站的时机成熟了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.defense.gov/2012/Mar/19/2000168920/670/394/0/120319-F-JZ014-905.JPG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然而，迁站的过程并不是很顺利。我照着书里推荐的步骤，试图用 &lt;a href=&#34;https://github.com/yihui/travis-exitwp&#34;&gt;travis-exitwp&lt;/a&gt; 将 wordpress 导出的 xml 文件转换成 Hugo 的markdown 文件。前面都还好，到了最后一步（第8步），我始终得不到右下角的绿色对勾，自然也得不到文件的下载链接。起初我以为是 xml 文件太大的缘故（10 M，五百多篇帖子），于是试着只导出少量帖子来生成 xml，从头操作，但是一觉睡醒还没得到下载链接。&lt;/p&gt;
+
+&lt;p&gt;于是改变策略，我给 wordpress 博客安装了插件 &lt;a href=&#34;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&#34;&gt;wordpress-to-hugo-exporter&lt;/a&gt;，直接将帖子导出为 Hugo 的markdown 格式。除了文件名里的中文乱码外，我相当满意。于是将文件批量重命名，只保留日期。文件内容可以用益辉写的 &lt;a href=&#34;https://github.com/yihui/oldblog_xml/blob/master/convert.R&#34;&gt;convert.R 代码&lt;/a&gt;来清理。&lt;/p&gt;
+
+&lt;p&gt;不过，对我来说仍然不够，看来还得自己动手，才能丰衣足食。因为我用的是 hugo-academic 主题，网页上会显示每篇帖子的摘要，需要每篇帖子的 yaml 里设置一个 “summary” 条目。这个好办，用 R 语言把每篇帖子的第一段摘出来当作 summary 插进去就行了（R 代码附后）。&lt;/p&gt;
+
+&lt;p&gt;此外，我还想在每篇帖子末尾增添一个“原文链接”，链到旧博客，万一哪篇帖子格式没转好呢？这也好吧，markdown 的 yaml 里有个 url 条目，稍微改一下插到文末就行了（R 代码附后）。&lt;/p&gt;
+
+&lt;p&gt;这就是 hugo 静态网站的好处。有 R 语言在手，以后我就可以对这些 markdown 格式的帖子为所欲为了。而且，GitHub、简书、 steemit、Stackoverflow、统计之都等诸多网站都原生支持 markdown， 发的帖子只需稍微整理，就能发到博客上，颇有万佛朝宗的盛况。&lt;/p&gt;
+
+&lt;p&gt;Hugo-academic 主题我很满意，唯一不足的是缺个归档页面，一目了然展示全部帖子清单。看来得以后自己动手做一个。&lt;/p&gt;
+
+&lt;p&gt;旧博客 dapengde.com 虽然不更新了，但会仍然放在那里，发挥余热。前些天，还有朋友&lt;a href=&#34;http://dapengde.com/archives/14752#comment-153909&#34;&gt;来我四年前写的帖子后面留言&lt;/a&gt;呢。&lt;/p&gt;
+
+&lt;p&gt;增加 summary 和原文链接的代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for (i in dir(&#39;postold&#39;)){
+  txt &amp;lt;- readLines(paste0(&#39;postold/&#39;, i), encoding = &#39;UTF-8&#39;)
+  summ &amp;lt;- txt[grep(&#39;---&#39;, txt)[2]+1]
+  summ &amp;lt;- gsub(&#39;&amp;quot;&#39;, &#39;&#39;, summ)
+  newline &amp;lt;- paste0(&#39;summary: &amp;quot;&#39;, summ, &#39;&amp;quot;&#39;)
+  linkzh &amp;lt;- &#39;原文链接&#39;
+  newline2 &amp;lt;- paste0(&#39;\n[&#39;, linkzh, &#39;](http://dapengde.com&#39;, substring(txt[grep(&#39;url&#39;, txt)[1]], 6), &#39;)\n&#39;)
+  txtnew &amp;lt;- c(txt[1:3], newline,  txt[4:length(txt)], newline2)
+  writeLines(txtnew, paste0(&#39;postnew/&#39;, i), useBytes = TRUE)
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>女人与小孩 - 华语好声音 - Woman and Kid</title>
       <link>https://steemit.netlify.com/post/or-or-women-and-kids/</link>
       <pubDate>Fri, 24 Nov 2017 08:28:15 +0000</pubDate>
@@ -1478,68 +1522,6 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;我孤陋寡闻，“无用之用”我到高中才第一次听说，听说的时候还觉得豁然开朗。如今，却被7岁的儿子轻易点破了。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>阿舅</title>
-      <link>https://steemit.netlify.com/post/2ljz4e/</link>
-      <pubDate>Tue, 31 Oct 2017 13:22:57 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/2ljz4e/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/2ljz4e&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2ljz4e&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/2ljz4e&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/2ljz4e&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/2ljz4e.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;早年听过一个相声，忘了是谁表演的了，只记得里面说，孩子的幼儿园里有个男幼师。孩子们觉得，无论叫“叔叔”还是叫“老师”都不合适，于是就叫“阿舅”，因为他们管女幼师叫“阿姨”。&lt;/p&gt;
-
-&lt;p&gt;二娃的幼儿园招聘，就招来一位阿舅。阿舅一来，幼儿园就有了新故事。&lt;/p&gt;
-
-&lt;p&gt;首先，是不是录用阿舅，园长苏珊娜需要先征求家长委员会的意见：家长们接受男老师吗？性别歧视可是违法的哦。另外，这位老师是英国人，说的是地道的英语。你愿意让孩子学外语吗？&lt;/p&gt;
-
-&lt;p&gt;呃……二娃是男孩，我们完全欢迎男老师，只是这英语嘛……二娃已经有汉语和德语了呀。&lt;/p&gt;
-
-&lt;p&gt;我们决定还是先沉默，看看别的家长的态度吧。&lt;/p&gt;
-
-&lt;p&gt;苏珊娜又补充了一些材料：阿舅 29 岁，8 年前开始在英国、肯尼亚、印度和意大利从事幼儿教育工作，学习过 CACHE 3级和5级的课程。&lt;/p&gt;
-
-&lt;p&gt;CACHE是什么？一搜才知道，CACHE 就是  Council for Awards in Care, Health and Education，“是国际标准的教师培训课程，是英国儿童教育的基础课程资格证，在英国从事儿童教育的最基本要求。二级适用于幼儿和青少年的管理和教 育工作。在英国，若从事幼儿教育工作，必须拥有该资质。它基于西方方法论和教育学，现今的调查研究以及反映了西方早教发展趋势，探索式学习，幼儿中心，概 念驱动，并将当前的研究融入幼儿如何学习中。”&lt;/p&gt;
-
-&lt;p&gt;看样子，苏珊娜挺愿意录用阿舅的。&lt;/p&gt;
-
-&lt;p&gt;很快，家长们的意见反馈上来了。所有人都说，让孩子接触地道的英伦腔太棒了。雅各布的爸爸妈妈甚至说，这简直就是雅各布的好运气，因为雅各布两个月后就要从幼儿园毕业了。&lt;/p&gt;
-
-&lt;p&gt;那么性别呢？&lt;/p&gt;
-
-&lt;p&gt;里欧的妈妈和塔哈的妈妈认为，只要资质合格就行，性别无所谓啦。我们可以考察一段时间再说。从男老师身上，孩子可以学到不同的东西。&lt;/p&gt;
-
-&lt;p&gt;莱昂纳多的妈妈谈了谈莱昂纳多的问题。这孩子胆小，大概是自小被女人照看的缘故，除了他爸爸，不敢跟别的男人玩，希望男老师能够改变现状。&lt;/p&gt;
-
-&lt;p&gt;大卫的爸爸说，他无法理解男老师怎么会受歧视。&lt;/p&gt;
-
-&lt;p&gt;这时，我们听到一位妈妈很不客气的声音：我不想让我的女儿被一个男人照顾。我要换个幼儿园。&lt;/p&gt;
-
-&lt;p&gt;最终，在多数人投赞成票的情况下，阿舅克里斯光荣上岗。&lt;/p&gt;
-
-&lt;p&gt;我起初担心男幼师会不会太阴柔纤细，一看克里斯就打消了这个顾虑。这是个大胡子的粗壮青年。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Lion-Kids-Lion-Father-Big-Cats-Wild-Animals-Drawing-1791988.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Image credit: maxpixel.freegreatpicture.com&lt;/p&gt;
-
-&lt;p&gt;过了一段时间，我们渐渐发现，幼儿园里有个阿舅，果然不一样。&lt;/p&gt;
-
-&lt;p&gt;这个幼儿园很小，只有一个班，十几个小朋友，包括园长在内有四位老师。这家幼儿园是家长共治式，很多事情需要家长参与，比如每天的卫生都是我们这些家长轮流值周打扫。&lt;/p&gt;
-
-&lt;p&gt;阿舅没来的时候，晚上打扫卫生时，活儿特别多，光给垃圾分类倒掉就花去20分钟。阿舅来了之后，每天顺手就把垃圾倒了。值周的家长感觉轻松多了。&lt;/p&gt;
-
-&lt;p&gt;幼儿园的小车棚太小，每次婴儿车都挤得放不下。阿舅亲手做个了架子，分上下两层，有效地利用了空间，婴儿车终于有地方放了。&lt;/p&gt;
-
-&lt;p&gt;花园里原来有一块空地，阿舅勤快地开辟出来，带着小朋友们种花种菜。&lt;/p&gt;
-
-&lt;p&gt;最关键的，早上送孩子上幼儿园，孩子有时候扭扭捏捏不想进去。原先，女老师们总是说，家长多陪一会儿再走。现在，阿舅二话不说，一手把孩子抱起来就进去了。&lt;/p&gt;
-
-&lt;p&gt;朋友听说之后，慕名而来，说什么也??来给他家孩子报个名。&lt;/p&gt;
-
-&lt;p&gt;虽然，他家住得好远好远。&lt;/p&gt;
 </description>
     </item>
     

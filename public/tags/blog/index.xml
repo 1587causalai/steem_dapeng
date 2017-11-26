@@ -9,6 +9,50 @@
     <atom:link href="https://steemit.netlify.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>R 语言将博客全部从 WordPress 搬家到 Hugo - Migrating WordPress to Hugo with R</title>
+      <link>https://steemit.netlify.com/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r/</link>
+      <pubDate>Sat, 25 Nov 2017 17:39:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;从今天起，我的旧博客 dapengde.com 停止更新。旧博客的全部帖子已经搬到了 &lt;a href=&#34;http://www.pzhao.org&#34;&gt;pzhao.org&lt;/a&gt;，欢迎收藏（ctrl + d）和&lt;a href=&#34;http://www.pzhao.org/zh/index.xml&#34;&gt;订阅&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;半年多以前，我用 R 语言的 blogdown 包搭建了新网站，与旧博客并存至今。&lt;a href=&#34;http://www.pzhao.org/archives/19323/&#34;&gt;当时我就说&lt;/a&gt;，我要等着益辉同学把blogdown 的使用说明书“迁站”一章写好，就照步骤把旧博客内容全搬过去。前些日子，&lt;a href=&#34;https://bookdown.org/yihui/blogdown&#34;&gt;blogdown 书&lt;/a&gt;终于出版了，从 wordpress 搬到 hugo 的迁站方法写得很详细。迁站的时机成熟了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.defense.gov/2012/Mar/19/2000168920/670/394/0/120319-F-JZ014-905.JPG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然而，迁站的过程并不是很顺利。我照着书里推荐的步骤，试图用 &lt;a href=&#34;https://github.com/yihui/travis-exitwp&#34;&gt;travis-exitwp&lt;/a&gt; 将 wordpress 导出的 xml 文件转换成 Hugo 的markdown 文件。前面都还好，到了最后一步（第8步），我始终得不到右下角的绿色对勾，自然也得不到文件的下载链接。起初我以为是 xml 文件太大的缘故（10 M，五百多篇帖子），于是试着只导出少量帖子来生成 xml，从头操作，但是一觉睡醒还没得到下载链接。&lt;/p&gt;
+
+&lt;p&gt;于是改变策略，我给 wordpress 博客安装了插件 &lt;a href=&#34;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&#34;&gt;wordpress-to-hugo-exporter&lt;/a&gt;，直接将帖子导出为 Hugo 的markdown 格式。除了文件名里的中文乱码外，我相当满意。于是将文件批量重命名，只保留日期。文件内容可以用益辉写的 &lt;a href=&#34;https://github.com/yihui/oldblog_xml/blob/master/convert.R&#34;&gt;convert.R 代码&lt;/a&gt;来清理。&lt;/p&gt;
+
+&lt;p&gt;不过，对我来说仍然不够，看来还得自己动手，才能丰衣足食。因为我用的是 hugo-academic 主题，网页上会显示每篇帖子的摘要，需要每篇帖子的 yaml 里设置一个 “summary” 条目。这个好办，用 R 语言把每篇帖子的第一段摘出来当作 summary 插进去就行了（R 代码附后）。&lt;/p&gt;
+
+&lt;p&gt;此外，我还想在每篇帖子末尾增添一个“原文链接”，链到旧博客，万一哪篇帖子格式没转好呢？这也好吧，markdown 的 yaml 里有个 url 条目，稍微改一下插到文末就行了（R 代码附后）。&lt;/p&gt;
+
+&lt;p&gt;这就是 hugo 静态网站的好处。有 R 语言在手，以后我就可以对这些 markdown 格式的帖子为所欲为了。而且，GitHub、简书、 steemit、Stackoverflow、统计之都等诸多网站都原生支持 markdown， 发的帖子只需稍微整理，就能发到博客上，颇有万佛朝宗的盛况。&lt;/p&gt;
+
+&lt;p&gt;Hugo-academic 主题我很满意，唯一不足的是缺个归档页面，一目了然展示全部帖子清单。看来得以后自己动手做一个。&lt;/p&gt;
+
+&lt;p&gt;旧博客 dapengde.com 虽然不更新了，但会仍然放在那里，发挥余热。前些天，还有朋友&lt;a href=&#34;http://dapengde.com/archives/14752#comment-153909&#34;&gt;来我四年前写的帖子后面留言&lt;/a&gt;呢。&lt;/p&gt;
+
+&lt;p&gt;增加 summary 和原文链接的代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for (i in dir(&#39;postold&#39;)){
+  txt &amp;lt;- readLines(paste0(&#39;postold/&#39;, i), encoding = &#39;UTF-8&#39;)
+  summ &amp;lt;- txt[grep(&#39;---&#39;, txt)[2]+1]
+  summ &amp;lt;- gsub(&#39;&amp;quot;&#39;, &#39;&#39;, summ)
+  newline &amp;lt;- paste0(&#39;summary: &amp;quot;&#39;, summ, &#39;&amp;quot;&#39;)
+  linkzh &amp;lt;- &#39;原文链接&#39;
+  newline2 &amp;lt;- paste0(&#39;\n[&#39;, linkzh, &#39;](http://dapengde.com&#39;, substring(txt[grep(&#39;url&#39;, txt)[1]], 6), &#39;)\n&#39;)
+  txtnew &amp;lt;- c(txt[1:3], newline,  txt[4:length(txt)], newline2)
+  writeLines(txtnew, paste0(&#39;postnew/&#39;, i), useBytes = TRUE)
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>我把青春献给你：排版 (2) - My story of Typesetting</title>
       <link>https://steemit.netlify.com/post/2-or-my-story-of-typesetting/</link>
       <pubDate>Thu, 23 Nov 2017 14:10:42 +0000</pubDate>
@@ -1417,351 +1461,6 @@
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/7GWoCnVyUo4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Tags: #cn-reader #cn-blog #blog #tv&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Steem 史记： @mrpointp 列传 （告别篇）</title>
-      <link>https://steemit.netlify.com/post/steem-mrpointp/</link>
-      <pubDate>Wed, 13 Sep 2017 06:58:54 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/steem-mrpointp/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-mrpointp&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-mrpointp&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-mrpointp&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-mrpointp&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-mrpointp.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;由于&lt;a href=&#34;https://steemit.com/cn/@dapeng/unreliable-analysis-on-steem-data-steem&#34;&gt;近期发现数据源 steemdata 的不靠谱行为&lt;/a&gt;， “大鹏观察”决定无限期停业整顿。本期“Steem 史记”是停业整顿之前的最后一期，向大家告别。所以，本期不接受下期报名了，请见谅。本期使用的数据来源主要仍然是 steemdata.com，主角的粉丝数据仍然有问题，所以粉丝数据采用了 steemsql。&lt;/p&gt;
-
-&lt;p&gt;“大鹏观察”本期故事的主角是 @mrpointp。跟前面发布过的 &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-mrspointm&#34;&gt;@mrspointm 列传&lt;/a&gt; 的主角是两口子，所以建议大家对照着看——你懂的。&lt;/p&gt;
-
-&lt;p&gt;在撰写本帖时，@mrpointp 在 &lt;a href=&#34;http://steemr.org/&#34;&gt;Steem CN 好友群&lt;/a&gt;里按有效 SP 排序坐第 24 把交椅，相当于梁山好汉的穆弘，绰号“没遮拦”。&lt;/p&gt;
-
-&lt;p&gt;让我们从 @mrpointp 帖子里关键词的词云图开始。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeLQS2nD2vFXLeLeYB9H4EWKpmdN3uU1mCSK6rQDHKbYg/MrP.jpg&#34; alt=&#34;MrP.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;前情回顾&lt;/em&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Steem 史记： &lt;a href=&#34;https://steemit.com/@tumutanzi&#34;&gt;@tumutanzi&lt;/a&gt; 世家(&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemit&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-a-preliminary-analysis-of-a-steem-id-s-data&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://steemit.com/cn/@dapeng/no-1s-of-his-steem-posts-steem&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-id-report-1-justyy-1&#34;&gt;Steem 史记： @justyy 列传&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-htliao-steem-s-watch-a2&#34;&gt;Steem 史记： @htliao 列传&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@pzhao/steem-shenchensucc&#34;&gt;Steem 史记： @shenchensucc 列传&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-mrspointm&#34;&gt;Steem 史记： @mrspointm列传&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-hannahwu&#34;&gt;Steem 史记： @hannahwu 列传&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;steem-史记-mrpointp-列传&#34;&gt;Steem 史记： @mrpointp 列传&lt;/h2&gt;
-
-&lt;p&gt;@mrpointp 者，China 人氏，活跃于东八区。由于本文涉及的时间均采用标准时区 UTC，换算成该时区均需加上 8 小时。&lt;/p&gt;
-
-&lt;p&gt;话说那是个载入史册的时刻： 2017-06-27 13:54:12。乾坤混沌，天地苍茫，每个人都不知道 steem 未来的方向在哪里，不知何去何从。就在这时，某个角落，传来一声婴儿的响亮啼哭。 作为这个世界的第 226739 个生命，@mrpointp 降生了。&lt;/p&gt;
-
-&lt;p&gt;光阴荏苒，如今已是 2017-09-12 16:18:01, Steem 全网注册用户总数已有 349432 个，全网发帖总数已经有 2128981 篇。在这茫茫人海里， @mrpointp 有过哪些壮举和作为？&lt;/p&gt;
-
-&lt;p&gt;This is a report of the Steemit ID @mrpointp. The data were sampled from &lt;a href=&#34;https://steemdata.com/&#34;&gt;https://steemdata.com/&lt;/a&gt; at 2017-09-12 16:18:01, when there were in total 349432 accounts and 2128981 posts on Steem. Data were processes and this report was written in R&lt;/p&gt;
-
-&lt;p&gt;language.&lt;/p&gt;
-
-&lt;h3 id=&#34;mrpointp-的基本信息-profile&#34;&gt;@mrpointp 的基本信息 Profile&lt;/h3&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;items&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;info&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;name&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;mrpointp&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;sup&gt;226739&lt;/sup&gt;&amp;frasl;&lt;sub&gt;349432&lt;/sub&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;created&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;2017-06-27 11:54:12&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;profile_image&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;img src=&#34;http://i.niupic.com/images/2017/07/30/uIugqt.png&#34; alt=&#34;&#34; /&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;about&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;bodybuilding, travel, food, film, novel，photography&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;location&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;China&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;website&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://steemit.com/@mrpointp&#34;&gt;https://steemit.com/@mrpointp&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;post_count&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;1044&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;available_STEEM&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;available_SBD&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;0.687&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;available_VESTS&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;3626297.70275&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;reputation&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;60.95&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;followers_count&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;413&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;following_count&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;94&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&#34;帖中之最-top-posts&#34;&gt;帖中之最 Top Posts&lt;/h3&gt;
-
-&lt;p&gt;自诞生后，@mrpointp 就对这个世界发出了自己独特的声音，共发帖 125 篇。我们来看看 @mrpointp 发布的帖子里的几个第一名。&lt;/p&gt;
-
-&lt;p&gt;In this section we listed @mrpointp&amp;rsquo;s top posts.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;字符最多的帖子 Top post with the most characters.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://steemit.com/@mrpointp/mrpointp-s-leisure-time-3-how-to-diy-your-sweet-phone-shells-part-ii&#34;&gt;How to DIY your sweet phone shells (Part II) 自制干花手机壳教程&lt;/a&gt;，含 7551 个字符。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;插图最多的帖子 Top post with the most figures.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://steemit.com/@mrpointp/my-travel-the-2nd-day-in-beijing-the-temple-of-heaven-water-cube-national-aquatic-center-national-stadium-original&#34;&gt;My Travel— The 2nd day in Beijing （The temple of Heaven,Water Cube-National Aquatic Center, National Stadium）(Original) /北京之行（天坛、水立方、鸟巢）（第二天）&lt;/a&gt;，含 18 张图片。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;修改间隔最长的帖子 Top post with the longest time between the publication and the final edit.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://steemit.com/@mrpointp/there-is-always-someone-keeping-working-out-part-7-original&#34;&gt;There is always someone keeping working out (part 7)(Original) /总有一个比你忙，比你穷，比你老的人在健身（七）&lt;/a&gt;，发布 165.9 小时即 6.9 天之后，作者做了最后一次修改。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;得票数最多的帖子 Top post with the most upvotes.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://steemit.com/@mrpointp/three-of-my-wonderful-moments&#34;&gt;我的三个精彩瞬间/Three of My Wonderful Moments&lt;/a&gt;，得到 124 个赞。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;赚钱最多的帖子 Top post with the most payout value.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://steemit.com/@mrpointp/mrpointp-s-leisure-time-2-how-to-diy-your-sweet-phone-shells&#34;&gt;How to DIY your sweet  phone shells (Part I) / 自制仿真奶油卡通手机壳教程&lt;/a&gt;，收入为 72 美元。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;粉丝情况-followers-and-following&#34;&gt;粉丝情况 Followers and following&lt;/h3&gt;
-
-&lt;p&gt;@mrpointp 广结四海豪杰，有 413 个追随者，@mrpointp 关注的 ID 总数是 94。其中，有 41 个 ID 跟 @mrpointp 是双向关注的，而 53 个ID 虽然被 @mrpointp 关注，但却??有关注 @mrpointp 。&lt;/p&gt;
-
-&lt;p&gt;@mrpointp had 413 followers. @mrpointp followed 94 IDs in total, in which 41 IDs interacted with @mrpointp bidirectionally, while 53 IDs did not follow @mrpointp.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUVj57AthrtRYBtggRV33EH7vp4XWNSJjyLeciTG6bVzp/a9-1.png&#34; alt=&#34;a9-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;若问上图中红色和蓝色区域的名单，请使用 @dapeng 开发的&lt;a href=&#34;https://steemit.com/cn/@dapeng/steemr-a-web-based-tool-for-steemers-or-steemians-steemr&#34;&gt;在线小工具 steemr&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;随着朋友数量的变化， @mrpointp 逐渐积累声望。下面是声望值增长的时间趋势。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmRi8xDGWz9sgumFozxbsBkwnBmiMYV7D9ebHSSxQoJ22Y/a10-1.png&#34; alt=&#34;a10-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;发帖-posts&#34;&gt;发帖 Posts&lt;/h3&gt;
-
-&lt;p&gt;下图是 @mrpointp 的发帖时间图，图里每个点代表一篇帖子，往左水平看对应的是发帖的时刻，往下垂直看是发帖的日期。图中使用的标准时区 UTC。&lt;/p&gt;
-
-&lt;p&gt;The following figure shows @mrpointp&amp;rsquo;s active time. The green line indicates @mrpointp&amp;rsquo;s register time on Steem.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNpjgzJEANrC3icV1H7F84NDDbvDE47gNXWEd1YzHAH3F/a11-1.png&#34; alt=&#34;a11-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是个特殊的时钟，一圈是24小时，显示了 @mrpointp 一天24小时里发帖的频次，面积越大的时段，发帖数就越多。红线显示的是频次分布：每两条相邻红线之间的帖子数，占全部帖子数的 25%。哪两条红线最接近，哪两条红线之间就是  @mrpointp 发帖的高峰时段。主要集中在北京时间 9 时和 20 - 21 时。跟  @mrspointm 有相似之处。&lt;/p&gt;
-
-&lt;p&gt;The figure above shows the frequency of @mrpointp&amp;rsquo;s posts.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSL1PXdnMzPggHgEB3SLzuqxizG8Fohvxdt7XiTr4urwW/a13-1.png&#34; alt=&#34;a13-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是每周累计发帖总数。前期比较高产，最近比较有节制。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmSbqmgiFiLXFUyz9pWyYd4fwoJQ43rmaBugk6o6hZ6ufE/a14-1.png&#34; alt=&#34;a14-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;留言-reply&#34;&gt;留言 Reply&lt;/h3&gt;
-
-&lt;p&gt;下图是 @mrpointp 对别人帖子的评论（留言）时间图。蓝色点表示周一到周五???红色表示周六和周日。八月有一段时间没有留言。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmRPTFF9PVrixGWPVqNqTBGmb1xCWt9AgnAeWmRRymmrv1/a15-1.png&#34; alt=&#34;a15-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是 @mrpointp 每天发布评论的时刻统计。24 小时全有？&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmRpd6tRXjB3Pq7fxHDeyvJyHyUrMSwBxSLnh6rZefCAmw/a17-1.png&#34; alt=&#34;a17-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是每周发表的评论总数。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQaYRGYfC1eVe7DCt7sskNJpyRhTWJGaQXLKQwAB1btvY/a18-1.png&#34; alt=&#34;a18-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;点赞-vote&#34;&gt;点赞 Vote&lt;/h3&gt;
-
-&lt;p&gt;下图是 @mrpointp 发布投票（点赞）的时间趋势图。&lt;/p&gt;
-
-&lt;p&gt;The following figure shows @mrpointp&amp;rsquo;s active vote time.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeJnRKKssaD1Zp8qCtSTqX41CGqz1FzvAMBcK575TKWqc/a19-1.png&#34; alt=&#34;a19-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是 @mrpointp 点赞的24小时分布图。24小时全有？&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmYLoJgRJJTqjpbNMufTCmek5HyxKjpgqyaEcrNC7NVLNy/a21-1.png&#34; alt=&#34;a21-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;每周点赞总数：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQ6mjadmn9fAapRjL4FHP6tzxXEmQPe4Kji2yzjYjL11d/a22-1.png&#34; alt=&#34;a22-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;帖子的质量和收入-quality-and-money&#34;&gt;帖子的质量和收入 Quality and money&lt;/h3&gt;
-
-&lt;p&gt;下面的数据表格是 @mrpointp 发帖的首选分区的次数。@mrpointp 发帖最多的圈子是 &amp;lsquo;cn&amp;rsquo;。&lt;/p&gt;
-
-&lt;p&gt;The table below shows the categories (the first tags) of @mrpointp&amp;rsquo;s posts. @mrpointp posted most posts in &amp;lsquo;cn&amp;rsquo;.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;category&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;Freq&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;animedrawingchallenge&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;cn&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;108&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;diy&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;drawingchallenge&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;food&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;introduceyourself&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;issue&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;photography&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;selfportrait-contest&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;steemit&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;travel&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;现在我们来谈谈钱。下图显示的是单篇帖子收入的分布。横坐标是美元，阴影面积越大，对应美元的帖子数量越多。 @mrpointp 共发帖 125篇，总收入为 1199.66 SBD， 单帖收入最高为72.24 SBD，平均每帖收入为9.6 SBD。&lt;/p&gt;
-
-&lt;p&gt;Now let&amp;rsquo;s talk about money. The figure below shows the dollars @mrpointp got from each post. Averagely @mrpointp earned 9.6 dollars per post, with the maximum of 72.24 dollars from one post.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeP7sWNWUAFF7Pa8f4xoiB1wfSSDBUWkAZ3Ch6Bh7t6WC/a25-1.png&#34; alt=&#34;a25-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图显示的是每帖收入的时间趋势。&lt;/p&gt;
-
-&lt;p&gt;The figure below shows the trend of @mrpointp&amp;rsquo;s money per post.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmW6gZFmCTvr7XTHMUYn1TpV56VmT4BUNSFeMuttq68FtV/a26-1.png&#34; alt=&#34;a26-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是 @mrpointp 帖子获得的投票（点赞）数。 @mrpointp 累计得赞 6352  个，单帖得到的点赞数最高为 124 个，平均每帖得赞 50.8  个。&lt;/p&gt;
-
-&lt;p&gt;The figure below shows the upvote number of each post. Averagely @mrpointp earned 50.8 upvotes per post, with the maximum of 124 upvotes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmVg5r5vJ9DghD9cCXpE1x3BDWbKkevbDB15FZdFfrCwnL/a27-1.png&#34; alt=&#34;a27-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是平均每赞得到的收益 SBD 的时间趋势。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbuapao44Ay6WQ1TCxJG8d4SndSte3ujpqswdYensUvfx/a28-1.png&#34; alt=&#34;a28-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;下图是每周收入总和的时间趋势。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUGskHxbTvvJoFYD9YbfoE9o1NTZu2Yi5u872S1MLdLhp/a29-1.png&#34; alt=&#34;a29-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;为 @mrpointp 帖子得到的投票次数最多的前三位伯乐是  @banjo, @cnfund, @minnowsupport。下面为 @mrpointp 帖子得到的投票次数超过 20 次的 ID 词云图。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZxM4ptqsHJWmvK8EbRzv2jVdypJvpWjhQsdQyAQmUSD3/a30-1.png&#34; alt=&#34;a30-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;为 @mrpointp 帖子收益贡献最多的前三位伯乐/金主/贵人是 @abit, @linuslee0216, @htliao。他们一共贡献了 @mrpointp 全部收入的 75%。排在他们后面的第 4 到第 10 位的贡献比例如下图。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmdF4m8K3DS7Lk8xEfygAZGjxUGUazTBD8GmvcVgQdCRs5/a31-1.png&#34; alt=&#34;a31-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;感谢关注“大鹏观察”。欢迎提出宝贵意见。谢谢。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQmbKrfakkprV9jDF6nr4akB25gdq4qQm5dRr8GkGNUS9Gy/steeemswatch_dapeng.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

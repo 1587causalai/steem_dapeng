@@ -6,8 +6,52 @@
     <description>Recent content in Home on STEEM@dapeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Nov 2017 08:28:15 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Nov 2017 17:39:42 +0000</lastBuildDate>
     <atom:link href="https://steemit.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>R 语言将博客全部从 WordPress 搬家到 Hugo - Migrating WordPress to Hugo with R</title>
+      <link>https://steemit.netlify.com/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r/</link>
+      <pubDate>Sat, 25 Nov 2017 17:39:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;从今天起，我的旧博客 dapengde.com 停止更新。旧博客的全部帖子已经搬到了 &lt;a href=&#34;http://www.pzhao.org&#34;&gt;pzhao.org&lt;/a&gt;，欢迎收藏（ctrl + d）和&lt;a href=&#34;http://www.pzhao.org/zh/index.xml&#34;&gt;订阅&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;半年多以前，我用 R 语言的 blogdown 包搭建了新网站，与旧博客并存至今。&lt;a href=&#34;http://www.pzhao.org/archives/19323/&#34;&gt;当时我就说&lt;/a&gt;，我要等着益辉同学把blogdown 的使用说明书“迁站”一章写好，就照步骤把旧博客内容全搬过去。前些日子，&lt;a href=&#34;https://bookdown.org/yihui/blogdown&#34;&gt;blogdown 书&lt;/a&gt;终于出版了，从 wordpress 搬到 hugo 的迁站方法写得很详细。迁站的时机成熟了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.defense.gov/2012/Mar/19/2000168920/670/394/0/120319-F-JZ014-905.JPG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然而，迁站的过程并不是很顺利。我照着书里推荐的步骤，试图用 &lt;a href=&#34;https://github.com/yihui/travis-exitwp&#34;&gt;travis-exitwp&lt;/a&gt; 将 wordpress 导出的 xml 文件转换成 Hugo 的markdown 文件。前面都还好，到了最后一步（第8步），我始终得不到右下角的绿色对勾，自然也得不到文件的下载链接。起初我以为是 xml 文件太大的缘故（10 M，五百多篇帖子），于是试着只导出少量帖子来生成 xml，从头操作，但是一觉睡醒还没得到下载链接。&lt;/p&gt;
+
+&lt;p&gt;于是改变策略，我给 wordpress 博客安装了插件 &lt;a href=&#34;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&#34;&gt;wordpress-to-hugo-exporter&lt;/a&gt;，直接将帖子导出为 Hugo 的markdown 格式。除了文件名里的中文乱码外，我相当满意。于是将文件批量重命名，只保留日期。文件内容可以用益辉写的 &lt;a href=&#34;https://github.com/yihui/oldblog_xml/blob/master/convert.R&#34;&gt;convert.R 代码&lt;/a&gt;来清理。&lt;/p&gt;
+
+&lt;p&gt;不过，对我来说仍然不够，看来还得自己动手，才能丰衣足食。因为我用的是 hugo-academic 主题，网页上会显示每篇帖子的摘要，需要每篇帖子的 yaml 里设置一个 “summary” 条目。这个好办，用 R 语言把每篇帖子的第一段摘出来当作 summary 插进去就行了（R 代码附后）。&lt;/p&gt;
+
+&lt;p&gt;此外，我还想在每篇帖子末尾增添一个“原文链接”，链到旧博客，万一哪篇帖子格式没转好呢？这也好吧，markdown 的 yaml 里有个 url 条目，稍微改一下插到文末就行了（R 代码附后）。&lt;/p&gt;
+
+&lt;p&gt;这就是 hugo 静态网站的好处。有 R 语言在手，以后我就可以对这些 markdown 格式的帖子为所欲为了。而且，GitHub、简书、 steemit、Stackoverflow、统计之都等诸多网站都原生支持 markdown， 发的帖子只需稍微整理，就能发到博客上，颇有万佛朝宗的盛况。&lt;/p&gt;
+
+&lt;p&gt;Hugo-academic 主题我很满意，唯一不足的是缺个归档页面，一目了然展示全部帖子清单。看来得以后自己动手做一个。&lt;/p&gt;
+
+&lt;p&gt;旧博客 dapengde.com 虽然不更新了，但会仍然放在那里，发挥余热。前些天，还有朋友&lt;a href=&#34;http://dapengde.com/archives/14752#comment-153909&#34;&gt;来我四年前写的帖子后面留言&lt;/a&gt;呢。&lt;/p&gt;
+
+&lt;p&gt;增加 summary 和原文链接的代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for (i in dir(&#39;postold&#39;)){
+  txt &amp;lt;- readLines(paste0(&#39;postold/&#39;, i), encoding = &#39;UTF-8&#39;)
+  summ &amp;lt;- txt[grep(&#39;---&#39;, txt)[2]+1]
+  summ &amp;lt;- gsub(&#39;&amp;quot;&#39;, &#39;&#39;, summ)
+  newline &amp;lt;- paste0(&#39;summary: &amp;quot;&#39;, summ, &#39;&amp;quot;&#39;)
+  linkzh &amp;lt;- &#39;原文链接&#39;
+  newline2 &amp;lt;- paste0(&#39;\n[&#39;, linkzh, &#39;](http://dapengde.com&#39;, substring(txt[grep(&#39;url&#39;, txt)[1]], 6), &#39;)\n&#39;)
+  txtnew &amp;lt;- c(txt[1:3], newline,  txt[4:length(txt)], newline2)
+  writeLines(txtnew, paste0(&#39;postnew/&#39;, i), useBytes = TRUE)
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>女人与小孩 - 华语好声音 - Woman and Kid</title>
@@ -1404,72 +1448,6 @@
 &lt;p&gt;活动的最终解释权归 @dapeng 所有。&lt;/p&gt;
 
 &lt;p&gt;欢迎大家留言，对活动提出你的建议或意见！谢谢！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>If You Dislike the STEEMIT-GREEN - 若是讨厌那片绿</title>
-      <link>https://steemit.netlify.com/post/if-you-dislike-the-steemit-green-or/</link>
-      <pubDate>Sat, 04 Nov 2017 20:51:57 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/if-you-dislike-the-steemit-green-or/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/if-you-dislike-the-steemit-green-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I really like the new interface of steemit, especially the green color for the fonts. So please don&amp;rsquo;t flag this post if you dislike it or not.&lt;/p&gt;
-
-&lt;p&gt;If you really dislike the STEEMI-GREEN, however, you could simply switch it off. All the popular web browsers have such a option or plug-in or add-on. As an example, this post will tell you how to do it on Firefox.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNeeWjZZZFNP22TeDTF2dAUsU1cYDrcLActkJXVbe8APy/green.jpg&#34; alt=&#34;green.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;1-plug-in-free&#34;&gt;1 Plug-in free&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Click the triple-bar button on the top-right, and click&amp;rsquo;Options&amp;rsquo;. Or simply press alt &amp;mdash; t &amp;mdash; o.&lt;/li&gt;
-&lt;li&gt;Click &amp;lsquo;Content&amp;rsquo; on the left bar, then click the &amp;lsquo;Colors&amp;rsquo;  button on the left.&lt;/li&gt;
-&lt;li&gt;Change the link colors. Below the &amp;lsquo;Override &amp;hellip;&amp;rsquo; text, choose &amp;lsquo;Always&amp;rsquo;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Done.&lt;/p&gt;
-
-&lt;p&gt;The new color style works not only for steemit, but also for all sites. You might feel bored when you are browsing other sites and you have to repeat Step 1 &amp;mdash; 3 to switch off your customized colors. Is there a single-click solution?&lt;/p&gt;
-
-&lt;p&gt;Yes, there is, only if you&amp;rsquo;d like to install an add-on.&lt;/p&gt;
-
-&lt;h3 id=&#34;2-no-color-add-on&#34;&gt;2 &amp;lsquo;No Color&amp;rsquo; Add-on&lt;/h3&gt;
-
-&lt;p&gt;Click the triple-bar button on the top-right, and find &amp;lsquo;Add-ons&amp;rsquo;. Search &amp;lsquo;No Color&amp;rsquo; add-on.&lt;/p&gt;
-
-&lt;p&gt;After installing it, you will see one more button on the toolbar. A single-click can switch the font colors between the site colors and your customized ones.&lt;/p&gt;
-
-&lt;p&gt;Is this the best solution?&lt;/p&gt;
-
-&lt;p&gt;No. There is a better one.&lt;/p&gt;
-
-&lt;h3 id=&#34;3-nosquint-plus-add-on&#34;&gt;3 &amp;lsquo;NoSquint Plus&amp;rsquo; Add-on&lt;/h3&gt;
-
-&lt;p&gt;After installing &amp;lsquo;NoSquint Plus&amp;rsquo; add-on, you will see one more button on the toolbar. Click it, and you can set the colors. There is an option of &amp;lsquo;Global settings&amp;rsquo; for all sites. If you only want to change the colors on steemit, cross the &amp;lsquo;exclude site&amp;rsquo; option.&lt;/p&gt;
-
-&lt;p&gt;However, all the tricks above mean nothing to me, because I love the STEEMIT-GREEN! Really really.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbLZnSapRKENMWPcbnmDoQXQkevM8Ejs9nnoqzdMkYXDA/blue.jpg&#34; alt=&#34;blue.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;你喜欢 steemit 的新界面吗？尤其是那一片绿……&lt;/p&gt;
-
-&lt;p&gt;如果不喜欢，本文告诉你如何方便快捷地更改。目前的主流浏览器都支持更改网页的默认颜色。本文就以 Firefox 为例，给出三种方法，任你选。&lt;/p&gt;
-
-&lt;p&gt;方法 1：点击 firefox 右上角三条小横线按钮，点击“选项” &amp;mdash; “内容” &amp;mdash;  “颜色” &amp;mdash;“覆盖”下面选永远。&lt;/p&gt;
-
-&lt;p&gt;这种方法的好处是啥都不用额外安装。坏处是所有网站都变成了你指定的颜色，想切换回去的话又得点一遍。有没有办法一键切换？&lt;/p&gt;
-
-&lt;p&gt;方法 2：在“选项”里点“插件”，搜索 “No Color”插件。安装完毕后，工具栏多出个按钮。点它，就可以一键在你定义的颜色跟网站原来的颜色之间切换了。&lt;/p&gt;
-
-&lt;p&gt;虽然切换方便，但是有没有办法不切换，自动把且仅把 steemit 颜色改了？&lt;/p&gt;
-
-&lt;p&gt;方法3：安装 &amp;lsquo;NoSquint Plus&amp;rsquo; 插件，工具栏又多个按钮。点它，设置颜色。“全局选项”可以选择对所有网站都改颜色。如果只对 steemit 改，那么把&amp;rsquo;排除‘&amp;rsquo;勾上就行了。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
 </description>

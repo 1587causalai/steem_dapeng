@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r/</loc>
+    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/or-or-women-and-kids/</loc>
     <lastmod>2017-11-24T08:28:15+00:00</lastmod>
   </url>
@@ -782,7 +787,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/blog/</loc>
-    <lastmod>2017-11-23T14:10:42+00:00</lastmod>
+    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -805,13 +810,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-11-24T08:28:15+00:00</lastmod>
+    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/cn/</loc>
-    <lastmod>2017-11-24T08:28:15+00:00</lastmod>
+    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -871,7 +876,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-programming/</loc>
-    <lastmod>2017-10-30T09:49:27+00:00</lastmod>
+    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1075,7 +1080,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-11-24T08:28:15+00:00</lastmod>
+    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
   </url>
   
   <url>
@@ -1110,7 +1115,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/life/</loc>
-    <lastmod>2017-11-23T14:10:42+00:00</lastmod>
+    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1212,13 +1217,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-11-24T08:28:15+00:00</lastmod>
+    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/tags/programming/</loc>
-    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
+    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
