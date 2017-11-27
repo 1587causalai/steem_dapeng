@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents/</loc>
+    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r/</loc>
     <lastmod>2017-11-25T17:39:42+00:00</lastmod>
   </url>
@@ -787,7 +792,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/blog/</loc>
-    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
+    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -810,7 +815,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
+    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -882,7 +887,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-reader/</loc>
-    <lastmod>2017-11-23T14:10:42+00:00</lastmod>
+    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1080,7 +1085,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
+    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
   </url>
   
   <url>
@@ -1217,13 +1222,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
+    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/tags/programming/</loc>
-    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
+    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1397,6 +1402,18 @@
   <url>
     <loc>https://steemit.netlify.com/tags/typesetting/</loc>
     <lastmod>2017-09-04T20:53:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://steemit.netlify.com/tags/utopian-io/</loc>
+    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://steemit.netlify.com/categories/utopian-io/</loc>
+    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
