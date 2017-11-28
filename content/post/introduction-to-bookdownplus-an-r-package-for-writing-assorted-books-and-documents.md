@@ -1,5 +1,5 @@
 ---
-title: "Introduction to bookdownplus: an R package for writing assorted books and documents"
+title: "bookdownplus: an R package for writing assorted books and documents - 将你的帖子整理成一本漂亮的书"
 author: dapeng
 date: "2017-11-26 21:21:21"
 slug: introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents
@@ -16,13 +16,17 @@ tags:
 
 Hi guys! This is my first post on utopian.io. Hopefully it goes on the right way. This post was written bilingually, in English and Chinese.
 
-> 嘿，你好！这是我在 utopian.io 发布的第一篇帖子。但愿我的发布方式没出什么叉子。本文用英文和中文写作，中文在后半部分。
+> 嘿，你好！这是我在 utopian.io 发布的第一篇帖子。但愿我的发布方式没出什么岔子。本文用英文和中文写作，中文在后半部分。
+
+## Introduction
 
 This post is to introduce an open-source package called ***[bookdownplus](https://github.com/pzhaonet/bookdownplus)*** I have been developing with R language for writing assorted books and documents in bookdown environment. 
 
 If you are a Steemian, or a markdown user, you might want to organize your posts in a friendly and elegant way. As far as I know, R *[bookdown](https://bookdown.org/yihui/bookdown/)* package is the best tool to convert markdown files into a nice book. However, *bookdown* is not easy for beginners. An R beginner might be confused or depressed in struggling in the flood of LaTeX, YAML, Markdown, Pandoc, etc. 
 
 *bookdownplus* is the easiest shortcut to the world of *bookdown*. With **just one single command** users can get a demo book (or multiple demo books) in pdf, Word document, html, epub, or even more formats. *bookdownplus* extends the features of *bookdown*, and simplifies the procedure. Users only have to choose a template, clarify the book title and author name, and then focus on writing the text. No need to struggle in YAML and LaTeX. 
+
+## Features
 
 Multiple templates are included in *bookdownplus*. With these templates *bookdownplus* helps you write academic journal articles, guitar books, chemical equations, mails, calendars, diaries, etc.. For instance, the theisis_classic can convet your markdown file into a pdf book like this:
 
@@ -40,10 +44,45 @@ If you have programing codes especially R codes in your posts, they can be integ
 
 ![](https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_nonpar.jpg)
 
+## Quick start
+
+-1.  [Download R](https://cran.r-project.org) and install it.
+
+-2.  [Download LaTeX](http://www.ctex.org/CTeXDownload) and install it.
+
+-3. In R environment, run the following codes to install bookdown and bookdownplus.
+
+```
+install.packages('bookdown')
+devtools::install_github("pzhaonet/bookdownplus") # the development version 
+# or the stable version from CRAN
+install.package("bookdownplus")
+```
+
+-4. Generate a demo book.
+
+``` 
+require(bookdownplus)
+bookdownplus()
+```
+## Link to the repo
+
+https://github.com/pzhaonet/bookdownplus
+
+## Proof of work
+
+Here is a sreenshot of my login webpage.
+
+![bdp.jpg](https://res.cloudinary.com/hpiynhbhq/image/upload/v1511772827/qnjkbxleoptsx5akqguq.jpg)
+
+
+## Conclusion
 
 Wouldn't it be cool to make your steem posts into such a book?
 
 Enjoy R *bookdownplus* !
+
+---
 
 本文介绍的是我开发的一个开源程序包，唤作 ***bookdownplus***，可以在 R 语言环境下制作各种书籍和文档。
 
@@ -53,7 +92,7 @@ Enjoy R *bookdownplus* !
 
 bookdownplus 是对 bookdown 的增强和简化, 是快速使用 bookdown 的最简洁方法。bookdownplus 提供了很多有用的模板，可以很方便地在 bookdown 平台写文集、期刊论文、学位论文、学术海报、化学分子式、信件、日记、日历、诗集、吉他谱等各种常用文档和书籍。这是功能上的增强（+）。bookdownplus 使用时只需指定一个模板，给定作者和书名，就可以一键生成模板文件，用户在模板文件里照猫画虎写自己的文字就可以了，不必再花力气上网找模板、设置 YAML 和 LaTeX。这是操作上的简化（-）。
 
-上???给了几个图示，分别展示了 bookdownplus 生成的文章合集、诗集、吉他谱、编程书籍的示例。
+上文给了几个图示，分别展示了 bookdownplus 生成的文章合集、诗集、吉他谱、编程书籍的示例。
 
 怎么样，快来用 bookdownplus 把你的 steem 帖子做成一本漂亮的书吧!
 

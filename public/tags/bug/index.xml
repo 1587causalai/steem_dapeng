@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bug on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/bug/index.xml</link>
+    <description>Recent content in Bug on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/bug/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bug Hunting: utopian.io bug on browser title bar</title>
+      <link>https://steemit.netlify.com/post/bug-hunting-utopian-io-bug-on-browser-title-bar/</link>
+      <pubDate>Mon, 27 Nov 2017 10:02:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/bug-hunting-utopian-io-bug-on-browser-title-bar/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/bug-hunting-utopian-io-bug-on-browser-title-bar.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-bug-browser-title-bar-of-utopian-io-not-updated-with-the-webpage&#34;&gt;The bug: browser title bar of utopian.io not updated with the webpage&lt;/h2&gt;
+
+&lt;p&gt;When I visit a user&amp;rsquo;s homepage on utopian.io, the title bar always displays THIS user&amp;rsquo;s name, no matter which page I have jumped to. In the following image, you can see that I jumped from @elear&amp;rsquo;s home page to my own, but the title bar still displayed &amp;lsquo;@elear&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1511776892/gjiiane08jbuacycf3rh.jpg&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1511776892/gjiiane08jbuacycf3rh.jpg&#34; alt=&#34;utopianbug.jpg&#34; /&gt;&lt;/a&gt;
+&lt;em&gt;Click the image to zoom in.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;my-session-information&#34;&gt;My session information&lt;/h2&gt;
+
+&lt;p&gt;Windows 7, Firefox 56.0 (32-bit)&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-reproduce-this-bug&#34;&gt;How to reproduce this bug&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Open a web browser. Login utopian.io.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Type the web address &lt;a href=&#34;https://utopian.io/@elear&#34;&gt;https://utopian.io/@elear&lt;/a&gt; (don&amp;rsquo;t click this hyperlink here) in the address bar and enter. You can see the title bar is &amp;lsquo;elear&amp;rsquo;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click your own avatar on the topright. You see your homepage. The title bar displays your id. Wait seconds (the waiting time might depend on your computer). The title bar changes back to &amp;lsquo;elear&amp;rsquo; automatically.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click the utopian logo on the topleft. You see the home page of utopian. The title bar displays &amp;lsquo;utopian&amp;rsquo;. Wait seconds. The title bar changes back to &amp;lsquo;elear&amp;rsquo; automatically.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;suggestions-to-fix&#34;&gt;Suggestions to fix&lt;/h2&gt;
+
+&lt;p&gt;The title bar should display the title of the webpage which the user is browsing.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
