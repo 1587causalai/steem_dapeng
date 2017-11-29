@@ -36,4 +36,6 @@ Windows 7, Firefox 56.0 (32-bit)
 
 The title bar should display the title of the webpage which the user is browsing.
 
+PS. @elear's homepage is used as an example in this post, just because elear gave me kind help on how to use utopian.io. Thanks a lot!
+
 <br /><hr/><em>Posted on <a href="https://utopian.io/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar">Utopian.io -  Rewarding Open Source Contributors</a></em><hr/>

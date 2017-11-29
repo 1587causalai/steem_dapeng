@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/or-how-to-name-a-kid-tips-from-the-three-kingdoms/</loc>
+    <lastmod>2017-11-28T22:31:45+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/bug-hunting-utopian-io-bug-on-browser-title-bar/</loc>
     <lastmod>2017-11-27T10:02:51+00:00</lastmod>
   </url>
@@ -826,13 +831,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
+    <lastmod>2017-11-28T22:31:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/cn/</loc>
-    <lastmod>2017-11-25T17:39:42+00:00</lastmod>
+    <lastmod>2017-11-28T22:31:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -898,7 +903,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-reader/</loc>
-    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
+    <lastmod>2017-11-28T22:31:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1084,7 +1089,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/history/</loc>
-    <lastmod>2017-08-04T19:33:21+00:00</lastmod>
+    <lastmod>2017-11-28T22:31:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1096,7 +1101,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-11-27T10:02:51+00:00</lastmod>
+    <lastmod>2017-11-28T22:31:45+00:00</lastmod>
   </url>
   
   <url>
@@ -1233,7 +1238,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-11-27T10:02:51+00:00</lastmod>
+    <lastmod>2017-11-28T22:31:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
