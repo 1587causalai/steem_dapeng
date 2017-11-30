@@ -20,7 +20,7 @@
 
 &lt;h2 id=&#34;the-bug-browser-title-bar-of-utopian-io-not-updated-with-the-webpage&#34;&gt;The bug: browser title bar of utopian.io not updated with the webpage&lt;/h2&gt;
 
-&lt;p&gt;When I visit a user&amp;rsquo;s homepage on utopian.io, the title bar always displays THIS user&amp;rsquo;s name, no matter which page I have jumped to. In the following image, you can see that I jumped from @elear&amp;rsquo;s home page to my own, but the title bar still displayed &amp;lsquo;@elear&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;When I visit a user&amp;rsquo;s homepage on utopian.io, the title bar always displays THIS user&amp;rsquo;s name, no matter which page I have jumped to. In the following image, you can see that I jumped from @elear&amp;rsquo;s home page to my own, but the title bar still displayed &amp;lsquo;elear&amp;rsquo;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1511776892/gjiiane08jbuacycf3rh.jpg&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1511776892/gjiiane08jbuacycf3rh.jpg&#34; alt=&#34;utopianbug.jpg&#34; /&gt;&lt;/a&gt;
 &lt;em&gt;Click the image to zoom in.&lt;/em&gt;&lt;/p&gt;

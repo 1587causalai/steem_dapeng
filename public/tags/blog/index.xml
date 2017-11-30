@@ -9,6 +9,55 @@
     <atom:link href="https://steemit.netlify.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>带娃出行的最佳方式</title>
+      <link>https://steemit.netlify.com/post/5idmwh/</link>
+      <pubDate>Wed, 29 Nov 2017 22:33:30 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/5idmwh/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5idmwh&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5idmwh&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5idmwh&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5idmwh&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/5idmwh&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/5idmwh&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5idmwh&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/5idmwh.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;大娃京生四岁的时候，我们打算结束逍遥的二人世界生活，把京生接到德国来跟我们一起住。接之前，我们开始筹划一切跟京生生活相关的事情，例如，怎么带京生出行。&lt;/p&gt;
+
+&lt;p&gt;买车？当时买不起；打车？太贵；公交？不方便；步行？算了吧，京生倒是喜欢跑步前进，我们俩可追不上。&lt;/p&gt;
+
+&lt;p&gt;看来还是得在自行车上作打算。&lt;/p&gt;
+
+&lt;p&gt;有一天，我们去超市看了看自行车上的儿童座椅，居然要100欧，比我们俩的自行车加起来乘以2还贵。&lt;/p&gt;
+
+&lt;p&gt;另一个选择是德国流行的小拖车。在我第一次在大街上看到它的时候，眼球立刻就被吸引住了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Child-Trailer-Promenade-Forest-Bicycle-Bike-2488390.jpg&#34; alt=&#34;&#34; /&gt;
+小拖车的优点如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;孩子稳稳坐在小拖车上，跟前面自行车上的大人距离不远也不近，应该有利于培养孩子的独立意识；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;拖车里空间很大，不像座椅那么拥挤；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;关键的优点是，看上去真的很酷！&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;经过调研，我们发现，这样的拖车，在自行车用品商店卖600欧！附加组件另计！&lt;/p&gt;
+
+&lt;p&gt;当穷人基本打算放弃的时候，突然想起上淘宝看看，一看不要紧，在国内才600块人民币！还是国内好啊。&lt;/p&gt;
+
+&lt;p&gt;受淘宝启发，我上了德国的ebay网，克服了包括完全不懂的德语界面、完全不熟悉的购买方式等重重困难，在多次侦察和尝试之后，终于以50欧的总价（30欧购买+20欧快递），成功竞得拖车一辆！&lt;/p&gt;
+
+&lt;p&gt;这个价格，让花了600欧买拖车的米同学一直耿耿于怀。&lt;/p&gt;
+
+&lt;p&gt;3个工作日后，货就到了。安装，调试，上车训练。万无一失之后，把京生小朋友五花大绑固定在了拖车里。&lt;/p&gt;
+
+&lt;p&gt;京生很享受。&lt;/p&gt;
+
+&lt;p&gt;有了拖车，我们就经常骑车载着出行，去超市，去公园，去森林。真正的绿色出行，环保而健康。&lt;/p&gt;
+
+&lt;p&gt;后来，京生长高了，坐不进去了。德生出生，于是，这台拖车拖完哥哥拖弟弟，一直陪伴了我们六年。&lt;/p&gt;
+
+&lt;p&gt;前几天，我把家里的自行车儿童拖车卖了出去。买家是住在本地郊区的一对小夫妻。等待它的，是新的主人。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>bookdownplus: an R package for writing assorted books and documents - 将你的帖子整理成一本漂亮的书</title>
       <link>https://steemit.netlify.com/post/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents/</link>
       <pubDate>Sun, 26 Nov 2017 21:21:21 +0000</pubDate>
@@ -1365,120 +1414,6 @@ bookdownplus()
 &lt;p&gt;　　收工了，我老家的方言叫做“下晌”了。回望我的红蜻蜓，就像从月亮上飞来的一架直升飞机。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmc3pcrbrPuK7wboXQabcSSSMuyjBWxr46bwv2Na7Naojn/2017-07-28_dragonfly2.jpg&#34; alt=&#34;2017-07-28_dragonfly2.jpg&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>One day in Seoul 首尔一日游，仿佛在北京</title>
-      <link>https://steemit.netlify.com/post/one-day-in-seoul/</link>
-      <pubDate>Sat, 16 Sep 2017 21:42:27 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/one-day-in-seoul/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/one-day-in-seoul&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/one-day-in-seoul&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/one-day-in-seoul&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/one-day-in-seoul&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/one-day-in-seoul.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After meeting an old friend of mine in Seoul, I had a one-day trip.&lt;/p&gt;
-
-&lt;p&gt;European and American people learn Asian culture from Korea and Japan, which technically originated from China. However, they have to spend time and money on the application for a visa before a visit to China. Instead, it is much easier for them to go to Korea or Japan. They can stay in Korea in three months, and go to Japan for another three-month stay, and come back to Korea, so on and so forth, without any visa application procedure. What a loss for China!&lt;/p&gt;
-
-&lt;p&gt;有一次去首尔，和十几年未见的高中同学相会之后，我便信步走在首尔街头，领略着这个城市的方方面面。&lt;/p&gt;
-
-&lt;p&gt;明洞对于首尔，就像王府井或者西单在北京的地位：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmW79mDMUsh8qfCcZaWWW7GMhFqbNUDu3LQoSGQHdXbLhP/2017-07-28_seoul1.jpg&#34; alt=&#34;2017-07-28_seoul1.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Myeong-dong street view. The most famous shopping center in Seoul&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;我一直对于汉城改称首尔这件事耿耿于怀，不过这次在街头的地图上，很高兴地看到首尔广场的中文依然叫做汉城广场。汉城广场旁边的德寿宫，让我顿时感觉回到了朝思暮想的北京：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmT3r9U3s23UXGctudtytUXJ6WceC7obSEUHgZS6kvmGuW/2017-07-28_seoul2.jpg&#34; alt=&#34;2017-07-28_seoul2.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Deoksugung Palace&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;有一条街，树立着很多石碑，是首尔的姊妹城市：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQsDJiakWHXWBCpeLDtmZamjx3MizSyreXditCERC4m2P/2017-07-28_seoul3.jpg&#34; alt=&#34;2017-07-28_seoul3.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Seoul Sister City: Beijing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;这是一个美术馆，门口写着汉语和韩语“格物致知”。如果韩国人问你这是什么意思，你能答上来么？&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmaYcGVd8rvTVtsricep9fSMe9ZKr6up8R5GD6sso6iV8s/2017-07-28_seoul4.jpg&#34; alt=&#34;2017-07-28_seoul4.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Art museum, with a Chinese poster at the entrance.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;第一大报纸《朝鲜日报》大楼：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmUNkGQjNrKVhJFBjAmDvLHwM8dCteZ4ZVADCsEpuzLMAo/2017-07-28_seoul5.jpg&#34; alt=&#34;2017-07-28_seoul5.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Headquarter of Korea Daily&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;李舜臣，是朝鲜半岛的戚继光，读过《明朝那些事儿》的都知道，著名抗倭民族英雄。他的龟甲船把小日本打得屁滚尿流。这是雕像，基座上写得是“忠武公李舜臣将军像”：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcPJ76TPqzHZ4f2wZiBBSMH4rWZicHRUz6mgkaX8mRqY4/2017-07-28_seoul6.jpg&#34; alt=&#34;2017-07-28_seoul6.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Yi Sun-sin, a Korean naval commander, famed for his victories against the Japanese navy during the Imjin war in the Joseon Dynasty, and is well-respected for his exemplary conduct on and off the battlefield not only by Koreans, but by Japanese admirals as well.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;这就是龟甲船！在《明朝那些事儿》一书里被作者大肆渲染，这回终于见到真模样了！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXqgNdjehHUostc7vqbkaQvReDk1foUhDHFqb5CMgiZpb/2017-07-28_seoul7.jpg&#34; alt=&#34;2017-07-28_seoul7.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Yi&amp;rsquo;s Turtle ship, well-known for defeating Japanese navy&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;李舜臣雕像后面，就是朝鲜最著名的皇帝世宗。他最让现代人津津乐道的成就是发明了韩语文字。在他之前，韩国没有自己民族的文字，只有贵族和受过教育的人才以汉语来书写。&lt;/p&gt;
-
-&lt;p&gt;雕像的基座上的四个韩语字，发音就是“世宗大王”。大王面前是他在科技上的成就，三样：浑天仪，测雨台，日晷。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmU2JcCnwEyNHZ5ST5S3Ah16Vh8EKB9S4AGejSB8xKpMG4/2017-07-28_seoul8.jpg&#34; alt=&#34;2017-07-28_seoul8.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Sejong the Great and his three great scientific achievements&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;小朋友在玩浑天仪：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmStgBgQKiGWBDgoVK3t398QbDtKVCgNKprJgqifuaoKmw/2017-07-28_seoul9.jpg&#34; alt=&#34;2017-07-28_seoul9.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Armillary sphere, a model of objects in the sky&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;靠近一点看浑天仪，上??刻着二十四节气。2016年，联合国教科文组织将中国申报的“二十四节气”列入联合国教科文组织人类非物质文化遗产代表作名录。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNwYCFRGNsm2qb1qjS1VXRJxPM1XogBBimjLGTKtxAsWa/2017-07-28_seoul10.jpg&#34; alt=&#34;2017-07-28_seoul10.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Armillary sphere in detail, with Solar terms in Chinese characters on it. Solar terms originated in China, then spread to Korea, Vietnam, and Japan, countries in the East Asian cultural sphere. In 2016, the Solar Terms were listed as UNESCO&amp;rsquo;s Intangible Cultural Heritage.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;靠近一点看日晷：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTKqfbGvXJp4PnWiRqjCWqN8DxCtzMd3SvYjupenXin1i/2017-07-28_seoul11.jpg&#34; alt=&#34;2017-07-28_seoul11.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Sundial, with Chinese characters on it&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;世宗广场地下是个大展厅，展示上两位的杰出成就。让我惊叹的一是介绍得极其系统，二是手段极其诱人，三是全部免费。这是随便坐下拍照的龙椅，虽然跟咱们中国的比起来寒碜点：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmQqJjWDAhsERB9dAU9FvEX35p5UiYMuwriLdDqVJ6V1ZS/2017-07-28_seoul12.jpg&#34; alt=&#34;2017-07-28_seoul12.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Throne for photographing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;这里有一个像普通房间那么大的龟甲船模型，可以进去看看内部结构：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmW6y2kGZjpMoaHzowG5qc2yXnKVg9Dt4QgU1rWhHtSMXz/2017-07-28_seoul13.jpg&#34; alt=&#34;2017-07-28_seoul13.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Inside the turtle ship&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;除了模型外，展厅里有各种声像设备，把复杂的历史文化进行简单的介绍。怎么个简单法？我拿了两本小册子，发现上面是这么介绍世宗和李将军的：姓名，字，号，籍贯，出生年月，性格，爱好，特长，喜欢的食物，健康情况……就差三围了。下面这是个电子游戏，小朋友用游戏枪射杀日本鬼子的战船：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmTKAUpq81oEwqEJEiT3Pr8BE8f4ySwTqgSsKPnMeZTwKj/2017-07-28_seoul14.jpg&#34; alt=&#34;2017-07-28_seoul14.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;A game station, simulating a battle against Japanese navy&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;???口的地方，免费的笔墨纸砚，小朋友们学着提起毛笔，写下自己的名字，贴在墙上留念。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmcNT88ojffkfxrEebWpyJWLxfYgEFQz3ejpr85xdYRyVS/2017-07-28_seoul15.jpg&#34; alt=&#34;2017-07-28_seoul15.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Children wiring their names in traditional calligraphy, originated from China&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;时间到了，该离开了，没看够，下回再来仔细游览。同行的德国同学惊叹韩国文化，我心想这算什么，他们的整个宫殿加起来也不过是故宫一角。我们看到了，所谓韩国文化，有多少是中国的东西。韩国和日本，把中国的东西学过来，发扬光大。你中国不发扬，他们就发扬了。作为中国人，我们扪心自问，中国文化我们自己懂得多少？比韩国人懂得多么？&lt;/p&gt;
-
-&lt;p&gt;另一个问题是，韩日比中国开放，德国人去韩国，可以免签证呆90天，到期后去日本玩几天再回来，又可以继续呆90天，如此继续，可以赖着不走。去中国却必须要签证，于是为了了解亚洲文化，他们当然图方便首选韩国日本，然后看到这些东西，自然就以为是韩日的特色文化，将来再去中国看到类似的东西，谁是本谁是末，谁是源谁是流，他们自然弄不清楚。在他们眼里的中国，就是他们日常接触的 Made in China 廉价生活用品。&lt;/p&gt;
-
-&lt;p&gt;在这些旅游景点溜达的过程里，我们没有受到任何骚扰。我为什么这么说？德国同学赛巴斯滕去了一趟北京，回来跟我讲他在故宫的时候被一个热情的中国人拉着给他介绍中国文化，他心想中国人真nice，后来不知不觉就被拉到了一个茶艺馆欣赏茶艺，欣赏完了说交钱吧，三千。他顿时情绪上一落千丈，觉得感情上被欺骗了。要说我们的同胞还挺会欲扬先抑的，挺会给人制造反差的。作为中国人，我们问问自己，中国的文化就是用来被我们这么弘扬的吗？&lt;/p&gt;
 </description>
     </item>
     
