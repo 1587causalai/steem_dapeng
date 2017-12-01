@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Looking for contributors to R mf package | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Looking for contributors to R mf package</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-11-30 17:09 GMT</h2>
+</div>
+
+<main>
+
+
+<p>原文链接: <a href="https://steemit.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package">steemit</a>, <a href="https://cnsteem.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package">cnsteem</a>, <a href="https://busy.org/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package">busy</a>, <a href="https://chainbb.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package">chainbb</a>, <a href="https://steemdb.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package">steemdb</a>, <a href="https://steemd.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package">steemd</a>, <a href="https://busy.org/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/looking-for-contributors-to-r-mf-package.md">markdown</a></p>
+
+<h2 id="background">Background</h2>
+
+<p>&lsquo;mf&rsquo; packge is an R package I have been developing for meteorological models. Now I am looking for contributors to help me solve the following problem.</p>
+
+<p>I have ordinary differential equations (ODEs) in atmospheric chemistry. I have a Matlab script, written by another guy, which can solve them. Now I have converted it into R script. However, the results are different.</p>
+
+<p>In Matlab many functions are available to solve ODEs, including ode15s, ode23s, ode23t, ode23tb. My Matlab script uses ode23tb.</p>
+
+<p>The deSolve package in R provides a function <code>ode()</code>, where many methods are available：</p>
+
+<pre><code>method = c(&quot;lsoda&quot;, &quot;lsode&quot;, &quot;lsodes&quot;, &quot;lsodar&quot;, &quot;vode&quot;, &quot;daspk&quot;,
+           &quot;euler&quot;, &quot;rk4&quot;, &quot;ode23&quot;, &quot;ode45&quot;, &quot;radau&quot;, 
+           &quot;bdf&quot;, &quot;bdf_d&quot;, &quot;adams&quot;, &quot;impAdams&quot;, &quot;impAdams_d&quot;, &quot;iteration&quot;)
+</code></pre>
+
+<p>However, ode23tb is not included.</p>
+
+<h2 id="what-i-have-tested">What I have tested</h2>
+
+<p>I tested a simple ODE from <a href="https://cn.mathworks.com/help/matlab/ref/ode23tb.html">Matlab online help</a>:</p>
+
+<p>d<em>y</em>/d<em>t</em> = - 10<em>t</em></p>
+
+<p>The Matlab script:</p>
+
+<pre><code>tspan = [0 2];
+y0 = 1;
+[t,y] = ode23tb(@(t,y) -10*t, tspan, y0);
+</code></pre>
+
+<p>My R script</p>
+
+<pre><code>tspan = seq(0, 2, 0.2)
+y0 = 1
+testf &lt;- function(t, y, p){
+  with(as.list(c(y, p)), {
+    dydt = -a*t
+    list(dydt)
+  })
+}
+p &lt;- list(a = 10)
+zz &lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p)
+</code></pre>
+
+<p>The results are different. In the R scirpt, <code>ode()</code> uses the default method &lsquo;lsoda&rsquo;.</p>
+
+<p>If I use ode23 method in both scripts, i.e. in the Matlab script:</p>
+
+<pre><code>[t,y] = ode23(@(t,y) -10*t, tspan, y0);
+</code></pre>
+
+<p>while in R script：</p>
+
+<pre><code>zz &lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p, method = 'ode23')
+</code></pre>
+
+<p>They give the same results.</p>
+
+<p>However, the atmosphereic chemistry ODEs I have to solve are complicated. If I use ode23 method, the calculation is too slow in both Matlab and R. 12 hours has passed and the calculation is still going on.</p>
+
+<h2 id="my-problem">My Problem</h2>
+
+<p>How can I use Matlab ode23tb function in R? Or how can I use &ldquo;lsoda&rdquo; method in Matlab?</p>
+
+<p>Only by using the same method can I compare the results from Matlab and R.</p>
+
+<p>Your contribution will be much appreciated and acknowledged in the mf package.</p>
+
+<h2 id="link-to-the-repo-and-proof-of-work">Link to the repo and Proof of work</h2>
+
+<p><a href="https://github.com/pzhaonet/mf">https://github.com/pzhaonet/mf</a></p>
+
+<p>The following image shows that I am the repo&rsquo;s author on Github.</p>
+
+<p><img src="https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1511772827/qnjkbxleoptsx5akqguq.jpg" alt="" /></p>
+
+<p><br /><hr/><em>Posted on <a href="https://utopian.io/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package">Utopian.io -  Rewarding Open Source Contributors</a></em><hr/></p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/looking-for-contributors-to-r-mf-package\/';
+    var disqus_title = 'Looking for contributors to R mf package';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/looking-for-contributors-to-r-mf-package\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

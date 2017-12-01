@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Science on STEEM@dapeng</title>
+    <link>https://steemit.netlify.com/tags/science/index.xml</link>
+    <description>Recent content in Science on STEEM@dapeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://steemit.netlify.com/tags/science/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Looking for contributors to R mf package</title>
+      <link>https://steemit.netlify.com/post/looking-for-contributors-to-r-mf-package/</link>
+      <pubDate>Thu, 30 Nov 2017 17:09:48 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/looking-for-contributors-to-r-mf-package/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/looking-for-contributors-to-r-mf-package.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;&amp;lsquo;mf&amp;rsquo; packge is an R package I have been developing for meteorological models. Now I am looking for contributors to help me solve the following problem.&lt;/p&gt;
+
+&lt;p&gt;I have ordinary differential equations (ODEs) in atmospheric chemistry. I have a Matlab script, written by another guy, which can solve them. Now I have converted it into R script. However, the results are different.&lt;/p&gt;
+
+&lt;p&gt;In Matlab many functions are available to solve ODEs, including ode15s, ode23s, ode23t, ode23tb. My Matlab script uses ode23tb.&lt;/p&gt;
+
+&lt;p&gt;The deSolve package in R provides a function &lt;code&gt;ode()&lt;/code&gt;, where many methods are available：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;method = c(&amp;quot;lsoda&amp;quot;, &amp;quot;lsode&amp;quot;, &amp;quot;lsodes&amp;quot;, &amp;quot;lsodar&amp;quot;, &amp;quot;vode&amp;quot;, &amp;quot;daspk&amp;quot;,
+           &amp;quot;euler&amp;quot;, &amp;quot;rk4&amp;quot;, &amp;quot;ode23&amp;quot;, &amp;quot;ode45&amp;quot;, &amp;quot;radau&amp;quot;, 
+           &amp;quot;bdf&amp;quot;, &amp;quot;bdf_d&amp;quot;, &amp;quot;adams&amp;quot;, &amp;quot;impAdams&amp;quot;, &amp;quot;impAdams_d&amp;quot;, &amp;quot;iteration&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, ode23tb is not included.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-i-have-tested&#34;&gt;What I have tested&lt;/h2&gt;
+
+&lt;p&gt;I tested a simple ODE from &lt;a href=&#34;https://cn.mathworks.com/help/matlab/ref/ode23tb.html&#34;&gt;Matlab online help&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;d&lt;em&gt;y&lt;/em&gt;/d&lt;em&gt;t&lt;/em&gt; = - 10&lt;em&gt;t&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Matlab script:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tspan = [0 2];
+y0 = 1;
+[t,y] = ode23tb(@(t,y) -10*t, tspan, y0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;My R script&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tspan = seq(0, 2, 0.2)
+y0 = 1
+testf &amp;lt;- function(t, y, p){
+  with(as.list(c(y, p)), {
+    dydt = -a*t
+    list(dydt)
+  })
+}
+p &amp;lt;- list(a = 10)
+zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The results are different. In the R scirpt, &lt;code&gt;ode()&lt;/code&gt; uses the default method &amp;lsquo;lsoda&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;If I use ode23 method in both scripts, i.e. in the Matlab script:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[t,y] = ode23(@(t,y) -10*t, tspan, y0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;while in R script：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p, method = &#39;ode23&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;They give the same results.&lt;/p&gt;
+
+&lt;p&gt;However, the atmosphereic chemistry ODEs I have to solve are complicated. If I use ode23 method, the calculation is too slow in both Matlab and R. 12 hours has passed and the calculation is still going on.&lt;/p&gt;
+
+&lt;h2 id=&#34;my-problem&#34;&gt;My Problem&lt;/h2&gt;
+
+&lt;p&gt;How can I use Matlab ode23tb function in R? Or how can I use &amp;ldquo;lsoda&amp;rdquo; method in Matlab?&lt;/p&gt;
+
+&lt;p&gt;Only by using the same method can I compare the results from Matlab and R.&lt;/p&gt;
+
+&lt;p&gt;Your contribution will be much appreciated and acknowledged in the mf package.&lt;/p&gt;
+
+&lt;h2 id=&#34;link-to-the-repo-and-proof-of-work&#34;&gt;Link to the repo and Proof of work&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/pzhaonet/mf&#34;&gt;https://github.com/pzhaonet/mf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The following image shows that I am the repo&amp;rsquo;s author on Github.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1511772827/qnjkbxleoptsx5akqguq.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>另类方式秀恩爱</title>
+      <link>https://steemit.netlify.com/post/5ukx1b/</link>
+      <pubDate>Thu, 30 Nov 2017 16:18:33 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/5ukx1b/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5ukx1b&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5ukx1b&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5ukx1b&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5ukx1b&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/5ukx1b&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/5ukx1b&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5ukx1b&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/5ukx1b.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;秀恩爱，方式不一而足，不一定要贴照片。比如，有人选择去面馆吃面，有人则要直播吃辣椒。我也凑个热闹。我秀恩爱的方式是——&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2015/10/30/12/24/questions-1014060_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+
+&lt;p&gt;媳妇甩给我一堆 Matlab 代码：去，给我转成 R 语言。&lt;/p&gt;
+
+&lt;p&gt;这是个关于大气化学的常微分方程。Matlab 代码已经解出来了。但是，媳妇考虑到日后维护和拓展的需要，就想换成 R。&lt;/p&gt;
+
+&lt;p&gt;娶个女博士做老婆是怎样一种体验？挪，就是这种体验。&lt;/p&gt;
+
+&lt;p&gt;好在难不倒我。作为资深 R 语言爱好者，三下五除二，我将它转成了 R 代码。&lt;/p&gt;
+
+&lt;p&gt;解是解出来了，但是，得到的解差别很大。&lt;/p&gt;
+
+&lt;p&gt;Matlab 提供了一系列解常微分方程的函数，例如 ode15s, ode23s, ode23t, ode23tb 等。我手头代码里用的是 ode23tb。&lt;/p&gt;
+
+&lt;p&gt;R 语言的 deSolve 包提供了解常微分方程的函数 &lt;code&gt;ode()&lt;/code&gt;，其中可用的参数 method 可以是以下取值：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;method = c(&amp;quot;lsoda&amp;quot;, &amp;quot;lsode&amp;quot;, &amp;quot;lsodes&amp;quot;, &amp;quot;lsodar&amp;quot;, &amp;quot;vode&amp;quot;, &amp;quot;daspk&amp;quot;,
+           &amp;quot;euler&amp;quot;, &amp;quot;rk4&amp;quot;, &amp;quot;ode23&amp;quot;, &amp;quot;ode45&amp;quot;, &amp;quot;radau&amp;quot;, 
+           &amp;quot;bdf&amp;quot;, &amp;quot;bdf_d&amp;quot;, &amp;quot;adams&amp;quot;, &amp;quot;impAdams&amp;quot;, &amp;quot;impAdams_d&amp;quot;, &amp;quot;iteration&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;里面不包括 ode23tb 方法。我写的 R 代码里用了默认的 lsoda 方法，导致得到的解跟 Matlab不同。&lt;/p&gt;
+
+&lt;h2 id=&#34;我做过的测试&#34;&gt;我做过的测试&lt;/h2&gt;
+
+&lt;p&gt;我找了个简单的常微分方程，来自 &lt;a href=&#34;https://cn.mathworks.com/help/matlab/ref/ode23tb.html&#34;&gt;Matlab 在线帮助&lt;/a&gt;：&lt;/p&gt;
+
+&lt;p&gt;d&lt;em&gt;y&lt;/em&gt;/d&lt;em&gt;t&lt;/em&gt; = - 10&lt;em&gt;t&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;我分别用 Matlab 和 R 对它求解。&lt;/p&gt;
+
+&lt;p&gt;Matlab 解法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tspan = [0 2];
+y0 = 1;
+[t,y] = ode23tb(@(t,y) -10*t, tspan, y0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;R 语言解法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tspan = seq(0, 2, 0.2)
+y0 = 1
+testf &amp;lt;- function(t, y, p){
+  with(as.list(c(y, p)), {
+    dydt = -a*t
+    list(dydt)
+  })
+}
+p &amp;lt;- list(a = 10)
+zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;二者得到的结果是不同的。ode() 未指定 method，默认用的是 lsoda。&lt;/p&gt;
+
+&lt;p&gt;我尝试了把二者都改为 ode23 方法。即把 Matlab 代码最后一行改为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[t,y] = ode23(@(t,y) -10*t, tspan, y0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;并把 R 代码最后一行改为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p, method = &#39;ode23&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;二者结算的结果就完全一致了。&lt;/p&gt;
+
+&lt;p&gt;但是，我手头要改的大气化学常微分方程，可能是因为太复杂，如果用 ode23 方法的话，无论 matlab 还是 R，计算时间都太长，花了12小时都没算完。&lt;/p&gt;
+
+&lt;h2 id=&#34;我的提问&#34;&gt;我的提问&lt;/h2&gt;
+
+&lt;p&gt;Matlab 的 ode23tb 函数，在 R 语言里该如何实现？或者反过来，R 语言 deSolve 包 &lt;code&gt;ode()&lt;/code&gt; 里的 &amp;ldquo;lsoda&amp;rdquo; 方法，如何在 Matlab 里实现？&lt;/p&gt;
+
+&lt;p&gt;我知道这个问题我不该问，但是我实在黔驴技穷了，发到这里碰碰运气，看有没有高人指点一下。这个事儿已经连续折磨我两天了，头发掉了一大把。&lt;/p&gt;
+
+&lt;p&gt;你说说，这算不算秀恩爱？&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

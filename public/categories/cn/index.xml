@@ -9,6 +9,98 @@
     <atom:link href="https://steemit.netlify.com/categories/cn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>另类方式秀恩爱</title>
+      <link>https://steemit.netlify.com/post/5ukx1b/</link>
+      <pubDate>Thu, 30 Nov 2017 16:18:33 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/5ukx1b/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5ukx1b&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5ukx1b&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5ukx1b&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5ukx1b&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/5ukx1b&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/5ukx1b&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5ukx1b&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/5ukx1b.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;秀恩爱，方式不一而足，不一定要贴照片。比如，有人选择去面馆吃面，有人则要直播吃辣椒。我也凑个热闹。我秀恩爱的方式是——&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2015/10/30/12/24/questions-1014060_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+
+&lt;p&gt;媳妇甩给我一堆 Matlab 代码：去，给我转成 R 语言。&lt;/p&gt;
+
+&lt;p&gt;这是个关于大气化学的常微分方程。Matlab 代码已经解出来了。但是，媳妇考虑到日后维护和拓展的需要，就想换成 R。&lt;/p&gt;
+
+&lt;p&gt;娶个女博士做老婆是怎样一种体验？挪，就是这种体验。&lt;/p&gt;
+
+&lt;p&gt;好在难不倒我。作为资深 R 语言爱好者，三下五除二，我将它转成了 R 代码。&lt;/p&gt;
+
+&lt;p&gt;解是解出来了，但是，得到的解差别很大。&lt;/p&gt;
+
+&lt;p&gt;Matlab 提供了一系列解常微分方程的函数，例如 ode15s, ode23s, ode23t, ode23tb 等。我手头代码里用的是 ode23tb。&lt;/p&gt;
+
+&lt;p&gt;R 语言的 deSolve 包提供了解常微分方程的函数 &lt;code&gt;ode()&lt;/code&gt;，其中可用的参数 method 可以是以下取值：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;method = c(&amp;quot;lsoda&amp;quot;, &amp;quot;lsode&amp;quot;, &amp;quot;lsodes&amp;quot;, &amp;quot;lsodar&amp;quot;, &amp;quot;vode&amp;quot;, &amp;quot;daspk&amp;quot;,
+           &amp;quot;euler&amp;quot;, &amp;quot;rk4&amp;quot;, &amp;quot;ode23&amp;quot;, &amp;quot;ode45&amp;quot;, &amp;quot;radau&amp;quot;, 
+           &amp;quot;bdf&amp;quot;, &amp;quot;bdf_d&amp;quot;, &amp;quot;adams&amp;quot;, &amp;quot;impAdams&amp;quot;, &amp;quot;impAdams_d&amp;quot;, &amp;quot;iteration&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;里面不包括 ode23tb 方法。我写的 R 代码里用了默认的 lsoda 方法，导致得到的解跟 Matlab不同。&lt;/p&gt;
+
+&lt;h2 id=&#34;我做过的测试&#34;&gt;我做过的测试&lt;/h2&gt;
+
+&lt;p&gt;我找了个简单的常微分方程，来自 &lt;a href=&#34;https://cn.mathworks.com/help/matlab/ref/ode23tb.html&#34;&gt;Matlab 在线帮助&lt;/a&gt;：&lt;/p&gt;
+
+&lt;p&gt;d&lt;em&gt;y&lt;/em&gt;/d&lt;em&gt;t&lt;/em&gt; = - 10&lt;em&gt;t&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;我分别用 Matlab 和 R 对它求解。&lt;/p&gt;
+
+&lt;p&gt;Matlab 解法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tspan = [0 2];
+y0 = 1;
+[t,y] = ode23tb(@(t,y) -10*t, tspan, y0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;R 语言解法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tspan = seq(0, 2, 0.2)
+y0 = 1
+testf &amp;lt;- function(t, y, p){
+  with(as.list(c(y, p)), {
+    dydt = -a*t
+    list(dydt)
+  })
+}
+p &amp;lt;- list(a = 10)
+zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;二者得到的结果是不同的。ode() 未指定 method，默认用的是 lsoda。&lt;/p&gt;
+
+&lt;p&gt;我尝试了把二者都改为 ode23 方法。即把 Matlab 代码最后一行改为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[t,y] = ode23(@(t,y) -10*t, tspan, y0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;并把 R 代码最后一行改为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p, method = &#39;ode23&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;二者结算的结果就完全一致了。&lt;/p&gt;
+
+&lt;p&gt;但是，我手头要改的大气化学常微分方程，可能是因为太复杂，如果用 ode23 方法的话，无论 matlab 还是 R，计算时间都太长，花了12小时都没算完。&lt;/p&gt;
+
+&lt;h2 id=&#34;我的提问&#34;&gt;我的提问&lt;/h2&gt;
+
+&lt;p&gt;Matlab 的 ode23tb 函数，在 R 语言里该如何实现？或者反过来，R 语言 deSolve 包 &lt;code&gt;ode()&lt;/code&gt; 里的 &amp;ldquo;lsoda&amp;rdquo; 方法，如何在 Matlab 里实现？&lt;/p&gt;
+
+&lt;p&gt;我知道这个问题我不该问，但是我实在黔驴技穷了，发到这里碰碰运气，看有没有高人指点一下。这个事儿已经连续折磨我两天了，头发掉了一大把。&lt;/p&gt;
+
+&lt;p&gt;你说说，这算不算秀恩爱？&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>带娃出行的最佳方式</title>
       <link>https://steemit.netlify.com/post/5idmwh/</link>
       <pubDate>Wed, 29 Nov 2017 22:33:30 +0000</pubDate>
@@ -16,7 +108,7 @@
       <guid>https://steemit.netlify.com/post/5idmwh/</guid>
       <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5idmwh&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5idmwh&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5idmwh&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5idmwh&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/5idmwh&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/5idmwh&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5idmwh&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/5idmwh.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;大娃京生四岁的时候，我们打算结束逍遥的二人世界生活，把京生接到德国来跟我们一起住。接之前，我们开始筹划一切跟京生生活相关的事情，例如，怎么带京生出行。&lt;/p&gt;
+&lt;p&gt;大娃京生四岁的时候，在国内奶奶家住。当时，我们打算结束逍遥的二人世界生活，把京生接到德国来跟我们一起住。接之前，我们开始筹划一切跟京生生活相关的事情，例如，怎么带京生出行。&lt;/p&gt;
 
 &lt;p&gt;买车？当时买不起；打车？太贵；公交？不方便；步行？算了吧，京生倒是喜欢跑步前进，我们俩可追不上。&lt;/p&gt;
 
@@ -51,9 +143,11 @@
 
 &lt;p&gt;有了拖车，我们就经常骑车载着出行，去超市，去公园，去森林。真正的绿色出行，环保而健康。&lt;/p&gt;
 
-&lt;p&gt;后来，京生长高了，坐不进去了。德生出生，于是，这台拖车拖完哥哥拖弟弟，一直陪伴了我们六年。&lt;/p&gt;
+&lt;p&gt;后来，京生长高了，坐不进去了。好在德生出生了。于是，这台拖车拖完哥哥拖弟弟，一直陪伴了我们六年。&lt;/p&gt;
 
-&lt;p&gt;前几天，我把家里的自行车儿童拖车卖了出去。买家是住在本地郊区的一对小夫妻。等待它的，是新的主人。&lt;/p&gt;
+&lt;p&gt;如今，德生也坐不进去了。前几天，我把拖车卖了出去。买家是住在本地郊区的一对小夫妻。&lt;/p&gt;
+
+&lt;p&gt;等待它的，是新的主人，和一段新的故事。&lt;/p&gt;
 </description>
     </item>
     
@@ -1254,95 +1348,6 @@
 &lt;iframe width=&#34;100%&#34; height=&#34;166&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/352318112&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&#34;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2151/2141447534_0211219e90_b.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>第二届“华语好声音”大奖赛欢迎你！ CN Voice 2</title>
-      <link>https://steemit.netlify.com/post/cn-voice-2/</link>
-      <pubDate>Sun, 05 Nov 2017 09:37:21 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/cn-voice-2/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/cn-voice-2&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/cn-voice-2&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/cn-voice-2&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/cn-voice-2&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/cn-voice-2&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/cn-voice-2&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/cn-voice-2&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/cn-voice-2.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;第二届&lt;strong&gt;“华语好声音大奖赛&amp;rdquo;&lt;/strong&gt;开始啦！本届评奖&lt;strong&gt;不限新老用户，不限主题&lt;/strong&gt;！反正目前 cn 区也没啥钱可赚，不如大家来唱歌吧。当然，也可以朗诵、脱口秀……只要是你自己的嗓音，都可以参加。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;“华语好声音”，写倦的时候，让我们聆听你文字背后的声音。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZWJqGdRqMnXDeXFRHbUzbPsEon1hq7fU9dtGzAadvUUv/cn-voice.jpg&#34; alt=&#34;cn-voice.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;谁可以参加&#34;&gt;谁可以参加&lt;/h2&gt;
-
-&lt;p&gt;steem 的所有用户都欢迎参加！投稿，点赞，留言，赞助……都可以！形式不限。&lt;/p&gt;
-
-&lt;h2 id=&#34;怎样参加&#34;&gt;怎样参加&lt;/h2&gt;
-
-&lt;p&gt;在 steem 上发布一篇符合以下要求的文章就行。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;参加活动的文章里需包含：
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;录音或包含声音的录像：主题不限，标题不限，形式不限，例如唱歌（清唱或卡拉OK均可）、朗诵（诗歌、散文、信件、故事等均可）、脱口秀、自我介绍&lt;/strong&gt;等，重点是&lt;strong&gt;必须包含自己的嗓音&lt;/strong&gt;。不管是普通话/國語，还是方言，都行。录制声音、歌曲和将录音录像插入文章的方法，见下文。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;一段文字&lt;/strong&gt;：写一段跟录音有关的文字，需&lt;strong&gt;原创，字数不限（写倦了就少写几句）&lt;/strong&gt;。例如，写写你为什么喜欢朗诵的散文或唱的歌。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;为了方便统计，文章的标签（Tag）必须包含 cn-voice，第一标签必须是 cn。如果是唱歌，可以加上 music 标签。&lt;/li&gt;
-&lt;li&gt;欢迎同一 id 多次投稿，取其中最高名次的一篇参加评奖。&lt;/li&gt;
-&lt;li&gt;投稿的文章可以参加 steem 上同期举办的其他活动，只需同时满足其他活动的要求即可。&lt;/li&gt;
-&lt;li&gt;如有抄袭、剽窃，零容忍，一经发现，将会被列入共享黑名单，没有黄牌，直接红牌！&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;具体的例子，请看&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/1-or-award-ceremony-for-the-welcome-prize-new-steemians&#34;&gt;本活动第一届的投稿&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;如果你的外语好，那么可以附上录音文本和原创文字的英文翻译，并添加相关标签。这样会获得更多来自其他语种用户的点赞，让你赚更多钱。只是建议哦，不做要求。&lt;/p&gt;
-
-&lt;h2 id=&#34;活动时间&#34;&gt;活动时间&lt;/h2&gt;
-
-&lt;p&gt;活动自本文发布起开始，截至 2017-11-19 星期日 23:59 (北京时间)。&lt;/p&gt;
-
-&lt;p&gt;赶紧动手吧！因为，越早越容易获奖！评奖办法见下文（跟“三个一相同”）。&lt;/p&gt;
-
-&lt;h2 id=&#34;奖项和评奖办法&#34;&gt;奖项和评奖办法&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;奖金：&lt;strong&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/cn-voice-start&#34;&gt;本活动第一届发起帖的文章部分净收益&lt;/a&gt; + 热心人的赞助&lt;/strong&gt;；本文净收益将留作下次活动使用。&lt;/li&gt;
-&lt;li&gt;奖项：&lt;strong&gt;暂定金奖 1 名（ 6 SBD）、银奖 3 名（4 SBD）、铜奖 5 名（2 SBD），幸运奖 3 名 （1 SBD）。接受赞助！欢迎赞助不同奖项！比如，收到赞助 1 SBD，我们就增设幸运奖一名; 收到 2 SBD， 就增设铜奖一名，依次类推，不设上限！&lt;/strong&gt;如果奖项数量多于参加人数，那么盈余就留作下次（如果有的话）或“三个一”活动使用，届时会公布款项清单，欢迎大家监督。&lt;/li&gt;
-&lt;li&gt;评奖范围：所有奖项将在参加活动的&lt;strong&gt;所有用户&lt;/strong&gt;里产生。&lt;/li&gt;
-&lt;li&gt;评奖规则：按文章后面得到的留言（Reply）人数从多到少排序决定奖项。注意，是人数，不是留言的条数。发布多条留言的人按 1 个人计算（即不重复计算）。如有并列，按文章发表较迟的优先获奖。一人多次投稿的，取其中最高名次的一篇参加评奖。幸运奖随机抽选。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;赞助名单-按时间顺序&#34;&gt;赞助名单 (按时间顺序)&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;@tvb 6 SBD&lt;/li&gt;
-&lt;li&gt;@winniex 4 SBD&lt;/li&gt;
-&lt;li&gt;@dancingapple 4 SBD&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;技术问题-如何录音-录歌-如何往文章里插入音频或视频&#34;&gt;技术问题：如何录音、录歌，如何往文章里插入音频或视频&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;录音：
-
-&lt;ul&gt;
-&lt;li&gt;对于朗诵或清唱，如今的智能手机都可以录音，用手机自带的摄像功能或录音机就行。&lt;/li&gt;
-&lt;li&gt;对于卡拉 OK，可以在手机上安装个卡拉 OK 类的 app???例如我用过的“全民 K 歌”，自带很多伴奏，录制效果不错。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;把音频或视频插入文章，方法也很多：
-
-&lt;ul&gt;
-&lt;li&gt;如果是“唱吧”或“全民 K 歌”，那么在手机上录完上传，然后把分享链接贴到文章里就行了。“唱吧”本身支持的原音文件下载，而“全民 K 歌”的原音文件可以用&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/ok&#34;&gt;我介绍的方法&lt;/a&gt;免费无限量下载。&lt;/li&gt;
-&lt;li&gt;如果是手机自带的录音机，那么可以把录音文件上传到 Youtube 或 SoundCloud，方法见 @jubi 的教程&lt;a href=&#34;https://steemit.com/cn/@jubi/post&#34;&gt;『让post不局限于文字，完善属于你的自己的富媒体』&lt;/a&gt;。SoundCloud 的使用方法我也写过&lt;a href=&#34;https://steemit.com/cn/@dapeng/tips-how-to-embed-music-or-sound-into-a-steem-post&#34;&gt;详细教程&lt;/a&gt;。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;活动的最终解释权归 @dapeng 所有。&lt;/p&gt;
-
-&lt;p&gt;欢迎大家留言，对活动提出你的建议或意见！谢谢！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

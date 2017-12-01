@@ -6,8 +6,190 @@
     <description>Recent content in Posts on STEEM@dapeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Nov 2017 22:33:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Nov 2017 17:09:48 +0000</lastBuildDate>
     <atom:link href="https://steemit.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Looking for contributors to R mf package</title>
+      <link>https://steemit.netlify.com/post/looking-for-contributors-to-r-mf-package/</link>
+      <pubDate>Thu, 30 Nov 2017 17:09:48 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/looking-for-contributors-to-r-mf-package/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/looking-for-contributors-to-r-mf-package.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;&amp;lsquo;mf&amp;rsquo; packge is an R package I have been developing for meteorological models. Now I am looking for contributors to help me solve the following problem.&lt;/p&gt;
+
+&lt;p&gt;I have ordinary differential equations (ODEs) in atmospheric chemistry. I have a Matlab script, written by another guy, which can solve them. Now I have converted it into R script. However, the results are different.&lt;/p&gt;
+
+&lt;p&gt;In Matlab many functions are available to solve ODEs, including ode15s, ode23s, ode23t, ode23tb. My Matlab script uses ode23tb.&lt;/p&gt;
+
+&lt;p&gt;The deSolve package in R provides a function &lt;code&gt;ode()&lt;/code&gt;, where many methods are available：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;method = c(&amp;quot;lsoda&amp;quot;, &amp;quot;lsode&amp;quot;, &amp;quot;lsodes&amp;quot;, &amp;quot;lsodar&amp;quot;, &amp;quot;vode&amp;quot;, &amp;quot;daspk&amp;quot;,
+           &amp;quot;euler&amp;quot;, &amp;quot;rk4&amp;quot;, &amp;quot;ode23&amp;quot;, &amp;quot;ode45&amp;quot;, &amp;quot;radau&amp;quot;, 
+           &amp;quot;bdf&amp;quot;, &amp;quot;bdf_d&amp;quot;, &amp;quot;adams&amp;quot;, &amp;quot;impAdams&amp;quot;, &amp;quot;impAdams_d&amp;quot;, &amp;quot;iteration&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, ode23tb is not included.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-i-have-tested&#34;&gt;What I have tested&lt;/h2&gt;
+
+&lt;p&gt;I tested a simple ODE from &lt;a href=&#34;https://cn.mathworks.com/help/matlab/ref/ode23tb.html&#34;&gt;Matlab online help&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;d&lt;em&gt;y&lt;/em&gt;/d&lt;em&gt;t&lt;/em&gt; = - 10&lt;em&gt;t&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Matlab script:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tspan = [0 2];
+y0 = 1;
+[t,y] = ode23tb(@(t,y) -10*t, tspan, y0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;My R script&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tspan = seq(0, 2, 0.2)
+y0 = 1
+testf &amp;lt;- function(t, y, p){
+  with(as.list(c(y, p)), {
+    dydt = -a*t
+    list(dydt)
+  })
+}
+p &amp;lt;- list(a = 10)
+zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The results are different. In the R scirpt, &lt;code&gt;ode()&lt;/code&gt; uses the default method &amp;lsquo;lsoda&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;If I use ode23 method in both scripts, i.e. in the Matlab script:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[t,y] = ode23(@(t,y) -10*t, tspan, y0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;while in R script：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p, method = &#39;ode23&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;They give the same results.&lt;/p&gt;
+
+&lt;p&gt;However, the atmosphereic chemistry ODEs I have to solve are complicated. If I use ode23 method, the calculation is too slow in both Matlab and R. 12 hours has passed and the calculation is still going on.&lt;/p&gt;
+
+&lt;h2 id=&#34;my-problem&#34;&gt;My Problem&lt;/h2&gt;
+
+&lt;p&gt;How can I use Matlab ode23tb function in R? Or how can I use &amp;ldquo;lsoda&amp;rdquo; method in Matlab?&lt;/p&gt;
+
+&lt;p&gt;Only by using the same method can I compare the results from Matlab and R.&lt;/p&gt;
+
+&lt;p&gt;Your contribution will be much appreciated and acknowledged in the mf package.&lt;/p&gt;
+
+&lt;h2 id=&#34;link-to-the-repo-and-proof-of-work&#34;&gt;Link to the repo and Proof of work&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/pzhaonet/mf&#34;&gt;https://github.com/pzhaonet/mf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The following image shows that I am the repo&amp;rsquo;s author on Github.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1511772827/qnjkbxleoptsx5akqguq.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/looking-for-contributors-to-r-mf-package&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>另类方式秀恩爱</title>
+      <link>https://steemit.netlify.com/post/5ukx1b/</link>
+      <pubDate>Thu, 30 Nov 2017 16:18:33 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/5ukx1b/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5ukx1b&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5ukx1b&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5ukx1b&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5ukx1b&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/5ukx1b&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/5ukx1b&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5ukx1b&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/5ukx1b.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;秀恩爱，方式不一而足，不一定要贴照片。比如，有人选择去面馆吃面，有人则要直播吃辣椒。我也凑个热闹。我秀恩爱的方式是——&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2015/10/30/12/24/questions-1014060_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+
+&lt;p&gt;媳妇甩给我一堆 Matlab 代码：去，给我转成 R 语言。&lt;/p&gt;
+
+&lt;p&gt;这是个关于大气化学的常微分方程。Matlab 代码已经解出来了。但是，媳妇考虑到日后维护和拓展的需要，就想换成 R。&lt;/p&gt;
+
+&lt;p&gt;娶个女博士做老婆是怎样一种体验？挪，就是这种体验。&lt;/p&gt;
+
+&lt;p&gt;好在难不倒我。作为资深 R 语言爱好者，三下五除二，我将它转成了 R 代码。&lt;/p&gt;
+
+&lt;p&gt;解是解出来了，但是，得到的解差别很大。&lt;/p&gt;
+
+&lt;p&gt;Matlab 提供了一系列解常微分方程的函数，例如 ode15s, ode23s, ode23t, ode23tb 等。我手头代码里用的是 ode23tb。&lt;/p&gt;
+
+&lt;p&gt;R 语言的 deSolve 包提供了解常微分方程的函数 &lt;code&gt;ode()&lt;/code&gt;，其中可用的参数 method 可以是以下取值：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;method = c(&amp;quot;lsoda&amp;quot;, &amp;quot;lsode&amp;quot;, &amp;quot;lsodes&amp;quot;, &amp;quot;lsodar&amp;quot;, &amp;quot;vode&amp;quot;, &amp;quot;daspk&amp;quot;,
+           &amp;quot;euler&amp;quot;, &amp;quot;rk4&amp;quot;, &amp;quot;ode23&amp;quot;, &amp;quot;ode45&amp;quot;, &amp;quot;radau&amp;quot;, 
+           &amp;quot;bdf&amp;quot;, &amp;quot;bdf_d&amp;quot;, &amp;quot;adams&amp;quot;, &amp;quot;impAdams&amp;quot;, &amp;quot;impAdams_d&amp;quot;, &amp;quot;iteration&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;里面不包括 ode23tb 方法。我写的 R 代码里用了默认的 lsoda 方法，导致得到的解跟 Matlab不同。&lt;/p&gt;
+
+&lt;h2 id=&#34;我做过的测试&#34;&gt;我做过的测试&lt;/h2&gt;
+
+&lt;p&gt;我找了个简单的常微分方程，来自 &lt;a href=&#34;https://cn.mathworks.com/help/matlab/ref/ode23tb.html&#34;&gt;Matlab 在线帮助&lt;/a&gt;：&lt;/p&gt;
+
+&lt;p&gt;d&lt;em&gt;y&lt;/em&gt;/d&lt;em&gt;t&lt;/em&gt; = - 10&lt;em&gt;t&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;我分别用 Matlab 和 R 对它求解。&lt;/p&gt;
+
+&lt;p&gt;Matlab 解法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tspan = [0 2];
+y0 = 1;
+[t,y] = ode23tb(@(t,y) -10*t, tspan, y0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;R 语言解法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tspan = seq(0, 2, 0.2)
+y0 = 1
+testf &amp;lt;- function(t, y, p){
+  with(as.list(c(y, p)), {
+    dydt = -a*t
+    list(dydt)
+  })
+}
+p &amp;lt;- list(a = 10)
+zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;二者得到的结果是不同的。ode() 未指定 method，默认用的是 lsoda。&lt;/p&gt;
+
+&lt;p&gt;我尝试了把二者都改为 ode23 方法。即把 Matlab 代码最后一行改为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[t,y] = ode23(@(t,y) -10*t, tspan, y0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;并把 R 代码最后一行改为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p, method = &#39;ode23&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;二者结算的结果就完全一致了。&lt;/p&gt;
+
+&lt;p&gt;但是，我手头要改的大气化学常微分方程，可能是因为太复杂，如果用 ode23 方法的话，无论 matlab 还是 R，计算时间都太长，花了12小时都没算完。&lt;/p&gt;
+
+&lt;h2 id=&#34;我的提问&#34;&gt;我的提问&lt;/h2&gt;
+
+&lt;p&gt;Matlab 的 ode23tb 函数，在 R 语言里该如何实现？或者反过来，R 语言 deSolve 包 &lt;code&gt;ode()&lt;/code&gt; 里的 &amp;ldquo;lsoda&amp;rdquo; 方法，如何在 Matlab 里实现？&lt;/p&gt;
+
+&lt;p&gt;我知道这个问题我不该问，但是我实在黔驴技穷了，发到这里碰碰运气，看有没有高人指点一下。这个事儿已经连续折磨我两天了，头发掉了一大把。&lt;/p&gt;
+
+&lt;p&gt;你说说，这算不算秀恩爱？&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>带娃出行的最佳方式</title>
@@ -17,7 +199,7 @@
       <guid>https://steemit.netlify.com/post/5idmwh/</guid>
       <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5idmwh&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5idmwh&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5idmwh&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5idmwh&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/5idmwh&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/5idmwh&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5idmwh&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/5idmwh.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;大娃京生四岁的时候，我们打算结束逍遥的二人世界生活，把京生接到德国来跟我们一起住。接之前，我们开始筹划一切跟京生生活相关的事情，例如，怎么带京生出行。&lt;/p&gt;
+&lt;p&gt;大娃京生四岁的时候，在国内奶奶家住。当时，我们打算结束逍遥的二人世界生活，把京生接到德国来跟我们一起住。接之前，我们开始筹划一切跟京生生活相关的事情，例如，怎么带京生出行。&lt;/p&gt;
 
 &lt;p&gt;买车？当时买不起；打车？太贵；公交？不方便；步行？算了吧，京生倒是喜欢跑步前进，我们俩可追不上。&lt;/p&gt;
 
@@ -52,9 +234,11 @@
 
 &lt;p&gt;有了拖车，我们就经常骑车载着出行，去超市，去公园，去森林。真正的绿色出行，环保而健康。&lt;/p&gt;
 
-&lt;p&gt;后来，京生长高了，坐不进去了。德生出生，于是，这台拖车拖完哥哥拖弟弟，一直陪伴了我们六年。&lt;/p&gt;
+&lt;p&gt;后来，京生长高了，坐不进去了。好在德生出生了。于是，这台拖车拖完哥哥拖弟弟，一直陪伴了我们六年。&lt;/p&gt;
 
-&lt;p&gt;前几天，我把家里的自行车儿童拖车卖了出去。买家是住在本地郊区的一对小夫妻。等待它的，是新的主人。&lt;/p&gt;
+&lt;p&gt;如今，德生也坐不进去了。前几天，我把拖车卖了出去。买家是住在本地郊区的一对小夫妻。&lt;/p&gt;
+
+&lt;p&gt;等待它的，是新的主人，和一段新的故事。&lt;/p&gt;
 </description>
     </item>
     
@@ -1134,131 +1318,6 @@ bookdownplus()
 &lt;p&gt;&lt;img src=&#34;https://media.defense.gov/2010/Feb/16/2000394222/-1/-1/0/090228-F-6565W-050.JPG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Image Credit: media.defense.gov&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Steemr: Display all the posts of a steemian and the statistics - 展示一个账户的所有帖子和统计数据</title>
-      <link>https://steemit.netlify.com/post/display-all-the-posts-of-a-steemian-and-the-statistics-or/</link>
-      <pubDate>Thu, 09 Nov 2017 22:39:33 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/display-all-the-posts-of-a-steemian-and-the-statistics-or/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemdev/@dapeng/display-all-the-posts-of-a-steemian-and-the-statistics-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/display-all-the-posts-of-a-steemian-and-the-statistics-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It is hard to see all the posts of a steemian on steemit. You have to scroll down your browser, wait, and scroll, and wait &amp;hellip;&amp;hellip; Nothing is more boring if the author has hundreds of posts and you want to see the oldest one, which might be the self-introduction post.&lt;/p&gt;
-
-&lt;p&gt;I was suffering this problem for a long time. Today I could not stand it any longer. Thus I developed a web app: &lt;a href=&#34;http://steemr.org&#34;&gt;http://steemr.org&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Input an ID and press Enter, you can see a table of all the posts. Features:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The table displays 20 posts per page by default. You could change the number on the top-left of the table to display 50 or 100 posts per page, or all the posts.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The time, payout and vote number are given. Click the column name and you can sort the posts.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Type something as keywords in the top-right bar or the bottom bars, and you can filter the titles, posting time, categories and tags. For instance, type &amp;lsquo;2017-07&amp;rsquo; in the bottom date bar, and you will see only the posts posted in July 2017. See the moving picture below.  Combining the sorting feature, you can easily find the highest payout post in a given month.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;One single click (if blocked, press ctrl+click) can jump to the webpage of a post on steemit, cnsteem, chainbb, busy, steemdb, or steemd.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Statistic diagrams show the cumulative payout, votes and post number. A 24-hour diagram shows the active hour of the author.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The following figure is an example, showing the growth of the cumulative payout of @deanliu&amp;rsquo;s posts.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmaB6PqmCqJPQNaXYPjbcsaGV7QQjcMB9VdwkTVCrg4sV6/payout.png&#34; alt=&#34;payout.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Have fun!&lt;/p&gt;
-
-&lt;p&gt;Steem 有个让人无比郁闷的毛病：想一目了然地看一个人的所有帖子，你得往下拉，等着载入，再拉，再等&amp;hellip;&amp;hellip;尤其是那些发布了几百上千篇帖子的大神，想看他们的旧帖，在 steemit 上难比登天。我只能去 chainbb，那里支持分页，点第一页就行了。但是，你还得点页码，仍然不是很方便。&lt;/p&gt;
-
-&lt;p&gt;为啥就没个文章全部列表呢？连杀人鲸 @deanliu  都&lt;a href=&#34;https://cnsteem.com/cn/@deanliu/juan&#34;&gt;抱怨&lt;/a&gt;：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;我其實等待這樣的我所有文章列表很久了，Steemit老是把resteem跟自己文章放一起，大半年了，說過的人甚至走一半了，也沒見有人理會。這樣列表的好處是，可以很快找到自己的很久以前舊文章&amp;hellip;&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;如今，能做到展示全部文章列表的，大概只有我量身定做的 &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;steem 镜像网站&lt;/a&gt;了（&lt;a href=&#34;https://deancrypto.netlify.com&#34;&gt;@deanliu 的镜像&lt;/a&gt;， &lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;@dapeng 的镜像&lt;/a&gt;， &lt;a href=&#34;https://pz.netlify.com/&#34;&gt;@pzhao 的镜像&lt;/a&gt;）。只是我仍不满意：没做镜像的怎么看？想看某人收益最高的帖子怎么办？每次都查数据库，太烦了。&lt;/p&gt;
-
-&lt;p&gt;于是我二话没说，操起 R 语言，光光光光，做好了，欢迎大家来调戏，地址是 &lt;a href=&#34;http://steemr.org。是的，就是我开发的&#34;&gt;http://steemr.org。是的，就是我开发的&lt;/a&gt; &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steemit-cn&#34;&gt;steem 水浒英雄榜&lt;/a&gt;那个地址。英雄榜退居二线，给帖子一览表让让位。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZ16mP1YE9JSbNcA86aUCw82kCWssNJ1EEQohXaKt72LR/steemr20171109.gif&#34; alt=&#34;steemr20171109.gif&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;只要输入个 steem 账号，按回车，就显示这个账号的所有 blog 帖子（不包含 resteemed）。功能如下：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;默认每页显示 20 篇文章。你可以点击表格左上角的数字，选择每页 50 篇，或 100 篇，或全部显示。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;每篇文章都给出了发布时间、收益（SBD）和点赞数量。点击标题栏，就可以实现排序。按时间顺序、逆序，按收益最大或最小，随便你排。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;表格左上角和下方都有???索栏，可以搜索标题里的关键字。例如在 Date 一列下面的搜索栏搜索 &amp;lsquo;2017-07&amp;rsquo;，就会过滤出 2017 年 7 月的文章列表。此时再点击标题栏的 payout 排序，就筛选出 2017 年 7 月 收益最高的帖子了。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;每篇文章都给出了在 steemit , cnsteem, chainbb, busy, steemdb, steemd 的链接，点一下直达（如果被浏览器阻挡的话，按 ctrl + 点一下就在新标签打开了）。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;附带给出了统计图表，展示作者累计收益、累计点赞、累计文章数量和 24 小时活跃时间的统计图。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;下图是 @deanliu 的作息时间图：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfAd47vrT4ZjMhZCKtWKj5ZcQhdagdrhPNAXKDeDn1k8G/24.png&#34; alt=&#34;24.png&#34; /&gt;
-这个 app 我一直想做，拖拖拖拖拖到了今天才终于做出来。近期的心愿已了，我打算享受一段没有 steem 的时光，正如 @deanliu &lt;a href=&#34;https://deancrypto.netlify.com/post/owo-farewell/&#34;&gt;所说&lt;/a&gt;：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;接下来这一周我将不再发文章、不再参与讨论，也不再点赞，要把时间留给这个月来被我疏忽的家庭、进度落后的工作、脸书上的朋友，以及最重要的身体的健康。毕竟，日子还长呢，养精蓄锐之后，才能为自己的SteemLife注入新的能量。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;朋友们再见！下周的这个时候，我会回来给“华语好声音”颁奖。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>关于大长腿杀人鲸刘美女 @deanliu 的一切 - All bout @deanliu</title>
-      <link>https://steemit.netlify.com/post/deanliu-or-all-bout-deanliu/</link>
-      <pubDate>Thu, 09 Nov 2017 10:47:18 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/deanliu-or-all-bout-deanliu/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/deanliu-or-all-bout-deanliu.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;昨天我发了个广告，&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;提供制作 steem 镜像备份网站的有偿服务&lt;/a&gt;，第一个报名的就是人称“刘美女”的前辈 @deanliu ，一下订购了三个月的备份服务 。&lt;/p&gt;
-
-&lt;p&gt;刘美女何许人也？新人可能不太了解。刘美女 的 ESP 在 &lt;a href=&#34;https://cnsteem.com/steemit/@nationalpark/observation-and-analysis-to-please-the-lord&#34;&gt;全网 40 万用户里排名 229&lt;/a&gt;，华语区排名前 5，声望 72.35，级别是杀人鲸。一句话：你就知道刘美女是个大腿就好了。&lt;/p&gt;
-
-&lt;p&gt;保持尊重，认真去抱。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://deancrypto.netlify.com/&#34;&gt;刘美女的镜像网站&lt;/a&gt;很快做好了，将近 400 篇原创文章，一目了然，欢迎大家围观。本来，我只是想赚点零花钱，然而，没想到这回有很多意外收获。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://static.pexels.com/photos/90754/woman-portrait-girl-color-90754.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Image Credit: pexels.com&lt;/p&gt;
-
-&lt;p&gt;这里我先道个歉，本文标题&amp;rdquo;关于前辈刘美女 @deanliu 的一切&amp;rdquo;取得哗众取宠了，配图也是在网上随便找的，目的是想吸引大家的眼球。好在，本文确实是有点料的。&lt;/p&gt;
-
-&lt;p&gt;比如，有个问题困扰了我很久：刘美女到底是男是女？产生这个问题的原因我就不详述了，总之困惑的不止我一个人。这回，在镜像网站上，我很快找到了答案，就在刘美女注册当天发布的&lt;a href=&#34;https://deancrypto.netlify.com/post/a-father-from-taiwan-thinking-introducing-myself-a-bit/&#34;&gt;自我介绍帖里&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;再比如， &amp;ldquo;deanliu&amp;rdquo; 到底是什么意思？是姓“刘”还是姓“柳”？我曾经疑心刘美女的真名是不是叫“柳得安”。这回，在镜像网站上，我找到了个刘美女自己认可的解释：“电流”。&lt;/p&gt;
-
-&lt;p&gt;从镜像网站收获的不只是八卦。我来 steem 实际只有三个多月，错过了很多往日的精彩，如今一边读刘美女的文章，一边再次感叹，原来很多人在 steem 上的心路历程都是如此相似。我们现在提的问题、有的困惑、自以为惊人的新发现，其实早就被前辈们说过了。&lt;/p&gt;
-
-&lt;p&gt;比如，注册 14 天的刘美女&lt;a href=&#34;https://deancrypto.netlify.com/post/cn/&#34;&gt;研究过每天几点钟发帖赚钱多&lt;/a&gt;，并且问了诸如&lt;a href=&#34;https://deancrypto.netlify.com/post/question-about-steem-2-in-chinese-steemit/&#34;&gt;Follow 和 Mute 是什么含义&lt;/a&gt;，&lt;a href=&#34;https://deancrypto.netlify.com/post/security-warning-for-cn-newbies/&#34;&gt;账号的几个密码到底怎么用的&lt;/a&gt;小鱼问题。 如今的小鱼们可以从中得到一些慰藉，你看大腿们当年也是这么过来的嘛。&lt;/p&gt;
-
-&lt;p&gt;比如，未满月的刘小鱼发现了 the abit line，为此提出了&lt;a href=&#34;https://deancrypto.netlify.com/post/post-payout-cn-cn/&#34;&gt;忠告&lt;/a&gt;，直到今天仍然是金玉良言：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;知福之后，要知祸。什么祸？被宠坏的祸。知祸才能避祸。如果随意写个今天天气不好的文章都能每天吃碗面，那这肯定不能长久。大家可能都知道大神也有点赞限制，一天点个20-40次就差不多了，他也没法在用户大量扩张下照顾所有人，大家必须自我成长，或许发英文帖，双语帖，或许寻求累积有内涵的中文作品，等待中国用户来临后才能开始发光发热。&lt;strong&gt;因为当海量用户来临时，海量的专业性竞争也会来&lt;/strong&gt; (英文圈正在发生)，先到者因为熟悉环境而有些先发优势，但仅此而已，天气文章终究只能发到微博吧。如此，此福才是福，知祸则祸离。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;刚满月的刘小鱼，曾经&lt;a href=&#34;https://deancrypto.netlify.com/post/owo-farewell/&#34;&gt;为疏忽家庭和工作而懊恼&lt;/a&gt;：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;将暂时与各位告别一周，听起来很短，但在Steemian Time里可是很长的。接下来这一周我将不再发文章、不再参???讨论，也不再点赞（可以看我刚刚发的英文帖#oneweekoff ），要把时间留给这个月来被我疏忽的家庭、进度落后的工作、脸书上的朋友，以及最重要的身体的健康。毕竟，日子还长呢，养精蓄锐之后，才能为自己的SteemLife注入新的能量。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;还有&lt;a href=&#34;https://deancrypto.netlify.com/post/4wdgxj/&#34;&gt;一篇帖子&lt;/a&gt;，是刘美女归来时对别人打招呼，读来会有种“咦，原来大神们小时候是这样一起玩大的”感觉。&lt;/p&gt;
-
-&lt;p&gt;注册一个半月的时候，刘美女对 steem 的思考已经很深了，见《&lt;a href=&#34;https://deancrypto.netlify.com/post/calculate-your-way-into-the-steemit-ocean-steemit/&#34;&gt;Steemit世界裡的加減乘除&lt;/a&gt; 》一文，至今仍然可以作为新人们的指南。&lt;/p&gt;
-
-&lt;p&gt;我每天发布的《希望工程日报》里搜集整理了很多对新人有益的帖子，但是上面这些基本都错过了——区块链的文章沉底太快，埋得太深。不过，这次做镜像网站倒是个发掘旧文八卦、回顾往日精彩的机会。&lt;/p&gt;
-
-&lt;p&gt;敢问路在何方？从前辈的帖子里剥茧抽丝，我们就可以看到，一条小鱼成长为大鲸的道路，原来就在我们自己的脚下。&lt;/p&gt;
 </description>
     </item>
     

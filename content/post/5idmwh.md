@@ -13,7 +13,7 @@ tags:
 
 原文链接: [steemit](https://steemit.com/cn/@dapeng/5idmwh), [cnsteem](https://cnsteem.com/cn/@dapeng/5idmwh), [busy](https://busy.org/cn/@dapeng/5idmwh), [chainbb](https://chainbb.com/cn/@dapeng/5idmwh), [steemdb](https://steemdb.com/cn/@dapeng/5idmwh), [steemd](https://steemd.com/cn/@dapeng/5idmwh), [busy](https://busy.org/cn/@dapeng/5idmwh), [markdown](https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/5idmwh.md)
 
-大娃京生四岁的时候，我们打算结束逍遥的二人世界生活，把京生接到德国来跟我们一起住。接之前，我们开始筹划一切跟京生生活相关的事情，例如，怎么带京生出行。
+大娃京生四岁的时候，在国内奶奶家住。当时，我们打算结束逍遥的二人世界生活，把京生接到德国来跟我们一起住。接之前，我们开始筹划一切跟京生生活相关的事情，例如，怎么带京生出行。
 
 买车？当时买不起；打车？太贵；公交？不方便；步行？算了吧，京生倒是喜欢跑步前进，我们俩可追不上。
 
@@ -46,6 +46,8 @@ tags:
 
 有了拖车，我们就经常骑车载着出行，去超市，去公园，去森林。真正的绿色出行，环保而健康。
 
-后来，京生长高了，坐不进去了。德生出生，于是，这台拖车拖完哥哥拖弟弟，一直陪伴了我们六年。
+后来，京生长高了，坐不进去了。好在德生出生了。于是，这台拖车拖完哥哥拖弟弟，一直陪伴了我们六年。
 
-前几天，我把家里的自行车儿童拖车卖了出去。买家是住在本地郊区的一对小夫妻。等待它的，是新的主人。
+如今，德生也坐不进去了。前几天，我把拖车卖了出去。买家是住在本地郊区的一对小夫妻。
+
+等待它的，是新的主人，和一段新的故事。
