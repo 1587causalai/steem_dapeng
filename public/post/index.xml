@@ -6,8 +6,131 @@
     <description>Recent content in Posts on STEEM@dapeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Dec 2017 15:28:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Dec 2017 17:20:15 +0000</lastBuildDate>
     <atom:link href="https://steemit.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>mindr: an R package that creates a markdown post out of a mind map - 将帖子转成思维导图</title>
+      <link>https://steemit.netlify.com/post/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map/</link>
+      <pubDate>Sat, 02 Dec 2017 17:20:15 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This post was written bilingually, in English and Chinese.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本文用英文和中文写作，中文在后半部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;A mind map is a diagram used to visually organize information. Markdown is a markup language widely used for writing, for example, posts on steem and Utopian.io.&lt;/p&gt;
+
+&lt;p&gt;This post is to introduce an open-source package called &lt;strong&gt;&lt;em&gt;&lt;a href=&#34;https://github.com/pzhaonet/mindr&#34;&gt;mindr&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt; I have been developing with R language for creating mindmaps from markdown posts, or vice versa.&lt;/p&gt;
+
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+
+&lt;p&gt;If you are a mindmap fan, you might start an Utopian.io post from a mindmap like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1512234540/rsa2ssccr6xw4nbyvjas.jpg&#34; alt=&#34;Submit to Utopian.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes, this is the structure of this post. Maybe it could be a template for Utopian.io.&lt;/p&gt;
+
+&lt;p&gt;The mindmap helps organize your idea. Now you start writing your post. Isn&amp;rsquo;t boring if you have to type the same words in the mindmap again?&lt;/p&gt;
+
+&lt;p&gt;On the other way around, if you have already written a post, wouldn&amp;rsquo;t it be amazing if you present the outline of the post  in a nice mindmap?&lt;/p&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;With R mindr package, these tasks can be done with one single command.&lt;/p&gt;
+
+&lt;h3 id=&#34;markdown-to-mindmap&#34;&gt;Markdown to Mindmap&lt;/h3&gt;
+
+&lt;p&gt;mindr can convert a markdown file or multiple markdown files, such as steem posts, into one mindmap, which could be opened and edited with common mindmap software like Freemind and Xmind.&lt;/p&gt;
+
+&lt;h3 id=&#34;mindmap-to-markdown&#34;&gt;Mindmap to Markdown&lt;/h3&gt;
+
+&lt;p&gt;mindr can also convert a mindmap into a markdown file, which can be a good start of your post.&lt;/p&gt;
+
+&lt;h3 id=&#34;outline&#34;&gt;Outline&lt;/h3&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t like mindmaps, you can use mindr just to extract the outline from your markdown file(s).&lt;/p&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation-of-r&#34;&gt;Installation of R&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org&#34;&gt;Download R&lt;/a&gt; and install it.&lt;/p&gt;
+
+&lt;h3 id=&#34;installation-of-mindr&#34;&gt;Installation of mindr&lt;/h3&gt;
+
+&lt;p&gt;In R environment, run the following codes to install mindr.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# stable version:
+install.packages(&amp;quot;mindr&amp;quot;)
+# or development version:
+devtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;As an example from markdown to mindmap, run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(&#39;mindr&#39;)
+example(md2mm)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then you will get a demo mind map file mindr.mm in the working directory (getwd()). Open it with any mind-map (brainstorm) software, and you will get a mind map.&lt;/p&gt;
+
+&lt;p&gt;As an example from mindmap, run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;example(mm2md)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then you will get a demo markdown file mindr.md in the working directory (getwd()).&lt;/p&gt;
+
+&lt;p&gt;Days ago I introduced the R package bookdownplus. From a book by bookdownplus or bookdown, you can simply get a mindmap with mindr. For example, if you throw the markdown files of the repo rstudio/bookdown into a folder and run mindr, you will get a mindmap like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_bookdown.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;link-to-the-repo&#34;&gt;Link to the Repo&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/pzhaonet/mindr&#34;&gt;https://github.com/pzhaonet/mindr&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of Work&lt;/h2&gt;
+
+&lt;p&gt;The following image is a screenshot  showing I am the author &amp;lsquo;pzhaonet&amp;rsquo; of mindr.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1511772827/qnjkbxleoptsx5akqguq.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;All I wanted to say is: mindr is a useful package for steemians who take writing serious.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;本文介绍的是我开发的一个开源免费的 R 扩展包，唤作 mindr，用来在思维导图和 markdown 之间转换。&lt;/p&gt;
+
+&lt;p&gt;如果你是个思维导图粉丝，写帖子之前，可以用思维导图来组织一下思路，像上面第一幅图那样。&lt;/p&gt;
+
+&lt;p&gt;思路清晰了，现在开始按思路写文章。但是，你难道还想把图里的文字再重复敲一遍吗？&lt;/p&gt;
+
+&lt;p&gt;反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一个思维导图，向别人展示帖子的结构和思路，岂不是一件美事？&lt;/p&gt;
+
+&lt;p&gt;mindr，助你轻松实现这些梦想。&lt;/p&gt;
+
+&lt;p&gt;只需先安装 R 语言环境，再按上文介绍的代码安装 mindr 扩展包，就可以得到上文展示的示例。&lt;/p&gt;
+
+&lt;p&gt;点不点赞无所谓，来试一下 mindr 吧！&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>传世玩具——托马斯 - Heirloom Toys: Thomas</title>
@@ -1269,70 +1392,6 @@ bookdownplus()
 &lt;/table&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>小鱼的理想 - 华语好声音 a song about minnows</title>
-      <link>https://steemit.netlify.com/post/or-a-song-about-minows/</link>
-      <pubDate>Sat, 18 Nov 2017 18:01:24 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/or-a-song-about-minows/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/or-a-song-about-minows&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-a-song-about-minows&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-a-song-about-minows&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/or-a-song-about-minows&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/or-a-song-about-minows&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/or-a-song-about-minows&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-a-song-about-minows&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/or-a-song-about-minows.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;之所以又贴了首歌，就是要提醒大家：本期“华语好声音”即将落幕，该投稿的投稿，该拉票的拉票！&lt;/p&gt;
-
-&lt;p&gt;@winniex 前两天为活动献上了童声演唱《&lt;a href=&#34;https://cnsteem.com/cn/@winniex/6h7i4x&#34;&gt;一天到晚游泳的鱼&lt;/a&gt;》。其实，在活动开始时，她还朗诵了《&lt;a href=&#34;https://cnsteem.com/cn/@winniex/if-you-want-to-see-a-whale&#34;&gt; 如果你想看鲸鱼&lt;/a&gt; 》（虽然我没听见），并且说：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;对于目前Steemit中文区的状况，这首诗不能不说是一个完美的主题。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我这里也有一首契合主题的歌：许巍的《小鱼的理想》。&lt;/p&gt;
-
-&lt;p&gt;点击下图播放键直接播放，或点击小鱼配图跳转。&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/357617510&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://node.kg.qq.com/play?s=gMakGagVhNd8Ug_O&amp;amp;g_f=personal&#34;&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Underwater-Aquarium-Clown-Fish-Clownfish-Nemo-Sea-1453910.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Image Credit: maxpixel.freegreatpicture.com&lt;/p&gt;
-
-&lt;p&gt;这首歌是对 steem 的绝妙隐喻。“那遥远的深海蓝色的世界，丰富而又多彩宁静美丽风景”，说的就是 steem 社区。&amp;rdquo; 有很多的快乐，有时候也莫名的惆怅&amp;rdquo;，刻画了小鱼们纠结的心态，而“大海外面有个世界是那样灿烂而宽广”，意味着什么，只有经历了 steem 的风风雨雨才会有感悟吧！&lt;/p&gt;
-
-&lt;p&gt;你是小鱼吗？欢迎留言，谈谈你的理想。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;小鱼的理想&lt;/p&gt;
-
-&lt;p&gt;许巍&lt;/p&gt;
-
-&lt;p&gt;在那遥远的深海蓝色的世界    有着丰富而又多彩宁静美丽风景&lt;/p&gt;
-
-&lt;p&gt;在这熙熙攘攘的繁华鱼群里    有个平凡的小鱼儿&lt;/p&gt;
-
-&lt;p&gt;有一些隐约向往  可是什么却不清楚&lt;/p&gt;
-
-&lt;p&gt;朋友们来来往往   带着梦想畅游远方&lt;/p&gt;
-
-&lt;p&gt;有很多的快乐    有时候也莫名的惆怅&lt;/p&gt;
-
-&lt;p&gt;有一天他听到这神奇的故事    有着不可思议色彩那样地不寻常&lt;/p&gt;
-
-&lt;p&gt;在这无尽的大海外面有个世界    是那样灿烂而宽广&lt;/p&gt;
-
-&lt;p&gt;鸟儿在自由歌唱    在阳光里喜悦飞翔&lt;/p&gt;
-
-&lt;p&gt;闪耀的美丽星空    好象灯盏照亮的心&lt;/p&gt;
-
-&lt;p&gt;有彩虹在原野    和鲜花在风里绽放&lt;/p&gt;
-
-&lt;p&gt;这世界好象光明    就深藏在他的心里&lt;/p&gt;
-
-&lt;p&gt;在以后的时间里    总会偶尔闪过渴望&lt;/p&gt;
-
-&lt;p&gt;那喜悦的候鸟和他们奇异的天空&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     

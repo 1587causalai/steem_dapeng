@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mindr: an R package that creates a markdown post out of a mind map - 将帖子转成思维导图 | STEEM@dapeng</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home|首页</a></li>
+      
+      <li><a href="/about/">About|关于</a></li>
+      
+      <li><a href="/categories/">Categories|类目</a></li>
+      
+      <li><a href="/tags/">Tags|标签</a></li>
+      
+      <li><a href="/index.xml">Subscribe|订阅</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">mindr: an R package that creates a markdown post out of a mind map - 将帖子转成思维导图</span></h1>
+<h2 class="author">dapeng</h2>
+<h2 class="date">2017-12-02 17:20 GMT</h2>
+</div>
+
+<main>
+
+
+<p>原文链接: <a href="https://steemit.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">steemit</a>, <a href="https://cnsteem.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">cnsteem</a>, <a href="https://busy.org/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">busy</a>, <a href="https://chainbb.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">chainbb</a>, <a href="https://steemdb.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">steemdb</a>, <a href="https://steemd.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">steemd</a>, <a href="https://busy.org/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">busy</a>, <a href="https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map.md">markdown</a></p>
+
+<p>This post was written bilingually, in English and Chinese.</p>
+
+<blockquote>
+<p>本文用英文和中文写作，中文在后半部分。</p>
+</blockquote>
+
+<h2 id="introduction">Introduction</h2>
+
+<h3 id="background">Background</h3>
+
+<p>A mind map is a diagram used to visually organize information. Markdown is a markup language widely used for writing, for example, posts on steem and Utopian.io.</p>
+
+<p>This post is to introduce an open-source package called <strong><em><a href="https://github.com/pzhaonet/mindr">mindr</a></em></strong> I have been developing with R language for creating mindmaps from markdown posts, or vice versa.</p>
+
+<h3 id="motivation">Motivation</h3>
+
+<p>If you are a mindmap fan, you might start an Utopian.io post from a mindmap like this:</p>
+
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1512234540/rsa2ssccr6xw4nbyvjas.jpg" alt="Submit to Utopian.jpg" /></p>
+
+<p>Yes, this is the structure of this post. Maybe it could be a template for Utopian.io.</p>
+
+<p>The mindmap helps organize your idea. Now you start writing your post. Isn&rsquo;t boring if you have to type the same words in the mindmap again?</p>
+
+<p>On the other way around, if you have already written a post, wouldn&rsquo;t it be amazing if you present the outline of the post  in a nice mindmap?</p>
+
+<h2 id="features">Features</h2>
+
+<p>With R mindr package, these tasks can be done with one single command.</p>
+
+<h3 id="markdown-to-mindmap">Markdown to Mindmap</h3>
+
+<p>mindr can convert a markdown file or multiple markdown files, such as steem posts, into one mindmap, which could be opened and edited with common mindmap software like Freemind and Xmind.</p>
+
+<h3 id="mindmap-to-markdown">Mindmap to Markdown</h3>
+
+<p>mindr can also convert a mindmap into a markdown file, which can be a good start of your post.</p>
+
+<h3 id="outline">Outline</h3>
+
+<p>If you don&rsquo;t like mindmaps, you can use mindr just to extract the outline from your markdown file(s).</p>
+
+<h2 id="quick-start">Quick Start</h2>
+
+<h3 id="installation-of-r">Installation of R</h3>
+
+<p><a href="https://cran.r-project.org">Download R</a> and install it.</p>
+
+<h3 id="installation-of-mindr">Installation of mindr</h3>
+
+<p>In R environment, run the following codes to install mindr.</p>
+
+<pre><code># stable version:
+install.packages(&quot;mindr&quot;)
+# or development version:
+devtools::install_github(&quot;pzhaonet/mindr&quot;)
+</code></pre>
+
+<h3 id="examples">Examples</h3>
+
+<p>As an example from markdown to mindmap, run:</p>
+
+<pre><code>library('mindr')
+example(md2mm)
+</code></pre>
+
+<p>then you will get a demo mind map file mindr.mm in the working directory (getwd()). Open it with any mind-map (brainstorm) software, and you will get a mind map.</p>
+
+<p>As an example from mindmap, run:</p>
+
+<pre><code>example(mm2md)
+</code></pre>
+
+<p>then you will get a demo markdown file mindr.md in the working directory (getwd()).</p>
+
+<p>Days ago I introduced the R package bookdownplus. From a book by bookdownplus or bookdown, you can simply get a mindmap with mindr. For example, if you throw the markdown files of the repo rstudio/bookdown into a folder and run mindr, you will get a mindmap like this:</p>
+
+<p><img src="https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_bookdown.jpeg" alt="" /></p>
+
+<h2 id="link-to-the-repo">Link to the Repo</h2>
+
+<p><a href="https://github.com/pzhaonet/mindr">https://github.com/pzhaonet/mindr</a></p>
+
+<h2 id="proof-of-work">Proof of Work</h2>
+
+<p>The following image is a screenshot  showing I am the author &lsquo;pzhaonet&rsquo; of mindr.</p>
+
+<p><img src="https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1511772827/qnjkbxleoptsx5akqguq.jpg" alt="" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>All I wanted to say is: mindr is a useful package for steemians who take writing serious.</p>
+
+<hr />
+
+<p>本文介绍的是我开发的一个开源免费的 R 扩展包，唤作 mindr，用来在思维导图和 markdown 之间转换。</p>
+
+<p>如果你是个思维导图粉丝，写帖子之前，可以用思维导图来组织一下思路，像上面第一幅图那样。</p>
+
+<p>思路清晰了，现在开始按思路写文章。但是，你难道还想把图里的文字再重复敲一遍吗？</p>
+
+<p>反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一个思维导图，向别人展示帖子的结构和思路，岂不是一件美事？</p>
+
+<p>mindr，助你轻松实现这些梦想。</p>
+
+<p>只需先安装 R 语言环境，再按上文介绍的代码安装 mindr 扩展包，就可以得到上文展示的示例。</p>
+
+<p>点不点赞无所谓，来试一下 mindr 吧！</p>
+
+<p><br /><hr/><em>Posted on <a href="https://utopian.io/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">Utopian.io -  Rewarding Open Source Contributors</a></em><hr/></p>
+
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pzhao';
+    var disqus_identifier = 'https:\/\/steemit.netlify.com\/post\/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map\/';
+    var disqus_title = 'mindr: an R package that creates a markdown post out of a mind map - 将帖子转成思维导图';
+    var disqus_url = 'https:\/\/steemit.netlify.com\/post\/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  All rights reserved  &copy; <a href="https://steemit.com/@dapeng">dapeng</a> 2017</p>
+
+<p>Powered by <a href="https://bookdown.org/yihui/blogdown/">R blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://github.com/yihui/hugo-xmin">Xmin</a>
+  
+  </footer>
+  </body>
+</html>
+

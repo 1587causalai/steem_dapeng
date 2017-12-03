@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map/</loc>
+    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/or-heirloom-toys-thomas/</loc>
     <lastmod>2017-12-01T15:28:27+00:00</lastmod>
   </url>
@@ -851,7 +856,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-12-01T15:28:27+00:00</lastmod>
+    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -923,7 +928,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-reader/</loc>
-    <lastmod>2017-12-01T15:28:27+00:00</lastmod>
+    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1121,7 +1126,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-12-01T15:28:27+00:00</lastmod>
+    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
   </url>
   
   <url>
@@ -1270,13 +1275,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-12-01T15:28:27+00:00</lastmod>
+    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/tags/programming/</loc>
-    <lastmod>2017-11-26T21:21:21+00:00</lastmod>
+    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1354,7 +1359,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/steemit/</loc>
-    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
+    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1461,13 +1466,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/utopian-io/</loc>
-    <lastmod>2017-11-30T17:09:48+00:00</lastmod>
+    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/utopian-io/</loc>
-    <lastmod>2017-11-30T17:09:48+00:00</lastmod>
+    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   

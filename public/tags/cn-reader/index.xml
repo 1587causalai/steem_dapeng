@@ -9,6 +9,129 @@
     <atom:link href="https://steemit.netlify.com/tags/cn-reader/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>mindr: an R package that creates a markdown post out of a mind map - 将帖子转成思维导图</title>
+      <link>https://steemit.netlify.com/post/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map/</link>
+      <pubDate>Sat, 02 Dec 2017 17:20:15 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This post was written bilingually, in English and Chinese.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本文用英文和中文写作，中文在后半部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;A mind map is a diagram used to visually organize information. Markdown is a markup language widely used for writing, for example, posts on steem and Utopian.io.&lt;/p&gt;
+
+&lt;p&gt;This post is to introduce an open-source package called &lt;strong&gt;&lt;em&gt;&lt;a href=&#34;https://github.com/pzhaonet/mindr&#34;&gt;mindr&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt; I have been developing with R language for creating mindmaps from markdown posts, or vice versa.&lt;/p&gt;
+
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+
+&lt;p&gt;If you are a mindmap fan, you might start an Utopian.io post from a mindmap like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1512234540/rsa2ssccr6xw4nbyvjas.jpg&#34; alt=&#34;Submit to Utopian.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes, this is the structure of this post. Maybe it could be a template for Utopian.io.&lt;/p&gt;
+
+&lt;p&gt;The mindmap helps organize your idea. Now you start writing your post. Isn&amp;rsquo;t boring if you have to type the same words in the mindmap again?&lt;/p&gt;
+
+&lt;p&gt;On the other way around, if you have already written a post, wouldn&amp;rsquo;t it be amazing if you present the outline of the post  in a nice mindmap?&lt;/p&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;With R mindr package, these tasks can be done with one single command.&lt;/p&gt;
+
+&lt;h3 id=&#34;markdown-to-mindmap&#34;&gt;Markdown to Mindmap&lt;/h3&gt;
+
+&lt;p&gt;mindr can convert a markdown file or multiple markdown files, such as steem posts, into one mindmap, which could be opened and edited with common mindmap software like Freemind and Xmind.&lt;/p&gt;
+
+&lt;h3 id=&#34;mindmap-to-markdown&#34;&gt;Mindmap to Markdown&lt;/h3&gt;
+
+&lt;p&gt;mindr can also convert a mindmap into a markdown file, which can be a good start of your post.&lt;/p&gt;
+
+&lt;h3 id=&#34;outline&#34;&gt;Outline&lt;/h3&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t like mindmaps, you can use mindr just to extract the outline from your markdown file(s).&lt;/p&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation-of-r&#34;&gt;Installation of R&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org&#34;&gt;Download R&lt;/a&gt; and install it.&lt;/p&gt;
+
+&lt;h3 id=&#34;installation-of-mindr&#34;&gt;Installation of mindr&lt;/h3&gt;
+
+&lt;p&gt;In R environment, run the following codes to install mindr.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# stable version:
+install.packages(&amp;quot;mindr&amp;quot;)
+# or development version:
+devtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;As an example from markdown to mindmap, run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(&#39;mindr&#39;)
+example(md2mm)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then you will get a demo mind map file mindr.mm in the working directory (getwd()). Open it with any mind-map (brainstorm) software, and you will get a mind map.&lt;/p&gt;
+
+&lt;p&gt;As an example from mindmap, run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;example(mm2md)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then you will get a demo markdown file mindr.md in the working directory (getwd()).&lt;/p&gt;
+
+&lt;p&gt;Days ago I introduced the R package bookdownplus. From a book by bookdownplus or bookdown, you can simply get a mindmap with mindr. For example, if you throw the markdown files of the repo rstudio/bookdown into a folder and run mindr, you will get a mindmap like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_bookdown.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;link-to-the-repo&#34;&gt;Link to the Repo&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/pzhaonet/mindr&#34;&gt;https://github.com/pzhaonet/mindr&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of Work&lt;/h2&gt;
+
+&lt;p&gt;The following image is a screenshot  showing I am the author &amp;lsquo;pzhaonet&amp;rsquo; of mindr.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1511772827/qnjkbxleoptsx5akqguq.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;All I wanted to say is: mindr is a useful package for steemians who take writing serious.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;本文介绍的是我开发的一个开源免费的 R 扩展包，唤作 mindr，用来在思维导图和 markdown 之间转换。&lt;/p&gt;
+
+&lt;p&gt;如果你是个思维导图粉丝，写帖子之前，可以用思维导图来组织一下思路，像上面第一幅图那样。&lt;/p&gt;
+
+&lt;p&gt;思路清晰了，现在开始按思路写文章。但是，你难道还想把图里的文字再重复敲一遍吗？&lt;/p&gt;
+
+&lt;p&gt;反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一个思维导图，向别人展示帖子的结构和思路，岂不是一件美事？&lt;/p&gt;
+
+&lt;p&gt;mindr，助你轻松实现这些梦想。&lt;/p&gt;
+
+&lt;p&gt;只需先安装 R 语言环境，再按上文介绍的代码安装 mindr 扩展包，就可以得到上文展示的示例。&lt;/p&gt;
+
+&lt;p&gt;点不点赞无所谓，来试一下 mindr 吧！&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>传世玩具——托马斯 - Heirloom Toys: Thomas</title>
       <link>https://steemit.netlify.com/post/or-heirloom-toys-thomas/</link>
       <pubDate>Fri, 01 Dec 2017 15:28:27 +0000</pubDate>
@@ -1114,76 +1237,6 @@ bookdownplus()
 &lt;p&gt;Youtube 视频：三年时间制作的14 分钟短片，一镜到底展示三体里的水滴。对原著无剧透。我看到第三遍才看明白，然后击节叫好。然后，不寒而栗。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>春雷路的尽头，载不动许多愁 - &#34;华语好声音&#34;</title>
-      <link>https://steemit.netlify.com/post/chengdu/</link>
-      <pubDate>Sat, 21 Oct 2017 19:27:39 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/chengdu/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/chengdu&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/chengdu&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/chengdu&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/chengdu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/chengdu.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;166&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/347459247&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;点击播放键，或点击&lt;a href=&#34;http://node.kg.qq.com/play?s=DaM1XMDs4-LO-DrU&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;歌里的成都和玉林路，未曾去过；我们的家乡是鹤壁小城，我们一起走过的是春雷路。&lt;/p&gt;
-
-&lt;p&gt;来不及同你商量，我擅自改了歌词；那样听起来，便像是我们自己的故事。&lt;/p&gt;
-
-&lt;p&gt;到了深秋，成都的垂柳难道不会枯黄么？我不知道。然而，我们的那段记忆，在多年之后，却嫩绿依旧，即使我们的小城已经黯淡无光。&lt;/p&gt;
-
-&lt;p&gt;鹤壁的街道，处处向世人展示着这座小城的年轻：只有新建的城市，街道才会如此横平竖直，春雷路就是如此。&lt;/p&gt;
-
-&lt;p&gt;那些年的春雷路，路边分布着我们读过的初中和高中。初中的门口，有家小卖铺，卖一种名叫“爱是”的泡泡糖。你打开一粒，取出里面藏着的漫画，展开，夹在书页里，压平，握着钢笔，把纸片上的英文，一笔一笔抄在我的本子上。&lt;/p&gt;
-
-&lt;p&gt;高中的附近，有家音像店，玻璃橱窗里，摆着标有“原装正版”的磁带。你把钱塞到我手心，百般叮咛：“张信哲新出的《挚爱》，一定要正版的哦。”可是我买回来的，仍然是盗版。&lt;/p&gt;
-
-&lt;p&gt;那个秋天，我们沿着春雷路，慢慢向北走。那时的你我尚年幼，谁都不敢牵牵手。九月的秋风吹过，只有路边梧桐的落叶，亲吻了你的额头。&lt;/p&gt;
-
-&lt;p&gt;春雷路的最北面，是家小面馆。我摸摸口袋，什么都没有，于是我们转了个弯，往回走。走过初中的小卖铺，走过高中的音像店，就这样往南走。&lt;/p&gt;
-
-&lt;p&gt;走啊走。春雷路向南，没有尽头。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://get.pxhere.com/photo/light-sunset-night-sunlight-morning-dusk-evening-autumn-darkness-43779.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Image credit: pxhere.com&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;成都&lt;/p&gt;
-
-&lt;p&gt;词曲：赵雷（大鹏略作改动）&lt;/p&gt;
-
-&lt;p&gt;让我掉下眼泪的 不止昨夜的酒&lt;/p&gt;
-
-&lt;p&gt;让我依依不舍的 不止你的温柔&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;余路还要走多久 你攥着我的手
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;让我感到为难的 是挣扎的自由&lt;/p&gt;
-
-&lt;p&gt;分别总是在九月 回忆是思念的愁&lt;/p&gt;
-
-&lt;p&gt;深秋嫩绿的垂柳 亲吻着我额头&lt;/p&gt;
-
-&lt;p&gt;在那座黯淡的小城里 我从未忘记你&lt;/p&gt;
-
-&lt;p&gt;鹤壁 带不走的 只有你&lt;/p&gt;
-
-&lt;p&gt;和我在鹤壁的街头走一走&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;直到所有的灯都熄灭了也不停留
-
-你会挽着我的衣袖 我会把手揣进裤兜
-
-走到春雷路的尽头 坐在(走过)小面馆的门口
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     
