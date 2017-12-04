@@ -9,6 +9,65 @@
     <atom:link href="https://steemit.netlify.com/tags/cn-reader/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>逻辑娃 III - Logical Kid</title>
+      <link>https://steemit.netlify.com/post/iii-logical-kid/</link>
+      <pubDate>Sun, 03 Dec 2017 16:13:03 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/iii-logical-kid/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/iii-logical-kid&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/iii-logical-kid&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/iii-logical-kid&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/iii-logical-kid&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/iii-logical-kid&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/iii-logical-kid&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/iii-logical-kid&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/iii-logical-kid.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最近，逻辑娃的逻辑出了点毛病。&lt;/p&gt;
+
+&lt;p&gt;德生得到一个新玩具，说明书上说适合两人以上玩。&lt;/p&gt;
+
+&lt;p&gt;我：去跟哥哥玩吧。&lt;/p&gt;
+
+&lt;p&gt;德生：这是给小小孩玩的。&lt;/p&gt;
+
+&lt;p&gt;我：给几岁小小孩玩？&lt;/p&gt;
+
+&lt;p&gt;德生：给四岁小小孩玩。不给十岁小孩玩。（看看奶奶）也不给六十多岁的玩。但是给三十多岁的玩。&lt;/p&gt;
+
+&lt;p&gt;这是什么逻辑！&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在以前的幼儿园，德生能说会道，据说呜哩哇啦从早到晚说一天。&lt;/p&gt;
+
+&lt;p&gt;换到新幼儿园没几天，老师就问我：德生会不会说德语？&lt;/p&gt;
+
+&lt;p&gt;我说：会呀。&lt;/p&gt;
+
+&lt;p&gt;老师说：德生在幼儿园一句话都不说。&lt;/p&gt;
+
+&lt;p&gt;私下里我就问：今天在幼儿园你跟老师说话了吗？&lt;/p&gt;
+
+&lt;p&gt;德生：没说话。&lt;/p&gt;
+
+&lt;p&gt;我：为什么不说话？&lt;/p&gt;
+
+&lt;p&gt;德生：中文要在家里说，德语要在以前的幼儿园说。新幼儿园，我不说。&lt;/p&gt;
+
+&lt;p&gt;这是什么逻辑！&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Think-Globe-Force-Thinker-Stone-Monument-1027558.jpg&#34; alt=&#34;&#34; /&gt;
+Image Credit: maxpixel.freegreatpicture.com&lt;/p&gt;
+
+&lt;p&gt;家里汽车年检没过，大修的话，花的钱还不如买个新的。于是，我们讨论换车的事儿，主要讨论价格和性能。两个孩子在旁边插嘴讨论颜色。&lt;/p&gt;
+
+&lt;p&gt;德生：我喜欢白色的车。&lt;/p&gt;
+
+&lt;p&gt;我：为什么？&lt;/p&gt;
+
+&lt;p&gt;德生：因为外面下雪了。白色的车不怕雪。&lt;/p&gt;
+
+&lt;p&gt;这是什么逻辑！&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>mindr: an R package that creates a markdown post out of a mind map - 将帖子转成思维导图</title>
       <link>https://steemit.netlify.com/post/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map/</link>
       <pubDate>Sat, 02 Dec 2017 17:20:15 +0000</pubDate>
@@ -105,7 +164,7 @@ example(md2mm)
 
 &lt;p&gt;The following image is a screenshot  showing I am the author &amp;lsquo;pzhaonet&amp;rsquo; of mindr.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1511772827/qnjkbxleoptsx5akqguq.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1512303284/kapq7allgsxifomwaylf.jpg&#34; alt=&#34;mindr.jpg&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
@@ -1195,48 +1254,6 @@ bookdownplus()
 &lt;p&gt;Tags: #cn-reader #cn-contest #contest&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>《三体》第一部为啥读起来不够好 (无剧透) The three-body problem</title>
-      <link>https://steemit.netlify.com/post/the-three-body-problem/</link>
-      <pubDate>Tue, 24 Oct 2017 12:50:39 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/the-three-body-problem/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn-book/@dapeng/the-three-body-problem&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn-book/@dapeng/the-three-body-problem&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn-book/@dapeng/the-three-body-problem&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn-book/@dapeng/the-three-body-problem&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/the-three-body-problem.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;昨天，我在『&lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/the-very-first-thing-to-do-for-new-steemians-or-steem#@mrspointm/re-dapeng-the-very-first-thing-to-do-for-new-steemians-or-steem-20171023t133706762z&#34;&gt;Steem 新手必须做的第一件事&lt;/a&gt; 』一文里谈到如何保存 steem 的密码时，以科幻小说《三体》为例，因为里面讲到，保存资料最安全最长久的办法，是&amp;rdquo;刻在石头上&amp;rdquo;。恰巧 @lemooljiang 的品乐书会也在&lt;a href=&#34;https://cnsteem.com/cn-book/@lemooljiang/12&#34;&gt;聊《三体》&lt;/a&gt;，认为《三体》第一部读起来比较失望。这部小说我在六年前第一次读过，后来又重温过几遍，同样觉得第一部不够好。这是为什么呢？&lt;/p&gt;
-
-&lt;p&gt;一个原因是《三体》的文笔不够好，人物刻画得不到位。不光是第一部，包括后面两部都是，女性角色写得很失败，不是师太类就是纯情少女类。&lt;/p&gt;
-
-&lt;p&gt;不过，与别类小说以塑造人物为目的有所不同，科幻故事的主角往往不是人物，而是科学设想。&lt;/p&gt;
-
-&lt;p&gt;科幻小说的美，往往在于先提出科学理论，然后推导开去，演绎人们或者别的生物们在该设想之下的故事，或有趣，或悲壮，或快乐，或辛酸。阿西莫夫的经典著作《机器人三定律》，读完之后我什么角色都没记住，唯独记住了三定律。&lt;/p&gt;
-
-&lt;p&gt;《三体》的主角不是叶文洁，也不是罗辑，也不是程心，而是“宇宙社会学两定律”。阅读科幻小说的审美过程，犹如推导一条数学定理，推导的过程峰回路转，读到第二部结局的刹那，宛如在无数行推导后被证明的最后那一行“∴”（所以），有一种难以名状的快感，就像炎炎盛夏汗流浃背的时候喝了一瓶冰镇白啤。&lt;/p&gt;
-
-&lt;p&gt;此外，《三体》第一部不太好看，是因为第一部其实是所有故事的序幕，作用是为后两部打下伏笔和铺垫。梦工厂曾经将圣经里的两个故事改编成了电影：一部是《梦之王约瑟》，一部是《埃及王子》。后者是我最爱的动画片之一，讲的是摩西出埃及的故事。相比之下，《梦之王约瑟》没那么好看，但却是《埃及王子》的前传和序章，讲的是摩西的祖先约瑟去埃及释梦，其实是为后来埃及王子的故事做铺垫的，正如《三体》第一部。&lt;/p&gt;
-
-&lt;p&gt;如果因为《三体》第一部读不下去就放弃了，那就会错过后面极大的精神享受。其实，不妨先从第二部《三体-黑暗森林》读起。三部曲的核心“宇宙社会学”直到第二部才出现，而故事正是从第二部开始纷繁和精彩起来，就像摩西出埃及一样，那是一位伟大先知的故事。读完第二部，再把第一部当前传来读，感觉就不同了。而第三部《三体-死神永生》，则是一个惊喜，在我眼里，是个浪漫的宇宙科幻爱情故事。&lt;/p&gt;
-
-&lt;p&gt;《三体》是原汁原味的中国小说，故事里有很多中国元素。作者是中国人，生活的地点在娘子关，故事的主人公是中国人，外星人终于不说英语了，周文王、墨子和伽利略、牛顿一样粉墨登场。而包括太阳系被毁灭等所有故事，都从文革时代的文攻武斗起源并顺理成章地展开，这让我百感交集。《X战警》里反面角色的性格来源不也是德国的纳粹时代么？同样也是人间地狱的文革，如果允许我们反思的话，中国该有多少精彩的文艺作品和伟大的思想从中诞生呢？&lt;/p&gt;
-
-&lt;p&gt;将《三体》称为&amp;rdquo;中国科幻小说的巅峰之作&amp;rdquo;，我认为是恰如其分的。在此之前，国外科幻界一直是欧美文化的天下。刘慈欣横空出世，凭一人之力带着中国科幻杀入国际领域，这是什么感觉？这就好比，某个说英文的老外，用英文写了部??国题材的武侠小说，然后翻译成中文，风头盖过了金庸。&lt;/p&gt;
-
-&lt;p&gt;《三体》最让我称道的，是建立在一整套科学技术、社会伦理、宗教信仰的基础上，作者构建了一个壮阔瑰丽的宇宙体系。这个体系的完整程度，堪比《指环王》里构建的整个世界；这个体系的精彩程度，超过了《星球大战》里的星系联盟。其实，《星球大战》从科幻角度来说跟《三体》不可同日而语，《星球大战》完全是把古老的神话故事移植到了地球之外而已，与其说是科幻不如说是魔幻。相比之下，《三体》如此美妙绝伦，所有的故事围绕“宇宙社会学”两定律而展开，如同欧几里得从“几何五公设”推出的煌煌欧氏几何体系，同样的审美享受在阅读《三体》的过程中畅快淋漓地实现了。&lt;/p&gt;
-
-&lt;p&gt;同样让我震惊的，还有《三体》中挑战人类思维极限的想象力。作者把宇宙中可能存在的千奇百怪用文字展现在我的面前。我坚信，作者笔下那个宇宙只能在文字中想象。任何试图描绘同样内容的图画或者动画，无论色彩多么绚丽，跟想象力相比都会黯然失色。&lt;/p&gt;
-
-&lt;p&gt;听说《三体》要拍成电影了。不知会用何种特效来展示三体人的探测器“水滴”，何种手段来展示降维打击，何种方法来展示从四维空间看三维空间的“无限细节”呢？&lt;/p&gt;
-
-&lt;p&gt;让我们拭目以待。&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/0I-zRs8sP3Q&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Youtube 视频：三年时间制作的14 分钟短片，一镜到底展示三体里的水滴。对原著无剧透。我看到第三遍才看明白，然后击节叫好。然后，不寒而栗。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

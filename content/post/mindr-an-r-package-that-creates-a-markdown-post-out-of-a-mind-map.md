@@ -102,7 +102,7 @@ https://github.com/pzhaonet/mindr
 
 The following image is a screenshot  showing I am the author 'pzhaonet' of mindr.
 
-![](https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1511772827/qnjkbxleoptsx5akqguq.jpg)
+![mindr.jpg](https://res.cloudinary.com/hpiynhbhq/image/upload/v1512303284/kapq7allgsxifomwaylf.jpg)
 
 ## Conclusion
 
