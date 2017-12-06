@@ -100,9 +100,11 @@ https://github.com/pzhaonet/mindr
 
 ## Proof of Work
 
-The following image is a screenshot  showing I am the author 'pzhaonet' of mindr.
+The following images are screenshots  showing I am the author 'pzhaonet' of mindr.
 
 ![mindr.jpg](https://res.cloudinary.com/hpiynhbhq/image/upload/v1512303284/kapq7allgsxifomwaylf.jpg)
+
+![image.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1512394305/uncwrp9nyslzj8ta0h0c.png)
 
 ## Conclusion
 
@@ -119,13 +121,13 @@ All I wanted to say is: mindr is a useful package for steemians who take writing
 思路清晰了，现在开始按思路写文章。但是，你难道还想把图里的文字再重复敲一遍吗？
 
 
-反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一个思维导图，向别人展示帖子的结构和思路，岂不是一件美事？
+反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一??思维导图，向别人展示帖子的结构和思路，岂不是一件美事？
 
 mindr，助你轻松实现这些梦想。
 
 只需先安装 R 语言环境，再按上文介绍的代码安装 mindr 扩展包，就可以得到上文展示的示例。
 
-点不点赞无所谓，来试一下 mindr 吧！
+来试一下 mindr 吧！
 
 
 <br /><hr/><em>Posted on <a href="https://utopian.io/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">Utopian.io -  Rewarding Open Source Contributors</a></em><hr/>

@@ -6,8 +6,30 @@
     <description>Recent content in Posts on STEEM@dapeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Dec 2017 16:13:03 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Dec 2017 13:50:03 +0000</lastBuildDate>
     <atom:link href="https://steemit.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>一路上有你 - 华语好声音</title>
+      <link>https://steemit.netlify.com/post/or/</link>
+      <pubDate>Mon, 04 Dec 2017 13:50:03 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Less is more. 2017 年即将过去，我做出了几个决定，其中一项就是退出了几个群。并非不喜欢那里的朋友，而是一个阶段有一个阶段的事情要做。天下没有不散的筵席。不纠结过去，不担忧未来。想好就去做，为之，则难者亦易矣。&lt;/p&gt;
+
+&lt;p&gt;感谢这些朋友们的一路陪伴。一路上有你，苦一点也愿意。&lt;/p&gt;
+
+&lt;p&gt;此外提醒大家，本期华语好声音下周就结束了！录好音的别忘了贴出来让我们听啊！&lt;/p&gt;
+
+&lt;p&gt;点击下图播放键直接播放，或点击下面的配图跳转。&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/364787792&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://node.kg.qq.com/play?s=o3BnABox1w7bwo-Q&#34;&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2016/01/19/17/22/children-1149671_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>逻辑娃 III - Logical Kid</title>
@@ -163,9 +185,11 @@ example(md2mm)
 
 &lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of Work&lt;/h2&gt;
 
-&lt;p&gt;The following image is a screenshot  showing I am the author &amp;lsquo;pzhaonet&amp;rsquo; of mindr.&lt;/p&gt;
+&lt;p&gt;The following images are screenshots  showing I am the author &amp;lsquo;pzhaonet&amp;rsquo; of mindr.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1512303284/kapq7allgsxifomwaylf.jpg&#34; alt=&#34;mindr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1512394305/uncwrp9nyslzj8ta0h0c.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
@@ -179,13 +203,13 @@ example(md2mm)
 
 &lt;p&gt;思路清晰了，现在开始按思路写文章。但是，你难道还想把图里的文字再重复敲一遍吗？&lt;/p&gt;
 
-&lt;p&gt;反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一个思维导图，向别人展示帖子的结构和思路，岂不是一件美事？&lt;/p&gt;
+&lt;p&gt;反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一??思维导图，向别人展示帖子的结构和思路，岂不是一件美事？&lt;/p&gt;
 
 &lt;p&gt;mindr，助你轻松实现这些梦想。&lt;/p&gt;
 
 &lt;p&gt;只需先安装 R 语言环境，再按上文介绍的代码安装 mindr 扩展包，就可以得到上文展示的示例。&lt;/p&gt;
 
-&lt;p&gt;点不点赞无所谓，来试一下 mindr 吧！&lt;/p&gt;
+&lt;p&gt;来试一下 mindr 吧！&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
 </description>
@@ -1057,122 +1081,6 @@ bookdownplus()
 &lt;p&gt;我立马拦住：“最好别去学。这个坑太大。一入  LaTeX，坑深似海。”&lt;/p&gt;
 
 &lt;p&gt;如果你以为本文是为  LaTeX 做广告，呵呵，那你就错了。为啥？下回再说。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>逻辑娃 - Logical Kid</title>
-      <link>https://steemit.netlify.com/post/or-logical-kid/</link>
-      <pubDate>Tue, 21 Nov 2017 10:33:51 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/or-logical-kid/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/or-logical-kid&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-logical-kid&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-logical-kid&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/or-logical-kid&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/or-logical-kid&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/or-logical-kid&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-logical-kid&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/or-logical-kid.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;我家二娃，生于德国，于是网名唤作德生，年方四岁。小小年纪，逻辑思维能力值得写一写。&lt;/p&gt;
-
-&lt;p&gt;1&lt;/p&gt;
-
-&lt;p&gt;三岁的时候，德生数数的方式是这样的：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;hellip;&amp;hellip;,  十八，十九，十十，十十一，十十二，…..，十十九，十十十，十十十一……&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我和老婆惊得面面相觑：逻辑上好像没啥毛病哦！&lt;/p&gt;
-
-&lt;p&gt;德生其实是自己独立发明了罗马计数法，三十一写作XXXI（十十十一）。&lt;/p&gt;
-
-&lt;p&gt;2&lt;/p&gt;
-
-&lt;p&gt;有一天，幼儿园小班的“阿舅”克里斯对我们说：德生得练习上厕所了，不能老戴纸尿裤，因为转到大班后，那里的老师不负责换纸尿裤。&lt;/p&gt;
-
-&lt;p&gt;我们大吃一惊。奥地利和德国一样，三岁之前上Kinderkrippe，相当于小班；三岁之后上Kindergarten，相当于大班。大娃京生在德国上大班的时候，是可以换纸尿裤的。&lt;/p&gt;
-
-&lt;p&gt;于是在家里练。星期六，我们跟德生商量：除了睡觉和外出，其他时间不戴纸尿裤。德生不乐意，妈妈哄道：今天先戴着吧，明天星期天，在家不戴。德生同意了，重复道：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;今天戴，明天不戴。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我们很高兴：“说话算数哦！”&lt;/p&gt;
-
-&lt;p&gt;德生点点头。&lt;/p&gt;
-
-&lt;p&gt;第二天早上，脱下纸尿裤，德生要求换上新的。妈妈说：“不是说好了吗？今天不戴纸尿裤。”&lt;/p&gt;
-
-&lt;p&gt;德生睁大眼睛，一本正经地说：“今天戴，明天不戴！说话算数！”&lt;/p&gt;
-
-&lt;p&gt;这确实是我们的原话。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Inspiration-Innovation-Idea-Thought-Imagination-2123970.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Image Credit: maxpixel.freegreatpicture.com&lt;/p&gt;
-
-&lt;p&gt;3&lt;/p&gt;
-
-&lt;p&gt;每天晚上哄德生睡觉，我们都会说，天黑了，喝奶、洗脸、洗脚、刷牙、睡觉。这套程序德生已经能背下来了。&lt;/p&gt;
-
-&lt;p&gt;星期天下午，我带德生去河边的游乐场玩。下午四点，太阳就转到山后面去了，气温立刻下降，我说：天要黑了，别玩了，回家吧。&lt;/p&gt;
-
-&lt;p&gt;德生点点头。&lt;/p&gt;
-
-&lt;p&gt;一进家门，妈妈就要脱掉德生的纸尿裤。德生哇哇大叫。妈妈说：“不是说好的吗？在家不戴纸尿裤。”&lt;/p&gt;
-
-&lt;p&gt;德生说：“爸爸说，天黑了要回家。天黑了，喝奶、洗脸、洗脚、刷牙、睡觉，睡觉要戴纸尿裤！”&lt;/p&gt;
-
-&lt;p&gt;逻辑上无懈可击。&lt;/p&gt;
-
-&lt;p&gt;4&lt;/p&gt;
-
-&lt;p&gt;我们家住半山腰，爬山有得天独厚的条件。然而德生愿意赖在家里玩玩具和看书。&lt;/p&gt;
-
-&lt;p&gt;德生说：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;不敢去爬山，山上有老虎。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;妈妈：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;山上没老虎！&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;德生：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;山上有没有动物园？&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;妈妈：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;有啊！走，咱们爬山去看动物园&amp;hellip;&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;德生：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;动物园里有没有老虎？&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;妈妈：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;有啊&amp;hellip;&amp;hellip;嗯？&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;德生：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;那山上有没有老虎？&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;妈妈：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;有&amp;hellip;&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     

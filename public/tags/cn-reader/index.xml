@@ -162,9 +162,11 @@ example(md2mm)
 
 &lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of Work&lt;/h2&gt;
 
-&lt;p&gt;The following image is a screenshot  showing I am the author &amp;lsquo;pzhaonet&amp;rsquo; of mindr.&lt;/p&gt;
+&lt;p&gt;The following images are screenshots  showing I am the author &amp;lsquo;pzhaonet&amp;rsquo; of mindr.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1512303284/kapq7allgsxifomwaylf.jpg&#34; alt=&#34;mindr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1512394305/uncwrp9nyslzj8ta0h0c.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
@@ -178,13 +180,13 @@ example(md2mm)
 
 &lt;p&gt;思路清晰了，现在开始按思路写文章。但是，你难道还想把图里的文字再重复敲一遍吗？&lt;/p&gt;
 
-&lt;p&gt;反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一个思维导图，向别人展示帖子的结构和思路，岂不是一件美事？&lt;/p&gt;
+&lt;p&gt;反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一??思维导图，向别人展示帖子的结构和思路，岂不是一件美事？&lt;/p&gt;
 
 &lt;p&gt;mindr，助你轻松实现这些梦想。&lt;/p&gt;
 
 &lt;p&gt;只需先安装 R 语言环境，再按上文介绍的代码安装 mindr 扩展包，就可以得到上文展示的示例。&lt;/p&gt;
 
-&lt;p&gt;点不点赞无所谓，来试一下 mindr 吧！&lt;/p&gt;
+&lt;p&gt;来试一下 mindr 吧！&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
 </description>

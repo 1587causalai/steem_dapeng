@@ -9,6 +9,28 @@
     <atom:link href="https://steemit.netlify.com/tags/cn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>一路上有你 - 华语好声音</title>
+      <link>https://steemit.netlify.com/post/or/</link>
+      <pubDate>Mon, 04 Dec 2017 13:50:03 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Less is more. 2017 年即将过去，我做出了几个决定，其中一项就是退出了几个群。并非不喜欢那里的朋友，而是一个阶段有一个阶段的事情要做。天下没有不散的筵席。不纠结过去，不担忧未来。想好就去做，为之，则难者亦易矣。&lt;/p&gt;
+
+&lt;p&gt;感谢这些朋友们的一路陪伴。一路上有你，苦一点也愿意。&lt;/p&gt;
+
+&lt;p&gt;此外提醒大家，本期华语好声音下周就结束了！录好音的别忘了贴出来让我们听啊！&lt;/p&gt;
+
+&lt;p&gt;点击下图播放键直接播放，或点击下面的配图跳转。&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/364787792&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://node.kg.qq.com/play?s=o3BnABox1w7bwo-Q&#34;&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2016/01/19/17/22/children-1149671_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>逻辑娃 III - Logical Kid</title>
       <link>https://steemit.netlify.com/post/iii-logical-kid/</link>
       <pubDate>Sun, 03 Dec 2017 16:13:03 +0000</pubDate>
@@ -162,9 +184,11 @@ example(md2mm)
 
 &lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of Work&lt;/h2&gt;
 
-&lt;p&gt;The following image is a screenshot  showing I am the author &amp;lsquo;pzhaonet&amp;rsquo; of mindr.&lt;/p&gt;
+&lt;p&gt;The following images are screenshots  showing I am the author &amp;lsquo;pzhaonet&amp;rsquo; of mindr.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1512303284/kapq7allgsxifomwaylf.jpg&#34; alt=&#34;mindr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1512394305/uncwrp9nyslzj8ta0h0c.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
@@ -178,13 +202,13 @@ example(md2mm)
 
 &lt;p&gt;思路清晰了，现在开始按思路写文章。但是，你难道还想把图里的文字再重复敲一遍吗？&lt;/p&gt;
 
-&lt;p&gt;反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一个思维导图，向别人展示帖子的结构和思路，岂不是一件美事？&lt;/p&gt;
+&lt;p&gt;反过来也是。当你已经写好了帖子，如果能一下就把帖子转成一??思维导图，向别人展示帖子的结构和思路，岂不是一件美事？&lt;/p&gt;
 
 &lt;p&gt;mindr，助你轻松实现这些梦想。&lt;/p&gt;
 
 &lt;p&gt;只需先安装 R 语言环境，再按上文介绍的代码安装 mindr 扩展包，就可以得到上文展示的示例。&lt;/p&gt;
 
-&lt;p&gt;点不点赞无所谓，来试一下 mindr 吧！&lt;/p&gt;
+&lt;p&gt;来试一下 mindr 吧！&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
 </description>
@@ -1317,70 +1341,6 @@ bookdownplus()
 &lt;/table&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>小鱼的理想 - 华语好声音 a song about minnows</title>
-      <link>https://steemit.netlify.com/post/or-a-song-about-minows/</link>
-      <pubDate>Sat, 18 Nov 2017 18:01:24 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/or-a-song-about-minows/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/or-a-song-about-minows&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-a-song-about-minows&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-a-song-about-minows&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/or-a-song-about-minows&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/or-a-song-about-minows&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/or-a-song-about-minows&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-a-song-about-minows&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/or-a-song-about-minows.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;之所以又贴了首歌，就是要提醒大家：本期“华语好声音”即将落幕，该投稿的投稿，该拉票的拉票！&lt;/p&gt;
-
-&lt;p&gt;@winniex 前两天为活动献上了童声演唱《&lt;a href=&#34;https://cnsteem.com/cn/@winniex/6h7i4x&#34;&gt;一天到晚游泳的鱼&lt;/a&gt;》。其实，在活动开始时，她还朗诵了《&lt;a href=&#34;https://cnsteem.com/cn/@winniex/if-you-want-to-see-a-whale&#34;&gt; 如果你想看鲸鱼&lt;/a&gt; 》（虽然我没听见），并且说：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;对于目前Steemit中文区的状况，这首诗不能不说是一个完美的主题。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我这里也有一首契合主题的歌：许巍的《小鱼的理想》。&lt;/p&gt;
-
-&lt;p&gt;点击下图播放键直接播放，或点击小鱼配图跳转。&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/357617510&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://node.kg.qq.com/play?s=gMakGagVhNd8Ug_O&amp;amp;g_f=personal&#34;&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Underwater-Aquarium-Clown-Fish-Clownfish-Nemo-Sea-1453910.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Image Credit: maxpixel.freegreatpicture.com&lt;/p&gt;
-
-&lt;p&gt;这首歌是对 steem 的绝妙隐喻。“那遥远的深海蓝色的世界，丰富而又多彩宁静美丽风景”，说的就是 steem 社区。&amp;rdquo; 有很多的快乐，有时候也莫名的惆怅&amp;rdquo;，刻画了小鱼们纠结的心态，而“大海外面有个世界是那样灿烂而宽广”，意味着什么，只有经历了 steem 的风风雨雨才会有感悟吧！&lt;/p&gt;
-
-&lt;p&gt;你是小鱼吗？欢迎留言，谈谈你的理想。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;小鱼的理想&lt;/p&gt;
-
-&lt;p&gt;许巍&lt;/p&gt;
-
-&lt;p&gt;在那遥远的深海蓝色的世界    有着丰富而又多彩宁静美丽风景&lt;/p&gt;
-
-&lt;p&gt;在这熙熙攘攘的繁华鱼群里    有个平凡的小鱼儿&lt;/p&gt;
-
-&lt;p&gt;有一些隐约向往  可是什么却不清楚&lt;/p&gt;
-
-&lt;p&gt;朋友们来来往往   带着梦想畅游远方&lt;/p&gt;
-
-&lt;p&gt;有很多的快乐    有时候也莫名的惆怅&lt;/p&gt;
-
-&lt;p&gt;有一天他听到这神奇的故事    有着不可思议色彩那样地不寻常&lt;/p&gt;
-
-&lt;p&gt;在这无尽的大海外面有个世界    是那样灿烂而宽广&lt;/p&gt;
-
-&lt;p&gt;鸟儿在自由歌唱    在阳光里喜悦飞翔&lt;/p&gt;
-
-&lt;p&gt;闪耀的美丽星空    好象灯盏照亮的心&lt;/p&gt;
-
-&lt;p&gt;有彩虹在原野    和鲜花在风里绽放&lt;/p&gt;
-
-&lt;p&gt;这世界好象光明    就深藏在他的心里&lt;/p&gt;
-
-&lt;p&gt;在以后的时间里    总会偶尔闪过渴望&lt;/p&gt;
-
-&lt;p&gt;那喜悦的候鸟和他们奇异的天空&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     
