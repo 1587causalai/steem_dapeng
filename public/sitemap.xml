@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/6dngsm-looking-for-contributors-to-r-mf-package/</loc>
+    <lastmod>2017-12-06T08:27:48+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/or/</loc>
     <lastmod>2017-12-04T13:50:03+00:00</lastmod>
   </url>
@@ -1136,7 +1141,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-12-04T13:50:03+00:00</lastmod>
+    <lastmod>2017-12-06T08:27:48+00:00</lastmod>
   </url>
   
   <url>
@@ -1207,7 +1212,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/matlab/</loc>
-    <lastmod>2017-11-30T17:09:48+00:00</lastmod>
+    <lastmod>2017-12-06T08:27:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1285,13 +1290,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-12-04T13:50:03+00:00</lastmod>
+    <lastmod>2017-12-06T08:27:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/tags/programming/</loc>
-    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
+    <lastmod>2017-12-06T08:27:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1476,13 +1481,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/utopian-io/</loc>
-    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
+    <lastmod>2017-12-06T08:27:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/utopian-io/</loc>
-    <lastmod>2017-12-02T17:20:15+00:00</lastmod>
+    <lastmod>2017-12-06T08:27:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   
