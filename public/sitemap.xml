@@ -880,14 +880,14 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-12-09T21:37:45+00:00</lastmod>
+    <loc>https://steemit.netlify.com/categories/cn/</loc>
+    <lastmod>2017-12-04T13:50:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/categories/cn/</loc>
-    <lastmod>2017-12-04T13:50:03+00:00</lastmod>
+    <loc>https://steemit.netlify.com/tags/cn/</loc>
+    <lastmod>2017-12-09T21:37:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -910,13 +910,13 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/cn-book/</loc>
+    <loc>https://steemit.netlify.com/categories/cn-book/</loc>
     <lastmod>2017-10-24T12:50:39+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/categories/cn-book/</loc>
+    <loc>https://steemit.netlify.com/tags/cn-book/</loc>
     <lastmod>2017-10-24T12:50:39+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -988,14 +988,14 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/colorchallenge/</loc>
-    <lastmod>2017-08-22T08:41:57+00:00</lastmod>
+    <loc>https://steemit.netlify.com/categories/colorchallenge/</loc>
+    <lastmod>2017-08-19T11:00:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/categories/colorchallenge/</loc>
-    <lastmod>2017-08-19T11:00:51+00:00</lastmod>
+    <loc>https://steemit.netlify.com/tags/colorchallenge/</loc>
+    <lastmod>2017-08-22T08:41:57+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1090,14 +1090,14 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/german/</loc>
-    <lastmod>2017-07-22T07:11:18+00:00</lastmod>
+    <loc>https://steemit.netlify.com/categories/german/</loc>
+    <lastmod>2017-07-17T14:13:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/categories/german/</loc>
-    <lastmod>2017-07-17T14:13:36+00:00</lastmod>
+    <loc>https://steemit.netlify.com/tags/german/</loc>
+    <lastmod>2017-07-22T07:11:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1108,13 +1108,13 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/gm/</loc>
+    <loc>https://steemit.netlify.com/categories/gm/</loc>
     <lastmod>2017-07-17T14:05:09+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/categories/gm/</loc>
+    <loc>https://steemit.netlify.com/tags/gm/</loc>
     <lastmod>2017-07-17T14:05:09+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1126,13 +1126,13 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/greek/</loc>
+    <loc>https://steemit.netlify.com/categories/greek/</loc>
     <lastmod>2017-07-17T13:51:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/categories/greek/</loc>
+    <loc>https://steemit.netlify.com/tags/greek/</loc>
     <lastmod>2017-07-17T13:51:03+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1161,14 +1161,14 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/introduceyourself/</loc>
-    <lastmod>2017-07-26T20:56:21+00:00</lastmod>
+    <loc>https://steemit.netlify.com/categories/introduceyourself/</loc>
+    <lastmod>2017-07-25T15:11:39+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/categories/introduceyourself/</loc>
-    <lastmod>2017-07-25T15:11:39+00:00</lastmod>
+    <loc>https://steemit.netlify.com/tags/introduceyourself/</loc>
+    <lastmod>2017-07-26T20:56:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1185,14 +1185,14 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/life/</loc>
-    <lastmod>2017-12-03T16:13:03+00:00</lastmod>
+    <loc>https://steemit.netlify.com/categories/life/</loc>
+    <lastmod>2016-10-14T11:08:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/categories/life/</loc>
-    <lastmod>2016-10-14T11:08:06+00:00</lastmod>
+    <loc>https://steemit.netlify.com/tags/life/</loc>
+    <lastmod>2017-12-03T16:13:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1371,25 +1371,25 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/steemdev/</loc>
-    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://steemit.netlify.com/categories/steemdev/</loc>
     <lastmod>2017-11-09T22:39:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/steemit/</loc>
-    <lastmod>2017-12-09T21:37:45+00:00</lastmod>
+    <loc>https://steemit.netlify.com/tags/steemdev/</loc>
+    <lastmod>2017-11-09T22:39:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/steemit/</loc>
+    <lastmod>2017-12-09T21:37:45+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://steemit.netlify.com/tags/steemit/</loc>
     <lastmod>2017-12-09T21:37:45+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1442,13 +1442,13 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/test/</loc>
+    <loc>https://steemit.netlify.com/categories/test/</loc>
     <lastmod>2017-08-29T13:34:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/categories/test/</loc>
+    <loc>https://steemit.netlify.com/tags/test/</loc>
     <lastmod>2017-08-29T13:34:45+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1490,13 +1490,13 @@
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/tags/utopian-io/</loc>
+    <loc>https://steemit.netlify.com/categories/utopian-io/</loc>
     <lastmod>2017-12-06T08:27:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://steemit.netlify.com/categories/utopian-io/</loc>
+    <loc>https://steemit.netlify.com/tags/utopian-io/</loc>
     <lastmod>2017-12-06T08:27:48+00:00</lastmod>
     <priority>0</priority>
   </url>

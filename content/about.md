@@ -3,16 +3,16 @@ title: 关于本站 About
 author: dapeng
 ---
 
-这是 @dapeng 在 steemit.com 发布帖子的镜像网站。下面是 @dapeng 在 steem 上的基本资料。更新时间：2017-12-10 05:02:09。
+这是 @dapeng 在 steemit.com 发布帖子的镜像网站。下面是 @dapeng 在 steem 上的基本资料。更新时间：2017-12-11 05:02:24。
 
-This is a mirror site of @dapeng’s posts on steemit.com. The following is the basic information about @dapeng. Updated:2017-12-10 05:02:10.
+This is a mirror site of @dapeng’s posts on steemit.com. The following is the basic information about @dapeng. Updated:2017-12-11 05:02:24.
 
 
 
 |items           |info                                                                                    |
 |:---------------|:---------------------------------------------------------------------------------------|
 |name            |dapeng                                                                                  |
-|id              |104839/485613                                                                           |
+|id              |104839/486280                                                                           |
 |created         |2016-10-14 11:03:39                                                                     |
 |profile_image   |![](http://0.gravatar.com/avatar/6fe1d4ffad212efc7985ecdd4ef9ef77?s=44&d=monsterid&r=g) |
 |about           |Scientific researcher, blogger, R user &#124;  科研工作者，博主，R 语言爱好者           |
@@ -23,5 +23,5 @@ This is a mirror site of @dapeng’s posts on steemit.com. The following is the 
 |available_SBD   |242.854                                                                                 |
 |available_VESTS |8474670                                                                                 |
 |reputation      |65.656                                                                                  |
-|followers_count |558                                                                                     |
+|followers_count |556                                                                                     |
 |following_count |82                                                                                      |
