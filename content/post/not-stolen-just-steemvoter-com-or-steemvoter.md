@@ -41,7 +41,7 @@ Anyway, I quit steemvoter. What if they use my right to upvote some posts saying
 
 起初，我的点赞名单是很多大神，为了蹭点油水。
 
-后来，有了点社区责任感之后，我停掉了所有的自动点赞，并收回所有代理出去的 SP，把这[五毛钱的点赞](https://steemit.com/cn/@dapeng/upvote-of-fifty-cents)全部用来支持华语区新人。
+后来，有了点社区意识之后，我停掉了所有的自动点赞，并收回所有代理出去的 SP，把这[五毛钱的点赞](https://steemit.com/cn/@dapeng/upvote-of-fifty-cents)全部用来支持华语区新人。
 
 再后来，凛冬忽至，新人渐少，我自己也比较忙，于是就重启了自动点赞，只不过是换了一批名单：去掉了一些大神，加上了前两个月的活跃新人。
 
