@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/3-or-award-ceremony-for-cn-voice-prize/</loc>
+    <lastmod>2017-12-19T09:24:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://steemit.netlify.com/post/recent-three-months-on-steem-or/</loc>
+    <lastmod>2017-12-18T23:05:24+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/not-stolen-just-steemvoter-com-or-steemvoter/</loc>
     <lastmod>2017-12-09T21:37:45+00:00</lastmod>
   </url>
@@ -881,13 +891,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-12-09T21:37:45+00:00</lastmod>
+    <lastmod>2017-12-19T09:24:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/cn/</loc>
-    <lastmod>2017-12-04T13:50:03+00:00</lastmod>
+    <lastmod>2017-12-19T09:24:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -923,7 +933,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-contest/</loc>
-    <lastmod>2017-11-22T15:41:39+00:00</lastmod>
+    <lastmod>2017-12-19T09:24:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -953,7 +963,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-reader/</loc>
-    <lastmod>2017-12-03T16:13:03+00:00</lastmod>
+    <lastmod>2017-12-18T23:05:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -977,7 +987,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-voice/</loc>
-    <lastmod>2017-12-04T13:50:03+00:00</lastmod>
+    <lastmod>2017-12-19T09:24:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1151,7 +1161,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-12-09T21:37:45+00:00</lastmod>
+    <lastmod>2017-12-19T09:24:06+00:00</lastmod>
   </url>
   
   <url>
@@ -1264,7 +1274,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/news/</loc>
-    <lastmod>2017-10-27T15:44:27+00:00</lastmod>
+    <lastmod>2017-12-18T23:05:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1300,7 +1310,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-12-09T21:37:45+00:00</lastmod>
+    <lastmod>2017-12-19T09:24:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1348,7 +1358,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/stats/</loc>
-    <lastmod>2017-10-27T15:44:27+00:00</lastmod>
+    <lastmod>2017-12-18T23:05:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1384,7 +1394,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/steemit/</loc>
-    <lastmod>2017-12-09T21:37:45+00:00</lastmod>
+    <lastmod>2017-12-18T23:05:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   

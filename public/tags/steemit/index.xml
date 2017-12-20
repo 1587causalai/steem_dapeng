@@ -9,6 +9,110 @@
     <atom:link href="https://steemit.netlify.com/tags/steemit/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Recent Three Months on Steem - 最近三个月</title>
+      <link>https://steemit.netlify.com/post/recent-three-months-on-steem-or/</link>
+      <pubDate>Mon, 18 Dec 2017 23:05:24 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/recent-three-months-on-steem-or/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/recent-three-months-on-steem-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A friend asked me about the recent trends in  ID sign-ups and posts on steem. I was also wondering if there is decrease in new sign-up. Remember &lt;a href=&#34;https://steemit.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;Ned undelegated his SP from some Chinese users&lt;/a&gt;? Did the undelegation have impact on CN community? Let&amp;rsquo;s have a look at the data from steemsql.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;最近这些天，闭关熬论文，至于 steem 上发生了什么，我是不知有汉，无论魏晋。好在还有朋友惦记，托我查看一下最近三个月 steem 的账号注册和活跃情况，尤其是华语区的情况。好吧，我也一直想看看自从临时大鲸们卸任后的变化：是不是新人越来越少了？是不是旧人越来越懒了？在 &lt;a href=&#34;https://steemit.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;Ned 收回代理给临时大鲸鱼的 SP&lt;/a&gt; 之后，华语区是否真的变冷了？——我感觉不是，因为我的机器人每天发布的&lt;a href=&#34;https://steemit.com/@pzhao&#34;&gt;新人希望工程日报&lt;/a&gt;显示，最近 CN 区的发帖数每天超过 300，比临时大鲸鱼活跃时期发帖更多。&lt;/p&gt;
+
+&lt;p&gt;下面的数据来自 steemsql 数据库，数据获取和统计用的是 R 语言。&lt;/p&gt;
+
+&lt;h3 id=&#34;the-entire-site-全网情况&#34;&gt;The entire site | 全网情况&lt;/h3&gt;
+
+&lt;p&gt;为了描述方便，我们先下个定义：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;“活跃账号&amp;rdquo;，指的是必须在最近 90 天里发过至少一篇 blog 的账号。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;“新账号”，指的是到今天为止注册未满 90 天的账号。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;首先，我们先看看 steet 上的账号总数，注册用户共有 502105 个。那么活跃账号是 91892 个，占账号总数的 18%。是的，在最近三个月里，全网 ID 每 5 个账号里只有一个发过帖子，另外 4 个基本、已经、死了。&lt;/p&gt;
+
+&lt;p&gt;下图显示了每天新注册的用户数量（蓝色）和其中活跃的数量（橘色）。最近 90 天内，共注册 129056 个新用户，平均每天 1434个。这些新 ID 里，发过帖子的有 48531 个，占全部新 ID 的 38% 。也就是说，每 5 个新 ID 里，有 2 个发过帖子。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There are 502105 IDs in total, 18% of which are active. The following image shows the daily new sign-ups (blue) and the active user number (orange) in the recent 90 days. 38% of the new IDs have posted.  &lt;em&gt;New IDs&lt;/em&gt; means those whose steem age is younger than 90 days.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQma6qouzK5Lk9Y7nw2WZM3bzRGrbP2KekiNvWTqsUhEmAj/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图显示了是全网每天的发帖总数（蓝色）和其中来自新账号的发帖数（橘色） 。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The following image shows the daily post quantity (blue) and those from new IDs (orange).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmaMr2TepwNyaf1dcR3EuhNQdQ7E6JCW5enCjwbascz85v/unnamed-chunk-5-1.png&#34; alt=&#34;unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;cn-category-cn-区情况&#34;&gt;CN category | CN 区情况&lt;/h2&gt;
+
+&lt;p&gt;下面，我们用类似的方法，看看 CN 区的情况。下图是每天来 CN 区发帖的用户数量（蓝色）和其中新用户的数量（橘色）。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The following image shows how many IDs posted in CN category everyday (blue), and how many of them are new IDs (orange).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfLNBdRUm5CymZhfTxgchFQrFLvqZeiDuFhFawuwo3Scw/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图显示了是 CN 区每天的发帖总数（蓝色）和其中来自新账号的发帖数（橘色） 。最近半个月呼呼猛涨，是出大事儿了吗？我一定在闭关时错过了什么……&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The following image shows the daily post quantity (blue) and those from new IDs (orange) in CN category.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeck5JDm4KJMpwPYTgU8gQyvG76VWNNFZXUK1SbRqANeU/unnamed-chunk-9-1.png&#34; alt=&#34;unnamed-chunk-9-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;cn-reader-sub-category-cn-reader-子区情况&#34;&gt;CN-READER Sub-category | CN-READER 子区情况&lt;/h2&gt;
+
+&lt;p&gt;我们特别看看 cn-reader 子区的情况。下图是每??来 cn-reader 子区发帖的用户数量（蓝色）和其中新用户的数量（橘色）。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The following image shows how many IDs posted in CN-READER category everyday (blue), and how many of them are new IDs (orange).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfNE3qoK7mrxERZU2KFcCXcAGzMRjgCpaz9fTeq5g8xcw/unnamed-chunk-11-1.png&#34; alt=&#34;unnamed-chunk-11-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图显示了是 cn-reader 子区每天的发帖总数（蓝色）和其中来自新账号的发帖数（橘色） 。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The following image shows the daily post quantity (blue) and those from new IDs (orange) in CN-READER sub-category.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWPwjtcnmzsVdD4bbwPYZHPiECkZMTvptzPW8GEQCpYFC/unnamed-chunk-13-1.png&#34; alt=&#34;unnamed-chunk-13-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Do you remember when @ned undelegated his SP from the Chinese users?&lt;/p&gt;
+
+&lt;p&gt;It was Oct. 24, 2017, when we said &lt;em&gt;Winter is coming&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;After only one month or so, the ice is gone.&lt;/p&gt;
+
+&lt;p&gt;Keep moving on and never give up.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;那么大家还记得 Ned 是哪天收回他的 SP 吗？&lt;/p&gt;
+
+&lt;p&gt;是 2017 年 10 月 24 日。&lt;/p&gt;
+
+&lt;p&gt;那天，华语区哀鸿遍野，仿佛世界末日。&lt;/p&gt;
+
+&lt;p&gt;而如今，才过去几天，华语区的活跃度早就冰雪消融，万物复苏了。&lt;/p&gt;
+
+&lt;p&gt;留得青山在，不愁没柴烧。不论什么情况下，都不要抛下老婆孩子跳楼。看得远一点，永远都不要绝望，永远。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Not stolen! Just Steemvoter.com - 我终止了 steemvoter 自动投票服务</title>
       <link>https://steemit.netlify.com/post/not-stolen-just-steemvoter-com-or-steemvoter/</link>
       <pubDate>Sat, 09 Dec 2017 21:37:45 +0000</pubDate>
@@ -6533,173 +6637,6 @@ SELECT * FROM TxVotes WHERE voter IN (&#39;htliao&#39;,  &#39;linuslee0216&#39;,
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQme2y8Rg92MTiBK2stWhZ9ZhTsvXBJyNLxTEjDvwBda9DK/steemcn1.jpg&#34; alt=&#34;steemcn1.jpg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQma26UjtrMxv1WndJ7DdLAVTCxTMrPM1eQcU7PXMAhMkYe/steemcn2.jpg&#34; alt=&#34;steemcn2.jpg&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Steem 中国策第 3 期：祝贺头领声望破 75 - CN Weekly 2017-10-15</title>
-      <link>https://steemit.netlify.com/post/steem-3-75-or-cn-weekly-2017-10-15/</link>
-      <pubDate>Sun, 15 Oct 2017 13:12:57 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/steem-3-75-or-cn-weekly-2017-10-15/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-3-75-or-cn-weekly-2017-10-15&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-3-75-or-cn-weekly-2017-10-15&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-3-75-or-cn-weekly-2017-10-15&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-3-75-or-cn-weekly-2017-10-15&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/steem-3-75-or-cn-weekly-2017-10-15.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;“试看书林隐处，几多俊逸儒流。” Steem 中国策，观察 cn 生态，见证英雄浮沉。&lt;/p&gt;
-
-&lt;p&gt;在刚刚过去的一周里，整个 cn 区全部帖子的关键词是这样的：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWc7KyN9Wp9ePmcU4MgB6wFU2qrDajE9C9VafHx7Xg89t/cnweekly.jpg&#34; alt=&#34;cnweekly.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;cn 社区的&lt;a href=&#34;https://steemit.com/cn/@dapeng/6mnla8-steemit-cn&#34;&gt;水浒英雄榜&lt;/a&gt;，目前榜上有 211 条英雄好汉（尚未入伙的，请联系 @dapeng 入伙）。下面我们通过目前的状态、最近一周的变化和大鲸小鲸的活动来分别描述。&lt;/p&gt;
-
-&lt;h2 id=&#34;状态&#34;&gt;状态&lt;/h2&gt;
-
-&lt;p&gt;水泊梁山这 211 条英雄好汉里，资历最老的，已经注册了 539 天；最年轻的，注册了只有 5 天。平均为 132 天，中位数为85天。有50 % 的账号集中在56 到 124 天之间。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmRT3ppajZq8k8cjtsde5jutnpLAmMC5ueRVF1Ymsx8pyM/unnamed-chunk-2-1.png&#34; alt=&#34;unnamed-chunk-2-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;再看看权力的等级分布。英雄榜上有 5 条大鲸（即权力值超过 48.6 万 SP），4 条小鲸（即权力值超过 4.86 万 SP），10 条海豚（即权力值超过 4860 SP），41 条大鱼（即权力值超过 486 SP），151 条小鱼（即权力值低于 486 SP）。做成图是这样的：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmXBX8KAU9n85sjwwpmf4yYiB2Ab3tsgiZRccQSjGkoZGy/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;考察一下这个圈子的声望值，平均为 50.13，中位数为51.65，最低的是3.52，最高的是75.03。本周，我们英雄榜的头领声望首次突破 75 ！鸣炮庆祝！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmdxMET4DC8qkvsVvzXbUHc4h2BhhuKoGCWKmsjYd9UR1e/unnamed-chunk-4-1.png&#34; alt=&#34;unnamed-chunk-4-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;如果你是小鱼，不必担心，有 50 % 的账号集中在45.13 到 59.065 之间——如果你在这个区间，没关系，高于这个区间或低于这个区间的，都只有 25% 而已。&lt;/p&gt;
-
-&lt;h2 id=&#34;社区成长和权力更迭&#34;&gt;社区成长和权力更迭&lt;/h2&gt;
-
-&lt;p&gt;跟上周相比，入伙人数净增了 6 条好汉。账号价值总和，由上周的 536898 增长到本周的564996，净增 28097，净增了5.2%. 实际权力（ESP）总和，由上周的 3313953 SP 增长到本周的3328963 SP，净增 15010 SP，净增了0.5%.&lt;/p&gt;
-
-&lt;p&gt;在小鱼到大鲸的五个等级中，小鱼新增两条，大鱼新增四条。不过，由于新人的入伙，权力的平均值比上周降低了388.5 SP，权力的中位数也降低了3.2 SP；声望的平均值不变，而声望的中位数则降低了 0.1。我们期待新人的发展给未来带来生机。&lt;/p&gt;
-
-&lt;p&gt;具体到每个人，在过去的一周里，按实权（ESP）排座次水浒 108 将里，上升最快的是 @incrediblesnow, 英雄角色从上周的&amp;rdquo;地全星 杜兴&amp;rdquo;上升为&amp;rdquo;地轴星 凌振&amp;rdquo; 。下面列出了在水浒英雄榜座次上升最快的前十名好汉。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;账号&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;上周座次&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;本周座次&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;上升位数&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;@ceciliali&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;191&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;134&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;57&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;@kangnajiang&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;183&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;139&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;44&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;@lessercold&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;197&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;154&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;43&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;@leir&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;180&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;142&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;38&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;@incrediblesnow&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;89&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;52&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;37&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;@angelababy&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;111&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;78&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;33&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;@bobdos&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;144&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;112&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;32&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;@liumei&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;170&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;138&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;32&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;@baixu1018&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;196&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;165&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;31&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;@chaoyang&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;195&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;164&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;31&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;点赞时间&#34;&gt;点赞时间&lt;/h2&gt;
-
-&lt;p&gt;先看看几位大鲸的活跃时间。虽然 abit 没有入伙，但是对 cn 区的贡献太大，所以跟其他 5 位大鲸并在一起观察。下图第一排是他们的评论和发帖的 24 小时分布，第二排是他们点赞的 24 小时时间分布。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmVaAgcbbfEwFsjAb2eFobGbWVpMCBWhKdqPZzebZVd8C4/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;跟上周的报告对比可以看出，有几位大鲸的活跃时间明显有变化：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;abit:  点赞时间集中在 UTC 13 - 14时（北京时间 21 - 22 时）。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;htliao: 活跃时间集中在 8 时（北京时间 16 时）前后。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;linuslee0216:  点赞主要集中在 15 到 17 时（北京时间 23 到 1 时）。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;nicolemoker：活跃时间主要是 9 到 11 时（北京时间 17 到 19 时）。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;sweetsssj: 点赞时间主要在 22 &amp;ndash;23 时（北京时间 6 &amp;ndash; 7 时）。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;tumutanzi: 点赞主要集中在 22 &amp;ndash; 23 时（北京时间 6 &amp;ndash; 7 时）。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;几位杀人鲸（小鲸）的活跃时间分布见下图，这里不再详细描述。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbLKuHnCbqSMu8HMbiXn2cem6BwK7S1fM1WFZYki4du9x/unnamed-chunk-8-1.png&#34; alt=&#34;unnamed-chunk-8-1.png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;CN 区的活跃，跟水浒英雄榜高层头领们的辛勤点赞息息相关。让我们向他们表示诚挚的感谢。&lt;/p&gt;
-
-&lt;p&gt;“鹰击长空，鱼翔浅底，万类霜天竞自由。”祝愿华语区蒸蒸日上，做 steem 的弄潮儿！&lt;/p&gt;
-
-&lt;p&gt;Tags: #steemswatch #steemit #ranking&lt;/p&gt;
-
-&lt;p&gt;感谢关注“大鹏观察”。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Thank you for your attention to Steems&amp;rsquo; Watch by @dapeng.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏观察&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

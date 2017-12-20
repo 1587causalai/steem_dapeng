@@ -9,6 +9,110 @@
     <atom:link href="https://steemit.netlify.com/tags/cn-reader/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Recent Three Months on Steem - 最近三个月</title>
+      <link>https://steemit.netlify.com/post/recent-three-months-on-steem-or/</link>
+      <pubDate>Mon, 18 Dec 2017 23:05:24 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/recent-three-months-on-steem-or/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/recent-three-months-on-steem-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/recent-three-months-on-steem-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A friend asked me about the recent trends in  ID sign-ups and posts on steem. I was also wondering if there is decrease in new sign-up. Remember &lt;a href=&#34;https://steemit.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;Ned undelegated his SP from some Chinese users&lt;/a&gt;? Did the undelegation have impact on CN community? Let&amp;rsquo;s have a look at the data from steemsql.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;最近这些天，闭关熬论文，至于 steem 上发生了什么，我是不知有汉，无论魏晋。好在还有朋友惦记，托我查看一下最近三个月 steem 的账号注册和活跃情况，尤其是华语区的情况。好吧，我也一直想看看自从临时大鲸们卸任后的变化：是不是新人越来越少了？是不是旧人越来越懒了？在 &lt;a href=&#34;https://steemit.com/steemit/@dapeng/can-the-gossip-tell-us-why-ned-undelegated-sp-the-answer-is-no&#34;&gt;Ned 收回代理给临时大鲸鱼的 SP&lt;/a&gt; 之后，华语区是否真的变冷了？——我感觉不是，因为我的机器人每天发布的&lt;a href=&#34;https://steemit.com/@pzhao&#34;&gt;新人希望工程日报&lt;/a&gt;显示，最近 CN 区的发帖数每天超过 300，比临时大鲸鱼活跃时期发帖更多。&lt;/p&gt;
+
+&lt;p&gt;下面的数据来自 steemsql 数据库，数据获取和统计用的是 R 语言。&lt;/p&gt;
+
+&lt;h3 id=&#34;the-entire-site-全网情况&#34;&gt;The entire site | 全网情况&lt;/h3&gt;
+
+&lt;p&gt;为了描述方便，我们先下个定义：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;“活跃账号&amp;rdquo;，指的是必须在最近 90 天里发过至少一篇 blog 的账号。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;“新账号”，指的是到今天为止注册未满 90 天的账号。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;首先，我们先看看 steet 上的账号总数，注册用户共有 502105 个。那么活跃账号是 91892 个，占账号总数的 18%。是的，在最近三个月里，全网 ID 每 5 个账号里只有一个发过帖子，另外 4 个基本、已经、死了。&lt;/p&gt;
+
+&lt;p&gt;下图显示了每天新注册的用户数量（蓝色）和其中活跃的数量（橘色）。最近 90 天内，共注册 129056 个新用户，平均每天 1434个。这些新 ID 里，发过帖子的有 48531 个，占全部新 ID 的 38% 。也就是说，每 5 个新 ID 里，有 2 个发过帖子。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There are 502105 IDs in total, 18% of which are active. The following image shows the daily new sign-ups (blue) and the active user number (orange) in the recent 90 days. 38% of the new IDs have posted.  &lt;em&gt;New IDs&lt;/em&gt; means those whose steem age is younger than 90 days.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQma6qouzK5Lk9Y7nw2WZM3bzRGrbP2KekiNvWTqsUhEmAj/unnamed-chunk-3-1.png&#34; alt=&#34;unnamed-chunk-3-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图显示了是全网每天的发帖总数（蓝色）和其中来自新账号的发帖数（橘色） 。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The following image shows the daily post quantity (blue) and those from new IDs (orange).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmaMr2TepwNyaf1dcR3EuhNQdQ7E6JCW5enCjwbascz85v/unnamed-chunk-5-1.png&#34; alt=&#34;unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;cn-category-cn-区情况&#34;&gt;CN category | CN 区情况&lt;/h2&gt;
+
+&lt;p&gt;下面，我们用类似的方法，看看 CN 区的情况。下图是每天来 CN 区发帖的用户数量（蓝色）和其中新用户的数量（橘色）。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The following image shows how many IDs posted in CN category everyday (blue), and how many of them are new IDs (orange).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfLNBdRUm5CymZhfTxgchFQrFLvqZeiDuFhFawuwo3Scw/unnamed-chunk-7-1.png&#34; alt=&#34;unnamed-chunk-7-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图显示了是 CN 区每天的发帖总数（蓝色）和其中来自新账号的发帖数（橘色） 。最近半个月呼呼猛涨，是出大事儿了吗？我一定在闭关时错过了什么……&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The following image shows the daily post quantity (blue) and those from new IDs (orange) in CN category.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeck5JDm4KJMpwPYTgU8gQyvG76VWNNFZXUK1SbRqANeU/unnamed-chunk-9-1.png&#34; alt=&#34;unnamed-chunk-9-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;cn-reader-sub-category-cn-reader-子区情况&#34;&gt;CN-READER Sub-category | CN-READER 子区情况&lt;/h2&gt;
+
+&lt;p&gt;我们特别看看 cn-reader 子区的情况。下图是每??来 cn-reader 子区发帖的用户数量（蓝色）和其中新用户的数量（橘色）。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The following image shows how many IDs posted in CN-READER category everyday (blue), and how many of them are new IDs (orange).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmfNE3qoK7mrxERZU2KFcCXcAGzMRjgCpaz9fTeq5g8xcw/unnamed-chunk-11-1.png&#34; alt=&#34;unnamed-chunk-11-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下图显示了是 cn-reader 子区每天的发帖总数（蓝色）和其中来自新账号的发帖数（橘色） 。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The following image shows the daily post quantity (blue) and those from new IDs (orange) in CN-READER sub-category.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmWPwjtcnmzsVdD4bbwPYZHPiECkZMTvptzPW8GEQCpYFC/unnamed-chunk-13-1.png&#34; alt=&#34;unnamed-chunk-13-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Do you remember when @ned undelegated his SP from the Chinese users?&lt;/p&gt;
+
+&lt;p&gt;It was Oct. 24, 2017, when we said &lt;em&gt;Winter is coming&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;After only one month or so, the ice is gone.&lt;/p&gt;
+
+&lt;p&gt;Keep moving on and never give up.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;那么大家还记得 Ned 是哪天收回他的 SP 吗？&lt;/p&gt;
+
+&lt;p&gt;是 2017 年 10 月 24 日。&lt;/p&gt;
+
+&lt;p&gt;那天，华语区哀鸿遍野，仿佛世界末日。&lt;/p&gt;
+
+&lt;p&gt;而如今，才过去几天，华语区的活跃度早就冰雪消融，万物复苏了。&lt;/p&gt;
+
+&lt;p&gt;留得青山在，不愁没柴烧。不论什么情况下，都不要抛下老婆孩子跳楼。看得远一点，永远都不要绝望，永远。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>逻辑娃 III - Logical Kid</title>
       <link>https://steemit.netlify.com/post/iii-logical-kid/</link>
       <pubDate>Sun, 03 Dec 2017 16:13:03 +0000</pubDate>
@@ -1196,66 +1300,6 @@ bookdownplus()
 &lt;p&gt;朋友听说之后，慕名而来，说什么也??来给他家孩子报个名。&lt;/p&gt;
 
 &lt;p&gt;虽然，他家住得好远好远。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>欢迎参加新人“三个一”活动第 3 期 Welcome Prize for New Steemians 3</title>
-      <link>https://steemit.netlify.com/post/3-welcome-prize-for-new-steemians-3/</link>
-      <pubDate>Sun, 29 Oct 2017 08:30:42 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/3-welcome-prize-for-new-steemians-3/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/3-welcome-prize-for-new-steemians-3&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/3-welcome-prize-for-new-steemians-3&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/3-welcome-prize-for-new-steemians-3&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-welcome-prize-for-new-steemians-3&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/3-welcome-prize-for-new-steemians-3.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;希望工程“三个一”活动第 3 期隆重开幕！欢迎所有新老用户参加，投稿，点赞，留言，赞助……形式不限。本活动的发起详见&lt;a href=&#34;https://steemit.com/cn/@dapeng/welcome-prize-for-new-steemians&#34;&gt;第一期的简介&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmZZuvwFeacPW4KqrXFdjWhTjP1USNhZ4FQyM83Ms8wLCy/cn-31-3.jpg&#34; alt=&#34;cn-31-3.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;怎样参加&#34;&gt;怎样参加&lt;/h2&gt;
-
-&lt;p&gt;只需在 steem 上发布一篇符合以下要求的文章即可：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;参加活动的文章里需包含“&lt;strong&gt;三个一&lt;/strong&gt;”：即&lt;strong&gt;一张原创照片&lt;/strong&gt; + &lt;strong&gt;一首诗（不必原创，注明出处）&lt;/strong&gt; + &lt;strong&gt;一段原创文字&lt;/strong&gt;。“三个一”的顺序可以随意。文章标题不限。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;本期主题：&lt;strong&gt;“问”&lt;/strong&gt;。打开脑洞，随便想，只要能跟“问”字扯上关系的，都行。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;照片和文字必须原创。如有抄袭、剽窃，零容忍，一经发现，将会被列入共享黑名单，以后永无机会参加“希望工程”的任何活动。没有黄牌，直接红牌！&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;为了方便统计，文章的标签（Tag）必须包含 cn-31，第一标签必须是 cn。建议标签: cn cn-reader cn-31 photography poetry&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;欢迎一人多次投稿，取其中最高名次的一篇参加评奖。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;投稿的文章可以参加 steem 上同期举办的其他活动，对“三个一”评奖没有任何影响。&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;具体实例，请看&lt;a href=&#34;https://steemit.com/cn/@dapeng/1-or-awards-ceremony-for-the-welcome-prize-new-steemians&#34;&gt;以前的投稿作品&lt;/a&gt;即可。&lt;/p&gt;
-
-&lt;h2 id=&#34;活动时间&#34;&gt;活动时间&lt;/h2&gt;
-
-&lt;p&gt;活动自本文发布起开始，截至 2017-11-03 23:59 (北京时间)，即下周五晚上，为期大约一周。颁奖时间为2017-11-04 星期六。&lt;/p&gt;
-
-&lt;h2 id=&#34;全新的奖项设置和评奖办法&#34;&gt;全新的奖项设置和评奖办法&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;奖金：暂定 32 SBD，来自&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2yuqbh-welcome-prize-for-new-steemians&#34;&gt;本活动上一期发起帖&lt;/a&gt;的文章净收益。接受赞助！ 本文净收益将留给下期活动使用。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;奖项：暂定 金奖 1 名（ 6 SBD）、银奖 3 名（各 4 SBD）、铜奖 5 名（各 2 SBD），幸运奖 4 名 （各 1 SBD），共 13 名。欢迎赞助不同奖项！比如，收到赞助 1 SBD，我们就增设幸运奖一名; 收到 2 SBD， 就增设铜奖一名，依次类推，不设上限！如果奖项数量多于参加人数，那么盈余就留作下次活动使用。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;评奖范围：金银铜奖，将在注册未满 60 天（2017 年 8 月 30 日当天（UTC）及以后注册）的用户里产生，幸运奖，将在参加活动的所有用户里产生，随机抽取。注册时间可以去 &lt;a href=&#34;https://steemdb.com/@dapeng/data&#34;&gt;https://steemdb.com/@dapeng/data&lt;/a&gt;，请把这个链接里我的 id 换成你的 id。网页表格里 created 一项就是你的注册时间。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;评奖规则：按文章后面得到的留言（Reply）人数从多到少排序决定奖项。注意，是人数，不是留言的条数。发布多条留言的人按 1 个人计算（即不重复计算）。如有并列，按文章发表较迟的优先获奖。一人多次投稿的，取其中最高名次的一篇参加评奖。幸运奖随机抽选。&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;活动的最终解释权归 @dapeng 所有。&lt;/p&gt;
-
-&lt;p&gt;欢迎大家留言，对活动提出你的建议或意见！谢谢！&lt;/p&gt;
-
-&lt;p&gt;Tags: #cn-reader #cn-contest #contest&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
