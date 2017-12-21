@@ -3,9 +3,9 @@ title: 关于本站 About
 author: dapeng
 ---
 
-这是 @dapeng 在 steemit.com 发布帖子的镜像网站。下面是 @dapeng 在 steem 上的基本资料。更新时间：2017-12-20 05:06:05。
+这是 @dapeng 在 steemit.com 发布帖子的镜像网站。下面是 @dapeng 在 steem 上的基本资料。更新时间：2017-12-21 05:23:06。
 
-This is a mirror site of @dapeng’s posts on steemit.com. The following is the basic information about @dapeng. Updated:2017-12-20 05:06:05.
+This is a mirror site of @dapeng’s posts on steemit.com. The following is the basic information about @dapeng. Updated:2017-12-21 05:23:06.
 
 
 

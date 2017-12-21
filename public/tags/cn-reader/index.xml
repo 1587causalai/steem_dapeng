@@ -9,6 +9,342 @@
     <atom:link href="https://steemit.netlify.com/tags/cn-reader/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>pinyin: an R package that converts Chinese characters into Latin letters - 将中文转成汉语拼音的 R 语言包</title>
+      <link>https://steemit.netlify.com/post/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r/</link>
+      <pubDate>Wed, 20 Dec 2017 15:51:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This post was written bilingually, in English and Chinese. If you use the tool introduced in this post, you are able to read both languages!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本文用英文和中文写作，中文在后半部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;Chinese characters are mysterious. You can more or less pronounce German, Italien or French words from their spellings even you know nothing of these languages because they are written in Latin letters, but you cannot pronounce Chinese characters from their looking. If you don&amp;rsquo;t believe me, go to the cn category on steem and try. Chinese characters are not composed of Latin letters.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, each Chinese character has a spelling in Latin letters, which is called &lt;em&gt;pinyin&lt;/em&gt;. It is a must tool to learn Chinese. Here is the defination of pinyin on &lt;a href=&#34;https://en.wikipedia.org/wiki/Pinyin&#34;&gt;Wikipedia&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Pinyin, or Hànyǔ Pīnyīn, is the official romanization system for Standard Chinese in mainland China, Malaysia, Singapore, and Taiwan. It is often used to teach Standard Chinese, which is normally written using Chinese characters. The system includes four diacritics denoting tones. Pinyin without tone marks is used to spell Chinese names and words in languages written with the Latin alphabet, and also in certain computer input methods to enter Chinese characters.&lt;/p&gt;
+
+&lt;p&gt;The pinyin system was developed in the 1950s by many linguists, including Zhou Youguang, based on earlier forms of romanization of Chinese. It was published by the Chinese government in 1958 and revised several times. The International Organization for Standardization (ISO) adopted pinyin as an international standard in 1982, followed by the United Nations in 1986. The system was adopted as the official standard in Taiwan in 2009, where it is used for romanization alone (in part to make areas more English-friendly) rather than for educational and computer-input purposes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you want to learn Chinese, you have to start with pinyin. Chinese kids learn Chinese from pinyin. You can find the pinyin of each Chinese character in a dictionary. but would it be exciting if Chinese characters are converted to pinyin automatically?&lt;/p&gt;
+
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+
+&lt;p&gt;In my computer, many files are named in Chinese. When I want to share them with international friends, I have to convert the file names into Latin letters munally. If there are tens or hundreds of them, hmm, I would give up. What if they can automatically be done with R?&lt;/p&gt;
+
+&lt;p&gt;Some of my international friends are learning Chinese. When I share a nice Chinese post on Utopian.io with them, they complain that they have to look up the dictionary from time to time. The Chinese version of MS Word could help, but they have to copy and paste and adjust the layout and convert and so on. If there are multiple posts, they lose their patience. What if they can automatically be done with R?&lt;/p&gt;
+
+&lt;p&gt;Thus I developed an R package for converting Chinese characters into pinyin.&lt;/p&gt;
+
+&lt;p&gt;Powered with R language, you can do further statistics and analysis in Chinese pronunciations with the help of pinyin package!&lt;/p&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;With R pinyin package, the tasks mentioned above can be achieved with one single command. Chinese characters can be converted into Latin letters in different ways, including the standard full spelling with or without the four tones, or the first letter of each character. You can convert either strings or text files, or rename multiple filenames.&lt;/p&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation-of-r&#34;&gt;Installation of R&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org&#34;&gt;Download R&lt;/a&gt; and install it.&lt;/p&gt;
+
+&lt;h3 id=&#34;installation-of-pinyin&#34;&gt;Installation of pinyin&lt;/h3&gt;
+
+&lt;p&gt;In R environment, run the following codes to install pinyin.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# stable version:
+install.packages(&amp;quot;pinyin&amp;quot;)
+# or development version:
+devtools::install_github(&amp;quot;pzhaonet/pinyin&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;As an example, run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(&#39;pinyin&#39;)
+pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then you get the full spellings with Chinese tones as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ_chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can change the separators between the words:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;)
+## [1] &amp;quot;qiānɡ dí hé xū yuàn yánɡ liǔ chūn fēnɡ bú dù yù mén ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can use numbers to specify the tones:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;tone&#39;)
+## [1] &amp;quot;qiang1 di2 he2 xu1 yuan4 yang2 liu3 chun1 feng1 bu2 du4 yu4 men2 guan1&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or toneless:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;toneless&#39;)
+## [1] &amp;quot;qiang di he xu yuan yang liu chun feng bu du yu men guan&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or only the first letter of each word:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39;&#39;, only_first_letter = TRUE)
+## [1] &amp;quot;qdhxyylcfbdymɡ&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The function &lt;code&gt;file.rename2py()&lt;/code&gt;can convert Chinese file names into pinyin, and the function &lt;code&gt;file2py()&lt;/code&gt; can convert text files into pinyin.&lt;/p&gt;
+
+&lt;p&gt;Now you can read Chinese articles aloud to your friends and shock them!&lt;/p&gt;
+
+&lt;h2 id=&#34;link-to-the-repo&#34;&gt;Link to the Repo&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/pzhaonet/pinyin&#34;&gt;https://github.com/pzhaonet/pinyin&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of Work&lt;/h2&gt;
+
+&lt;p&gt;In my profile on Utopian.io, the github repo pinyin is listed in &lt;a href=&#34;https://utopian.io/project/pzhaonet/pinyin/github/92541456/all&#34;&gt;my project page&lt;/a&gt;,  which is show in the screenshot as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513784911/jy8irppguojtuv4w9a4i.jpg&#34; alt=&#34;pinyin.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我开发的这个 R 语言包，粗暴地用拼音取名为 &lt;a href=&#34;https://github.com/pzhaonet/pinyin/&#34;&gt;pinyin&lt;/a&gt;，作用是把汉字转换成拼音。&lt;/p&gt;
+
+&lt;p&gt;有什么用呢？&lt;/p&gt;
+
+&lt;p&gt;有时候需要跟外国朋友分享我电脑里的一些文件，文件名是中文的，发过去人家看起来是乱码，所以我会先把文件名手动改成拉丁字母。文件少了还好，要是有成千上万个，算了，我不分享了。&lt;/p&gt;
+
+&lt;p&gt;中文在世界上的影响力愈来愈大，有些外国朋友在学中文。我是混 steem 的，看见好的中文帖想发给他们，他们抱怨说还得查字典。那就用中文版的 word 转换不行吗？拷贝，粘贴，调整格式，转换……烦死了。要是有多篇，算了人家没耐心弄了。&lt;/p&gt;
+
+&lt;p&gt;现在有了 R 语言的 pinyin 包，一条命令就能批量修改成千上万的文件名，能把多个字符串或多个文本文件转成拼音了。再说中文难学的老外，给我闭嘴。&lt;/p&gt;
+
+&lt;p&gt;而且，依靠 R 语言强大的数据处理、统计分析能力，你可以从 pinyin 包出发，对任何一篇文章的中文发音做文本分析了！&lt;/p&gt;
+
+&lt;h2 id=&#34;安装方法-ān-zhuānɡ-fānɡ-fǎ&#34;&gt;安装方法 [ān zhuānɡ fānɡ fǎ]&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r, eval=FALSE&#34;&gt;install.packages(&#39;pinyin&#39;)
+# or
+devtools::install_github(&amp;quot;pzhaonet/pinyin&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;函数-hán-shù&#34;&gt;函数 [hán shù]&lt;/h2&gt;
+
+&lt;p&gt;pinyin 1.0.0版包含4个函数.&lt;code&gt;pinyin()&lt;/code&gt;是主函数，可以把一个带汉字的字符串转换成拼音。可以选择:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;转换成标准的全拼 (默认 &lt;code&gt;method = &#39;quanpin&#39;&lt;/code&gt;)，或&lt;/li&gt;
+&lt;li&gt;以数字表示声调 (&lt;code&gt;method = &#39;tone&#39;&lt;/code&gt;) , 或&lt;/li&gt;
+&lt;li&gt;不含声调(&lt;code&gt;method = &#39;toneless&#39;&lt;/code&gt;),&lt;/li&gt;
+&lt;li&gt;也可以选择仅保留每个字的首字母(&lt;code&gt;only_first_letter = TRUE&lt;/code&gt;),&lt;/li&gt;
+&lt;li&gt;可以自定义相邻两字拼音的分隔符号(&lt;code&gt;sep = &#39;_&#39;&lt;/code&gt;),&lt;/li&gt;
+&lt;li&gt;如果汉字字符串里边包含非汉字字符，可以选择将这些字符保留原样(&lt;code&gt;nonezh_replace = NULL&lt;/code&gt;)还是转换成指定字符(如&lt;code&gt;nonezh_replace = &#39;-&#39;&lt;/code&gt;)。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;其他函数是 &lt;code&gt;pinyin()&lt;/code&gt; 的延伸和示例：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;file.rename2py()&lt;/code&gt;用来对文件重命名，将文件名里的汉字转换成拼音。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;file2py()&lt;/code&gt; 用来将指定文件夹里的一个或多个文本文件里的汉字全部转换成拼音。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples-示例-shì-lì&#34;&gt;Examples 示例 [shì lì]&lt;/h2&gt;
+
+&lt;p&gt;以参数的默认值进行转换：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(&#39;pinyin&#39;)
+pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_y??nɡ_liǔ_chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更改相邻拼音之间的分隔符号：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ dí hé xū yuàn yánɡ liǔ chūn fēnɡ bú dù yù mén ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;用数字表示声调：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;tone&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiang1 di2 he2 xu1 yuan4 yang2 liu3 chun1 feng1 bu2 du4 yu4 men2 guan1&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;不使用声调：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;toneless&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiang di he xu yuan yang liu chun feng bu du yu men guan&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;每个拼音只输出首字母：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39;&#39;, only_first_letter = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qdhxyylcfbdymɡ&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;非汉字或汉语标点的字符保留原型：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨?杨柳春风,不度玉门关.&#39;, sep = &#39;&#39;, nonezh_replace = NULL)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡdíhéxūyuàn?yánɡliǔchūnfēnɡ,búdùyùménɡuān.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;汉语标点符号会自动转换成对应的英文标点符号：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨？杨柳春风，不度玉门关。&#39;, sep = &#39;&#39;, nonezh_replace = NULL)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡdíhéxūyuàn?yánɡliǔchūnfēnɡ,búdùyùménɡuān.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果自变量是多个字符串的向量，那么只会转换第一个字符串：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(c(&#39;羌笛何须怨杨柳&#39;, &#39;春风不度玉门关&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这怎么行？哎，用 &lt;code&gt;sapply()&lt;/code&gt; 嘛：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;sapply(c(&#39;羌笛何须怨杨柳&#39;, &#39;春风不度玉门关&#39;), pinyin)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;##                 羌笛何须怨杨柳                 春风不度玉门关 
+## &amp;quot;qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ&amp;quot;  &amp;quot;chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>有那么几回，我也想跳楼：写在失业前 - 月旦评</title>
+      <link>https://steemit.netlify.com/post/uz27b-or/</link>
+      <pubDate>Wed, 20 Dec 2017 08:16:33 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/uz27b-or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/uz27b-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/uz27b-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/uz27b-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/uz27b-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/uz27b-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/uz27b-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/uz27b-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/uz27b-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1&lt;/p&gt;
+
+&lt;p&gt;中兴员工跳楼，让人唏嘘叹惋。有人说是因为行业衰落，有人抱怨程序员压力太大。在我看来，这些纯属借题发挥。在不了解现场详细过程的情况下，人们怎么就那么确定是这些原因呢？当事人年岁已过不惑，阅历丰富，儿女双全，有两套房，与其说是因为经济压力而突然跳楼，我还不如相信这是一个意外，比如死者以跳楼来威胁对方答应条件时不慎坠落，或者是受抑郁症驱使而一时失控等等——当事人已经不在了，真相谁会知道呢？&lt;/p&gt;
+
+&lt;p&gt;不过，死者遭遇的中年危机是事实。同样是中年人，同样是失业在即，同样是家有俩娃要还房贷，既然说起这个话题，我也借题发挥，谈谈我对自杀一事的看法。为死者讳，事后去妄加揣度这个中年人的工作、家庭和心理状态是极为不妥的，因此我下面所写的，都跟这个悲剧的当事人没有任何关系，只是由这个事件引发而已。因为，回顾自己这半辈子，有那么几回，我也想跳楼。&lt;/p&gt;
+
+&lt;p&gt;2&lt;/p&gt;
+
+&lt;p&gt;一路走来，回头去看，你有没有动过轻生的念头，哪怕只有一点点？&lt;/p&gt;
+
+&lt;p&gt;当年刚离开故乡，只身远赴千里之外的大学校园，没过多久，我就不想活了。&lt;/p&gt;
+
+&lt;p&gt;从上小学起，我的学习成绩傲视群雄，在五线小城里独孤求败；到了京城的大学一看，高手如云，上课一个字都听不懂，考试及格是奇迹，顿时学霸成学渣。&lt;/p&gt;
+
+&lt;p&gt;现在回头去看，这点破事儿算什么。完全是因为一路顺风顺水，不懂什么叫挫折，一时心里落差太大而造成的不适而已。但是回到当时，如果有点什么小事刺激一下，鬼使神差爬上楼顶……这种事时不时在校园里发生，只不过跳的不是我；我躲过此劫的原因之一，就是跟着同样沦为学渣的兄弟们混。你渣，还有人更渣，他们都不跳楼，你跳什么？&lt;/p&gt;
+
+&lt;p&gt;咬牙念完大学，混迹于滚滚红尘的江湖里，我觉得活着没啥奔头了。&lt;/p&gt;
+
+&lt;p&gt;江湖好混乱，人性太复杂。有人可以不劳而获坐享其成，有人却是累死累活还得背黑锅；微薄的薪水捉襟见肘地养着房贷和日渐成长的娃，往未来去看，看不到光明。&lt;/p&gt;
+
+&lt;p&gt;好在那时心境已经比读书时宽了许多，知道跟人攀比是没有尽头的。要是真攀比，谁活得长谁赢。于是，开始接受那些能接受的，改变那些能改变的。既不能接受又不能改变，那就选择躲开。&lt;/p&gt;
+
+&lt;p&gt;后来出国读书，熬博士论文期间，觉得生不如死。&lt;/p&gt;
+
+&lt;p&gt;这段故事我在&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/35p5cn&#34;&gt;《五年辛酸读博路》&lt;/a&gt; 一文里讲过。在那个阶段里，天天过得暗无天日，真心觉得挺不下去了，还不如把这个学位放弃一死了之。&lt;/p&gt;
+
+&lt;p&gt;几年后的一天，已经距离博士毕业两年有余，遇见当年一起读博的韩国哥们儿，他抱着我想哭，后来一边喝酒一边谈笑。他花了 8 年，在我毕业之后一年多才干完。回忆当年一起在野外做观测的点点滴滴，觉得日子过得厚重。&lt;/p&gt;
+
+&lt;p&gt;跟中年人所承受的压力相比，这些经历无非是青少年时期学业和事业里的小菜一碟，属于无病呻吟，为赋新词强说愁。那么，等到活到老年，回望中年的经历，会不会也觉得淡如云烟呢？&lt;/p&gt;
+
+&lt;p&gt;前提是得活到老年那一天。&lt;/p&gt;
+
+&lt;p&gt;3&lt;/p&gt;
+
+&lt;p&gt;二十多岁，两手空空，拿累了就放下；三十来岁，左手拿累了就交给右手；四十多岁，双手都拎着东西，累了只能左右换一下。&lt;/p&gt;
+
+&lt;p&gt;中年人面对的考验，更多，更凶险。&lt;/p&gt;
+
+&lt;p&gt;有个老同学在朋友圈里分享了一篇文章，标题是“你失踪了，会惊动谁”。我留言说：会惊动房东和银行。我每个月得交房租，得还国内的房贷。&lt;/p&gt;
+
+&lt;p&gt;我看到关??跳楼事件的一些言论，都是归罪于行业衰落和个人经济压力。如果是这样，那就给自杀找来了合理性，只怕将来会让更多人走上轻生的不归路。生活的压力不是什么新鲜事。如果不是衔着金汤匙出生，那么草根生活原本不就是这么累吗？&lt;/p&gt;
+
+&lt;p&gt;科幻小说《三体》里，外星文明即将对人类实施灭绝计划之前，对人类这样说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;生存本来就是一种幸运，过去的地球上是如此，现在这个冷酷的宇宙中也到处如此。但不知从什么时候起，人类有了一种幻觉，认为生存成了唾手可得的东西，这就是你们失败的根本原因。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;从什么时候起，我们开始有了这种幻觉，觉得生存是件唾手可得的东西，而忘记生存本身的艰难呢？&lt;/p&gt;
+
+&lt;p&gt;记得以前同事里有个大姐，比我大十来岁，有一次听我抱怨，就说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;你们这些年轻人，不知足，年纪轻轻就自己租房买房了。我们这一代人，结婚了也一直跟父母一起住一辈子，哪里有条件去租房买房，想都别想。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;没错。想想父辈，经历的是百废待兴；想想祖辈，经历的是战乱浩劫；而曾祖辈，还生活在积弱难返的晚清呢。他们哪一代人活得不比我们难？可是他们子又生孙，孙又生子，一代一代都挺过来了，我们凭什么不能？&lt;/p&gt;
+
+&lt;p&gt;小时候看过一部电视剧，剧名剧情全忘了，只记得一句歌词：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;要生存，先把泪擦干；走过去，前面是个天。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;4&lt;/p&gt;
+
+&lt;p&gt;那个中年人走了，如果真是自杀，那是他自己的事。但是，最让人揪心的，是他留下的一双小儿女，由谁来养大成人？两对老父母，谁来养老送终？&lt;/p&gt;
+
+&lt;p&gt;中年人的命，不只属于一个人。&lt;/p&gt;
+
+&lt;p&gt;再苦再难，只要留得青山在，就不愁没柴烧。不管遭遇何种困境，看得远一点，穿越到未来，回头一看，全部都是过眼云烟。&lt;/p&gt;
+
+&lt;p&gt;就让我把本文献给我的朋友们吧，他们大多数上有老、下有小、中间还要还房贷。这里，用电影《乱世佳人》女主角 Scarlett 的一句台词，作为本文的结尾，与朋友们共勉：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;As God is my witness, as God is my witness they’re not going to lick me. I’m going to live through this and when it’s all over, I’ll never be hungry again. No, nor any of my folk. If I have to lie, steal, cheat or kill. As God is my witness, I’ll never be hungry again.&lt;/p&gt;
+
+&lt;p&gt;上帝作证，上帝作证，他们休想打垮我。我会度过难关。当一切结束后，我再也不要挨饿。不要，我的家人也不要。即使让我去撒谎，去偷，去骗，去杀人，上帝作证 ，我永远不会再挨饿。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;2017 年 12 月写于失业前&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/RBAmLm_jYyY&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Youtube: As God is my witness&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dapengde.com/archives/19320&#34;&gt;Tags&lt;/a&gt;: #cn-reader #cn-blog  #family&lt;/p&gt;
+
+&lt;p&gt;本文由 @dapeng 原创，首发在 steemit.com，转载时请务必在显著位置注明作者和原始链接，否则必究。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dapengde.com/archives/19320&#34;&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Recent Three Months on Steem - 最近三个月</title>
       <link>https://steemit.netlify.com/post/recent-three-months-on-steem-or/</link>
       <pubDate>Mon, 18 Dec 2017 23:05:24 +0000</pubDate>
@@ -1172,134 +1508,6 @@ bookdownplus()
 &lt;p&gt;Tags: #cn-reader #cn-31 #cn-contest&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;大鹏&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Use of useless - 庄子说：假如我是头猪</title>
-      <link>https://steemit.netlify.com/post/use-of-useless-or/</link>
-      <pubDate>Fri, 03 Nov 2017 10:34:42 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/use-of-useless-or/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/use-of-useless-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/use-of-useless-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/use-of-useless-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/use-of-useless-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/use-of-useless-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/use-of-useless-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/use-of-useless-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/use-of-useless-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;One day, my wife picked some wild garlic chives from the botanic garden and cooked it for dinner. My elder son J asked, &amp;lsquo;is it grass?&amp;rsquo;&lt;/p&gt;
-
-&lt;p&gt;I explained to him the difference between grass and vegetables. &amp;lsquo;Don&amp;rsquo;t eat anything wild that you don&amp;rsquo;t know, not only wild vegetables, but also meat. Pork, mutton, chicken are good for our health. That is why we eat them. Why don&amp;rsquo;t we eat the meat of rats or squirrels? They are not tasty or good to out health&amp;rsquo;, I talked a little further.&lt;/p&gt;
-
-&lt;p&gt;J said, &amp;lsquo;then rats or squirrels are lucky. They can live longer than those eaten by us.&amp;rsquo;&lt;/p&gt;
-
-&lt;p&gt;This reminds me of a Chinese Philosopher, Master Zhuang, who  lived 2400 years ago. He once told a story.&lt;/p&gt;
-
-&lt;p&gt;Once upon a time, some villagers  wanted to cut a big tree so as to build a house. The tree was already hundreds of years old. However, the most experienced carpenter in the viilage said that it was not a good idea because the tree was absolutely useless. If the tree were useful, it would have been cut long time ago and could not have been still living.&lt;/p&gt;
-
-&lt;p&gt;In the night, the carpenter had a dream. The tree said to him in the dream, &amp;lsquo;why did you say that I am useless? Well, I am not useful to humans, and this is just why I can survive. I am useful to myself. If you don&amp;rsquo;t understand this, you are the one who is useless.&amp;rsquo;&lt;/p&gt;
-
-&lt;p&gt;Everyone knows the use of useful, but does anybody know the use of useless?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://www.publicdomainpictures.net/pictures/200000/nahled/pigs-1478813226qX0.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;@eduter 在&lt;a href=&#34;https://cnsteem.com/cn/@eduter/3ey314&#34;&gt;心理疾病&lt;/a&gt;里写到：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;庄子说，假如我是头猪，与其我被喂的饱饱的并打扮的漂漂亮亮的送上祭坛，我还是更愿意脏兮兮地在泥巴地里打滚和捡东西吃。&lt;/p&gt;
-
-&lt;p&gt;其实庄子没说过这句话。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;庄子虽然没说过这句话，但这句话里蕴含的哲理确实来自庄子。&lt;/p&gt;
-
-&lt;p&gt;有一次，孩子妈去植物园割了一些野韭菜，给我们做晚饭。大娃京生得知这韭菜不是超市买的，而是从草地上割来的，就问：”这是草吗？”&lt;/p&gt;
-
-&lt;p&gt;我意识到，爱国主义和科普教育的机会来了，于是放下筷子，开始长篇大论：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;“这是个好问题。你看，中文的草，菜，药这三个字，都是草字头。很久以前，这三种东西长在一起，长得很像，人们分不出来，饿了不会吃，有病不会治。&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;后来，有个叫神农氏的人，中国人哦，很勇敢，冒着生命危险自己去品尝，尝了100种，分出了哪些好吃又健康，就叫做菜；哪些不好吃或者有毒不能吃，就叫做草；哪些能治病，就叫做药。小朋友分不清，在外边玩的时候不能乱吃。&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;不光是菜哦，肉也是。我们为什么吃猪肉，牛肉，羊肉，鸡肉，不吃狼肉，狮子肉，大象肉呢？很久以前，人们花了很多时间去试，才挑出了这些好吃的健康的肉；那些我们平常不吃的肉，就是不好吃或者不健康的，小朋友不要乱吃。”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;京生想了想说：”那狼，狮子，大象真是很幸运，没被人吃掉，能活的时间长。”&lt;/p&gt;
-
-&lt;p&gt;我觉得，儿子这简短一句话的价值，秒杀我前面啰里啰唆说的一切。因为他自己悟出的这个道理，是庄子的观点。庄子讲的故事是这样的：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;从前，有个木匠，路过一棵大树，看上去非常粗壮茂密，树龄有几百年了。大家说，这树砍了盖房子多好。木匠却说，这棵树肯定没用；要是有用，早就被砍了。&lt;/p&gt;
-
-&lt;p&gt;木匠夜里做梦，这棵树对木匠说：“你凭什么说我没用？我对人来说没有用，但我能保自己的命，这就是最大的用处，连这个都不明白，你才没用呢。”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;庄子原话是这么说的：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;山木，自寇也；膏火，自煎也。桂可食，故伐之；漆可用，故割之。人皆知有用之用，而莫知无用之用也。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我孤陋寡闻，“无用之用”我到高中才第一次听说，听说的时候还觉得豁然开朗。如今，却被7岁的儿子轻易点破了。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>阿舅</title>
-      <link>https://steemit.netlify.com/post/2ljz4e/</link>
-      <pubDate>Tue, 31 Oct 2017 13:22:57 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/2ljz4e/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/2ljz4e&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2ljz4e&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/2ljz4e&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/2ljz4e&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/2ljz4e.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;早年听过一个相声，忘了是谁表演的了，只记得里面说，孩子的幼儿园里有个男幼师。孩子们觉得，无论叫“叔叔”还是叫“老师”都不合适，于是就叫“阿舅”，因为他们管女幼师叫“阿姨”。&lt;/p&gt;
-
-&lt;p&gt;二娃的幼儿园招聘，就招来一位阿舅。阿舅一来，幼儿园就有了新故事。&lt;/p&gt;
-
-&lt;p&gt;首先，是不是录用阿舅，园长苏珊娜需要先征求家长委员会的意见：家长们接受男老师吗？性别歧视可是违法的哦。另外，这位老师是英国人，说的是地道的英语。你愿意让孩子学外语吗？&lt;/p&gt;
-
-&lt;p&gt;呃……二娃是男孩，我们完全欢迎男老师，只是这英语嘛……二娃已经有汉语和德语了呀。&lt;/p&gt;
-
-&lt;p&gt;我们决定还是先沉默，看看别的家长的态度吧。&lt;/p&gt;
-
-&lt;p&gt;苏珊娜又补充了一些材料：阿舅 29 岁，8 年前开始在英国、肯尼亚、印度和意大利从事幼儿教育工作，学习过 CACHE 3级和5级的课程。&lt;/p&gt;
-
-&lt;p&gt;CACHE是什么？一搜才知道，CACHE 就是  Council for Awards in Care, Health and Education，“是国际标准的教师培训课程，是英国儿童教育的基础课程资格证，在英国从事儿童教育的最基本要求。二级适用于幼儿和青少年的管理和教 育工作。在英国，若从事幼儿教育工作，必须拥有该资质。它基于西方方法论和教育学，现今的调查研究以及反映了西方早教发展趋势，探索式学习，幼儿中心，概 念驱动，并将当前的研究融入幼儿如何学习中。”&lt;/p&gt;
-
-&lt;p&gt;看样子，苏珊娜挺愿意录用阿舅的。&lt;/p&gt;
-
-&lt;p&gt;很快，家长们的意见反馈上来了。所有人都说，让孩子接触地道的英伦腔太棒了。雅各布的爸爸妈妈甚至说，这简直就是雅各布的好运气，因为雅各布两个月后就要从幼儿园毕业了。&lt;/p&gt;
-
-&lt;p&gt;那么性别呢？&lt;/p&gt;
-
-&lt;p&gt;里欧的妈妈和塔哈的妈妈认为，只要资质合格就行，性别无所谓啦。我们可以考察一段时间再说。从男老师身上，孩子可以学到不同的东西。&lt;/p&gt;
-
-&lt;p&gt;莱昂纳多的妈妈谈了谈莱昂纳多的问题。这孩子胆小，大概是自小被女人照看的缘故，除了他爸爸，不敢跟别的男人玩，希望男老师能够改变现状。&lt;/p&gt;
-
-&lt;p&gt;大卫的爸爸说，他无法理解男老师怎么会受歧视。&lt;/p&gt;
-
-&lt;p&gt;这时，我们听到一位妈妈很不客气的声音：我不想让我的女儿被一个男人照顾。我要换个幼儿园。&lt;/p&gt;
-
-&lt;p&gt;最终，在多数人投赞成票的情况下，阿舅克里斯光荣上岗。&lt;/p&gt;
-
-&lt;p&gt;我起初担心男幼师会不会太阴柔纤细，一看克里斯就打消了这个顾虑。这是个大胡子的粗壮青年。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Lion-Kids-Lion-Father-Big-Cats-Wild-Animals-Drawing-1791988.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Image credit: maxpixel.freegreatpicture.com&lt;/p&gt;
-
-&lt;p&gt;过了一段时间，我们渐渐发现，幼儿园里有个阿舅，果然不一样。&lt;/p&gt;
-
-&lt;p&gt;这个幼儿园很小，只有一个班，十几个小朋友，包括园长在内有四位老师。这家幼儿园是家长共治式，很多事情需要家长参与，比如每天的卫生都是我们这些家长轮流值周打扫。&lt;/p&gt;
-
-&lt;p&gt;阿舅没来的时候，晚上打扫卫生时，活儿特别多，光给垃圾分类倒掉就花去20分钟。阿舅来了之后，每天顺手就把垃圾倒了。值周的家长感觉轻松多了。&lt;/p&gt;
-
-&lt;p&gt;幼儿园的小车棚太小，每次婴儿车都挤得放不下。阿舅亲手做个了架子，分上下两层，有效地利用了空间，婴儿车终于有地方放了。&lt;/p&gt;
-
-&lt;p&gt;花园里原来有一块空地，阿舅勤快地开辟出来，带着小朋友们种花种菜。&lt;/p&gt;
-
-&lt;p&gt;最关键的，早上送孩子上幼儿园，孩子有时候扭扭捏捏不想进去。原先，女老师们总是说，家长多陪一会儿再走。现在，阿舅二话不说，一手把孩子抱起来就进去了。&lt;/p&gt;
-
-&lt;p&gt;朋友听说之后，慕名而来，说什么也??来给他家孩子报个名。&lt;/p&gt;
-
-&lt;p&gt;虽然，他家住得好远好远。&lt;/p&gt;
 </description>
     </item>
     

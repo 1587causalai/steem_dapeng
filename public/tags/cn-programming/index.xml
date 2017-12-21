@@ -9,6 +9,240 @@
     <atom:link href="https://steemit.netlify.com/tags/cn-programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>pinyin: an R package that converts Chinese characters into Latin letters - 将中文转成汉语拼音的 R 语言包</title>
+      <link>https://steemit.netlify.com/post/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r/</link>
+      <pubDate>Wed, 20 Dec 2017 15:51:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This post was written bilingually, in English and Chinese. If you use the tool introduced in this post, you are able to read both languages!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本文用英文和中文写作，中文在后半部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;Chinese characters are mysterious. You can more or less pronounce German, Italien or French words from their spellings even you know nothing of these languages because they are written in Latin letters, but you cannot pronounce Chinese characters from their looking. If you don&amp;rsquo;t believe me, go to the cn category on steem and try. Chinese characters are not composed of Latin letters.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, each Chinese character has a spelling in Latin letters, which is called &lt;em&gt;pinyin&lt;/em&gt;. It is a must tool to learn Chinese. Here is the defination of pinyin on &lt;a href=&#34;https://en.wikipedia.org/wiki/Pinyin&#34;&gt;Wikipedia&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Pinyin, or Hànyǔ Pīnyīn, is the official romanization system for Standard Chinese in mainland China, Malaysia, Singapore, and Taiwan. It is often used to teach Standard Chinese, which is normally written using Chinese characters. The system includes four diacritics denoting tones. Pinyin without tone marks is used to spell Chinese names and words in languages written with the Latin alphabet, and also in certain computer input methods to enter Chinese characters.&lt;/p&gt;
+
+&lt;p&gt;The pinyin system was developed in the 1950s by many linguists, including Zhou Youguang, based on earlier forms of romanization of Chinese. It was published by the Chinese government in 1958 and revised several times. The International Organization for Standardization (ISO) adopted pinyin as an international standard in 1982, followed by the United Nations in 1986. The system was adopted as the official standard in Taiwan in 2009, where it is used for romanization alone (in part to make areas more English-friendly) rather than for educational and computer-input purposes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you want to learn Chinese, you have to start with pinyin. Chinese kids learn Chinese from pinyin. You can find the pinyin of each Chinese character in a dictionary. but would it be exciting if Chinese characters are converted to pinyin automatically?&lt;/p&gt;
+
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+
+&lt;p&gt;In my computer, many files are named in Chinese. When I want to share them with international friends, I have to convert the file names into Latin letters munally. If there are tens or hundreds of them, hmm, I would give up. What if they can automatically be done with R?&lt;/p&gt;
+
+&lt;p&gt;Some of my international friends are learning Chinese. When I share a nice Chinese post on Utopian.io with them, they complain that they have to look up the dictionary from time to time. The Chinese version of MS Word could help, but they have to copy and paste and adjust the layout and convert and so on. If there are multiple posts, they lose their patience. What if they can automatically be done with R?&lt;/p&gt;
+
+&lt;p&gt;Thus I developed an R package for converting Chinese characters into pinyin.&lt;/p&gt;
+
+&lt;p&gt;Powered with R language, you can do further statistics and analysis in Chinese pronunciations with the help of pinyin package!&lt;/p&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;With R pinyin package, the tasks mentioned above can be achieved with one single command. Chinese characters can be converted into Latin letters in different ways, including the standard full spelling with or without the four tones, or the first letter of each character. You can convert either strings or text files, or rename multiple filenames.&lt;/p&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation-of-r&#34;&gt;Installation of R&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org&#34;&gt;Download R&lt;/a&gt; and install it.&lt;/p&gt;
+
+&lt;h3 id=&#34;installation-of-pinyin&#34;&gt;Installation of pinyin&lt;/h3&gt;
+
+&lt;p&gt;In R environment, run the following codes to install pinyin.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# stable version:
+install.packages(&amp;quot;pinyin&amp;quot;)
+# or development version:
+devtools::install_github(&amp;quot;pzhaonet/pinyin&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;As an example, run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(&#39;pinyin&#39;)
+pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then you get the full spellings with Chinese tones as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ_chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can change the separators between the words:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;)
+## [1] &amp;quot;qiānɡ dí hé xū yuàn yánɡ liǔ chūn fēnɡ bú dù yù mén ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can use numbers to specify the tones:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;tone&#39;)
+## [1] &amp;quot;qiang1 di2 he2 xu1 yuan4 yang2 liu3 chun1 feng1 bu2 du4 yu4 men2 guan1&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or toneless:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;toneless&#39;)
+## [1] &amp;quot;qiang di he xu yuan yang liu chun feng bu du yu men guan&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or only the first letter of each word:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39;&#39;, only_first_letter = TRUE)
+## [1] &amp;quot;qdhxyylcfbdymɡ&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The function &lt;code&gt;file.rename2py()&lt;/code&gt;can convert Chinese file names into pinyin, and the function &lt;code&gt;file2py()&lt;/code&gt; can convert text files into pinyin.&lt;/p&gt;
+
+&lt;p&gt;Now you can read Chinese articles aloud to your friends and shock them!&lt;/p&gt;
+
+&lt;h2 id=&#34;link-to-the-repo&#34;&gt;Link to the Repo&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/pzhaonet/pinyin&#34;&gt;https://github.com/pzhaonet/pinyin&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of Work&lt;/h2&gt;
+
+&lt;p&gt;In my profile on Utopian.io, the github repo pinyin is listed in &lt;a href=&#34;https://utopian.io/project/pzhaonet/pinyin/github/92541456/all&#34;&gt;my project page&lt;/a&gt;,  which is show in the screenshot as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513784911/jy8irppguojtuv4w9a4i.jpg&#34; alt=&#34;pinyin.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我开发的这个 R 语言包，粗暴地用拼音取名为 &lt;a href=&#34;https://github.com/pzhaonet/pinyin/&#34;&gt;pinyin&lt;/a&gt;，作用是把汉字转换成拼音。&lt;/p&gt;
+
+&lt;p&gt;有什么用呢？&lt;/p&gt;
+
+&lt;p&gt;有时候需要跟外国朋友分享我电脑里的一些文件，文件名是中文的，发过去人家看起来是乱码，所以我会先把文件名手动改成拉丁字母。文件少了还好，要是有成千上万个，算了，我不分享了。&lt;/p&gt;
+
+&lt;p&gt;中文在世界上的影响力愈来愈大，有些外国朋友在学中文。我是混 steem 的，看见好的中文帖想发给他们，他们抱怨说还得查字典。那就用中文版的 word 转换不行吗？拷贝，粘贴，调整格式，转换……烦死了。要是有多篇，算了人家没耐心弄了。&lt;/p&gt;
+
+&lt;p&gt;现在有了 R 语言的 pinyin 包，一条命令就能批量修改成千上万的文件名，能把多个字符串或多个文本文件转成拼音了。再说中文难学的老外，给我闭嘴。&lt;/p&gt;
+
+&lt;p&gt;而且，依靠 R 语言强大的数据处理、统计分析能力，你可以从 pinyin 包出发，对任何一篇文章的中文发音做文本分析了！&lt;/p&gt;
+
+&lt;h2 id=&#34;安装方法-ān-zhuānɡ-fānɡ-fǎ&#34;&gt;安装方法 [ān zhuānɡ fānɡ fǎ]&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r, eval=FALSE&#34;&gt;install.packages(&#39;pinyin&#39;)
+# or
+devtools::install_github(&amp;quot;pzhaonet/pinyin&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;函数-hán-shù&#34;&gt;函数 [hán shù]&lt;/h2&gt;
+
+&lt;p&gt;pinyin 1.0.0版包含4个函数.&lt;code&gt;pinyin()&lt;/code&gt;是主函数，可以把一个带汉字的字符串转换成拼音。可以选择:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;转换成标准的全拼 (默认 &lt;code&gt;method = &#39;quanpin&#39;&lt;/code&gt;)，或&lt;/li&gt;
+&lt;li&gt;以数字表示声调 (&lt;code&gt;method = &#39;tone&#39;&lt;/code&gt;) , 或&lt;/li&gt;
+&lt;li&gt;不含声调(&lt;code&gt;method = &#39;toneless&#39;&lt;/code&gt;),&lt;/li&gt;
+&lt;li&gt;也可以选择仅保留每个字的首字母(&lt;code&gt;only_first_letter = TRUE&lt;/code&gt;),&lt;/li&gt;
+&lt;li&gt;可以自定义相邻两字拼音的分隔符号(&lt;code&gt;sep = &#39;_&#39;&lt;/code&gt;),&lt;/li&gt;
+&lt;li&gt;如果汉字字符串里边包含非汉字字符，可以选择将这些字符保留原样(&lt;code&gt;nonezh_replace = NULL&lt;/code&gt;)还是转换成指定字符(如&lt;code&gt;nonezh_replace = &#39;-&#39;&lt;/code&gt;)。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;其他函数是 &lt;code&gt;pinyin()&lt;/code&gt; 的延伸和示例：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;file.rename2py()&lt;/code&gt;用来对文件重命名，将文件名里的汉字转换成拼音。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;file2py()&lt;/code&gt; 用来将指定文件夹里的一个或多个文本文件里的汉字全部转换成拼音。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples-示例-shì-lì&#34;&gt;Examples 示例 [shì lì]&lt;/h2&gt;
+
+&lt;p&gt;以参数的默认值进行转换：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(&#39;pinyin&#39;)
+pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_y??nɡ_liǔ_chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更改相邻拼音之间的分隔符号：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ dí hé xū yuàn yánɡ liǔ chūn fēnɡ bú dù yù mén ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;用数字表示声调：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;tone&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiang1 di2 he2 xu1 yuan4 yang2 liu3 chun1 feng1 bu2 du4 yu4 men2 guan1&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;不使用声调：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;toneless&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiang di he xu yuan yang liu chun feng bu du yu men guan&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;每个拼音只输出首字母：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39;&#39;, only_first_letter = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qdhxyylcfbdymɡ&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;非汉字或汉语标点的字符保留原型：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨?杨柳春风,不度玉门关.&#39;, sep = &#39;&#39;, nonezh_replace = NULL)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡdíhéxūyuàn?yánɡliǔchūnfēnɡ,búdùyùménɡuān.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;汉语标点符号会自动转换成对应的英文标点符号：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨？杨柳春风，不度玉门关。&#39;, sep = &#39;&#39;, nonezh_replace = NULL)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡdíhéxūyuàn?yánɡliǔchūnfēnɡ,búdùyùménɡuān.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果自变量是多个字符串的向量，那么只会转换第一个字符串：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(c(&#39;羌笛何须怨杨柳&#39;, &#39;春风不度玉门关&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这怎么行？哎，用 &lt;code&gt;sapply()&lt;/code&gt; 嘛：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;sapply(c(&#39;羌笛何须怨杨柳&#39;, &#39;春风不度玉门关&#39;), pinyin)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;##                 羌笛何须怨杨柳                 春风不度玉门关 
+## &amp;quot;qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ&amp;quot;  &amp;quot;chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>R 语言将博客全部从 WordPress 搬家到 Hugo - Migrating WordPress to Hugo with R</title>
       <link>https://steemit.netlify.com/post/r-wordpress-hugo-or-migrating-wordpress-to-hugo-with-r/</link>
       <pubDate>Sat, 25 Nov 2017 17:39:42 +0000</pubDate>

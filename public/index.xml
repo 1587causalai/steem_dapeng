@@ -6,8 +6,344 @@
     <description>Recent content in Home on STEEM@dapeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Dec 2017 09:24:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Dec 2017 15:51:42 +0000</lastBuildDate>
     <atom:link href="https://steemit.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>pinyin: an R package that converts Chinese characters into Latin letters - 将中文转成汉语拼音的 R 语言包</title>
+      <link>https://steemit.netlify.com/post/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r/</link>
+      <pubDate>Wed, 20 Dec 2017 15:51:42 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This post was written bilingually, in English and Chinese. If you use the tool introduced in this post, you are able to read both languages!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本文用英文和中文写作，中文在后半部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;Chinese characters are mysterious. You can more or less pronounce German, Italien or French words from their spellings even you know nothing of these languages because they are written in Latin letters, but you cannot pronounce Chinese characters from their looking. If you don&amp;rsquo;t believe me, go to the cn category on steem and try. Chinese characters are not composed of Latin letters.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, each Chinese character has a spelling in Latin letters, which is called &lt;em&gt;pinyin&lt;/em&gt;. It is a must tool to learn Chinese. Here is the defination of pinyin on &lt;a href=&#34;https://en.wikipedia.org/wiki/Pinyin&#34;&gt;Wikipedia&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Pinyin, or Hànyǔ Pīnyīn, is the official romanization system for Standard Chinese in mainland China, Malaysia, Singapore, and Taiwan. It is often used to teach Standard Chinese, which is normally written using Chinese characters. The system includes four diacritics denoting tones. Pinyin without tone marks is used to spell Chinese names and words in languages written with the Latin alphabet, and also in certain computer input methods to enter Chinese characters.&lt;/p&gt;
+
+&lt;p&gt;The pinyin system was developed in the 1950s by many linguists, including Zhou Youguang, based on earlier forms of romanization of Chinese. It was published by the Chinese government in 1958 and revised several times. The International Organization for Standardization (ISO) adopted pinyin as an international standard in 1982, followed by the United Nations in 1986. The system was adopted as the official standard in Taiwan in 2009, where it is used for romanization alone (in part to make areas more English-friendly) rather than for educational and computer-input purposes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you want to learn Chinese, you have to start with pinyin. Chinese kids learn Chinese from pinyin. You can find the pinyin of each Chinese character in a dictionary. but would it be exciting if Chinese characters are converted to pinyin automatically?&lt;/p&gt;
+
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+
+&lt;p&gt;In my computer, many files are named in Chinese. When I want to share them with international friends, I have to convert the file names into Latin letters munally. If there are tens or hundreds of them, hmm, I would give up. What if they can automatically be done with R?&lt;/p&gt;
+
+&lt;p&gt;Some of my international friends are learning Chinese. When I share a nice Chinese post on Utopian.io with them, they complain that they have to look up the dictionary from time to time. The Chinese version of MS Word could help, but they have to copy and paste and adjust the layout and convert and so on. If there are multiple posts, they lose their patience. What if they can automatically be done with R?&lt;/p&gt;
+
+&lt;p&gt;Thus I developed an R package for converting Chinese characters into pinyin.&lt;/p&gt;
+
+&lt;p&gt;Powered with R language, you can do further statistics and analysis in Chinese pronunciations with the help of pinyin package!&lt;/p&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;With R pinyin package, the tasks mentioned above can be achieved with one single command. Chinese characters can be converted into Latin letters in different ways, including the standard full spelling with or without the four tones, or the first letter of each character. You can convert either strings or text files, or rename multiple filenames.&lt;/p&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation-of-r&#34;&gt;Installation of R&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org&#34;&gt;Download R&lt;/a&gt; and install it.&lt;/p&gt;
+
+&lt;h3 id=&#34;installation-of-pinyin&#34;&gt;Installation of pinyin&lt;/h3&gt;
+
+&lt;p&gt;In R environment, run the following codes to install pinyin.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# stable version:
+install.packages(&amp;quot;pinyin&amp;quot;)
+# or development version:
+devtools::install_github(&amp;quot;pzhaonet/pinyin&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;As an example, run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(&#39;pinyin&#39;)
+pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then you get the full spellings with Chinese tones as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ_chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can change the separators between the words:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;)
+## [1] &amp;quot;qiānɡ dí hé xū yuàn yánɡ liǔ chūn fēnɡ bú dù yù mén ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can use numbers to specify the tones:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;tone&#39;)
+## [1] &amp;quot;qiang1 di2 he2 xu1 yuan4 yang2 liu3 chun1 feng1 bu2 du4 yu4 men2 guan1&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or toneless:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;toneless&#39;)
+## [1] &amp;quot;qiang di he xu yuan yang liu chun feng bu du yu men guan&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or only the first letter of each word:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39;&#39;, only_first_letter = TRUE)
+## [1] &amp;quot;qdhxyylcfbdymɡ&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The function &lt;code&gt;file.rename2py()&lt;/code&gt;can convert Chinese file names into pinyin, and the function &lt;code&gt;file2py()&lt;/code&gt; can convert text files into pinyin.&lt;/p&gt;
+
+&lt;p&gt;Now you can read Chinese articles aloud to your friends and shock them!&lt;/p&gt;
+
+&lt;h2 id=&#34;link-to-the-repo&#34;&gt;Link to the Repo&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/pzhaonet/pinyin&#34;&gt;https://github.com/pzhaonet/pinyin&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of Work&lt;/h2&gt;
+
+&lt;p&gt;In my profile on Utopian.io, the github repo pinyin is listed in &lt;a href=&#34;https://utopian.io/project/pzhaonet/pinyin/github/92541456/all&#34;&gt;my project page&lt;/a&gt;,  which is show in the screenshot as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513784911/jy8irppguojtuv4w9a4i.jpg&#34; alt=&#34;pinyin.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我开发的这个 R 语言包，粗暴地用拼音取名为 &lt;a href=&#34;https://github.com/pzhaonet/pinyin/&#34;&gt;pinyin&lt;/a&gt;，作用是把汉字转换成拼音。&lt;/p&gt;
+
+&lt;p&gt;有什么用呢？&lt;/p&gt;
+
+&lt;p&gt;有时候需要跟外国朋友分享我电脑里的一些文件，文件名是中文的，发过去人家看起来是乱码，所以我会先把文件名手动改成拉丁字母。文件少了还好，要是有成千上万个，算了，我不分享了。&lt;/p&gt;
+
+&lt;p&gt;中文在世界上的影响力愈来愈大，有些外国朋友在学中文。我是混 steem 的，看见好的中文帖想发给他们，他们抱怨说还得查字典。那就用中文版的 word 转换不行吗？拷贝，粘贴，调整格式，转换……烦死了。要是有多篇，算了人家没耐心弄了。&lt;/p&gt;
+
+&lt;p&gt;现在有了 R 语言的 pinyin 包，一条命令就能批量修改成千上万的文件名，能把多个字符串或多个文本文件转成拼音了。再说中文难学的老外，给我闭嘴。&lt;/p&gt;
+
+&lt;p&gt;而且，依靠 R 语言强大的数据处理、统计分析能力，你可以从 pinyin 包出发，对任何一篇文章的中文发音做文本分析了！&lt;/p&gt;
+
+&lt;h2 id=&#34;安装方法-ān-zhuānɡ-fānɡ-fǎ&#34;&gt;安装方法 [ān zhuānɡ fānɡ fǎ]&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r, eval=FALSE&#34;&gt;install.packages(&#39;pinyin&#39;)
+# or
+devtools::install_github(&amp;quot;pzhaonet/pinyin&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;函数-hán-shù&#34;&gt;函数 [hán shù]&lt;/h2&gt;
+
+&lt;p&gt;pinyin 1.0.0版包含4个函数.&lt;code&gt;pinyin()&lt;/code&gt;是主函数，可以把一个带汉字的字符串转换成拼音。可以选择:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;转换成标准的全拼 (默认 &lt;code&gt;method = &#39;quanpin&#39;&lt;/code&gt;)，或&lt;/li&gt;
+&lt;li&gt;以数字表示声调 (&lt;code&gt;method = &#39;tone&#39;&lt;/code&gt;) , 或&lt;/li&gt;
+&lt;li&gt;不含声调(&lt;code&gt;method = &#39;toneless&#39;&lt;/code&gt;),&lt;/li&gt;
+&lt;li&gt;也可以选择仅保留每个字的首字母(&lt;code&gt;only_first_letter = TRUE&lt;/code&gt;),&lt;/li&gt;
+&lt;li&gt;可以自定义相邻两字拼音的分隔符号(&lt;code&gt;sep = &#39;_&#39;&lt;/code&gt;),&lt;/li&gt;
+&lt;li&gt;如果汉字字符串里边包含非汉字字符，可以选择将这些字符保留原样(&lt;code&gt;nonezh_replace = NULL&lt;/code&gt;)还是转换成指定字符(如&lt;code&gt;nonezh_replace = &#39;-&#39;&lt;/code&gt;)。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;其他函数是 &lt;code&gt;pinyin()&lt;/code&gt; 的延伸和示例：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;file.rename2py()&lt;/code&gt;用来对文件重命名，将文件名里的汉字转换成拼音。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;file2py()&lt;/code&gt; 用来将指定文件夹里的一个或多个文本文件里的汉字全部转换成拼音。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples-示例-shì-lì&#34;&gt;Examples 示例 [shì lì]&lt;/h2&gt;
+
+&lt;p&gt;以参数的默认值进行转换：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(&#39;pinyin&#39;)
+pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_y??nɡ_liǔ_chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更改相邻拼音之间的分隔符号：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ dí hé xū yuàn yánɡ liǔ chūn fēnɡ bú dù yù mén ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;用数字表示声调：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;tone&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiang1 di2 he2 xu1 yuan4 yang2 liu3 chun1 feng1 bu2 du4 yu4 men2 guan1&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;不使用声调：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39; &#39;, method = &#39;toneless&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiang di he xu yuan yang liu chun feng bu du yu men guan&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;每个拼音只输出首字母：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;, sep = &#39;&#39;, only_first_letter = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qdhxyylcfbdymɡ&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;非汉字或汉语标点的字符保留原型：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨?杨柳春风,不度玉门关.&#39;, sep = &#39;&#39;, nonezh_replace = NULL)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡdíhéxūyuàn?yánɡliǔchūnfēnɡ,búdùyùménɡuān.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;汉语标点符号会自动转换成对应的英文标点符号：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(&#39;羌笛何须怨？杨柳春风，不度玉门关。&#39;, sep = &#39;&#39;, nonezh_replace = NULL)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡdíhéxūyuàn?yánɡliǔchūnfēnɡ,búdùyùménɡuān.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果自变量是多个字符串的向量，那么只会转换第一个字符串：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;pinyin(c(&#39;羌笛何须怨杨柳&#39;, &#39;春风不度玉门关&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这怎么行？哎，用 &lt;code&gt;sapply()&lt;/code&gt; 嘛：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;sapply(c(&#39;羌笛何须怨杨柳&#39;, &#39;春风不度玉门关&#39;), pinyin)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;##                 羌笛何须怨杨柳                 春风不度玉门关 
+## &amp;quot;qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ&amp;quot;  &amp;quot;chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>有那么几回，我也想跳楼：写在失业前 - 月旦评</title>
+      <link>https://steemit.netlify.com/post/uz27b-or/</link>
+      <pubDate>Wed, 20 Dec 2017 08:16:33 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/uz27b-or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/uz27b-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/uz27b-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/uz27b-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/uz27b-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/uz27b-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/uz27b-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/uz27b-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/uz27b-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1&lt;/p&gt;
+
+&lt;p&gt;中兴员工跳楼，让人唏嘘叹惋。有人说是因为行业衰落，有人抱怨程序员压力太大。在我看来，这些纯属借题发挥。在不了解现场详细过程的情况下，人们怎么就那么确定是这些原因呢？当事人年岁已过不惑，阅历丰富，儿女双全，有两套房，与其说是因为经济压力而突然跳楼，我还不如相信这是一个意外，比如死者以跳楼来威胁对方答应条件时不慎坠落，或者是受抑郁症驱使而一时失控等等——当事人已经不在了，真相谁会知道呢？&lt;/p&gt;
+
+&lt;p&gt;不过，死者遭遇的中年危机是事实。同样是中年人，同样是失业在即，同样是家有俩娃要还房贷，既然说起这个话题，我也借题发挥，谈谈我对自杀一事的看法。为死者讳，事后去妄加揣度这个中年人的工作、家庭和心理状态是极为不妥的，因此我下面所写的，都跟这个悲剧的当事人没有任何关系，只是由这个事件引发而已。因为，回顾自己这半辈子，有那么几回，我也想跳楼。&lt;/p&gt;
+
+&lt;p&gt;2&lt;/p&gt;
+
+&lt;p&gt;一路走来，回头去看，你有没有动过轻生的念头，哪怕只有一点点？&lt;/p&gt;
+
+&lt;p&gt;当年刚离开故乡，只身远赴千里之外的大学校园，没过多久，我就不想活了。&lt;/p&gt;
+
+&lt;p&gt;从上小学起，我的学习成绩傲视群雄，在五线小城里独孤求败；到了京城的大学一看，高手如云，上课一个字都听不懂，考试及格是奇迹，顿时学霸成学渣。&lt;/p&gt;
+
+&lt;p&gt;现在回头去看，这点破事儿算什么。完全是因为一路顺风顺水，不懂什么叫挫折，一时心里落差太大而造成的不适而已。但是回到当时，如果有点什么小事刺激一下，鬼使神差爬上楼顶……这种事时不时在校园里发生，只不过跳的不是我；我躲过此劫的原因之一，就是跟着同样沦为学渣的兄弟们混。你渣，还有人更渣，他们都不跳楼，你跳什么？&lt;/p&gt;
+
+&lt;p&gt;咬牙念完大学，混迹于滚滚红尘的江湖里，我觉得活着没啥奔头了。&lt;/p&gt;
+
+&lt;p&gt;江湖好混乱，人性太复杂。有人可以不劳而获坐享其成，有人却是累死累活还得背黑锅；微薄的薪水捉襟见肘地养着房贷和日渐成长的娃，往未来去看，看不到光明。&lt;/p&gt;
+
+&lt;p&gt;好在那时心境已经比读书时宽了许多，知道跟人攀比是没有尽头的。要是真攀比，谁活得长谁赢。于是，开始接受那些能接受的，改变那些能改变的。既不能接受又不能改变，那就选择躲开。&lt;/p&gt;
+
+&lt;p&gt;后来出国读书，熬博士论文期间，觉得生不如死。&lt;/p&gt;
+
+&lt;p&gt;这段故事我在&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/35p5cn&#34;&gt;《五年辛酸读博路》&lt;/a&gt; 一文里讲过。在那个阶段里，天天过得暗无天日，真心觉得挺不下去了，还不如把这个学位放弃一死了之。&lt;/p&gt;
+
+&lt;p&gt;几年后的一天，已经距离博士毕业两年有余，遇见当年一起读博的韩国哥们儿，他抱着我想哭，后来一边喝酒一边谈笑。他花了 8 年，在我毕业之后一年多才干完。回忆当年一起在野外做观测的点点滴滴，觉得日子过得厚重。&lt;/p&gt;
+
+&lt;p&gt;跟中年人所承受的压力相比，这些经历无非是青少年时期学业和事业里的小菜一碟，属于无病呻吟，为赋新词强说愁。那么，等到活到老年，回望中年的经历，会不会也觉得淡如云烟呢？&lt;/p&gt;
+
+&lt;p&gt;前提是得活到老年那一天。&lt;/p&gt;
+
+&lt;p&gt;3&lt;/p&gt;
+
+&lt;p&gt;二十多岁，两手空空，拿累了就放下；三十来岁，左手拿累了就交给右手；四十多岁，双手都拎着东西，累了只能左右换一下。&lt;/p&gt;
+
+&lt;p&gt;中年人面对的考验，更多，更凶险。&lt;/p&gt;
+
+&lt;p&gt;有个老同学在朋友圈里分享了一篇文章，标题是“你失踪了，会惊动谁”。我留言说：会惊动房东和银行。我每个月得交房租，得还国内的房贷。&lt;/p&gt;
+
+&lt;p&gt;我看到关??跳楼事件的一些言论，都是归罪于行业衰落和个人经济压力。如果是这样，那就给自杀找来了合理性，只怕将来会让更多人走上轻生的不归路。生活的压力不是什么新鲜事。如果不是衔着金汤匙出生，那么草根生活原本不就是这么累吗？&lt;/p&gt;
+
+&lt;p&gt;科幻小说《三体》里，外星文明即将对人类实施灭绝计划之前，对人类这样说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;生存本来就是一种幸运，过去的地球上是如此，现在这个冷酷的宇宙中也到处如此。但不知从什么时候起，人类有了一种幻觉，认为生存成了唾手可得的东西，这就是你们失败的根本原因。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;从什么时候起，我们开始有了这种幻觉，觉得生存是件唾手可得的东西，而忘记生存本身的艰难呢？&lt;/p&gt;
+
+&lt;p&gt;记得以前同事里有个大姐，比我大十来岁，有一次听我抱怨，就说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;你们这些年轻人，不知足，年纪轻轻就自己租房买房了。我们这一代人，结婚了也一直跟父母一起住一辈子，哪里有条件去租房买房，想都别想。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;没错。想想父辈，经历的是百废待兴；想想祖辈，经历的是战乱浩劫；而曾祖辈，还生活在积弱难返的晚清呢。他们哪一代人活得不比我们难？可是他们子又生孙，孙又生子，一代一代都挺过来了，我们凭什么不能？&lt;/p&gt;
+
+&lt;p&gt;小时候看过一部电视剧，剧名剧情全忘了，只记得一句歌词：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;要生存，先把泪擦干；走过去，前面是个天。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;4&lt;/p&gt;
+
+&lt;p&gt;那个中年人走了，如果真是自杀，那是他自己的事。但是，最让人揪心的，是他留下的一双小儿女，由谁来养大成人？两对老父母，谁来养老送终？&lt;/p&gt;
+
+&lt;p&gt;中年人的命，不只属于一个人。&lt;/p&gt;
+
+&lt;p&gt;再苦再难，只要留得青山在，就不愁没柴烧。不管遭遇何种困境，看得远一点，穿越到未来，回头一看，全部都是过眼云烟。&lt;/p&gt;
+
+&lt;p&gt;就让我把本文献给我的朋友们吧，他们大多数上有老、下有小、中间还要还房贷。这里，用电影《乱世佳人》女主角 Scarlett 的一句台词，作为本文的结尾，与朋友们共勉：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;As God is my witness, as God is my witness they’re not going to lick me. I’m going to live through this and when it’s all over, I’ll never be hungry again. No, nor any of my folk. If I have to lie, steal, cheat or kill. As God is my witness, I’ll never be hungry again.&lt;/p&gt;
+
+&lt;p&gt;上帝作证，上帝作证，他们休想打垮我。我会度过难关。当一切结束后，我再也不要挨饿。不要，我的家人也不要。即使让我去撒谎，去偷，去骗，去杀人，上帝作证 ，我永远不会再挨饿。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;2017 年 12 月写于失业前&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/RBAmLm_jYyY&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Youtube: As God is my witness&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dapengde.com/archives/19320&#34;&gt;Tags&lt;/a&gt;: #cn-reader #cn-blog  #family&lt;/p&gt;
+
+&lt;p&gt;本文由 @dapeng 原创，首发在 steemit.com，转载时请务必在显著位置注明作者和原始链接，否则必究。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dapengde.com/archives/19320&#34;&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>“华语好声音”活动第 3 期颁奖典礼 - Award ceremony for CN-VOICE Prize</title>
@@ -6317,145 +6653,6 @@ zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p)
 &lt;p&gt;最后说老将黄忠，字汉升，我认为这是三国群英谱中起得最好的名字，简直就是三国演义中心思想的最精练概括。对谁忠诚？对汉朝，对汉室正统的刘备！就和董建华的名字一样，在政治倾向敏感的年代，一个名字一定会在一定程度上影响着一个人的命运。&lt;/p&gt;
 
 &lt;p&gt;三国风云漫卷，浪花淘尽英雄，岁月却带不走那一串串熟悉的姓名。掩卷而思，有知识有文化的你，是否还会给自己的小猫小狗和小孩随随便便起个名字了事？读了这篇拙作的你，是否还会让“狗剩”“旺财”这种名字陪伴他们一生？&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bug Hunting: utopian.io bug on browser title bar</title>
-      <link>https://steemit.netlify.com/post/bug-hunting-utopian-io-bug-on-browser-title-bar/</link>
-      <pubDate>Mon, 27 Nov 2017 10:02:51 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/bug-hunting-utopian-io-bug-on-browser-title-bar/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/bug-hunting-utopian-io-bug-on-browser-title-bar.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;the-bug-browser-title-bar-of-utopian-io-not-updated-with-the-webpage&#34;&gt;The bug: browser title bar of utopian.io not updated with the webpage&lt;/h2&gt;
-
-&lt;p&gt;When I visit a user&amp;rsquo;s homepage on utopian.io, the title bar always displays THIS user&amp;rsquo;s name, no matter which page I have jumped to. In the following image, you can see that I jumped from @elear&amp;rsquo;s home page to my own, but the title bar still displayed &amp;lsquo;elear&amp;rsquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1511776892/gjiiane08jbuacycf3rh.jpg&#34;&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1511776892/gjiiane08jbuacycf3rh.jpg&#34; alt=&#34;utopianbug.jpg&#34; /&gt;&lt;/a&gt;
-&lt;em&gt;Click the image to zoom in.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;my-session-information&#34;&gt;My session information&lt;/h2&gt;
-
-&lt;p&gt;Windows 7, Firefox 56.0 (32-bit)&lt;/p&gt;
-
-&lt;h2 id=&#34;how-to-reproduce-this-bug&#34;&gt;How to reproduce this bug&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Open a web browser. Login utopian.io.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Type the web address &lt;a href=&#34;https://utopian.io/@elear&#34;&gt;https://utopian.io/@elear&lt;/a&gt; (don&amp;rsquo;t click this hyperlink here) in the address bar and enter. You can see the title bar is &amp;lsquo;elear&amp;rsquo;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Click your own avatar on the topright. You see your homepage. The title bar displays your id. Wait seconds (the waiting time might depend on your computer). The title bar changes back to &amp;lsquo;elear&amp;rsquo; automatically.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Click the utopian logo on the topleft. You see the home page of utopian. The title bar displays &amp;lsquo;utopian&amp;rsquo;. Wait seconds. The title bar changes back to &amp;lsquo;elear&amp;rsquo; automatically.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;suggestions-to-fix&#34;&gt;Suggestions to fix&lt;/h2&gt;
-
-&lt;p&gt;The title bar should display the title of the webpage which the user is browsing.&lt;/p&gt;
-
-&lt;p&gt;PS. @elear&amp;rsquo;s homepage is used as an example in this post, just because elear gave me kind help on how to use utopian.io. Thanks a lot!&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/bug-hunting-utopian-io-bug-on-browser-title-bar&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>bookdownplus: an R package for writing assorted books and documents - 将你的帖子整理成一本漂亮的书</title>
-      <link>https://steemit.netlify.com/post/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents/</link>
-      <pubDate>Sun, 26 Nov 2017 21:21:21 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Hi guys! This is my first post on utopian.io. Hopefully it goes on the right way. This post was written bilingually, in English and Chinese.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;嘿，你好！这是我在 utopian.io 发布的第一篇帖子。但愿我的发布方式没出什么岔子。本文用英文和中文写作，中文在后半部分。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;This post is to introduce an open-source package called &lt;strong&gt;&lt;em&gt;&lt;a href=&#34;https://github.com/pzhaonet/bookdownplus&#34;&gt;bookdownplus&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt; I have been developing with R language for writing assorted books and documents in bookdown environment.&lt;/p&gt;
-
-&lt;p&gt;If you are a Steemian, or a markdown user, you might want to organize your posts in a friendly and elegant way. As far as I know, R &lt;em&gt;&lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown&lt;/a&gt;&lt;/em&gt; package is the best tool to convert markdown files into a nice book. However, &lt;em&gt;bookdown&lt;/em&gt; is not easy for beginners. An R beginner might be confused or depressed in struggling in the flood of LaTeX, YAML, Markdown, Pandoc, etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;bookdownplus&lt;/em&gt; is the easiest shortcut to the world of &lt;em&gt;bookdown&lt;/em&gt;. With &lt;strong&gt;just one single command&lt;/strong&gt; users can get a demo book (or multiple demo books) in pdf, Word document, html, epub, or even more formats. &lt;em&gt;bookdownplus&lt;/em&gt; extends the features of &lt;em&gt;bookdown&lt;/em&gt;, and simplifies the procedure. Users only have to choose a template, clarify the book title and author name, and then focus on writing the text. No need to struggle in YAML and LaTeX.&lt;/p&gt;
-
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-
-&lt;p&gt;Multiple templates are included in &lt;em&gt;bookdownplus&lt;/em&gt;. With these templates &lt;em&gt;bookdownplus&lt;/em&gt; helps you write academic journal articles, guitar books, chemical equations, mails, calendars, diaries, etc.. For instance, the theisis_classic can convet your markdown file into a pdf book like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_thesis_classic.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;and the poem template can make a nice poem book like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poem.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Even a book with guitar chords:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_guitar.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you have programing codes especially R codes in your posts, they can be integrated into your book in a reproducible way owing to the feature of R markdown, which looks like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_nonpar.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
-
-&lt;p&gt;-1.  &lt;a href=&#34;https://cran.r-project.org&#34;&gt;Download R&lt;/a&gt; and install it.&lt;/p&gt;
-
-&lt;p&gt;-2.  &lt;a href=&#34;http://www.ctex.org/CTeXDownload&#34;&gt;Download LaTeX&lt;/a&gt; and install it.&lt;/p&gt;
-
-&lt;p&gt;-3. In R environment, run the following codes to install bookdown and bookdownplus.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install.packages(&#39;bookdown&#39;)
-devtools::install_github(&amp;quot;pzhaonet/bookdownplus&amp;quot;) # the development version 
-# or the stable version from CRAN
-install.package(&amp;quot;bookdownplus&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;-4. Generate a demo book.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;require(bookdownplus)
-bookdownplus()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;link-to-the-repo&#34;&gt;Link to the repo&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/pzhaonet/bookdownplus&#34;&gt;https://github.com/pzhaonet/bookdownplus&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of work&lt;/h2&gt;
-
-&lt;p&gt;Here is a sreenshot of my login webpage.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1511772827/qnjkbxleoptsx5akqguq.jpg&#34; alt=&#34;bdp.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Wouldn&amp;rsquo;t it be cool to make your steem posts into such a book?&lt;/p&gt;
-
-&lt;p&gt;Enjoy R &lt;em&gt;bookdownplus&lt;/em&gt; !&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;本文介绍的是我开发的一个开源程序包，唤作 &lt;strong&gt;&lt;em&gt;bookdownplus&lt;/em&gt;&lt;/strong&gt;，可以在 R 语言环境下制作各种书籍和文档。&lt;/p&gt;
-
-&lt;p&gt;如果你是 steem 或者 markdown 用户，你可能会想把你的帖子整理成一本漂亮的书跟别人分享。据我所知。R &lt;em&gt;&lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;&amp;lsquo;bookdown&amp;rsquo;&lt;/a&gt;&lt;/em&gt; 是将 markdown 格式的文件转化成书的最佳工具。可惜的是，&lt;em&gt;bookdown&lt;/em&gt; 并不容易上手。R 语言初学者可能要为 LaTeX, YAML, Markdown, Pandoc 等折腾很久，也享受不到 bookdown 带来 的快乐。&lt;/p&gt;
-
-&lt;p&gt;于是我开发了 bookdownplus。&lt;/p&gt;
-
-&lt;p&gt;bookdownplus 是对 bookdown 的增强和简化, 是快速使用 bookdown 的最简洁方法。bookdownplus 提供了很多有用的模板，可以很方便地在 bookdown 平台写文集、期刊论文、学位论文、学术海报、化学分子式、信件、日记、日历、诗集、吉他谱等各种常用文档和书籍。这是功能上的增强（+）。bookdownplus 使用时只需指定一个模板，给定作者和书名，就可以一键生成模板文件，用户在模板文件里照猫画虎写自己的文字就可以了，不必再花力气上网找模板、设置 YAML 和 LaTeX。这是操作上的简化（-）。&lt;/p&gt;
-
-&lt;p&gt;上文给了几个图示，分别展示了 bookdownplus 生成的文章合集、诗集、吉他谱、编程书籍的示例。&lt;/p&gt;
-
-&lt;p&gt;怎么样，快来用 bookdownplus 把你的 steem 帖子做成一本漂亮的书吧!&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
 </description>
     </item>
     
