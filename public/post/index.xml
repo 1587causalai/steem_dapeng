@@ -6,8 +6,424 @@
     <description>Recent content in Posts on STEEM@dapeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Dec 2017 15:51:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Dec 2017 22:36:18 +0000</lastBuildDate>
     <atom:link href="https://steemit.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>beginr: an R package for beginners in R language - 帮助初学者学习 R 语言</title>
+      <link>https://steemit.netlify.com/post/beginr-an-r-package-for-beginners-in-r-language/</link>
+      <pubDate>Thu, 21 Dec 2017 22:36:18 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/beginr-an-r-package-for-beginners-in-r-language/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/beginr-an-r-package-for-beginners-in-r-language&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/beginr-an-r-package-for-beginners-in-r-language&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/beginr-an-r-package-for-beginners-in-r-language&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/beginr-an-r-package-for-beginners-in-r-language&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/beginr-an-r-package-for-beginners-in-r-language&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/beginr-an-r-package-for-beginners-in-r-language&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/beginr-an-r-package-for-beginners-in-r-language&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/beginr-an-r-package-for-beginners-in-r-language.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This post was written bilingually, in English and Chinese. If you use &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;the tool I introduced yesterday&lt;/a&gt;, you are able to read both languages!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本文用英文和中文写作，中文在后半部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Recently I have introduced three open-source projects on Utopian.io, which I developed with R language. They are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents&#34;&gt;bookdownplus&lt;/a&gt;: an R package that convert your steem posts into an elegant book,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;mindr&lt;/a&gt;: an R package that creates a mind map from your steem posts, and&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;pinyin&lt;/a&gt;: an R package that give your the ability to read Chinese characters.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks to the attention of many readers, who are much interested in these packages.&lt;/p&gt;
+
+&lt;p&gt;However, they have to learn R language.&lt;/p&gt;
+
+&lt;p&gt;R is often difficult for beginners, but don&amp;rsquo;t worry.  R can be fun and easy if you use the beginr package, which I developed for R beginners.&lt;/p&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;beginr provides many useful functions, including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;some functions which help the beginners recall some commands in R, such as the color codes and the plot shape codes. You don&amp;rsquo;t have to memorize that &amp;lsquo;1&amp;rsquo; is an empty circle and &amp;lsquo;20&amp;rsquo; is a filled one.&lt;/li&gt;
+&lt;li&gt;some wrapped plotting functions, which can plot complex figures.&lt;/li&gt;
+&lt;li&gt;some functions which can easily read and safely write data files, or process dataframes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Furthermore, the source codes of beginr package were written on beginners&amp;rsquo; level with the most commonly used functions.  Any beginner can simply follow the source code so as to get ideas to write their own codes and even develop their own packages.&lt;/p&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation-of-r&#34;&gt;Installation of R&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org&#34;&gt;Download R&lt;/a&gt; and install it.&lt;/p&gt;
+
+&lt;h3 id=&#34;installation-of-beginr&#34;&gt;Installation of beginr&lt;/h3&gt;
+
+&lt;p&gt;In R environment, run the following codes to install beginr.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# stable version:
+install.packages(&amp;quot;beginr&amp;quot;)
+# or development version:
+devtools::install_github(&amp;quot;pzhaonet/beginr&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;functions-as-memos&#34;&gt;Functions as Memos&lt;/h3&gt;
+
+&lt;p&gt;If you often forget the options for &lt;code&gt;pch&lt;/code&gt;, &lt;code&gt;lty&lt;/code&gt;, &lt;code&gt;type&lt;/code&gt;, and &lt;code&gt;col&lt;/code&gt; when you &lt;code&gt;plot()&lt;/code&gt;, you can run &lt;code&gt;plotpch()&lt;/code&gt;, &lt;code&gt;plotlty()&lt;/code&gt;, &lt;code&gt;plottype()&lt;/code&gt;, &lt;code&gt;plotcolors()&lt;/code&gt;, and &lt;code&gt;plotcolorbar()&lt;/code&gt;. No need to search the internet any more.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::plotpch()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/a46212a44b78d3e992dd89848fe55f36d33d17f1/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d322d312e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/a46212a44b78d3e992dd89848fe55f36d33d17f1/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d322d312e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::plotlty()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/56fced4fa7c0cf4e7402fbe0c90afef311fd1f2c/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d322d322e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/56fced4fa7c0cf4e7402fbe0c90afef311fd1f2c/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d322d322e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::plottype()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/7518453a9343d5b2d6bc6b16c4b9e4fc5ef68c83/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d322d332e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/7518453a9343d5b2d6bc6b16c4b9e4fc5ef68c83/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d322d332e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::plotcolors()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/ec2dc8632c6eb092a00d8114f04ce1e8802d23e4/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d322d342e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/ec2dc8632c6eb092a00d8114f04ce1e8802d23e4/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d322d342e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::plotcolorbar()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/c146e3963111a5be05f696a45a113814d759e637/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d322d352e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/c146e3963111a5be05f696a45a113814d759e637/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d322d352e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;functions-for-easy-plotting&#34;&gt;Functions for Easy Plotting&lt;/h3&gt;
+
+&lt;p&gt;Linear regression is often used in scientific work, but it is annoying to display the results. In R you have to run &lt;code&gt;lm()&lt;/code&gt;, &lt;code&gt;plot()&lt;/code&gt;, &lt;code&gt;abline()&lt;/code&gt;, &lt;code&gt;text()&lt;/code&gt; and so on and so forth. Now with ‘beginr’ you only have to run &lt;code&gt;plotlm()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x &amp;lt;- 1:10
+y &amp;lt;- 1:10 + rnorm(10)
+beginr::plotlm(x, y)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/595985cabf35903fa81f88c1142c1dc9f0f41dd5/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d332d312e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/595985cabf35903fa81f88c1142c1dc9f0f41dd5/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d332d312e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;## [[1]]
+##               Estimate Std. Error   t value     Pr(&amp;gt;|t|)
+## (Intercept) -0.8826021 0.59514844 -1.482995 1.763634e-01
+## x            1.1693736 0.09591686 12.191533 1.899987e-06
+## 
+## [[2]]
+## [1] 0.9489254
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want to display the distribution of a data-set, use &lt;code&gt;plothist()&lt;/code&gt;, which gives you a histogram with markers of the median, mean, quantiles, standard deviation, sample number and the skewness.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x &amp;lt;- rnorm(10000)
+beginr::plothist(x)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/c957a803d1fb77da687d51642dc356bc9664d9d8/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d342d312e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/c957a803d1fb77da687d51642dc356bc9664d9d8/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d342d312e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##     para         value
+## 1    min -3.9594329262
+## 2     1q -0.6743155802
+## 3 median  0.0151220580
+## 4     3q  0.6806285656
+## 5    max  4.1576382225
+## 6  lower -2.7065331755
+## 7  upper  2.7128461609
+## 8   mean -0.0005589431
+## 9     sd  1.0064399683
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I like &lt;code&gt;pairs()&lt;/code&gt;, and ‘beginr’ gives more powerful features to &lt;code&gt;plotpairs()&lt;/code&gt; and &lt;code&gt;plotpairs2()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;df &amp;lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
+beginr::plotpairs(df)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/983f06e8797a23def50621f70ff6914195a83d22/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d352d312e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/983f06e8797a23def50621f70ff6914195a83d22/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d352d312e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::plotpairs2(df)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;p&amp;lt;0.01&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;p&amp;lt;0.01&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;p&amp;lt;0.01&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/a34746ecc68e80e94448cdf11b60f34d9b2f9678/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d352d322e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/a34746ecc68e80e94448cdf11b60f34d9b2f9678/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d352d322e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I often have to plot one independent variable (x) and multiple dependent variables (y1, y2, …, yn) in one 2-D coordinate system, or one dependent variable (y) against multiple independent variables (x1, x2, …, xn) with their error bars. Use &lt;code&gt;dfplot()&lt;/code&gt; or &lt;code&gt;dfplot2()&lt;/code&gt; in ‘beginr’.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x &amp;lt;- seq(0, 2 * pi, length.out = 100)
+y &amp;lt;- data.frame(sin(x), cos(x))
+yerror &amp;lt;- data.frame(abs(rnorm(100, sd = 0.3)), abs(rnorm(100, sd = 0.1)))
+beginr::dfplot(x, y, yerror = yerror)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/f1c171e176b44d26c2c75c04fa0833aba5620729/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d362d312e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/f1c171e176b44d26c2c75c04fa0833aba5620729/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d362d312e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::dfplot2(y, x, xerror = yerror)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/b37d6741ddf588143fa94fbbb6e116d357ceb450/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d362d322e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/b37d6741ddf588143fa94fbbb6e116d357ceb450/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d362d322e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you would like to add errorbars only, then use &lt;code&gt;errorbar()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x &amp;lt;- seq(0, 2 * pi, length.out = 100)
+y &amp;lt;- sin(x)
+plot(x, y, type = &amp;quot;l&amp;quot;)
+beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://camo.githubusercontent.com/9a5ef1ff1288d3eba4a5376b73ef1b20c5ed75c1/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d372d312e706e67&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/9a5ef1ff1288d3eba4a5376b73ef1b20c5ed75c1/687474703a2f2f7777772e707a68616f2e6f72672f706f73742f323031372d30362d32332d626567696e725f72656c65617365642e656e5f66696c65732f6669677572652d68746d6c2f756e6e616d65642d6368756e6b2d372d312e706e67&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;functions-for-data-frames&#34;&gt;Functions for Data Frames&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;lmdf()&lt;/code&gt; performs the linear regression between every two columns in a data frame.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;df &amp;lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
+beginr::lmdf(df)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;##   x y r.squared adj.r.squared  intercept     slope Std.Error.intercept
+## 1 a b 0.9630442     0.9584247 -0.7901086 1.1271749           0.4843895
+## 2 a c 0.8568806     0.8389907 -0.3427519 1.0425054           0.9346580
+## 3 b a 0.9630442     0.9584247  0.8783157 0.8543876           0.3749251
+## 4 b c 0.8157952     0.7927696  0.6004724 0.8856059           0.9426967
+## 5 c a 0.8568806     0.8389907  1.0688792 0.8219436           0.7466774
+## 6 c b 0.8157952     0.7927696  0.4432909 0.9211717           0.9729768
+##   Std.Error.slope t.intercept   t.slope Pr.intercept     Pr.slope
+## 1      0.07806644  -1.6311430 14.438661   0.14150586 5.177385e-07
+## 2      0.15063377  -0.3667137  6.920795   0.72334232 1.219459e-04
+## 3      0.05917360   2.3426432 14.438661   0.04722045 5.177385e-07
+## 4      0.14878374   0.6369730  5.952303   0.54193651 3.410966e-04
+## 5      0.11876434   1.4315142  6.920795   0.19016727 1.219459e-04
+## 6      0.15475888   0.4556027  5.952303   0.66078732 3.410966e-04
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There are two functions as improvements of &lt;code&gt;tapply()&lt;/code&gt; for factor calculation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::tapplydf()
+beginr::tapplydfv()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;functions-for-reading-and-writing-files&#34;&gt;Functions for Reading and Writing files&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;readdir()&lt;/code&gt; reads multiple files into a list.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::readdir()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;writefile()&lt;/code&gt; avoids overwriting the files which already exist.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::writefile()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;list2ascii()&lt;/code&gt; saves a list as a text file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;alist &amp;lt;- list(a = 1:10, b = letters)
+beginr::list2ascii(alist)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;functions-for-packages&#34;&gt;Functions for Packages&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;bib()&lt;/code&gt; creates bibliographic entries as texts or a file (‘.bib’).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::bib(pkg = c(&amp;quot;mindr&amp;quot;, &amp;quot;bookdownplus&amp;quot;, &amp;quot;pinyin&amp;quot;, &amp;quot;beginr&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## @Manual{R-beginr,
+##   title = {beginr: Functions for R Beginners},
+##   author = {Peng Zhao},
+##   year = {2017},
+##   note = {R package version 0.1.0},
+##   url = {https://github.com/pzhaonet/beginr},
+## }
+## @Manual{R-bookdownplus,
+##   title = {bookdownplus: Generate Varied Books and Documents with R &#39;bookdown&#39; Package},
+##   author = {Peng Zhao},
+##   year = {2017},
+##   note = {R package version 1.2.2},
+##   url = {https://github.com/pzhaonet/bookdownplus},
+## }
+## @Manual{R-mindr,
+##   title = {mindr: Convert Files Between Markdown or Rmarkdown Files and Mindmaps},
+##   author = {Peng Zhao},
+##   year = {2017},
+##   note = {R package version 1.1.0},
+##   url = {https://github.com/pzhaonet/mindr},
+## }
+## @Manual{R-pinyin,
+##   title = {pinyin: Convert Chinese Characters into Pinyin},
+##   author = {Peng Zhao},
+##   year = {2017},
+##   note = {R package version 1.1.0},
+##   url = {https://github.com/pzhaonet/pinyin},
+## }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;rpkg()&lt;/code&gt; creates a new R package in an easy way.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beginr::rpkg()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;link-to-the-repo&#34;&gt;Link to the Repo&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/pzhaonet/beginr&#34;&gt;https://github.com/pzhaonet/beginr&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of Work&lt;/h2&gt;
+
+&lt;p&gt;In my profile on Utopian.io, the github repo beginr is listed in &lt;a href=&#34;https://utopian.io/project/pzhaonet/beginr/github/92541456/all&#34;&gt;my project page&lt;/a&gt;,  which is show in the screenshot as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513895660/ludmzc8agctbqxg5uhlw.jpg&#34; alt=&#34;beginr.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The login page on github.com is shown in the following screenshot:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513895670/vrzlb9fbjlvyxsdnruz1.jpg&#34; alt=&#34;beginr2.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+
+&lt;p&gt;最近，我介绍了三个开源项目，都是我用 R 语言开发的，包括：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/introduction-to-bookdownplus-an-r-package-for-writing-assorted-books-and-documents&#34;&gt;bookdownplus&lt;/a&gt;: 可以把你在 steem 上的帖子做成一本漂亮的电子书,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;mindr&lt;/a&gt;: 可以把你的 steem 帖子转换成思维导图，或者反过来，把思维导图转换成 markdown 格式的帖子大纲，&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r&#34;&gt;pinyin&lt;/a&gt;: 可以把汉字转换成拼音。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;感谢大家的关注。很多朋友对这些项目产生了兴趣。然而，要使用这些功能，就得先学会 R 语言。&lt;/p&gt;
+
+&lt;p&gt;R 语言入门并不容易。但是别担心，有捷径。我专门为 R 初学者开发了一个名为 beginr 的扩展包。&lt;/p&gt;
+
+&lt;p&gt;使用 beginr 扩展包，??些 R 指令你就不用记忆了。比如说，在作图的时候，&amp;rsquo;1&amp;rsquo; 表示空心原点，&amp;rsquo;20&amp;rsquo; 表示实心原点，还有各种奇形怪状的点，不好记。更不要说各种颜色代码了。beginr 里提供了一些函数，很方便地给你贴心提示。还有很多其他函数，这里就不详细介绍了，请看上面的英文示例部分。&lt;/p&gt;
+
+&lt;p&gt;最重要的是，beginr 本身的源代码都是用最简单最基础的 R 指令写成了，本身就是个示范代码集。初学者只需照猫画虎，跟着 beginr 的帮助文件和源代码，就可以很快学到 beginr 里的各种功能是如何实现的。&lt;/p&gt;
+
+&lt;p&gt;希望 beginr 能助你早日入门，跟我一起享受 R 语言的精彩世界。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/beginr-an-r-package-for-beginners-in-r-language&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>“月旦评”给 steem 的启发和教训 - 顺便也参加本期月旦评吧</title>
+      <link>https://steemit.netlify.com/post/steem-or/</link>
+      <pubDate>Thu, 21 Dec 2017 10:06:33 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/steem-or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/steem-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/steem-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/steem-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/steem-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/steem-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/steem-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/steem-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“月旦评”，简写成“胆评”，口号是：“你有胆投稿，我就有胆评。”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;“月旦评”活动刚刚发起时，我对发起人 @rivalhw 开了这么个玩笑。&lt;/p&gt;
+
+&lt;p&gt;“月旦评” 是 steem 华语圈长期举办的周期性活动，具体情况可以看 @rivalhw 的主页。今天，天使李娜 &lt;a href=&#34;https://cnsteem.com/cn/@angelina6688/cn&#34;&gt;@angelina6688 发帖&lt;/a&gt;，给大家普及了“月旦评”一词的由来。借此机会，我梳理一下长期以来积攒的零碎想法。&lt;/p&gt;
+
+&lt;p&gt;1&lt;/p&gt;
+
+&lt;p&gt;身为草根，有点理想的，都想改变命运。古人也是。如果无产阶级永远看不到奔小康的希望，就会不服，就会闹事，社会就会动荡，那么朝廷拿什么安抚民心？&lt;/p&gt;
+
+&lt;p&gt;答案是科举。&lt;/p&gt;
+
+&lt;p&gt;朝廷说：你看，不是没给你们机会哦，是你们自己不争气，考不上而已。于是就可以把责任归结到个人头上了。草根们对视两眼，得了，造反不就是为了当官嘛，那还不如考试，考砸了大不了再考，而造反造砸了是要砍头，于是也都心服口服，纷纷当范进，毕生精力都扑到考试上，没工夫谋反。于是，社会就稳定了。&lt;/p&gt;
+
+&lt;p&gt;科举制这项伟大的发明，是隋唐时期才出现的，官民双赢，所以一直持续了一千多年，到民国才结束。科举制发明之前，平民的上升通道，是魏晋开始的九品中正制。而九品中正制的前身，就是汉朝的察举制。也就是常说的“举孝廉”。&lt;/p&gt;
+
+&lt;p&gt;谁孝顺（父父子子），谁清廉（君君臣臣），大家给他的评价就好，就举荐他做官。而大家的评价里，大 V 的评价最重要。这就是为什么三国时期评人之风盛行，包括出现了每月一评的“月旦评”。相当于每年的高考和模拟考，多来几次嘛，大家都指望靠这个当官发财改变世界呢。&lt;/p&gt;
+
+&lt;p&gt;@angelina6688 的帖子里说了，曹操有胆去投稿，大 V 许邵就有胆评。“治世之能臣，乱世之奸雄”，这是他给曹操的评价。大 V 评价的影响力大不大？大。影响后世两千年。目测还会继续影响下去，估计曹操“奸雄”的黑锅得背到人类灭绝的那一天了。&lt;/p&gt;
+
+&lt;p&gt;不只是许邵。当时的另一位大 V，人称“水镜先生”的司马徽，也有过一条著名评价，后来由徐庶转达给了刘备：“伏龙凤雏得一可安天下。”伏龙是诸葛亮，凤雏是庞统。这条评价直接影响到诸葛亮的后半生，乃至后世对诸葛亮的神化，为千年后写成的不朽名著《三国演义》奠定了基调，确定了第一男主角。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Romance_of_the_Three_Kingdoms_at_Long_Corridor_1.JPG/1280px-Romance_of_the_Three_Kingdoms_at_Long_Corridor_1.JPG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;插图：三顾茅庐 (来源：upload.wikimedia.org)&lt;/p&gt;
+
+&lt;p&gt;2&lt;/p&gt;
+
+&lt;p&gt;靠大 V 的点赞来“举孝廉”，算是布衣的一条出路。有出路比没出路好。但是，受历史局限性，这个制度有很多弊病。&lt;/p&gt;
+
+&lt;p&gt;弊端之一，就是为名所累。三国有段著名的故事：徐庶走马荐诸葛，刘关张三顾茅庐。为什么徐庶一听母亲被曹操软禁，就立刻离开刘备（走之前推荐了诸葛亮来接班）投奔曹操了？亲情是感情上的原因；而基于现实的考量，一旦担上“不孝”的恶名，完了，以后别想混了，必被别的孝子取代。往轻了说是职业生涯就此断送，往重了说……看看孔融吧，三岁让梨的孔融，孔子的嫡子孙孔融，建安七子的大文学家孔融，被安上了个不孝的罪名，给满门抄斩了。灭门的时候，他家的娃还留下个“覆巢之下岂有完卵”的成语。&lt;/p&gt;
+
+&lt;p&gt;为了名声好，当时葬礼奢华之风盛行。孝嘛，绞尽脑汁，也得要个孝顺的名声啊。父母去世了，就倾家荡产办丧事，一辈子的积蓄全埋到父母的坟墓里，一守孝就是好几年，期间连夫妻生活都不能有。后世的盗墓贼，最喜欢盗的就是东汉的墓，里面全是金银珠宝。曹操为此痛心疾首：咱们汉朝的 GDP 不低啊，可是咱们把钱都埋了啊。所以，曹操去世时前立下遗嘱，要薄葬，自己带头，煞一煞不正之风。&lt;/p&gt;
+
+&lt;p&gt;弊端之二，是拉帮结派。&lt;/p&gt;
+
+&lt;p&gt;读三国，会发现一个特别的现象，那就是很多人才，都来自“颍川”这个神奇的地方（今属河南）。前面说的司马徽和徐庶，就是颍川人（这么说来，诸葛亮的名声是出自颍川）。还有郭嘉、钟会、钟繇、荀彧、荀攸&amp;hellip;&amp;hellip;等等等等。难道是别的地方风水太差，就我们河南人才多？&lt;/p&gt;
+
+&lt;p&gt;不是。其实是因为抱团取暖，大家相互点赞，一人独吹不是春，大家互吹春满园，于是越做越大。这些名人未必全部有才，但其中有才的人，必须在出名之后，才华才有地方能施展得开。事实证明，别的地方也是人才济济，例如江东，但是当时被我们这些河南人的名气 给盖过了。就好比 steem 上草根的文章写得再好，也难上流行热门榜，因为被大鲸们的互赞给盖住了。&lt;/p&gt;
+
+&lt;p&gt;这造成了人们对许邵“月旦评”的负面评价。有人说月旦评过于主观，有人说月旦评结党营私。《后汉书》认为月旦评是许劭用来攻击他哥哥许靖的工具。诸葛亮的侄子诸葛恪（后来在东吴权倾朝野），曾经给东吴丞相陆逊的信里写道：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;都特么是许邵这帮人互相吹捧诽谤搞出的事儿。&lt;/p&gt;
+
+&lt;p&gt;（自汉末以来，中国士大夫如许子将辈，所以更相谤讪，或至于祸，原其本起，非为大雠。惟坐克己不能尽如礼，而责人专以正义。）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;3&lt;/p&gt;
+
+&lt;p&gt;三国时期的这个情况，跟 steem 很像。&lt;/p&gt;
+
+&lt;p&gt;我在 steem 上发起了一些活动，包括“水浒英雄榜”、“新人三个一”活动、“华语好声音”活动、“新人希望工程”等等。来参加活动的人我就眼熟，熟了的好处就是熟悉他的背景和写作风格，容易确定他的新帖是原创不是抄袭，如果外加写得好，不赞他赞谁？虽然目前我的赞只值 1 块钱。而陌生人，有几次我想点赞，一查却发现是抄袭。点赞抄袭帖说明我缺乏判断能力，丢的是我的脸，但判断是不是抄袭却要额外花时间。严格来讲，这就属于拉帮结派，虽然我的初衷并非如此。所以，我常常反思，怎么能尽可能避免这些弊端，尽量公平。&lt;/p&gt;
+
+&lt;p&gt;一个方法就是向我们的“月旦评”活动学习，让活动的评判标准公开化、透明化、民主化。@rivalhw 多次强调：月旦评不是大伟的月旦评，而是大家的月旦评。事实上也确实做到了，现在月旦评比大伟的名气大。&lt;/p&gt;
+
+&lt;p&gt;另外一个方法就是轮流坐庄，去中心化，比如最近风行“黑白摄影挑战赛”就是，我完全不知道是谁发起的。这是我希望达到的目的，让大家记住的是活动本身，而不是 @dapeng。所以，我想试着把活动交给其他朋友来主办，每次换个主办人，轮流坐庄。这样也有问题，就是举办活动并不容易，费时费力，如果不慎交给了不靠谱的人，可能把活动给毁了。这事儿我还没想好。&lt;/p&gt;
+
+&lt;p&gt;以后再说吧。&lt;/p&gt;
+
+&lt;p&gt;4&lt;/p&gt;
+
+&lt;p&gt;你是草根吗？天天看着自己可怜巴巴的 SP，发的帖子质量不见得比大鲸写得差，但人家是上百 SBD，而你只有几分钱的收入，没人赞没人看，根本看不到未来的出路。怎么办？&lt;/p&gt;
+
+&lt;p&gt;要是你只想躬耕于南阳，不求闻达于诸侯，那就维持现状挺好；否则，有两条出路。&lt;/p&gt;
+
+&lt;p&gt;第一条，上文已经介绍了：得靠大鲸的点赞。&lt;/p&gt;
+
+&lt;p&gt;得傍大腿啊，同学！这里没有科举制，不是谁考卷写得好就能上名校！这些天来，你乌泱乌泱地发帖，可是你拜过码头了吗？去过颍川了吗？&lt;/p&gt;
+
+&lt;p&gt;你就算是诸葛亮满腹经纶，那也得靠大 V 帮你把名声打出去，才有刘皇叔来顾你家茅庐呀！每天光中文区就四百篇文章，你不想想办法的话，你的文章惊天地泣鬼神，可是哪个人类能看得见啊！&lt;/p&gt;
+
+&lt;p&gt;那么谁是大 V？&lt;/p&gt;
+
+&lt;p&gt;“月旦评”活动里，主办人 @rivalhw 就是水镜先生啊！@rivalhw 在 &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/6mnla8-steemit-cn&#34;&gt;华语水浒英雄榜&lt;/a&gt;位列第四，对应梁山角色是天闲星公孙胜，手持 6 万 SP，如果给你全力点赞一次，你的帖子就会得到 15 SBD（约合 1000 元人民币）的收益。更庆幸的是，@rivalhw 的爱好不是马术高尔夫球这种高不可攀的贵族活动，而是原创文字！也就是你小学就会的作！文！——那还等什么，赶紧去抱啊。&lt;/p&gt;
+
+&lt;p&gt;还有“月旦评”的评委们， @deanliu @lemooljiang @tumutanzi，这些都是声望 69 以上的大 V ！ 还有 @hannahwu，虽然目前声望略逊，但那也是独立博客圈响当当的狠角色，在 steem 上的前途不可估量！若是这些人你都不喜欢的话，去水浒英雄榜上找别的大  V  啊！只要他们给你一个赞，胜过草根点你千赞万赞啊！&lt;/p&gt;
+
+&lt;p&gt;怎么抱大腿？&lt;/p&gt;
+
+&lt;p&gt;参加他们举办的活动，写他们推崇的东西啊！去他们府上（主页）拜访，看看他们自己都写些什么，看看他们都给谁点赞给谁留言。你再留个言就等于递个名片，人家才知道你的存在啊。&lt;/p&gt;
+
+&lt;p&gt;你说你喜欢我行我素，不屑于取悦他人。是，我佩服有骨气的人。可是，大 V 的喜好不只一个，总有个跟你不谋而合心相印的吧？你不用屈尊拍马屁，只需找对人，交个志同道合的大 V 朋友，你才能越写越好，越写越开心，而且同时有钱赚啊！要不然，你还不如躬耕于新浪博客和 wordpress；来 steem 界面丑发帖慢编辑器难用，你说你图个啥？&lt;/p&gt;
+
+&lt;p&gt;第二条，上面其实也暗示了，得抓机遇。&lt;/p&gt;
+
+&lt;p&gt;诸葛亮虽然被大 V 点赞，但是为什么不去 SP  最多的曹操阵营，而去了屌丝刘备阵营？因为那里有出头的机会。曹操阵营人才太多，嗷嗷待赞的也多，每人分的就少，轮不上诸葛亮。而刘备那里，SP 不多，但是对诸葛亮 100% VP 点赞。&lt;/p&gt;
+
+&lt;p&gt;这就好比 steem CN 区文章太多，大 V 又少，分给你的赞也不会多。去别的阵营看看，比如现在 Utopian.io 就是很好的机会。趁早去，去得晚了可能机会也就没了。“伏龙凤雏”里的凤雏庞统，同样去抱刘备的大腿，去了一看，刘备左腿趴着关张赵马黄，右腿趴着诸葛亮，满了。最后，伏龙流芳百世，凤雏一事无成。&lt;/p&gt;
+
+&lt;p&gt;CN 区之外的阵营有英文门槛，如果迈不过去，也不是没有出路。前几个月 Ned 代理几百万 SP 给几个中文用户，中文区空前繁盛，就是一次机遇。这两天 SBD 疯涨，也算是个机遇。以后还有没有这种机遇，没人知道，但是可以走着瞧。&lt;/p&gt;
+
+&lt;p&gt;曹操阵营的司马懿，一开始啥都不是，也没有大 V 点赞，不管发什么帖都沉底，根本没有出头的机会，但是他坚决不换阵营，他能熬。司马懿熬死了自己阵营的曹操，曹丕，曹真，曹爽，还熬死了敌方阵营的诸葛亮。最后，机会终于落到他家头上了，他的儿孙建立了晋朝，取代了矿主。&lt;/p&gt;
+
+&lt;p&gt;steem 上，很多老人在多次沉浮里慢慢离去。沉舟侧畔千帆过，新人的地位越来越高，熬成了老人，成为了新一代的大 V。&lt;/p&gt;
+
+&lt;p&gt;试试看，你能在 steem 上熬多久？&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>pinyin: an R package that converts Chinese characters into Latin letters - 将中文转成汉语拼音的 R 语言包</title>
@@ -118,9 +534,13 @@ pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;)
 
 &lt;h2 id=&#34;proof-of-work&#34;&gt;Proof of Work&lt;/h2&gt;
 
-&lt;p&gt;In my profile on Utopian.io, the github repo pinyin is listed in &lt;a href=&#34;https://utopian.io/project/pzhaonet/pinyin/github/92541456/all&#34;&gt;my project page&lt;/a&gt;,  which is show in the screenshot as follows:&lt;/p&gt;
+&lt;p&gt;In my profile on Utopian.io, the github repo pinyin is listed in &lt;a href=&#34;https://utopian.io/project/pzhaonet/pinyin/github/92541456/all&#34;&gt;my project page&lt;/a&gt;,  which is shown in the screenshot as follows:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513784911/jy8irppguojtuv4w9a4i.jpg&#34; alt=&#34;pinyin.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The login page on github.com is shown in the following screenshot:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513843020/ztvmkwbnz688itefzyjq.jpg&#34; alt=&#34;pinyin2.jpg&#34; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -171,7 +591,7 @@ devtools::install_github(&amp;quot;pzhaonet/pinyin&amp;quot;)
 pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_y??nɡ_liǔ_chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ_chūn_fēnɡ_bú_dù_yù_mén_ɡuān&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;更改相邻拼音之间的分隔符号：&lt;/p&gt;
@@ -291,7 +711,7 @@ pinyin(&#39;羌笛何须怨杨柳春风不度玉门关&#39;)
 
 &lt;p&gt;有个老同学在朋友圈里分享了一篇文章，标题是“你失踪了，会惊动谁”。我留言说：会惊动房东和银行。我每个月得交房租，得还国内的房贷。&lt;/p&gt;
 
-&lt;p&gt;我看到关??跳楼事件的一些言论，都是归罪于行业衰落和个人经济压力。如果是这样，那就给自杀找来了合理性，只怕将来会让更多人走上轻生的不归路。生活的压力不是什么新鲜事。如果不是衔着金汤匙出生，那么草根生活原本不就是这么累吗？&lt;/p&gt;
+&lt;p&gt;我看到关于跳???事件的一些言论，都是归罪于行业衰落和个人经济压力。如果是这样，那就给自杀找来了合理性，只怕将来会让更多人走上轻生的不归路。生活的压力不是什么新鲜事。如果不是衔着金汤匙出生，那么草根生活原本不就是这么累吗？&lt;/p&gt;
 
 &lt;p&gt;科幻小说《三体》里，外星文明即将对人类实施灭绝计划之前，对人类这样说：&lt;/p&gt;
 
@@ -6552,107 +6972,6 @@ zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p)
 &lt;p&gt;我知道这个问题我不该问，但是我实在黔驴技穷了，发到这里碰碰运气，看有没有高人指点一下。这个事儿已经连续折磨我两天了，头发掉了一大把。&lt;/p&gt;
 
 &lt;p&gt;你说说，这算不算秀恩爱？&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>带娃出行的最佳方式</title>
-      <link>https://steemit.netlify.com/post/5idmwh/</link>
-      <pubDate>Wed, 29 Nov 2017 22:33:30 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/5idmwh/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5idmwh&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5idmwh&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5idmwh&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5idmwh&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/5idmwh&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/5idmwh&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5idmwh&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/5idmwh.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;大娃京生四岁的时候，在国内奶奶家住。当时，我们打算结束逍遥的二人世界生活，把京生接到德国来跟我们一起住。接之前，我们开始筹划一切跟京生生活相关的事情，例如，怎么带京生出行。&lt;/p&gt;
-
-&lt;p&gt;买车？当时买不起；打车？太贵；公交？不方便；步行？算了吧，京生倒是喜欢跑步前进，我们俩可追不上。&lt;/p&gt;
-
-&lt;p&gt;看来还是得在自行车上作打算。&lt;/p&gt;
-
-&lt;p&gt;有一天，我们去超市看了看自行车上的儿童座椅，居然要100欧，比我们俩的自行车加起来乘以2还贵。&lt;/p&gt;
-
-&lt;p&gt;另一个选择是德国流行的小拖车。在我第一次在大街上看到它的时候，眼球立刻就被吸引住了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Child-Trailer-Promenade-Forest-Bicycle-Bike-2488390.jpg&#34; alt=&#34;&#34; /&gt;
-小拖车的优点如下：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;孩子稳稳坐在小拖车上，跟前面自行车上的大人距离不远也不近，应该有利于培养孩子的独立意识；&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;拖车里空间很大，不像座椅那么拥挤；&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;关键的优点是，看上去真的很酷！&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;经过调研，我们发现，这样的拖车，在自行车用品商店卖600欧！附加组件另计！&lt;/p&gt;
-
-&lt;p&gt;当穷人基本打算放弃的时候，突然想起上淘宝看看，一看不要紧，在国内才600块人民币！还是国内好啊。&lt;/p&gt;
-
-&lt;p&gt;受淘宝启发，我上了德国的ebay网，克服了包括完全不懂的德语界面、完全不熟悉的购买方式等重重困难，在多次侦察和尝试之后，终于以50欧的总价（30欧购买+20欧快递），成功竞得拖车一辆！&lt;/p&gt;
-
-&lt;p&gt;这个价格，让花了600欧买拖车的米同学一直耿耿于怀。&lt;/p&gt;
-
-&lt;p&gt;3个工作日后，货就到了。安装，调试，上车训练。万无一失之后，把京生小朋友五花大绑固定在了拖车里。&lt;/p&gt;
-
-&lt;p&gt;京生很享受。&lt;/p&gt;
-
-&lt;p&gt;有了拖车，我们就经常骑车载着出行，去超市，去公园，去森林。真正的绿色出行，环保而健康。&lt;/p&gt;
-
-&lt;p&gt;后来，京生长高了，坐不进去了。好在德生出生了。于是，这台拖车拖完哥哥拖弟弟，一直陪伴了我们六年。&lt;/p&gt;
-
-&lt;p&gt;如今，德生也坐不进去了。前几天，我把拖车卖了出去。买家是住在本地郊区的一对小夫妻。&lt;/p&gt;
-
-&lt;p&gt;等待它的，是新的主人，和一段新的故事。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>他们是怎么给孩子起了个好名字的？- How to name a kid: tips from the Three Kingdoms</title>
-      <link>https://steemit.netlify.com/post/or-how-to-name-a-kid-tips-from-the-three-kingdoms/</link>
-      <pubDate>Tue, 28 Nov 2017 22:31:45 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/or-how-to-name-a-kid-tips-from-the-three-kingdoms/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/or-how-to-name-a-kid-tips-from-the-three-kingdoms.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;无意听了一堂中央台“百家讲坛”关于三国的讲座。很多三国人物，他们的爹妈，都给孩子取了个好名字。我觉得，如果给孩子起名字时能参考一下三国人物命名法，那么一定是无不裨益的。&lt;/p&gt;
-
-&lt;p&gt;先说三国时期牛烘烘的曹氏。曹操的名字对于现代中国人来说，虽不比秦桧一听就让人痛恨，但是也给人厌恶感，喜欢戏曲的大爷大妈们脑子里会浮现出一个白脸奸臣形象来。就曹操的所做作为来看，要是他儿子曹丕不篡位称帝，老爹曹操估计也不会落下个奸臣的骂名。“奸贼曹操是逆贼曹丕的儿子”，这句话说得有道理。&lt;/p&gt;
-
-&lt;p&gt;有人说曹操是中国历史上第一个敢用脏字作名字的人，所以雄踞中国流氓史榜首——这是笑谈了。不过鉴于这两个原因，后世的中国人一般是不会用“操”字起名的，就像不会用秦桧的“桧”字。两个好端端的汉字被汉人们糟蹋了。&lt;/p&gt;
-
-&lt;p&gt;曹操字“孟德”，“孟”就是老大，“德”用来说明“操”的意思是“德操”，跟“操行评语”的“操”一样，所以我觉得这个名字对古人来说还是起得蛮好的。&lt;/p&gt;
-
-&lt;p&gt;曹操手下能人无数，我比较喜欢张辽。张辽字文远，“辽”和“远”也是同义词，“文”大概是种美称吧，合在一起意境很美。&lt;/p&gt;
-
-&lt;p&gt;20世纪末21世纪初的中国教育，导致曹魏最有名气的有四个人，除了曹操外，还有：孔融，因为他在小学课本让了梨，后来被满门超斩；曹冲，因为他同样在小学课本里称了大象，可惜后来夭折了；还有那个行军主簿杨修，在中学课本里就被杀了。孔融，字文举，字典上说“融”的本义是炊气上升，那么就容易理解为什么字“文举”了。曹冲字仓舒，杨修字德祖，谁能说说他们二位的名和字有甚关联乎？&lt;/p&gt;
-
-&lt;p&gt;再说江东孙家。孙家老大是孙坚。孙坚字“文台”，字典给出“坚”的本义是泥土坚硬，台子么，当然硬了，不然就是土堆。&lt;/p&gt;
-
-&lt;p&gt;孙坚的俩儿子，大的是孙策，字伯符——“伯”和“孟”一样，也是排行老大，而“符”应该是令符、令箭的意思，“策”则可能是策略、谋略的意思；二儿子是孙权，字仲谋，这一看就知道了，我们常说的权谋权谋，跟他哥哥的名字一比较，可以嗅出这一家子的政治气味来，不过把这气味弄到名字上就太露骨了，就好比开个KTV赚钱就赚钱呗，非要名字叫做钱柜，既难听又难看。&lt;/p&gt;
-
-&lt;p&gt;哥儿俩有二位重臣：张昭字子布，名和字也是同义词，“昭示”、“公布”的意思。周瑜，字公瑾，名字很好听也很好看，所以竟然单位有同事和他重名，就是诸葛亮的哥哥诸葛瑾，字子瑜。“瑜”和“瑾”都是美玉——凡是斜玉旁的字，都跟玉石有关；“公”和“子”自然都是对男子的美称。&lt;/p&gt;
-
-&lt;p&gt;周瑜人如其名，风华正茂，少年英豪，宛若三国群石当中一块最美的宝玉，在当时超级男生的排行榜上可以排三甲；诸葛瑾就惨了点儿，长了个长长的驴脸，要是在现代还可以借此上春晚让大家嘲笑，可是当时在学术上似乎没有多大作为，老婆也不比周瑜的小乔，委屈了这个好名字。&lt;/p&gt;
-
-&lt;p&gt;周瑜接班人是鲁肃，字子敬，“肃静”嘛，鲁肃是个老实巴交的人，不似周瑜的风流儒雅。&lt;/p&gt;
-
-&lt;p&gt;鲁肃的接班人是吕蒙，字子明，“蒙”是“蒙蔽”的“蒙”，与“明”是反义词， 结果果然白衣渡江蒙骗了蜀军并取了关羽的性命，难道是天意？&lt;/p&gt;
-
-&lt;p&gt;最后说说三国的正统蜀汉一家。蜀汉的中心人物是经天纬地的诸葛亮，字孔??。孔者，“很”也，跟“孔武有力”的“孔”是一个意思。“明亮”绝对是个好词，好听好看又容易理解，小学二年级的学生在造句的时候经常用“小明”“小亮”做主人公。&lt;/p&gt;
-
-&lt;p&gt;刘备，字玄德，我又得请教了：这个名和字有关联么？&lt;/p&gt;
-
-&lt;p&gt;刘备手下五虎上将“关张赵马黄”，挨个说吧：关羽，据说原本字长生，后来改成了云长，莫非是为了配合“羽”字才改的？&lt;/p&gt;
-
-&lt;p&gt;张飞，字翼德，三国志记载的是“益德”，莫非罗贯中也是为了配合“飞”字而改的？&lt;/p&gt;
-
-&lt;p&gt;赵云，字子龙，我觉得张辽、关羽、张飞、赵云的名与字都是一个系列的，意境相近，而子龙的名字当中更多了一分豪爽气。与许多英雄一样，三国之中，我最爱子龙；我认为周瑜是三国历史上最完美的人物，而赵云则是三国小说中最完美的人物了，千百年来引来无数人的崇拜，堪称三国演义中第一帅哥。&lt;/p&gt;
-
-&lt;p&gt;马超，字孟起，“超”和“起”无论从模样还是意思上都不分彼此。&lt;/p&gt;
-
-&lt;p&gt;最后说老将黄忠，字汉升，我认为这是三国群英谱中起得最好的名字，简直就是三国演义中心思想的最精练概括。对谁忠诚？对汉朝，对汉室正统的刘备！就和董建华的名字一样，在政治倾向敏感的年代，一个名字一定会在一定程度上影响着一个人的命运。&lt;/p&gt;
-
-&lt;p&gt;三国风云漫卷，浪花淘尽英雄，岁月却带不走那一串串熟悉的姓名。掩卷而思，有知识有文化的你，是否还会给自己的小猫小狗和小孩随随便便起个名字了事？读了这篇拙作的你，是否还会让“狗剩”“旺财”这种名字陪伴他们一生？&lt;/p&gt;
 </description>
     </item>
     

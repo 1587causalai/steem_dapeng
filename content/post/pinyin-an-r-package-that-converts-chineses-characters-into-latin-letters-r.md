@@ -115,9 +115,14 @@ https://github.com/pzhaonet/pinyin
 
 ## Proof of Work
 
-In my profile on Utopian.io, the github repo pinyin is listed in [my project page](https://utopian.io/project/pzhaonet/pinyin/github/92541456/all),  which is show in the screenshot as follows:
+In my profile on Utopian.io, the github repo pinyin is listed in [my project page](https://utopian.io/project/pzhaonet/pinyin/github/92541456/all),  which is shown in the screenshot as follows:
 
 ![pinyin.jpg](https://res.cloudinary.com/hpiynhbhq/image/upload/v1513784911/jy8irppguojtuv4w9a4i.jpg)
+
+The login page on github.com is shown in the following screenshot:
+
+![pinyin2.jpg](https://res.cloudinary.com/hpiynhbhq/image/upload/v1513843020/ztvmkwbnz688itefzyjq.jpg)
+
 
 ---
 
@@ -168,7 +173,7 @@ library('pinyin')
 pinyin('羌笛何须怨杨柳春风不度玉门关')
 ```
 
-    ## [1] "qiānɡ_dí_hé_xū_yuàn_y??nɡ_liǔ_chūn_fēnɡ_bú_dù_yù_mén_ɡuān"
+    ## [1] "qiānɡ_dí_hé_xū_yuàn_yánɡ_liǔ_chūn_fēnɡ_bú_dù_yù_mén_ɡuān"
 
 更改相邻拼音之间的分隔符号：
 

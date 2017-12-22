@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/beginr-an-r-package-for-beginners-in-r-language/</loc>
+    <lastmod>2017-12-21T22:36:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://steemit.netlify.com/post/steem-or/</loc>
+    <lastmod>2017-12-21T10:06:33+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r/</loc>
     <lastmod>2017-12-20T15:51:42+00:00</lastmod>
   </url>
@@ -872,7 +882,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/blog/</loc>
-    <lastmod>2017-12-09T21:37:45+00:00</lastmod>
+    <lastmod>2017-12-21T22:36:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -901,13 +911,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-12-20T15:51:42+00:00</lastmod>
+    <lastmod>2017-12-21T22:36:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/cn/</loc>
-    <lastmod>2017-12-20T08:16:33+00:00</lastmod>
+    <lastmod>2017-12-21T10:06:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -967,13 +977,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-programming/</loc>
-    <lastmod>2017-12-20T15:51:42+00:00</lastmod>
+    <lastmod>2017-12-21T22:36:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-reader/</loc>
-    <lastmod>2017-12-20T15:51:42+00:00</lastmod>
+    <lastmod>2017-12-21T10:06:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1159,7 +1169,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/history/</loc>
-    <lastmod>2017-11-28T22:31:45+00:00</lastmod>
+    <lastmod>2017-12-21T10:06:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1171,7 +1181,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-12-20T15:51:42+00:00</lastmod>
+    <lastmod>2017-12-21T22:36:18+00:00</lastmod>
   </url>
   
   <url>
@@ -1320,13 +1330,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-12-20T15:51:42+00:00</lastmod>
+    <lastmod>2017-12-21T22:36:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/tags/programming/</loc>
-    <lastmod>2017-12-20T15:51:42+00:00</lastmod>
+    <lastmod>2017-12-21T22:36:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1404,7 +1414,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/steemit/</loc>
-    <lastmod>2017-12-18T23:05:24+00:00</lastmod>
+    <lastmod>2017-12-21T10:06:33+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1511,13 +1521,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/utopian-io/</loc>
-    <lastmod>2017-12-20T15:51:42+00:00</lastmod>
+    <lastmod>2017-12-21T22:36:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/utopian-io/</loc>
-    <lastmod>2017-12-20T15:51:42+00:00</lastmod>
+    <lastmod>2017-12-21T22:36:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
