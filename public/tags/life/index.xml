@@ -9,6 +9,86 @@
     <atom:link href="https://steemit.netlify.com/tags/life/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>我把青春献给你：排版 (3) - My story of Typesetting - 月旦评</title>
+      <link>https://steemit.netlify.com/post/3-or-my-story-of-typesetting-or/</link>
+      <pubDate>Fri, 22 Dec 2017 22:59:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/3-or-my-story-of-typesetting-or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/3-or-my-story-of-typesetting-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一个月前，我写了我跟 LaTeX 排版的故事，一口气写了两篇。 @drunkevil 留言道：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;看上去莫非还要有（3）？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;是的。耽误了好多天，现在，3 来了。&lt;/p&gt;
+
+&lt;p&gt;前情回顾：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/1-or-latex-1&#34;&gt;我把青春献给你：排版 (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2-or-my-story-of-typesetting&#34;&gt;我把青春献给你：排版 (2)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;7&lt;/p&gt;
+
+&lt;p&gt;LaTeX 做出来的书稿，确实漂亮。这种漂亮不是那种一眼就能看出哪儿漂亮的漂亮，而是一种说不出来的气质。这种气质来自字体、间距、断字等等诸多细节的堆积和交互作用。只要是用过 LaTeX 的人，拿来个文档用鼻子一闻，就知道是 Word 做的还是 LaTeX 做的。就好像你遇到了你的另一半，让你神魂颠倒，可就是说不出她究竟好在哪里; 她走在人群里，你一眼就能找到她。因为你眼里没别人。&lt;/p&gt;
+
+&lt;p&gt;然而，这种气质不是能轻易把握的。LaTeX 最为奇特的是，你为她投入了无数的时间，却竟然说不清楚到底是因为她太好还是她太糟。如果她太好，为何这么难用？如果她太糟，为何你甘心为她付出？&lt;/p&gt;
+
+&lt;p&gt;之所以能用 LaTeX 写完博士论文，我想来想去，这个奇迹是以下四点一起促成的：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;组里的同事提供了现成的论文模板，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;身边有同事可以随时问，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;老板只看结果，对我实现的手段并不介意，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;论文是英文写的，不需要跟中文排版死磕。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;想学 LaTeX 的注意了！以上四点，只要缺了一样，那么学 LaTeX 的阻力就会提高一个数量级。此坑慎入！&lt;/p&gt;
+
+&lt;p&gt;如果有了这四个条件，那么基本上就不用额外操心，只管埋头写论文就是了。&lt;/p&gt;
+
+&lt;p&gt;然而，LaTeX 下埋头写作的体验并不美好。那感觉根本就不是写论文，而是写代码。不编译出来，你根本不知道自己写了几页，每页是啥模样。一天下来，脑袋胀胀的，心里乱乱的。相比之下，用 Word 写论文，每敲一个字符都有一点成就感，敲完一页后，就像已经出版了一样心满意足。&lt;/p&gt;
+
+&lt;p&gt;LaTeX 就像个绝世美人，不时让你为她的美貌倾倒。更大的诱惑是，你心里清楚，只要你努力，就能距离她的美貌更接近一点。于是，你就身不由己地投入大把大把的精力，把你的文档弄得越来越漂亮，虽然每次只是漂亮了那么一点点。&lt;/p&gt;
+
+&lt;p&gt;不像 Word，你知道，无论再怎么使劲，做出来的论文顶多也就那样了，不可能更美，所以心态反而平静下来，老老实实过日子。&lt;/p&gt;
+
+&lt;p&gt;一个像恋爱，一个像婚姻。&lt;/p&gt;
+
+&lt;p&gt;8&lt;/p&gt;
+
+&lt;p&gt;当完成博士论文的时候，我决定结束天天心惊胆战的 LaTeX 爱情长跑，回到 Word 的温柔乡。我把城墙修高加厚，厚得就像特洛伊城，把 LaTeX 拦住墙外，从此一刀两断。曾经在同一个战壕里的战友，变成了洪水猛兽。&lt;/p&gt;
+
+&lt;p&gt;到了新工作单位，观察了一下，老板和同事全部是正常人，不是 X-men。我松了一口气。&lt;/p&gt;
+
+&lt;p&gt;有一次，有个名叫 LyX 的使者来敲我的城门。从三个字母参差不齐的模样，我一眼就识破了他的伪装，知道是 LaTeX 派来的奸细，于是我轻轻吐出一个字：滚。&lt;/p&gt;
+
+&lt;p&gt;我以为，从此就跟 LaTeX 形同陌路了。&lt;/p&gt;
+
+&lt;p&gt;有一天，我在使用 R 语言的时候，神使鬼差地装上了一个名叫 bookdown 的扩展包。&lt;/p&gt;
+
+&lt;p&gt;很久以后，再次回忆那一刻，仍然不由得感慨万千。命中注定的事，逃不掉的劫数。&lt;/p&gt;
+
+&lt;p&gt;bookdown，就是攻陷特洛伊的木马; 里面藏着的，除了我的旧爱 LaTeX，还有 Pandoc 这个魔鬼。后者从名字上一看，就知道是潘多拉放出来的。&lt;/p&gt;
+
+&lt;p&gt;安装 bookdown 的那一瞬间，我把木马轰隆隆地拉进了我的城，而我却???然不知。&lt;/p&gt;
+
+&lt;p&gt;特洛伊，就此沦陷。&lt;/p&gt;
+
+&lt;p&gt;（未完，待续）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/3/3b/The_Trojans_hauling_the_wooden_horse_into_Troy_MET_DP845311_ff.jpg&#34; alt=&#34;&#34; /&gt;
+Image credit: upload.wikimedia.org&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>逻辑娃 III - Logical Kid</title>
       <link>https://steemit.netlify.com/post/iii-logical-kid/</link>
       <pubDate>Sun, 03 Dec 2017 16:13:03 +0000</pubDate>
@@ -1134,124 +1214,6 @@ Image Credit: maxpixel.freegreatpicture.com&lt;/p&gt;
 &lt;p&gt;另一个问题是，韩日比中国开放，德国人去韩国，可以免签证呆90天，到期后去日本玩几天再回来，又可以继续呆90天，如此继续，可以赖着不走。去中国却必须要签证，于是为了了解亚洲文化，他们当然图方便首选韩国日本，然后看到这些东西，自然就以为是韩日的特色文化，将来再去中国看到类似的东西，谁是本谁是末，谁是源谁是流，他们自然弄不清楚。在他们眼里的中国，就是他们日常接触的 Made in China 廉价生活用品。&lt;/p&gt;
 
 &lt;p&gt;在这些旅游景点溜达的过程里，我们没有受到任何骚扰。我为什么这么说？德国同学赛巴斯滕去了一趟北京，回来跟我讲他在故宫的时候被一个热情的中国人拉着给他介绍中国文化，他心想中国人真nice，后来不知不觉就被拉到了一个茶艺馆欣赏茶艺，欣赏完了说交钱吧，三千。他顿时情绪上一落千丈，觉得感情上被欺骗了。要说我们的同胞还挺会欲扬先抑的，挺会给人制造反差的。作为中国人，我们问问自己，中国的文化就是用来被我们这么弘扬的吗？&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Summer Holiday in Southern France (IX): People We Met (Videos) 带着俩娃游南法 (完结篇): 我们遇到的人们（视频）</title>
-      <link>https://steemit.netlify.com/post/summer-holiday-in-southern-france-ix-people-we-met-videos/</link>
-      <pubDate>Mon, 21 Aug 2017 09:33:21 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/summer-holiday-in-southern-france-ix-people-we-met-videos/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/summer-holiday-in-southern-france-ix-people-we-met-videos&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/summer-holiday-in-southern-france-ix-people-we-met-videos&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/summer-holiday-in-southern-france-ix-people-we-met-videos&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/summer-holiday-in-southern-france-ix-people-we-met-videos&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_mirror/master/content/post/summer-holiday-in-southern-france-ix-people-we-met-videos.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;On the night of Day 10, we arrived home in Innsbruck. It was cold, we saw people wearing winter clothes. The holiday in Southern France was like a warm dream. The sceneries were fantastic, but those kind people we met were more unforgettable.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;假期第十天的晚上，我们回到了因斯布鲁克的家里。下飞机的时候，看到有人居然穿着羽绒服，冷得能看得见哈气。相比之下，南法的假日变得如此不真实，就像一场温暖的梦。旅游的景色当然是美妙的，然而，我们遇见的那些人更难以忘怀。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Previously on &lt;em&gt;Summer Holiday in Southern France&lt;/em&gt; (&lt;strong&gt;带着俩娃游南法&lt;/strong&gt; 前情回顾):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/summer-holidy-in-southern-france-i-1&#34;&gt;Day 1: Nice (第一天：尼斯)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/summer-holidy-in-southern-france-ii-monoca-2&#34;&gt;Day 2: Monaco (第二天：摩纳哥)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/summer-holidy-in-southern-france-iii-cannes-3&#34;&gt;Day 3: Cannes (第三天：戛纳)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/summer-holidy-in-southern-france-iv-marseille&#34;&gt;Day 4 and 5: Marseille (第四第五天：马赛)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/summer-holidy-in-southern-france-v-coast&#34;&gt;Day 6 and 7: Cruise and swimming (第六第七天：马赛海岸)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/summer-holiday-in-southern-france-vi-avignon&#34;&gt;Day 8: Avignon (第八天：阿维尼翁)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/summer-holiday-in-southern-france-vii-cassis&#34;&gt;Day 9: Cassis (第九天：卡西斯)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/summer-holiday-in-southern-france-viii-return-to-nice&#34;&gt;Day 10: Return to Nice (第十天：重返尼斯)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Frankly speaking, I was worried about this trip at the beginning, mostly because of those terrorism attacks in France, especially in Nice. But my wife was quite optimistic. &amp;lsquo;People care more about the security after the attacks&amp;rsquo;, she said. Yes, we did see armed policemen or soldiers walking slowly in the streets in every French city.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;老实说，度假前我比较担心，主要是源于发生在法国的几次恐怖袭击，尤其是发生在我们的旅行目的地之一尼斯。不过，我媳妇对此比较乐观。“发生之后会更安全。”确实如此，我们在每个城市都看见武警或士兵在街上巡逻。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmdCt7jgN6c3Df82e5ZAc6McUnCzeytv43q5o8YnB4wuoW/iDSC01624.jpg&#34; alt=&#34;iDSC01624.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Armed policemen or soldiers at Nice Railway Station&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;尼斯火车站的武警，或者是士兵&lt;/code&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;When we sat on a square near the Old Port of Marseille,  an old man came to us and ask where we were from. He spoke only a little English. When he heard that we were from China, he said, &amp;lsquo;China, good country, good people.&amp;rsquo; Then he left. Some minutes later, he came back with two icecreams for my kids! The kids loved him so much!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;在马赛老港口旁边的一个广场上，我们坐下来休息，这时走过来一位老人，用蹩脚的英文问我们从哪里来。当得知我们来自中国时，他说：“中国，好国，好人！”然后就离开了。几分钟后，他回来了，带着两个冰淇淋，送给我的孩子。两个孩子爱死他了。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The other day we wanted to take Bus 19 to a beach in Marseille. We found the bus stop and waited. Two old women sitting there, watching us for a while, came to me and asked something in France. I understood nothing. They looked so worried, and one of them suddenly said, in English, &amp;lsquo;nineteen, no. twenty-one, yes.&amp;rsquo; I still did not get it. They went to a girl who was standing not faraway and talked to her. The girl smiled and came and explained in English that there was no Bus 19 at this bus stop at lunch time now and we had to take Bus 21 to another stop and there was Bus 19 available. Although 19 and 21 were the only thing they could express in English, they still tried hard to let me know.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Y3Zbp-M30Tc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;code&gt;Video: a boy diving into the sea near Marseille&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;视频：一个小伙子跃入马赛的海里&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;在马赛的那一天，我们打算乘坐19路公交车去沙滩。我们在公交车站等车的时候，两个老太太坐在那里，打量了我们一会儿，走过来，对我说了一堆法语。我当然一个字都没听懂。他们看起来很焦急，其中一位突然开口说英语：“19，不。21，是。”我还是没懂。他们就走向不远处站着的一个女孩，交谈了几句，那女孩就笑着过来用英文解释：这会儿已经是中午，19路公交车在本站不停，必须乘坐21路车到另一站才能换19路。老太太绞尽脑汁用尽了他们会说的英语，努力让我知道这个重要信息。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Luckily this girl was going to the beach as well. She said we could follow her to get on Bus 21 and change to Bus 19.  So we talked on the way. She lived somewhere else (I did not remember the name of the city) in France and was having a holiday in Marseille as well as we were. She suggested that I could install an app called RTM on my smartphone so that I could see the real-time info of the public transportation. When we got to the destination, she guided us to the beach. She knew everything in Marseille!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;恰好这个女孩也去沙滩，她说我们可以跟她一起走。一路上我们聊了聊。她住在法国的另一座城市（我没记住名字），跟我们一样来马赛度假。她建议我在手机里安装个名叫 RTM 的软件，可以实时查询马赛的公交信息。达到目的地后，她指给我们如何去我们要去的沙滩。看起来她对马赛了如指掌。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Yes, Marseille was my most favorite city in this trip. Marseille, the second largest city in France after Paris, looks like Guangzhou in China. I wish I could visit there again some day.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/N9Da3nHmvOc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;code&gt;Video: Guitar players and dancers at the Palace Square, Avignon&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;阿维尼翁教皇宫广场的吉他手和舞者&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;这次度假，我们游览了尼斯、摩洛哥、戛纳、马赛、阿维尼翁等城市。毫无疑问，马赛最让我喜爱。马赛是法国第二大城市，仅次于巴黎。给我的感觉，就像中国的广州。希望将来有一天再度旅游南法，拜访马赛，看更多的风景，遇见更多的人。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;However, the greatest happiness was still the moment when we got home. Nothing is more beautiful than the lamp in your house when you are back home at night.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;不过，我们最大的快乐，仍然是回到家里的那一刻。走遍千山万水，世间风景再美，都不及归人看到家里的一盏灯火。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbyEqYzxKcKwhdTi7AieqDBYKDDvBSCcxWm3HWgFxhfz6/iDSC01666.jpg&#34; alt=&#34;iDSC01666.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Bird view of the night in Innsbruck&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;从飞机上看因斯布鲁克夜景&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The End&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;全文完。&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;You might be interested in the following posts of mine(您或许对我的以下帖子感兴趣):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/greek-holiday-part-i-1&#34;&gt;Greek Holiday (Part I) 希腊假日(1)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/greek-holiday-part-2-2&#34;&gt;Greek Holiday (Part 2)   希腊假日(2)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@someone/greek-holiday-part-3-3-by-dapeng&#34;&gt;Greek Holiday (Part 3) 希腊假日(3)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://steemit.com/cn/@dapeng/flower-parade-in-ebbs-austria&#34;&gt;The biggest flower parade in Austria 奥地利的八月：若待上林花似锦，出门俱是看花人&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

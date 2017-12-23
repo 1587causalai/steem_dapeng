@@ -9,7 +9,87 @@
     <atom:link href="https://steemit.netlify.com/categories/cn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>“月旦评”给 steem 的启发和教训 - 顺便也参加本期月旦评吧</title>
+      <title>我把青春献给你：排版 (3) - My story of Typesetting - 月旦评</title>
+      <link>https://steemit.netlify.com/post/3-or-my-story-of-typesetting-or/</link>
+      <pubDate>Fri, 22 Dec 2017 22:59:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/3-or-my-story-of-typesetting-or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/3-or-my-story-of-typesetting-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一个月前，我写了我跟 LaTeX 排版的故事，一口气写了两篇。 @drunkevil 留言道：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;看上去莫非还要有（3）？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;是的。耽误了好多天，现在，3 来了。&lt;/p&gt;
+
+&lt;p&gt;前情回顾：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/1-or-latex-1&#34;&gt;我把青春献给你：排版 (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2-or-my-story-of-typesetting&#34;&gt;我把青春献给你：排版 (2)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;7&lt;/p&gt;
+
+&lt;p&gt;LaTeX 做出来的书稿，确实漂亮。这种漂亮不是那种一眼就能看出哪儿漂亮的漂亮，而是一种说不出来的气质。这种气质来自字体、间距、断字等等诸多细节的堆积和交互作用。只要是用过 LaTeX 的人，拿来个文档用鼻子一闻，就知道是 Word 做的还是 LaTeX 做的。就好像你遇到了你的另一半，让你神魂颠倒，可就是说不出她究竟好在哪里; 她走在人群里，你一眼就能找到她。因为你眼里没别人。&lt;/p&gt;
+
+&lt;p&gt;然而，这种气质不是能轻易把握的。LaTeX 最为奇特的是，你为她投入了无数的时间，却竟然说不清楚到底是因为她太好还是她太糟。如果她太好，为何这么难用？如果她太糟，为何你甘心为她付出？&lt;/p&gt;
+
+&lt;p&gt;之所以能用 LaTeX 写完博士论文，我想来想去，这个奇迹是以下四点一起促成的：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;组里的同事提供了现成的论文模板，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;身边有同事可以随时问，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;老板只看结果，对我实现的手段并不介意，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;论文是英文写的，不需要跟中文排版死磕。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;想学 LaTeX 的注意了！以上四点，只要缺了一样，那么学 LaTeX 的阻力就会提高一个数量级。此坑慎入！&lt;/p&gt;
+
+&lt;p&gt;如果有了这四个条件，那么基本上就不用额外操心，只管埋头写论文就是了。&lt;/p&gt;
+
+&lt;p&gt;然而，LaTeX 下埋头写作的体验并不美好。那感觉根本就不是写论文，而是写代码。不编译出来，你根本不知道自己写了几页，每页是啥模样。一天下来，脑袋胀胀的，心里乱乱的。相比之下，用 Word 写论文，每敲一个字符都有一点成就感，敲完一页后，就像已经出版了一样心满意足。&lt;/p&gt;
+
+&lt;p&gt;LaTeX 就像个绝世美人，不时让你为她的美貌倾倒。更大的诱惑是，你心里清楚，只要你努力，就能距离她的美貌更接近一点。于是，你就身不由己地投入大把大把的精力，把你的文档弄得越来越漂亮，虽然每次只是漂亮了那么一点点。&lt;/p&gt;
+
+&lt;p&gt;不像 Word，你知道，无论再怎么使劲，做出来的论文顶多也就那样了，不可能更美，所以心态反而平静下来，老老实实过日子。&lt;/p&gt;
+
+&lt;p&gt;一个像恋爱，一个像婚姻。&lt;/p&gt;
+
+&lt;p&gt;8&lt;/p&gt;
+
+&lt;p&gt;当完成博士论文的时候，我决定结束天天心惊胆战的 LaTeX 爱情长跑，回到 Word 的温柔乡。我把城墙修高加厚，厚得就像特洛伊城，把 LaTeX 拦住墙外，从此一刀两断。曾经在同一个战壕里的战友，变成了洪水猛兽。&lt;/p&gt;
+
+&lt;p&gt;到了新工作单位，观察了一下，老板和同事全部是正常人，不是 X-men。我松了一口气。&lt;/p&gt;
+
+&lt;p&gt;有一次，有个名叫 LyX 的使者来敲我的城门。从三个字母参差不齐的模样，我一眼就识破了他的伪装，知道是 LaTeX 派来的奸细，于是我轻轻吐出一个字：滚。&lt;/p&gt;
+
+&lt;p&gt;我以为，从此就跟 LaTeX 形同陌路了。&lt;/p&gt;
+
+&lt;p&gt;有一天，我在使用 R 语言的时候，神使鬼差地装上了一个名叫 bookdown 的扩展包。&lt;/p&gt;
+
+&lt;p&gt;很久以后，再次回忆那一刻，仍然不由得感慨万千。命中注定的事，逃不掉的劫数。&lt;/p&gt;
+
+&lt;p&gt;bookdown，就是攻陷特洛伊的木马; 里面藏着的，除了我的旧爱 LaTeX，还有 Pandoc 这个魔鬼。后者从名字上一看，就知道是潘多拉放出来的。&lt;/p&gt;
+
+&lt;p&gt;安装 bookdown 的那一瞬间，我把木马轰隆隆地拉进了我的城，而我却???然不知。&lt;/p&gt;
+
+&lt;p&gt;特洛伊，就此沦陷。&lt;/p&gt;
+
+&lt;p&gt;（未完，待续）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/3/3b/The_Trojans_hauling_the_wooden_horse_into_Troy_MET_DP845311_ff.jpg&#34; alt=&#34;&#34; /&gt;
+Image credit: upload.wikimedia.org&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>“月旦评”给 steem 的启发和教训 - 月旦评</title>
       <link>https://steemit.netlify.com/post/steem-or/</link>
       <pubDate>Thu, 21 Dec 2017 10:06:33 +0000</pubDate>
       
@@ -88,7 +168,7 @@
 
 &lt;p&gt;得傍大腿啊，同学！这里没有科举制，不是谁考卷写得好就能上名校！这些天来，你乌泱乌泱地发帖，可是你拜过码头了吗？去过颍川了吗？&lt;/p&gt;
 
-&lt;p&gt;你就算是诸葛亮满腹经纶，那也得靠大 V 帮你把名声打出去，才有刘皇叔来顾你家茅庐呀！每天光中文区就四百篇文章，你不想想办法的话，你的文章惊天地泣鬼神，可是哪个人类能看得见啊！&lt;/p&gt;
+&lt;p&gt;你就算是诸葛亮满腹经纶，那也得靠大 V 帮你把名声打出??，才有刘皇叔来顾你家茅庐呀！每天光中文区就四百篇文章，你不想想办法的话，你的文章惊天地泣鬼神，可是哪个人类能看得见啊！&lt;/p&gt;
 
 &lt;p&gt;那么谁是大 V？&lt;/p&gt;
 
@@ -1297,100 +1377,6 @@ zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p)
 &lt;p&gt;欢迎大家留言，对活动提出你的建议或意见！谢谢！&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>我把青春献给你：排版 (1) - My story of Typesetting</title>
-      <link>https://steemit.netlify.com/post/1-or-latex-1/</link>
-      <pubDate>Tue, 21 Nov 2017 20:25:42 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/1-or-latex-1/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/1-or-latex-1&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/1-or-latex-1&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/1-or-latex-1&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/1-or-latex-1&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/1-or-latex-1&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/1-or-latex-1&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/1-or-latex-1&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/1-or-latex-1.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;1&lt;/p&gt;
-
-&lt;p&gt;2017 年快要过去了。如果剩下这四十天不出什么幺蛾子的话，我今年的最蠢事情排行榜，基本是板上钉钉。名列榜首的，就是过早给《学 R》一书大肆宣传。跟罗永浩当年头一回卖锤子手机一样一样的，还没量产，就先吹牛，结果吹破了，打了自己的脸。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://5b0988e595225.cdn.sohucs.com/images/20170715/d6a28e43a55b48128265e4029fb4e6c2.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;其实，这本书早在今年 6 月就写完了，7 月做了最后一次修改。当时书号已经批了，封面也有了模样，我以为马上就能印出来了，于是告诉了我能告诉的每一个朋友。朋友们都很讲义气，把白花花的银子拍在桌上，就等着付钱买了。当了教授的老同学说：放心，到时候我送给我的学生人手一本！&lt;/p&gt;
-
-&lt;p&gt;谁知道，一晃四个多月过去了，书还没出来。我的前期宣传算是白费了。让人欣慰的是，直到现在，仍然有铁杆粉丝惦记着我，时不时发来鼓励的短信：“喂，你那书烂尾了吧？啊哈哈哈哈~~~~”&lt;/p&gt;
-
-&lt;p&gt;谢谢。&lt;/p&gt;
-
-&lt;p&gt;那么，四个月里，这书干嘛去了？&lt;/p&gt;
-
-&lt;p&gt;在排版。&lt;/p&gt;
-
-&lt;p&gt;《学 R》这本书，一直排不出理想的模样。&lt;/p&gt;
-
-&lt;p&gt;四个月是在反反复复修改排版里度过的。一直拖到上周，我们仍然看不到任何排版成功的迹象。2017 年所剩无几的耐心消耗殆尽，一咬牙一跺脚，我们决定壮士断腕。合作作者 Y 从出版社讨来排版文件，并且自己花钱购买了专业软件，自己排；我同时用  LaTeX 排，齐头并进。谁先排好就用谁的。我们谁都不想再拖，再拖就真的要吐血了。&lt;/p&gt;
-
-&lt;p&gt;当做出这个决定的第二天，Y 看到我用  LaTeX 做出的 pdf 书稿小样得到了印刷厂的认可，就放下了手里的专业软件，决定不干了：“ LaTeX 真厉害，有空我学一下&amp;hellip;&amp;hellip;”&lt;/p&gt;
-
-&lt;p&gt;我立马拦住：“最好别去学。这个坑太大。一入  LaTeX，坑深似海。”&lt;/p&gt;
-
-&lt;p&gt;2&lt;/p&gt;
-
-&lt;p&gt;出版社负责录入和排版的工作，简称“录排”。&lt;/p&gt;
-
-&lt;p&gt;这四个月来，录排可谓兢兢业业，全心全力为《学 R》排版。可惜，辛苦不一定有回报，排出的书稿，一直有层出不穷的问题。&lt;/p&gt;
-
-&lt;p&gt;比如说，丢失公式和特殊字符。原稿里的诸如 *R*2， π  等都莫名其妙消失了。&lt;/p&gt;
-
-&lt;p&gt;比如说，字体。原稿里的代码都是用等宽字体表示的，录排之后都成了跟正文一样的字体。&lt;/p&gt;
-
-&lt;p&gt;比如说，标点符号。原稿里的所有标点符号，包括代码里的逗号、引号、括号、冒号，都变成了中文标点符号。加上非等宽字体，书里的代码惨不忍睹。&lt;/p&gt;
-
-&lt;p&gt;最要命的是，原稿里的很多空格也都不翼而飞。比如录排稿：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://www.pzhao.org/img/xuer1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;是不是一头雾水？实际上原稿是：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://www.pzhao.org/img/xuer2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;每次从录排稿里挑问题，都恨不得把一双近视眼珠子抠出来，再拿着放大镜逐字逐句看。后来，索性放弃了很多想法。比如说，原先代码是彩色的，得知需要录排逐个字符手动修改，算了不要了；原先打算增加个小贴士目录，得知需要排完页码手动添加，算了不要了；原先打算给常用函数做个索引，方便读者从书里找示例，看样子也得手动做，算了不要了&amp;hellip;&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;即便如此，每次的排版仍然会出现奇奇怪怪的问题。如此往返三次，《学 R》这本书我已经读得想呕吐了。&lt;/p&gt;
-
-&lt;p&gt;我百思不得其解：这到底是怎么回事？&lt;/p&gt;
-
-&lt;p&gt;3&lt;/p&gt;
-
-&lt;p&gt;来回折磨了四个月。终于， Y 试用了一下录排用的排版软件—— Adobe InDesign，俗称 ID，是国内出版业主流的专业排版软件。&lt;/p&gt;
-
-&lt;p&gt;Y 立刻对我说：“我明白问题出在哪里了！”&lt;/p&gt;
-
-&lt;p&gt;原来，录排是把我们提交的原稿，转成了 txt 文本文件；书里的插图，全部转成了 tif 图片。然后，把这些素材导入 ID，然后手动按照原稿 pdf 的样子做调整。&lt;/p&gt;
-
-&lt;p&gt;这正是录排一贯的工作流程。&lt;/p&gt;
-
-&lt;p&gt;这个流程，对文学类书籍没有问题。一篇小说，重要的是内容，不是格式；只要把文字分好段，就不会有大错。&lt;/p&gt;
-
-&lt;p&gt;然而，这个流程用在《学 R》 这本书上，就是个灾难。因为这本书，内容和格式，都很重要。&lt;/p&gt;
-
-&lt;p&gt;然而，这一点，录排不知道。&lt;/p&gt;
-
-&lt;p&gt;然而，我们不知道录排不知道。&lt;/p&gt;
-
-&lt;p&gt;然而，录排不知道我们不知道录排不知道。&lt;/p&gt;
-
-&lt;p&gt;四个月的大好青春，就是这样搭进去的。&lt;/p&gt;
-
-&lt;p&gt;对此我感到抱歉，让录排白白花了那么多时间和精力，我的吹毛求疵一定让录排很受折磨。同时我也感到遗憾，如果重来一次，这个坑恐怕仍然绕不开。&lt;/p&gt;
-
-&lt;p&gt;4，&lt;/p&gt;
-
-&lt;p&gt;好在我们及时止损了。&lt;/p&gt;
-
-&lt;p&gt;上周，我们从头做起，不仅四个月来积攒的问题一扫而空，而且彩色代码的格式保住了，索引也作出来了。 LaTeX 在这里显示了无与伦比的强大力量。以致于 Y 饶有兴趣地说：“ LaTeX 真厉害，有空我学一下&amp;hellip;&amp;hellip;”&lt;/p&gt;
-
-&lt;p&gt;我立马拦住：“最好别去学。这个坑太大。一入  LaTeX，坑深似海。”&lt;/p&gt;
-
-&lt;p&gt;如果你以为本文是为  LaTeX 做广告，呵呵，那你就错了。为啥？下回再说。&lt;/p&gt;
 </description>
     </item>
     

@@ -9,6 +9,182 @@
     <atom:link href="https://steemit.netlify.com/tags/cn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>我把青春献给你：排版 (3) - My story of Typesetting - 月旦评</title>
+      <link>https://steemit.netlify.com/post/3-or-my-story-of-typesetting-or/</link>
+      <pubDate>Fri, 22 Dec 2017 22:59:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/3-or-my-story-of-typesetting-or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/3-or-my-story-of-typesetting-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一个月前，我写了我跟 LaTeX 排版的故事，一口气写了两篇。 @drunkevil 留言道：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;看上去莫非还要有（3）？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;是的。耽误了好多天，现在，3 来了。&lt;/p&gt;
+
+&lt;p&gt;前情回顾：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/1-or-latex-1&#34;&gt;我把青春献给你：排版 (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2-or-my-story-of-typesetting&#34;&gt;我把青春献给你：排版 (2)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;7&lt;/p&gt;
+
+&lt;p&gt;LaTeX 做出来的书稿，确实漂亮。这种漂亮不是那种一眼就能看出哪儿漂亮的漂亮，而是一种说不出来的气质。这种气质来自字体、间距、断字等等诸多细节的堆积和交互作用。只要是用过 LaTeX 的人，拿来个文档用鼻子一闻，就知道是 Word 做的还是 LaTeX 做的。就好像你遇到了你的另一半，让你神魂颠倒，可就是说不出她究竟好在哪里; 她走在人群里，你一眼就能找到她。因为你眼里没别人。&lt;/p&gt;
+
+&lt;p&gt;然而，这种气质不是能轻易把握的。LaTeX 最为奇特的是，你为她投入了无数的时间，却竟然说不清楚到底是因为她太好还是她太糟。如果她太好，为何这么难用？如果她太糟，为何你甘心为她付出？&lt;/p&gt;
+
+&lt;p&gt;之所以能用 LaTeX 写完博士论文，我想来想去，这个奇迹是以下四点一起促成的：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;组里的同事提供了现成的论文模板，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;身边有同事可以随时问，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;老板只看结果，对我实现的手段并不介意，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;论文是英文写的，不需要跟中文排版死磕。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;想学 LaTeX 的注意了！以上四点，只要缺了一样，那么学 LaTeX 的阻力就会提高一个数量级。此坑慎入！&lt;/p&gt;
+
+&lt;p&gt;如果有了这四个条件，那么基本上就不用额外操心，只管埋头写论文就是了。&lt;/p&gt;
+
+&lt;p&gt;然而，LaTeX 下埋头写作的体验并不美好。那感觉根本就不是写论文，而是写代码。不编译出来，你根本不知道自己写了几页，每页是啥模样。一天下来，脑袋胀胀的，心里乱乱的。相比之下，用 Word 写论文，每敲一个字符都有一点成就感，敲完一页后，就像已经出版了一样心满意足。&lt;/p&gt;
+
+&lt;p&gt;LaTeX 就像个绝世美人，不时让你为她的美貌倾倒。更大的诱惑是，你心里清楚，只要你努力，就能距离她的美貌更接近一点。于是，你就身不由己地投入大把大把的精力，把你的文档弄得越来越漂亮，虽然每次只是漂亮了那么一点点。&lt;/p&gt;
+
+&lt;p&gt;不像 Word，你知道，无论再怎么使劲，做出来的论文顶多也就那样了，不可能更美，所以心态反而平静下来，老老实实过日子。&lt;/p&gt;
+
+&lt;p&gt;一个像恋爱，一个像婚姻。&lt;/p&gt;
+
+&lt;p&gt;8&lt;/p&gt;
+
+&lt;p&gt;当完成博士论文的时候，我决定结束天天心惊胆战的 LaTeX 爱情长跑，回到 Word 的温柔乡。我把城墙修高加厚，厚得就像特洛伊城，把 LaTeX 拦住墙外，从此一刀两断。曾经在同一个战壕里的战友，变成了洪水猛兽。&lt;/p&gt;
+
+&lt;p&gt;到了新工作单位，观察了一下，老板和同事全部是正常人，不是 X-men。我松了一口气。&lt;/p&gt;
+
+&lt;p&gt;有一次，有个名叫 LyX 的使者来敲我的城门。从三个字母参差不齐的模样，我一眼就识破了他的伪装，知道是 LaTeX 派来的奸细，于是我轻轻吐出一个字：滚。&lt;/p&gt;
+
+&lt;p&gt;我以为，从此就跟 LaTeX 形同陌路了。&lt;/p&gt;
+
+&lt;p&gt;有一天，我在使用 R 语言的时候，神使鬼差地装上了一个名叫 bookdown 的扩展包。&lt;/p&gt;
+
+&lt;p&gt;很久以后，再次回忆那一刻，仍然不由得感慨万千。命中注定的事，逃不掉的劫数。&lt;/p&gt;
+
+&lt;p&gt;bookdown，就是攻陷特洛伊的木马; 里面藏着的，除了我的旧爱 LaTeX，还有 Pandoc 这个魔鬼。后者从名字上一看，就知道是潘多拉放出来的。&lt;/p&gt;
+
+&lt;p&gt;安装 bookdown 的那一瞬间，我把木马轰隆隆地拉进了我的城，而我却???然不知。&lt;/p&gt;
+
+&lt;p&gt;特洛伊，就此沦陷。&lt;/p&gt;
+
+&lt;p&gt;（未完，待续）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/3/3b/The_Trojans_hauling_the_wooden_horse_into_Troy_MET_DP845311_ff.jpg&#34; alt=&#34;&#34; /&gt;
+Image credit: upload.wikimedia.org&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Suggestion: the help information of the tag bar - 如何在 Utopian.io 发帖只保留 &#39;utopian-io&#39; 一个标签？</title>
+      <link>https://steemit.netlify.com/post/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io/</link>
+      <pubDate>Fri, 22 Dec 2017 14:57:18 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The tag bar of a post on Utopian.io looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513954609/wu67clmrpzxluuiagrti.jpg&#34; alt=&#34;20171222-153044.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you add 4 tags in it, your post on steemit will show 5 tags. The &amp;lsquo;utopian-io&amp;rsquo; tag is added automatically. It gives an impression that &amp;lsquo;utopian-io&amp;rsquo; tag is added automatically and you don&amp;rsquo;t have to do it manually.&lt;/p&gt;
+
+&lt;p&gt;This impression confused me for a long time. Suppose I want to post an article with only the &amp;lsquo;utopian-io&amp;rsquo; tag. As it is added automatically, I should leave the tag bar blank. However, it is not allowed by utopian.io. I have to add at least one tag manually.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513954627/b7acoqgsdhrqwyh1pvpt.jpg&#34; alt=&#34;20171222-153307.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thus I added &amp;lsquo;cn&amp;rsquo; when I wrote bilingually, or &amp;lsquo;test&amp;rsquo; for safety. Safety means that if you use the wrong tag, your post might be flagged (see &lt;a href=&#34;https://steemit.com/cn/@dapeng/s7-5-why-ironman-and-winterfell-were-both-stark&#34;&gt;an example&lt;/a&gt;). The &amp;lsquo;test&amp;rsquo; tag is never wrong.&lt;/p&gt;
+
+&lt;p&gt;I submitted a &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;suggestion&lt;/a&gt; to Utopian.io that users should be allowed to leave the tag bar blank, but my suggestion was rejected.&lt;/p&gt;
+
+&lt;p&gt;Then I asked on discord, and finally got the answer: just write utopian-io tag manually, then the post will have only &amp;lsquo;utopian-io&amp;rsquo; tag.&lt;/p&gt;
+
+&lt;p&gt;See, it really took me some time to find this trick.&lt;/p&gt;
+
+&lt;p&gt;Others don&amp;rsquo;t have to waste so much time as I did. I would suggest that this trick should be written in the help information of the tag bar like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Separate tags with commas. Only lowercase letters, numbers and hyphen character is permitted. &amp;lsquo;utopian-io&amp;rsquo; tag will be added automatically. If you do not have other tags, please fill with only &amp;lsquo;utopian-io&amp;rsquo; manually.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在 Utopian.io 发帖，同步到 steemit 上时，会自动添加 &amp;lsquo;utopian-io&amp;rsquo; 主标签。如果我不想让帖子出现在 其他标签下，该怎么办？既然主标签是自动添加，那么想当然就是不填别的标签就行了吧？但是不行，utopian.io 要求必须添加至少一个标签。&lt;/p&gt;
+
+&lt;p&gt;挺烦人，我建议应该允许用户留空标签（既然主标签是自动添加的），没必要硬填个不必要的标签，而且避免不慎用错标签被踩（比如 &lt;a href=&#34;https://steemit.com/cn/@dapeng/s7-5-why-ironman-and-winterfell-were-both-stark&#34;&gt;这个例子&lt;/a&gt;）。但是我的建议被驳回了，理由是我的建议“不符合utopian 的规则”，而且“用错标签是用户自己的问题”。这两条理由我保留意见，驳回我的留言是我们的 @justyy 留的（经 justyy 解释，是他用自己的 ID 发布他的 supervisor 的意见）。&lt;/p&gt;
+
+&lt;p&gt;今天费了点工夫，终于问来这个小技巧：只需手动添上 &amp;lsquo;utopian-io&amp;rsquo; 标签就行了，不会跟自动添加的冲突。这我可没想到。我想的是添加个 &amp;lsquo;test&amp;rsquo; 标签，因为这个标签下是大家测试用的，没人踩。&lt;/p&gt;
+
+&lt;p&gt;所以，我建议在标签的帮助信息里给出上述方法的提示，免得有人跟我一样在这个问题上浪费时间。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bug Hunting: the reward selection menu - 乌托邦的一个 bug</title>
+      <link>https://steemit.netlify.com/post/bug-hunting-the-reward-selection-menu/</link>
+      <pubDate>Fri, 22 Dec 2017 10:12:39 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/bug-hunting-the-reward-selection-menu/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/bug-hunting-the-reward-selection-menu.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;the-bug-the-reward-selection-menu-is-on-top-of-the-webpage&#34;&gt;The bug: the reward selection menu is on top of the webpage&lt;/h3&gt;
+
+&lt;p&gt;When posting a new article on Utopian.io, I can choose the reward as &amp;ldquo;100 Steem Power&amp;rdquo; or &amp;ldquo;50% SBD and 50% SP&amp;rdquo;. However, when I click the choice button, these two options appear in a selection menu on top of the webpage, far away from the choice button.&lt;/p&gt;
+
+&lt;p&gt;Well, I am not professional on webpage development, thus I am probably using the wrong term to describe the webpage elements. Please see the screenshot as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513937203/m7cdaavcr39httdlzuxv.jpg&#34; alt=&#34;_utopian_bug.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I guess it is a bug. If it is intended to be on top of the webpage, it is far enough from the selection button. I used a small size of the web browser just for a better sceenshot. If I use the full sceen view of the web browser, then the choice menu is too far away to find, which is very confusing to new users. Shouldn&amp;rsquo;t the options of &amp;ldquo;100 Steem Power&amp;rdquo; and &amp;ldquo;50% SBD and 50% SP&amp;rdquo; appear close to the button, like steemit as follows?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513937221/einnq07mrimlfpl8yyoj.jpg&#34; alt=&#34;utopian_bug.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;my-session-information&#34;&gt;My session information&lt;/h3&gt;
+
+&lt;p&gt;I tested it on both windows 7 + Firefox 56.0 (32-bit), and Ubuntu 16.04 + Firefox 57.0.1 (64-bit).&lt;/p&gt;
+
+&lt;h3 id=&#34;how-to-reproduce-this-bug&#34;&gt;How to reproduce this bug&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Open Firefox web browser.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Visit Utopian.io and log in.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click &amp;lsquo;+ New Contribution&amp;rsquo; &amp;ndash; &amp;lsquo;Development&amp;rsquo; &amp;ndash; &amp;lsquo;I understand. Proceed&amp;rsquo;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click the &amp;lsquo;Reward&amp;rsquo; button at the bottom of the new post web page&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;suggestions&#34;&gt;Suggestions&lt;/h3&gt;
+
+&lt;p&gt;The reward option menu should be close to the Reward button.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我提交给乌托邦的一个bug。我觉得帖子的标签光一个 utopian-io 就够了，可是发布时必须再填个标签。我想不出别的合适的标签，只好填了我爱的 cn 了，并且添上了这段中文文字，免得被小猎豹踩……&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>beginr: an R package for beginners in R language - 帮助初学者学习 R 语言</title>
       <link>https://steemit.netlify.com/post/beginr-an-r-package-for-beginners-in-r-language/</link>
       <pubDate>Thu, 21 Dec 2017 22:36:18 +0000</pubDate>
@@ -315,7 +491,7 @@ beginr::list2ascii(alist)
     </item>
     
     <item>
-      <title>“月旦评”给 steem 的启发和教训 - 顺便也参加本期月旦评吧</title>
+      <title>“月旦评”给 steem 的启发和教训 - 月旦评</title>
       <link>https://steemit.netlify.com/post/steem-or/</link>
       <pubDate>Thu, 21 Dec 2017 10:06:33 +0000</pubDate>
       
@@ -394,7 +570,7 @@ beginr::list2ascii(alist)
 
 &lt;p&gt;得傍大腿啊，同学！这里没有科举制，不是谁考卷写得好就能上名校！这些天来，你乌泱乌泱地发帖，可是你拜过码头了吗？去过颍川了吗？&lt;/p&gt;
 
-&lt;p&gt;你就算是诸葛亮满腹经纶，那也得靠大 V 帮你把名声打出去，才有刘皇叔来顾你家茅庐呀！每天光中文区就四百篇文章，你不想想办法的话，你的文章惊天地泣鬼神，可是哪个人类能看得见啊！&lt;/p&gt;
+&lt;p&gt;你就算是诸葛亮满腹经纶，那也得靠大 V 帮你把名声打出??，才有刘皇叔来顾你家茅庐呀！每天光中文区就四百篇文章，你不想想办法的话，你的文章惊天地泣鬼神，可是哪个人类能看得见啊！&lt;/p&gt;
 
 &lt;p&gt;那么谁是大 V？&lt;/p&gt;
 
@@ -6777,199 +6953,6 @@ Image Credit: staticflickr.com&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/pkCQx7D1adY&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;视频：托马斯各季片头曲合集&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>另类方式秀恩爱</title>
-      <link>https://steemit.netlify.com/post/5ukx1b/</link>
-      <pubDate>Thu, 30 Nov 2017 16:18:33 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/5ukx1b/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5ukx1b&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5ukx1b&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5ukx1b&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5ukx1b&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/5ukx1b&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/5ukx1b&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5ukx1b&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/5ukx1b.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;秀恩爱，方式不一而足，不一定要贴照片。比如，有人选择去面馆吃面，有人则要直播吃辣椒。我也凑个热闹。我秀恩爱的方式是——&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2015/10/30/12/24/questions-1014060_960_720.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
-
-&lt;p&gt;媳妇甩给我一堆 Matlab 代码：去，给我转成 R 语言。&lt;/p&gt;
-
-&lt;p&gt;这是个关于大气化学的常微分方程。Matlab 代码已经解出来了。但是，媳妇考虑到日后维护和拓展的需要，就想换成 R。&lt;/p&gt;
-
-&lt;p&gt;娶个女博士做老婆是怎样一种体验？挪，就是这种体验。&lt;/p&gt;
-
-&lt;p&gt;好在难不倒我。作为资深 R 语言爱好者，三下五除二，我将它转成了 R 代码。&lt;/p&gt;
-
-&lt;p&gt;解是解出来了，但是，得到的解差别很大。&lt;/p&gt;
-
-&lt;p&gt;Matlab 提供了一系列解常微分方程的函数，例如 ode15s, ode23s, ode23t, ode23tb 等。我手头代码里用的是 ode23tb。&lt;/p&gt;
-
-&lt;p&gt;R 语言的 deSolve 包提供了解常微分方程的函数 &lt;code&gt;ode()&lt;/code&gt;，其中可用的参数 method 可以是以下取值：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;method = c(&amp;quot;lsoda&amp;quot;, &amp;quot;lsode&amp;quot;, &amp;quot;lsodes&amp;quot;, &amp;quot;lsodar&amp;quot;, &amp;quot;vode&amp;quot;, &amp;quot;daspk&amp;quot;,
-           &amp;quot;euler&amp;quot;, &amp;quot;rk4&amp;quot;, &amp;quot;ode23&amp;quot;, &amp;quot;ode45&amp;quot;, &amp;quot;radau&amp;quot;, 
-           &amp;quot;bdf&amp;quot;, &amp;quot;bdf_d&amp;quot;, &amp;quot;adams&amp;quot;, &amp;quot;impAdams&amp;quot;, &amp;quot;impAdams_d&amp;quot;, &amp;quot;iteration&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;里面不包括 ode23tb 方法。我写的 R 代码里用了默认的 lsoda 方法，导致得到的解跟 Matlab不同。&lt;/p&gt;
-
-&lt;h2 id=&#34;我做过的测试&#34;&gt;我做过的测试&lt;/h2&gt;
-
-&lt;p&gt;我找了个简单的常微分方程，来自 &lt;a href=&#34;https://cn.mathworks.com/help/matlab/ref/ode23tb.html&#34;&gt;Matlab 在线帮助&lt;/a&gt;：&lt;/p&gt;
-
-&lt;p&gt;d&lt;em&gt;y&lt;/em&gt;/d&lt;em&gt;t&lt;/em&gt; = - 10&lt;em&gt;t&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;我分别用 Matlab 和 R 对它求解。&lt;/p&gt;
-
-&lt;p&gt;Matlab 解法：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tspan = [0 2];
-y0 = 1;
-[t,y] = ode23tb(@(t,y) -10*t, tspan, y0);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;R 语言解法：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tspan = seq(0, 2, 0.2)
-y0 = 1
-testf &amp;lt;- function(t, y, p){
-  with(as.list(c(y, p)), {
-    dydt = -a*t
-    list(dydt)
-  })
-}
-p &amp;lt;- list(a = 10)
-zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;二者得到的结果是不同的。ode() 未指定 method，默认用的是 lsoda。&lt;/p&gt;
-
-&lt;p&gt;我尝试了把二者都改为 ode23 方法。即把 Matlab 代码最后一行改为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[t,y] = ode23(@(t,y) -10*t, tspan, y0);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;并把 R 代码最后一行改为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;zz &amp;lt;- deSolve::ode(y = y0, times = tspan, func = testf, parms = p, method = &#39;ode23&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;二者结算的结果就完全一致了。&lt;/p&gt;
-
-&lt;p&gt;但是，我手头要改的大气化学常微分方程，可能是因为太复杂，如果用 ode23 方法的话，无论 matlab 还是 R，计算时间都太长，花了12小时都没算完。&lt;/p&gt;
-
-&lt;h2 id=&#34;我的提问&#34;&gt;我的提问&lt;/h2&gt;
-
-&lt;p&gt;Matlab 的 ode23tb 函数，在 R 语言里该如何实现？或者反过来，R 语言 deSolve 包 &lt;code&gt;ode()&lt;/code&gt; 里的 &amp;ldquo;lsoda&amp;rdquo; 方法，如何在 Matlab 里实现？&lt;/p&gt;
-
-&lt;p&gt;我知道这个问题我不该问，但是我实在黔驴技穷了，发到这里碰碰运气，看有没有高人指点一下。这个事儿已经连续折磨我两天了，头发掉了一大把。&lt;/p&gt;
-
-&lt;p&gt;你说说，这算不算秀恩爱？&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>带娃出行的最佳方式</title>
-      <link>https://steemit.netlify.com/post/5idmwh/</link>
-      <pubDate>Wed, 29 Nov 2017 22:33:30 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/5idmwh/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/5idmwh&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/5idmwh&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5idmwh&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/5idmwh&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/5idmwh&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/5idmwh&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/5idmwh&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/5idmwh.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;大娃京生四岁的时候，在国内奶奶家住。当时，我们打算结束逍遥的二人世界生活，把京生接到德国来跟我们一起住。接之前，我们开始筹划一切跟京生生活相关的事情，例如，怎么带京生出行。&lt;/p&gt;
-
-&lt;p&gt;买车？当时买不起；打车？太贵；公交？不方便；步行？算了吧，京生倒是喜欢跑步前进，我们俩可追不上。&lt;/p&gt;
-
-&lt;p&gt;看来还是得在自行车上作打算。&lt;/p&gt;
-
-&lt;p&gt;有一天，我们去超市看了看自行车上的儿童座椅，居然要100欧，比我们俩的自行车加起来乘以2还贵。&lt;/p&gt;
-
-&lt;p&gt;另一个选择是德国流行的小拖车。在我第一次在大街上看到它的时候，眼球立刻就被吸引住了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://maxpixel.freegreatpicture.com/static/photo/1x/Child-Trailer-Promenade-Forest-Bicycle-Bike-2488390.jpg&#34; alt=&#34;&#34; /&gt;
-小拖车的优点如下：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;孩子稳稳坐在小拖车上，跟前面自行车上的大人距离不远也不近，应该有利于培养孩子的独立意识；&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;拖车里空间很大，不像座椅那么拥挤；&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;关键的优点是，看上去真的很酷！&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;经过调研，我们发现，这样的拖车，在自行车用品商店卖600欧！附加组件另计！&lt;/p&gt;
-
-&lt;p&gt;当穷人基本打算放弃的时候，突然想起上淘宝看看，一看不要紧，在国内才600块人民币！还是国内好啊。&lt;/p&gt;
-
-&lt;p&gt;受淘宝启发，我上了德国的ebay网，克服了包括完全不懂的德语界面、完全不熟悉的购买方式等重重困难，在多次侦察和尝试之后，终于以50欧的总价（30欧购买+20欧快递），成功竞得拖车一辆！&lt;/p&gt;
-
-&lt;p&gt;这个价格，让花了600欧买拖车的米同学一直耿耿于怀。&lt;/p&gt;
-
-&lt;p&gt;3个工作日后，货就到了。安装，调试，上车训练。万无一失之后，把京生小朋友五花大绑固定在了拖车里。&lt;/p&gt;
-
-&lt;p&gt;京生很享受。&lt;/p&gt;
-
-&lt;p&gt;有了拖车，我们就经常骑车载着出行，去超市，去公园，去森林。真正的绿色出行，环保而健康。&lt;/p&gt;
-
-&lt;p&gt;后来，京生长高了，坐不进去了。好在德生出生了。于是，这台拖车拖完哥哥拖弟弟，一直陪伴了我们六年。&lt;/p&gt;
-
-&lt;p&gt;如今，德生也坐不进去了。前几天，我把拖车卖了出去。买家是住在本地郊区的一对小夫妻。&lt;/p&gt;
-
-&lt;p&gt;等待它的，是新的主人，和一段新的故事。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>他们是怎么给孩子起了个好名字的？- How to name a kid: tips from the Three Kingdoms</title>
-      <link>https://steemit.netlify.com/post/or-how-to-name-a-kid-tips-from-the-three-kingdoms/</link>
-      <pubDate>Tue, 28 Nov 2017 22:31:45 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/or-how-to-name-a-kid-tips-from-the-three-kingdoms/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/or-how-to-name-a-kid-tips-from-the-three-kingdoms&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/or-how-to-name-a-kid-tips-from-the-three-kingdoms.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;无意听了一堂中央台“百家讲坛”关于三国的讲座。很多三国人物，他们的爹妈，都给孩子取了个好名字。我觉得，如果给孩子起名字时能参考一下三国人物命名法，那么一定是无不裨益的。&lt;/p&gt;
-
-&lt;p&gt;先说三国时期牛烘烘的曹氏。曹操的名字对于现代中国人来说，虽不比秦桧一听就让人痛恨，但是也给人厌恶感，喜欢戏曲的大爷大妈们脑子里会浮现出一个白脸奸臣形象来。就曹操的所做作为来看，要是他儿子曹丕不篡位称帝，老爹曹操估计也不会落下个奸臣的骂名。“奸贼曹操是逆贼曹丕的儿子”，这句话说得有道理。&lt;/p&gt;
-
-&lt;p&gt;有人说曹操是中国历史上第一个敢用脏字作名字的人，所以雄踞中国流氓史榜首——这是笑谈了。不过鉴于这两个原因，后世的中国人一般是不会用“操”字起名的，就像不会用秦桧的“桧”字。两个好端端的汉字被汉人们糟蹋了。&lt;/p&gt;
-
-&lt;p&gt;曹操字“孟德”，“孟”就是老大，“德”用来说明“操”的意思是“德操”，跟“操行评语”的“操”一样，所以我觉得这个名字对古人来说还是起得蛮好的。&lt;/p&gt;
-
-&lt;p&gt;曹操手下能人无数，我比较喜欢张辽。张辽字文远，“辽”和“远”也是同义词，“文”大概是种美称吧，合在一起意境很美。&lt;/p&gt;
-
-&lt;p&gt;20世纪末21世纪初的中国教育，导致曹魏最有名气的有四个人，除了曹操外，还有：孔融，因为他在小学课本让了梨，后来被满门超斩；曹冲，因为他同样在小学课本里称了大象，可惜后来夭折了；还有那个行军主簿杨修，在中学课本里就被杀了。孔融，字文举，字典上说“融”的本义是炊气上升，那么就容易理解为什么字“文举”了。曹冲字仓舒，杨修字德祖，谁能说说他们二位的名和字有甚关联乎？&lt;/p&gt;
-
-&lt;p&gt;再说江东孙家。孙家老大是孙坚。孙坚字“文台”，字典给出“坚”的本义是泥土坚硬，台子么，当然硬了，不然就是土堆。&lt;/p&gt;
-
-&lt;p&gt;孙坚的俩儿子，大的是孙策，字伯符——“伯”和“孟”一样，也是排行老大，而“符”应该是令符、令箭的意思，“策”则可能是策略、谋略的意思；二儿子是孙权，字仲谋，这一看就知道了，我们常说的权谋权谋，跟他哥哥的名字一比较，可以嗅出这一家子的政治气味来，不过把这气味弄到名字上就太露骨了，就好比开个KTV赚钱就赚钱呗，非要名字叫做钱柜，既难听又难看。&lt;/p&gt;
-
-&lt;p&gt;哥儿俩有二位重臣：张昭字子布，名和字也是同义词，“昭示”、“公布”的意思。周瑜，字公瑾，名字很好听也很好看，所以竟然单位有同事和他重名，就是诸葛亮的哥哥诸葛瑾，字子瑜。“瑜”和“瑾”都是美玉——凡是斜玉旁的字，都跟玉石有关；“公”和“子”自然都是对男子的美称。&lt;/p&gt;
-
-&lt;p&gt;周瑜人如其名，风华正茂，少年英豪，宛若三国群石当中一块最美的宝玉，在当时超级男生的排行榜上可以排三甲；诸葛瑾就惨了点儿，长了个长长的驴脸，要是在现代还可以借此上春晚让大家嘲笑，可是当时在学术上似乎没有多大作为，老婆也不比周瑜的小乔，委屈了这个好名字。&lt;/p&gt;
-
-&lt;p&gt;周瑜接班人是鲁肃，字子敬，“肃静”嘛，鲁肃是个老实巴交的人，不似周瑜的风流儒雅。&lt;/p&gt;
-
-&lt;p&gt;鲁肃的接班人是吕蒙，字子明，“蒙”是“蒙蔽”的“蒙”，与“明”是反义词， 结果果然白衣渡江蒙骗了蜀军并取了关羽的性命，难道是天意？&lt;/p&gt;
-
-&lt;p&gt;最后说说三国的正统蜀汉一家。蜀汉的中心人物是经天纬地的诸葛亮，字孔??。孔者，“很”也，跟“孔武有力”的“孔”是一个意思。“明亮”绝对是个好词，好听好看又容易理解，小学二年级的学生在造句的时候经常用“小明”“小亮”做主人公。&lt;/p&gt;
-
-&lt;p&gt;刘备，字玄德，我又得请教了：这个名和字有关联么？&lt;/p&gt;
-
-&lt;p&gt;刘备手下五虎上将“关张赵马黄”，挨个说吧：关羽，据说原本字长生，后来改成了云长，莫非是为了配合“羽”字才改的？&lt;/p&gt;
-
-&lt;p&gt;张飞，字翼德，三国志记载的是“益德”，莫非罗贯中也是为了配合“飞”字而改的？&lt;/p&gt;
-
-&lt;p&gt;赵云，字子龙，我觉得张辽、关羽、张飞、赵云的名与字都是一个系列的，意境相近，而子龙的名字当中更多了一分豪爽气。与许多英雄一样，三国之中，我最爱子龙；我认为周瑜是三国历史上最完美的人物，而赵云则是三国小说中最完美的人物了，千百年来引来无数人的崇拜，堪称三国演义中第一帅哥。&lt;/p&gt;
-
-&lt;p&gt;马超，字孟起，“超”和“起”无论从模样还是意思上都不分彼此。&lt;/p&gt;
-
-&lt;p&gt;最后说老将黄忠，字汉升，我认为这是三国群英谱中起得最好的名字，简直就是三国演义中心思想的最精练概括。对谁忠诚？对汉朝，对汉室正统的刘备！就和董建华的名字一样，在政治倾向敏感的年代，一个名字一定会在一定程度上影响着一个人的命运。&lt;/p&gt;
-
-&lt;p&gt;三国风云漫卷，浪花淘尽英雄，岁月却带不走那一串串熟悉的姓名。掩卷而思，有知识有文化的你，是否还会给自己的小猫小狗和小孩随随便便起个名字了事？读了这篇拙作的你，是否还会让“狗剩”“旺财”这种名字陪伴他们一生？&lt;/p&gt;
 </description>
     </item>
     

@@ -9,6 +9,52 @@
     <atom:link href="https://steemit.netlify.com/tags/howto/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Suggestion: the help information of the tag bar - 如何在 Utopian.io 发帖只保留 &#39;utopian-io&#39; 一个标签？</title>
+      <link>https://steemit.netlify.com/post/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io/</link>
+      <pubDate>Fri, 22 Dec 2017 14:57:18 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The tag bar of a post on Utopian.io looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513954609/wu67clmrpzxluuiagrti.jpg&#34; alt=&#34;20171222-153044.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you add 4 tags in it, your post on steemit will show 5 tags. The &amp;lsquo;utopian-io&amp;rsquo; tag is added automatically. It gives an impression that &amp;lsquo;utopian-io&amp;rsquo; tag is added automatically and you don&amp;rsquo;t have to do it manually.&lt;/p&gt;
+
+&lt;p&gt;This impression confused me for a long time. Suppose I want to post an article with only the &amp;lsquo;utopian-io&amp;rsquo; tag. As it is added automatically, I should leave the tag bar blank. However, it is not allowed by utopian.io. I have to add at least one tag manually.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513954627/b7acoqgsdhrqwyh1pvpt.jpg&#34; alt=&#34;20171222-153307.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thus I added &amp;lsquo;cn&amp;rsquo; when I wrote bilingually, or &amp;lsquo;test&amp;rsquo; for safety. Safety means that if you use the wrong tag, your post might be flagged (see &lt;a href=&#34;https://steemit.com/cn/@dapeng/s7-5-why-ironman-and-winterfell-were-both-stark&#34;&gt;an example&lt;/a&gt;). The &amp;lsquo;test&amp;rsquo; tag is never wrong.&lt;/p&gt;
+
+&lt;p&gt;I submitted a &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;suggestion&lt;/a&gt; to Utopian.io that users should be allowed to leave the tag bar blank, but my suggestion was rejected.&lt;/p&gt;
+
+&lt;p&gt;Then I asked on discord, and finally got the answer: just write utopian-io tag manually, then the post will have only &amp;lsquo;utopian-io&amp;rsquo; tag.&lt;/p&gt;
+
+&lt;p&gt;See, it really took me some time to find this trick.&lt;/p&gt;
+
+&lt;p&gt;Others don&amp;rsquo;t have to waste so much time as I did. I would suggest that this trick should be written in the help information of the tag bar like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Separate tags with commas. Only lowercase letters, numbers and hyphen character is permitted. &amp;lsquo;utopian-io&amp;rsquo; tag will be added automatically. If you do not have other tags, please fill with only &amp;lsquo;utopian-io&amp;rsquo; manually.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在 Utopian.io 发帖，同步到 steemit 上时，会自动添加 &amp;lsquo;utopian-io&amp;rsquo; 主标签。如果我不想让帖子出现在 其他标签下，该怎么办？既然主标签是自动添加，那么想当然就是不填别的标签就行了吧？但是不行，utopian.io 要求必须添加至少一个标签。&lt;/p&gt;
+
+&lt;p&gt;挺烦人，我建议应该允许用户留空标签（既然主标签是自动添加的），没必要硬填个不必要的标签，而且避免不慎用错标签被踩（比如 &lt;a href=&#34;https://steemit.com/cn/@dapeng/s7-5-why-ironman-and-winterfell-were-both-stark&#34;&gt;这个例子&lt;/a&gt;）。但是我的建议被驳回了，理由是我的建议“不符合utopian 的规则”，而且“用错标签是用户自己的问题”。这两条理由我保留意见，驳回我的留言是我们的 @justyy 留的（经 justyy 解释，是他用自己的 ID 发布他的 supervisor 的意见）。&lt;/p&gt;
+
+&lt;p&gt;今天费了点工夫，终于问来这个小技巧：只需手动添上 &amp;lsquo;utopian-io&amp;rsquo; 标签就行了，不会跟自动添加的冲突。这我可没想到。我想的是添加个 &amp;lsquo;test&amp;rsquo; 标签，因为这个标签下是大家测试用的，没人踩。&lt;/p&gt;
+
+&lt;p&gt;所以，我建议在标签的帮助信息里给出上述方法的提示，免得有人跟我一样在这个问题上浪费时间。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>另类方式秀恩爱</title>
       <link>https://steemit.netlify.com/post/5ukx1b/</link>
       <pubDate>Thu, 30 Nov 2017 16:18:33 +0000</pubDate>

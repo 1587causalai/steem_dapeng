@@ -9,7 +9,87 @@
     <atom:link href="https://steemit.netlify.com/tags/cn-reader/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>“月旦评”给 steem 的启发和教训 - 顺便也参加本期月旦评吧</title>
+      <title>我把青春献给你：排版 (3) - My story of Typesetting - 月旦评</title>
+      <link>https://steemit.netlify.com/post/3-or-my-story-of-typesetting-or/</link>
+      <pubDate>Fri, 22 Dec 2017 22:59:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/3-or-my-story-of-typesetting-or/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/3-or-my-story-of-typesetting-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/3-or-my-story-of-typesetting-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一个月前，我写了我跟 LaTeX 排版的故事，一口气写了两篇。 @drunkevil 留言道：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;看上去莫非还要有（3）？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;是的。耽误了好多天，现在，3 来了。&lt;/p&gt;
+
+&lt;p&gt;前情回顾：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/1-or-latex-1&#34;&gt;我把青春献给你：排版 (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/2-or-my-story-of-typesetting&#34;&gt;我把青春献给你：排版 (2)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;7&lt;/p&gt;
+
+&lt;p&gt;LaTeX 做出来的书稿，确实漂亮。这种漂亮不是那种一眼就能看出哪儿漂亮的漂亮，而是一种说不出来的气质。这种气质来自字体、间距、断字等等诸多细节的堆积和交互作用。只要是用过 LaTeX 的人，拿来个文档用鼻子一闻，就知道是 Word 做的还是 LaTeX 做的。就好像你遇到了你的另一半，让你神魂颠倒，可就是说不出她究竟好在哪里; 她走在人群里，你一眼就能找到她。因为你眼里没别人。&lt;/p&gt;
+
+&lt;p&gt;然而，这种气质不是能轻易把握的。LaTeX 最为奇特的是，你为她投入了无数的时间，却竟然说不清楚到底是因为她太好还是她太糟。如果她太好，为何这么难用？如果她太糟，为何你甘心为她付出？&lt;/p&gt;
+
+&lt;p&gt;之所以能用 LaTeX 写完博士论文，我想来想去，这个奇迹是以下四点一起促成的：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;组里的同事提供了现成的论文模板，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;身边有同事可以随时问，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;老板只看结果，对我实现的手段并不介意，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;论文是英文写的，不需要跟中文排版死磕。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;想学 LaTeX 的注意了！以上四点，只要缺了一样，那么学 LaTeX 的阻力就会提高一个数量级。此坑慎入！&lt;/p&gt;
+
+&lt;p&gt;如果有了这四个条件，那么基本上就不用额外操心，只管埋头写论文就是了。&lt;/p&gt;
+
+&lt;p&gt;然而，LaTeX 下埋头写作的体验并不美好。那感觉根本就不是写论文，而是写代码。不编译出来，你根本不知道自己写了几页，每页是啥模样。一天下来，脑袋胀胀的，心里乱乱的。相比之下，用 Word 写论文，每敲一个字符都有一点成就感，敲完一页后，就像已经出版了一样心满意足。&lt;/p&gt;
+
+&lt;p&gt;LaTeX 就像个绝世美人，不时让你为她的美貌倾倒。更大的诱惑是，你心里清楚，只要你努力，就能距离她的美貌更接近一点。于是，你就身不由己地投入大把大把的精力，把你的文档弄得越来越漂亮，虽然每次只是漂亮了那么一点点。&lt;/p&gt;
+
+&lt;p&gt;不像 Word，你知道，无论再怎么使劲，做出来的论文顶多也就那样了，不可能更美，所以心态反而平静下来，老老实实过日子。&lt;/p&gt;
+
+&lt;p&gt;一个像恋爱，一个像婚姻。&lt;/p&gt;
+
+&lt;p&gt;8&lt;/p&gt;
+
+&lt;p&gt;当完成博士论文的时候，我决定结束天天心惊胆战的 LaTeX 爱情长跑，回到 Word 的温柔乡。我把城墙修高加厚，厚得就像特洛伊城，把 LaTeX 拦住墙外，从此一刀两断。曾经在同一个战壕里的战友，变成了洪水猛兽。&lt;/p&gt;
+
+&lt;p&gt;到了新工作单位，观察了一下，老板和同事全部是正常人，不是 X-men。我松了一口气。&lt;/p&gt;
+
+&lt;p&gt;有一次，有个名叫 LyX 的使者来敲我的城门。从三个字母参差不齐的模样，我一眼就识破了他的伪装，知道是 LaTeX 派来的奸细，于是我轻轻吐出一个字：滚。&lt;/p&gt;
+
+&lt;p&gt;我以为，从此就跟 LaTeX 形同陌路了。&lt;/p&gt;
+
+&lt;p&gt;有一天，我在使用 R 语言的时候，神使鬼差地装上了一个名叫 bookdown 的扩展包。&lt;/p&gt;
+
+&lt;p&gt;很久以后，再次回忆那一刻，仍然不由得感慨万千。命中注定的事，逃不掉的劫数。&lt;/p&gt;
+
+&lt;p&gt;bookdown，就是攻陷特洛伊的木马; 里面藏着的，除了我的旧爱 LaTeX，还有 Pandoc 这个魔鬼。后者从名字上一看，就知道是潘多拉放出来的。&lt;/p&gt;
+
+&lt;p&gt;安装 bookdown 的那一瞬间，我把木马轰隆隆地拉进了我的城，而我却???然不知。&lt;/p&gt;
+
+&lt;p&gt;特洛伊，就此沦陷。&lt;/p&gt;
+
+&lt;p&gt;（未完，待续）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/3/3b/The_Trojans_hauling_the_wooden_horse_into_Troy_MET_DP845311_ff.jpg&#34; alt=&#34;&#34; /&gt;
+Image credit: upload.wikimedia.org&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>“月旦评”给 steem 的启发和教训 - 月旦评</title>
       <link>https://steemit.netlify.com/post/steem-or/</link>
       <pubDate>Thu, 21 Dec 2017 10:06:33 +0000</pubDate>
       
@@ -88,7 +168,7 @@
 
 &lt;p&gt;得傍大腿啊，同学！这里没有科举制，不是谁考卷写得好就能上名校！这些天来，你乌泱乌泱地发帖，可是你拜过码头了吗？去过颍川了吗？&lt;/p&gt;
 
-&lt;p&gt;你就算是诸葛亮满腹经纶，那也得靠大 V 帮你把名声打出去，才有刘皇叔来顾你家茅庐呀！每天光中文区就四百篇文章，你不想想办法的话，你的文章惊天地泣鬼神，可是哪个人类能看得见啊！&lt;/p&gt;
+&lt;p&gt;你就算是诸葛亮满腹经纶，那也得靠大 V 帮你把名声打出??，才有刘皇叔来顾你家茅庐呀！每天光中文区就四百篇文章，你不想想办法的话，你的文章惊天地泣鬼神，可是哪个人类能看得见啊！&lt;/p&gt;
 
 &lt;p&gt;那么谁是大 V？&lt;/p&gt;
 
@@ -1344,72 +1424,6 @@ bookdownplus()
 &lt;p&gt;我每天发布的《希望工程日报》里搜集整理了很多对新人有益的帖子，但是上面这些基本都错过了——区块链的文章沉底太快，埋得太深。不过，这次做镜像网站倒是个发掘旧文八卦、回顾往日精彩的机会。&lt;/p&gt;
 
 &lt;p&gt;敢问路在何方？从前辈的帖子里剥茧抽丝，我们就可以看到，一条小鱼成长为大鲸的道路，原来就在我们自己的脚下。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>If You Dislike the STEEMIT-GREEN - 若是讨厌那片绿</title>
-      <link>https://steemit.netlify.com/post/if-you-dislike-the-steemit-green-or/</link>
-      <pubDate>Sat, 04 Nov 2017 20:51:57 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/if-you-dislike-the-steemit-green-or/</guid>
-      <description>
-
-&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/steemit/@dapeng/if-you-dislike-the-steemit-green-or&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/if-you-dislike-the-steemit-green-or.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I really like the new interface of steemit, especially the green color for the fonts. So please don&amp;rsquo;t flag this post if you dislike it or not.&lt;/p&gt;
-
-&lt;p&gt;If you really dislike the STEEMI-GREEN, however, you could simply switch it off. All the popular web browsers have such a option or plug-in or add-on. As an example, this post will tell you how to do it on Firefox.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmNeeWjZZZFNP22TeDTF2dAUsU1cYDrcLActkJXVbe8APy/green.jpg&#34; alt=&#34;green.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;1-plug-in-free&#34;&gt;1 Plug-in free&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Click the triple-bar button on the top-right, and click&amp;rsquo;Options&amp;rsquo;. Or simply press alt &amp;mdash; t &amp;mdash; o.&lt;/li&gt;
-&lt;li&gt;Click &amp;lsquo;Content&amp;rsquo; on the left bar, then click the &amp;lsquo;Colors&amp;rsquo;  button on the left.&lt;/li&gt;
-&lt;li&gt;Change the link colors. Below the &amp;lsquo;Override &amp;hellip;&amp;rsquo; text, choose &amp;lsquo;Always&amp;rsquo;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Done.&lt;/p&gt;
-
-&lt;p&gt;The new color style works not only for steemit, but also for all sites. You might feel bored when you are browsing other sites and you have to repeat Step 1 &amp;mdash; 3 to switch off your customized colors. Is there a single-click solution?&lt;/p&gt;
-
-&lt;p&gt;Yes, there is, only if you&amp;rsquo;d like to install an add-on.&lt;/p&gt;
-
-&lt;h3 id=&#34;2-no-color-add-on&#34;&gt;2 &amp;lsquo;No Color&amp;rsquo; Add-on&lt;/h3&gt;
-
-&lt;p&gt;Click the triple-bar button on the top-right, and find &amp;lsquo;Add-ons&amp;rsquo;. Search &amp;lsquo;No Color&amp;rsquo; add-on.&lt;/p&gt;
-
-&lt;p&gt;After installing it, you will see one more button on the toolbar. A single-click can switch the font colors between the site colors and your customized ones.&lt;/p&gt;
-
-&lt;p&gt;Is this the best solution?&lt;/p&gt;
-
-&lt;p&gt;No. There is a better one.&lt;/p&gt;
-
-&lt;h3 id=&#34;3-nosquint-plus-add-on&#34;&gt;3 &amp;lsquo;NoSquint Plus&amp;rsquo; Add-on&lt;/h3&gt;
-
-&lt;p&gt;After installing &amp;lsquo;NoSquint Plus&amp;rsquo; add-on, you will see one more button on the toolbar. Click it, and you can set the colors. There is an option of &amp;lsquo;Global settings&amp;rsquo; for all sites. If you only want to change the colors on steemit, cross the &amp;lsquo;exclude site&amp;rsquo; option.&lt;/p&gt;
-
-&lt;p&gt;However, all the tricks above mean nothing to me, because I love the STEEMIT-GREEN! Really really.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbLZnSapRKENMWPcbnmDoQXQkevM8Ejs9nnoqzdMkYXDA/blue.jpg&#34; alt=&#34;blue.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;你喜欢 steemit 的新界面吗？尤其是那一片绿……&lt;/p&gt;
-
-&lt;p&gt;如果不喜欢，本文告诉你如何方便快捷地更改。目前的主流浏览器都支持更改网页的默认颜色。本文就以 Firefox 为例，给出三种方法，任你选。&lt;/p&gt;
-
-&lt;p&gt;方法 1：点击 firefox 右上角三条小横线按钮，点击“选项” &amp;mdash; “内容” &amp;mdash;  “颜色” &amp;mdash;“覆盖”下面选永远。&lt;/p&gt;
-
-&lt;p&gt;这种方法的好处是啥都不用额外安装。坏处是所有网站都变成了你指定的颜色，想切换回去的话又得点一遍。有没有办法一键切换？&lt;/p&gt;
-
-&lt;p&gt;方法 2：在“选项”里点“插件”，搜索 “No Color”插件。安装完毕后，工具栏多出个按钮。点它，就可以一键在你定义的颜色跟网站原来的颜色之间切换了。&lt;/p&gt;
-
-&lt;p&gt;虽然切换方便，但是有没有办法不切换，自动把且仅把 steemit 颜色改了？&lt;/p&gt;
-
-&lt;p&gt;方法3：安装 &amp;lsquo;NoSquint Plus&amp;rsquo; 插件，工具栏又多个按钮。点它，设置颜色。“全局选项”可以选择对所有网站都改颜色。如果只对 steemit 改，那么把&amp;rsquo;排除‘&amp;rsquo;勾上就行了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmeYUwQ7Juorgd79o6D5E34BnUYxwfmLxYH4cApgPRhRf6/end2.jpg&#34; alt=&#34;dapeng&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

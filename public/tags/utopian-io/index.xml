@@ -9,6 +9,174 @@
     <atom:link href="https://steemit.netlify.com/tags/utopian-io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Suggestion: the help information of the tag bar - 如何在 Utopian.io 发帖只保留 &#39;utopian-io&#39; 一个标签？</title>
+      <link>https://steemit.netlify.com/post/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io/</link>
+      <pubDate>Fri, 22 Dec 2017 14:57:18 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The tag bar of a post on Utopian.io looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513954609/wu67clmrpzxluuiagrti.jpg&#34; alt=&#34;20171222-153044.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you add 4 tags in it, your post on steemit will show 5 tags. The &amp;lsquo;utopian-io&amp;rsquo; tag is added automatically. It gives an impression that &amp;lsquo;utopian-io&amp;rsquo; tag is added automatically and you don&amp;rsquo;t have to do it manually.&lt;/p&gt;
+
+&lt;p&gt;This impression confused me for a long time. Suppose I want to post an article with only the &amp;lsquo;utopian-io&amp;rsquo; tag. As it is added automatically, I should leave the tag bar blank. However, it is not allowed by utopian.io. I have to add at least one tag manually.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513954627/b7acoqgsdhrqwyh1pvpt.jpg&#34; alt=&#34;20171222-153307.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thus I added &amp;lsquo;cn&amp;rsquo; when I wrote bilingually, or &amp;lsquo;test&amp;rsquo; for safety. Safety means that if you use the wrong tag, your post might be flagged (see &lt;a href=&#34;https://steemit.com/cn/@dapeng/s7-5-why-ironman-and-winterfell-were-both-stark&#34;&gt;an example&lt;/a&gt;). The &amp;lsquo;test&amp;rsquo; tag is never wrong.&lt;/p&gt;
+
+&lt;p&gt;I submitted a &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;suggestion&lt;/a&gt; to Utopian.io that users should be allowed to leave the tag bar blank, but my suggestion was rejected.&lt;/p&gt;
+
+&lt;p&gt;Then I asked on discord, and finally got the answer: just write utopian-io tag manually, then the post will have only &amp;lsquo;utopian-io&amp;rsquo; tag.&lt;/p&gt;
+
+&lt;p&gt;See, it really took me some time to find this trick.&lt;/p&gt;
+
+&lt;p&gt;Others don&amp;rsquo;t have to waste so much time as I did. I would suggest that this trick should be written in the help information of the tag bar like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Separate tags with commas. Only lowercase letters, numbers and hyphen character is permitted. &amp;lsquo;utopian-io&amp;rsquo; tag will be added automatically. If you do not have other tags, please fill with only &amp;lsquo;utopian-io&amp;rsquo; manually.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在 Utopian.io 发帖，同步到 steemit 上时，会自动添加 &amp;lsquo;utopian-io&amp;rsquo; 主标签。如果我不想让帖子出现在 其他标签下，该怎么办？既然主标签是自动添加，那么想当然就是不填别的标签就行了吧？但是不行，utopian.io 要求必须添加至少一个标签。&lt;/p&gt;
+
+&lt;p&gt;挺烦人，我建议应该允许用户留空标签（既然主标签是自动添加的），没必要硬填个不必要的标签，而且避免不慎用错标签被踩（比如 &lt;a href=&#34;https://steemit.com/cn/@dapeng/s7-5-why-ironman-and-winterfell-were-both-stark&#34;&gt;这个例子&lt;/a&gt;）。但是我的建议被驳回了，理由是我的建议“不符合utopian 的规则”，而且“用错标签是用户自己的问题”。这两条理由我保留意见，驳回我的留言是我们的 @justyy 留的（经 justyy 解释，是他用自己的 ID 发布他的 supervisor 的意见）。&lt;/p&gt;
+
+&lt;p&gt;今天费了点工夫，终于问来这个小技巧：只需手动添上 &amp;lsquo;utopian-io&amp;rsquo; 标签就行了，不会跟自动添加的冲突。这我可没想到。我想的是添加个 &amp;lsquo;test&amp;rsquo; 标签，因为这个标签下是大家测试用的，没人踩。&lt;/p&gt;
+
+&lt;p&gt;所以，我建议在标签的帮助信息里给出上述方法的提示，免得有人跟我一样在这个问题上浪费时间。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bug Hunting: the &#39;&#43;Contribution&#39; button is inactive on Ubuntu</title>
+      <link>https://steemit.netlify.com/post/bug-hunting-the-contribution-button-is-inactive/</link>
+      <pubDate>Fri, 22 Dec 2017 10:48:57 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/bug-hunting-the-contribution-button-is-inactive/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/bug-hunting-the-contribution-button-is-inactive&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/bug-hunting-the-contribution-button-is-inactive&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/bug-hunting-the-contribution-button-is-inactive&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/bug-hunting-the-contribution-button-is-inactive&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/bug-hunting-the-contribution-button-is-inactive&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/bug-hunting-the-contribution-button-is-inactive&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/bug-hunting-the-contribution-button-is-inactive&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/bug-hunting-the-contribution-button-is-inactive.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Update: after I posted this report, I saw that &lt;a href=&#34;https://utopian.io/utopian-io/@ah-2002/bug-hunting-contribution-add-contribution-button-on-the-top-is-not-working&#34;&gt;the similar bug&lt;/a&gt; was already reported three days ago. I am sorry that I missed it. However, the bug reported in my post was tested on different OS and different versions of the web browsers. Thus I think my report still makes sense.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-bug-the-contribution-button-on-top-of-the-webpage-is-inactive&#34;&gt;The bug: the &amp;lsquo;+Contribution&amp;rsquo; button on top of the webpage is inactive&lt;/h3&gt;
+
+&lt;p&gt;There are two buttons on the home page of utopian.io for adding a new contribution. One is &amp;lsquo;+ New Contribution&amp;rsquo; on the left panel, and the other is a blue one called &amp;lsquo;+Contribution&amp;rsquo; on the top. See the screenshot.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513939718/nohm3tp8rtjiq5ac6nks.jpg&#34; alt=&#34;20171222-113811.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I guess I should be able to add a new contribution by clicking either of them. However, the blue button is inactive. When I put my mouse on the blue button, the mouse shows a small hand, indicating that I could click. So I click it, but nothing happens.&lt;/p&gt;
+
+&lt;p&gt;It seems that the blue button is inactive.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-session-information&#34;&gt;My session information&lt;/h3&gt;
+
+&lt;p&gt;I tested it on both windows 7 + Firefox 56.0 (32-bit), and Ubuntu 16.04 + Firefox 57.0.1 (64-bit).&lt;/p&gt;
+
+&lt;h3 id=&#34;how-to-reproduce-this-bug&#34;&gt;How to reproduce this bug&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Open Firefox web browser.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Visit Utopian.io and log in.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click the blue button &amp;lsquo;+ Contribution&amp;rsquo; on the top-right.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;suggestions&#34;&gt;Suggestions&lt;/h3&gt;
+
+&lt;p&gt;The blue button &amp;lsquo;+Contribution&amp;rsquo; should be active.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/bug-hunting-the-contribution-button-is-inactive&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Suggestion: addtional tags is unnecessary for a post</title>
+      <link>https://steemit.netlify.com/post/suggestion-addtional-tags-is-unnecessary-for-a-post/</link>
+      <pubDate>Fri, 22 Dec 2017 10:29:39 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/suggestion-addtional-tags-is-unnecessary-for-a-post/</guid>
+      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/suggestion-addtional-tags-is-unnecessary-for-a-post.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I just posted a bug hunting article on utopian.io. It was a small bug. An &amp;lsquo;utopian-io&amp;rsquo; tag is sufficient for it. I think this post has nothing to do with other tags on steemit, so I would like to leave the &amp;lsquo;Tags&amp;rsquo; bar blank. However, it was not allowed by utopian.io. I had to add at least one tag.&lt;/p&gt;
+
+&lt;p&gt;Maybe additional tags is useful for utopian.io (I am no sure), but I don&amp;rsquo;t think it is necessary when the post is synced to steemit. Sometimes, if you use a wrong tag, your post is flagged by some whales. You can find what &lt;a href=&#34;https://steemit.com/cn/@dapeng/s7-5-why-ironman-and-winterfell-were-both-stark&#34;&gt;one of my post&lt;/a&gt; suffered. I would not risk it.&lt;/p&gt;
+
+&lt;p&gt;For safety, I added a tag &amp;lsquo;cn&amp;rsquo; to my previous post beside &amp;lsquo;utopian-io&amp;rsquo;, because I am familiar with cn category and I am sure it won&amp;rsquo;t be flagged only if I write something in Chinese in this post. So I wrote like this (translated into English):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I added a cn tag to this post only because utopian.io requires an additional tag.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Isn&amp;rsquo;t it ridiculous?&lt;/p&gt;
+
+&lt;p&gt;I would suggest that the &amp;lsquo;Tags&amp;rsquo; bar should be allowed to be blank. Or at least for the synchronization to steemit.&lt;/p&gt;
+
+&lt;p&gt;Hmm,  the tag &amp;lsquo;test&amp;rsquo; might be another safe way to cheat utopian.io.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/suggestion-addtional-tags-is-unnecessary-for-a-post&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bug Hunting: the reward selection menu - 乌托邦的一个 bug</title>
+      <link>https://steemit.netlify.com/post/bug-hunting-the-reward-selection-menu/</link>
+      <pubDate>Fri, 22 Dec 2017 10:12:39 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/bug-hunting-the-reward-selection-menu/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/bug-hunting-the-reward-selection-menu.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;the-bug-the-reward-selection-menu-is-on-top-of-the-webpage&#34;&gt;The bug: the reward selection menu is on top of the webpage&lt;/h3&gt;
+
+&lt;p&gt;When posting a new article on Utopian.io, I can choose the reward as &amp;ldquo;100 Steem Power&amp;rdquo; or &amp;ldquo;50% SBD and 50% SP&amp;rdquo;. However, when I click the choice button, these two options appear in a selection menu on top of the webpage, far away from the choice button.&lt;/p&gt;
+
+&lt;p&gt;Well, I am not professional on webpage development, thus I am probably using the wrong term to describe the webpage elements. Please see the screenshot as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513937203/m7cdaavcr39httdlzuxv.jpg&#34; alt=&#34;_utopian_bug.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I guess it is a bug. If it is intended to be on top of the webpage, it is far enough from the selection button. I used a small size of the web browser just for a better sceenshot. If I use the full sceen view of the web browser, then the choice menu is too far away to find, which is very confusing to new users. Shouldn&amp;rsquo;t the options of &amp;ldquo;100 Steem Power&amp;rdquo; and &amp;ldquo;50% SBD and 50% SP&amp;rdquo; appear close to the button, like steemit as follows?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1513937221/einnq07mrimlfpl8yyoj.jpg&#34; alt=&#34;utopian_bug.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;my-session-information&#34;&gt;My session information&lt;/h3&gt;
+
+&lt;p&gt;I tested it on both windows 7 + Firefox 56.0 (32-bit), and Ubuntu 16.04 + Firefox 57.0.1 (64-bit).&lt;/p&gt;
+
+&lt;h3 id=&#34;how-to-reproduce-this-bug&#34;&gt;How to reproduce this bug&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Open Firefox web browser.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Visit Utopian.io and log in.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click &amp;lsquo;+ New Contribution&amp;rsquo; &amp;ndash; &amp;lsquo;Development&amp;rsquo; &amp;ndash; &amp;lsquo;I understand. Proceed&amp;rsquo;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click the &amp;lsquo;Reward&amp;rsquo; button at the bottom of the new post web page&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;suggestions&#34;&gt;Suggestions&lt;/h3&gt;
+
+&lt;p&gt;The reward option menu should be close to the Reward button.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;这是我提交给乌托邦的一个bug。我觉得帖子的标签光一个 utopian-io 就够了，可是发布时必须再填个标签。我想不出别的合适的标签，只好填了我爱的 cn 了，并且添上了这段中文文字，免得被小猎豹踩……&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/bug-hunting-the-reward-selection-menu&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>beginr: an R package for beginners in R language - 帮助初学者学习 R 语言</title>
       <link>https://steemit.netlify.com/post/beginr-an-r-package-for-beginners-in-r-language/</link>
       <pubDate>Thu, 21 Dec 2017 22:36:18 +0000</pubDate>
