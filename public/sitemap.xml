@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://steemit.netlify.com/post/typora-the-best-cross-platform-markdown-editor-or-typora/</loc>
+    <lastmod>2017-12-23T20:51:51+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://steemit.netlify.com/post/3-or-my-story-of-typesetting-or/</loc>
     <lastmod>2017-12-22T22:59:51+00:00</lastmod>
   </url>
@@ -936,7 +941,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn/</loc>
-    <lastmod>2017-12-22T22:59:51+00:00</lastmod>
+    <lastmod>2017-12-23T20:51:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1008,7 +1013,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/cn-reader/</loc>
-    <lastmod>2017-12-22T22:59:51+00:00</lastmod>
+    <lastmod>2017-12-23T20:51:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1206,12 +1211,12 @@
   
   <url>
     <loc>https://steemit.netlify.com/</loc>
-    <lastmod>2017-12-22T22:59:51+00:00</lastmod>
+    <lastmod>2017-12-23T20:51:51+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/tags/howto/</loc>
-    <lastmod>2017-12-22T14:57:18+00:00</lastmod>
+    <lastmod>2017-12-23T20:51:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1319,7 +1324,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/news/</loc>
-    <lastmod>2017-12-18T23:05:24+00:00</lastmod>
+    <lastmod>2017-12-23T20:51:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1355,7 +1360,7 @@
   
   <url>
     <loc>https://steemit.netlify.com/post/</loc>
-    <lastmod>2017-12-22T22:59:51+00:00</lastmod>
+    <lastmod>2017-12-23T20:51:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1546,13 +1551,13 @@
   
   <url>
     <loc>https://steemit.netlify.com/tags/utopian-io/</loc>
-    <lastmod>2017-12-22T14:57:18+00:00</lastmod>
+    <lastmod>2017-12-23T20:51:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://steemit.netlify.com/categories/utopian-io/</loc>
-    <lastmod>2017-12-22T14:57:18+00:00</lastmod>
+    <lastmod>2017-12-23T20:51:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   

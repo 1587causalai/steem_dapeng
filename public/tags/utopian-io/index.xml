@@ -9,6 +9,101 @@
     <atom:link href="https://steemit.netlify.com/tags/utopian-io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Typora: the best cross-platform markdown editor  - 最佳帖子编辑器 Typora 中文版横空出世</title>
+      <link>https://steemit.netlify.com/post/typora-the-best-cross-platform-markdown-editor-or-typora/</link>
+      <pubDate>Sat, 23 Dec 2017 20:51:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/typora-the-best-cross-platform-markdown-editor-or-typora/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/typora-the-best-cross-platform-markdown-editor-or-typora.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This post was written bilingually, in English and Chinese. I wrote a tutorial to Typora on steemit months ago only in Chinese. The English part of this post was based on the Chinese tutorial with some updates in the latest version , and the Chinese part of this post only introduced the new updates&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本文用英文和中文写作，中文在后半部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;Markdown is the recommended syntax on Utopian.io and steemit.com. However, many users are not familiar with markdown. Typora is the best markdown editor I have ever seen. With Typora, a new steemian can easily write and edit a post and get to know markdown in a simple way.  Months ago I &lt;a href=&#34;https://github.com/typora/typora-issues/issues/750&#34;&gt;subimtted a serious bug report to Typora team&lt;/a&gt;. Later this bug was fixed. I think it is now close to perfect and I would like to recommend this software to all the steemians.&lt;/p&gt;
+
+&lt;h3 id=&#34;fundamental-use&#34;&gt;Fundamental use&lt;/h3&gt;
+
+&lt;p&gt;Most markdown editors have two panels, i.e. an editing panel and a preview panel.  Utopian.io and steemit.com are two examples: You write your post in the upper panel, and see how it looks in the lower panel. Such a layout is not friendly to new users, even to old users.&lt;/p&gt;
+
+&lt;p&gt;Typora has a single panel and it is a &amp;lsquo;What-You-See-Is-What-You-Get&amp;rsquo; (WYSIWYG) editor. You do not have to memorize markdown syntax. Right click your mouse and the tool bar appears. After choosing the format and move away the cursor, you get what you want. See the following moving figure.
+&lt;img src=&#34;https://steemitimages.com/DQmUkU9MeiSYFPSXFpT1keuc7MUbDuoaoWTxRq3eAxbt8VU/typora1.gif&#34; alt=&#34;typora1.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t like the tool bar, you can use hot keys instead. ctrl + i mean &lt;em&gt;italic&lt;/em&gt;, ctrl + shift + i inserts an image,  and ctrl + k inserts a hyperlink. Hints for other hot keys are shown in the menu bar.&lt;/p&gt;
+
+&lt;p&gt;Typora saves your text automatically. You don&amp;rsquo;t have to worry about the web browser crashed or power cut!&lt;/p&gt;
+
+&lt;p&gt;It is said that the best length of a Chinese post is 1000 &amp;ndash; 2000 characters. See the right bottom and you can find how many words.&lt;/p&gt;
+
+&lt;h3 id=&#34;powerful-copy-and-paste&#34;&gt;Powerful copy and paste&lt;/h3&gt;
+
+&lt;p&gt;It is pain to insert a table with markdown. With Typora it is fun. Just prepare your table in a spreadsheet software like  Excel, copy-paste it to Typora, and it is done. You can even copy a table from a webpage, paste it to Excel, and copy-paste to Typora. See the following moving pictures.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQmead2dGVuTH7yFACD68wD5XXniziJgXeXZdDnfY4Pghig/typora2.gif&#34; alt=&#34;typora2.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another powerful copy-paste feature is hyperlink. If you copy a text with hyperlink, then the hyperlink is automatically added when psted to Typora. If you want to insert a hyperlink to a text, just copy the hyperlink, select your text, and press ctrl + k. See the following pictures.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbX6DuQB75kpcZBT7gQCKHex5ui4EgKXqbktCy59eGffR/typora3.gif&#34; alt=&#34;typora3.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can copy-paste some from Typora to other places and convert the text to html or plain text automatically.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQma3dCFf3wVN77KSrkVKq7yLxKcvaNcURdcYTLgXLnZmhz/typora4.gif&#34; alt=&#34;typora4.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;advanced-use&#34;&gt;Advanced use&lt;/h3&gt;
+
+&lt;p&gt;In the  Theme menu, you can choose your favorite theme.
+&lt;img src=&#34;https://steemitimages.com/DQmS9AWtMLyhMvyBCwboVoy5voDbT7qFNcY53UcvGgzCCQE/typora5.gif&#34; alt=&#34;typora5.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the View menu, you can choose &lt;em&gt;Outliine&lt;/em&gt;, which shows all levels of the titles and sub-titles, &lt;em&gt;Articles&lt;/em&gt;, which shows the previews of all the posts in the current folder, and &lt;em&gt;File Tree&lt;/em&gt;, which shows the structure of the folder and files.
+&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQmaSfwaMrYfKEVzFJLnsf3ALVQGvGzT724VwS6Co8eJncn/typora6.gif&#34; alt=&#34;typora6.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another fun is the modes. Have you ever used a typewriter? In the &lt;em&gt;Typewriter&lt;/em&gt; mode, with the hot key of  ctrl+shift+t, the cursor is always in the middle height of the editor, which can protect your neck from moving up and down. The &lt;em&gt;Focus&lt;/em&gt; mode as well as the full-screen (hot key F11) helps you focus your attention to your writing. You can also switch to the source-code mode with the hot key of ctrl + /, or simply click the left bottom (&amp;lt;/&amp;gt;).&lt;/p&gt;
+
+&lt;p&gt;I think the tutorial introduced above is sufficient for Steemians and Utopian users. Other features, such as inserting equations, footnotes, table of contents, are available in Typora, although not supported by steemit.com and utopian.io. From the most recent version, Typora supports multiple language interfaces including Chinese, which is shown in the moving pictures in the Chinese part of this post.&lt;/p&gt;
+
+&lt;p&gt;Finally and surprisingly, typora is open-source and free of charge on WIndows, Linux and even MacOS! I am sure Typora will improve your posting on Utopian.io and steemit.com.&lt;/p&gt;
+
+&lt;p&gt;Have fun!&lt;/p&gt;
+
+&lt;p&gt;三个月前，&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/markdown-steemit-tips-the-best-markdown-editors&#34;&gt;我为大家推荐&lt;/a&gt;了一款我用过的最佳 markdown 编辑器：Typora，得到了众多新手老手的热烈欢迎。用 Typora 写 steem 帖子，再合适不过了了。有了 Typora，你就：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;不用担心文章在发帖失败时丢失了，因为 Typora 随时自动保存到本地电脑；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;不用记忆 markdown 格式标记了，因为有工具栏和快捷键；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;不用在浏览器里丑陋的界面上写作了，因为 Typora 界面非常精美。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;除此之外，它还是 windows mac linux 跨平台的免费软件。还有很多惊喜，可以看我的&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/markdown-steemit-tips-the-best-markdown-editors&#34;&gt;推荐帖&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;唯一我们不爽的，是它的界面是英文的。&lt;/p&gt;
+
+&lt;p&gt;在大家的反馈下，我当时就去 typora 项目毛遂自荐，想义务给大家做个中文界面，结果&amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1514062218/wqlgibgzorjb2easfuly.jpg&#34; alt=&#34;typora1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;人家说人家有人正在做，将来就会有。&lt;/p&gt;
+
+&lt;p&gt;等啊等啊，终于，我收到更新通知，Typora 从0.9.39 版开始，有了中文版啦！&lt;/p&gt;
+
+&lt;p&gt;打开 Typora，默认是英文界面。点击菜单栏 File - Preference - language，选择中文，不用保存，关掉 Typora。下次打开时，就是中文界面啦！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1514062235/bys2ascpwowucrxijfgt.gif&#34; alt=&#34;typora.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Steem 的中文用户有福了！还等什么，用起来啦！&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Suggestion: the help information of the tag bar - 如何在 Utopian.io 发帖只保留 &#39;utopian-io&#39; 一个标签？</title>
       <link>https://steemit.netlify.com/post/suggestion-the-help-information-of-the-tag-bar-or-utopian-io-utopian-io/</link>
       <pubDate>Fri, 22 Dec 2017 14:57:18 +0000</pubDate>

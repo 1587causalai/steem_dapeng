@@ -9,6 +9,101 @@
     <atom:link href="https://steemit.netlify.com/tags/cn-reader/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Typora: the best cross-platform markdown editor  - 最佳帖子编辑器 Typora 中文版横空出世</title>
+      <link>https://steemit.netlify.com/post/typora-the-best-cross-platform-markdown-editor-or-typora/</link>
+      <pubDate>Sat, 23 Dec 2017 20:51:51 +0000</pubDate>
+      
+      <guid>https://steemit.netlify.com/post/typora-the-best-cross-platform-markdown-editor-or-typora/</guid>
+      <description>
+
+&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/typora-the-best-cross-platform-markdown-editor-or-typora.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This post was written bilingually, in English and Chinese. I wrote a tutorial to Typora on steemit months ago only in Chinese. The English part of this post was based on the Chinese tutorial with some updates in the latest version , and the Chinese part of this post only introduced the new updates&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本文用英文和中文写作，中文在后半部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;Markdown is the recommended syntax on Utopian.io and steemit.com. However, many users are not familiar with markdown. Typora is the best markdown editor I have ever seen. With Typora, a new steemian can easily write and edit a post and get to know markdown in a simple way.  Months ago I &lt;a href=&#34;https://github.com/typora/typora-issues/issues/750&#34;&gt;subimtted a serious bug report to Typora team&lt;/a&gt;. Later this bug was fixed. I think it is now close to perfect and I would like to recommend this software to all the steemians.&lt;/p&gt;
+
+&lt;h3 id=&#34;fundamental-use&#34;&gt;Fundamental use&lt;/h3&gt;
+
+&lt;p&gt;Most markdown editors have two panels, i.e. an editing panel and a preview panel.  Utopian.io and steemit.com are two examples: You write your post in the upper panel, and see how it looks in the lower panel. Such a layout is not friendly to new users, even to old users.&lt;/p&gt;
+
+&lt;p&gt;Typora has a single panel and it is a &amp;lsquo;What-You-See-Is-What-You-Get&amp;rsquo; (WYSIWYG) editor. You do not have to memorize markdown syntax. Right click your mouse and the tool bar appears. After choosing the format and move away the cursor, you get what you want. See the following moving figure.
+&lt;img src=&#34;https://steemitimages.com/DQmUkU9MeiSYFPSXFpT1keuc7MUbDuoaoWTxRq3eAxbt8VU/typora1.gif&#34; alt=&#34;typora1.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t like the tool bar, you can use hot keys instead. ctrl + i mean &lt;em&gt;italic&lt;/em&gt;, ctrl + shift + i inserts an image,  and ctrl + k inserts a hyperlink. Hints for other hot keys are shown in the menu bar.&lt;/p&gt;
+
+&lt;p&gt;Typora saves your text automatically. You don&amp;rsquo;t have to worry about the web browser crashed or power cut!&lt;/p&gt;
+
+&lt;p&gt;It is said that the best length of a Chinese post is 1000 &amp;ndash; 2000 characters. See the right bottom and you can find how many words.&lt;/p&gt;
+
+&lt;h3 id=&#34;powerful-copy-and-paste&#34;&gt;Powerful copy and paste&lt;/h3&gt;
+
+&lt;p&gt;It is pain to insert a table with markdown. With Typora it is fun. Just prepare your table in a spreadsheet software like  Excel, copy-paste it to Typora, and it is done. You can even copy a table from a webpage, paste it to Excel, and copy-paste to Typora. See the following moving pictures.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQmead2dGVuTH7yFACD68wD5XXniziJgXeXZdDnfY4Pghig/typora2.gif&#34; alt=&#34;typora2.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another powerful copy-paste feature is hyperlink. If you copy a text with hyperlink, then the hyperlink is automatically added when psted to Typora. If you want to insert a hyperlink to a text, just copy the hyperlink, select your text, and press ctrl + k. See the following pictures.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/DQmbX6DuQB75kpcZBT7gQCKHex5ui4EgKXqbktCy59eGffR/typora3.gif&#34; alt=&#34;typora3.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can copy-paste some from Typora to other places and convert the text to html or plain text automatically.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQma3dCFf3wVN77KSrkVKq7yLxKcvaNcURdcYTLgXLnZmhz/typora4.gif&#34; alt=&#34;typora4.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;advanced-use&#34;&gt;Advanced use&lt;/h3&gt;
+
+&lt;p&gt;In the  Theme menu, you can choose your favorite theme.
+&lt;img src=&#34;https://steemitimages.com/DQmS9AWtMLyhMvyBCwboVoy5voDbT7qFNcY53UcvGgzCCQE/typora5.gif&#34; alt=&#34;typora5.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the View menu, you can choose &lt;em&gt;Outliine&lt;/em&gt;, which shows all levels of the titles and sub-titles, &lt;em&gt;Articles&lt;/em&gt;, which shows the previews of all the posts in the current folder, and &lt;em&gt;File Tree&lt;/em&gt;, which shows the structure of the folder and files.
+&lt;img src=&#34;https://steemitimages.com/0x0/https://steemitimages.com/DQmaSfwaMrYfKEVzFJLnsf3ALVQGvGzT724VwS6Co8eJncn/typora6.gif&#34; alt=&#34;typora6.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another fun is the modes. Have you ever used a typewriter? In the &lt;em&gt;Typewriter&lt;/em&gt; mode, with the hot key of  ctrl+shift+t, the cursor is always in the middle height of the editor, which can protect your neck from moving up and down. The &lt;em&gt;Focus&lt;/em&gt; mode as well as the full-screen (hot key F11) helps you focus your attention to your writing. You can also switch to the source-code mode with the hot key of ctrl + /, or simply click the left bottom (&amp;lt;/&amp;gt;).&lt;/p&gt;
+
+&lt;p&gt;I think the tutorial introduced above is sufficient for Steemians and Utopian users. Other features, such as inserting equations, footnotes, table of contents, are available in Typora, although not supported by steemit.com and utopian.io. From the most recent version, Typora supports multiple language interfaces including Chinese, which is shown in the moving pictures in the Chinese part of this post.&lt;/p&gt;
+
+&lt;p&gt;Finally and surprisingly, typora is open-source and free of charge on WIndows, Linux and even MacOS! I am sure Typora will improve your posting on Utopian.io and steemit.com.&lt;/p&gt;
+
+&lt;p&gt;Have fun!&lt;/p&gt;
+
+&lt;p&gt;三个月前，&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/markdown-steemit-tips-the-best-markdown-editors&#34;&gt;我为大家推荐&lt;/a&gt;了一款我用过的最佳 markdown 编辑器：Typora，得到了众多新手老手的热烈欢迎。用 Typora 写 steem 帖子，再合适不过了了。有了 Typora，你就：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;不用担心文章在发帖失败时丢失了，因为 Typora 随时自动保存到本地电脑；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;不用记忆 markdown 格式标记了，因为有工具栏和快捷键；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;不用在浏览器里丑陋的界面上写作了，因为 Typora 界面非常精美。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;除此之外，它还是 windows mac linux 跨平台的免费软件。还有很多惊喜，可以看我的&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/markdown-steemit-tips-the-best-markdown-editors&#34;&gt;推荐帖&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;唯一我们不爽的，是它的界面是英文的。&lt;/p&gt;
+
+&lt;p&gt;在大家的反馈下，我当时就去 typora 项目毛遂自荐，想义务给大家做个中文界面，结果&amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1514062218/wqlgibgzorjb2easfuly.jpg&#34; alt=&#34;typora1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;人家说人家有人正在做，将来就会有。&lt;/p&gt;
+
+&lt;p&gt;等啊等啊，终于，我收到更新通知，Typora 从0.9.39 版开始，有了中文版啦！&lt;/p&gt;
+
+&lt;p&gt;打开 Typora，默认是英文界面。点击菜单栏 File - Preference - language，选择中文，不用保存，关掉 Typora。下次打开时，就是中文界面啦！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/hpiynhbhq/image/upload/v1514062235/bys2ascpwowucrxijfgt.gif&#34; alt=&#34;typora.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Steem 的中文用户有福了！还等什么，用起来啦！&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;hr/&gt;&lt;em&gt;Posted on &lt;a href=&#34;https://utopian.io/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora&#34;&gt;Utopian.io -  Rewarding Open Source Contributors&lt;/a&gt;&lt;/em&gt;&lt;hr/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>我把青春献给你：排版 (3) - My story of Typesetting - 月旦评</title>
       <link>https://steemit.netlify.com/post/3-or-my-story-of-typesetting-or/</link>
       <pubDate>Fri, 22 Dec 2017 22:59:51 +0000</pubDate>
@@ -130,7 +225,7 @@ Image credit: upload.wikimedia.org&lt;/p&gt;
 
 &lt;p&gt;弊端之一，就是为名所累。三国有段著名的故事：徐庶走马荐诸葛，刘关张三顾茅庐。为什么徐庶一听母亲被曹操软禁，就立刻离开刘备（走之前推荐了诸葛亮来接班）投奔曹操了？亲情是感情上的原因；而基于现实的考量，一旦担上“不孝”的恶名，完了，以后别想混了，必被别的孝子取代。往轻了说是职业生涯就此断送，往重了说……看看孔融吧，三岁让梨的孔融，孔子的嫡子孙孔融，建安七子的大文学家孔融，被安上了个不孝的罪名，给满门抄斩了。灭门的时候，他家的娃还留下个“覆巢之下岂有完卵”的成语。&lt;/p&gt;
 
-&lt;p&gt;为了名声好，当时葬礼奢华之风盛行。孝嘛，绞尽脑汁，也得要个孝顺的名声啊。父母去世了，就倾家荡产办丧事，一辈子的积蓄全埋到父母的坟墓里，一守孝就是好几年，期间连夫妻生活都不能有。后世的盗墓贼，最喜欢盗的就是东汉的墓，里面全是金银珠宝。曹操为此痛心疾首：咱们汉朝的 GDP 不低啊，可是咱们把钱都埋了啊。所以，曹操去世时前立下遗嘱，要薄葬，自己带头，煞一煞不正之风。&lt;/p&gt;
+&lt;p&gt;为了名声好，当时葬礼奢华之风盛行。孝嘛，绞尽脑汁，也得要个孝顺的名声啊。父母去世了，就倾家荡产办丧事，一辈子的积蓄???埋到父母的坟墓里，一守孝就是好几年，期间连夫妻生活都不能有。后世的盗墓贼，最喜欢盗的就是东汉的墓，里面全是金银珠宝。曹操为此痛心疾首：咱们汉朝的 GDP 不低啊，可是咱们把钱都埋了啊。所以，曹操去世时前立下遗嘱，要薄葬，自己带头，煞一煞不正之风。&lt;/p&gt;
 
 &lt;p&gt;弊端之二，是拉帮结派。&lt;/p&gt;
 
@@ -168,7 +263,7 @@ Image credit: upload.wikimedia.org&lt;/p&gt;
 
 &lt;p&gt;得傍大腿啊，同学！这里没有科举制，不是谁考卷写得好就能上名校！这些天来，你乌泱乌泱地发帖，可是你拜过码头了吗？去过颍川了吗？&lt;/p&gt;
 
-&lt;p&gt;你就算是诸葛亮满腹经纶，那也得靠大 V 帮你把名声打出??，才有刘皇叔来顾你家茅庐呀！每天光中文区就四百篇文章，你不想想办法的话，你的文章惊天地泣鬼神，可是哪个人类能看得见啊！&lt;/p&gt;
+&lt;p&gt;你就算是诸葛亮满腹经纶，那也得靠大 V 帮你把名声??出去，才有刘皇叔来顾你家茅庐呀！每天光中文区就四百篇文章，你不想想办法的话，你的文章惊天地泣鬼神，可是哪个人类能看得见啊！&lt;/p&gt;
 
 &lt;p&gt;那么谁是大 V？&lt;/p&gt;
 
@@ -188,7 +283,7 @@ Image credit: upload.wikimedia.org&lt;/p&gt;
 
 &lt;p&gt;这就好比 steem CN 区文章太多，大 V 又少，分给你的赞也不会多。去别的阵营看看，比如现在 Utopian.io 就是很好的机会。趁早去，去得晚了可能机会也就没了。“伏龙凤雏”里的凤雏庞统，同样去抱刘备的大腿，去了一看，刘备左腿趴着关张赵马黄，右腿趴着诸葛亮，满了。最后，伏龙流芳百世，凤雏一事无成。&lt;/p&gt;
 
-&lt;p&gt;CN 区之外的阵营有英文门槛，如果迈不过去，也不是没有出路。前几个月 Ned 代理几百万 SP 给几个中文用户，中文区空前繁盛，就是一次机遇。这两天 SBD 疯涨，也算是个机遇。以后还有没有这种机遇，没人知道，但是可以走着瞧。&lt;/p&gt;
+&lt;p&gt;CN 区之外的阵营有英文门槛，如果迈不过去，也不是没有出路。前几个月 Ned 代理几百万 SP 给几个中文用户，中文区空前繁盛，就是一次机遇。这两天 SBD 疯涨，也算是个机遇。以后还有没有这种机???，没人知道，但是可以走着瞧。&lt;/p&gt;
 
 &lt;p&gt;曹操阵营的司马懿，一开始啥都不是，也没有大 V 点赞，不管发什么帖都沉底，根本没有出头的机会，但是他坚决不换阵营，他能熬。司马懿熬死了自己阵营的曹操，曹丕，曹真，曹爽，还熬死了敌方阵营的诸葛亮。最后，机会终于落到他家头上了，他的儿孙建立了晋朝，取代了矿主。&lt;/p&gt;
 
@@ -1372,58 +1467,6 @@ bookdownplus()
 &lt;blockquote&gt;
 &lt;p&gt;有&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>关于大长腿杀人鲸刘美女 @deanliu 的一切 - All bout @deanliu</title>
-      <link>https://steemit.netlify.com/post/deanliu-or-all-bout-deanliu/</link>
-      <pubDate>Thu, 09 Nov 2017 10:47:18 +0000</pubDate>
-      
-      <guid>https://steemit.netlify.com/post/deanliu-or-all-bout-deanliu/</guid>
-      <description>&lt;p&gt;原文链接: &lt;a href=&#34;https://steemit.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;steemit&lt;/a&gt;, &lt;a href=&#34;https://cnsteem.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;cnsteem&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://chainbb.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;chainbb&lt;/a&gt;, &lt;a href=&#34;https://steemdb.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;steemdb&lt;/a&gt;, &lt;a href=&#34;https://steemd.com/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;steemd&lt;/a&gt;, &lt;a href=&#34;https://busy.org/cn/@dapeng/deanliu-or-all-bout-deanliu&#34;&gt;busy&lt;/a&gt;, &lt;a href=&#34;https://raw.githubusercontent.com/pzhaonet/steem_dapeng/master/content/post/deanliu-or-all-bout-deanliu.md&#34;&gt;markdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;昨天我发了个广告，&lt;a href=&#34;https://cnsteem.com/cn/@dapeng/or-10-sbd-to-build-a-mirror-site-for-your-own-steem-posts&#34;&gt;提供制作 steem 镜像备份网站的有偿服务&lt;/a&gt;，第一个报名的就是人称“刘美女”的前辈 @deanliu ，一下订购了三个月的备份服务 。&lt;/p&gt;
-
-&lt;p&gt;刘美女何许人也？新人可能不太了解。刘美女 的 ESP 在 &lt;a href=&#34;https://cnsteem.com/steemit/@nationalpark/observation-and-analysis-to-please-the-lord&#34;&gt;全网 40 万用户里排名 229&lt;/a&gt;，华语区排名前 5，声望 72.35，级别是杀人鲸。一句话：你就知道刘美女是个大腿就好了。&lt;/p&gt;
-
-&lt;p&gt;保持尊重，认真去抱。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://deancrypto.netlify.com/&#34;&gt;刘美女的镜像网站&lt;/a&gt;很快做好了，将近 400 篇原创文章，一目了然，欢迎大家围观。本来，我只是想赚点零花钱，然而，没想到这回有很多意外收获。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://static.pexels.com/photos/90754/woman-portrait-girl-color-90754.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Image Credit: pexels.com&lt;/p&gt;
-
-&lt;p&gt;这里我先道个歉，本文标题&amp;rdquo;关于前辈刘美女 @deanliu 的一切&amp;rdquo;取得哗众取宠了，配图也是在网上随便找的，目的是想吸引大家的眼球。好在，本文确实是有点料的。&lt;/p&gt;
-
-&lt;p&gt;比如，有个问题困扰了我很久：刘美女到底是男是女？产生这个问题的原因我就不详述了，总之困惑的不止我一个人。这回，在镜像网站上，我很快找到了答案，就在刘美女注册当天发布的&lt;a href=&#34;https://deancrypto.netlify.com/post/a-father-from-taiwan-thinking-introducing-myself-a-bit/&#34;&gt;自我介绍帖里&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;再比如， &amp;ldquo;deanliu&amp;rdquo; 到底是什么意思？是姓“刘”还是姓“柳”？我曾经疑心刘美女的真名是不是叫“柳得安”。这回，在镜像网站上，我找到了个刘美女自己认可的解释：“电流”。&lt;/p&gt;
-
-&lt;p&gt;从镜像网站收获的不只是八卦。我来 steem 实际只有三个多月，错过了很多往日的精彩，如今一边读刘美女的文章，一边再次感叹，原来很多人在 steem 上的心路历程都是如此相似。我们现在提的问题、有的困惑、自以为惊人的新发现，其实早就被前辈们说过了。&lt;/p&gt;
-
-&lt;p&gt;比如，注册 14 天的刘美女&lt;a href=&#34;https://deancrypto.netlify.com/post/cn/&#34;&gt;研究过每天几点钟发帖赚钱多&lt;/a&gt;，并且问了诸如&lt;a href=&#34;https://deancrypto.netlify.com/post/question-about-steem-2-in-chinese-steemit/&#34;&gt;Follow 和 Mute 是什么含义&lt;/a&gt;，&lt;a href=&#34;https://deancrypto.netlify.com/post/security-warning-for-cn-newbies/&#34;&gt;账号的几个密码到底怎么用的&lt;/a&gt;小鱼问题。 如今的小鱼们可以从中得到一些慰藉，你看大腿们当年也是这么过来的嘛。&lt;/p&gt;
-
-&lt;p&gt;比如，未满月的刘小鱼发现了 the abit line，为此提出了&lt;a href=&#34;https://deancrypto.netlify.com/post/post-payout-cn-cn/&#34;&gt;忠告&lt;/a&gt;，直到今天仍然是金玉良言：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;知福之后，要知祸。什么祸？被宠坏的祸。知祸才能避祸。如果随意写个今天天气不好的文章都能每天吃碗面，那这肯定不能长久。大家可能都知道大神也有点赞限制，一天点个20-40次就差不多了，他也没法在用户大量扩张下照顾所有人，大家必须自我成长，或许发英文帖，双语帖，或许寻求累积有内涵的中文作品，等待中国用户来临后才能开始发光发热。&lt;strong&gt;因为当海量用户来临时，海量的专业性竞争也会来&lt;/strong&gt; (英文圈正在发生)，先到者因为熟悉环境而有些先发优势，但仅此而已，天气文章终究只能发到微博吧。如此，此福才是福，知祸则祸离。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;刚满月的刘小鱼，曾经&lt;a href=&#34;https://deancrypto.netlify.com/post/owo-farewell/&#34;&gt;为疏忽家庭和工作而懊恼&lt;/a&gt;：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;将暂时与各位告别一周，听起来很短，但在Steemian Time里可是很长的。接下来这一周我将不再发文章、不再参???讨论，也不再点赞（可以看我刚刚发的英文帖#oneweekoff ），要把时间留给这个月来被我疏忽的家庭、进度落后的工作、脸书上的朋友，以及最重要的身体的健康。毕竟，日子还长呢，养精蓄锐之后，才能为自己的SteemLife注入新的能量。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;还有&lt;a href=&#34;https://deancrypto.netlify.com/post/4wdgxj/&#34;&gt;一篇帖子&lt;/a&gt;，是刘美女归来时对别人打招呼，读来会有种“咦，原来大神们小时候是这样一起玩大的”感觉。&lt;/p&gt;
-
-&lt;p&gt;注册一个半月的时候，刘美女对 steem 的思考已经很深了，见《&lt;a href=&#34;https://deancrypto.netlify.com/post/calculate-your-way-into-the-steemit-ocean-steemit/&#34;&gt;Steemit世界裡的加減乘除&lt;/a&gt; 》一文，至今仍然可以作为新人们的指南。&lt;/p&gt;
-
-&lt;p&gt;我每天发布的《希望工程日报》里搜集整理了很多对新人有益的帖子，但是上面这些基本都错过了——区块链的文章沉底太快，埋得太深。不过，这次做镜像网站倒是个发掘旧文八卦、回顾往日精彩的机会。&lt;/p&gt;
-
-&lt;p&gt;敢问路在何方？从前辈的帖子里剥茧抽丝，我们就可以看到，一条小鱼成长为大鲸的道路，原来就在我们自己的脚下。&lt;/p&gt;
 </description>
     </item>
     
